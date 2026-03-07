@@ -1,84 +1,144 @@
 # Sankarshan Mukhopadhyay
 
-I build **digital trust infrastructure**: governance patterns, assurance tooling, and interoperable artifacts for real institutions shipping real systems.
+I build **digital trust infrastructure**: governance patterns, assurance
+tooling, and interoperable artifacts for institutions deploying
+verifiable data systems.
 
-My work sits at the intersection of:
+The focus is practical.
 
-- **Verifiable data + identity** (credentials, registries, trust lists)  
-- **Assurance + conformance** (testability, evidence bundles, auditability)  
-- **AI governance** (operational artifacts, risk-tier bindings, runtime controls)  
+If a governance idea cannot be implemented, tested, and audited, it is
+not infrastructure.
 
-Contributor across **Trust Over IP (ToIP)** and adjacent standards ecosystems, with a practical bias: if it cannot be implemented and tested, it is just vibes.
+My work sits at the intersection of three layers:
 
----
+-   **Verifiable identity and data systems**\
+    credentials, registries, trust lists, and interoperable trust
+    frameworks
 
-## What I’m focused on right now
+-   **Assurance and conformance infrastructure**\
+    testing, evidence bundles, compatibility matrices, and audit
+    artifacts
 
-### 1) TRQP adoption + assurance front door
+-   **Operational AI governance**\
+    risk-tiered workflows, runtime controls, and deployable governance
+    tooling
 
-A coherent, non-monorepo pathway for teams adopting TRQP with compatibility and combined assurance workflows.
+I contribute to work across **Trust Over IP (ToIP)**, **UN/CEFACT** and adjacent
+standards ecosystems, with an emphasis on artifacts that real
+institutions can ship.
 
-- **TRQP Assurance Hub**  
-  https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub  
+------------------------------------------------------------------------
 
-- **TRQP Conformance Suite**  
-  https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite  
+# Ecosystem Map
 
-- **TRQP-TSPP**  
-  https://github.com/sankarshanmukhopadhyay/TRQP-TSPP  
+                        Digital Trust Infrastructure
+                                   │
+            ┌──────────────────────┼──────────────────────┐
+            │                      │                      │
+      Trust Registries       Assurance Systems      Governance Artifacts
+            │                      │                      │
+            │                      │                      │
+       TRQP-TSPP           TRQP Conformance Suite    DPI AI Governance Lab
+            │                      │                      │
+            │                      │                      │
+     TRQP Assurance Hub      Evidence Bundles       Governance Templates
+            │
+            │
+     Agent Identity Layer
+            │
+     Agent Name Assurance Baseline
+            │
+     ERC-8004 CSP
 
----
+These repositories collectively explore how **trust infrastructure can
+become testable, auditable, and interoperable across ecosystems**.
 
-### 2) DPI + AI governance as artifacts, not opinions
+------------------------------------------------------------------------
 
-Turning AI governance into reusable packs: templates, matrices, control bindings, and repeatable review methods.
+# Start Here
 
-- **DPI AI Governance Artifacts**  
-  https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-artifacts  
+If you are new to this work, the easiest entry points are:
 
-- **DPI AI Governance Lab**  
-  https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-lab  
+### Trust Registries and TRQP
 
----
+Start with the implementation and assurance pathway for trust registry
+deployments.
 
-### 3) Agent identity + name assurance
+-   TRQP Assurance Hub\
+    https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub
 
-Normative baselines and security profiles that reduce adoption risk and shorten verification cycles.
+-   TRQP Conformance Suite\
+    https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite
 
-- **Agent Name Assurance Baseline**  
-  https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline  
+-   TRQP-TSPP\
+    https://github.com/sankarshanmukhopadhyay/TRQP-TSPP
 
-- **ERC-8004 CSP**  
-  https://github.com/sankarshanmukhopadhyay/ERC-8004-CSP  
+Together these form a **non-monorepo adoption path for TRQP
+ecosystems**.
 
----
+------------------------------------------------------------------------
 
-## Writing + public work
+### Digital Public Infrastructure and AI Governance
 
-**The Trust Graph**  
-Essays on digital trust infrastructure, governance-by-design, and verifiable data economies.  
-https://substack.com/@thetrustgraph  
+Operationalizing governance for AI systems interacting with public
+infrastructure.
 
-LinkedIn  
-http://linkedin.com/in/sankarshan  
+-   DPI AI Governance Artifacts\
+    https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-artifacts
 
-About  
-https://about.me/sankarshan.mukhopadhyay/  
+-   DPI AI Governance Lab\
+    https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-lab
 
----
+These projects focus on turning governance concepts into **deployable
+review frameworks and reusable artifacts**.
 
-## Collaboration model
+------------------------------------------------------------------------
+
+### Agent Identity and Name Assurance
+
+Security profiles and baselines for software agents participating in
+trust ecosystems.
+
+-   Agent Name Assurance Baseline\
+    https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline
+
+-   ERC-8004 CSP\
+    https://github.com/sankarshanmukhopadhyay/ERC-8004-CSP
+
+This work focuses on reducing ecosystem risk and improving verification
+cycles for agent identities.
+
+------------------------------------------------------------------------
+
+# Writing and Public Work
+
+**The Trust Graph**\
+Essays on digital trust infrastructure, governance-by-design, and
+verifiable data economies.
+
+https://substack.com/@thetrustgraph
+
+LinkedIn\
+http://linkedin.com/in/sankarshan
+
+About\
+https://about.me/sankarshan.mukhopadhyay/
+
+------------------------------------------------------------------------
+
+# Collaboration
 
 If you are:
 
-- implementing TRQP or trust registries  
-- building assurance pipelines for verifiable data  
-- operationalizing AI governance in DPI or public systems  
+-   implementing trust registries or verifiable data infrastructure\
+-   building assurance pipelines for verifiable data ecosystems\
+-   operationalizing AI governance in public systems
 
 Open a GitHub issue with:
 
-1. Your use case in one paragraph  
-2. Your constraints (policy, latency, budget, legal, ecosystem)  
-3. The definition of done you can actually ship  
+1.  Your use case in one paragraph\
+2.  Your constraints (policy, latency, budget, ecosystem)\
+3.  A concrete definition of done
 
-I prefer small, testable increments over big rewrites. High signal beats high ceremony.
+Small, testable increments beat big rewrites.\
+High signal beats high ceremony.
