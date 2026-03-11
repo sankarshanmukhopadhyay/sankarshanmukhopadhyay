@@ -113,7 +113,7 @@ trust ecosystems.
     <https://github.com/sankarshanmukhopadhyay/ERC-8004-CSP>
 
 ERC-8004 is an emerging Ethereum-ecosystem standard for agent identity
-registration and verification. The CSP (Consumer Signal Profile) in this
+registration and verification. The CSP (Consumer Security Profile) in this
 repository defines how relying parties should interpret and handle
 signals from ERC-8004-conformant agents within a broader trust
 ecosystem — connecting on-chain agent registration to the assurance and
