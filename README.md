@@ -1,192 +1,184 @@
 # Sankarshan Mukhopadhyay
 
-I build **digital trust infrastructure**: governance patterns, assurance
-tooling, and interoperable artifacts for institutions deploying
-verifiable data systems.
+I build **testable trust infrastructure**: governance patterns, assurance toolchains, and machine-verifiable artifacts for institutions deploying verifiable data, trust registries, and agent-mediated systems.
 
-The focus is practical.
+My work is built around a simple premise:
 
-If a governance idea cannot be implemented, tested, and audited, it is
-not infrastructure.
+**If a governance claim cannot be implemented, tested, audited, and contested in operation, it is not yet infrastructure.**
 
-My work sits at the intersection of three layers:
+That premise runs across this portfolio. The objective is not to produce more policy language. The objective is to turn governance, trust, and assurance into operational systems that can survive real deployment conditions.
 
--   **Verifiable identity and data systems**\
-    credentials, registries, trust lists, and interoperable trust
-    frameworks
+## What this portfolio is trying to prove
 
--   **Assurance and conformance infrastructure**\
-    testing, evidence bundles, compatibility matrices, and audit
-    artifacts
+This work is organized around four propositions:
 
--   **Operational AI governance**\
-    risk-tiered workflows, runtime controls, and deployable governance
-    tooling
+1. **Trust systems should be testable, not ceremonial.**  
+   A trust registry, directory, or verifier does not become trustworthy because it cites a standard. It becomes trustworthy when its behavior can be checked, its claims can be challenged, and its evidence can travel.
 
-I contribute to work across **Trust Over IP (ToIP)**, **LF Decentralized Trust**,
-**UN/CEFACT** and adjacent standards ecosystems, with an emphasis on artifacts
-that real institutions can ship.
+2. **Governance should be machine-operable, not just documented.**  
+   Rules that cannot be bound to artifacts, controls, decision points, and evidence flows are too weak for high-stakes infrastructure.
 
----
+3. **Agent participation requires bounded authority and verifiable assurance.**  
+   As software agents begin to act across institutional and economic systems, identity alone is not enough. Names, mandates, scopes, and verification expectations need to be operationalized.
 
-# Ecosystem Map
+4. **Interoperability needs evidence, profiles, and repeatable control surfaces.**  
+   Cross-ecosystem trust cannot depend on interpretation alone. It needs profiles, conformance pathways, evidence contracts, and deployable assurance mechanisms.
 
-```
-                    Digital Trust Infrastructure
-                               │
-        ┌──────────────────────┼──────────────────────┐
-        │                      │                      │
-  Trust Registries       Assurance Systems      Governance Artifacts
-        │                      │                      │
-        │                      │                      │
-   TRQP-TSPP           TRQP Conformance Suite    DPI AI Governance Lab
-        │                      │                      │
-        │                      │                      │
- TRQP Assurance Hub      Evidence Bundles       Governance Templates
-        │
-        │
- Agent Identity Layer
-        │
- Agent Name Assurance Baseline
-        │
- ERC-8004 CSP
+## Ecosystem map
 
-                               │
-               ────────────────┴───────────────
-               Trust Systems Meta Model (TSMM)
-               shared vocabulary · abstract reference model
-               ────────────────────────────────
+```text
+Trust Registry Infrastructure
+├── TRQP Assurance Hub
+├── TRQP Conformance Suite
+└── TRQP-TSPP
+
+Assurance and Conformance
+└── DTG Conformance & Assurance (DCAS)
+
+Operational AI Governance
+├── DPI AI Governance Artifacts
+└── DPI AI Governance Lab
+
+Agent Identity and Delegated-Action Assurance
+├── Agent Name Assurance Baseline
+├── Trust Infrastructure Schema
+└── ERC-8004 CSP
+
+Conceptual Foundations
+└── Trust Systems Meta Model (TSMM)
 ```
 
-These repositories collectively explore how **trust infrastructure can
-become testable, auditable, and interoperable across ecosystems**.
+## Portfolio map
 
----
+### 1. Trust registry infrastructure
 
-# Start Here
+Implementation and assurance pathways for trust registries and related trust distribution systems.
 
-If you are new to this work, the easiest entry points are:
+- [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub)
+- [TRQP Conformance Suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite)
+- [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP)
 
-### Trust Registries and TRQP
+These repositories collectively explore how trust registry deployments can become testable, auditable, and portable across ecosystems rather than remaining largely declarative. Together they provide a **non-monorepo adoption path** for TRQP ecosystems that want assurance without collapsing implementation diversity.
 
-Start with the implementation and assurance pathway for trust registry
-deployments.
+### 2. Assurance and conformance systems
 
--   TRQP Assurance Hub\
-    <https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub>
+Portable conformance methods, assurance overlays, evidence bundles, and verifier-oriented evaluation workflows.
 
--   TRQP Conformance Suite\
-    <https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite>
+- [DTG Conformance & Assurance (DCAS)](https://github.com/sankarshanmukhopadhyay/dtg-conformance-assurance)
 
--   TRQP-TSPP\
-    <https://github.com/sankarshanmukhopadhyay/TRQP-TSPP>
+This layer focuses on the repeatable evaluation of trust claims. The aim is to move from informal ecosystem confidence to structured, reviewable, and reusable assurance outputs.
 
-Together these form a **non-monorepo adoption path for TRQP ecosystems**.
+### 3. Operational AI governance
 
----
+Governance artifacts and implementation scaffolding for AI systems operating in institutional and public-interest settings.
 
-### Digital Public Infrastructure and AI Governance
+- [DPI AI Governance Artifacts](https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-artifacts)
+- [DPI AI Governance Lab](https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-lab)
 
-Operationalizing governance for AI systems interacting with public
-infrastructure.
+The emphasis here is practical: reusable controls, review structures, policy artifacts, and governance templates that can be deployed rather than merely discussed.
 
--   DPI AI Governance Artifacts\
-    <https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-artifacts>
+### 4. Agent identity and delegated-action assurance
 
--   DPI AI Governance Lab\
-    <https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-lab>
+Security baselines and machine-readable trust structures for software agents participating in trust ecosystems.
 
-These projects focus on turning governance concepts into **deployable
-review frameworks and reusable artifacts**.
+- [Agent Name Assurance Baseline](https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline)
+- [Trust Infrastructure Schema](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schema)
 
----
+This cluster focuses on a problem that is becoming harder, not easier: how relying parties should identify, classify, and trust software agents that may act with delegated authority across systems. The central question is not just whether an agent exists, but whether it is operating under intelligible names, bounded mandates, and reviewable assurance expectations.
 
-### Agent Identity and Name Assurance
+The **Trust Infrastructure Schema** repo provides a machine-readable schema layer for expressing trust actors, claims, bindings, and structural relationships that recur across registry, assurance, and agent participation workflows.
 
-Security profiles and baselines for software agents participating in
-trust ecosystems.
+This lane is complemented by cross-portfolio assurance work, especially [DTG Conformance & Assurance (DCAS)](https://github.com/sankarshanmukhopadhyay/dtg-conformance-assurance), which provides evaluation and verifier-oriented assessment paths for operational trust claims.
 
--   Agent Name Assurance Baseline\
-    <https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline>
+Additional ecosystem-specific bindings and profiles, including [ERC-8004 CSP](https://github.com/sankarshanmukhopadhyay/ERC-8004-CSP), extend parts of this work into substrate-specific agent registration and verification environments. ERC-8004 CSP is the Ethereum-facing branch of this broader agent assurance logic rather than the primary anchor of the portfolio.
 
--   ERC-8004 CSP\
-    <https://github.com/sankarshanmukhopadhyay/ERC-8004-CSP>
+### 5. Conceptual foundations and abstract modeling
 
-ERC-8004 is an emerging Ethereum-ecosystem standard for agent identity
-registration and verification. The CSP (Consumer Security Profile) in this
-repository defines how relying parties should interpret and handle
-signals from ERC-8004-conformant agents within a broader trust
-ecosystem — connecting on-chain agent registration to the assurance and
-governance expectations defined in ANAB and the TRQP cluster.
+Shared vocabulary and abstract reference modeling across trust systems.
 
-This work focuses on reducing ecosystem risk and improving verification
-cycles for agent identities.
+- [Trust Systems Meta Model (TSMM)](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model)
 
----
+TSMM captures recurring structural patterns across the portfolio: entities and roles, bounded authority, artifacts and claims, policy-governed decisions, evidence, verification, and downstream effects. It is useful for readers who want to understand the deeper architectural assumptions connecting the operational repositories.
 
-### Conformance Assurance for Decentralized Trust Graphs
+## Start here
 
-Portable conformance profiles, risk assessment, and assurance artefacts
-for Decentralized Trust Graph ecosystems.
+Different readers usually enter this work through different operational problems.
 
--   DTG Conformance & Assurance (DCAS)\
-    <https://github.com/sankarshanmukhopadhyay/dtg-conformance-assurance>
+### If you care about trust registries and verifiable data infrastructure
 
-DCAS provides the verifier workflow and repeatable evaluation method
-used to assess conformance claims across this portfolio, including those
-produced by the Agent Name Assurance Baseline.
+Start with:
 
----
+- [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub)
+- [TRQP Conformance Suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite)
+- [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP)
 
-### Conceptual Foundations
+Together these form a practical **non-monorepo adoption path** for making trust registry behavior testable and assurance claims exportable.
 
-The three operational clusters above share recurring structural
-patterns: entities and roles, bounded authority, artifacts and claims,
-policy-governed trust decisions, evidence, and effects. TSMM extracts
-those patterns into a portable abstract reference model that can be
-studied and applied across implementations without requiring a specific
-protocol or profile.
+### If you care about assurance and conformance evaluation
 
--   Trust Systems Meta Model (TSMM)\
-    <https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model>
+Start with:
 
-**Status: draft reference model, actively developed.** Useful for
-understanding the shared vocabulary and structural assumptions across
-this portfolio. Not a prerequisite for adopting any of the operational
-repos — but rewarding for those who want to understand why the portfolio
-is structured the way it is.
+- [DTG Conformance & Assurance (DCAS)](https://github.com/sankarshanmukhopadhyay/dtg-conformance-assurance)
 
----
+This is the clearest entry point into the portfolio’s work on verifier-oriented assessment, portable assurance outputs, and repeatable trust evaluation methods.
 
-# Writing and Public Work
+### If you care about AI governance in deployable form
 
-**The Trust Graph**\
-Essays on digital trust infrastructure, governance-by-design, and
-verifiable data economies. Published on Substack.
+Start with:
 
-<https://substack.com/@thetrustgraph>
+- [DPI AI Governance Artifacts](https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-artifacts)
+- [DPI AI Governance Lab](https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-lab)
 
-LinkedIn\
-<http://linkedin.com/in/sankarshan>
+These projects translate governance concepts into control structures, review mechanisms, and reusable artifacts.
 
-About\
-<https://about.me/sankarshan.mukhopadhyay/>
+### If you care about agent trust, naming, and delegated participation
 
----
+Start with:
 
-# Collaboration
+- [Agent Name Assurance Baseline](https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline)
+- [Trust Infrastructure Schema](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schema)
 
-If you are:
+This is the most direct path into the portfolio’s work on agent identity, naming discipline, machine-readable trust structures, and assurance expectations for delegated action.
 
--   implementing trust registries or verifiable data infrastructure
--   building assurance pipelines for verifiable data ecosystems
--   operationalizing AI governance in public systems
+### If you want the abstract model behind the portfolio
 
-Open a GitHub issue with:
+Start with:
 
-1.  Your use case in one paragraph
-2.  Your constraints (policy, latency, budget, ecosystem)
-3.  A concrete definition of done
+- [Trust Systems Meta Model (TSMM)](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model)
 
-Small, testable increments beat big rewrites.\
-High signal beats high ceremony.
+TSMM is not a prerequisite for using the operational repositories. It is the place to go if you want the shared language and model logic behind them.
+
+## Standards and ecosystem orientation
+
+I contribute to and draw from work across Trust Over IP, LF Decentralized Trust, UN/CEFACT, and adjacent standards and implementation ecosystems. The portfolio is intended to help convert standards-aligned trust claims into artifacts, controls, and assurance paths that can survive deployment.
+
+## Writing and public work
+
+### The Trust Graph
+
+Essays on digital trust infrastructure, governance-by-design, delegated authority, and verifiable data economies.
+
+- [Substack](https://thetrustgraph.substack.com)
+
+### Elsewhere
+
+- [LinkedIn](https://www.linkedin.com/in/sankarshan)
+- [About](https://about.me/sankarshan.mukhopadhyay/)
+
+## Collaboration
+
+This portfolio is most useful for people who are:
+
+- implementing trust registries or verifiable data infrastructure
+- building assurance pipelines and evidence workflows
+- operationalizing AI governance in institutional settings
+- designing trust, identity, and control surfaces for software agents
+
+If that is your problem space, open a GitHub issue with:
+
+1. your use case in one paragraph  
+2. your constraints, including policy, latency, budget, and ecosystem  
+3. a concrete definition of done  
+
+Small, testable increments beat large rewrites.  
+Operational clarity beats ceremonial confidence.
