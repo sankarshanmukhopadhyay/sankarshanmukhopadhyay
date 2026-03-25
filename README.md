@@ -82,7 +82,7 @@ The emphasis here is practical: reusable controls, review structures, policy art
 Security baselines and machine-readable trust structures for software agents participating in trust ecosystems.
 
 - [Agent Name Assurance Baseline](https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline)
-- [Trust Infrastructure Schema](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schema)
+- [Trust Infrastructure Schema](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas)
 
 This cluster focuses on a problem that is becoming harder, not easier: how relying parties should identify, classify, and trust software agents that may act with delegated authority across systems. The central question is not just whether an agent exists, but whether it is operating under intelligible names, bounded mandates, and reviewable assurance expectations.
 
