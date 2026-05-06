@@ -41,12 +41,23 @@ Operational AI Governance
 
 Agent Identity and Delegated-Action Assurance
 ├── Agent Name Assurance Baseline
-├── Trust Infrastructure Schema
+├── Trust Infrastructure Schemas
 └── ERC-8004 CSP
 
 Conceptual Foundations
 └── Trust Systems Meta Model (TSMM)
 ```
+
+
+## Portfolio architecture
+
+This portfolio is organized as a set of related but independently usable repositories. The repositories are intentionally not treated as a monorepo. They form a federated trust infrastructure portfolio where different projects play different roles: conceptual modeling, schema expression, assurance profiling, conformance testing, evidence generation, and adoption guidance.
+
+A more detailed relationship model is maintained in:
+
+- [Portfolio Architecture](docs/portfolio-architecture.md)
+
+That document tracks how the repositories relate to each other, which repositories act as upstream conceptual or schema layers, which ones produce evidence or assurance outputs, and where drift should be monitored as the portfolio evolves.
 
 ## Portfolio map
 
@@ -82,11 +93,11 @@ The emphasis here is practical: reusable controls, review structures, policy art
 Security baselines and machine-readable trust structures for software agents participating in trust ecosystems.
 
 - [Agent Name Assurance Baseline](https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline)
-- [Trust Infrastructure Schema](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas)
+- [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas)
 
 This cluster focuses on a problem that is becoming harder, not easier: how relying parties should identify, classify, and trust software agents that may act with delegated authority across systems. The central question is not just whether an agent exists, but whether it is operating under intelligible names, bounded mandates, and reviewable assurance expectations.
 
-The **Trust Infrastructure Schema** repo provides a machine-readable schema layer for expressing trust actors, claims, bindings, and structural relationships that recur across registry, assurance, and agent participation workflows.
+The **Trust Infrastructure Schemas** repo provides a machine-readable schema layer for expressing trust actors, claims, bindings, and structural relationships that recur across registry, assurance, and agent participation workflows.
 
 This lane is complemented by cross-portfolio assurance work, especially [DTG Conformance & Assurance (DCAS)](https://github.com/sankarshanmukhopadhyay/dtg-conformance-assurance), which provides evaluation and verifier-oriented assessment paths for operational trust claims.
 
@@ -136,7 +147,7 @@ These projects translate governance concepts into control structures, review mec
 Start with:
 
 - [Agent Name Assurance Baseline](https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline)
-- [Trust Infrastructure Schema](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schema)
+- [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas)
 
 This is the most direct path into the portfolio’s work on agent identity, naming discipline, machine-readable trust structures, and assurance expectations for delegated action.
 
