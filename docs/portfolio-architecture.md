@@ -17,7 +17,7 @@ This document should be used for:
 - documentation refresh;
 - future graph and matrix generation.
 
-The goal is to move from a portfolio that is understandable by narrative inspection to a portfolio that is increasingly understandable through explicit, reviewable, and eventually machine-readable relationships.
+The goal is to move from a portfolio that is understandable by narrative inspection to a portfolio that is increasingly understandable through explicit, reviewable, and machine-readable relationships. The current machine-readable relationship source is [`data/portfolio-relationships.yaml`](../data/portfolio-relationships.yaml).
 
 ## Packaging principle
 
@@ -206,15 +206,15 @@ That means repository relationships should eventually be tracked through:
 
 The goal is not narrative consistency alone. The goal is to make repository relationships testable, reviewable, and maintainable over time.
 
-## Future improvement
+## Machine-readable relationship source
 
-A future increment should add a machine-readable relationship file:
+This repository now includes a machine-readable relationship file:
 
 ```text
 data/portfolio-relationships.yaml
 ```
 
-That file can become the source of truth for automated generation of:
+That file is the starting source of truth for automated generation of:
 
 - Mermaid portfolio maps;
 - relationship matrices;
@@ -222,27 +222,12 @@ That file can become the source of truth for automated generation of:
 - release impact reports;
 - contributor onboarding views.
 
-Suggested minimum structure:
+The relationship file records repository layers, relationship types, confidence levels, expected evidence paths, drift triggers, and downstream review targets. It is intentionally lightweight so it can remain useful without turning the portfolio into a monorepo.
 
-```yaml
-version: 0.1.0
-generated_at: 2026-05-06
-owner: sankarshanmukhopadhyay
-relationships:
-  - source: trqp-assurance-hub
-    target: trqp-conformance-suite
-    type: orchestrates
-    confidence: high
-    evidence:
-      - path: README.md
-      - path: docs/
-    drift_policy:
-      check_on_release: true
-      review_targets:
-        - compatibility matrix
-        - onboarding documentation
-        - evidence examples
-```
+Associated review templates are maintained in:
+
+- [`docs/portfolio-drift-review.md`](portfolio-drift-review.md)
+- [`docs/release-impact-template.md`](release-impact-template.md)
 
 ## Maintenance rule
 

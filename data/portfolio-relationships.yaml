@@ -1,0 +1,336 @@
+version: 0.1.0
+generated_at: 2026-06-26
+owner: sankarshanmukhopadhyay
+purpose: >-
+  Machine-readable relationship model for the public trust infrastructure
+  portfolio. This file records operational repository relationships, evidence
+  expectations, and drift review triggers so cross-repo changes can be reviewed
+  as executable governance infrastructure rather than narrative alignment alone.
+relationship_types:
+  informs: Provides conceptual vocabulary, model structure, or design logic.
+  depends_on: Requires artifacts, schemas, examples, workflows, or outputs from another repository.
+  profiles: Defines an assurance, governance, security, or implementation profile for another layer.
+  validates: Provides tests, checks, conformance logic, or verification workflows.
+  produces_evidence_for: Generates outputs that another repository or assurance process can consume.
+  extends: Adds a domain-specific layer to a more general model.
+  binds_to: Connects a portfolio concept to an external standard, ecosystem, or protocol.
+  references: Cites or points to another repository without an operational dependency.
+  drift_sensitive_to: Should be reviewed when another repository changes.
+  orchestrates: Coordinates adoption, onboarding, compatibility, evidence intake, or assurance workflow.
+  consumes_evidence_from: Consumes conformance, assurance, decision, or evidence outputs.
+  consumes_profile_from: Consumes assurance, control, governance, or security profile expectations.
+repositories:
+  - id: trust-systems-meta-model
+    layer: conceptual-foundation
+    role: semantic-governance-model
+  - id: trust-infrastructure-schemas
+    layer: schema-and-trust-artifact-layer
+    role: executable-artifact-contract-layer
+  - id: trqp-assurance-hub
+    layer: trust-registry-assurance-stack
+    role: adoption-and-assurance-orchestration
+  - id: trqp-conformance-suite
+    layer: trust-registry-assurance-stack
+    role: executable-conformance-and-verdict-generation
+  - id: TRQP-TSPP
+    layer: trust-registry-assurance-stack
+    role: trust-service-provider-profile-and-controls
+  - id: dtg-conformance-assurance
+    layer: assurance-and-conformance-evaluation
+    role: runtime-trust-assurance-and-conformance
+  - id: agent-name-assurance-baseline
+    layer: agent-identity-and-delegated-action-assurance
+    role: agent-naming-authority-and-assurance-baseline
+  - id: ERC-8004-CSP
+    layer: agent-identity-and-delegated-action-assurance
+    role: ethereum-facing-agent-assurance-binding
+  - id: dpi-ai-governance-artifacts
+    layer: operational-ai-governance
+    role: governance-control-and-template-layer
+  - id: dpi-ai-governance-lab
+    layer: operational-ai-governance
+    role: implementation-demonstration-and-experimentation-layer
+  - id: digital-governance-paper-notes
+    layer: research-and-governance-intelligence
+    role: research-policy-and-standards-intelligence
+relationships:
+  - source: trust-systems-meta-model
+    target: trust-infrastructure-schemas
+    type: informs
+    confidence: high
+    rationale: TSMM provides the semantic model for authority, delegation, claims, evidence, verification, lifecycle state, and policy-governed decisions expressed through TIS artifacts.
+    evidence:
+      expected_paths:
+        - docs/bindings/
+        - docs/crosswalks/
+        - README.md
+    drift_policy:
+      check_on_release: true
+      triggers:
+        - terminology_change
+        - model_structure_change
+        - binding_contract_change
+      review_targets:
+        - TIS terminology
+        - TIS runtime-governance projection
+        - TIS evidence and decision artifact mappings
+  - source: trust-systems-meta-model
+    target: trqp-assurance-hub
+    type: informs
+    confidence: medium
+    rationale: TSMM provides conceptual language for entities, authority, claims, evidence, verification, and governance decisions used by assurance workflows.
+    evidence:
+      expected_paths:
+        - README.md
+        - docs/tsmm-tis-alignment.md
+    drift_policy:
+      check_on_release: true
+      triggers:
+        - terminology_change
+        - authority_model_change
+        - evidence_model_change
+      review_targets:
+        - Hub conceptual language
+        - onboarding documentation
+        - assurance workflow explanations
+  - source: trust-infrastructure-schemas
+    target: trqp-assurance-hub
+    type: informs
+    confidence: medium
+    rationale: TIS provides executable evidence and decision artifact contracts that the Hub can reference for assurance intake and adoption workflow documentation.
+    evidence:
+      expected_paths:
+        - docs/evidence-intake-model.md
+        - docs/compatibility-matrix.md
+        - data/upstream-artifacts.yaml
+    drift_policy:
+      check_on_release: true
+      triggers:
+        - schema_change
+        - runtime_artifact_change
+        - evidence_manifest_change
+        - decision_receipt_change
+      review_targets:
+        - Hub evidence intake model
+        - compatibility matrix
+        - adoption workflow documentation
+  - source: trust-infrastructure-schemas
+    target: dtg-conformance-assurance
+    type: drift_sensitive_to
+    confidence: high
+    rationale: DCAS should track runtime trust artifact and assurance schema expectations introduced or changed by TIS.
+    evidence:
+      expected_paths:
+        - docs/tis-runtime-assurance-profile.md
+        - examples/runtime-assurance/
+        - tests/fixtures/
+    drift_policy:
+      check_on_release: true
+      triggers:
+        - runtime_artifact_change
+        - authority_boundary_change
+        - evidence_bundle_change
+        - decision_receipt_change
+        - status_revocation_change
+      review_targets:
+        - DCAS profiles
+        - DCAS examples
+        - DCAS validation fixtures
+  - source: trust-infrastructure-schemas
+    target: agent-name-assurance-baseline
+    type: drift_sensitive_to
+    confidence: high
+    rationale: ANAB should track schema and artifact changes affecting agent naming, authority, identity, assurance, revocation, and runtime verification.
+    evidence:
+      expected_paths:
+        - docs/tis-agent-artifact-alignment.md
+        - docs/agent-name-authority-boundary.md
+        - docs/name-lifecycle-and-revocation.md
+    drift_policy:
+      check_on_release: true
+      triggers:
+        - agent_artifact_change
+        - authority_boundary_change
+        - delegation_scope_change
+        - revocation_status_change
+      review_targets:
+        - ANAB controls
+        - ANAB examples
+        - runtime verification receipt language
+  - source: trust-infrastructure-schemas
+    target: ERC-8004-CSP
+    type: binds_to
+    confidence: medium
+    rationale: ERC-8004 CSP extends agent assurance logic into an Ethereum-facing registration and verification environment while remaining sensitive to TIS authority, evidence, status, and decision artifacts.
+    evidence:
+      expected_paths:
+        - docs/tis-binding.md
+        - docs/registration-vs-authorization.md
+        - docs/evidence-and-revocation.md
+    drift_policy:
+      check_on_release: true
+      triggers:
+        - agent_artifact_change
+        - registry_publication_profile_change
+        - revocation_status_change
+        - decision_receipt_change
+      review_targets:
+        - substrate binding language
+        - registration-versus-authorization language
+        - evidence and revocation examples
+  - source: trqp-assurance-hub
+    target: trqp-conformance-suite
+    type: orchestrates
+    confidence: high
+    rationale: The Hub references conformance outputs and adoption workflows from CTS as part of the trust registry assurance path.
+    evidence:
+      expected_paths:
+        - docs/compatibility-matrix.md
+        - docs/evidence-intake-model.md
+        - README.md
+    drift_policy:
+      check_on_release: true
+      triggers:
+        - verdict_output_change
+        - evidence_bundle_output_change
+        - conformance_workflow_change
+      review_targets:
+        - Hub compatibility matrix
+        - Hub onboarding documentation
+        - Hub evidence examples
+  - source: trqp-assurance-hub
+    target: TRQP-TSPP
+    type: orchestrates
+    confidence: high
+    rationale: The Hub references TSPP assurance posture and trust service provider profile expectations during adoption and review workflows.
+    evidence:
+      expected_paths:
+        - docs/compatibility-matrix.md
+        - docs/assurance-workflow.md
+        - README.md
+    drift_policy:
+      check_on_release: true
+      triggers:
+        - assurance_level_change
+        - control_family_change
+        - profile_expectation_change
+      review_targets:
+        - Hub assurance workflow docs
+        - Hub assurance-level references
+        - Hub profile intake model
+  - source: trqp-conformance-suite
+    target: trqp-assurance-hub
+    type: produces_evidence_for
+    confidence: high
+    rationale: CTS generates conformance verdicts and evidence outputs that can be consumed by Hub assurance workflows.
+    evidence:
+      expected_paths:
+        - schemas/verdict.schema.json
+        - schemas/evidence-bundle-output.schema.json
+        - fixtures/
+    drift_policy:
+      check_on_release: true
+      triggers:
+        - verdict_schema_change
+        - evidence_output_change
+        - fixture_semantics_change
+      review_targets:
+        - Hub evidence intake model
+        - Hub compatibility matrix
+  - source: TRQP-TSPP
+    target: trqp-assurance-hub
+    type: profiles
+    confidence: high
+    rationale: TSPP contributes assurance profile, security posture, privacy posture, and control expectations used by Hub workflows.
+    evidence:
+      expected_paths:
+        - docs/assurance-levels.md
+        - docs/control-mapping.md
+        - data/control-assurance-map.yaml
+    drift_policy:
+      check_on_release: true
+      triggers:
+        - control_change
+        - assurance_level_change
+        - evidence_requirement_change
+      review_targets:
+        - Hub profile references
+        - Hub assurance workflow docs
+        - CTS conformance impact notes
+  - source: dpi-ai-governance-artifacts
+    target: dpi-ai-governance-lab
+    type: informs
+    confidence: high
+    rationale: The artifacts repository provides controls, templates, and governance structures for implementation and demonstration in the lab.
+    evidence:
+      expected_paths:
+        - controls/
+        - templates/
+        - data/control-evidence-map.yaml
+    drift_policy:
+      check_on_release: true
+      triggers:
+        - control_change
+        - template_change
+        - evidence_mapping_change
+      review_targets:
+        - Lab examples
+        - Lab scenario walkthroughs
+        - Lab validation outputs
+  - source: dpi-ai-governance-lab
+    target: dpi-ai-governance-artifacts
+    type: validates
+    confidence: medium
+    rationale: The lab demonstrates and tests the practical usability of governance artifacts and should feed implementation findings back into artifact refinement.
+    evidence:
+      expected_paths:
+        - examples/scenarios/
+        - tests/
+        - docs/evidence-output.md
+    drift_policy:
+      check_on_release: true
+      triggers:
+        - scenario_failure
+        - implementation_gap
+        - validation_output_change
+      review_targets:
+        - Artifact templates
+        - control evidence mappings
+        - governance workflow documentation
+  - source: digital-governance-paper-notes
+    target: trust-systems-meta-model
+    type: informs
+    confidence: low
+    rationale: Research reviews may identify policy tensions, governance concepts, or standards implications that inform future TSMM refinement.
+    evidence:
+      expected_paths:
+        - templates/paper-review.md
+        - data/research-signals.yaml
+    drift_policy:
+      check_on_release: false
+      triggers:
+        - new_research_signal
+        - standards_reference
+        - governance_pattern
+      review_targets:
+        - TSMM open issues
+        - TSMM concept backlog
+  - source: digital-governance-paper-notes
+    target: dpi-ai-governance-artifacts
+    type: informs
+    confidence: low
+    rationale: Research reviews may identify controls, risks, harms, or governance patterns for evaluation in the AI governance artifact layer.
+    evidence:
+      expected_paths:
+        - templates/paper-review.md
+        - data/research-signals.yaml
+    drift_policy:
+      check_on_release: false
+      triggers:
+        - new_control_candidate
+        - risk_pattern
+        - governance_pattern
+      review_targets:
+        - AI governance controls
+        - template backlog
+        - evidence mapping candidates

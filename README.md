@@ -56,8 +56,11 @@ This portfolio is organized as a set of related but independently usable reposit
 A more detailed relationship model is maintained in:
 
 - [Portfolio Architecture](docs/portfolio-architecture.md)
+- [Portfolio Drift Review](docs/portfolio-drift-review.md)
+- [Portfolio Release Impact Template](docs/release-impact-template.md)
+- [Machine-readable Portfolio Relationships](data/portfolio-relationships.yaml)
 
-That document tracks how the repositories relate to each other, which repositories act as upstream conceptual or schema layers, which ones produce evidence or assurance outputs, and where drift should be monitored as the portfolio evolves.
+These files track how the repositories relate to each other, which repositories act as upstream conceptual or schema layers, which ones produce evidence or assurance outputs, and where drift should be monitored as the portfolio evolves. The YAML relationship file is intended to become the reviewable source of truth for future graph generation, release impact review, and cross-repo drift checks.
 
 ## Portfolio map
 
