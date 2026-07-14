@@ -44,6 +44,9 @@ Agent Identity and Delegated-Action Assurance
 ├── Trust Infrastructure Schemas
 └── ERC-8004 CSP
 
+Executable Governance Incubation
+└── Trust Graph Artifacts (TGA)
+
 Conceptual Foundations
 └── Trust Systems Meta Model (TSMM)
 ```
@@ -55,10 +58,12 @@ This portfolio is organized as a set of related but independently usable reposit
 
 A more detailed relationship model is maintained in:
 
-- [Portfolio Architecture](docs/portfolio-architecture.md)
-- [Portfolio Drift Review](docs/portfolio-drift-review.md)
-- [Portfolio Release Impact Template](docs/release-impact-template.md)
+- [Portfolio Governance Control Surface](portfolio/README.md)
+- [Portfolio Architecture](portfolio/architecture.md)
+- [Portfolio Drift Review](portfolio/drift-review.md)
+- [Adoption Readiness Checklist](portfolio/adoption-checklist.md)
 - [Machine-readable Portfolio Relationships](data/portfolio-relationships.yaml)
+- [Release Impact Records](portfolio/release-impact/)
 
 These files track how the repositories relate to each other, which repositories act as upstream conceptual or schema layers, which ones produce evidence or assurance outputs, and where drift should be monitored as the portfolio evolves. The YAML relationship file is intended to become the reviewable source of truth for future graph generation, release impact review, and cross-repo drift checks.
 
@@ -106,7 +111,15 @@ This lane is complemented by cross-portfolio assurance work, especially [DTG Con
 
 Additional ecosystem-specific bindings and profiles, including [ERC-8004 CSP](https://github.com/sankarshanmukhopadhyay/ERC-8004-CSP), extend parts of this work into substrate-specific agent registration and verification environments. ERC-8004 CSP is the Ethereum-facing branch of this broader agent assurance logic rather than the primary anchor of the portfolio.
 
-### 5. Conceptual foundations and abstract modeling
+### 5. Executable governance incubation
+
+Governance arguments translated into inspectable patterns, profiles, evidence structures, and negative assurance tests before portfolio-wide normalization.
+
+- [Trust Graph Artifacts (TGA)](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts)
+
+TGA is the portfolio's incubation layer for executable governance. It may propose candidate artifacts and failure models, while TSMM retains authority over canonical semantics and TIS retains authority over portable schema contracts.
+
+### 6. Conceptual foundations and abstract modeling
 
 Shared vocabulary and abstract reference modeling across trust systems.
 
@@ -154,6 +167,15 @@ Start with:
 
 This is the most direct path into the portfolio’s work on agent identity, naming discipline, machine-readable trust structures, and assurance expectations for delegated action.
 
+### If you care about executable governance and delegation assurance
+
+Start with:
+
+- [Trust Graph Artifacts (TGA)](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts)
+- [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas)
+
+This path shows how governance claims become testable patterns, lineage evidence, schema bindings, and assurance cases without collapsing research, semantic-model, and schema authority into one repository.
+
 ### If you want the abstract model behind the portfolio
 
 Start with:
@@ -161,6 +183,16 @@ Start with:
 - [Trust Systems Meta Model (TSMM)](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model)
 
 TSMM is not a prerequisite for using the operational repositories. It is the place to go if you want the shared language and model logic behind them.
+
+## Managing the portfolio
+
+Cross-repository governance is maintained in the [Portfolio Governance Control Surface](portfolio/README.md). It provides the relationship registry, drift-review procedure, adoption gate, release-impact ledger, versioned evidence, and an automated validation command:
+
+```bash
+python scripts/validate_portfolio.py
+```
+
+The profile repository coordinates the portfolio but does not override the release authority of any individual project.
 
 ## Standards and ecosystem orientation
 

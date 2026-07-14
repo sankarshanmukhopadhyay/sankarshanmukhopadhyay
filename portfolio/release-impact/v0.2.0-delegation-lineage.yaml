@@ -1,0 +1,27 @@
+release_id: coordinated-delegation-lineage-2026-07
+status: implemented
+change_class: additive-non-breaking
+repositories:
+  - repository: Repository Portfolio Change Management
+    version: 0.2.0
+    role: records authority boundaries, relationships, drift triggers, and release evidence
+  - repository: trust-graph-artifacts
+    version: 0.5.0
+    role: incubates delegation-lineage artifacts, controls, and negative assurance cases
+  - repository: trust-systems-meta-model
+    version: v0.22.0
+    role: normalizes chained and fan-out delegation semantics
+  - repository: trust-infrastructure-schemas
+    version: v0.11.0
+    role: publishes portable delegation-lineage and verification contracts
+assurance_claims:
+  - originating principal continuity is explicit
+  - delegated scope cannot expand across hops
+  - fan-out aggregation is evaluated against parent authority
+  - trust-domain transitions are evidenced
+  - revocation, interruption, and compensation are distinguishable
+required_evidence:
+  - repository-local validation results
+  - schema-valid positive examples
+  - schema-invalid negative fixtures
+  - cross-repository mapping review
