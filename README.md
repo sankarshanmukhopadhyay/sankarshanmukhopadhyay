@@ -1,251 +1,100 @@
 # Sankarshan Mukhopadhyay
 
-| Attribute | Value |
-|---|---|
-| Portfolio tier | Flagship coordination repository |
-| Lifecycle | Active |
-| Primary artifact | Portfolio governance and adoption control plane |
-| Validation | `python scripts/validate_portfolio.py` |
-| Evidence output | CI validation result and version-controlled registries |
-| Authority | Portfolio classification and relationship metadata only |
-| Release policy | Commit-based; member repositories retain release authority |
+### Building executable governance, trust infrastructure, and assurance systems
 
-I build **testable trust infrastructure**: governance patterns, assurance toolchains, and machine-verifiable artifacts for institutions deploying verifiable data, trust registries, and agent-mediated systems.
+I work at the intersection of **digital trust**, **agentic systems**, **verifiable data**, **registries**, and **conformance engineering**. My repositories translate governance claims into specifications, schemas, tests, evidence flows, and reference implementations that can be inspected and challenged in operation.
 
-My work is built around a simple premise:
+> **Core premise:** trust becomes infrastructure only when authority, constraints, revocation, evidence, and redress can be made operational and independently verified.
 
-**If a governance claim cannot be implemented, tested, audited, and contested in operation, it is not yet infrastructure.**
+[![Portfolio validation](https://github.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/actions/workflows/validate.yml/badge.svg)](https://github.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/actions/workflows/validate.yml)
+[![Portfolio documentation](https://img.shields.io/badge/docs-GitHub%20Pages-0969da)](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE)
 
-That premise runs across this portfolio. The objective is not to produce more policy language. The objective is to turn governance, trust, and assurance into operational systems that can survive real deployment conditions.
+## Featured work
 
-## What this portfolio is trying to prove
+| Repository | What it delivers | Portfolio role |
+|---|---|---|
+| [**Trust Graph Artifacts**](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | Practical governance patterns, implementation guidance, and negative-assurance tests | Executable-governance incubation |
+| [**Trust Systems Meta Model**](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | Canonical concepts for authority, evidence, policy-governed decisions, and effects | Semantic foundation |
+| [**Trust Infrastructure Schemas**](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | Portable machine-readable contracts for trust actors, claims, bindings, and relationships | Schema authority |
+| [**Agent Name Assurance Baseline**](https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline) | Assurance requirements for identifying and relying on software-agent names | Agent assurance baseline |
+| [**TRQP Assurance Hub**](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | Evidence-oriented assurance workflows for trust-registry deployments | Operational assurance |
+| [**DTG Conformance & Assurance**](https://github.com/sankarshanmukhopadhyay/dtg-conformance-assurance) | Reusable conformance and assurance methods for digital-trust systems | General assurance framework |
 
-This work is organized around four propositions:
+## Portfolio lanes
 
-1. **Trust systems should be testable, not ceremonial.**  
-   A trust registry, directory, or verifier does not become trustworthy because it cites a standard. It becomes trustworthy when its behavior can be checked, its claims can be challenged, and its evidence can travel.
+### Executable governance and delegated authority
 
-2. **Governance should be machine-operable, not just documented.**  
-   Rules that cannot be bound to artifacts, controls, decision points, and evidence flows are too weak for high-stakes infrastructure.
+Governance is treated as an execution problem: who holds authority, what may be delegated, how scope is constrained, how authority is revoked, and what evidence proves the resulting action was legitimate.
 
-3. **Agent participation requires bounded authority and verifiable assurance.**  
-   As software agents begin to act across institutional and economic systems, identity alone is not enough. Names, mandates, scopes, and verification expectations need to be operationalized.
+**Start with:** [Trust Graph Artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) → [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) → [Agent Name Assurance Baseline](https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline)
 
-4. **Interoperability needs evidence, profiles, and repeatable control surfaces.**  
-   Cross-ecosystem trust cannot depend on interpretation alone. It needs profiles, conformance pathways, evidence contracts, and deployable assurance mechanisms.
+### Trust registries, conformance, and assurance
 
-## Ecosystem map
+This lane moves trust-registry implementations beyond protocol compliance toward repeatable testing, portable evidence, security profiling, and reviewable assurance conclusions.
+
+**Adoption path:** [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) → [Reference verifier](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) → [TRQP Conformance Suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) → [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub)
+
+### Agentic systems and machine-readable trust
+
+Identity alone is insufficient for software agents. The portfolio examines intelligible names, bounded mandates, delegation chains, operational constraints, revocation, and evidence that a relying party can verify.
+
+**Related work:** [AGTP](https://github.com/sankarshanmukhopadhyay/agtp) · [ERC-8004 CSP](https://github.com/sankarshanmukhopadhyay/ERC-8004-CSP) · [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas)
+
+### Applied systems and research
+
+- [**KiranaOS**](https://github.com/sankarshanmukhopadhyay/kiranaos): an applied operations platform developed through staged, testable releases.
+- [**Digital Governance Paper Notes**](https://github.com/sankarshanmukhopadhyay/digital-governance-paper-notes): structured governance-first reviews of research and policy papers.
+- [**DTG ZKP Task Force**](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf): implementation and interoperability guidance for zero-knowledge proofs.
+
+## How the repositories fit together
 
 ```text
-Trust Registry Infrastructure
-├── TRQP Assurance Hub
-├── TRQP Conformance Suite
-└── TRQP-TSPP
-
-Assurance and Conformance
-└── DTG Conformance & Assurance (DCAS)
-
-Operational AI Governance
-├── DPI AI Governance Artifacts
-└── DPI AI Governance Lab
-
-Agent Identity and Delegated-Action Assurance
-├── Agent Name Assurance Baseline
-├── Trust Infrastructure Schemas
-└── ERC-8004 CSP
-
-Executable Governance Incubation
-└── Trust Graph Artifacts (TGA)
-
-Conceptual Foundations
-└── Trust Systems Meta Model (TSMM)
+Governance problem
+        ↓
+Canonical concepts            Trust Systems Meta Model
+        ↓
+Portable contracts            Trust Infrastructure Schemas
+        ↓
+Governance patterns           Trust Graph Artifacts
+        ↓
+Domain profiles               Agent / TRQP / ZKP projects
+        ↓
+Tests and reference systems   Conformance suites and implementations
+        ↓
+Portable evidence             Assurance conclusions and audit records
 ```
 
+The profile repository maintains the portfolio’s classification and relationship metadata. It does **not** override the governance, normative authority, or release decisions of individual projects.
 
-## Portfolio architecture
+- [Explore the portfolio documentation](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/)
+- [Review portfolio architecture](docs/portfolio-architecture.md)
+- [Inspect the repository-status registry](data/repository-status.yaml)
+- [Inspect cross-repository relationships](data/portfolio-relationships.yaml)
+- [Review governance](GOVERNANCE.md)
 
-This portfolio is organized as a set of related but independently usable repositories. The repositories are intentionally not treated as a monorepo. They form a federated trust infrastructure portfolio where different projects play different roles: conceptual modeling, schema expression, assurance profiling, conformance testing, evidence generation, and adoption guidance.
+## Verification
 
-A more detailed relationship model is maintained in:
-
-- [Portfolio Governance Control Surface](portfolio/README.md)
-- [Portfolio Architecture](portfolio/architecture.md)
-- [Portfolio Drift Review](portfolio/drift-review.md)
-- [Adoption Readiness Checklist](portfolio/adoption-checklist.md)
-- [Machine-readable Portfolio Relationships](data/portfolio-relationships.yaml)
-- [Release Impact Records](portfolio/release-impact/)
-
-These files track how the repositories relate to each other, which repositories act as upstream conceptual or schema layers, which ones produce evidence or assurance outputs, and where drift should be monitored as the portfolio evolves. The YAML relationship file is intended to become the reviewable source of truth for future graph generation, release impact review, and cross-repo drift checks.
-
-## Portfolio map
-
-### 1. Trust registry infrastructure
-
-Implementation and assurance pathways for trust registries and related trust distribution systems.
-
-- [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub)
-- [TRQP Conformance Suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite)
-- [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP)
-
-These repositories collectively explore how trust registry deployments can become testable, auditable, and portable across ecosystems rather than remaining largely declarative. Together they provide a **non-monorepo adoption path** for TRQP ecosystems that want assurance without collapsing implementation diversity.
-
-### 2. Assurance and conformance systems
-
-Portable conformance methods, assurance overlays, evidence bundles, and verifier-oriented evaluation workflows.
-
-- [DTG Conformance & Assurance (DCAS)](https://github.com/sankarshanmukhopadhyay/dtg-conformance-assurance)
-
-This layer focuses on the repeatable evaluation of trust claims. The aim is to move from informal ecosystem confidence to structured, reviewable, and reusable assurance outputs.
-
-### 3. Operational AI governance
-
-Governance artifacts and implementation scaffolding for AI systems operating in institutional and public-interest settings.
-
-- [DPI AI Governance Artifacts](https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-artifacts)
-- [DPI AI Governance Lab](https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-lab)
-
-The emphasis here is practical: reusable controls, review structures, policy artifacts, and governance templates that can be deployed rather than merely discussed.
-
-### 4. Agent identity and delegated-action assurance
-
-Security baselines and machine-readable trust structures for software agents participating in trust ecosystems.
-
-- [Agent Name Assurance Baseline](https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline)
-- [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas)
-
-This cluster focuses on a problem that is becoming harder, not easier: how relying parties should identify, classify, and trust software agents that may act with delegated authority across systems. The central question is not just whether an agent exists, but whether it is operating under intelligible names, bounded mandates, and reviewable assurance expectations.
-
-The **Trust Infrastructure Schemas** repo provides a machine-readable schema layer for expressing trust actors, claims, bindings, and structural relationships that recur across registry, assurance, and agent participation workflows.
-
-This lane is complemented by cross-portfolio assurance work, especially [DTG Conformance & Assurance (DCAS)](https://github.com/sankarshanmukhopadhyay/dtg-conformance-assurance), which provides evaluation and verifier-oriented assessment paths for operational trust claims.
-
-Additional ecosystem-specific bindings and profiles, including [ERC-8004 CSP](https://github.com/sankarshanmukhopadhyay/ERC-8004-CSP), extend parts of this work into substrate-specific agent registration and verification environments. ERC-8004 CSP is the Ethereum-facing branch of this broader agent assurance logic rather than the primary anchor of the portfolio.
-
-### 5. Executable governance incubation
-
-Governance arguments translated into inspectable patterns, profiles, evidence structures, and negative assurance tests before portfolio-wide normalization.
-
-- [Trust Graph Artifacts (TGA)](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts)
-
-TGA is the portfolio's incubation layer for executable governance. It may propose candidate artifacts and failure models, while TSMM retains authority over canonical semantics and TIS retains authority over portable schema contracts.
-
-### 6. Conceptual foundations and abstract modeling
-
-Shared vocabulary and abstract reference modeling across trust systems.
-
-- [Trust Systems Meta Model (TSMM)](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model)
-
-TSMM captures recurring structural patterns across the portfolio: entities and roles, bounded authority, artifacts and claims, policy-governed decisions, evidence, verification, and downstream effects. It is useful for readers who want to understand the deeper architectural assumptions connecting the operational repositories.
-
-## Start here
-
-Different readers usually enter this work through different operational problems.
-
-### If you care about trust registries and verifiable data infrastructure
-
-Start with:
-
-- [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub)
-- [TRQP Conformance Suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite)
-- [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP)
-
-Together these form a practical **non-monorepo adoption path** for making trust registry behavior testable and assurance claims exportable.
-
-### If you care about assurance and conformance evaluation
-
-Start with:
-
-- [DTG Conformance & Assurance (DCAS)](https://github.com/sankarshanmukhopadhyay/dtg-conformance-assurance)
-
-This is the clearest entry point into the portfolio’s work on verifier-oriented assessment, portable assurance outputs, and repeatable trust evaluation methods.
-
-### If you care about AI governance in deployable form
-
-Start with:
-
-- [DPI AI Governance Artifacts](https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-artifacts)
-- [DPI AI Governance Lab](https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-lab)
-
-These projects translate governance concepts into control structures, review mechanisms, and reusable artifacts.
-
-### If you care about agent trust, naming, and delegated participation
-
-Start with:
-
-- [Agent Name Assurance Baseline](https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline)
-- [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas)
-
-This is the most direct path into the portfolio’s work on agent identity, naming discipline, machine-readable trust structures, and assurance expectations for delegated action.
-
-### If you care about executable governance and delegation assurance
-
-Start with:
-
-- [Trust Graph Artifacts (TGA)](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts)
-- [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas)
-
-This path shows how governance claims become testable patterns, lineage evidence, schema bindings, and assurance cases without collapsing research, semantic-model, and schema authority into one repository.
-
-### If you want the abstract model behind the portfolio
-
-Start with:
-
-- [Trust Systems Meta Model (TSMM)](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model)
-
-TSMM is not a prerequisite for using the operational repositories. It is the place to go if you want the shared language and model logic behind them.
-
-## Ten-minute portfolio verification
-
-Clone this profile repository and run:
+The portfolio control plane is machine-verifiable:
 
 ```bash
+git clone https://github.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay.git
+cd sankarshanmukhopadhyay
 python -m pip install PyYAML
 python scripts/validate_portfolio.py
+python scripts/check_internal_links.py
 ```
 
-A successful run verifies that repository classifications are unique, authority scopes do not overlap, relationship endpoints exist, adoption paths resolve, required governance files are present, and active review dates have not expired. The command produces structural evidence about this coordination repository; it does not substitute for conformance evidence generated by member projects.
+These checks verify portfolio structure, authority uniqueness, adoption-path resolution, relationship integrity, review dates, and internal documentation links. Project-level conformance evidence remains the responsibility of each member repository.
 
-## Managing the portfolio
+## Writing and ecosystem work
 
-Cross-repository governance is maintained in the [Portfolio Governance Control Surface](portfolio/README.md). It provides the relationship registry, drift-review procedure, adoption gate, release-impact ledger, versioned evidence, and an automated validation command:
+I publish **The Trust Graph**, a long-form exploration of digital trust infrastructure, delegated authority, agentic systems, and governance-by-design.
 
-```bash
-python scripts/validate_portfolio.py
-```
+[The Trust Graph](https://thetrustgraph.substack.com) · [LinkedIn](https://www.linkedin.com/in/sankarshan) · [About](https://about.me/sankarshan.mukhopadhyay/)
 
-The profile repository coordinates the portfolio but does not override the release authority of any individual project.
-
-## Standards and ecosystem orientation
-
-I contribute to and draw from work across Trust Over IP, LF Decentralized Trust, UN/CEFACT, and adjacent standards and implementation ecosystems. The portfolio is intended to help convert standards-aligned trust claims into artifacts, controls, and assurance paths that can survive deployment.
-
-## Writing and public work
-
-### The Trust Graph
-
-Essays on digital trust infrastructure, governance-by-design, delegated authority, and verifiable data economies.
-
-- [Substack](https://thetrustgraph.substack.com)
-
-### Elsewhere
-
-- [LinkedIn](https://www.linkedin.com/in/sankarshan)
-- [About](https://about.me/sankarshan.mukhopadhyay/)
+My work engages with Trust Over IP, LF Decentralized Trust, UN/CEFACT, and adjacent standards and implementation communities. The recurring objective is to connect policy intent to deployable controls and verifiable outcomes.
 
 ## Collaboration
 
-This portfolio is most useful for people who are:
-
-- implementing trust registries or verifiable data infrastructure
-- building assurance pipelines and evidence workflows
-- operationalizing AI governance in institutional settings
-- designing trust, identity, and control surfaces for software agents
-
-If that is your problem space, open a GitHub issue with:
-
-1. your use case in one paragraph  
-2. your constraints, including policy, latency, budget, and ecosystem  
-3. a concrete definition of done  
-
-Small, testable increments beat large rewrites.  
-Operational clarity beats ceremonial confidence.
+Useful collaboration begins with a concrete deployment or assurance problem. Open an issue describing the operating context, authority model, constraints, expected evidence, and a testable definition of done.

@@ -1,19 +1,17 @@
-# Release Impact Records
+# Release-impact evidence ledger
 
-Create one Markdown record for any change that alters cross-repository compatibility, authority, adoption sequence, or assurance expectations.
+This directory stores completed cross-repository impact records when a substantive member-repository release changes shared semantics, schemas, profiles, adoption paths, tests, or evidence contracts.
 
-Suggested filename:
+Use [`../release-impact-template.md`](../release-impact-template.md) when creating a record.
 
-```text
-YYYY-MM-DD-short-change-name.md
-```
+A record should identify:
 
-Required sections:
+- the triggering repository and release;
+- affected repositories and artifacts;
+- authority and compatibility implications;
+- validation performed;
+- evidence produced;
+- migration or revocation actions;
+- unresolved risks and owners.
 
-1. Change summary
-2. Participating repositories
-3. Authority impact
-4. Compatibility impact
-5. Validation evidence
-6. Migration or revocation action
-7. Known limitations
+No release is created from this profile repository. This ledger records portfolio impact while member repositories retain release authority.

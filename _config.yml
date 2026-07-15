@@ -1,10 +1,18 @@
 title: Trust Infrastructure Portfolio
-description: A governed portfolio of interoperable trust-infrastructure projects, assurance systems, and executable governance artifacts.
+description: Executable governance, trust infrastructure, agent assurance, conformance systems, and machine-verifiable evidence.
+url: https://sankarshanmukhopadhyay.github.io
+baseurl: /sankarshanmukhopadhyay
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-seo-tag
+header_pages:
+  - index.md
+  - docs/portfolio-status.md
+  - docs/portfolio-architecture.md
+  - GOVERNANCE.md
 exclude:
   - scripts
-  - data
-  - portfolio/release-impact
+  - .github
+  - Gemfile
+  - Gemfile.lock
