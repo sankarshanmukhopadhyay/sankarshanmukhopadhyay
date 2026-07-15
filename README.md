@@ -2,7 +2,7 @@
 
 ### Building executable governance, trust infrastructure, and assurance systems
 
-I work at the intersection of **digital trust**, **agentic systems**, **verifiable data**, **registries**, and **conformance engineering**. My repositories translate governance claims into specifications, schemas, tests, evidence flows, and reference implementations that can be inspected and challenged in operation.
+I build testable trust infrastructure for institutions deploying verifiable data, trust registries, and agentic systems. My repositories translate governance requirements into specifications, schemas, tests, evidence flows, and reference implementations that can be executed, inspected, audited, and independently verified.
 
 > **Core premise:** trust becomes infrastructure only when authority, constraints, revocation, evidence, and redress can be made operational and independently verified.
 
