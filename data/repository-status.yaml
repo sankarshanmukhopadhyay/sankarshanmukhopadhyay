@@ -1,0 +1,125 @@
+schema_version: "1.0"
+portfolio_reviewed_on: "2026-07-15"
+repositories:
+  - name: sankarshanmukhopadhyay
+    tier: flagship
+    lifecycle: active
+    role: portfolio-coordination
+    portfolio_member: true
+    authority_scope: [portfolio-classification, relationship-metadata]
+    release_policy: commit-only
+    last_portfolio_review: "2026-07-15"
+    next_review: "2026-10-01"
+  - name: trust-graph-artifacts
+    tier: flagship
+    lifecycle: active
+    role: executable-governance-incubator
+    portfolio_member: true
+    authority_scope: [governance-patterns, implementation-guidance, negative-assurance-tests]
+    documentation_url: https://sankarshanmukhopadhyay.github.io/trust-graph-artifacts/
+    last_portfolio_review: "2026-07-15"
+    next_review: "2026-10-01"
+  - name: trust-systems-meta-model
+    tier: flagship
+    lifecycle: active
+    role: canonical-semantic-model
+    portfolio_member: true
+    authority_scope: [canonical-semantics]
+    last_portfolio_review: "2026-07-15"
+    next_review: "2026-10-01"
+  - name: trust-infrastructure-schemas
+    tier: flagship
+    lifecycle: active
+    role: portable-schema-contracts
+    portfolio_member: true
+    authority_scope: [portable-schema-contracts]
+    last_portfolio_review: "2026-07-15"
+    next_review: "2026-10-01"
+  - name: agent-name-assurance-baseline
+    tier: flagship
+    lifecycle: active
+    role: agent-name-assurance
+    portfolio_member: true
+    authority_scope: [agent-name-assurance-baseline]
+    last_portfolio_review: "2026-07-15"
+    next_review: "2026-10-01"
+  - name: trqp-assurance-hub
+    tier: flagship
+    lifecycle: active
+    role: trust-registry-assurance
+    portfolio_member: true
+    authority_scope: [trqp-assurance-workflows]
+    last_portfolio_review: "2026-07-15"
+    next_review: "2026-10-01"
+  - name: trqp-conformance-suite
+    tier: flagship
+    lifecycle: active
+    role: trqp-conformance
+    portfolio_member: true
+    authority_scope: [trqp-conformance-tests]
+    last_portfolio_review: "2026-07-15"
+    next_review: "2026-10-01"
+  - name: TRQP-TSPP
+    tier: flagship
+    lifecycle: active
+    role: trqp-security-profile
+    portfolio_member: true
+    authority_scope: [trqp-security-profile]
+    last_portfolio_review: "2026-07-15"
+    next_review: "2026-10-01"
+  - name: dtg-conformance-assurance
+    tier: flagship
+    lifecycle: active
+    role: general-assurance-framework
+    portfolio_member: true
+    authority_scope: [general-conformance-assurance]
+    last_portfolio_review: "2026-07-15"
+    next_review: "2026-10-01"
+  - name: cawg-trqp-verifier-refimpl
+    tier: flagship
+    lifecycle: active
+    role: reference-implementation
+    portfolio_member: true
+    authority_scope: [trqp-reference-verifier]
+    last_portfolio_review: "2026-07-15"
+    next_review: "2026-10-01"
+  - name: kiranaos
+    tier: flagship
+    lifecycle: active
+    role: applied-product
+    portfolio_member: true
+    authority_scope: [kirana-operations-platform]
+    last_portfolio_review: "2026-07-15"
+    next_review: "2026-10-01"
+  - name: digital-governance-paper-notes
+    tier: flagship
+    lifecycle: active
+    role: research-analysis
+    portfolio_member: true
+    authority_scope: [research-review-notes]
+    last_portfolio_review: "2026-07-15"
+    next_review: "2026-10-01"
+  - name: agtp
+    tier: incubating
+    lifecycle: active
+    role: agent-governance-protocol
+    portfolio_member: true
+    authority_scope: [agent-governance-protocol]
+    last_portfolio_review: "2026-07-15"
+    next_review: "2026-09-15"
+  - name: dtgwg-zkp-tf
+    tier: incubating
+    lifecycle: active
+    role: zkp-implementation-guidance
+    portfolio_member: true
+    authority_scope: [zkp-implementation-guidance]
+    last_portfolio_review: "2026-07-15"
+    next_review: "2026-09-15"
+  - name: ERC-8004-CSP
+    tier: incubating
+    lifecycle: active
+    role: ecosystem-specific-agent-profile
+    portfolio_member: true
+    authority_scope: [erc-8004-assurance-profile]
+    last_portfolio_review: "2026-07-15"
+    next_review: "2026-09-15"

@@ -1,0 +1,10 @@
+title: Trust Infrastructure Portfolio
+description: A governed portfolio of interoperable trust-infrastructure projects, assurance systems, and executable governance artifacts.
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-seo-tag
+exclude:
+  - scripts
+  - data
+  - portfolio/release-impact

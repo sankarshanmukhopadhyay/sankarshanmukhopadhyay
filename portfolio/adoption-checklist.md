@@ -1,21 +1,34 @@
-# Coordinated Release Adoption Checklist
+# Flagship Adoption Readiness Gate
 
-## Authority and scope
+A flagship repository should satisfy every required control or record a time-bound exception.
 
-- [ ] Each repository remains authoritative for its own layer.
-- [ ] Research-derived concepts are marked as candidate artifacts until normalized.
-- [ ] Breaking and non-breaking changes are identified explicitly.
+## Governance
 
-## Machine-verifiable evidence
+- [ ] Scope and authority are explicit.
+- [ ] Delegation and supersession rules are documented.
+- [ ] Maintainer and review date are recorded.
 
-- [ ] Relationship and impact metadata are updated.
-- [ ] Schemas, examples, and negative fixtures validate.
-- [ ] Cross-repository identifiers and version references resolve.
-- [ ] Release evidence records test commands and outcomes.
+## Adoption
 
-## Adoption readiness
+- [ ] The README explains the operational problem and intended user.
+- [ ] A first valid result can be obtained in approximately ten minutes.
+- [ ] Stable, experimental, and out-of-scope features are distinguishable.
 
-- [ ] README and getting-started paths describe the new capability.
-- [ ] At least one end-to-end implementer example is present.
-- [ ] Migration impact is documented.
-- [ ] Commit metadata and release notes are publication-ready.
+## Executability
+
+- [ ] A local validation command exists.
+- [ ] CI runs the same validation.
+- [ ] Positive and negative tests exist where applicable.
+- [ ] Machine-readable artifacts are validated.
+
+## Assurance
+
+- [ ] Normative claims map to tests or evidence.
+- [ ] Evidence outputs are reproducible and versioned.
+- [ ] Known limitations and unresolved findings are visible.
+
+## Documentation
+
+- [ ] Architecture and adoption guidance are current.
+- [ ] GitHub Pages renders where documentation is a primary artifact.
+- [ ] Links and cross-repository references are checked.
