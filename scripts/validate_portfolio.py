@@ -24,6 +24,9 @@ REQUIRED_FILES = [
 ]
 VALID_TIERS = {"flagship", "incubating", "historical", "upstream-fork", "unrelated"}
 VALID_LIFECYCLES = {"active", "maintenance", "archived", "superseded"}
+VALID_PROVENANCE = {"original", "fork", "mirror", "archived-import", "collaborative-host"}
+VALID_GOVERNANCE = {"controlled", "shared", "fork-only", "none"}
+VALID_ADOPTION = {"not-applicable", "not-proposed", "proposed", "partially-accepted", "accepted", "rejected", "not-asserted"}
 
 
 def load(path: Path) -> dict:
@@ -73,6 +76,22 @@ def main() -> int:
             errors.append(f"{name}: invalid lifecycle {repo.get('lifecycle')!r}")
         if not repo.get("role"):
             errors.append(f"{name}: missing role")
+        provenance = repo.get("provenance")
+        if provenance not in VALID_PROVENANCE:
+            errors.append(f"{name}: invalid provenance {provenance!r}")
+        if repo.get("portfolio_governance") not in VALID_GOVERNANCE:
+            errors.append(f"{name}: invalid portfolio_governance {repo.get('portfolio_governance')!r}")
+        if repo.get("upstream_adoption_status") not in VALID_ADOPTION:
+            errors.append(f"{name}: invalid upstream_adoption_status {repo.get('upstream_adoption_status')!r}")
+        if not repo.get("maturity"):
+            errors.append(f"{name}: missing maturity")
+        if provenance == "fork":
+            if not repo.get("upstream"):
+                errors.append(f"{name}: fork must declare upstream")
+            if repo.get("portfolio_governance") != "fork-only":
+                errors.append(f"{name}: fork must use portfolio_governance 'fork-only'")
+        elif repo.get("upstream"):
+            errors.append(f"{name}: non-fork repository must not declare upstream")
         for field in ("last_portfolio_review", "next_review"):
             try:
                 date.fromisoformat(str(repo[field]))
@@ -94,15 +113,32 @@ def main() -> int:
         if owner not in names:
             errors.append(f"authority {authority!r} references unknown repository {owner!r}")
 
+    external = {item.get("name") for item in relationships.get("external_repositories", []) if isinstance(item, dict)}
+    valid_relationship_types = set(relationships.get("relationship_types", []))
+    fork_relationships: set[tuple[str, str]] = set()
+
     for item in relationships.get("relationships", []):
         if not isinstance(item, dict):
             errors.append("relationship entries must be mappings")
             continue
-        for endpoint in ("from", "to"):
-            if item.get(endpoint) not in names:
-                errors.append(f"relationship {endpoint} references unknown repository {item.get(endpoint)!r}")
-        if not item.get("type") or not item.get("constraint"):
+        source, target = item.get("from"), item.get("to")
+        if source not in names:
+            errors.append(f"relationship from references unknown repository {source!r}")
+        if target not in names and target not in external:
+            errors.append(f"relationship to references unknown repository {target!r}")
+        rel_type = item.get("type")
+        if not rel_type or not item.get("constraint"):
             errors.append(f"relationship {item!r} requires type and constraint")
+        elif valid_relationship_types and rel_type not in valid_relationship_types:
+            errors.append(f"relationship uses ungoverned type {rel_type!r}")
+        if rel_type == "fork-of":
+            fork_relationships.add((source, target))
+
+    for repo in repos:
+        if isinstance(repo, dict) and repo.get("provenance") == "fork":
+            pair = (repo.get("name"), repo.get("upstream"))
+            if pair not in fork_relationships:
+                errors.append(f"{repo.get('name')}: missing matching fork-of relationship to {repo.get('upstream')}")
 
     for path_name, path in relationships.get("adoption_paths", {}).items():
         if not isinstance(path, list) or len(path) < 2:

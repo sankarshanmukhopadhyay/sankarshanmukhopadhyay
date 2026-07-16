@@ -1,13 +1,15 @@
 ## [Unreleased]
 
+### Added
+
+- Added explicit repository provenance, upstream location, portfolio-governance scope, maturity, and upstream-adoption status metadata.
+- Added machine-verifiable `fork-of` relationships for `dtgwg-zkp-tf`, `ctwg-main-glossary`, and `agtp`.
+
 ### Changed
 
-- Rebuilt the root README as a public-facing GitHub profile portfolio.
-- Added a dedicated GitHub Pages landing page and human-readable portfolio-status page.
-- Corrected Pages source, navigation, and published-link behavior.
-- Added a real release-impact ledger index instead of linking to a non-existent directory.
-- Added automated internal Markdown link validation.
-- Preserved machine-readable governance registries and portfolio authority boundaries behind the presentation layer.
+- Rebalanced featured work around GAAM, Agent Registry Protocol, TSMM, TIS, Trust Graph Artifacts, and the TRQP assurance stack.
+- Separated original flagship work from upstream-derived collaborative work.
+- Updated portfolio architecture, status documentation, roadmap, and validation controls for fork provenance and authority boundaries.
 
 # Changelog
 

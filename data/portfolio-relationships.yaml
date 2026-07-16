@@ -1,47 +1,89 @@
-schema_version: "1.0"
+schema_version: '1.1'
+relationship_types:
+- normative-dependency
+- profile-adoption
+- informative-alignment
+- supports
+- constrains
+- tested-by
+- evaluated-by
+- produces-evidence-for
+- reference-implementation-of
+- incubates
+- fork-of
 authorities:
+  governance_authority_assurance_model: governance-authority-assurance-metamodel
   canonical_semantics: trust-systems-meta-model
   portable_schema_contracts: trust-infrastructure-schemas
   governance_patterns: trust-graph-artifacts
+  agent_registry_protocol: agent-registry-protocol
   portfolio_classification: sankarshanmukhopadhyay
 relationships:
-  - from: trust-systems-meta-model
-    to: trust-infrastructure-schemas
-    type: informs
-    constraint: schemas must not silently redefine canonical semantics
-  - from: trust-infrastructure-schemas
-    to: trust-graph-artifacts
-    type: constrains
-    constraint: portable contracts remain authoritative in TIS
-  - from: trust-graph-artifacts
-    to: agtp
-    type: informs
-    constraint: candidate governance patterns require protocol-specific adoption
-  - from: trust-infrastructure-schemas
-    to: agent-name-assurance-baseline
-    type: supports
-    constraint: agent naming claims must preserve schema authority boundaries
-  - from: TRQP-TSPP
-    to: trqp-conformance-suite
-    type: tested-by
-    constraint: profile requirements require conformance coverage
-  - from: trqp-conformance-suite
-    to: trqp-assurance-hub
-    type: produces-evidence-for
-    constraint: assurance conclusions must retain test provenance
-  - from: cawg-trqp-verifier-refimpl
-    to: trqp-conformance-suite
-    type: evaluated-by
-    constraint: reference status does not replace conformance evidence
+- from: trust-systems-meta-model
+  to: governance-authority-assurance-metamodel
+  type: informative-alignment
+  constraint: semantic influence does not create a normative dependency or shared release authority
+- from: trust-systems-meta-model
+  to: trust-infrastructure-schemas
+  type: informative-alignment
+  constraint: schemas must not silently redefine canonical semantics
+- from: trust-infrastructure-schemas
+  to: trust-graph-artifacts
+  type: supports
+  constraint: portable contracts remain authoritative in TIS
+- from: governance-authority-assurance-metamodel
+  to: agent-registry-protocol
+  type: informative-alignment
+  constraint: ARPA retains protocol-specific normative authority and explicit adoption decisions
+- from: trust-infrastructure-schemas
+  to: agent-name-assurance-baseline
+  type: supports
+  constraint: agent naming claims must preserve schema authority boundaries
+- from: TRQP-TSPP
+  to: trqp-conformance-suite
+  type: tested-by
+  constraint: profile requirements require conformance coverage
+- from: cawg-trqp-verifier-refimpl
+  to: trqp-conformance-suite
+  type: evaluated-by
+  constraint: reference status does not replace conformance evidence
+- from: trqp-conformance-suite
+  to: trqp-assurance-hub
+  type: produces-evidence-for
+  constraint: assurance conclusions must retain test and implementation provenance
+- from: dtgwg-zkp-tf
+  to: trustoverip/dtgwg-zkp-tf
+  type: fork-of
+  constraint: the fork conveys no authority over upstream governance, releases, or adoption
+- from: ctwg-main-glossary
+  to: trustoverip/ctwg-main-glossary
+  type: fork-of
+  constraint: the fork conveys no authority over upstream governance, releases, or adoption
+- from: agtp
+  to: nomoticai/agtp
+  type: fork-of
+  constraint: the fork conveys no authority over upstream governance, releases, or adoption
+external_repositories:
+- name: trustoverip/dtgwg-zkp-tf
+  kind: upstream
+- name: trustoverip/ctwg-main-glossary
+  kind: upstream
+- name: nomoticai/agtp
+  kind: upstream
 adoption_paths:
+  governance_to_assurance:
+  - governance-authority-assurance-metamodel
+  - trust-systems-meta-model
+  - trust-infrastructure-schemas
+  - trust-graph-artifacts
+  - dtg-conformance-assurance
+  agent_authority_control:
+  - governance-authority-assurance-metamodel
+  - trust-infrastructure-schemas
+  - agent-registry-protocol
+  - agent-name-assurance-baseline
   trqp:
-    - TRQP-TSPP
-    - cawg-trqp-verifier-refimpl
-    - trqp-conformance-suite
-    - trqp-assurance-hub
-  delegated_authority:
-    - trust-systems-meta-model
-    - trust-infrastructure-schemas
-    - trust-graph-artifacts
-    - agent-name-assurance-baseline
-    - agtp
+  - TRQP-TSPP
+  - cawg-trqp-verifier-refimpl
+  - trqp-conformance-suite
+  - trqp-assurance-hub
