@@ -1,257 +1,695 @@
-schema_version: '1.1'
-portfolio_reviewed_on: '2026-07-16'
+schema_version: '2.0'
+portfolio_scope:
+  mode: curated
+  statement: This registry governs the curated trust-infrastructure portfolio and explicit account-level dispositions;
+    it is not an assertion that every public repository is a portfolio member.
+controlled_vocabularies:
+  portfolio_disposition:
+  - included
+  - adjacent
+  - upstream-reference
+  - historical
+  - unrelated
+  - pending-review
+  tier:
+  - flagship
+  - featured
+  - supporting
+  - incubating
+  - upstream-collaboration
+  - historical
+  maturity:
+  - exploratory
+  - working-draft
+  - implementation-draft
+  - candidate
+  - pilot-ready
+  - stable
+  - maintenance
+  - historical
+  - upstream-tracking
+  lifecycle:
+  - active
+  - maintenance
+  - superseded
+  - archived
+  operational_status:
+  - active-development
+  - active-validation
+  - pilot-use
+  - stable-maintenance
+  - upstream-tracking
+  - dormant
+  - superseded
+  - archived
+  specification_status:
+  - not-applicable
+  - working-draft
+  - community-draft
+  - candidate-specification
+  - stable-specification
+  - upstream-controlled
 repositories:
 - name: sankarshanmukhopadhyay
+  portfolio_disposition: included
   tier: flagship
-  lifecycle: active
-  role: portfolio-coordination
+  maturity: stable
+  lifecycle: maintenance
+  operational_status: stable-maintenance
+  specification_status: not-applicable
+  role: portfolio-governance-and-discovery
   portfolio_member: true
   authority_scope:
   - portfolio-classification
-  - relationship-metadata
-  release_policy: commit-only
-  last_portfolio_review: '2026-07-16'
+  last_portfolio_review: '2026-07-18'
   next_review: '2026-10-01'
   provenance: original
   portfolio_governance: controlled
-  maturity: active
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
+    required: true
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: governance-authority-assurance-metamodel
+  portfolio_disposition: included
+  tier: flagship
+  maturity: candidate
+  lifecycle: active
+  operational_status: active-validation
+  specification_status: candidate-specification
+  role: normative-governance-authority-model
+  portfolio_member: true
+  authority_scope:
+  - governance-authority-assurance-metamodel
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-10-01'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: agent-registry-protocol
+  portfolio_disposition: included
+  tier: flagship
+  maturity: pilot-ready
+  lifecycle: active
+  operational_status: active-validation
+  specification_status: community-draft
+  role: agent-registry-authority-control-plane
+  portfolio_member: true
+  authority_scope:
+  - agent-registry-protocol
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-10-01'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: trust-systems-meta-model
+  portfolio_disposition: included
+  tier: flagship
+  maturity: candidate
+  lifecycle: active
+  operational_status: active-validation
+  specification_status: candidate-specification
+  role: canonical-semantic-model
+  portfolio_member: true
+  authority_scope:
+  - canonical-semantics
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-10-01'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: trust-infrastructure-schemas
+  portfolio_disposition: included
+  tier: flagship
+  maturity: implementation-draft
+  lifecycle: active
+  operational_status: active-development
+  specification_status: working-draft
+  role: portable-schema-contracts
+  portfolio_member: true
+  authority_scope:
+  - portable-schema-contracts
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-10-01'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
   upstream: null
   upstream_adoption_status: not-applicable
 - name: trust-graph-artifacts
+  portfolio_disposition: included
   tier: flagship
+  maturity: implementation-draft
   lifecycle: active
+  operational_status: active-development
+  specification_status: not-applicable
   role: executable-governance-incubator
   portfolio_member: true
   authority_scope:
   - governance-patterns
   - implementation-guidance
   - negative-assurance-tests
-  documentation_url: https://sankarshanmukhopadhyay.github.io/trust-graph-artifacts/
-  last_portfolio_review: '2026-07-16'
+  last_portfolio_review: '2026-07-18'
   next_review: '2026-10-01'
   provenance: original
   portfolio_governance: controlled
-  maturity: active
-  upstream: null
-  upstream_adoption_status: not-applicable
-- name: trust-systems-meta-model
-  tier: flagship
-  lifecycle: active
-  role: canonical-semantic-model
-  portfolio_member: true
-  authority_scope:
-  - canonical-semantics
-  last_portfolio_review: '2026-07-16'
-  next_review: '2026-10-01'
-  provenance: original
-  portfolio_governance: controlled
-  maturity: active
-  upstream: null
-  upstream_adoption_status: not-applicable
-- name: trust-infrastructure-schemas
-  tier: flagship
-  lifecycle: active
-  role: portable-schema-contracts
-  portfolio_member: true
-  authority_scope:
-  - portable-schema-contracts
-  last_portfolio_review: '2026-07-16'
-  next_review: '2026-10-01'
-  provenance: original
-  portfolio_governance: controlled
-  maturity: active
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
   upstream: null
   upstream_adoption_status: not-applicable
 - name: agent-name-assurance-baseline
-  tier: incubating
+  portfolio_disposition: included
+  tier: supporting
+  maturity: implementation-draft
   lifecycle: active
+  operational_status: active-development
+  specification_status: working-draft
   role: agent-name-assurance
   portfolio_member: true
   authority_scope:
   - agent-name-assurance-baseline
-  last_portfolio_review: '2026-07-16'
+  last_portfolio_review: '2026-07-18'
   next_review: '2026-10-01'
   provenance: original
   portfolio_governance: controlled
-  maturity: active
-  upstream: null
-  upstream_adoption_status: not-applicable
-- name: trqp-assurance-hub
-  tier: flagship
-  lifecycle: active
-  role: trust-registry-assurance
-  portfolio_member: true
-  authority_scope:
-  - trqp-assurance-workflows
-  last_portfolio_review: '2026-07-16'
-  next_review: '2026-10-01'
-  provenance: original
-  portfolio_governance: controlled
-  maturity: active-stack-component
-  upstream: null
-  upstream_adoption_status: not-applicable
-- name: trqp-conformance-suite
-  tier: flagship
-  lifecycle: active
-  role: trqp-conformance
-  portfolio_member: true
-  authority_scope:
-  - trqp-conformance-tests
-  last_portfolio_review: '2026-07-16'
-  next_review: '2026-10-01'
-  provenance: original
-  portfolio_governance: controlled
-  maturity: active-stack-component
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
   upstream: null
   upstream_adoption_status: not-applicable
 - name: TRQP-TSPP
+  portfolio_disposition: included
   tier: flagship
+  maturity: candidate
   lifecycle: active
+  operational_status: active-validation
+  specification_status: candidate-specification
   role: trqp-security-profile
   portfolio_member: true
   authority_scope:
   - trqp-security-profile
-  last_portfolio_review: '2026-07-16'
+  last_portfolio_review: '2026-07-18'
   next_review: '2026-10-01'
   provenance: original
   portfolio_governance: controlled
-  maturity: active-stack-component
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: cawg-trqp-verifier-refimpl
+  portfolio_disposition: included
+  tier: flagship
+  maturity: pilot-ready
+  lifecycle: active
+  operational_status: active-validation
+  specification_status: not-applicable
+  role: trqp-reference-verifier
+  portfolio_member: true
+  authority_scope:
+  - trqp-reference-verifier
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-10-01'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: trqp-conformance-suite
+  portfolio_disposition: included
+  tier: flagship
+  maturity: pilot-ready
+  lifecycle: active
+  operational_status: active-validation
+  specification_status: not-applicable
+  role: trqp-conformance
+  portfolio_member: true
+  authority_scope:
+  - trqp-conformance-tests
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-10-01'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: trqp-assurance-hub
+  portfolio_disposition: included
+  tier: flagship
+  maturity: pilot-ready
+  lifecycle: active
+  operational_status: active-validation
+  specification_status: not-applicable
+  role: trust-registry-assurance
+  portfolio_member: true
+  authority_scope:
+  - trqp-assurance-workflows
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-10-01'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
   upstream: null
   upstream_adoption_status: not-applicable
 - name: dtg-conformance-assurance
-  tier: incubating
+  portfolio_disposition: included
+  tier: supporting
+  maturity: implementation-draft
   lifecycle: active
+  operational_status: active-development
+  specification_status: working-draft
   role: general-assurance-framework
   portfolio_member: true
   authority_scope:
   - general-conformance-assurance
-  last_portfolio_review: '2026-07-16'
+  last_portfolio_review: '2026-07-18'
   next_review: '2026-10-01'
   provenance: original
   portfolio_governance: controlled
-  maturity: active
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
   upstream: null
   upstream_adoption_status: not-applicable
-- name: cawg-trqp-verifier-refimpl
-  tier: flagship
-  lifecycle: active
-  role: reference-implementation
-  portfolio_member: true
-  authority_scope:
-  - trqp-reference-verifier
-  last_portfolio_review: '2026-07-16'
-  next_review: '2026-10-01'
-  provenance: original
-  portfolio_governance: controlled
-  maturity: active-stack-component
-  upstream: null
-  upstream_adoption_status: not-applicable
-- name: kiranaos
-  tier: flagship
-  lifecycle: active
-  role: applied-product
-  portfolio_member: true
-  authority_scope:
-  - kirana-operations-platform
-  last_portfolio_review: '2026-07-16'
-  next_review: '2026-10-01'
-  provenance: original
-  portfolio_governance: controlled
-  maturity: active
-  upstream: null
-  upstream_adoption_status: not-applicable
-- name: digital-governance-paper-notes
-  tier: flagship
-  lifecycle: active
-  role: research-analysis
-  portfolio_member: true
-  authority_scope:
-  - research-review-notes
-  last_portfolio_review: '2026-07-16'
-  next_review: '2026-10-01'
-  provenance: original
-  portfolio_governance: controlled
-  maturity: active
-  upstream: null
-  upstream_adoption_status: not-applicable
-- name: agtp
-  tier: upstream-fork
-  lifecycle: active
-  role: agent-transfer-protocol-collaboration
-  portfolio_member: true
-  authority_scope: []
-  last_portfolio_review: '2026-07-16'
-  next_review: '2026-09-15'
-  provenance: fork
-  portfolio_governance: fork-only
-  maturity: upstream-derived
-  upstream: nomoticai/agtp
-  upstream_adoption_status: not-asserted
-- name: dtgwg-zkp-tf
-  tier: upstream-fork
-  lifecycle: active
-  role: zkp-implementation-guidance
-  portfolio_member: true
-  authority_scope: []
-  last_portfolio_review: '2026-07-16'
-  next_review: '2026-09-15'
-  provenance: fork
-  portfolio_governance: fork-only
-  maturity: upstream-derived
-  upstream: trustoverip/dtgwg-zkp-tf
-  upstream_adoption_status: not-asserted
 - name: ERC-8004-CSP
-  tier: incubating
+  portfolio_disposition: included
+  tier: supporting
+  maturity: implementation-draft
   lifecycle: active
+  operational_status: active-development
+  specification_status: working-draft
   role: ecosystem-specific-agent-profile
   portfolio_member: true
   authority_scope:
   - erc-8004-assurance-profile
-  last_portfolio_review: '2026-07-16'
-  next_review: '2026-09-15'
-  provenance: original
-  portfolio_governance: controlled
-  maturity: active
-  upstream: null
-  upstream_adoption_status: not-applicable
-- name: governance-authority-assurance-metamodel
-  portfolio_member: true
-  last_portfolio_review: '2026-07-16'
+  last_portfolio_review: '2026-07-18'
   next_review: '2026-10-01'
-  tier: flagship
-  lifecycle: active
-  role: normative-governance-authority-model
-  authority_scope:
-  - governance-authority-assurance-metamodel
   provenance: original
   portfolio_governance: controlled
-  maturity: candidate-specification
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
   upstream: null
   upstream_adoption_status: not-applicable
-- name: agent-registry-protocol
+- name: kiranaos
+  portfolio_disposition: adjacent
+  tier: featured
+  maturity: implementation-draft
+  lifecycle: active
+  operational_status: active-development
+  specification_status: not-applicable
+  role: applied-product
   portfolio_member: true
-  last_portfolio_review: '2026-07-16'
+  authority_scope:
+  - kirana-operations-platform
+  last_portfolio_review: '2026-07-18'
   next_review: '2026-10-01'
-  tier: flagship
-  lifecycle: active
-  role: agent-registry-authority-control-plane
-  authority_scope:
-  - agent-registry-protocol
   provenance: original
   portfolio_governance: controlled
-  maturity: community-draft
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
   upstream: null
   upstream_adoption_status: not-applicable
-- name: ctwg-main-glossary
-  portfolio_member: true
-  last_portfolio_review: '2026-07-16'
-  next_review: '2026-09-15'
-  tier: upstream-fork
+- name: digital-governance-paper-notes
+  portfolio_disposition: adjacent
+  tier: featured
+  maturity: stable
   lifecycle: active
-  role: digital-trust-terminology-collaboration
+  operational_status: active-development
+  specification_status: not-applicable
+  role: research-analysis
+  portfolio_member: true
+  authority_scope:
+  - research-review-notes
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-10-01'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: dpi-ai-governance-lab
+  portfolio_disposition: adjacent
+  tier: supporting
+  maturity: implementation-draft
+  lifecycle: active
+  operational_status: active-development
+  specification_status: not-applicable
+  role: applied-governance-lab
+  portfolio_member: true
+  authority_scope:
+  - dpi-ai-governance-lab
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-10-01'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: dpi-ai-governance-artifacts
+  portfolio_disposition: adjacent
+  tier: supporting
+  maturity: implementation-draft
+  lifecycle: active
+  operational_status: active-development
+  specification_status: not-applicable
+  role: applied-governance-artifacts
+  portfolio_member: true
+  authority_scope:
+  - dpi-ai-governance-artifacts
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-10-01'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: arf-onramp-pack
+  portfolio_disposition: adjacent
+  tier: supporting
+  maturity: implementation-draft
+  lifecycle: active
+  operational_status: active-development
+  specification_status: working-draft
+  role: implementation-onramp
+  portfolio_member: true
+  authority_scope:
+  - arf-onramp-guidance
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-10-01'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: atal-enterprise-assurance-profile
+  portfolio_disposition: adjacent
+  tier: supporting
+  maturity: working-draft
+  lifecycle: active
+  operational_status: active-development
+  specification_status: working-draft
+  role: enterprise-assurance-profile
+  portfolio_member: true
+  authority_scope:
+  - atal-enterprise-assurance-profile
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-10-01'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: decentralized-directory-protocol
+  portfolio_disposition: pending-review
+  tier: incubating
+  maturity: working-draft
+  lifecycle: active
+  operational_status: active-development
+  specification_status: working-draft
+  role: directory-protocol-incubator
+  portfolio_member: false
+  authority_scope:
+  - decentralized-directory-protocol
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-10-01'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: false
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: PolicyMesh
+  portfolio_disposition: pending-review
+  tier: incubating
+  maturity: working-draft
+  lifecycle: active
+  operational_status: active-development
+  specification_status: working-draft
+  role: policy-enforcement-incubator
+  portfolio_member: false
+  authority_scope:
+  - policy-mesh
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-10-01'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: false
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: agtp
+  portfolio_disposition: upstream-reference
+  tier: upstream-collaboration
+  maturity: upstream-tracking
+  lifecycle: active
+  operational_status: upstream-tracking
+  specification_status: upstream-controlled
+  role: agent-transfer-protocol-collaboration
+  portfolio_member: true
   authority_scope: []
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-09-15'
   provenance: fork
   portfolio_governance: fork-only
-  maturity: upstream-derived
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
+    required: false
+  upstream: nomoticai/agtp
+  upstream_adoption_status: not-asserted
+- name: dtgwg-zkp-tf
+  portfolio_disposition: upstream-reference
+  tier: upstream-collaboration
+  maturity: upstream-tracking
+  lifecycle: active
+  operational_status: upstream-tracking
+  specification_status: upstream-controlled
+  role: zkp-implementation-guidance
+  portfolio_member: true
+  authority_scope: []
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-09-15'
+  provenance: fork
+  portfolio_governance: fork-only
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
+    required: false
+  upstream: trustoverip/dtgwg-zkp-tf
+  upstream_adoption_status: not-asserted
+- name: ctwg-main-glossary
+  portfolio_disposition: upstream-reference
+  tier: upstream-collaboration
+  maturity: upstream-tracking
+  lifecycle: active
+  operational_status: upstream-tracking
+  specification_status: upstream-controlled
+  role: digital-trust-terminology-collaboration
+  portfolio_member: true
+  authority_scope: []
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-09-15'
+  provenance: fork
+  portfolio_governance: fork-only
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
+    required: false
   upstream: trustoverip/ctwg-main-glossary
+  upstream_adoption_status: not-asserted
+- name: dtgwg-cred-tf
+  portfolio_disposition: upstream-reference
+  tier: upstream-collaboration
+  maturity: upstream-tracking
+  lifecycle: active
+  operational_status: upstream-tracking
+  specification_status: upstream-controlled
+  role: credential-task-force-collaboration
+  portfolio_member: true
+  authority_scope: []
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-09-15'
+  provenance: fork
+  portfolio_governance: fork-only
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
+    required: false
+  upstream: trustoverip/dtgwg-cred-tf
+  upstream_adoption_status: not-asserted
+- name: tswg-trust-registry-protocol
+  portfolio_disposition: upstream-reference
+  tier: upstream-collaboration
+  maturity: upstream-tracking
+  lifecycle: active
+  operational_status: upstream-tracking
+  specification_status: upstream-controlled
+  role: trust-registry-protocol-reference
+  portfolio_member: true
+  authority_scope: []
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-09-15'
+  provenance: fork
+  portfolio_governance: fork-only
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
+    required: false
+  upstream: trustoverip/tswg-trust-registry-protocol
+  upstream_adoption_status: not-asserted
+- name: conformance-test-suite
+  portfolio_disposition: upstream-reference
+  tier: upstream-collaboration
+  maturity: upstream-tracking
+  lifecycle: active
+  operational_status: upstream-tracking
+  specification_status: upstream-controlled
+  role: upstream-conformance-reference
+  portfolio_member: true
+  authority_scope: []
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-09-15'
+  provenance: fork
+  portfolio_governance: fork-only
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
+    required: false
+  upstream: trustoverip/conformance-test-suite
+  upstream_adoption_status: not-asserted
+- name: A2A
+  portfolio_disposition: pending-review
+  tier: upstream-collaboration
+  maturity: upstream-tracking
+  lifecycle: active
+  operational_status: upstream-tracking
+  specification_status: upstream-controlled
+  role: agent-protocol-reference
+  portfolio_member: false
+  authority_scope: []
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-09-15'
+  provenance: fork
+  portfolio_governance: fork-only
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
+    required: false
+  upstream: a2aproject/A2A
+  upstream_adoption_status: not-asserted
+- name: awesome-8004
+  portfolio_disposition: upstream-reference
+  tier: upstream-collaboration
+  maturity: upstream-tracking
+  lifecycle: active
+  operational_status: upstream-tracking
+  specification_status: upstream-controlled
+  role: erc-8004-reference-collection
+  portfolio_member: true
+  authority_scope: []
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-09-15'
+  provenance: fork
+  portfolio_governance: fork-only
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
+    required: false
+  upstream: erc-8004/awesome-8004
+  upstream_adoption_status: not-asserted
+- name: TokenTaxonomyFramework
+  portfolio_disposition: upstream-reference
+  tier: upstream-collaboration
+  maturity: upstream-tracking
+  lifecycle: active
+  operational_status: upstream-tracking
+  specification_status: upstream-controlled
+  role: token-taxonomy-reference
+  portfolio_member: true
+  authority_scope: []
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-09-15'
+  provenance: fork
+  portfolio_governance: fork-only
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
+    required: false
+  upstream: InterWorkAlliance/TokenTaxonomyFramework
+  upstream_adoption_status: not-asserted
+- name: DHP-Specs
+  portfolio_disposition: historical
+  tier: historical
+  maturity: historical
+  lifecycle: maintenance
+  operational_status: stable-maintenance
+  specification_status: upstream-controlled
+  role: historical-upstream-specification
+  portfolio_member: true
+  authority_scope: []
+  last_portfolio_review: '2026-07-18'
+  next_review: '2026-09-15'
+  provenance: fork
+  portfolio_governance: fork-only
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
+    required: false
+  upstream: trustoverip/DHP-Specs
   upstream_adoption_status: not-asserted

@@ -5,33 +5,30 @@ title: Portfolio Status
 
 # Portfolio status
 
-This page is a human-readable view of the authoritative [`repository-status.yaml`](https://github.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/blob/main/data/repository-status.yaml).
+The authoritative state is maintained in [`data/repository-status.yaml`](../data/repository-status.yaml). This page explains how to interpret it.
 
-## Flagship original work
+## Core original portfolio
 
-| Repository | Role | Maturity |
-|---|---|---|
-| `governance-authority-assurance-metamodel` | Normative governance and authority model | Candidate specification |
-| `agent-registry-protocol` | Agent registry authority-control plane | Community draft |
-| `trust-systems-meta-model` | Canonical semantic model | Active |
-| `trust-infrastructure-schemas` | Portable schema contracts | Active |
-| `trust-graph-artifacts` | Applied governance laboratory | Active |
-| `trqp-assurance-hub` and stack components | Trust-registry assurance system | Active multi-repository stack |
+| Repository | Tier | Maturity | Operational status |
+|---|---|---|---|
+| `governance-authority-assurance-metamodel` | Flagship | Candidate | Active validation |
+| `agent-registry-protocol` | Flagship | Pilot ready | Active validation |
+| `trust-systems-meta-model` | Flagship | Candidate | Active validation |
+| `trust-infrastructure-schemas` | Flagship | Implementation draft | Active development |
+| `trust-graph-artifacts` | Flagship | Implementation draft | Active development |
+| `TRQP-TSPP` | Flagship | Candidate | Active validation |
+| `cawg-trqp-verifier-refimpl` | Flagship | Pilot ready | Active validation |
+| `trqp-conformance-suite` | Flagship | Pilot ready | Active validation |
+| `trqp-assurance-hub` | Flagship | Pilot ready | Active validation |
 
-## Featured upstream forks
+## Supporting and adjacent work
 
-| Fork | Canonical upstream | Governance scope |
-|---|---|---|
-| `dtgwg-zkp-tf` | `trustoverip/dtgwg-zkp-tf` | Fork-local changes only |
-| `ctwg-main-glossary` | `trustoverip/ctwg-main-glossary` | Fork-local changes only |
-| `agtp` | `nomoticai/agtp` | Fork-local changes only |
+Supporting and adjacent repositories may be strategically useful without having flagship prominence or stable maturity. Their status is reviewed independently and must not be inferred from their tier.
 
-Fork inclusion does not imply upstream authorship, maintainership, endorsement, release authority, or adoption.
+## Upstream-derived collaboration
 
-## Supporting and incubating work
+Forks use `upstream-tracking` maturity and identify the canonical upstream. Portfolio inclusion covers fork-local work only and conveys no upstream governance, release, or adoption authority.
 
-Supporting repositories provide domain profiles, conformance methods, research artefacts, and applied implementations. Their current tier, lifecycle, authority scope, provenance, and review dates are maintained in the machine-readable registry.
+## Curated boundary
 
-## Authority boundary
-
-The profile repository coordinates portfolio metadata. Each original project retains authority over its own normative content and releases. Each upstream project retains authority over its source project; this portfolio governs only changes made in its fork.
+The registry is not a claim that every public repository belongs to the portfolio. Repositories outside the curated portfolio receive an account-level disposition rather than full portfolio membership.

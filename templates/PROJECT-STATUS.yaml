@@ -1,0 +1,22 @@
+schema_version: "1.0"
+project:
+  name: replace-with-repository-name
+  maturity: working-draft
+  lifecycle: active
+  operational_status: active-development
+  specification_status: working-draft
+  intended_use:
+    - evaluation
+  not_asserted:
+    - production-certification
+    - independent-assurance
+authority:
+  normative_scope: []
+  does_not_own: []
+  delegation: "Define who may approve status and normative changes."
+  revocation_or_supersession: "Define how claims, releases, and status are withdrawn or superseded."
+evidence:
+  validation_commands:
+    - make validate
+  evidence_outputs: []
+  known_limitations: []

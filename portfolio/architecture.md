@@ -1,50 +1,81 @@
 # Portfolio Architecture
 
-## Operating model
+## Purpose
 
-The portfolio is a federation of independently governed repositories and explicitly identified upstream forks. Portfolio membership does not transfer normative authority.
+This document defines the portfolio as a four-plane governance and assurance system. It is not a claim that all repositories share one normative authority, release process, or maturity level.
 
-```text
-                         GOVERNANCE AND AUTHORITY
-                Governance, Authority and Assurance Metamodel
-                                      │
-                    normative rules, profiles, and controls
-                                      │
-        ┌─────────────────────────────┼─────────────────────────────┐
-        │                             │                             │
- SEMANTIC FOUNDATION          MACHINE CONTRACTS             APPLIED PATTERNS
- Trust Systems Meta Model     Trust Infrastructure Schemas  Trust Graph Artifacts
-        │                             │                             │
-        └─────────────────────────────┼─────────────────────────────┘
-                                      │
-                         DOMAIN AND PROTOCOL SYSTEMS
-                Agent Registry Protocol · TRQP · ZKP · AGTP
-                                      │
-                     tests, implementations, and validators
-                                      │
-                       CONFORMANCE AND ASSURANCE
-          suites · reference verifiers · evidence · review conclusions
+## Planes
+
+1. **Governance and semantic authority** defines authority, semantics, contracts, patterns, and failure models.
+2. **Protocols and profiles** translates general concepts into domain-specific normative and implementation requirements.
+3. **Implementations and operational systems** exercise protocols, profiles, and controls in software or applied environments.
+4. **Conformance, evidence, and assurance** tests implementations and requirements, retains provenance, and produces reviewable conclusions.
+5. **Upstream-derived collaboration** is a separately bounded contribution surface whose upstream projects retain governance and release authority.
+
+```mermaid
+flowchart TB
+    subgraph P1["Governance and semantic authority"]
+        GAAM[GAAM]
+        TSMM[TSMM]
+        TIS[TIS]
+        TGA[Trust Graph Artifacts]
+    end
+    subgraph P2["Protocols and profiles"]
+        ARPA[Agent Registry Protocol]
+        ANAB[Agent Name Assurance Baseline]
+        TSPP[TRQP-TSPP]
+        ERC[ERC-8004 CSP]
+    end
+    subgraph P3["Implementations and operational systems"]
+        VERIFIER[TRQP Reference Verifier]
+        KIRANA[KiranaOS]
+        DPI[DPI AI Governance Lab]
+    end
+    subgraph P4["Conformance, evidence and assurance"]
+        CTS[TRQP Conformance Suite]
+        HUB[TRQP Assurance Hub]
+        DTGCA[DTG Conformance and Assurance]
+        EVIDENCE[Versioned evidence packages]
+    end
+    subgraph UP["Upstream-derived collaboration"]
+        ZKP[DTG ZKP TF fork]
+        AGTP[AGTP fork]
+        CTWG[CTWG glossary fork]
+    end
+    TSMM -.-> TIS
+    TIS --> ANAB
+    GAAM -.-> ARPA
+    TSPP --> CTS
+    VERIFIER --> CTS
+    CTS --> HUB
+    HUB --> EVIDENCE
+    DTGCA --> EVIDENCE
+    EVIDENCE -.-> GAAM
+    EVIDENCE -.-> TSPP
+    EVIDENCE -.-> ARPA
+    CTWG -.-> TSMM
+    ZKP -.-> DTGCA
+    AGTP -.-> ARPA
 ```
 
-## Authority boundaries
+## Relationship semantics
 
-- **GAAM** owns its normative governance, authority, delegation, revocation, assurance, accountability, appeal, and remedy model.
-- **TSMM** owns canonical cross-portfolio semantic concepts within its declared scope.
-- **TIS** owns reusable machine-readable schema contracts.
-- **Trust Graph Artifacts** incubates applied governance patterns and negative-assurance tests.
-- **Agent Registry Protocol** owns its protocol-specific records, APIs, profiles, and conformance model.
-- Domain repositories own their protocol, profile, implementation, or assurance scope.
-- This profile repository owns portfolio classification, provenance, and relationship metadata only.
-- Upstream projects retain all governance and release authority for forked repositories.
+| Edge | Meaning |
+|---|---|
+| Solid | Operational production, implementation, testing, or evidence flow |
+| Dashed | Informative alignment, feedback, or contribution-oriented learning |
+| Plane boundary | Distinct architectural function and authority context |
+| Upstream plane | Fork-local work without upstream governance or release authority |
 
-## Relationship classes
+The canonical typed relationships are maintained in [`../data/portfolio-relationships.yaml`](../data/portfolio-relationships.yaml).
 
-Relationships are declared as normative dependency, profile adoption, informative alignment, support, constraint, evidence production, reference implementation, incubation, or `fork-of`. A relationship has no authority effect beyond its explicit constraint.
+## Assurance feedback
 
-## Fork provenance
+Assurance is not a terminal publication step. Evidence-backed findings return to the relevant authority, profile, schema, protocol, or implementation as controlled change inputs. A finding does not automatically modify normative content. Correction requires the owning repository’s governance process.
 
-A fork must declare its canonical upstream repository, use `portfolio_governance: fork-only`, and carry a matching `fork-of` relationship. Fork-local work is evidence about the fork only unless accepted upstream.
+## Authority model
 
-## Enforcement and revocation
-
-The validator rejects duplicate authority claims, unknown dependencies, ungoverned relationship types, fork entries without upstream provenance, and fork relationships that do not match the status registry. Authority can be superseded only through an explicit registry change and a release-impact record describing migration and compatibility consequences.
+- The profile repository owns portfolio classification, tier, presentation, and relationship metadata.
+- Original repositories own their normative scope, releases, status declarations, validation, and evidence.
+- Upstream projects own upstream governance, releases, and adoption decisions.
+- Conflicts are recorded as findings. The profile may reduce prominence or mark evidence insufficient, but it must not silently rewrite a member declaration.

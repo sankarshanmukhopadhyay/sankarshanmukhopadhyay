@@ -27,3 +27,13 @@ All notable changes to the portfolio coordination repository are documented here
 ### Changed
 
 - Reframed the profile README as an adoption-oriented portfolio landing page with explicit evidence and authority boundaries.
+
+## Unreleased
+
+### Portfolio governance alignment
+
+- Separated portfolio disposition, strategic tier, maturity, lifecycle, operational status, specification status, provenance, and authority.
+- Adopted a controlled maturity vocabulary and a curated portfolio boundary.
+- Replaced the linear repository map with a four-plane architecture and assurance feedback loop.
+- Expanded classification of relevant original, adjacent, pending-review, historical, and upstream-derived repositories.
+- Added a federated `PROJECT-STATUS.yaml` contract, JSON Schema, template, and validation controls.

@@ -10,130 +10,154 @@ I design specifications, protocols, schemas, conformance systems, and reference 
 [![Portfolio documentation](https://img.shields.io/badge/docs-GitHub%20Pages-0969da)](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE)
 
+## Portfolio scope
+
+This profile presents a **curated trust-infrastructure portfolio**. It is not an exhaustive inventory of every public repository on this GitHub account. Older infrastructure projects, personal utilities, conference material, upstream mirrors, and unrelated historical work may remain publicly accessible without being portfolio members.
+
+Every repository reviewed by this programme receives an account-level disposition. Only included, adjacent, upstream-reference, and historical portfolio repositories receive detailed portfolio governance records.
+
+## How status is communicated
+
+Repository significance and readiness are separate claims.
+
+| Dimension | Question answered |
+|---|---|
+| Portfolio disposition | Is the repository part of, adjacent to, or outside the curated portfolio? |
+| Tier | How strategically prominent is it within the portfolio? |
+| Maturity | How ready is its declared output for use? |
+| Lifecycle | Is it active, maintained, superseded, or archived? |
+| Operational status | What work is currently occurring? |
+| Specification status | What formal status does its specification claim? |
+| Provenance | Is it original, forked, mirrored, or collaboratively hosted? |
+| Authority | What does the repository govern, and what remains elsewhere? |
+
+The authoritative vocabulary and current classifications are maintained in [`data/repository-status.yaml`](data/repository-status.yaml). Featured original repositories are expected to publish a repository-local `PROJECT-STATUS.yaml` conforming to [`schemas/project-status.schema.json`](schemas/project-status.schema.json).
+
 ## Start here
 
-| You are trying to… | Begin with | Provenance |
+| You are trying to… | Begin with | Current positioning |
 |---|---|---|
-| Model authority, delegation, revocation, accountability, or remedy | [Governance, Authority and Assurance Metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | Original portfolio work |
-| Analyse the semantics of a trust system | [Trust Systems Meta Model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | Original portfolio work |
-| Implement portable trust records or evidence contracts | [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | Original portfolio work |
-| Deploy or evaluate an agent registry | [Agent Registry Protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | Original portfolio work |
-| Test or assure a trust-registry deployment | [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | Original multi-repository work |
-| Examine ZKP implementation and interoperability boundaries | [DTG ZKP Task Force fork](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | Upstream-derived collaborative work |
-| Review governed digital-trust terminology | [CTWG Main Glossary fork](https://github.com/sankarshanmukhopadhyay/ctwg-main-glossary) | Upstream-derived collaborative work |
-| Examine agent-transfer protocol implementation and hardening | [AGTP fork](https://github.com/sankarshanmukhopadhyay/agtp) | Upstream-derived collaborative work |
+| Model authority, delegation, revocation, accountability, or remedy | [Governance, Authority and Assurance Metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | Flagship · Candidate · Original |
+| Analyse the semantics of a trust system | [Trust Systems Meta Model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | Flagship · Candidate · Original |
+| Implement portable trust records or evidence contracts | [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | Flagship · Implementation draft · Original |
+| Deploy or evaluate an agent registry | [Agent Registry Protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | Flagship · Pilot ready · Original |
+| Test or assure a trust-registry deployment | [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | Flagship · Pilot ready · Original |
+| Examine ZKP implementation and interoperability boundaries | [DTG ZKP Task Force fork](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | Upstream collaboration · Upstream tracking |
+| Review governed digital-trust terminology | [CTWG Main Glossary fork](https://github.com/sankarshanmukhopadhyay/ctwg-main-glossary) | Upstream collaboration · Upstream tracking |
+| Examine agent-transfer protocol implementation and hardening | [AGTP fork](https://github.com/sankarshanmukhopadhyay/agtp) | Upstream collaboration · Upstream tracking |
 
 ## Flagship original work
 
-| Repository | What it delivers | Portfolio role | Maturity |
+| Repository | Operational contribution | Maturity | Operational status |
 |---|---|---|---|
-| [**Governance, Authority and Assurance Metamodel**](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | A normative model for authority, delegation, revocation, evidence, assurance, accountability, appeal, and remedy | Executable-governance foundation | Candidate specification |
-| [**Agent Registry Protocol**](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | A modular protocol, schemas, APIs, conformance system, and reference implementation for agent authority-control planes | Agent registry architecture | Community draft |
-| [**Trust Systems Meta Model**](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | Canonical concepts for analysing actors, authority, policy, evidence, decisions, and effects | Semantic foundation | Evolving specification |
-| [**Trust Infrastructure Schemas**](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | Portable machine-readable contracts for trust actors, claims, bindings, relationships, and governance evidence | Schema foundation | Implementable artefacts |
-| [**Trust Graph Artifacts**](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | Applied governance patterns, implementation guidance, failure models, and negative-assurance tests | Applied governance laboratory | Active |
-| [**TRQP Assurance Stack**](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | A coordinated security-profile, verifier, conformance, and evidence workflow for trust-registry deployments | Registry assurance system | Multi-repository stack |
+| [Governance, Authority and Assurance Metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | Normative model for executable governance, delegation, revocation, assurance, accountability, appeal, and remedy | Candidate | Active validation |
+| [Agent Registry Protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | Protocol, schemas, APIs, conformance tests, and reference artefacts for deployable agent registries | Pilot ready | Active validation |
+| [Trust Systems Meta Model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | Semantic metamodel for actors, authority, policy, evidence, decisions, effects, and accountability | Candidate | Active validation |
+| [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | Portable machine-readable contracts for trust actors, claims, bindings, relationships, and evidence | Implementation draft | Active development |
+| [Trust Graph Artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | Applied governance patterns, threat models, implementation guidance, and negative-assurance artefacts | Implementation draft | Active development |
+| [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) | Security and trust-service-provider profile for TRQP | Candidate | Active validation |
+| [TRQP reference verifier](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | Deterministic verifier producing provenance-preserving conclusions | Pilot ready | Active validation |
+| [TRQP Conformance Suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | Executable tests producing lifecycle-aware interoperability evidence | Pilot ready | Active validation |
+| [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | Coordinated implementation, conformance, evidence, and assurance entry point | Pilot ready | Active validation |
 
-## Featured upstream and collaborative work
+## Supporting and adjacent work
 
-The following repositories are forks of upstream projects. They are included because the portfolio forks contain implementation guidance, assurance artefacts, documentation refinements, tests, or other contribution-oriented work.
+Supporting repositories provide domain profiles, reusable assurance methods, applied laboratories, implementation guidance, and research. Inclusion here does not imply the same strategic tier or adoption maturity as flagship work.
 
-Fork inclusion does not imply authorship of the upstream project, control over its governance or releases, upstream endorsement, or adoption of fork-specific material.
+- [Agent Name Assurance Baseline](https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline)
+- [DTG Conformance and Assurance](https://github.com/sankarshanmukhopadhyay/dtg-conformance-assurance)
+- [ERC-8004 CSP](https://github.com/sankarshanmukhopadhyay/ERC-8004-CSP)
+- [KiranaOS](https://github.com/sankarshanmukhopadhyay/kiranaos)
+- [Digital Governance Paper Notes](https://github.com/sankarshanmukhopadhyay/digital-governance-paper-notes)
+- [DPI AI Governance Lab](https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-lab)
+- [DPI AI Governance Artifacts](https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-artifacts)
+- [ARF Onramp Pack](https://github.com/sankarshanmukhopadhyay/arf-onramp-pack)
+- [Atal Enterprise Assurance Profile](https://github.com/sankarshanmukhopadhyay/atal-enterprise-assurance-profile)
 
-| Repository fork | Upstream | Work represented in this portfolio |
+## Upstream-derived collaboration
+
+Fork inclusion represents fork-local implementation, assurance, documentation, validation, or contribution-oriented work. It does not imply upstream authorship, governance authority, release authority, endorsement, or adoption.
+
+| Portfolio fork | Canonical upstream | Portfolio-local role |
 |---|---|---|
-| [**DTG ZKP Task Force**](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | [Trust Over IP upstream](https://github.com/trustoverip/dtgwg-zkp-tf) | Implementation-guide development, assurance and disclosure boundaries, deployment guidance, conformance artefacts, and interoperability analysis |
-| [**CTWG Main Glossary**](https://github.com/sankarshanmukhopadhyay/ctwg-main-glossary) | [Trust Over IP upstream](https://github.com/trustoverip/ctwg-main-glossary) | Terminology harmonisation, glossary extensions, cross-repository vocabulary analysis, documentation quality, and publication hardening |
-| [**AGTP — Agent Transfer Protocol**](https://github.com/sankarshanmukhopadhyay/agtp) | [Nomotic AI upstream](https://github.com/nomoticai/agtp) | Security hardening, implementation refinement, deferred-work completion, validation, and release-oriented engineering performed in the fork |
+| [DTG ZKP Task Force](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | `trustoverip/dtgwg-zkp-tf` | Implementation and interoperability guidance |
+| [CTWG Main Glossary](https://github.com/sankarshanmukhopadhyay/ctwg-main-glossary) | `trustoverip/ctwg-main-glossary` | Terminology harmonisation and publication refinement |
+| [AGTP](https://github.com/sankarshanmukhopadhyay/agtp) | `nomoticai/agtp` | Security hardening and implementation refinement |
+| [DTG Credential Task Force](https://github.com/sankarshanmukhopadhyay/dtgwg-cred-tf) | `trustoverip/dtgwg-cred-tf` | Standards-facing collaboration |
+| [Trust Registry Protocol](https://github.com/sankarshanmukhopadhyay/tswg-trust-registry-protocol) | `trustoverip/tswg-trust-registry-protocol` | Protocol reference and contribution surface |
 
-## Portfolio lanes
+## Portfolio architecture
 
-### Governance, authority, and semantic foundations
+```mermaid
+flowchart TB
+    subgraph P1["1. Governance and semantic authority"]
+        GAAM["GAAM<br/>Governance, authority and assurance"]
+        TSMM["TSMM<br/>Canonical trust-system semantics"]
+        TIS["TIS<br/>Portable machine contracts"]
+        TGA["Trust Graph Artifacts<br/>Applied patterns and failure models"]
+    end
 
-[GAAM](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) defines normative authority and assurance structures. [TSMM](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) provides semantic analysis, [TIS](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) supplies portable contracts, and [Trust Graph Artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) develops applied patterns and failure tests. Informative alignment does not create a normative dependency.
+    subgraph P2["2. Protocols and assurance profiles"]
+        ARPA["Agent Registry Protocol"]
+        ANAB["Agent Name Assurance Baseline"]
+        TSPP["TRQP-TSPP"]
+        ERC["ERC-8004 CSP"]
+    end
 
-### Agent infrastructure, delegation, and protocol enforcement
+    subgraph P3["3. Implementations and operational systems"]
+        VERIFIER["TRQP Reference Verifier"]
+        KIRANA["KiranaOS"]
+        DPI["DPI AI Governance Lab"]
+    end
 
-[Agent Registry Protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) addresses discovery, attribution, bounded authority, status, evidence, governance, and redress. Supporting work includes [Agent Name Assurance Baseline](https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline), [ERC-8004 CSP](https://github.com/sankarshanmukhopadhyay/ERC-8004-CSP), and the upstream-derived [AGTP fork](https://github.com/sankarshanmukhopadhyay/agtp).
+    subgraph P4["4. Conformance, evidence and assurance"]
+        TRQPCS["TRQP Conformance Suite"]
+        HUB["TRQP Assurance Hub"]
+        DTGCA["DTG Conformance and Assurance"]
+        EVIDENCE["Evidence packages<br/>provenance · results · conclusions"]
+    end
 
-### Trust registries, conformance, and assurance
+    subgraph UP["Upstream-derived collaboration"]
+        ZKP["DTG ZKP Task Force fork"]
+        AGTP["AGTP fork"]
+        CTWG["CTWG Main Glossary fork"]
+    end
 
-**Evidence path:** [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) → [reference verifier](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) → [TRQP Conformance Suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) → [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub)
-
-This path connects security requirements to executable tests, verifier output, retained provenance, and reviewable assurance conclusions. [DTG Conformance & Assurance](https://github.com/sankarshanmukhopadhyay/dtg-conformance-assurance) supplies reusable assurance methods.
-
-### Privacy-preserving proofs and interoperability
-
-The [DTG ZKP Task Force fork](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) contains contribution-oriented implementation and interoperability work, including predicate, disclosure, and assurance-boundary analysis. The upstream project retains governance and release authority.
-
-### Applied systems and research
-
-- [**KiranaOS**](https://github.com/sankarshanmukhopadhyay/kiranaos): an applied operations platform developed through staged, testable releases.
-- [**Digital Governance Paper Notes**](https://github.com/sankarshanmukhopadhyay/digital-governance-paper-notes): structured governance-first reviews of research and policy papers.
-- [**DPI AI Governance Lab**](https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-lab): applied exploration of governance controls for AI-enabled public infrastructure.
-
-## How the repositories fit together
-
-```text
-                         GOVERNANCE AND AUTHORITY
-                Governance, Authority and Assurance Metamodel
-                                      │
-                    normative rules, profiles, and controls
-                                      │
-        ┌─────────────────────────────┼─────────────────────────────┐
-        │                             │                             │
- SEMANTIC FOUNDATION          MACHINE CONTRACTS             APPLIED PATTERNS
- Trust Systems Meta Model     Trust Infrastructure Schemas  Trust Graph Artifacts
-        │                             │                             │
-        └─────────────────────────────┼─────────────────────────────┘
-                                      │
-                         DOMAIN AND PROTOCOL SYSTEMS
-                Agent Registry Protocol · TRQP · ZKP · AGTP
-                                      │
-                     tests, implementations, and validators
-                                      │
-                       CONFORMANCE AND ASSURANCE
-          suites · reference verifiers · evidence · review conclusions
+    TSMM -. "semantic alignment" .-> TIS
+    TIS -->|supports| ANAB
+    GAAM -. "informative alignment" .-> ARPA
+    TSPP -->|tested by| TRQPCS
+    VERIFIER -->|evaluated by| TRQPCS
+    TRQPCS -->|produces evidence for| HUB
+    HUB --> EVIDENCE
+    DTGCA --> EVIDENCE
+    EVIDENCE -. "assurance feedback" .-> GAAM
+    EVIDENCE -. "corrective feedback" .-> TSPP
+    EVIDENCE -. "corrective feedback" .-> ARPA
+    CTWG -. "terminology alignment" .-> TSMM
+    ZKP -. "implementation learning" .-> DTGCA
+    AGTP -. "protocol learning" .-> ARPA
 ```
 
-Portfolio inclusion does not create normative dependency. Relationships are classified as normative dependency, profile adoption, informative alignment, evidence production, reference implementation, incubation, or fork provenance.
+Solid edges represent operational, implementation, testing, or evidence flows. Dashed edges represent informative alignment or contribution-oriented learning. The upstream-derived plane is intentionally separated to preserve authority and provenance boundaries.
 
-## Repository provenance and authority
+See [Portfolio Architecture](portfolio/architecture.md), [Portfolio Status](docs/portfolio-status.md), and the [Classification Policy](docs/portfolio-classification-policy.md).
 
-An **original portfolio repository** is governed and released within this portfolio unless its own governance documentation states otherwise.
+## Governance and evidence
 
-A **fork** retains the provenance, licence, and upstream governance of its source project. Changes made in a fork apply only to that fork unless accepted through the upstream project’s contribution and decision process. A fork’s inclusion here does not imply upstream endorsement, maintainership, normative authority, or adoption.
+The profile repository owns portfolio membership, strategic tier, presentation, and relationship metadata. Each original member repository retains authority over its normative content, releases, maturity declaration, validation commands, and evidence outputs. The portfolio may record a finding or reduce public prominence when a member claim lacks sufficient evidence; it does not silently rewrite the member repository’s declaration.
 
-The profile repository maintains portfolio classification and relationship metadata. It does **not** override the governance, normative authority, or release decisions of individual projects or upstream repositories.
-
-- [Explore the portfolio documentation](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/)
-- [Review portfolio architecture](docs/portfolio-architecture.md)
-- [Inspect the repository-status registry](data/repository-status.yaml)
-- [Inspect cross-repository relationships](data/portfolio-relationships.yaml)
-- [Review governance](GOVERNANCE.md)
-
-## Verification
-
-The portfolio control plane is machine-verifiable:
+Validation:
 
 ```bash
-git clone https://github.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay.git
-cd sankarshanmukhopadhyay
-python -m pip install PyYAML
 python scripts/validate_portfolio.py
 python scripts/check_internal_links.py
 ```
 
-A successful run verifies declared provenance, upstream references for forks, governed maturity and relationship values, authority uniqueness, adoption-path resolution, review dates, and internal documentation links. It does not certify member repositories, upstream projects, interoperability, or independent assurance.
+## Writing and research
 
-## Research and writing
+Long-form analysis is published through [The Trust Graph](https://thetrustgraph.substack.com/), focused on executable trust, registries, governance, agentic systems, digital public infrastructure, assurance, and redress.
 
-I publish **[The Trust Graph](https://thetrustgraph.substack.com)**, where architectural and governance questions are developed in long form before, alongside, or after their expression as specifications and executable artefacts.
+## Licence
 
-Essays develop arguments, failure models, and institutional implications. Specifications establish governed terminology and requirements. Schemas encode portable contracts. Tests and reference implementations expose whether claims survive execution.
-
-[LinkedIn](https://www.linkedin.com/in/sankarshan) · [About](https://about.me/sankarshan.mukhopadhyay/)
-
-## Collaboration
-
-Useful collaboration begins with a concrete deployment, interoperability, or assurance problem. Open an issue describing the operating context, authority model, constraints, expected evidence, provenance boundary, and a testable definition of done.
+Unless a repository states otherwise, profile documentation is licensed under [CC BY-NC-SA 4.0](LICENSE). Individual repositories retain their own licences and governance terms.
