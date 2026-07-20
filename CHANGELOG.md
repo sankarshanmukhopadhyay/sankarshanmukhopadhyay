@@ -1,5 +1,12 @@
 ## [Unreleased]
 
+## [0.3.0] - 2026-07-20
+
+- Align TSMM and TIS as Candidate repositories with member-owned status contracts.
+- Add the TIS-to-TSMM normative dependency and bounded authority constraint.
+- Add coordinated release-impact evidence and Just The Docs publication controls.
+
+
 ### Added
 
 - Added explicit repository provenance, upstream location, portfolio-governance scope, maturity, and upstream-adoption status metadata.

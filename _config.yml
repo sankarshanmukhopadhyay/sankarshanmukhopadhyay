@@ -2,17 +2,25 @@ title: Trust Infrastructure Portfolio
 description: Executable governance, trust infrastructure, agent assurance, conformance systems, and machine-verifiable evidence.
 url: https://sankarshanmukhopadhyay.github.io
 baseurl: /sankarshanmukhopadhyay
+remote_theme: just-the-docs/just-the-docs@v0.10.1
 markdown: kramdown
-theme: minima
+search_enabled: true
+heading_anchors: true
+color_scheme: light
+aux_links:
+  "View on GitHub":
+    - "https://github.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay"
 plugins:
+  - jekyll-remote-theme
   - jekyll-seo-tag
-header_pages:
-  - index.md
-  - docs/portfolio-status.md
-  - docs/portfolio-architecture.md
-  - GOVERNANCE.md
 exclude:
-  - scripts
-  - .github
+  - node_modules/
+  - vendor/
+  - tools/
+  - scripts/
+  - tests/
+  - validation/
+  - artifacts/
+  - .github/
   - Gemfile
   - Gemfile.lock

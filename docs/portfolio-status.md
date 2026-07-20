@@ -14,8 +14,8 @@ The authoritative state is maintained in [`data/repository-status.yaml`](../data
 | `governance-authority-assurance-metamodel` | Flagship | Candidate | Active validation |
 | `agent-registry-protocol` | Flagship | Pilot ready | Active validation |
 | `trust-systems-meta-model` | Flagship | Candidate | Active validation |
-| `trust-infrastructure-schemas` | Flagship | Implementation draft | Active development |
-| `trust-graph-artifacts` | Flagship | Implementation draft | Active development |
+| `trust-infrastructure-schemas` | Flagship | Candidate | Active validation |
+| `trust-graph-artifacts` | Flagship | Candidate | Active validation |
 | `TRQP-TSPP` | Flagship | Candidate | Active validation |
 | `cawg-trqp-verifier-refimpl` | Flagship | Pilot ready | Active validation |
 | `trqp-conformance-suite` | Flagship | Pilot ready | Active validation |

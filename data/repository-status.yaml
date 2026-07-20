@@ -124,7 +124,7 @@ repositories:
   portfolio_member: true
   authority_scope:
   - canonical-semantics
-  last_portfolio_review: '2026-07-18'
+  last_portfolio_review: '2026-07-20'
   next_review: '2026-10-01'
   provenance: original
   portfolio_governance: controlled
@@ -137,15 +137,15 @@ repositories:
 - name: trust-infrastructure-schemas
   portfolio_disposition: included
   tier: flagship
-  maturity: implementation-draft
+  maturity: candidate
   lifecycle: active
-  operational_status: active-development
-  specification_status: working-draft
+  operational_status: active-validation
+  specification_status: candidate-specification
   role: portable-schema-contracts
   portfolio_member: true
   authority_scope:
   - portable-schema-contracts
-  last_portfolio_review: '2026-07-18'
+  last_portfolio_review: '2026-07-20'
   next_review: '2026-10-01'
   provenance: original
   portfolio_governance: controlled

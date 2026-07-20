@@ -39,7 +39,7 @@ The authoritative vocabulary and current classifications are maintained in [`dat
 |---|---|---|
 | Model authority, delegation, revocation, accountability, or remedy | [Governance, Authority and Assurance Metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | Flagship · Candidate · Original |
 | Analyse the semantics of a trust system | [Trust Systems Meta Model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | Flagship · Candidate · Original |
-| Implement portable trust records or evidence contracts | [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | Flagship · Implementation draft · Original |
+| Implement portable trust records or evidence contracts | [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | Flagship · Candidate · Original |
 | Deploy or evaluate an agent registry | [Agent Registry Protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | Flagship · Pilot ready · Original |
 | Test or assure a trust-registry deployment | [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | Flagship · Pilot ready · Original |
 | Examine ZKP implementation and interoperability boundaries | [DTG ZKP Task Force fork](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | Upstream collaboration · Upstream tracking |
@@ -53,8 +53,8 @@ The authoritative vocabulary and current classifications are maintained in [`dat
 | [Governance, Authority and Assurance Metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | Normative model for executable governance, delegation, revocation, assurance, accountability, appeal, and remedy | Candidate | Active validation |
 | [Agent Registry Protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | Protocol, schemas, APIs, conformance tests, and reference artefacts for deployable agent registries | Pilot ready | Active validation |
 | [Trust Systems Meta Model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | Semantic metamodel for actors, authority, policy, evidence, decisions, effects, and accountability | Candidate | Active validation |
-| [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | Portable machine-readable contracts for trust actors, claims, bindings, relationships, and evidence | Implementation draft | Active development |
-| [Trust Graph Artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | Applied governance patterns, threat models, implementation guidance, and negative-assurance artefacts | Implementation draft | Active development |
+| [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | Portable machine-readable contracts for trust actors, claims, bindings, relationships, and evidence | Candidate | Active validation |
+| [Trust Graph Artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | Applied governance patterns, threat models, implementation guidance, and negative-assurance artefacts | Candidate | Active validation |
 | [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) | Security and trust-service-provider profile for TRQP | Candidate | Active validation |
 | [TRQP reference verifier](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | Deterministic verifier producing provenance-preserving conclusions | Pilot ready | Active validation |
 | [TRQP Conformance Suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | Executable tests producing lifecycle-aware interoperability evidence | Pilot ready | Active validation |

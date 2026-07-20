@@ -45,6 +45,10 @@ planes:
     - dtgwg-cred-tf
     - tswg-trust-registry-protocol
 relationships:
+  - from: trust-infrastructure-schemas
+    to: trust-systems-meta-model
+    type: normative-dependency
+    constraint: TIS derives canonical semantic meaning from TSMM but retains authority over schema design, identifiers, serialization, validation contracts, and releases.
   - from: trust-systems-meta-model
     to: governance-authority-assurance-metamodel
     type: informative-alignment
