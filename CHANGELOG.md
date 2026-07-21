@@ -1,5 +1,18 @@
 ## [Unreleased]
 
+### Added
+
+- Added the Open National Digital Trust Framework as a flagship working draft and national-framework adoption entry point.
+- Added typed ONDTF relationships to GAAM, TSMM, TIS, and DTG Conformance and Assurance.
+- Added `adapted-upstream-work` as a governed portfolio disposition.
+
+### Changed
+
+- Evolved the portfolio from a four-plane to a five-plane architecture with a frameworks-and-adoption plane.
+- Reclassified `dtgwg-zkp-tf` as featured adapted upstream work with fork-local implementation-draft maturity.
+- Strengthened validator rules for fork-local maturity, governance scope, upstream attribution, and membership.
+
+
 ## [0.3.0] - 2026-07-20
 
 - Align TSMM and TIS as Candidate repositories with member-owned status contracts.

@@ -37,12 +37,13 @@ The authoritative vocabulary and current classifications are maintained in [`dat
 
 | You are trying to… | Begin with | Current positioning |
 |---|---|---|
-| Model authority, delegation, revocation, accountability, or remedy | [Governance, Authority and Assurance Metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | Flagship · Candidate · Original |
+| Model authority, delegation, revocation, accountability, or remedy | [Open National Digital Trust Framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework) | Jurisdiction-neutral framework connecting policy, architecture, profiles, implementation, assurance, accountability, and redress | Working draft | Active development |
+| [Governance, Authority and Assurance Metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | Flagship · Candidate · Original |
 | Analyse the semantics of a trust system | [Trust Systems Meta Model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | Flagship · Candidate · Original |
 | Implement portable trust records or evidence contracts | [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | Flagship · Candidate · Original |
 | Deploy or evaluate an agent registry | [Agent Registry Protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | Flagship · Pilot ready · Original |
 | Test or assure a trust-registry deployment | [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | Flagship · Pilot ready · Original |
-| Examine ZKP implementation and interoperability boundaries | [DTG ZKP Task Force fork](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | Upstream collaboration · Upstream tracking |
+| Apply ZKP implementation, threat, risk, and deployment guidance | [DTG ZKP Task Force fork](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | Featured · Implementation draft · Adapted upstream work |
 | Review governed digital-trust terminology | [CTWG Main Glossary fork](https://github.com/sankarshanmukhopadhyay/ctwg-main-glossary) | Upstream collaboration · Upstream tracking |
 | Examine agent-transfer protocol implementation and hardening | [AGTP fork](https://github.com/sankarshanmukhopadhyay/agtp) | Upstream collaboration · Upstream tracking |
 
@@ -74,13 +75,13 @@ Supporting repositories provide domain profiles, reusable assurance methods, app
 - [ARF Onramp Pack](https://github.com/sankarshanmukhopadhyay/arf-onramp-pack)
 - [Atal Enterprise Assurance Profile](https://github.com/sankarshanmukhopadhyay/atal-enterprise-assurance-profile)
 
-## Upstream-derived collaboration
+## Adapted and reference upstream work
 
-Fork inclusion represents fork-local implementation, assurance, documentation, validation, or contribution-oriented work. It does not imply upstream authorship, governance authority, release authority, endorsement, or adoption.
+Fork inclusion represents bounded fork-local implementation, assurance, documentation, validation, or contribution-oriented work. `adapted-upstream-work` identifies a substantive portfolio-local capability, while `upstream-reference` identifies primarily tracking or collaboration use. Neither disposition implies upstream authorship, governance authority, release authority, endorsement, or adoption.
 
 | Portfolio fork | Canonical upstream | Portfolio-local role |
 |---|---|---|
-| [DTG ZKP Task Force](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | `trustoverip/dtgwg-zkp-tf` | Implementation and interoperability guidance |
+| [DTG ZKP Task Force](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | `trustoverip/dtgwg-zkp-tf` | Adapted implementation, threat, risk, deployment, and learning guidance |
 | [CTWG Main Glossary](https://github.com/sankarshanmukhopadhyay/ctwg-main-glossary) | `trustoverip/ctwg-main-glossary` | Terminology harmonisation and publication refinement |
 | [AGTP](https://github.com/sankarshanmukhopadhyay/agtp) | `nomoticai/agtp` | Security hardening and implementation refinement |
 | [DTG Credential Task Force](https://github.com/sankarshanmukhopadhyay/dtgwg-cred-tf) | `trustoverip/dtgwg-cred-tf` | Standards-facing collaboration |
@@ -90,56 +91,52 @@ Fork inclusion represents fork-local implementation, assurance, documentation, v
 
 ```mermaid
 flowchart TB
-    subgraph P1["1. Governance and semantic authority"]
-        GAAM["GAAM<br/>Governance, authority and assurance"]
-        TSMM["TSMM<br/>Canonical trust-system semantics"]
-        TIS["TIS<br/>Portable machine contracts"]
-        TGA["Trust Graph Artifacts<br/>Applied patterns and failure models"]
+    subgraph P0["1. Frameworks and adoption"]
+        ONDTF["Open National Digital Trust Framework"]
     end
-
-    subgraph P2["2. Protocols and assurance profiles"]
+    subgraph P1["2. Governance and semantic authority"]
+        GAAM["GAAM"]
+        TSMM["TSMM"]
+        TIS["TIS"]
+        TGA["Trust Graph Artifacts"]
+    end
+    subgraph P2["3. Protocols and assurance profiles"]
         ARPA["Agent Registry Protocol"]
         ANAB["Agent Name Assurance Baseline"]
         TSPP["TRQP-TSPP"]
-        ERC["ERC-8004 CSP"]
     end
-
-    subgraph P3["3. Implementations and operational systems"]
+    subgraph P3["4. Implementations and adapted operational guidance"]
         VERIFIER["TRQP Reference Verifier"]
-        KIRANA["KiranaOS"]
+        ZKP["Adapted DTG ZKP guidance"]
         DPI["DPI AI Governance Lab"]
     end
-
-    subgraph P4["4. Conformance, evidence and assurance"]
+    subgraph P4["5. Conformance, evidence and assurance"]
         TRQPCS["TRQP Conformance Suite"]
         HUB["TRQP Assurance Hub"]
         DTGCA["DTG Conformance and Assurance"]
-        EVIDENCE["Evidence packages<br/>provenance · results · conclusions"]
+        EVIDENCE["Evidence packages"]
     end
-
-    subgraph UP["Upstream-derived collaboration"]
-        ZKP["DTG ZKP Task Force fork"]
-        AGTP["AGTP fork"]
-        CTWG["CTWG Main Glossary fork"]
+    subgraph UP["External upstream authority"]
+        ZKPUP["trustoverip/dtgwg-zkp-tf"]
     end
-
-    TSMM -. "semantic alignment" .-> TIS
-    TIS -->|supports| ANAB
-    GAAM -. "informative alignment" .-> ARPA
-    TSPP -->|tested by| TRQPCS
-    VERIFIER -->|evaluated by| TRQPCS
-    TRQPCS -->|produces evidence for| HUB
+    ONDTF -. "optional alignment" .-> GAAM
+    ONDTF -. "optional accelerator" .-> TSMM
+    ONDTF -. "optional accelerator" .-> TIS
+    ONDTF -->|evaluated by| DTGCA
+    TSMM -.-> TIS
+    GAAM -.-> ARPA
+    TSPP --> TRQPCS
+    VERIFIER --> TRQPCS
+    TRQPCS --> HUB
     HUB --> EVIDENCE
     DTGCA --> EVIDENCE
-    EVIDENCE -. "assurance feedback" .-> GAAM
-    EVIDENCE -. "corrective feedback" .-> TSPP
-    EVIDENCE -. "corrective feedback" .-> ARPA
-    CTWG -. "terminology alignment" .-> TSMM
-    ZKP -. "implementation learning" .-> DTGCA
-    AGTP -. "protocol learning" .-> ARPA
+    EVIDENCE -. "assurance feedback" .-> ONDTF
+    EVIDENCE -. "corrective feedback" .-> GAAM
+    ZKP -. "implementation and risk evidence" .-> DTGCA
+    ZKP -. "fork of" .-> ZKPUP
 ```
 
-Solid edges represent operational, implementation, testing, or evidence flows. Dashed edges represent informative alignment or contribution-oriented learning. The upstream-derived plane is intentionally separated to preserve authority and provenance boundaries.
+Solid edges represent operational, implementation, testing, or evidence flows. Dashed edges represent informative alignment or contribution-oriented learning. The external-upstream boundary preserves authority and provenance while allowing fork-local adaptations to participate in the relevant implementation and assurance flows.
 
 See [Portfolio Architecture](portfolio/architecture.md), [Portfolio Status](docs/portfolio-status.md), and the [Classification Policy](docs/portfolio-classification-policy.md).
 

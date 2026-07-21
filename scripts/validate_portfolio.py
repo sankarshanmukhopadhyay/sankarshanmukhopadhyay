@@ -41,10 +41,12 @@ def main():
         if prov not in {'original','fork','mirror','archived-import','collaborative-host'}: errors.append(f'{n}: invalid provenance {prov!r}')
         if prov=='fork':
             if not r.get('upstream'): errors.append(f'{n}: fork must declare upstream')
-            if r.get('maturity')!='upstream-tracking' and r.get('portfolio_disposition')!='historical': errors.append(f'{n}: active fork must use upstream-tracking maturity')
-            if r.get('portfolio_governance')!='fork-only': errors.append(f'{n}: fork must use fork-only governance')
+            if r.get('portfolio_disposition') not in {'historical','adapted-upstream-work'} and r.get('maturity')!='upstream-tracking': errors.append(f'{n}: active reference fork must use upstream-tracking maturity')
+            if r.get('portfolio_disposition')=='adapted-upstream-work' and r.get('maturity') not in {'working-draft','implementation-draft','candidate','pilot-ready','stable','maintenance'}: errors.append(f'{n}: adapted upstream work must declare evidence-based fork-local maturity')
+            expected_governance='fork-derived-extension' if r.get('portfolio_disposition')=='adapted-upstream-work' else 'fork-only'
+            if r.get('portfolio_governance')!=expected_governance: errors.append(f'{n}: fork must use {expected_governance} governance')
         elif r.get('upstream'): errors.append(f'{n}: non-fork must not declare upstream')
-        expected_member=r.get('portfolio_disposition') in {'included','adjacent','upstream-reference','historical'}
+        expected_member=r.get('portfolio_disposition') in {'included','adjacent','upstream-reference','adapted-upstream-work','historical'}
         if r.get('portfolio_member') is not expected_member: errors.append(f'{n}: portfolio_member conflicts with portfolio_disposition')
         ss=r.get('status_source',{})
         if not isinstance(ss,dict) or not ss.get('type') or not ss.get('path'): errors.append(f'{n}: missing status_source contract')

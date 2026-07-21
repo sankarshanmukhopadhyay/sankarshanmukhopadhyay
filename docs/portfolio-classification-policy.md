@@ -24,7 +24,8 @@ The portfolio is curated. Public availability on the account does not automatica
 |---|---|
 | `included` | Governed member of the curated portfolio |
 | `adjacent` | Relevant work presented with explicit separation from the core portfolio |
-| `upstream-reference` | Fork or mirror used for collaboration, reference, or contribution |
+| `upstream-reference` | Fork or mirror used primarily for collaboration, reference, tracking, or contribution |
+| `adapted-upstream-work` | Fork with substantive portfolio-local implementation, risk, deployment, assurance, documentation, or learning artefacts; upstream authority remains external |
 | `historical` | Retained portfolio evidence without a current adoption claim |
 | `unrelated` | Public account repository outside portfolio scope |
 | `pending-review` | Awaiting a time-bounded inclusion or exclusion decision |
@@ -45,7 +46,7 @@ The portfolio is curated. Public availability on the account does not automatica
 
 ## Federated status authority
 
-Featured original repositories should publish `PROJECT-STATUS.yaml` using the shared schema. The member repository owns maturity, lifecycle, specification status, intended use, validation, and evidence declarations. The profile repository owns membership, strategic tier, presentation, and cross-repository relationship metadata.
+Featured original repositories and adapted upstream work should publish `PROJECT-STATUS.yaml` using the shared schema. The member repository owns maturity, lifecycle, specification status, intended use, validation, and evidence declarations. The profile repository owns membership, strategic tier, presentation, and cross-repository relationship metadata.
 
 When evidence is insufficient or declarations conflict, the profile records a finding and may downgrade presentation. It does not silently alter member-owned status.
 
@@ -56,7 +57,7 @@ A repository may be demoted, suspended, marked historical, superseded, or remove
 - required evidence is missing or irreproducible;
 - status declarations become stale;
 - authority claims overlap without resolution;
-- an upstream fork is presented as original authority;
+- an upstream fork is presented as original authority or its fork-local adaptations are not clearly bounded;
 - a review deadline expires without disposition;
 - maintenance or security obligations are not met;
 - another repository supersedes its function.

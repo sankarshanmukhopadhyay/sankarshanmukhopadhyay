@@ -8,6 +8,7 @@ controlled_vocabularies:
   - included
   - adjacent
   - upstream-reference
+  - adapted-upstream-work
   - historical
   - unrelated
   - pending-review
@@ -61,13 +62,34 @@ repositories:
   portfolio_member: true
   authority_scope:
   - portfolio-classification
-  last_portfolio_review: '2026-07-18'
+  last_portfolio_review: '2026-07-21'
   next_review: '2026-10-01'
   provenance: original
   portfolio_governance: controlled
   status_source:
     type: portfolio-declaration
     path: data/repository-status.yaml
+    required: true
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: open-national-digital-trust-framework
+  portfolio_disposition: included
+  tier: flagship
+  maturity: working-draft
+  lifecycle: active
+  operational_status: active-development
+  specification_status: working-draft
+  role: jurisdiction-neutral-digital-trust-framework
+  portfolio_member: true
+  authority_scope:
+  - national-digital-trust-framework
+  last_portfolio_review: '2026-07-21'
+  next_review: '2026-10-01'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
     required: true
   upstream: null
   upstream_adoption_status: not-applicable
@@ -514,25 +536,26 @@ repositories:
   upstream: nomoticai/agtp
   upstream_adoption_status: not-asserted
 - name: dtgwg-zkp-tf
-  portfolio_disposition: upstream-reference
-  tier: upstream-collaboration
-  maturity: upstream-tracking
+  portfolio_disposition: adapted-upstream-work
+  tier: featured
+  maturity: implementation-draft
   lifecycle: active
-  operational_status: upstream-tracking
-  specification_status: upstream-controlled
-  role: zkp-implementation-guidance
+  operational_status: active-development
+  specification_status: working-draft
+  role: adapted-zkp-implementation-risk-and-deployment-guidance
   portfolio_member: true
-  authority_scope: []
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-09-15'
+  authority_scope:
+  - fork-local-zkp-implementation-guidance
+  last_portfolio_review: '2026-07-21'
+  next_review: '2026-10-01'
   provenance: fork
-  portfolio_governance: fork-only
+  portfolio_governance: fork-derived-extension
   status_source:
-    type: portfolio-declaration
-    path: data/repository-status.yaml
-    required: false
+    type: member-declaration
+    path: PROJECT-STATUS.yaml
+    required: true
   upstream: trustoverip/dtgwg-zkp-tf
-  upstream_adoption_status: not-asserted
+  upstream_adoption_status: adapted-with-attribution
 - name: ctwg-main-glossary
   portfolio_disposition: upstream-reference
   tier: upstream-collaboration
