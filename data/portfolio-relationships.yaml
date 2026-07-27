@@ -150,6 +150,16 @@ relationships:
   to: trustoverip/DHP-Specs
   type: fork-of
   constraint: Retained as a historical upstream-derived reference.
+- from: trust-graph-artifacts
+  to: trust-systems-meta-model
+  type: normative-dependency
+  constraint: TGA packages use TSMM canonical semantics. TGA may incubate candidate concepts but cannot modify or
+    supersede TSMM semantics.
+- from: trust-graph-artifacts
+  to: trust-systems-meta-model
+  type: incubates
+  constraint: Stable cross-domain epistemic-governance concepts may be proposed through TSMM governance. Incubation
+    creates no canonical semantic authority.
 external_repositories:
 - name: trustoverip/dtgwg-zkp-tf
   kind: upstream

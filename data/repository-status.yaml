@@ -190,7 +190,8 @@ repositories:
   - governance-patterns
   - implementation-guidance
   - negative-assurance-tests
-  last_portfolio_review: '2026-07-18'
+  - epistemic-governance-patterns
+  last_portfolio_review: '2026-07-27'
   next_review: '2026-10-01'
   provenance: original
   portfolio_governance: controlled
