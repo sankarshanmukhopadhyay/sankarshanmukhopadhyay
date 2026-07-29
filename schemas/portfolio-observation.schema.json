@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-observation.schema.json",
+  "title": "Portfolio assurance observation",
+  "type": "object",
+  "required": ["repository", "observed_at", "available", "evidence"],
+  "properties": {
+    "repository": {"type": "string", "minLength": 1},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "available": {"type": "boolean"},
+    "evidence": {"type": "object"},
+    "collection_error": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

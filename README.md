@@ -1,6 +1,6 @@
 # Sankarshan Mukhopadhyay
 
-### Building executable governance, authority-control planes, and assurance infrastructure
+## Building executable governance, authority-control planes, and assurance infrastructure
 
 I design specifications, protocols, schemas, conformance systems, and reference implementations for digital trust and agentic systems. The work focuses on making authority, delegation, constraints, revocation, evidence, accountability, and redress explicit enough to be implemented, tested, audited, and independently challenged.
 
@@ -9,6 +9,15 @@ I design specifications, protocols, schemas, conformance systems, and reference 
 [![Portfolio validation](https://github.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/actions/workflows/validate.yml/badge.svg)](https://github.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/actions/workflows/validate.yml)
 [![Portfolio documentation](https://img.shields.io/badge/docs-GitHub%20Pages-0969da)](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE)
+
+## Portfolio Assurance Monitor
+
+The repository includes a weekly, evidence-producing assurance monitor for flagship original repositories. It derives scope from the governed portfolio register, checks public operational evidence and repository-local status declarations, and publishes findings without automatically modifying portfolio classifications.
+
+- [Monitor overview](docs/portfolio-assurance/index.md)
+- [Methodology](docs/portfolio-assurance/methodology.md)
+- [Operations](docs/portfolio-assurance/operations.md)
+- [Dashboard](docs/portfolio-assurance/dashboard.md)
 
 ## Portfolio scope
 

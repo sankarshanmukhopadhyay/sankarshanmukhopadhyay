@@ -10,7 +10,7 @@ except ImportError:
     print('ERROR: PyYAML is required: pip install PyYAML', file=sys.stderr); raise SystemExit(2)
 ROOT=Path(__file__).resolve().parents[1]
 STATUS=ROOT/'data/repository-status.yaml'; REL=ROOT/'data/portfolio-relationships.yaml'; SCHEMA=ROOT/'schemas/project-status.schema.json'
-REQUIRED=['README.md','LICENSE','GOVERNANCE.md','CONTRIBUTING.md','CHANGELOG.md','ROADMAP.md','portfolio/README.md','portfolio/architecture.md','portfolio/adoption-checklist.md','portfolio/drift-review.md','data/repository-status.yaml','data/portfolio-relationships.yaml','schemas/project-status.schema.json','templates/PROJECT-STATUS.yaml','docs/portfolio-classification-policy.md']
+REQUIRED=['README.md','LICENSE','GOVERNANCE.md','CONTRIBUTING.md','CHANGELOG.md','ROADMAP.md','portfolio/README.md','portfolio/architecture.md','portfolio/adoption-checklist.md','portfolio/drift-review.md','data/repository-status.yaml','data/portfolio-relationships.yaml','schemas/project-status.schema.json','templates/PROJECT-STATUS.yaml','docs/portfolio-classification-policy.md','config/portfolio-monitor/policy.yaml','scripts/portfolio_assurance_monitor.py','schemas/portfolio-observation.schema.json','schemas/portfolio-finding.schema.json','docs/portfolio-assurance/index.md','docs/portfolio-assurance/methodology.md','docs/portfolio-assurance/operations.md','.github/workflows/portfolio-assurance-monitor.yml']
 
 def load_yaml(p):
     with p.open(encoding='utf-8') as f: v=yaml.safe_load(f)

@@ -1,0 +1,39 @@
+schema_version: '1.0'
+owner: sankarshanmukhopadhyay
+scope:
+  portfolio_dispositions: [included]
+  tiers: [flagship]
+  provenance: [original]
+  exclude_repositories: [sankarshanmukhopadhyay]
+collection:
+  lookback_days: 7
+  request_timeout_seconds: 20
+  workflow_runs_per_repository: 20
+rules:
+  review_overdue:
+    enabled: true
+    severity: high
+  status_declaration_missing:
+    enabled: true
+    severity: high
+  status_declaration_unreadable:
+    enabled: true
+    severity: high
+  default_branch_workflow_failure:
+    enabled: true
+    severity: medium
+  repository_unavailable:
+    enabled: true
+    severity: critical
+  no_recent_activity:
+    enabled: true
+    severity: info
+    threshold_days: 45
+publication:
+  latest_report: reports/portfolio-assurance/latest.md
+  latest_findings: reports/portfolio-assurance/latest-findings.json
+  history_directory: reports/portfolio-assurance/history
+  documentation_page: docs/portfolio-assurance/dashboard.md
+governance:
+  automatic_status_changes: false
+  finding_disposition: human-review-required

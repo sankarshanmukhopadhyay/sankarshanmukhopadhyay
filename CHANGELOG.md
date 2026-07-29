@@ -57,3 +57,15 @@ All notable changes to the portfolio coordination repository are documented here
 - Replaced the linear repository map with a four-plane architecture and assurance feedback loop.
 - Expanded classification of relevant original, adjacent, pending-review, historical, and upstream-derived repositories.
 - Added a federated `PROJECT-STATUS.yaml` contract, JSON Schema, template, and validation controls.
+
+## Unreleased
+
+### Added
+
+- Embedded Portfolio Assurance Monitor for weekly evidence collection across flagship original repositories.
+- Registry-derived scope, deterministic finding rules, machine-readable observation and finding schemas, and human-readable assurance reporting.
+- GitHub Actions automation, test coverage, operational documentation, GitHub Pages dashboard, and retained report artefacts.
+
+### Governance
+
+- Findings are first-party evidence and always declare `automatic_effect: none`; portfolio status changes remain subject to reviewed governance decisions.

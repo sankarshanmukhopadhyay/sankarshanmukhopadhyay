@@ -31,5 +31,11 @@ jobs:
       - name: Validate portfolio governance
         run: python scripts/validate_portfolio.py
 
+      - name: Validate monitor configuration and report generation
+        run: python scripts/portfolio_assurance_monitor.py --offline --check
+
+      - name: Run monitor tests
+        run: python -m unittest discover -s tests -p 'test_*.py'
+
       - name: Validate internal links
         run: python scripts/check_internal_links.py

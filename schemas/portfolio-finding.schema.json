@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding.schema.json",
+  "title": "Portfolio assurance finding",
+  "type": "object",
+  "required": ["finding_id", "repository", "rule_id", "severity", "observed_at", "claim", "evidence", "recommended_action", "automatic_effect"],
+  "properties": {
+    "finding_id": {"type": "string", "pattern": "^PAM-[A-F0-9]{12}$"},
+    "repository": {"type": "string", "minLength": 1},
+    "rule_id": {"type": "string", "minLength": 1},
+    "severity": {"enum": ["critical", "high", "medium", "low", "info"]},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "claim": {"type": "string", "minLength": 1},
+    "evidence": {"type": "object"},
+    "recommended_action": {"type": "string", "minLength": 1},
+    "automatic_effect": {"const": "none"}
+  },
+  "additionalProperties": false
+}

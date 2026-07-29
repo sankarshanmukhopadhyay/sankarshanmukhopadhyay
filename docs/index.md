@@ -13,6 +13,8 @@ This site publishes the governance and adoption control surface for Sankarshan M
 - [Architecture and authority boundaries](../portfolio/architecture.md)
 - [Adoption readiness gate](../portfolio/adoption-checklist.md)
 - [Drift review procedure](../portfolio/drift-review.md)
+- [Portfolio Assurance Monitor](portfolio-assurance/index.md)
+- [Portfolio assurance dashboard](portfolio-assurance/dashboard.md)
 - [Repository status registry](../data/repository-status.yaml)
 - [Relationship registry](../data/portfolio-relationships.yaml)
 
