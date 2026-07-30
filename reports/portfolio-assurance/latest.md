@@ -6,7 +6,7 @@ nav_order: 6
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-07-29T14:07:40Z  
+**Observed:** 2026-07-30T02:36:25Z  
 **Scope:** 10 flagship original repositories  
 **Open findings:** 10
 
@@ -29,7 +29,7 @@ nav_order: 6
 
 ## Findings
 
-### PAM-B1F7373560E2: agent-registry-protocol
+### PAM-73F19805853F: agent-registry-protocol
 
 - **Rule:** `STATUS_DECLARATION_MISSING`
 - **Severity:** `high`
@@ -37,7 +37,7 @@ nav_order: 6
 - **Recommended action:** Add the required status declaration or revise the governed status-source contract.
 - **Automatic effect:** `none`
 
-### PAM-DE85CB93134C: cawg-trqp-verifier-refimpl
+### PAM-01A0953B91D9: cawg-trqp-verifier-refimpl
 
 - **Rule:** `STATUS_DECLARATION_MISSING`
 - **Severity:** `high`
@@ -45,7 +45,7 @@ nav_order: 6
 - **Recommended action:** Add the required status declaration or revise the governed status-source contract.
 - **Automatic effect:** `none`
 
-### PAM-A8ABDDF3E722: governance-authority-assurance-metamodel
+### PAM-7A3E87A0193A: governance-authority-assurance-metamodel
 
 - **Rule:** `STATUS_DECLARATION_MISSING`
 - **Severity:** `high`
@@ -53,7 +53,7 @@ nav_order: 6
 - **Recommended action:** Add the required status declaration or revise the governed status-source contract.
 - **Automatic effect:** `none`
 
-### PAM-874BFE44561D: TRQP-TSPP
+### PAM-13A88DFC6454: TRQP-TSPP
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -61,7 +61,7 @@ nav_order: 6
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-74CC1BDDC034: agent-registry-protocol
+### PAM-67C1287E784B: agent-registry-protocol
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -69,7 +69,7 @@ nav_order: 6
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-1256024271CE: cawg-trqp-verifier-refimpl
+### PAM-A4EFEC7D61C0: cawg-trqp-verifier-refimpl
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -77,7 +77,7 @@ nav_order: 6
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-F10ABA79DED5: trqp-assurance-hub
+### PAM-E14CA0EFDB89: trqp-assurance-hub
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -85,7 +85,7 @@ nav_order: 6
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-346A8771A4FA: trqp-conformance-suite
+### PAM-6A38FF4DFF26: trqp-conformance-suite
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -93,7 +93,7 @@ nav_order: 6
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-FE485BABB33C: trust-infrastructure-schemas
+### PAM-1B84D7CE0D5F: trust-infrastructure-schemas
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -101,7 +101,7 @@ nav_order: 6
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-E6030F233BB4: trust-systems-meta-model
+### PAM-C2173C6BCB40: trust-systems-meta-model
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
