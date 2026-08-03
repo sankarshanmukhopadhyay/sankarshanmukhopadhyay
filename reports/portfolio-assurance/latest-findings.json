@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-30T02:36:25Z",
+  "generated_at": "2026-08-03T05:53:40Z",
   "findings": [
     {
-      "finding_id": "PAM-7A3E87A0193A",
+      "finding_id": "PAM-BB862543025D",
       "repository": "governance-authority-assurance-metamodel",
       "rule_id": "STATUS_DECLARATION_MISSING",
       "severity": "high",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "claim": "A required repository-local status declaration must exist.",
       "evidence": {
         "path": "PROJECT-STATUS.yaml",
@@ -18,11 +18,11 @@
       "automatic_effect": "none"
     },
     {
-      "finding_id": "PAM-73F19805853F",
+      "finding_id": "PAM-0CA992CCB05A",
       "repository": "agent-registry-protocol",
       "rule_id": "STATUS_DECLARATION_MISSING",
       "severity": "high",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "claim": "A required repository-local status declaration must exist.",
       "evidence": {
         "path": "PROJECT-STATUS.yaml",
@@ -34,11 +34,11 @@
       "automatic_effect": "none"
     },
     {
-      "finding_id": "PAM-67C1287E784B",
+      "finding_id": "PAM-0140F504F5F7",
       "repository": "agent-registry-protocol",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_FAILURE",
       "severity": "medium",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "claim": "Recent completed default-branch workflows should not contain unresolved failures.",
       "evidence": {
         "completed_examined": 20,
@@ -49,11 +49,11 @@
       "automatic_effect": "none"
     },
     {
-      "finding_id": "PAM-C2173C6BCB40",
+      "finding_id": "PAM-E8D214D4CF21",
       "repository": "trust-systems-meta-model",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_FAILURE",
       "severity": "medium",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "claim": "Recent completed default-branch workflows should not contain unresolved failures.",
       "evidence": {
         "completed_examined": 20,
@@ -64,11 +64,11 @@
       "automatic_effect": "none"
     },
     {
-      "finding_id": "PAM-1B84D7CE0D5F",
+      "finding_id": "PAM-927DEE718AC8",
       "repository": "trust-infrastructure-schemas",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_FAILURE",
       "severity": "medium",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "claim": "Recent completed default-branch workflows should not contain unresolved failures.",
       "evidence": {
         "completed_examined": 20,
@@ -79,26 +79,26 @@
       "automatic_effect": "none"
     },
     {
-      "finding_id": "PAM-13A88DFC6454",
+      "finding_id": "PAM-61B45868517E",
       "repository": "TRQP-TSPP",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_FAILURE",
       "severity": "medium",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "claim": "Recent completed default-branch workflows should not contain unresolved failures.",
       "evidence": {
         "completed_examined": 20,
-        "failed": 4,
-        "latest_failed_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/actions/runs/29715881697"
+        "failed": 10,
+        "latest_failed_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/actions/runs/30510493231"
       },
       "recommended_action": "Review the failed workflow and record remediation or accepted risk.",
       "automatic_effect": "none"
     },
     {
-      "finding_id": "PAM-01A0953B91D9",
+      "finding_id": "PAM-8D48750AC52A",
       "repository": "cawg-trqp-verifier-refimpl",
       "rule_id": "STATUS_DECLARATION_MISSING",
       "severity": "high",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "claim": "A required repository-local status declaration must exist.",
       "evidence": {
         "path": "PROJECT-STATUS.yaml",
@@ -110,45 +110,45 @@
       "automatic_effect": "none"
     },
     {
-      "finding_id": "PAM-A4EFEC7D61C0",
+      "finding_id": "PAM-AD724FA4AB50",
       "repository": "cawg-trqp-verifier-refimpl",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_FAILURE",
       "severity": "medium",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "claim": "Recent completed default-branch workflows should not contain unresolved failures.",
       "evidence": {
         "completed_examined": 20,
-        "failed": 8,
+        "failed": 2,
         "latest_failed_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/29845420504"
       },
       "recommended_action": "Review the failed workflow and record remediation or accepted risk.",
       "automatic_effect": "none"
     },
     {
-      "finding_id": "PAM-6A38FF4DFF26",
+      "finding_id": "PAM-60498A1F4DDF",
       "repository": "trqp-conformance-suite",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_FAILURE",
       "severity": "medium",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "claim": "Recent completed default-branch workflows should not contain unresolved failures.",
       "evidence": {
         "completed_examined": 20,
-        "failed": 11,
+        "failed": 10,
         "latest_failed_url": "https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite/actions/runs/30240374751"
       },
       "recommended_action": "Review the failed workflow and record remediation or accepted risk.",
       "automatic_effect": "none"
     },
     {
-      "finding_id": "PAM-E14CA0EFDB89",
+      "finding_id": "PAM-7F9A7897462A",
       "repository": "trqp-assurance-hub",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_FAILURE",
       "severity": "medium",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "claim": "Recent completed default-branch workflows should not contain unresolved failures.",
       "evidence": {
         "completed_examined": 20,
-        "failed": 16,
+        "failed": 15,
         "latest_failed_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/30240771028"
       },
       "recommended_action": "Review the failed workflow and record remediation or accepted risk.",
@@ -158,7 +158,7 @@
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -184,7 +184,7 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -211,7 +211,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -238,7 +238,7 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -264,7 +264,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -290,7 +290,7 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -316,16 +316,16 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-07-23T02:53:41Z",
-          "updated_at": "2026-07-20T04:00:53Z",
-          "open_issues_count": 9
+          "pushed_at": "2026-07-30T03:12:00Z",
+          "updated_at": "2026-07-30T03:11:08Z",
+          "open_issues_count": 3
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -334,24 +334,24 @@
         },
         "workflow_runs": {
           "completed_examined": 20,
-          "failed": 4,
-          "latest_failed_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/actions/runs/29715881697"
+          "failed": 10,
+          "latest_failed_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/actions/runs/30510493231"
         }
       },
       "collection_error": null
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-07-24T11:24:39Z",
-          "updated_at": "2026-07-21T15:49:24Z",
-          "open_issues_count": 6
+          "pushed_at": "2026-08-03T04:54:40Z",
+          "updated_at": "2026-08-03T04:52:33Z",
+          "open_issues_count": 0
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -361,7 +361,7 @@
         },
         "workflow_runs": {
           "completed_examined": 20,
-          "failed": 8,
+          "failed": 2,
           "latest_failed_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/29845420504"
         }
       },
@@ -369,7 +369,7 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -387,7 +387,7 @@
         },
         "workflow_runs": {
           "completed_examined": 20,
-          "failed": 11,
+          "failed": 10,
           "latest_failed_url": "https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite/actions/runs/30240374751"
         }
       },
@@ -395,7 +395,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-07-30T02:36:25Z",
+      "observed_at": "2026-08-03T05:53:40Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -413,7 +413,7 @@
         },
         "workflow_runs": {
           "completed_examined": 20,
-          "failed": 16,
+          "failed": 15,
           "latest_failed_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/30240771028"
         }
       },

@@ -6,7 +6,7 @@ nav_order: 6
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-07-30T02:36:25Z  
+**Observed:** 2026-08-03T05:53:40Z  
 **Scope:** 10 flagship original repositories  
 **Open findings:** 10
 
@@ -22,14 +22,14 @@ nav_order: 6
 | [trust-systems-meta-model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | available | valid | 3 failed | 1 |
 | [trust-infrastructure-schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | available | valid | 11 failed | 1 |
 | [trust-graph-artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | available | valid | 0 failed | 0 |
-| [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) | available | valid | 4 failed | 1 |
-| [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | available | attention | 8 failed | 2 |
-| [trqp-conformance-suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | available | valid | 11 failed | 1 |
-| [trqp-assurance-hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | available | valid | 16 failed | 1 |
+| [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) | available | valid | 10 failed | 1 |
+| [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | available | attention | 2 failed | 2 |
+| [trqp-conformance-suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | available | valid | 10 failed | 1 |
+| [trqp-assurance-hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | available | valid | 15 failed | 1 |
 
 ## Findings
 
-### PAM-73F19805853F: agent-registry-protocol
+### PAM-0CA992CCB05A: agent-registry-protocol
 
 - **Rule:** `STATUS_DECLARATION_MISSING`
 - **Severity:** `high`
@@ -37,7 +37,7 @@ nav_order: 6
 - **Recommended action:** Add the required status declaration or revise the governed status-source contract.
 - **Automatic effect:** `none`
 
-### PAM-01A0953B91D9: cawg-trqp-verifier-refimpl
+### PAM-8D48750AC52A: cawg-trqp-verifier-refimpl
 
 - **Rule:** `STATUS_DECLARATION_MISSING`
 - **Severity:** `high`
@@ -45,7 +45,7 @@ nav_order: 6
 - **Recommended action:** Add the required status declaration or revise the governed status-source contract.
 - **Automatic effect:** `none`
 
-### PAM-7A3E87A0193A: governance-authority-assurance-metamodel
+### PAM-BB862543025D: governance-authority-assurance-metamodel
 
 - **Rule:** `STATUS_DECLARATION_MISSING`
 - **Severity:** `high`
@@ -53,7 +53,7 @@ nav_order: 6
 - **Recommended action:** Add the required status declaration or revise the governed status-source contract.
 - **Automatic effect:** `none`
 
-### PAM-13A88DFC6454: TRQP-TSPP
+### PAM-61B45868517E: TRQP-TSPP
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -61,7 +61,7 @@ nav_order: 6
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-67C1287E784B: agent-registry-protocol
+### PAM-0140F504F5F7: agent-registry-protocol
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -69,7 +69,7 @@ nav_order: 6
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-A4EFEC7D61C0: cawg-trqp-verifier-refimpl
+### PAM-AD724FA4AB50: cawg-trqp-verifier-refimpl
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -77,7 +77,7 @@ nav_order: 6
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-E14CA0EFDB89: trqp-assurance-hub
+### PAM-7F9A7897462A: trqp-assurance-hub
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -85,7 +85,7 @@ nav_order: 6
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-6A38FF4DFF26: trqp-conformance-suite
+### PAM-60498A1F4DDF: trqp-conformance-suite
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -93,7 +93,7 @@ nav_order: 6
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-1B84D7CE0D5F: trust-infrastructure-schemas
+### PAM-927DEE718AC8: trust-infrastructure-schemas
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -101,7 +101,7 @@ nav_order: 6
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-C2173C6BCB40: trust-systems-meta-model
+### PAM-E8D214D4CF21: trust-systems-meta-model
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
