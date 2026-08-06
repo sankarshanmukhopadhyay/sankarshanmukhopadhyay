@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Portfolio Assurance Dashboard
-nav_order: 6
+parent: Portfolio Assurance Monitor
+nav_order: 1
 ---
 
 # Portfolio Assurance Dashboard

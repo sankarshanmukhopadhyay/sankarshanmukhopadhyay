@@ -1,6 +1,9 @@
 ---
 layout: home
 title: Trust Infrastructure Portfolio
+nav_exclude: true
+search_exclude: true
+permalink: /docs/
 ---
 
 # Trust Infrastructure Portfolio

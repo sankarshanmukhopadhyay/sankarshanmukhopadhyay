@@ -2,6 +2,7 @@
 layout: default
 title: Trust Infrastructure Portfolio
 permalink: /
+nav_exclude: true
 ---
 
 # Trust Infrastructure Portfolio
@@ -22,17 +23,13 @@ A governed portfolio of frameworks, original specifications, protocols, schemas,
 
 ## Architecture
 
-```text
-Framework and adoption architecture
-        ↓
-Governance · authority · semantics · machine contracts
-        ↓
-Domain protocols and profiles
-        ↓
-Implementations, adapted guidance, tests, and validators
-        ↓
-Evidence and assurance conclusions
-        ↺ controlled feedback to the owning authority
+```mermaid
+flowchart TD
+    A[Framework and adoption architecture] --> B[Governance, authority, semantics, and machine contracts]
+    B --> C[Domain protocols and profiles]
+    C --> D[Implementations, adapted guidance, tests, and validators]
+    D --> E[Evidence and assurance conclusions]
+    E -. controlled feedback .-> A
 ```
 
 Fork-local additions are governed only within the fork. Upstream projects retain upstream authorship, governance, normative, release, and adoption authority.
@@ -54,6 +51,7 @@ Read the [portfolio architecture](portfolio/architecture.md) and [human-readable
 python -m pip install PyYAML
 python scripts/validate_portfolio.py
 python scripts/check_internal_links.py
+python scripts/check_site_navigation.py
 ```
 
 A passing result confirms structural consistency, declared provenance, fork-to-upstream relationships, authority uniqueness, adoption-path integrity, review dates, and internal links. It does not certify member repositories or assert upstream adoption.

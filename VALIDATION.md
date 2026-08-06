@@ -7,6 +7,7 @@ Validation date: 2026-07-21
 ```bash
 python scripts/validate_portfolio.py
 python scripts/check_internal_links.py
+python scripts/check_site_navigation.py
 ```
 
 ## Results

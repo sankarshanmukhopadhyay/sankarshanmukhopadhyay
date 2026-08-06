@@ -27,9 +27,21 @@ class PortfolioAssuranceMonitorTests(unittest.TestCase):
         repos = pam.selected_repositories(self.status, self.policy)
         observations = [pam.offline_observation(repo, self.now) for repo in repos]
         findings = [f for repo, obs in zip(repos, observations) for f in pam.evaluate(repo, obs, self.policy, self.now)]
-        report = pam.render_report(repos, observations, findings, self.now)
-        self.assertIn("Portfolio Assurance Dashboard", report)
-        self.assertIn("first-party", report)
-        self.assertIn("automatic", report.lower())
+        dashboard = pam.render_report(repos, observations, findings, self.now, publication_role="dashboard")
+        evidence = pam.render_report(repos, observations, findings, self.now, publication_role="evidence")
+        self.assertIn("Portfolio Assurance Dashboard", dashboard)
+        self.assertIn("parent: Portfolio Assurance Monitor", dashboard)
+        self.assertNotIn("nav_exclude: true", dashboard)
+        self.assertIn("Portfolio Assurance Report — 2026-07-29", evidence)
+        self.assertIn("nav_exclude: true", evidence)
+        self.assertIn("search_exclude: true", evidence)
+        self.assertIn("first-party", dashboard)
+        self.assertIn("automatic", dashboard.lower())
+
+    def test_publication_role_is_explicit(self):
+        repos = pam.selected_repositories(self.status, self.policy)
+        observations = [pam.offline_observation(repo, self.now) for repo in repos]
+        with self.assertRaises(ValueError):
+            pam.render_report(repos, observations, [], self.now, publication_role="unknown")
 
 if __name__ == "__main__": unittest.main()

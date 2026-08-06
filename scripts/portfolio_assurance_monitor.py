@@ -136,11 +136,40 @@ def evaluate(repo: dict[str, Any], observation: dict[str, Any], policy: dict[str
     return findings
 
 
-def render_report(repos: list[dict[str, Any]], observations: list[dict[str, Any]], findings: list[dict[str, Any]], now: dt.datetime) -> str:
+def render_report(
+    repos: list[dict[str, Any]],
+    observations: list[dict[str, Any]],
+    findings: list[dict[str, Any]],
+    now: dt.datetime,
+    *,
+    publication_role: str = "dashboard",
+) -> str:
+    if publication_role not in {"dashboard", "evidence"}:
+        raise ValueError(f"Unsupported publication role: {publication_role}")
     by_repo = {o["repository"]: o for o in observations}
     f_by_repo: dict[str, list[dict[str, Any]]] = {}
     for finding in findings: f_by_repo.setdefault(finding["repository"], []).append(finding)
-    lines = ["---", "layout: default", "title: Portfolio Assurance Dashboard", "nav_order: 6", "---", "", "# Portfolio Assurance Dashboard", "", f"**Observed:** {iso(now)}  ", f"**Scope:** {len(repos)} flagship original repositories  ", f"**Open findings:** {len(findings)}", "", "> This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.", "", "## Current observations", "", "| Repository | Availability | Status declaration | Workflow evidence | Findings |", "|---|---:|---:|---:|---:|"]
+    if publication_role == "dashboard":
+        front_matter = [
+            "---",
+            "layout: default",
+            "title: Portfolio Assurance Dashboard",
+            "parent: Portfolio Assurance Monitor",
+            "nav_order: 1",
+            "---",
+        ]
+        heading = "Portfolio Assurance Dashboard"
+    else:
+        front_matter = [
+            "---",
+            "layout: default",
+            f"title: Portfolio Assurance Report — {now.date().isoformat()}",
+            "nav_exclude: true",
+            "search_exclude: true",
+            "---",
+        ]
+        heading = f"Portfolio Assurance Report — {now.date().isoformat()}"
+    lines = front_matter + ["", f"# {heading}", "", f"**Observed:** {iso(now)}  ", f"**Scope:** {len(repos)} flagship original repositories  ", f"**Open findings:** {len(findings)}", "", "> This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.", "", "## Current observations", "", "| Repository | Availability | Status declaration | Workflow evidence | Findings |", "|---|---:|---:|---:|---:|"]
     for repo in repos:
         obs = by_repo[repo["name"]]; ev = obs.get("evidence", {}); declaration = ev.get("status_declaration")
         decl = "n/a" if declaration is None else ("valid" if declaration.get("readable") else "attention")
@@ -154,16 +183,23 @@ def render_report(repos: list[dict[str, Any]], observations: list[dict[str, Any]
     return "\n".join(lines)
 
 
-def write_outputs(report: str, findings: list[dict[str, Any]], observations: list[dict[str, Any]], policy: dict[str, Any], now: dt.datetime) -> None:
+def write_outputs(
+    dashboard_report: str,
+    evidence_report: str,
+    findings: list[dict[str, Any]],
+    observations: list[dict[str, Any]],
+    policy: dict[str, Any],
+    now: dt.datetime,
+) -> None:
     publication = policy["publication"]
     latest = ROOT / publication["latest_report"]
     latest.parent.mkdir(parents=True, exist_ok=True)
-    latest.write_text(report, encoding="utf-8")
-    (ROOT / publication["documentation_page"]).write_text(report, encoding="utf-8")
+    latest.write_text(evidence_report, encoding="utf-8")
+    (ROOT / publication["documentation_page"]).write_text(dashboard_report, encoding="utf-8")
     (ROOT / publication["latest_findings"]).write_text(json.dumps({"generated_at": iso(now), "findings": findings, "observations": observations}, indent=2) + "\n", encoding="utf-8")
     history = ROOT / publication["history_directory"]
     history.mkdir(parents=True, exist_ok=True)
-    (history / f"{now.date().isoformat()}.md").write_text(report, encoding="utf-8")
+    (history / f"{now.date().isoformat()}.md").write_text(evidence_report, encoding="utf-8")
 
 
 def offline_observation(repo: dict[str, Any], now: dt.datetime) -> dict[str, Any]:
@@ -184,8 +220,9 @@ def main() -> int:
     now = utc_now(); token = os.getenv("GITHUB_TOKEN")
     observations = [offline_observation(repo, now) if args.offline else collect_repository(policy["owner"], repo, policy, token, now) for repo in repos]
     findings = [finding for repo, observation in zip(repos, observations) for finding in evaluate(repo, observation, policy, now)]
-    report = render_report(repos, observations, findings, now)
-    if not args.check: write_outputs(report, findings, observations, policy, now)
+    dashboard_report = render_report(repos, observations, findings, now, publication_role="dashboard")
+    evidence_report = render_report(repos, observations, findings, now, publication_role="evidence")
+    if not args.check: write_outputs(dashboard_report, evidence_report, findings, observations, policy, now)
     print(f"Portfolio assurance monitor: {len(repos)} repositories, {len(findings)} findings, mode={'offline' if args.offline else 'live'}")
     return 0
 

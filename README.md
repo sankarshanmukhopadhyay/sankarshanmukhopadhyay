@@ -158,6 +158,7 @@ Validation:
 ```bash
 python scripts/validate_portfolio.py
 python scripts/check_internal_links.py
+python scripts/check_site_navigation.py
 ```
 
 ## Writing and research

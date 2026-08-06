@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Portfolio Assurance Dashboard
-nav_order: 6
+title: Portfolio Assurance Report — 2026-08-03
+nav_exclude: true
+search_exclude: true
 ---
 
-# Portfolio Assurance Dashboard
+# Portfolio Assurance Report — 2026-08-03
 
 **Observed:** 2026-08-03T05:53:40Z  
 **Scope:** 10 flagship original repositories  
