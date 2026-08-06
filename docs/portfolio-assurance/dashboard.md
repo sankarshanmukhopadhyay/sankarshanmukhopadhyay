@@ -7,9 +7,9 @@ nav_order: 1
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-08-03T05:53:40Z  
+**Observed:** 2026-08-06T03:51:26Z  
 **Scope:** 10 flagship original repositories  
-**Open findings:** 10
+**Open findings:** 8
 
 > This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.
 
@@ -24,13 +24,13 @@ nav_order: 1
 | [trust-infrastructure-schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | available | valid | 11 failed | 1 |
 | [trust-graph-artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | available | valid | 0 failed | 0 |
 | [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) | available | valid | 10 failed | 1 |
-| [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | available | attention | 2 failed | 2 |
+| [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | available | valid | 0 failed | 0 |
 | [trqp-conformance-suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | available | valid | 10 failed | 1 |
 | [trqp-assurance-hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | available | valid | 15 failed | 1 |
 
 ## Findings
 
-### PAM-0CA992CCB05A: agent-registry-protocol
+### PAM-40B6FD0D15AF: agent-registry-protocol
 
 - **Rule:** `STATUS_DECLARATION_MISSING`
 - **Severity:** `high`
@@ -38,7 +38,7 @@ nav_order: 1
 - **Recommended action:** Add the required status declaration or revise the governed status-source contract.
 - **Automatic effect:** `none`
 
-### PAM-8D48750AC52A: cawg-trqp-verifier-refimpl
+### PAM-B1891864DA38: governance-authority-assurance-metamodel
 
 - **Rule:** `STATUS_DECLARATION_MISSING`
 - **Severity:** `high`
@@ -46,15 +46,7 @@ nav_order: 1
 - **Recommended action:** Add the required status declaration or revise the governed status-source contract.
 - **Automatic effect:** `none`
 
-### PAM-BB862543025D: governance-authority-assurance-metamodel
-
-- **Rule:** `STATUS_DECLARATION_MISSING`
-- **Severity:** `high`
-- **Claim:** A required repository-local status declaration must exist.
-- **Recommended action:** Add the required status declaration or revise the governed status-source contract.
-- **Automatic effect:** `none`
-
-### PAM-61B45868517E: TRQP-TSPP
+### PAM-27E8271FA90C: TRQP-TSPP
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -62,7 +54,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-0140F504F5F7: agent-registry-protocol
+### PAM-C6ECC3FDED8B: agent-registry-protocol
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -70,7 +62,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-AD724FA4AB50: cawg-trqp-verifier-refimpl
+### PAM-9C7C41D149D3: trqp-assurance-hub
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -78,7 +70,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-7F9A7897462A: trqp-assurance-hub
+### PAM-1FC5651C4FD6: trqp-conformance-suite
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -86,7 +78,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-60498A1F4DDF: trqp-conformance-suite
+### PAM-32F58FF4BF68: trust-infrastructure-schemas
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -94,15 +86,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-927DEE718AC8: trust-infrastructure-schemas
-
-- **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
-- **Severity:** `medium`
-- **Claim:** Recent completed default-branch workflows should not contain unresolved failures.
-- **Recommended action:** Review the failed workflow and record remediation or accepted risk.
-- **Automatic effect:** `none`
-
-### PAM-E8D214D4CF21: trust-systems-meta-model
+### PAM-587AE845DDE9: trust-systems-meta-model
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
