@@ -7,9 +7,9 @@ nav_order: 1
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-08-10T04:09:02Z  
+**Observed:** 2026-08-11T05:57:49Z  
 **Scope:** 10 flagship original repositories  
-**Open findings:** 9
+**Open findings:** 7
 
 > This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.
 
@@ -18,8 +18,8 @@ nav_order: 1
 | Repository | Availability | Status declaration | Workflow evidence | Findings |
 |---|---:|---:|---:|---:|
 | [open-national-digital-trust-framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework) | available | valid | 0 failed | 0 |
-| [governance-authority-assurance-metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | available | attention | 3 failed | 2 |
-| [agent-registry-protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | available | attention | 6 failed | 2 |
+| [governance-authority-assurance-metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | available | valid | 3 failed | 1 |
+| [agent-registry-protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | available | valid | 7 failed | 1 |
 | [trust-systems-meta-model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | available | valid | 3 failed | 1 |
 | [trust-infrastructure-schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | available | valid | 11 failed | 1 |
 | [trust-graph-artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | available | valid | 0 failed | 0 |
@@ -30,23 +30,7 @@ nav_order: 1
 
 ## Findings
 
-### PAM-59D1E256477F: agent-registry-protocol
-
-- **Rule:** `STATUS_DECLARATION_MISSING`
-- **Severity:** `high`
-- **Claim:** A required repository-local status declaration must exist.
-- **Recommended action:** Add the required status declaration or revise the governed status-source contract.
-- **Automatic effect:** `none`
-
-### PAM-C65E36ED1F64: governance-authority-assurance-metamodel
-
-- **Rule:** `STATUS_DECLARATION_MISSING`
-- **Severity:** `high`
-- **Claim:** A required repository-local status declaration must exist.
-- **Recommended action:** Add the required status declaration or revise the governed status-source contract.
-- **Automatic effect:** `none`
-
-### PAM-E6520362B94F: TRQP-TSPP
+### PAM-7725EC55B09E: TRQP-TSPP
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -54,7 +38,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-9B7AEDCF1B68: agent-registry-protocol
+### PAM-E5457ADD6326: agent-registry-protocol
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -62,7 +46,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-DDD9CA27580B: governance-authority-assurance-metamodel
+### PAM-D704E0F5DB41: governance-authority-assurance-metamodel
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -70,7 +54,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-B71F4B3C24A0: trqp-assurance-hub
+### PAM-B3A3381C64E5: trqp-assurance-hub
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -78,7 +62,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-DB06DC9BFA63: trqp-conformance-suite
+### PAM-B7676DEFCBA0: trqp-conformance-suite
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -86,7 +70,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-833E0884734D: trust-infrastructure-schemas
+### PAM-490F3C47AD0E: trust-infrastructure-schemas
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -94,7 +78,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-C19CD0EA249C: trust-systems-meta-model
+### PAM-DCCEB6BDFD96: trust-systems-meta-model
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
