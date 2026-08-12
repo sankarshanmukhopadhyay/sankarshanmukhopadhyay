@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-11T05:57:49Z",
+  "generated_at": "2026-08-12T04:12:05Z",
   "findings": [
     {
-      "finding_id": "PAM-D704E0F5DB41",
+      "finding_id": "PAM-53E0745899E3",
       "repository": "governance-authority-assurance-metamodel",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_FAILURE",
       "severity": "medium",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "claim": "Recent completed default-branch workflows should not contain unresolved failures.",
       "evidence": {
         "completed_examined": 20,
@@ -17,11 +17,11 @@
       "automatic_effect": "none"
     },
     {
-      "finding_id": "PAM-E5457ADD6326",
+      "finding_id": "PAM-A0B485BEAEAD",
       "repository": "agent-registry-protocol",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_FAILURE",
       "severity": "medium",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "claim": "Recent completed default-branch workflows should not contain unresolved failures.",
       "evidence": {
         "completed_examined": 20,
@@ -32,11 +32,11 @@
       "automatic_effect": "none"
     },
     {
-      "finding_id": "PAM-DCCEB6BDFD96",
+      "finding_id": "PAM-C2F279CF8608",
       "repository": "trust-systems-meta-model",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_FAILURE",
       "severity": "medium",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "claim": "Recent completed default-branch workflows should not contain unresolved failures.",
       "evidence": {
         "completed_examined": 20,
@@ -47,11 +47,11 @@
       "automatic_effect": "none"
     },
     {
-      "finding_id": "PAM-490F3C47AD0E",
+      "finding_id": "PAM-3638CC58C9D0",
       "repository": "trust-infrastructure-schemas",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_FAILURE",
       "severity": "medium",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "claim": "Recent completed default-branch workflows should not contain unresolved failures.",
       "evidence": {
         "completed_examined": 20,
@@ -62,11 +62,11 @@
       "automatic_effect": "none"
     },
     {
-      "finding_id": "PAM-7725EC55B09E",
+      "finding_id": "PAM-1859777085AF",
       "repository": "TRQP-TSPP",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_FAILURE",
       "severity": "medium",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "claim": "Recent completed default-branch workflows should not contain unresolved failures.",
       "evidence": {
         "completed_examined": 20,
@@ -77,11 +77,11 @@
       "automatic_effect": "none"
     },
     {
-      "finding_id": "PAM-B7676DEFCBA0",
+      "finding_id": "PAM-3917673E35FF",
       "repository": "trqp-conformance-suite",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_FAILURE",
       "severity": "medium",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "claim": "Recent completed default-branch workflows should not contain unresolved failures.",
       "evidence": {
         "completed_examined": 20,
@@ -92,11 +92,11 @@
       "automatic_effect": "none"
     },
     {
-      "finding_id": "PAM-B3A3381C64E5",
+      "finding_id": "PAM-5E55077BA582",
       "repository": "trqp-assurance-hub",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_FAILURE",
       "severity": "medium",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "claim": "Recent completed default-branch workflows should not contain unresolved failures.",
       "evidence": {
         "completed_examined": 20,
@@ -110,7 +110,7 @@
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -136,7 +136,7 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -162,7 +162,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -188,7 +188,7 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -214,7 +214,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -240,7 +240,7 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -266,7 +266,7 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -292,15 +292,15 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-08-10T00:54:52Z",
-          "updated_at": "2026-08-10T00:54:51Z",
+          "pushed_at": "2026-08-12T03:01:50Z",
+          "updated_at": "2026-08-12T03:01:56Z",
           "open_issues_count": 0
         },
         "status_declaration": {
@@ -318,7 +318,7 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -344,7 +344,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-08-11T05:57:49Z",
+      "observed_at": "2026-08-12T04:12:05Z",
       "available": true,
       "evidence": {
         "repository": {

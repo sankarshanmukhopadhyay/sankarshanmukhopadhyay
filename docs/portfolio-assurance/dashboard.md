@@ -7,7 +7,7 @@ nav_order: 1
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-08-11T05:57:49Z  
+**Observed:** 2026-08-12T04:12:05Z  
 **Scope:** 10 flagship original repositories  
 **Open findings:** 7
 
@@ -30,7 +30,7 @@ nav_order: 1
 
 ## Findings
 
-### PAM-7725EC55B09E: TRQP-TSPP
+### PAM-1859777085AF: TRQP-TSPP
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -38,7 +38,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-E5457ADD6326: agent-registry-protocol
+### PAM-A0B485BEAEAD: agent-registry-protocol
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -46,7 +46,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-D704E0F5DB41: governance-authority-assurance-metamodel
+### PAM-53E0745899E3: governance-authority-assurance-metamodel
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -54,7 +54,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-B3A3381C64E5: trqp-assurance-hub
+### PAM-5E55077BA582: trqp-assurance-hub
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -62,7 +62,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-B7676DEFCBA0: trqp-conformance-suite
+### PAM-3917673E35FF: trqp-conformance-suite
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -70,7 +70,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-490F3C47AD0E: trust-infrastructure-schemas
+### PAM-3638CC58C9D0: trust-infrastructure-schemas
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -78,7 +78,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-DCCEB6BDFD96: trust-systems-meta-model
+### PAM-C2F279CF8608: trust-systems-meta-model
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
