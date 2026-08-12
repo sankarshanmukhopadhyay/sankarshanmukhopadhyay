@@ -496,26 +496,92 @@ repositories:
   upstream: null
   upstream_adoption_status: not-applicable
 - name: PolicyMesh
-  portfolio_disposition: pending-review
-  tier: incubating
-  maturity: working-draft
+  portfolio_disposition: included
+  tier: supporting
+  maturity: implementation-draft
   lifecycle: active
-  operational_status: active-development
-  specification_status: working-draft
-  role: policy-enforcement-incubator
-  portfolio_member: false
+  operational_status: active-validation
+  specification_status: not-applicable
+  role: policy-authority-evaluation-and-enforcement
+  portfolio_member: true
   authority_scope:
-  - policy-mesh
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  - policymesh-artifact-contracts
+  - policymesh-policy-execution-semantics
+  - policymesh-federation-behaviour
+  last_portfolio_review: '2026-08-12'
+  next_review: '2026-11-12'
   provenance: original
   portfolio_governance: controlled
   status_source:
     type: member-declaration
     path: PROJECT-STATUS.yaml
+    required: true
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: trust-protocol-interop-lab
+  portfolio_disposition: included
+  tier: supporting
+  maturity: implementation-draft
+  lifecycle: active
+  operational_status: active-development
+  specification_status: not-applicable
+  role: cross-protocol-interoperability-assurance-lab
+  portfolio_member: true
+  authority_scope:
+  - experimental-interoperability-compositions
+  - interoperability-evidence-and-maturity-claims
+  last_portfolio_review: '2026-08-12'
+  next_review: '2026-11-12'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
     required: false
   upstream: null
   upstream_adoption_status: not-applicable
+- name: dtg-portfolio-monitor
+  portfolio_disposition: included
+  tier: supporting
+  maturity: implementation-draft
+  lifecycle: active
+  operational_status: active-development
+  specification_status: not-applicable
+  role: dtg-ecosystem-situational-awareness
+  portfolio_member: true
+  authority_scope:
+  - dtg-ecosystem-observation-signals
+  last_portfolio_review: '2026-08-12'
+  next_review: '2026-11-12'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
+    required: false
+  upstream: null
+  upstream_adoption_status: not-applicable
+- name: dtgwg-rahp-tf
+  portfolio_disposition: adapted-upstream-work
+  tier: featured
+  maturity: implementation-draft
+  lifecycle: active
+  operational_status: active-development
+  specification_status: working-draft
+  role: adapted-risk-harms-and-security-assurance-toolkit
+  portfolio_member: true
+  authority_scope:
+  - fork-local-rahp-assurance-tooling
+  last_portfolio_review: '2026-08-12'
+  next_review: '2026-11-12'
+  provenance: fork
+  portfolio_governance: fork-derived-extension
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
+    required: false
+  upstream: trustoverip/dtgwg-rahp-tf
+  upstream_adoption_status: adapted-with-attribution
 - name: agtp
   portfolio_disposition: upstream-reference
   tier: upstream-collaboration

@@ -11,7 +11,7 @@ This directory contains the human-readable controls used to govern the portfolio
 | Adoption checklist | Defines flagship admission and review gates | `portfolio/adoption-checklist.md` |
 | Drift review | Detects contradictory authority, stale relationships, or ambiguous provenance | `portfolio/drift-review.md` |
 | Release-impact ledger | Records cross-repository consequences | `portfolio/release-impact/` |
-| Validator | Enforces minimum machine-verifiable controls | `scripts/validate_portfolio.py` |
+| Validator | Enforces minimum machine-verifiable controls, including public discoverability of governed members | `scripts/validate_portfolio.py` |
 
 ## Validation
 
@@ -20,4 +20,4 @@ python scripts/validate_portfolio.py
 python scripts/check_internal_links.py
 ```
 
-A passing result confirms structural consistency of this repository. It does not prove project-level conformance, certify an upstream project, or establish that fork-local work has been proposed or accepted upstream.
+A passing result confirms structural consistency of this repository. It does not prove project-level conformance, certify an upstream project, establish interoperability, or establish that fork-local work has been proposed or accepted upstream. Public repository discovery and ecosystem observation may surface review candidates, but portfolio admission remains a human governance decision.

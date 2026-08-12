@@ -8,7 +8,8 @@ I design specifications, protocols, schemas, conformance systems, and reference 
 
 [![Portfolio validation](https://github.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/actions/workflows/validate.yml/badge.svg)](https://github.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/actions/workflows/validate.yml)
 [![Portfolio documentation](https://img.shields.io/badge/docs-GitHub%20Pages-0969da)](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/)
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE)
+[![Code license: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-blue.svg)](LICENSE-CODE)
+[![Content license: CC BY-NC-SA 4.0](https://img.shields.io/badge/content-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE-CONTENT)
 
 ## Portfolio Assurance Monitor
 
@@ -51,6 +52,10 @@ The authoritative vocabulary and current classifications are maintained in [`dat
 | Analyse the semantics of a trust system | [Trust Systems Meta Model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | Flagship · Candidate · Original |
 | Implement portable trust records or evidence contracts | [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | Flagship · Candidate · Original |
 | Deploy or evaluate an agent registry | [Agent Registry Protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | Flagship · Pilot ready · Original |
+| Determine whether an actor is permitted to act under mandate, evidence, policy, and time | [PolicyMesh](https://github.com/sankarshanmukhopadhyay/PolicyMesh) | Supporting · Implementation draft · Original |
+| Test whether independently governed trust and agent protocols compose correctly | [Trust Protocol Interop Lab](https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab) | Supporting · Implementation draft · Original |
+| Pressure-test specifications for risks, harms, and security weaknesses | [DTG RAHP Toolkit fork](https://github.com/sankarshanmukhopadhyay/dtgwg-rahp-tf) | Featured · Implementation draft · Adapted upstream work |
+| Observe change, convergence, and alignment across the wider DTG landscape | [DTG Portfolio Monitor](https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor) | Supporting · Implementation draft · Original |
 | Test or assure a trust-registry deployment | [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | Flagship · Pilot ready · Original |
 | Apply ZKP implementation, threat, risk, and deployment guidance | [DTG ZKP Task Force fork](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | Featured · Implementation draft · Adapted upstream work |
 | Review governed digital-trust terminology | [CTWG Main Glossary fork](https://github.com/sankarshanmukhopadhyay/ctwg-main-glossary) | Upstream collaboration · Upstream tracking |
@@ -72,17 +77,38 @@ The authoritative vocabulary and current classifications are maintained in [`dat
 
 ## Supporting and adjacent work
 
-Supporting repositories provide domain profiles, reusable assurance methods, applied laboratories, implementation guidance, and research. Inclusion here does not imply the same strategic tier or adoption maturity as flagship work.
+Supporting repositories provide domain profiles, policy execution, reusable assurance methods, applied laboratories, implementation guidance, ecosystem observation, and research. Inclusion here does not imply the same strategic tier or adoption maturity as flagship work.
 
+### Policy execution and authority
+
+- [PolicyMesh](https://github.com/sankarshanmukhopadhyay/PolicyMesh)
 - [Agent Name Assurance Baseline](https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline)
+
+### Interoperability and experimentation
+
+- [Trust Protocol Interop Lab](https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab)
+
+### Assurance and pressure testing
+
 - [DTG Conformance and Assurance](https://github.com/sankarshanmukhopadhyay/dtg-conformance-assurance)
+- [DTG RAHP Toolkit fork](https://github.com/sankarshanmukhopadhyay/dtgwg-rahp-tf)
+
+### Ecosystem observation
+
+- [DTG Portfolio Monitor](https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor)
+
+### Applied implementation and adoption
+
 - [ERC-8004 CSP](https://github.com/sankarshanmukhopadhyay/ERC-8004-CSP)
 - [KiranaOS](https://github.com/sankarshanmukhopadhyay/kiranaos)
-- [Digital Governance Paper Notes](https://github.com/sankarshanmukhopadhyay/digital-governance-paper-notes)
 - [DPI AI Governance Lab](https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-lab)
 - [DPI AI Governance Artifacts](https://github.com/sankarshanmukhopadhyay/dpi-ai-governance-artifacts)
 - [ARF Onramp Pack](https://github.com/sankarshanmukhopadhyay/arf-onramp-pack)
 - [Atal Enterprise Assurance Profile](https://github.com/sankarshanmukhopadhyay/atal-enterprise-assurance-profile)
+
+### Research and exploratory work
+
+- [Digital Governance Paper Notes](https://github.com/sankarshanmukhopadhyay/digital-governance-paper-notes)
 
 ## Adapted and reference upstream work
 
@@ -91,12 +117,15 @@ Fork inclusion represents bounded fork-local implementation, assurance, document
 | Portfolio fork | Canonical upstream | Portfolio-local role |
 |---|---|---|
 | [DTG ZKP Task Force](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | `trustoverip/dtgwg-zkp-tf` | Adapted implementation, threat, risk, deployment, and learning guidance |
+| [DTG RAHP Toolkit](https://github.com/sankarshanmukhopadhyay/dtgwg-rahp-tf) | `trustoverip/dtgwg-rahp-tf` | Adapted risk-and-harms pressure testing, security hardening, assurance evidence, and adoption tooling |
 | [CTWG Main Glossary](https://github.com/sankarshanmukhopadhyay/ctwg-main-glossary) | `trustoverip/ctwg-main-glossary` | Terminology harmonisation and publication refinement |
 | [AGTP](https://github.com/sankarshanmukhopadhyay/agtp) | `nomoticai/agtp` | Security hardening and implementation refinement |
 | [DTG Credential Task Force](https://github.com/sankarshanmukhopadhyay/dtgwg-cred-tf) | `trustoverip/dtgwg-cred-tf` | Standards-facing collaboration |
 | [Trust Registry Protocol](https://github.com/sankarshanmukhopadhyay/tswg-trust-registry-protocol) | `trustoverip/tswg-trust-registry-protocol` | Protocol reference and contribution surface |
 
 ## Portfolio architecture
+
+The five functional planes remain the portfolio backbone. Three cross-cutting capabilities now make the operating model explicit: **PolicyMesh** evaluates bounded policy and mandate context, the **Trust Protocol Interop Lab** tests composition seams without acquiring protocol authority, and the **DTG Portfolio Monitor** observes external ecosystem movement and nominates questions for human review. RAHP adds risk, harm, guardrail, and security pressure testing alongside conformance.
 
 ```mermaid
 flowchart TB
@@ -109,12 +138,13 @@ flowchart TB
         TIS["TIS"]
         TGA["Trust Graph Artifacts"]
     end
-    subgraph P2["3. Protocols and assurance profiles"]
+    subgraph P2["3. Protocols and profiles"]
         ARPA["Agent Registry Protocol"]
         ANAB["Agent Name Assurance Baseline"]
         TSPP["TRQP-TSPP"]
     end
-    subgraph P3["4. Implementations and adapted operational guidance"]
+    subgraph P3["4. Implementations and operational systems"]
+        PM["PolicyMesh"]
         VERIFIER["TRQP Reference Verifier"]
         ZKP["Adapted DTG ZKP guidance"]
         DPI["DPI AI Governance Lab"]
@@ -123,29 +153,41 @@ flowchart TB
         TRQPCS["TRQP Conformance Suite"]
         HUB["TRQP Assurance Hub"]
         DTGCA["DTG Conformance and Assurance"]
+        RAHP["Adapted DTG RAHP Toolkit"]
         EVIDENCE["Evidence packages"]
     end
+    INTEROP["Trust Protocol Interop Lab
+composition and seam testing"]
+    MONITOR["DTG Portfolio Monitor
+ecosystem situational awareness"]
     subgraph UP["External upstream authority"]
         ZKPUP["trustoverip/dtgwg-zkp-tf"]
+        RAHPUP["trustoverip/dtgwg-rahp-tf"]
     end
-    ONDTF -. "optional alignment" .-> GAAM
-    ONDTF -. "optional accelerator" .-> TSMM
-    ONDTF -. "optional accelerator" .-> TIS
-    ONDTF -->|evaluated by| DTGCA
+
+    ONDTF -.-> GAAM
+    ONDTF -.-> TSMM
+    ONDTF -.-> TIS
     TSMM -.-> TIS
     GAAM -.-> ARPA
+    GAAM -. "bounded concepts" .-> PM
+    TSMM -. "bounded semantics" .-> PM
+    PM --> INTEROP
     TSPP --> TRQPCS
     VERIFIER --> TRQPCS
     TRQPCS --> HUB
     HUB --> EVIDENCE
     DTGCA --> EVIDENCE
-    EVIDENCE -. "assurance feedback" .-> ONDTF
-    EVIDENCE -. "corrective feedback" .-> GAAM
-    ZKP -. "implementation and risk evidence" .-> DTGCA
+    RAHP --> EVIDENCE
+    INTEROP --> EVIDENCE
+    MONITOR -. "nominates review questions" .-> INTEROP
+    INTEROP -. "pressure-tested by" .-> RAHP
+    EVIDENCE -. "assurance feedback" .-> GAAM
     ZKP -. "fork of" .-> ZKPUP
+    RAHP -. "fork of" .-> RAHPUP
 ```
 
-Solid edges represent operational, implementation, testing, or evidence flows. Dashed edges represent informative alignment or contribution-oriented learning. The external-upstream boundary preserves authority and provenance while allowing fork-local adaptations to participate in the relevant implementation and assurance flows.
+Solid edges represent operational, implementation, testing, or evidence flows. Dashed edges represent bounded semantic alignment, observation signals, assurance feedback, provenance, or contribution-oriented learning. Observation never creates interoperability claims; interoperability experiments never acquire upstream authority; assurance findings never modify normative content automatically.
 
 See [Portfolio Architecture](portfolio/architecture.md), [Portfolio Status](docs/portfolio-status.md), and the [Classification Policy](docs/portfolio-classification-policy.md).
 
@@ -165,6 +207,11 @@ python scripts/check_site_navigation.py
 
 Long-form analysis is published through [The Trust Graph](https://thetrustgraph.substack.com/), focused on executable trust, registries, governance, agentic systems, digital public infrastructure, assurance, and redress.
 
-## Licence
+## Licensing
 
-Unless a repository states otherwise, profile documentation is licensed under [CC BY-NC-SA 4.0](LICENSE). Individual repositories retain their own licences and governance terms.
+Unless otherwise stated in an individual file or repository:
+
+- source code, scripts, schemas, workflows, and test software in this profile repository are licensed under [Apache-2.0](LICENSE-CODE);
+- documentation, diagrams, governance material, and other written portfolio content are licensed under [CC BY-NC-SA 4.0](LICENSE-CONTENT).
+
+See [LICENSES.md](LICENSES.md) for the licence boundary. Individual repositories retain their own licences and governance terms.

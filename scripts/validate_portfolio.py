@@ -10,7 +10,7 @@ except ImportError:
     print('ERROR: PyYAML is required: pip install PyYAML', file=sys.stderr); raise SystemExit(2)
 ROOT=Path(__file__).resolve().parents[1]
 STATUS=ROOT/'data/repository-status.yaml'; REL=ROOT/'data/portfolio-relationships.yaml'; SCHEMA=ROOT/'schemas/project-status.schema.json'
-REQUIRED=['README.md','LICENSE','GOVERNANCE.md','CONTRIBUTING.md','CHANGELOG.md','ROADMAP.md','portfolio/README.md','portfolio/architecture.md','portfolio/adoption-checklist.md','portfolio/drift-review.md','data/repository-status.yaml','data/portfolio-relationships.yaml','schemas/project-status.schema.json','templates/PROJECT-STATUS.yaml','docs/portfolio-classification-policy.md','config/portfolio-monitor/policy.yaml','scripts/portfolio_assurance_monitor.py','schemas/portfolio-observation.schema.json','schemas/portfolio-finding.schema.json','docs/portfolio-assurance/index.md','docs/portfolio-assurance/methodology.md','docs/portfolio-assurance/operations.md','.github/workflows/portfolio-assurance-monitor.yml']
+REQUIRED=['README.md','LICENSE','GOVERNANCE.md','CONTRIBUTING.md','CHANGELOG.md','ROADMAP.md','portfolio/README.md','portfolio/architecture.md','portfolio/adoption-checklist.md','portfolio/drift-review.md','data/repository-status.yaml','data/portfolio-relationships.yaml','schemas/project-status.schema.json','templates/PROJECT-STATUS.yaml','docs/portfolio-classification-policy.md','config/portfolio-monitor/policy.yaml','scripts/portfolio_assurance_monitor.py','schemas/portfolio-observation.schema.json','schemas/portfolio-finding.schema.json','docs/portfolio-assurance/index.md','docs/portfolio-assurance/methodology.md','docs/portfolio-assurance/operations.md','.github/workflows/portfolio-assurance-monitor.yml','LICENSES.md','LICENSE-CODE','LICENSE-CONTENT']
 
 def load_yaml(p):
     with p.open(encoding='utf-8') as f: v=yaml.safe_load(f)
@@ -28,6 +28,8 @@ def main():
     for k in required_vocab:
         if not isinstance(voc.get(k),list) or not voc[k]: errors.append(f'missing controlled vocabulary: {k}')
     repos=status.get('repositories',[]); names=set(); scopes={}; today=date.today()
+    public_surfaces=[ROOT/'README.md', ROOT/'docs/portfolio-status.md', ROOT/'portfolio/architecture.md']
+    surface_text='\n'.join(p.read_text(encoding='utf-8') for p in public_surfaces if p.is_file())
     for i,r in enumerate(repos):
         if not isinstance(r,dict): errors.append(f'repositories[{i}] must be mapping'); continue
         n=r.get('name')
@@ -59,6 +61,9 @@ def main():
         for s in r.get('authority_scope',[]):
             if s in scopes: errors.append(f'authority scope {s!r} claimed by {scopes[s]} and {n}')
             scopes[s]=n
+    for r in repos:
+        if r.get('portfolio_member') and r.get('name') not in surface_text:
+            errors.append(f"{r.get('name')}: portfolio member is not discoverable from a designated public portfolio surface")
     ext={x.get('name') for x in rel.get('external_repositories',[]) if isinstance(x,dict)}; fork_pairs=set(); types=set(rel.get('relationship_types',[]))
     for x in rel.get('relationships',[]):
         if x.get('from') not in names: errors.append(f"relationship from unknown {x.get('from')!r}")

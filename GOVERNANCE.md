@@ -13,11 +13,13 @@ This repository is the coordination and publication surface for the public trust
 | Canonical semantics | The repository identified as semantic authority in `data/portfolio-relationships.yaml` |
 | Portable schema contracts | The repository identified as schema authority |
 | Project releases and versioning | Each member repository |
-| Cross-repository compatibility claims | Evidence recorded in this repository and participating repositories |
+| Portfolio classification and public presentation | Portfolio maintainer, recorded in this repository |
+| Experimental cross-repository interoperability claims | Trust Protocol Interop Lab evidence for the bounded case; participating/upstream repositories retain their own authority |
+| Ecosystem observation signals | DTG Portfolio Monitor for its collected and derived evidence only |
 
 ## Delegation and scope
 
-A portfolio classification delegates no technical authority to this repository. A repository remains authoritative only for the scope explicitly recorded in the relationship registry. Incubating repositories may propose artifacts but must not silently redefine canonical semantics or portable contracts.
+A portfolio classification delegates no technical authority to this repository. A repository remains authoritative only for the scope explicitly recorded in the relationship registry. Incubating repositories may propose artifacts but must not silently redefine canonical semantics or portable contracts. Observation signals may nominate review but cannot change classifications automatically; interoperability experiments may establish only bounded, evidence-backed lab findings; adapted forks own only fork-local additions and evidence.
 
 ## Change control
 

@@ -12,6 +12,7 @@ relationship_types:
 - assurance-feedback-to
 - incubates
 - fork-of
+- nominates-review-for
 authorities:
   governance_authority_assurance_model: governance-authority-assurance-metamodel
   canonical_semantics: trust-systems-meta-model
@@ -50,8 +51,8 @@ relationships:
 - from: open-national-digital-trust-framework
   to: governance-authority-assurance-metamodel
   type: informative-alignment
-  constraint: ONDTF may apply GAAM governance, authority, and assurance concepts without transferring framework
-    or release authority.
+  constraint: ONDTF may apply GAAM governance, authority, and assurance concepts without transferring framework or release
+    authority.
 - from: open-national-digital-trust-framework
   to: trust-systems-meta-model
   type: supports
@@ -67,8 +68,8 @@ relationships:
 - from: trust-infrastructure-schemas
   to: trust-systems-meta-model
   type: normative-dependency
-  constraint: TIS derives canonical semantic meaning from TSMM but retains authority over schema design, identifiers,
-    serialization, validation contracts, and releases.
+  constraint: TIS derives canonical semantic meaning from TSMM but retains authority over schema design, identifiers, serialization,
+    validation contracts, and releases.
 - from: trust-systems-meta-model
   to: governance-authority-assurance-metamodel
   type: informative-alignment
@@ -112,8 +113,8 @@ relationships:
 - from: dtgwg-zkp-tf
   to: trustoverip/dtgwg-zkp-tf
   type: fork-of
-  constraint: The fork retains no upstream governance or release authority; fork-local implementation, risk, deployment,
-    and learning artefacts must preserve explicit upstream attribution.
+  constraint: The fork retains no upstream governance or release authority; fork-local implementation, risk, deployment, and
+    learning artefacts must preserve explicit upstream attribution.
 - from: ctwg-main-glossary
   to: trustoverip/ctwg-main-glossary
   type: fork-of
@@ -153,13 +154,47 @@ relationships:
 - from: trust-graph-artifacts
   to: trust-systems-meta-model
   type: normative-dependency
-  constraint: TGA packages use TSMM canonical semantics. TGA may incubate candidate concepts but cannot modify or
-    supersede TSMM semantics.
+  constraint: TGA packages use TSMM canonical semantics. TGA may incubate candidate concepts but cannot modify or supersede
+    TSMM semantics.
 - from: trust-graph-artifacts
   to: trust-systems-meta-model
   type: incubates
-  constraint: Stable cross-domain epistemic-governance concepts may be proposed through TSMM governance. Incubation
-    creates no canonical semantic authority.
+  constraint: Stable cross-domain epistemic-governance concepts may be proposed through TSMM governance. Incubation creates
+    no canonical semantic authority.
+- from: PolicyMesh
+  to: governance-authority-assurance-metamodel
+  type: informative-alignment
+  constraint: PolicyMesh may consume GAAM governance and authority concepts but does not establish external mandate legitimacy
+    or modify GAAM semantics.
+- from: PolicyMesh
+  to: trust-systems-meta-model
+  type: informative-alignment
+  constraint: PolicyMesh may map policy decisions to TSMM concepts but cannot redefine TSMM canonical semantics.
+- from: PolicyMesh
+  to: trust-protocol-interop-lab
+  type: evaluated-by
+  constraint: Interop Lab experiments may test PolicyMesh compositions; experimental results do not confer policy authority
+    or certification.
+- from: dtg-portfolio-monitor
+  to: trust-protocol-interop-lab
+  type: nominates-review-for
+  constraint: Portfolio change and convergence signals may nominate interoperability questions for human review but cannot
+    automatically admit cases or create interoperability claims.
+- from: trust-protocol-interop-lab
+  to: dtgwg-rahp-tf
+  type: evaluated-by
+  constraint: Consequential interoperability cases may receive fork-local RAHP pressure testing; findings do not alter upstream
+    specifications or governance automatically.
+- from: dtgwg-rahp-tf
+  to: dtg-conformance-assurance
+  type: supports
+  constraint: RAHP risk, harm, guardrail, and security findings complement conformance evidence and do not substitute for
+    specification conformance testing.
+- from: dtgwg-rahp-tf
+  to: trustoverip/dtgwg-rahp-tf
+  type: fork-of
+  constraint: The fork retains no upstream governance or release authority; fork-local assurance tooling, pressure tests,
+    security reviews, and adoption guidance must preserve explicit upstream attribution.
 external_repositories:
 - name: trustoverip/dtgwg-zkp-tf
   kind: upstream
@@ -181,6 +216,8 @@ external_repositories:
   kind: upstream
 - name: trustoverip/DHP-Specs
   kind: upstream
+- name: trustoverip/dtgwg-rahp-tf
+  authority: upstream
 adoption_paths:
   governance-to-assurance:
   - governance-authority-assurance-metamodel
