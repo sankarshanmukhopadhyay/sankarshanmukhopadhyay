@@ -7,9 +7,9 @@ nav_order: 1
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-08-12T04:12:05Z  
+**Observed:** 2026-08-16T04:59:19Z  
 **Scope:** 10 flagship original repositories  
-**Open findings:** 7
+**Open findings:** 9
 
 > This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.
 
@@ -17,20 +17,20 @@ nav_order: 1
 
 | Repository | Availability | Status declaration | Workflow evidence | Findings |
 |---|---:|---:|---:|---:|
-| [open-national-digital-trust-framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework) | available | valid | 0 failed | 0 |
+| [open-national-digital-trust-framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework) | available | valid | 3 failed | 1 |
 | [governance-authority-assurance-metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | available | valid | 3 failed | 1 |
 | [agent-registry-protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | available | valid | 7 failed | 1 |
 | [trust-systems-meta-model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | available | valid | 3 failed | 1 |
 | [trust-infrastructure-schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | available | valid | 11 failed | 1 |
 | [trust-graph-artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | available | valid | 0 failed | 0 |
-| [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) | available | valid | 10 failed | 1 |
-| [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | available | valid | 0 failed | 0 |
-| [trqp-conformance-suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | available | valid | 11 failed | 1 |
+| [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) | available | valid | 8 failed | 1 |
+| [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | available | valid | 1 failed | 1 |
+| [trqp-conformance-suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | available | valid | 10 failed | 1 |
 | [trqp-assurance-hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | available | valid | 14 failed | 1 |
 
 ## Findings
 
-### PAM-1859777085AF: TRQP-TSPP
+### PAM-58A368C5F21B: TRQP-TSPP
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -38,7 +38,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-A0B485BEAEAD: agent-registry-protocol
+### PAM-FE168A914D0F: agent-registry-protocol
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -46,7 +46,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-53E0745899E3: governance-authority-assurance-metamodel
+### PAM-3B2875EFC157: cawg-trqp-verifier-refimpl
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -54,7 +54,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-5E55077BA582: trqp-assurance-hub
+### PAM-B37A011834C4: governance-authority-assurance-metamodel
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -62,7 +62,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-3917673E35FF: trqp-conformance-suite
+### PAM-FA4400AADDBE: open-national-digital-trust-framework
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -70,7 +70,7 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-3638CC58C9D0: trust-infrastructure-schemas
+### PAM-44192C1BF25C: trqp-assurance-hub
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
@@ -78,7 +78,23 @@ nav_order: 1
 - **Recommended action:** Review the failed workflow and record remediation or accepted risk.
 - **Automatic effect:** `none`
 
-### PAM-C2F279CF8608: trust-systems-meta-model
+### PAM-9866043AFFFA: trqp-conformance-suite
+
+- **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
+- **Severity:** `medium`
+- **Claim:** Recent completed default-branch workflows should not contain unresolved failures.
+- **Recommended action:** Review the failed workflow and record remediation or accepted risk.
+- **Automatic effect:** `none`
+
+### PAM-F4AA17C8AD99: trust-infrastructure-schemas
+
+- **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
+- **Severity:** `medium`
+- **Claim:** Recent completed default-branch workflows should not contain unresolved failures.
+- **Recommended action:** Review the failed workflow and record remediation or accepted risk.
+- **Automatic effect:** `none`
+
+### PAM-3BA132C2F78D: trust-systems-meta-model
 
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
 - **Severity:** `medium`
