@@ -7,9 +7,10 @@ search_exclude: true
 
 # Portfolio Assurance Report — 2026-08-16
 
-**Observed:** 2026-08-16T04:59:19Z  
-**Scope:** 10 flagship original repositories  
-**Open findings:** 9
+**Observed:** 2026-08-16T05:19:32Z  
+**Scope:** 11 flagship original repositories  
+**Open findings:** 0  
+**Unclassified public repositories:** 0
 
 > This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.
 
@@ -17,91 +18,21 @@ search_exclude: true
 
 | Repository | Availability | Status declaration | Workflow evidence | Findings |
 |---|---:|---:|---:|---:|
-| [open-national-digital-trust-framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework) | available | valid | 3 failed | 1 |
-| [governance-authority-assurance-metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | available | valid | 3 failed | 1 |
-| [agent-registry-protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | available | valid | 7 failed | 1 |
-| [trust-systems-meta-model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | available | valid | 3 failed | 1 |
-| [trust-infrastructure-schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | available | valid | 11 failed | 1 |
-| [trust-graph-artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | available | valid | 0 failed | 0 |
-| [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) | available | valid | 8 failed | 1 |
-| [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | available | valid | 1 failed | 1 |
-| [trqp-conformance-suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | available | valid | 10 failed | 1 |
-| [trqp-assurance-hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | available | valid | 14 failed | 1 |
+| [open-national-digital-trust-framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework) | available | valid | 0 unresolved | 0 |
+| [governance-authority-assurance-metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | available | valid | 0 unresolved | 0 |
+| [agent-registry-protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | available | valid | 0 unresolved | 0 |
+| [trust-systems-meta-model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | available | valid | 0 unresolved | 0 |
+| [trust-infrastructure-schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | available | valid | 0 unresolved | 0 |
+| [trust-graph-artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | available | valid | 0 unresolved | 0 |
+| [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) | available | valid | 0 unresolved | 0 |
+| [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | available | valid | 0 unresolved | 0 |
+| [trqp-conformance-suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | available | valid | 0 unresolved | 0 |
+| [trqp-assurance-hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | available | valid | 0 unresolved | 0 |
+| [rahp-toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | available | n/a | 0 unresolved | 0 |
 
 ## Findings
 
-### PAM-58A368C5F21B: TRQP-TSPP
-
-- **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
-- **Severity:** `medium`
-- **Claim:** Recent completed default-branch workflows should not contain unresolved failures.
-- **Recommended action:** Review the failed workflow and record remediation or accepted risk.
-- **Automatic effect:** `none`
-
-### PAM-FE168A914D0F: agent-registry-protocol
-
-- **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
-- **Severity:** `medium`
-- **Claim:** Recent completed default-branch workflows should not contain unresolved failures.
-- **Recommended action:** Review the failed workflow and record remediation or accepted risk.
-- **Automatic effect:** `none`
-
-### PAM-3B2875EFC157: cawg-trqp-verifier-refimpl
-
-- **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
-- **Severity:** `medium`
-- **Claim:** Recent completed default-branch workflows should not contain unresolved failures.
-- **Recommended action:** Review the failed workflow and record remediation or accepted risk.
-- **Automatic effect:** `none`
-
-### PAM-B37A011834C4: governance-authority-assurance-metamodel
-
-- **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
-- **Severity:** `medium`
-- **Claim:** Recent completed default-branch workflows should not contain unresolved failures.
-- **Recommended action:** Review the failed workflow and record remediation or accepted risk.
-- **Automatic effect:** `none`
-
-### PAM-FA4400AADDBE: open-national-digital-trust-framework
-
-- **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
-- **Severity:** `medium`
-- **Claim:** Recent completed default-branch workflows should not contain unresolved failures.
-- **Recommended action:** Review the failed workflow and record remediation or accepted risk.
-- **Automatic effect:** `none`
-
-### PAM-44192C1BF25C: trqp-assurance-hub
-
-- **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
-- **Severity:** `medium`
-- **Claim:** Recent completed default-branch workflows should not contain unresolved failures.
-- **Recommended action:** Review the failed workflow and record remediation or accepted risk.
-- **Automatic effect:** `none`
-
-### PAM-9866043AFFFA: trqp-conformance-suite
-
-- **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
-- **Severity:** `medium`
-- **Claim:** Recent completed default-branch workflows should not contain unresolved failures.
-- **Recommended action:** Review the failed workflow and record remediation or accepted risk.
-- **Automatic effect:** `none`
-
-### PAM-F4AA17C8AD99: trust-infrastructure-schemas
-
-- **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
-- **Severity:** `medium`
-- **Claim:** Recent completed default-branch workflows should not contain unresolved failures.
-- **Recommended action:** Review the failed workflow and record remediation or accepted risk.
-- **Automatic effect:** `none`
-
-### PAM-3BA132C2F78D: trust-systems-meta-model
-
-- **Rule:** `DEFAULT_BRANCH_WORKFLOW_FAILURE`
-- **Severity:** `medium`
-- **Claim:** Recent completed default-branch workflows should not contain unresolved failures.
-- **Recommended action:** Review the failed workflow and record remediation or accepted risk.
-- **Automatic effect:** `none`
-
+No findings were produced by the enabled rules.
 ## Governance boundary
 
-The monitor observes public evidence and evaluates configured rules. Portfolio classifications change only through reviewed governance updates. Repository-local evidence remains authoritative for implementation and release claims.
+The monitor observes public evidence and evaluates configured rules. Account discovery can nominate unclassified repositories, and issue publication can route eligible actionable findings, but neither capability changes portfolio membership or repository authority. Portfolio classifications change only through reviewed governance updates. Repository-local evidence remains authoritative for implementation and release claims.
