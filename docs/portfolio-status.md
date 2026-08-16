@@ -18,6 +18,7 @@ The authoritative state is maintained in [`data/repository-status.yaml`](../data
 | `trust-systems-meta-model` | Flagship | Candidate | Active validation |
 | `trust-infrastructure-schemas` | Flagship | Candidate | Active validation |
 | `trust-graph-artifacts` | Flagship | Implementation draft | Active development |
+| `rahp-toolkit` | Flagship | Stable | Stable maintenance |
 | `TRQP-TSPP` | Flagship | Candidate | Active validation |
 | `cawg-trqp-verifier-refimpl` | Flagship | Pilot ready | Active validation |
 | `trqp-conformance-suite` | Flagship | Pilot ready | Active validation |
@@ -50,9 +51,8 @@ The authoritative state is maintained in [`data/repository-status.yaml`](../data
 | Repository | Tier | Fork-local maturity | Upstream authority | Portfolio-local role |
 |---|---|---|---|---|
 | `dtgwg-zkp-tf` | Featured | Implementation draft | `trustoverip/dtgwg-zkp-tf` | Adapted ZKP implementation, risk, deployment, and learning guidance |
-| `dtgwg-rahp-tf` | Featured | Implementation draft | `trustoverip/dtgwg-rahp-tf` | Adapted risk/harm pressure testing, security hardening, assurance evidence, and adoption tooling |
 
-`adapted-upstream-work` recognizes substantive fork-local capability while preserving upstream authorship, governance, release, and adoption boundaries.
+`adapted-upstream-work` recognizes substantive fork-local capability while preserving upstream authorship, governance, release, and adoption boundaries. The former `dtgwg-rahp-tf` fork is retained in the canonical register as **historical/superseded lineage**; the portable assurance capability is now governed as the original `rahp-toolkit` project.
 
 ## Upstream references
 
@@ -60,8 +60,8 @@ The governed upstream-reference set currently includes `agtp`, `ctwg-main-glossa
 
 ## Other governed dispositions
 
-Repositories such as `decentralized-directory-protocol` and `A2A` may remain `pending-review`; `DHP-Specs` is retained as historical portfolio material. Other repositories may be historical or otherwise outside active portfolio membership. Their account-level disposition is still recorded in the canonical registry.
+Repositories such as `decentralized-directory-protocol`, `A2A`, and `route-story-studio` may remain `pending-review`; `DHP-Specs` is retained as historical portfolio material. Older public repositories that do not need full portfolio metadata are recorded in the lightweight `account_dispositions` section of the canonical registry as `historical` or `unrelated`. This prevents known legacy repositories from being repeatedly rediscovered while keeping the detailed `repositories[]` register focused on governed portfolio and review candidates.
 
 ## Curated boundary
 
-The registry is not a claim that every public repository belongs to the portfolio. Repositories outside the curated portfolio receive an account-level disposition rather than full portfolio membership. A separate external-discovery check can identify public repositories that have not yet received any disposition; discovery itself never auto-enrols a repository.
+The registry is not a claim that every public repository belongs to the portfolio. Repositories outside the curated portfolio receive an account-level disposition rather than full portfolio membership. The Portfolio Assurance Monitor compares the live public account against both detailed repository records and lightweight account dispositions. Only genuinely unclassified public repositories are nominated for review; discovery itself never auto-enrols a repository.

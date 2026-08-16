@@ -41,6 +41,7 @@ planes:
   - trqp-conformance-suite
   - trqp-assurance-hub
   - dtg-conformance-assurance
+  - rahp-toolkit
   upstream-derived-collaboration:
   - agtp
   - dtgwg-zkp-tf
@@ -181,11 +182,11 @@ relationships:
   constraint: Portfolio change and convergence signals may nominate interoperability questions for human review but cannot
     automatically admit cases or create interoperability claims.
 - from: trust-protocol-interop-lab
-  to: dtgwg-rahp-tf
+  to: rahp-toolkit
   type: evaluated-by
-  constraint: Consequential interoperability cases may receive fork-local RAHP pressure testing; findings do not alter upstream
+  constraint: Consequential interoperability cases may receive portable RAHP pressure testing; findings do not alter reviewed
     specifications or governance automatically.
-- from: dtgwg-rahp-tf
+- from: rahp-toolkit
   to: dtg-conformance-assurance
   type: supports
   constraint: RAHP risk, harm, guardrail, and security findings complement conformance evidence and do not substitute for

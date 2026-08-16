@@ -35,10 +35,23 @@ jobs:
       - name: Run monitor tests
         run: python -m unittest discover -s tests -p 'test_*.py'
 
-      - name: Collect evidence and generate reports
+      - name: Create scoped portfolio issue token
+        id: issue-token
+        env:
+          APP_ID: ${{ secrets.PORTFOLIO_ASSURANCE_APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.PORTFOLIO_ASSURANCE_APP_PRIVATE_KEY }}
+        if: ${{ env.APP_ID != '' && env.APP_PRIVATE_KEY != '' }}
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.PORTFOLIO_ASSURANCE_APP_ID }}
+          private-key: ${{ secrets.PORTFOLIO_ASSURANCE_APP_PRIVATE_KEY }}
+          owner: sankarshanmukhopadhyay
+
+      - name: Collect evidence, discover drift, and generate reports
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/portfolio_assurance_monitor.py
+          PORTFOLIO_ISSUE_TOKEN: ${{ steps.issue-token.outputs.token }}
+        run: python scripts/portfolio_assurance_monitor.py --publish-issues
 
       - name: Validate generated site links
         run: python scripts/check_internal_links.py

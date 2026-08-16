@@ -1,16 +1,30 @@
 #!/usr/bin/env python3
 """Collect portfolio evidence, evaluate deterministic rules, and publish assurance reports."""
 from __future__ import annotations
-import argparse, datetime as dt, hashlib, json, os, sys, urllib.error, urllib.request
+import argparse
+import datetime as dt
+import json
+import os
+import sys
+import urllib.error
+import urllib.request
 from pathlib import Path
 from typing import Any
+
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT / "scripts") not in sys.path:
+    sys.path.insert(0, str(ROOT / "scripts"))
+
+from portfolio_assurance.core import iso, latest_workflow_states, make_finding as _make_finding
+from portfolio_assurance.discovery import discover_public_repositories, discovery_findings
+from portfolio_assurance.github_issues import publish_findings
+from portfolio_assurance.routing import routing_decision
+
 STATUS_PATH = ROOT / "data/repository-status.yaml"
 POLICY_PATH = ROOT / "config/portfolio-monitor/policy.yaml"
-REL_PATH = ROOT / "data/portfolio-relationships.yaml"
-USER_AGENT = "portfolio-assurance-monitor/1.0"
+USER_AGENT = "portfolio-assurance-monitor/2.0"
 
 
 def load_yaml(path: Path) -> dict[str, Any]:
@@ -22,10 +36,6 @@ def load_yaml(path: Path) -> dict[str, Any]:
 
 def utc_now() -> dt.datetime:
     return dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
-
-
-def iso(value: dt.datetime) -> str:
-    return value.isoformat().replace("+00:00", "Z")
 
 
 def selected_repositories(status: dict[str, Any], policy: dict[str, Any]) -> list[dict[str, Any]]:
@@ -88,11 +98,14 @@ def collect_repository(owner: str, repo: dict[str, Any], policy: dict[str, Any],
             except Exception as error:
                 observation["evidence"]["status_declaration"] = {"path": path, "present": True, "readable": False, "error": str(error)}
         try:
-            runs = request_json(f"https://api.github.com/repos/{owner}/{name}/actions/runs?branch={branch}&per_page={int(policy['collection']['workflow_runs_per_repository'])}", token, timeout)
+            runs = request_json(
+                f"https://api.github.com/repos/{owner}/{name}/actions/runs?branch={branch}&per_page={int(policy['collection']['workflow_runs_per_repository'])}",
+                token, timeout,
+            )
             workflow_runs = runs.get("workflow_runs", []) if isinstance(runs, dict) else []
-            completed = [r for r in workflow_runs if r.get("status") == "completed"]
-            failed = [r for r in completed if r.get("conclusion") in {"failure", "timed_out", "cancelled", "action_required", "startup_failure"}]
-            observation["evidence"]["workflow_runs"] = {"completed_examined": len(completed), "failed": len(failed), "latest_failed_url": failed[0].get("html_url") if failed else None}
+            observation["evidence"]["workflow_runs"] = latest_workflow_states(
+                workflow_runs, now, int(policy["collection"]["lookback_days"])
+            )
         except Exception as error:
             observation["evidence"]["workflow_runs"] = {"available": False, "error": str(error)}
     except Exception as error:
@@ -100,103 +113,106 @@ def collect_repository(owner: str, repo: dict[str, Any], policy: dict[str, Any],
     return observation
 
 
-def make_finding(repository: str, rule_id: str, severity: str, observed_at: str, claim: str, evidence: dict[str, Any], action: str) -> dict[str, Any]:
-    digest = hashlib.sha256(f"{repository}|{rule_id}|{observed_at[:10]}".encode()).hexdigest()[:12].upper()
-    return {"finding_id": f"PAM-{digest}", "repository": repository, "rule_id": rule_id, "severity": severity, "observed_at": observed_at, "claim": claim, "evidence": evidence, "recommended_action": action, "automatic_effect": "none"}
+def make_finding(repository: str, rule_id: str, severity: str, observed_at: str, claim: str,
+                 evidence: dict[str, Any], action: str, *, subject: str = "repository",
+                 repo: dict[str, Any] | None = None, policy: dict[str, Any] | None = None) -> dict[str, Any]:
+    finding = _make_finding(repository, rule_id, severity, observed_at, claim, evidence, action, subject=subject)
+    if repo is not None and policy is not None:
+        finding["routing"] = routing_decision(repo, finding, policy)
+    return finding
 
 
 def evaluate(repo: dict[str, Any], observation: dict[str, Any], policy: dict[str, Any], now: dt.datetime) -> list[dict[str, Any]]:
-    findings = []
+    findings: list[dict[str, Any]] = []
     rules = policy["rules"]
     name, observed_at = repo["name"], observation["observed_at"]
     if not observation["available"] and rules["repository_unavailable"]["enabled"]:
-        findings.append(make_finding(name, "REPOSITORY_UNAVAILABLE", rules["repository_unavailable"]["severity"], observed_at, "A monitored flagship repository must remain publicly observable.", {"collection_error": observation.get("collection_error")}, "Verify repository availability, visibility, rename state, and monitor permissions."))
+        findings.append(make_finding(name, "REPOSITORY_UNAVAILABLE", rules["repository_unavailable"]["severity"], observed_at,
+            "A monitored flagship repository must remain publicly observable.", {"collection_error": observation.get("collection_error")},
+            "Verify repository availability, visibility, rename state, and monitor permissions.", repo=repo, policy=policy))
         return findings
     try:
         next_review = dt.date.fromisoformat(str(repo["next_review"]))
         if next_review < now.date() and rules["review_overdue"]["enabled"]:
-            findings.append(make_finding(name, "REVIEW_OVERDUE", rules["review_overdue"]["severity"], observed_at, "The portfolio review date must not be expired.", {"next_review": str(next_review)}, "Conduct and record a portfolio status review."))
+            findings.append(make_finding(name, "REVIEW_OVERDUE", rules["review_overdue"]["severity"], observed_at,
+                "The portfolio review date must not be expired.", {"next_review": str(next_review)},
+                "Conduct and record a portfolio status review.", repo=repo, policy=policy))
     except Exception:
         pass
     declaration = observation["evidence"].get("status_declaration")
     if repo.get("status_source", {}).get("required") and declaration:
         if not declaration.get("present") and rules["status_declaration_missing"]["enabled"]:
-            findings.append(make_finding(name, "STATUS_DECLARATION_MISSING", rules["status_declaration_missing"]["severity"], observed_at, "A required repository-local status declaration must exist.", declaration, "Add the required status declaration or revise the governed status-source contract."))
+            findings.append(make_finding(name, "STATUS_DECLARATION_MISSING", rules["status_declaration_missing"]["severity"], observed_at,
+                "A required repository-local status declaration must exist.", declaration,
+                "Add the required status declaration or revise the governed status-source contract.", repo=repo, policy=policy))
         elif not declaration.get("readable") and rules["status_declaration_unreadable"]["enabled"]:
-            findings.append(make_finding(name, "STATUS_DECLARATION_UNREADABLE", rules["status_declaration_unreadable"]["severity"], observed_at, "A required repository-local status declaration must be readable YAML.", declaration, "Correct the declaration syntax and validate it against the portfolio schema."))
+            findings.append(make_finding(name, "STATUS_DECLARATION_UNREADABLE", rules["status_declaration_unreadable"]["severity"], observed_at,
+                "A required repository-local status declaration must be readable YAML.", declaration,
+                "Correct the declaration syntax and validate it against the portfolio schema.", repo=repo, policy=policy))
     workflows = observation["evidence"].get("workflow_runs", {})
-    if workflows.get("failed", 0) > 0 and rules["default_branch_workflow_failure"]["enabled"]:
-        findings.append(make_finding(name, "DEFAULT_BRANCH_WORKFLOW_FAILURE", rules["default_branch_workflow_failure"]["severity"], observed_at, "Recent completed default-branch workflows should not contain unresolved failures.", workflows, "Review the failed workflow and record remediation or accepted risk."))
+    if workflows.get("unresolved_failures", 0) > 0 and rules["default_branch_workflow_unresolved_failure"]["enabled"]:
+        for unresolved in workflows.get("unresolved", []):
+            subject = str(unresolved.get("path") or unresolved.get("name") or unresolved.get("workflow_id") or "workflow")
+            findings.append(make_finding(name, "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+                rules["default_branch_workflow_unresolved_failure"]["severity"], observed_at,
+                "The latest completed default-branch run for this workflow is failing within the governed observation window.",
+                {**workflows, "unresolved": [unresolved]},
+                "Review the failed workflow, restore a successful default-branch run, or record an explicit accepted-risk disposition.",
+                subject=subject, repo=repo, policy=policy))
     pushed_at = observation["evidence"].get("repository", {}).get("pushed_at")
     if pushed_at and rules["no_recent_activity"]["enabled"]:
         pushed = dt.datetime.fromisoformat(pushed_at.replace("Z", "+00:00"))
         threshold = int(rules["no_recent_activity"]["threshold_days"])
         if (now - pushed).days > threshold and repo.get("lifecycle") == "active":
-            findings.append(make_finding(name, "NO_RECENT_ACTIVITY", rules["no_recent_activity"]["severity"], observed_at, "An active flagship repository has exceeded the configured activity-review threshold.", {"pushed_at": pushed_at, "threshold_days": threshold}, "Review whether the declared lifecycle and operational status remain accurate. Activity alone does not determine health."))
+            findings.append(make_finding(name, "NO_RECENT_ACTIVITY", rules["no_recent_activity"]["severity"], observed_at,
+                "An active flagship repository has exceeded the configured activity-review threshold.",
+                {"pushed_at": pushed_at, "threshold_days": threshold},
+                "Review whether the declared lifecycle and operational status remain accurate. Activity alone does not determine health.",
+                repo=repo, policy=policy))
     return findings
 
 
-def render_report(
-    repos: list[dict[str, Any]],
-    observations: list[dict[str, Any]],
-    findings: list[dict[str, Any]],
-    now: dt.datetime,
-    *,
-    publication_role: str = "dashboard",
-) -> str:
+def render_report(repos: list[dict[str, Any]], observations: list[dict[str, Any]], findings: list[dict[str, Any]], now: dt.datetime, *, publication_role: str = "dashboard") -> str:
     if publication_role not in {"dashboard", "evidence"}:
         raise ValueError(f"Unsupported publication role: {publication_role}")
     by_repo = {o["repository"]: o for o in observations}
     f_by_repo: dict[str, list[dict[str, Any]]] = {}
-    for finding in findings: f_by_repo.setdefault(finding["repository"], []).append(finding)
+    for finding in findings:
+        f_by_repo.setdefault(finding["repository"], []).append(finding)
     if publication_role == "dashboard":
-        front_matter = [
-            "---",
-            "layout: default",
-            "title: Portfolio Assurance Dashboard",
-            "parent: Portfolio Assurance Monitor",
-            "nav_order: 1",
-            "---",
-        ]
+        front_matter = ["---", "layout: default", "title: Portfolio Assurance Dashboard", "parent: Portfolio Assurance Monitor", "nav_order: 1", "---"]
         heading = "Portfolio Assurance Dashboard"
     else:
-        front_matter = [
-            "---",
-            "layout: default",
-            f"title: Portfolio Assurance Report — {now.date().isoformat()}",
-            "nav_exclude: true",
-            "search_exclude: true",
-            "---",
-        ]
+        front_matter = ["---", "layout: default", f"title: Portfolio Assurance Report — {now.date().isoformat()}", "nav_exclude: true", "search_exclude: true", "---"]
         heading = f"Portfolio Assurance Report — {now.date().isoformat()}"
-    lines = front_matter + ["", f"# {heading}", "", f"**Observed:** {iso(now)}  ", f"**Scope:** {len(repos)} flagship original repositories  ", f"**Open findings:** {len(findings)}", "", "> This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.", "", "## Current observations", "", "| Repository | Availability | Status declaration | Workflow evidence | Findings |", "|---|---:|---:|---:|---:|"]
+    monitored_findings = [f for f in findings if f["repository"] in by_repo]
+    discovery_count = len([f for f in findings if f["rule_id"] == "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION"])
+    lines = front_matter + ["", f"# {heading}", "", f"**Observed:** {iso(now)}  ", f"**Scope:** {len(repos)} flagship original repositories  ", f"**Open findings:** {len(findings)}  ", f"**Unclassified public repositories:** {discovery_count}", "", "> This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.", "", "## Current observations", "", "| Repository | Availability | Status declaration | Workflow evidence | Findings |", "|---|---:|---:|---:|---:|"]
     for repo in repos:
-        obs = by_repo[repo["name"]]; ev = obs.get("evidence", {}); declaration = ev.get("status_declaration")
+        obs = by_repo[repo["name"]]
+        ev = obs.get("evidence", {})
+        declaration = ev.get("status_declaration")
         decl = "n/a" if declaration is None else ("valid" if declaration.get("readable") else "attention")
-        workflows = ev.get("workflow_runs", {}); wf = "unavailable" if workflows.get("available") is False else f"{workflows.get('failed', 0)} failed"
+        workflows = ev.get("workflow_runs", {})
+        wf = "unavailable" if workflows.get("available") is False else f"{workflows.get('unresolved_failures', 0)} unresolved"
         lines.append(f"| [{repo['name']}](https://github.com/sankarshanmukhopadhyay/{repo['name']}) | {'available' if obs['available'] else 'unavailable'} | {decl} | {wf} | {len(f_by_repo.get(repo['name'], []))} |")
     lines += ["", "## Findings", ""]
-    if not findings: lines.append("No findings were produced by the enabled rules.")
-    for finding in sorted(findings, key=lambda x: (x["severity"], x["repository"], x["rule_id"])):
-        lines += [f"### {finding['finding_id']}: {finding['repository']}", "", f"- **Rule:** `{finding['rule_id']}`", f"- **Severity:** `{finding['severity']}`", f"- **Claim:** {finding['claim']}", f"- **Recommended action:** {finding['recommended_action']}", f"- **Automatic effect:** `{finding['automatic_effect']}`", ""]
-    lines += ["## Governance boundary", "", "The monitor observes public evidence and evaluates configured rules. Portfolio classifications change only through reviewed governance updates. Repository-local evidence remains authoritative for implementation and release claims.", ""]
+    if not findings:
+        lines.append("No findings were produced by the enabled rules.")
+    for finding in sorted(findings, key=lambda x: (x["severity"], x["repository"], x["rule_id"], x.get("subject", ""))):
+        lines += [f"### {finding['finding_id']}: {finding['repository']}", "", f"- **Fingerprint:** `{finding['finding_fingerprint']}`", f"- **Rule:** `{finding['rule_id']}`", f"- **Subject:** `{finding.get('subject', 'repository')}`", f"- **Severity:** `{finding['severity']}`", f"- **Claim:** {finding['claim']}", f"- **Recommended action:** {finding['recommended_action']}", f"- **Issue routing:** `{finding.get('routing', {}).get('target', 'central-review')}`", f"- **Automatic effect:** `{finding['automatic_effect']}`", ""]
+    lines += ["## Governance boundary", "", "The monitor observes public evidence and evaluates configured rules. Account discovery can nominate unclassified repositories, and issue publication can route eligible actionable findings, but neither capability changes portfolio membership or repository authority. Portfolio classifications change only through reviewed governance updates. Repository-local evidence remains authoritative for implementation and release claims.", ""]
     return "\n".join(lines)
 
 
-def write_outputs(
-    dashboard_report: str,
-    evidence_report: str,
-    findings: list[dict[str, Any]],
-    observations: list[dict[str, Any]],
-    policy: dict[str, Any],
-    now: dt.datetime,
-) -> None:
+def write_outputs(dashboard_report: str, evidence_report: str, findings: list[dict[str, Any]], observations: list[dict[str, Any]], policy: dict[str, Any], now: dt.datetime, publication_records: list[dict[str, Any]] | None = None) -> None:
     publication = policy["publication"]
     latest = ROOT / publication["latest_report"]
     latest.parent.mkdir(parents=True, exist_ok=True)
     latest.write_text(evidence_report, encoding="utf-8")
     (ROOT / publication["documentation_page"]).write_text(dashboard_report, encoding="utf-8")
-    (ROOT / publication["latest_findings"]).write_text(json.dumps({"generated_at": iso(now), "findings": findings, "observations": observations}, indent=2) + "\n", encoding="utf-8")
+    payload = {"generated_at": iso(now), "findings": findings, "observations": observations, "issue_publication": publication_records or []}
+    (ROOT / publication["latest_findings"]).write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     history = ROOT / publication["history_directory"]
     history.mkdir(parents=True, exist_ok=True)
     (history / f"{now.date().isoformat()}.md").write_text(evidence_report, encoding="utf-8")
@@ -204,8 +220,9 @@ def write_outputs(
 
 def offline_observation(repo: dict[str, Any], now: dt.datetime) -> dict[str, Any]:
     declaration = repo.get("status_source", {})
-    evidence: dict[str, Any] = {"repository": {"pushed_at": iso(now), "default_branch": "main"}, "workflow_runs": {"completed_examined": 0, "failed": 0}}
-    if declaration.get("type") == "member-declaration": evidence["status_declaration"] = {"path": declaration.get("path"), "present": True, "readable": True, "mode": "offline-validation"}
+    evidence: dict[str, Any] = {"repository": {"pushed_at": iso(now), "default_branch": "main"}, "workflow_runs": {"lookback_days": 7, "completed_examined": 0, "workflows_examined": 0, "unresolved_failures": 0, "unresolved": []}}
+    if declaration.get("type") == "member-declaration":
+        evidence["status_declaration"] = {"path": declaration.get("path"), "present": True, "readable": True, "mode": "offline-validation"}
     return {"repository": repo["name"], "observed_at": iso(now), "available": True, "evidence": evidence, "collection_error": None}
 
 
@@ -213,17 +230,40 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--offline", action="store_true", help="Validate generation without GitHub network calls")
     parser.add_argument("--check", action="store_true", help="Evaluate and print summary without writing files")
+    parser.add_argument("--publish-issues", action="store_true", help="Publish eligible findings when issue routing and credentials are enabled")
     args = parser.parse_args()
     status, policy = load_yaml(STATUS_PATH), load_yaml(POLICY_PATH)
     repos = selected_repositories(status, policy)
-    if not repos: raise SystemExit("No repositories selected by portfolio monitor policy")
-    now = utc_now(); token = os.getenv("GITHUB_TOKEN")
+    if not repos:
+        raise SystemExit("No repositories selected by portfolio monitor policy")
+    now = utc_now()
+    token = os.getenv("GITHUB_TOKEN")
     observations = [offline_observation(repo, now) if args.offline else collect_repository(policy["owner"], repo, policy, token, now) for repo in repos]
     findings = [finding for repo, observation in zip(repos, observations) for finding in evaluate(repo, observation, policy, now)]
+    if not args.offline and policy.get("discovery", {}).get("enabled", False):
+        try:
+            public_repos = discover_public_repositories(policy["owner"], request_json, token, int(policy["collection"]["request_timeout_seconds"]))
+            findings.extend(discovery_findings(status, public_repos, iso(now), str(policy["discovery"].get("severity", "info"))))
+        except Exception as error:
+            findings.append(_make_finding(policy["owner"], "ACCOUNT_DISCOVERY_UNAVAILABLE", "low", iso(now),
+                "Public account discovery could not be completed.", {"error": str(error)},
+                "Review GitHub API availability and monitor permissions; do not infer portfolio completeness from this run.", subject="public-account-discovery"))
+    publication_records: list[dict[str, Any]] = []
+    issue_cfg = policy.get("issue_routing", {})
+    issue_token = os.getenv("PORTFOLIO_ISSUE_TOKEN")
+    if args.publish_issues and issue_cfg.get("enabled", False):
+        if not issue_token:
+            publication_records.append({"action": "skipped", "reason": "PORTFOLIO_ISSUE_TOKEN not configured"})
+        else:
+            report_url = f"https://{policy['owner']}.github.io/{policy['owner']}/docs/portfolio-assurance/dashboard.html"
+            publication_records = publish_findings(policy["owner"], findings, issue_token, policy, report_url)
     dashboard_report = render_report(repos, observations, findings, now, publication_role="dashboard")
     evidence_report = render_report(repos, observations, findings, now, publication_role="evidence")
-    if not args.check: write_outputs(dashboard_report, evidence_report, findings, observations, policy, now)
-    print(f"Portfolio assurance monitor: {len(repos)} repositories, {len(findings)} findings, mode={'offline' if args.offline else 'live'}")
+    if not args.check:
+        write_outputs(dashboard_report, evidence_report, findings, observations, policy, now, publication_records)
+    print(f"Portfolio assurance monitor: {len(repos)} repositories, {len(findings)} findings, {len(publication_records)} issue actions, mode={'offline' if args.offline else 'live'}")
     return 0
 
-if __name__ == "__main__": raise SystemExit(main())
+
+if __name__ == "__main__":
+    raise SystemExit(main())

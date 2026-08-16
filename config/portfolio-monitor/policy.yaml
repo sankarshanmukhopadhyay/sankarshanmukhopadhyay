@@ -1,4 +1,4 @@
-schema_version: '1.0'
+schema_version: '2.0'
 owner: sankarshanmukhopadhyay
 scope:
   portfolio_dispositions: [included]
@@ -8,7 +8,7 @@ scope:
 collection:
   lookback_days: 7
   request_timeout_seconds: 20
-  workflow_runs_per_repository: 20
+  workflow_runs_per_repository: 50
 rules:
   review_overdue:
     enabled: true
@@ -19,7 +19,7 @@ rules:
   status_declaration_unreadable:
     enabled: true
     severity: high
-  default_branch_workflow_failure:
+  default_branch_workflow_unresolved_failure:
     enabled: true
     severity: medium
   repository_unavailable:
@@ -29,6 +29,27 @@ rules:
     enabled: true
     severity: info
     threshold_days: 45
+discovery:
+  enabled: true
+  severity: info
+  automatic_enrolment: false
+issue_routing:
+  # Capability is implemented but deliberately disabled until the GitHub App
+  # described in docs/portfolio-assurance/operations.md is installed.
+  enabled: false
+  default_target_issue_reporting: true
+  minimum_severity: medium
+  eligible_rules:
+    - REPOSITORY_UNAVAILABLE
+    - STATUS_DECLARATION_MISSING
+    - STATUS_DECLARATION_UNREADABLE
+    - DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
+  excluded_rules:
+    - REVIEW_OVERDUE
+    - NO_RECENT_ACTIVITY
+    - PUBLIC_REPOSITORY_WITHOUT_DISPOSITION
+  max_new_issues_per_run: 2
+  comment_on_repeat: false
 publication:
   latest_report: reports/portfolio-assurance/latest.md
   latest_findings: reports/portfolio-assurance/latest-findings.json
@@ -36,4 +57,5 @@ publication:
   documentation_page: docs/portfolio-assurance/dashboard.md
 governance:
   automatic_status_changes: false
+  automatic_issue_closure: false
   finding_disposition: human-review-required

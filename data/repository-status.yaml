@@ -1,8 +1,8 @@
-schema_version: '2.0'
+schema_version: '2.1'
 portfolio_scope:
   mode: curated
-  statement: This registry governs the curated trust-infrastructure portfolio and explicit account-level dispositions;
-    it is not an assertion that every public repository is a portfolio member.
+  statement: This registry governs the curated trust-infrastructure portfolio and explicit account-level dispositions; it
+    is not an assertion that every public repository is a portfolio member.
 controlled_vocabularies:
   portfolio_disposition:
   - included
@@ -561,27 +561,50 @@ repositories:
     required: false
   upstream: null
   upstream_adoption_status: not-applicable
-- name: dtgwg-rahp-tf
-  portfolio_disposition: adapted-upstream-work
-  tier: featured
-  maturity: implementation-draft
+- name: rahp-toolkit
+  portfolio_disposition: included
+  tier: flagship
+  maturity: stable
   lifecycle: active
-  operational_status: active-development
-  specification_status: working-draft
-  role: adapted-risk-harms-and-security-assurance-toolkit
+  operational_status: stable-maintenance
+  specification_status: not-applicable
+  role: portable-specification-assurance-toolkit
   portfolio_member: true
   authority_scope:
-  - fork-local-rahp-assurance-tooling
-  last_portfolio_review: '2026-08-12'
-  next_review: '2026-11-12'
+  - portable-risk-harms-security-assurance-method
+  last_portfolio_review: '2026-08-16'
+  next_review: '2026-11-16'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
+    required: false
+  upstream: null
+  upstream_adoption_status: not-applicable
+  assurance_routing:
+    target_issue_reporting: true
+    minimum_severity: medium
+- name: dtgwg-rahp-tf
+  portfolio_disposition: historical
+  tier: historical
+  maturity: historical
+  lifecycle: superseded
+  operational_status: superseded
+  specification_status: upstream-controlled
+  role: historical-dtg-rahp-fork-lineage
+  portfolio_member: true
+  authority_scope: []
+  last_portfolio_review: '2026-08-16'
+  next_review: '2027-02-16'
   provenance: fork
-  portfolio_governance: fork-derived-extension
+  portfolio_governance: fork-only
   status_source:
     type: portfolio-declaration
     path: data/repository-status.yaml
     required: false
   upstream: trustoverip/dtgwg-rahp-tf
-  upstream_adoption_status: adapted-with-attribution
+  upstream_adoption_status: historical-lineage
 - name: agtp
   portfolio_disposition: upstream-reference
   tier: upstream-collaboration
@@ -783,3 +806,144 @@ repositories:
     required: false
   upstream: trustoverip/DHP-Specs
   upstream_adoption_status: not-asserted
+- name: route-story-studio
+  portfolio_disposition: pending-review
+  tier: incubating
+  maturity: exploratory
+  lifecycle: active
+  operational_status: active-development
+  specification_status: not-applicable
+  role: route-story-authoring-and-visualization-studio
+  portfolio_member: false
+  authority_scope: []
+  last_portfolio_review: '2026-08-16'
+  next_review: '2026-10-16'
+  provenance: original
+  portfolio_governance: controlled
+  status_source:
+    type: portfolio-declaration
+    path: data/repository-status.yaml
+    required: false
+  upstream: null
+  upstream_adoption_status: not-applicable
+account_dispositions:
+- name: aries-rfcs
+  portfolio_disposition: historical
+  reason: Known public repository retained as account history; not part of the active curated trust-infrastructure portfolio.
+- name: asciidoc-cheatsheet
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: CCI-Governance-Framework
+  portfolio_disposition: historical
+  reason: Known public repository retained as account history; not part of the active curated trust-infrastructure portfolio.
+- name: concepts-and-terminology-wg
+  portfolio_disposition: historical
+  reason: Known public repository retained as account history; not part of the active curated trust-infrastructure portfolio.
+- name: data-trust-legal
+  portfolio_disposition: historical
+  reason: Known public repository retained as account history; not part of the active curated trust-infrastructure portfolio.
+- name: deliverables
+  portfolio_disposition: historical
+  reason: Known public repository retained as account history; not part of the active curated trust-infrastructure portfolio.
+- name: devconfcz
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: documentation
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: dotfiles
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: gadmin
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: gaskit
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: gbench
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: gdeploy
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: gitignore
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: gluster-ansible
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: gluster-ansible-infra
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: gluster-block
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: gluster-colonizer
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: glusterd2
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: glusterdocs
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: glusterfs
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: governance-stack-wg
+  portfolio_disposition: historical
+  reason: Known public repository retained as account history; not part of the active curated trust-infrastructure portfolio.
+- name: IG0029-utility-project-guide
+  portfolio_disposition: historical
+  reason: Known public repository retained as account history; not part of the active curated trust-infrastructure portfolio.
+- name: inpycon-blog
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: interoperability
+  portfolio_disposition: historical
+  reason: Known public repository retained as account history; not part of the active curated trust-infrastructure portfolio.
+- name: kadalu
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: landslide
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: microledger-spec
+  portfolio_disposition: historical
+  reason: Known public repository retained as account history; not part of the active curated trust-infrastructure portfolio.
+- name: ovirt-site
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: patient-identity-taskforce
+  portfolio_disposition: historical
+  reason: Known public repository retained as account history; not part of the active curated trust-infrastructure portfolio.
+- name: satools
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: self-sovereign-identity
+  portfolio_disposition: historical
+  reason: Known public repository retained as account history; not part of the active curated trust-infrastructure portfolio.
+- name: softserve
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: summertraining
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: topicmaps
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: TSS0001-governance-stack
+  portfolio_disposition: historical
+  reason: Known public repository retained as account history; not part of the active curated trust-infrastructure portfolio.
+- name: upi-recon
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: ursa-rfcs
+  portfolio_disposition: historical
+  reason: Known public repository retained as account history; not part of the active curated trust-infrastructure portfolio.
+- name: vimfiles
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.
+- name: xkcd-desktop
+  portfolio_disposition: unrelated
+  reason: Known public repository outside the curated trust-infrastructure portfolio.

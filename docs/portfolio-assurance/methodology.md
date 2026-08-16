@@ -2,38 +2,71 @@
 layout: default
 title: Methodology
 parent: Portfolio Assurance Monitor
-nav_order: 2
+nav_order: 3
 ---
 
-# Monitoring methodology
+# Portfolio assurance methodology
+
+The monitor evaluates the curated portfolio as executable governance. Its authority is intentionally narrower than the repositories it observes.
 
 ## Scope derivation
 
-The monitor does not maintain a second repository inventory. It reads `data/repository-status.yaml` and applies the selectors in `config/portfolio-monitor/policy.yaml`. The initial profile includes repositories that are simultaneously:
+The default monitoring scope is derived from `data/repository-status.yaml` and currently selects repositories with:
 
 - `portfolio_disposition: included`;
-- `tier: flagship`;
+- `tier: flagship`; and
 - `provenance: original`.
 
-The portfolio control-plane repository is excluded from member-repository evaluation because it owns the classification and reporting process.
+The profile/control-plane repository is excluded from repository-health collection and remains the central destination for portfolio-governance findings such as account-discovery drift.
 
-## Evidence collected
+## Evidence model
 
-The initial implementation collects public evidence only:
+For each monitored repository the collector attempts to observe:
 
-| Evidence | Purpose | Limitation |
-|---|---|---|
-| Repository metadata | Availability, default branch, archive state, recent push | Activity is not a maturity proxy |
-| Required `PROJECT-STATUS.yaml` | Presence and YAML readability | Semantic consistency remains a governed review task |
-| Recent default-branch workflow runs | Surface unresolved execution failures | A failed run may be superseded or intentionally accepted |
-| Portfolio review dates | Detect overdue governance review | Review quality requires human evidence |
+- public repository availability and default branch;
+- repository-local `PROJECT-STATUS.yaml` where required;
+- recent default-branch GitHub Actions runs; and
+- repository activity timestamps.
 
-## Finding rules
+Workflow evidence uses a governed lookback window and resolves the **latest completed state per workflow**. A prior failure superseded by a later success is not an unresolved failure.
 
-The initial rule set produces findings for repository unavailability, overdue reviews, missing or unreadable required status declarations, recent default-branch workflow failures, and prolonged inactivity requiring status review.
+## Finding identity
 
-Findings are observations against declared policy. They are not automatic decisions. Every finding contains `automatic_effect: none`.
+Findings have two identities:
 
-## Evidence and assurance level
+- `finding_id`: observation-scoped and date-sensitive;
+- `finding_fingerprint`: stable for the same repository, rule, and subject.
 
-The monitor provides first-party, repeatable, machine-produced evidence. It does not claim independent assessment. A stronger assurance profile could later add signed evidence bundles, schema-level declaration comparison, release-to-status reconciliation, cross-repository version compatibility, and independent reruns.
+Stable fingerprints provide a machine-verifiable deduplication key for target-repository issues and future disposition records.
+
+## Deterministic rules
+
+The current rules cover:
+
+- repository unavailability;
+- overdue portfolio review;
+- missing required status declarations;
+- unreadable required status declarations;
+- unresolved latest default-branch workflow failure; and
+- inactivity thresholds for repositories declared active.
+
+Account discovery adds a central `PUBLIC_REPOSITORY_WITHOUT_DISPOSITION` finding when a public repository has not yet received a governed account-level disposition.
+
+## Routing boundary
+
+A finding is not automatically an issue. The routing layer separately evaluates rule eligibility, severity, policy opt-in, deduplication state, and per-run publication caps. Only actionable repository-local findings may be routed to the repository where the evidence was observed.
+
+Portfolio-governance findings remain central. In particular, account discovery and inactivity do not create target-repository issues by default.
+
+## Assurance boundary
+
+The monitor may produce evidence that a claim requires review. It cannot automatically:
+
+- change portfolio membership or tier;
+- change repository maturity or lifecycle;
+- change normative specification content;
+- accept risk;
+- confer upstream authority; or
+- close a repository-local governance decision.
+
+The machine produces observations and findings. Human governance produces disposition.

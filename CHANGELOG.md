@@ -1,5 +1,16 @@
 # Changelog
 
+
+## 2026-08-16 — Portfolio assurance routing and portfolio refresh
+
+- Promoted `rahp-toolkit` into the original flagship assurance portfolio and retained `dtgwg-rahp-tf` as historical/superseded lineage.
+- Added `route-story-studio` as an explicit pending-review account disposition rather than inferring portfolio membership.
+- Corrected workflow-failure semantics to evaluate the latest completed state per workflow within the governed lookback window.
+- Added stable finding fingerprints, target-repository routing policy, issue deduplication, and per-run publication caps.
+- Added public-account discovery for repositories lacking a governed disposition without automatic enrolment.
+- Added optional GitHub App based cross-repository issue publication; the capability remains disabled until explicitly configured.
+- Expanded assurance methodology, operations guidance, schemas, and automated tests.
+
 All notable changes to the portfolio coordination repository are documented here.
 
 ## [Unreleased]
@@ -9,8 +20,8 @@ All notable changes to the portfolio coordination repository are documented here
 - Added `PolicyMesh` as governed supporting work for bounded policy/mandate evaluation and enforcement.
 - Added `trust-protocol-interop-lab` as the cross-protocol composition and interoperability-assurance layer.
 - Added `dtg-portfolio-monitor` as the wider DTG ecosystem situational-awareness layer.
-- Added `dtgwg-rahp-tf` as featured adapted-upstream work for risk/harm pressure testing, security hardening, assurance evidence, and adoption tooling.
-- Added typed relationships for PolicyMesh semantic alignment, ecosystem-signal nomination, interoperability pressure testing, RAHP assurance support, and RAHP upstream provenance.
+- Replaced the former active `dtgwg-rahp-tf` presentation with the standalone original `rahp-toolkit`; the old fork record remains historical lineage.
+- Added typed relationships for PolicyMesh semantic alignment, ecosystem-signal nomination, interoperability pressure testing, and standalone RAHP assurance support while retaining historical upstream provenance separately.
 - Added public portfolio-member discoverability validation.
 - Added split licensing for software and written portfolio content.
 
@@ -26,7 +37,7 @@ All notable changes to the portfolio coordination repository are documented here
 
 - Observation signals may nominate human review but cannot create interoperability claims or portfolio classifications.
 - Interoperability experiments own only experimental compositions, evidence, findings, and maturity claims.
-- RAHP fork-local findings and tooling do not transfer governance, release, or adoption authority from upstream.
+- RAHP findings and tooling do not transfer governance, release, or adoption authority to reviewed specifications or external deployments.
 
 ## [0.3.0] - 2026-07-20
 

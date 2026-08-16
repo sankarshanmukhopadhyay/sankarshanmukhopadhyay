@@ -13,7 +13,7 @@ I design specifications, protocols, schemas, conformance systems, and reference 
 
 ## Portfolio Assurance Monitor
 
-The repository includes a weekly, evidence-producing assurance monitor for flagship original repositories. It derives scope from the governed portfolio register, checks public operational evidence and repository-local status declarations, and publishes findings without automatically modifying portfolio classifications.
+The repository includes a weekly, evidence-producing assurance monitor for flagship original repositories. It derives scope from the governed portfolio register, checks public operational evidence and repository-local status declarations, and publishes findings without automatically modifying portfolio classifications. The monitor now evaluates unresolved latest workflow state within a governed lookback window, detects public repositories that lack an account-level disposition, and can route deduplicated evidence-rich findings to affected repositories when explicitly enabled with a scoped GitHub App.
 
 - [Monitor overview](docs/portfolio-assurance/index.md)
 - [Methodology](docs/portfolio-assurance/methodology.md)
@@ -54,7 +54,7 @@ The authoritative vocabulary and current classifications are maintained in [`dat
 | Deploy or evaluate an agent registry | [Agent Registry Protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | Flagship · Pilot ready · Original |
 | Determine whether an actor is permitted to act under mandate, evidence, policy, and time | [PolicyMesh](https://github.com/sankarshanmukhopadhyay/PolicyMesh) | Supporting · Implementation draft · Original |
 | Test whether independently governed trust and agent protocols compose correctly | [Trust Protocol Interop Lab](https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab) | Supporting · Implementation draft · Original |
-| Pressure-test specifications for risks, harms, and security weaknesses | [DTG RAHP Toolkit fork](https://github.com/sankarshanmukhopadhyay/dtgwg-rahp-tf) | Featured · Implementation draft · Adapted upstream work |
+| Pressure-test specifications for risks, harms, security weaknesses, and governance failure modes | [RAHP Toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | Flagship · Stable · Original |
 | Observe change, convergence, and alignment across the wider DTG landscape | [DTG Portfolio Monitor](https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor) | Supporting · Implementation draft · Original |
 | Test or assure a trust-registry deployment | [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | Flagship · Pilot ready · Original |
 | Apply ZKP implementation, threat, risk, and deployment guidance | [DTG ZKP Task Force fork](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | Featured · Implementation draft · Adapted upstream work |
@@ -69,7 +69,8 @@ The authoritative vocabulary and current classifications are maintained in [`dat
 | [Agent Registry Protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | Protocol, schemas, APIs, conformance tests, and reference artefacts for deployable agent registries | Pilot ready | Active validation |
 | [Trust Systems Meta Model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | Semantic metamodel for actors, authority, policy, evidence, decisions, effects, and accountability | Candidate | Active validation |
 | [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | Portable machine-readable contracts for trust actors, claims, bindings, relationships, and evidence | Candidate | Active validation |
-| [Trust Graph Artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | Applied governance patterns, threat models, implementation guidance, and negative-assurance artefacts | Candidate | Active validation |
+| [Trust Graph Artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | Applied governance patterns, threat models, implementation guidance, and negative-assurance artefacts | Implementation draft | Active development |
+| [RAHP Toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | Portable RAHP, security, and combined specification assurance with evidence retention and change monitoring | Stable | Stable maintenance |
 | [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) | Security and trust-service-provider profile for TRQP | Candidate | Active validation |
 | [TRQP reference verifier](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | Deterministic verifier producing provenance-preserving conclusions | Pilot ready | Active validation |
 | [TRQP Conformance Suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | Executable tests producing lifecycle-aware interoperability evidence | Pilot ready | Active validation |
@@ -91,7 +92,7 @@ Supporting repositories provide domain profiles, policy execution, reusable assu
 ### Assurance and pressure testing
 
 - [DTG Conformance and Assurance](https://github.com/sankarshanmukhopadhyay/dtg-conformance-assurance)
-- [DTG RAHP Toolkit fork](https://github.com/sankarshanmukhopadhyay/dtgwg-rahp-tf)
+- [RAHP Toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) — portable risk, harms, security, and specification-assurance infrastructure
 
 ### Ecosystem observation
 
@@ -117,15 +118,19 @@ Fork inclusion represents bounded fork-local implementation, assurance, document
 | Portfolio fork | Canonical upstream | Portfolio-local role |
 |---|---|---|
 | [DTG ZKP Task Force](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | `trustoverip/dtgwg-zkp-tf` | Adapted implementation, threat, risk, deployment, and learning guidance |
-| [DTG RAHP Toolkit](https://github.com/sankarshanmukhopadhyay/dtgwg-rahp-tf) | `trustoverip/dtgwg-rahp-tf` | Adapted risk-and-harms pressure testing, security hardening, assurance evidence, and adoption tooling |
+| `dtgwg-rahp-tf` (superseded lineage) | `trustoverip/dtgwg-rahp-tf` | Historical fork lineage retained for provenance; reusable assurance capability now lives in the original [RAHP Toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) |
 | [CTWG Main Glossary](https://github.com/sankarshanmukhopadhyay/ctwg-main-glossary) | `trustoverip/ctwg-main-glossary` | Terminology harmonisation and publication refinement |
 | [AGTP](https://github.com/sankarshanmukhopadhyay/agtp) | `nomoticai/agtp` | Security hardening and implementation refinement |
 | [DTG Credential Task Force](https://github.com/sankarshanmukhopadhyay/dtgwg-cred-tf) | `trustoverip/dtgwg-cred-tf` | Standards-facing collaboration |
 | [Trust Registry Protocol](https://github.com/sankarshanmukhopadhyay/tswg-trust-registry-protocol) | `trustoverip/tswg-trust-registry-protocol` | Protocol reference and contribution surface |
 
+### Account-level disposition coverage
+
+The canonical registry also carries a lightweight `account_dispositions` section for known public repositories that are historical or unrelated to the active trust-infrastructure portfolio. This keeps live account discovery high-signal without forcing full governance metadata onto legacy repositories. Newly observed public repositories remain unclassified until a human assigns a governed disposition.
+
 ## Portfolio architecture
 
-The five functional planes remain the portfolio backbone. Three cross-cutting capabilities now make the operating model explicit: **PolicyMesh** evaluates bounded policy and mandate context, the **Trust Protocol Interop Lab** tests composition seams without acquiring protocol authority, and the **DTG Portfolio Monitor** observes external ecosystem movement and nominates questions for human review. RAHP adds risk, harm, guardrail, and security pressure testing alongside conformance.
+The five functional planes remain the portfolio backbone. Three cross-cutting capabilities now make the operating model explicit: **PolicyMesh** evaluates bounded policy and mandate context, the **Trust Protocol Interop Lab** tests composition seams without acquiring protocol authority, and the **DTG Portfolio Monitor** observes external ecosystem movement and nominates questions for human review. The standalone **RAHP Toolkit** adds portable risk, harm, guardrail, security, and combined specification pressure testing alongside conformance; its DTG origin is retained as provenance rather than as the toolkit identity.
 
 ```mermaid
 flowchart TB
@@ -153,7 +158,7 @@ flowchart TB
         TRQPCS["TRQP Conformance Suite"]
         HUB["TRQP Assurance Hub"]
         DTGCA["DTG Conformance and Assurance"]
-        RAHP["Adapted DTG RAHP Toolkit"]
+        RAHP["RAHP Toolkit\nportable specification assurance"]
         EVIDENCE["Evidence packages"]
     end
     INTEROP["Trust Protocol Interop Lab
@@ -162,7 +167,7 @@ composition and seam testing"]
 ecosystem situational awareness"]
     subgraph UP["External upstream authority"]
         ZKPUP["trustoverip/dtgwg-zkp-tf"]
-        RAHPUP["trustoverip/dtgwg-rahp-tf"]
+        RAHPUP["historical DTG RAHP lineage"]
     end
 
     ONDTF -.-> GAAM
@@ -184,7 +189,7 @@ ecosystem situational awareness"]
     INTEROP -. "pressure-tested by" .-> RAHP
     EVIDENCE -. "assurance feedback" .-> GAAM
     ZKP -. "fork of" .-> ZKPUP
-    RAHP -. "fork of" .-> RAHPUP
+    RAHP -. "historical provenance" .-> RAHPUP
 ```
 
 Solid edges represent operational, implementation, testing, or evidence flows. Dashed edges represent bounded semantic alignment, observation signals, assurance feedback, provenance, or contribution-oriented learning. Observation never creates interoperability claims; interoperability experiments never acquire upstream authority; assurance findings never modify normative content automatically.

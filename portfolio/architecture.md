@@ -50,14 +50,13 @@ flowchart TB
         CTS["TRQP Conformance Suite"]
         HUB["TRQP Assurance Hub"]
         DTGCA["DTG Conformance and Assurance"]
-        RAHP["Adapted DTG RAHP Toolkit"]
+        RAHP["RAHP Toolkit"]
         EVIDENCE["Versioned evidence packages"]
     end
     INTEROP["Trust Protocol Interop Lab\ncomposition and seam testing"]
     MONITOR["DTG Portfolio Monitor\necosystem situational awareness"]
     subgraph UP["External upstream authority"]
         ZKPUP["trustoverip/dtgwg-zkp-tf"]
-        RAHPUP["trustoverip/dtgwg-rahp-tf"]
         AGTPUP["nomoticai/agtp"]
         CTWGUP["trustoverip/ctwg-main-glossary"]
     end
@@ -87,7 +86,6 @@ flowchart TB
     EVIDENCE -.-> ARPA
     ZKP -. "implementation and risk evidence" .-> DTGCA
     ZKP -. "fork of" .-> ZKPUP
-    RAHP -. "fork of" .-> RAHPUP
 ```
 
 ## Relationship semantics
@@ -127,7 +125,7 @@ RAHP        -> risk/harm/control/guardrail/assurance-test traceability
 
 `adapted-upstream-work` identifies a fork whose local artefacts have become a substantive portfolio capability. It records fork-local implementation, risk, deployment, assurance, documentation, or learning value without claiming upstream authorship, governance, release authority, endorsement, or adoption.
 
-The DTG ZKP Task Force fork uses this disposition for fork-local implementation, threat, risk, deployment, and assurance guidance. The DTG RAHP Toolkit fork uses it for fork-local pressure-testing workflows, security-hardening reviews, evidence tooling, and adoption guidance. Their canonical upstream projects retain upstream authority.
+The DTG ZKP Task Force fork uses this disposition for fork-local implementation, threat, risk, deployment, and assurance guidance. The former `dtgwg-rahp-tf` fork is retained only as historical/superseded lineage. The standalone `rahp-toolkit` is original portfolio work and owns its portable pressure-testing workflows, security-hardening reviews, evidence tooling, and adoption guidance while preserving DTG provenance as attribution rather than authority.
 
 ## Assurance feedback
 
