@@ -18,7 +18,7 @@ if str(ROOT / "scripts") not in sys.path:
     sys.path.insert(0, str(ROOT / "scripts"))
 
 from portfolio_assurance.core import iso, latest_workflow_states, make_finding as _make_finding
-from portfolio_assurance.discovery import discover_public_repositories, discovery_findings
+from portfolio_assurance.discovery import discover_public_repositories, discovery_findings, registered_repository_churn_findings
 from portfolio_assurance.github_issues import publish_findings
 from portfolio_assurance.routing import routing_decision
 
@@ -195,8 +195,8 @@ def render_report(repos: list[dict[str, Any]], observations: list[dict[str, Any]
         decl = "n/a" if declaration is None else ("valid" if declaration.get("readable") else "attention")
         workflows = ev.get("workflow_runs", {})
         wf = "unavailable" if workflows.get("available") is False else f"{workflows.get('unresolved_failures', 0)} unresolved"
-        lines.append(f"| [{repo['name']}](https://github.com/sankarshanmukhopadhyay/{repo['name']}) | {'available' if obs['available'] else 'unavailable'} | {decl} | {wf} | {len(f_by_repo.get(repo['name'], []))} |")
-    lines += ["", "## Findings", ""]
+        lines.append(f"| [{repo['name']}](https://github.com/sankarshanmukhopadhyay/{repo['name']}) | {'available' if obs['available'] else 'unavailable'} | {decl} | {wf} | [{len(f_by_repo.get(repo['name'], []))}](../../reports/portfolio-assurance/findings/{repo['name']}.html) |")
+    lines += ["", "## Findings", "", "Per-repository development feeds are published as downloadable JSON and Markdown under `reports/portfolio-assurance/findings/`. These feeds are intended to be supplied to the affected repository during release planning and implementation.", ""]
     if not findings:
         lines.append("No findings were produced by the enabled rules.")
     for finding in sorted(findings, key=lambda x: (x["severity"], x["repository"], x["rule_id"], x.get("subject", ""))):
@@ -204,6 +204,79 @@ def render_report(repos: list[dict[str, Any]], observations: list[dict[str, Any]
     lines += ["## Governance boundary", "", "The monitor observes public evidence and evaluates configured rules. Account discovery can nominate unclassified repositories, and issue publication can route eligible actionable findings, but neither capability changes portfolio membership or repository authority. Portfolio classifications change only through reviewed governance updates. Repository-local evidence remains authoritative for implementation and release claims.", ""]
     return "\n".join(lines)
 
+
+
+def finding_export_paths(repository: str, policy: dict[str, Any]) -> tuple[Path, Path]:
+    directory = ROOT / policy["publication"].get("development_findings_directory", "reports/portfolio-assurance/findings")
+    return directory / f"{repository}.json", directory / f"{repository}.md"
+
+
+def finding_export_urls(owner: str, repository: str) -> dict[str, str]:
+    base = f"https://{owner}.github.io/{owner}/reports/portfolio-assurance/findings/{repository}"
+    return {"json": f"{base}.json", "markdown": f"{base}.md"}
+
+
+def write_finding_exports(findings: list[dict[str, Any]], policy: dict[str, Any], now: dt.datetime) -> None:
+    owner = policy["owner"]
+    repositories = sorted({f["repository"] for f in findings})
+    configured = {r["name"] for r in load_yaml(STATUS_PATH).get("repositories", [])}
+    repositories = sorted(set(repositories) | configured)
+    directory = ROOT / policy["publication"].get("development_findings_directory", "reports/portfolio-assurance/findings")
+    directory.mkdir(parents=True, exist_ok=True)
+    expected: set[Path] = set()
+    index: list[dict[str, Any]] = []
+    for repository in repositories:
+        repo_findings = sorted(
+            [f for f in findings if f["repository"] == repository],
+            key=lambda x: (x["severity"], x["rule_id"], x.get("subject", "")),
+        )
+        json_path, md_path = finding_export_paths(repository, policy)
+        expected.update({json_path, md_path})
+        urls = finding_export_urls(owner, repository)
+        payload = {
+            "$schema": f"https://{owner}.github.io/{owner}/schemas/portfolio-finding-feed.schema.json",
+            "schema_version": "1.0",
+            "generated_at": iso(now),
+            "repository": repository,
+            "source": {
+                "monitor": f"https://github.com/{owner}/{owner}",
+                "dashboard": f"https://{owner}.github.io/{owner}/docs/portfolio-assurance/dashboard.html",
+                "latest_report": f"https://{owner}.github.io/{owner}/reports/portfolio-assurance/latest.html",
+            },
+            "finding_count": len(repo_findings),
+            "findings": repo_findings,
+        }
+        json_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+        lines = [
+            "---", "layout: default", f"title: Development findings — {repository}", "nav_exclude: true", "search_exclude: true", "---", "",
+            f"# Development findings — `{repository}`", "",
+            f"**Generated:** {iso(now)}  ",
+            f"**Open findings:** {len(repo_findings)}  ",
+            f"**Machine-readable feed:** [JSON]({urls['json']})", "",
+            "> This feed is a development input, not an automatic instruction or status change. Each finding must be reviewed, dispositioned, and closed using repository authority and release governance.", "",
+        ]
+        if not repo_findings:
+            lines += ["No current findings are open for this repository.", ""]
+        for finding in repo_findings:
+            lines += [
+                f"## {finding['finding_fingerprint']} — {finding['rule_id']}", "",
+                f"- Observation: `{finding['finding_id']}` at `{finding['observed_at']}`",
+                f"- Severity: `{finding['severity']}`",
+                f"- Subject: `{finding.get('subject', 'repository')}`",
+                f"- Claim: {finding['claim']}",
+                f"- Recommended action: {finding['recommended_action']}",
+                f"- Automatic effect: `{finding['automatic_effect']}`", "",
+            ]
+        md_path.write_text("\n".join(lines), encoding="utf-8")
+        index.append({"repository": repository, "finding_count": len(repo_findings), "json": urls["json"], "markdown": urls["markdown"]})
+    # Remove stale per-repository exports after repository churn.
+    for path in directory.glob("*.json"):
+        if path not in expected and path.name != "index.json":
+            path.unlink()
+    for path in directory.glob("*.md"):
+        if path not in expected:
+            path.unlink()
+    (directory / "index.json").write_text(json.dumps({"generated_at": iso(now), "repositories": index}, indent=2) + "\n", encoding="utf-8")
 
 def write_outputs(dashboard_report: str, evidence_report: str, findings: list[dict[str, Any]], observations: list[dict[str, Any]], policy: dict[str, Any], now: dt.datetime, publication_records: list[dict[str, Any]] | None = None) -> None:
     publication = policy["publication"]
@@ -216,6 +289,7 @@ def write_outputs(dashboard_report: str, evidence_report: str, findings: list[di
     history = ROOT / publication["history_directory"]
     history.mkdir(parents=True, exist_ok=True)
     (history / f"{now.date().isoformat()}.md").write_text(evidence_report, encoding="utf-8")
+    write_finding_exports(findings, policy, now)
 
 
 def offline_observation(repo: dict[str, Any], now: dt.datetime) -> dict[str, Any]:
@@ -244,6 +318,9 @@ def main() -> int:
         try:
             public_repos = discover_public_repositories(policy["owner"], request_json, token, int(policy["collection"]["request_timeout_seconds"]))
             findings.extend(discovery_findings(status, public_repos, iso(now), str(policy["discovery"].get("severity", "info"))))
+            if policy.get("rules", {}).get("registered_repository_not_publicly_discovered", {}).get("enabled", True):
+                churn_rule = policy["rules"]["registered_repository_not_publicly_discovered"]
+                findings.extend(registered_repository_churn_findings(status, public_repos, iso(now), str(churn_rule.get("severity", "medium"))))
         except Exception as error:
             findings.append(_make_finding(policy["owner"], "ACCOUNT_DISCOVERY_UNAVAILABLE", "low", iso(now),
                 "Public account discovery could not be completed.", {"error": str(error)},

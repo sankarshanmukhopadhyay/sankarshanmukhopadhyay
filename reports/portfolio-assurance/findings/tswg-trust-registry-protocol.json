@@ -1,0 +1,13 @@
+{
+  "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
+  "schema_version": "1.0",
+  "generated_at": "2026-08-17T03:14:24Z",
+  "repository": "tswg-trust-registry-protocol",
+  "source": {
+    "monitor": "https://github.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay",
+    "dashboard": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/docs/portfolio-assurance/dashboard.html",
+    "latest_report": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/latest.html"
+  },
+  "finding_count": 0,
+  "findings": []
+}

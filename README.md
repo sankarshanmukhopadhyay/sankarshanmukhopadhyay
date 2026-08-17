@@ -19,6 +19,7 @@ The repository includes a weekly, evidence-producing assurance monitor for flags
 - [Methodology](docs/portfolio-assurance/methodology.md)
 - [Operations](docs/portfolio-assurance/operations.md)
 - [Dashboard](docs/portfolio-assurance/dashboard.md)
+- [Development finding feeds](docs/portfolio-assurance/findings.md) — per-repository, downloadable JSON/Markdown inputs for release work
 
 ## Portfolio scope
 
@@ -58,7 +59,7 @@ The authoritative vocabulary and current classifications are maintained in [`dat
 | Observe change, convergence, and alignment across the wider DTG landscape | [DTG Portfolio Monitor](https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor) | Supporting · Implementation draft · Original |
 | Test or assure a trust-registry deployment | [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | Flagship · Pilot ready · Original |
 | Apply ZKP implementation, threat, risk, and deployment guidance | [DTG ZKP Task Force fork](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | Featured · Implementation draft · Adapted upstream work |
-| Review governed digital-trust terminology | [CTWG Main Glossary fork](https://github.com/sankarshanmukhopadhyay/ctwg-main-glossary) | Upstream collaboration · Upstream tracking |
+| Review reusable trust-infrastructure terminology | [Trust Infrastructure Glossary](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-glossary) | Supporting · Stable · Independent |
 | Examine agent-transfer protocol implementation and hardening | [AGTP fork](https://github.com/sankarshanmukhopadhyay/agtp) | Upstream collaboration · Upstream tracking |
 
 ## Flagship original work
@@ -79,6 +80,10 @@ The authoritative vocabulary and current classifications are maintained in [`dat
 ## Supporting and adjacent work
 
 Supporting repositories provide domain profiles, policy execution, reusable assurance methods, applied laboratories, implementation guidance, ecosystem observation, and research. Inclusion here does not imply the same strategic tier or adoption maturity as flagship work.
+
+### Terminology and shared language
+
+- [Trust Infrastructure Glossary](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-glossary) — independently governed, plain-language terminology for trust infrastructure
 
 ### Policy execution and authority
 
@@ -113,13 +118,12 @@ Supporting repositories provide domain profiles, policy execution, reusable assu
 
 ## Adapted and reference upstream work
 
-Fork inclusion represents bounded fork-local implementation, assurance, documentation, validation, or contribution-oriented work. `adapted-upstream-work` identifies a substantive portfolio-local capability, while `upstream-reference` identifies primarily tracking or collaboration use. Neither disposition implies upstream authorship, governance authority, release authority, endorsement, or adoption.
+Fork inclusion represents bounded fork-local implementation, assurance, documentation, validation, or contribution-oriented work. The Trust Infrastructure Glossary is no longer represented here as an upstream-reference fork: its current portfolio identity is an independently governed terminology project, while its earlier CTWG lineage remains historical provenance documented in that repository. `adapted-upstream-work` identifies a substantive portfolio-local capability, while `upstream-reference` identifies primarily tracking or collaboration use. Neither disposition implies upstream authorship, governance authority, release authority, endorsement, or adoption.
 
 | Portfolio fork | Canonical upstream | Portfolio-local role |
 |---|---|---|
 | [DTG ZKP Task Force](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | `trustoverip/dtgwg-zkp-tf` | Adapted implementation, threat, risk, deployment, and learning guidance |
 | `dtgwg-rahp-tf` (superseded lineage) | `trustoverip/dtgwg-rahp-tf` | Historical fork lineage retained for provenance; reusable assurance capability now lives in the original [RAHP Toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) |
-| [CTWG Main Glossary](https://github.com/sankarshanmukhopadhyay/ctwg-main-glossary) | `trustoverip/ctwg-main-glossary` | Terminology harmonisation and publication refinement |
 | [AGTP](https://github.com/sankarshanmukhopadhyay/agtp) | `nomoticai/agtp` | Security hardening and implementation refinement |
 | [DTG Credential Task Force](https://github.com/sankarshanmukhopadhyay/dtgwg-cred-tf) | `trustoverip/dtgwg-cred-tf` | Standards-facing collaboration |
 | [Trust Registry Protocol](https://github.com/sankarshanmukhopadhyay/tswg-trust-registry-protocol) | `trustoverip/tswg-trust-registry-protocol` | Protocol reference and contribution surface |

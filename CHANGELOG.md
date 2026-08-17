@@ -17,6 +17,9 @@ All notable changes to the portfolio coordination repository are documented here
 
 ### Added
 
+- Added schema-backed, per-repository portfolio finding feeds in downloadable JSON and Markdown forms, plus a machine-readable feed index.
+- Added documentation for using unresolved assurance findings as explicit development and release-planning inputs while preserving repository-local disposition authority.
+
 - Added `PolicyMesh` as governed supporting work for bounded policy/mandate evaluation and enforcement.
 - Added `trust-protocol-interop-lab` as the cross-protocol composition and interoperability-assurance layer.
 - Added `dtg-portfolio-monitor` as the wider DTG ecosystem situational-awareness layer.
@@ -27,6 +30,8 @@ All notable changes to the portfolio coordination repository are documented here
 
 ### Changed
 
+- Updated the portfolio register and public surfaces for the transition from `ctwg-main-glossary` to the independently governed `trust-infrastructure-glossary`.
+- Linked assurance dashboard finding counts to repository-scoped development feeds and included those feeds in workflow artifacts.
 - Reorganised supporting work by capability rather than as a flat repository list.
 - Extended the five-plane architecture with cross-cutting policy execution, interoperability, and ecosystem-observation capabilities without creating new authority planes.
 - Distinguished portfolio assurance, ecosystem observation, interoperability experimentation, conformance, security hardening, and RAHP pressure testing.

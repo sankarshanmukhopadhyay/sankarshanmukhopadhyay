@@ -116,11 +116,21 @@ observation -> finding -> evidence publication -> disposition -> closure
 
 Recovery evidence is machine-verifiable; closure authority is governed.
 
-## Public account discovery
+## Public account discovery and repository churn
 
-The monitor also compares live public repositories against `data/repository-status.yaml`. An unclassified public repository produces `PUBLIC_REPOSITORY_WITHOUT_DISPOSITION` in the central portfolio evidence.
+The monitor compares live public repositories against `data/repository-status.yaml` in both directions. An unclassified public repository produces `PUBLIC_REPOSITORY_WITHOUT_DISPOSITION`. A governed active or review repository that disappears from public account discovery produces `REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED`.
 
-Discovery never means portfolio admission. The expected remediation is to assign one governed disposition such as `included`, `adjacent`, `upstream-reference`, `adapted-upstream-work`, `historical`, `unrelated`, or `pending-review`.
+The second rule is a churn signal rather than a deletion claim. It can indicate rename, transfer, privatization, deletion, or a stale registry entry. The monitor does not guess the replacement identity; a human must update the governed repository record and any affected relationships. Historical, superseded, and archived records are excluded to avoid churn noise.
+
+Discovery never means portfolio admission. The expected remediation for a new repository is to assign one governed disposition such as `included`, `adjacent`, `upstream-reference`, `adapted-upstream-work`, `historical`, `unrelated`, or `pending-review`.
+
+## Using findings during development and release work
+
+Each governed repository receives a current JSON and Markdown findings feed. The recommended development pattern is to download the target repository's JSON feed and supply it alongside the repository source at the beginning of a release or implementation cycle. This makes unresolved assurance findings explicit requirements for review without silently converting monitor recommendations into normative changes.
+
+The stable `finding_fingerprint` is the cross-run key. Development work should record a disposition against that fingerprint, identify the files/tests changed, and produce validation evidence. A later monitor run then provides independent recovery evidence if the underlying condition is no longer observed.
+
+Consumers SHOULD treat the feed as untrusted external input to the implementation process: validate its schema/shape, preserve the source URL and generation timestamp, and require repository-local review before applying any recommended change.
 
 ## Local validation
 
@@ -144,7 +154,9 @@ The monitor writes:
 
 - `docs/portfolio-assurance/dashboard.md` for the published current view;
 - `reports/portfolio-assurance/latest.md` for the latest evidence report;
-- `reports/portfolio-assurance/latest-findings.json` for machine-readable observations, findings, routing state, and issue-publication actions; and
+- `reports/portfolio-assurance/latest-findings.json` for machine-readable observations, findings, routing state, and issue-publication actions;
+- `reports/portfolio-assurance/findings/<repository>.json` and `.md` as portable, per-repository development feeds;
+- `reports/portfolio-assurance/findings/index.json` as a machine-readable feed catalogue; and
 - dated reports under `reports/portfolio-assurance/history/`.
 
 Generated findings always retain `automatic_effect: none`.

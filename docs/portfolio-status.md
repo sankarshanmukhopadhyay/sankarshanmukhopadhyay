@@ -33,6 +33,7 @@ The authoritative state is maintained in [`data/repository-status.yaml`](../data
 | `dtg-portfolio-monitor` | Supporting | Implementation draft | DTG ecosystem situational awareness |
 | `agent-name-assurance-baseline` | Supporting | Implementation draft | Agent name assurance |
 | `dtg-conformance-assurance` | Supporting | Implementation draft | General conformance and assurance |
+| `trust-infrastructure-glossary` | Supporting | Stable | Independent trust-infrastructure terminology |
 | `ERC-8004-CSP` | Supporting | Implementation draft | Ecosystem-specific agent profile |
 
 ## Adjacent work
@@ -56,7 +57,7 @@ The authoritative state is maintained in [`data/repository-status.yaml`](../data
 
 ## Upstream references
 
-The governed upstream-reference set currently includes `agtp`, `ctwg-main-glossary`, `dtgwg-cred-tf`, `tswg-trust-registry-protocol`, `conformance-test-suite`, `awesome-8004`, and `TokenTaxonomyFramework`. Reference forks use `upstream-tracking` maturity and identify the canonical upstream. Portfolio inclusion covers fork-local collaboration or reference use only and conveys no upstream governance, release, or adoption authority.
+The governed upstream-reference set currently includes `agtp`, `dtgwg-cred-tf`, `tswg-trust-registry-protocol`, `conformance-test-suite`, `awesome-8004`, and `TokenTaxonomyFramework`. The former CTWG glossary fork has transitioned into the independently governed `trust-infrastructure-glossary`; its earlier upstream lineage is historical provenance rather than current portfolio authority. Reference forks use `upstream-tracking` maturity and identify the canonical upstream. Portfolio inclusion covers fork-local collaboration or reference use only and conveys no upstream governance, release, or adoption authority.
 
 ## Other governed dispositions
 

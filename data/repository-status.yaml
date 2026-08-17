@@ -646,26 +646,27 @@ repositories:
     required: true
   upstream: trustoverip/dtgwg-zkp-tf
   upstream_adoption_status: adapted-with-attribution
-- name: ctwg-main-glossary
-  portfolio_disposition: upstream-reference
-  tier: upstream-collaboration
-  maturity: upstream-tracking
+- name: trust-infrastructure-glossary
+  portfolio_disposition: included
+  tier: supporting
+  maturity: stable
   lifecycle: active
-  operational_status: upstream-tracking
-  specification_status: upstream-controlled
-  role: digital-trust-terminology-collaboration
+  operational_status: stable-maintenance
+  specification_status: not-applicable
+  role: independent-trust-infrastructure-terminology
   portfolio_member: true
-  authority_scope: []
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-09-15'
-  provenance: fork
-  portfolio_governance: fork-only
+  authority_scope:
+  - trust-infrastructure-terminology
+  last_portfolio_review: '2026-08-17'
+  next_review: '2026-11-17'
+  provenance: original
+  portfolio_governance: controlled
   status_source:
     type: portfolio-declaration
     path: data/repository-status.yaml
     required: false
-  upstream: trustoverip/ctwg-main-glossary
-  upstream_adoption_status: not-asserted
+  upstream: null
+  upstream_adoption_status: not-applicable
 - name: dtgwg-cred-tf
   portfolio_disposition: upstream-reference
   tier: upstream-collaboration

@@ -32,6 +32,7 @@ flowchart TB
         TSMM[TSMM]
         TIS[TIS]
         TGA["Trust Graph Artifacts"]
+        TIG["Trust Infrastructure Glossary"]
     end
     subgraph P2["3. Protocols and profiles"]
         ARPA["Agent Registry Protocol"]
@@ -58,7 +59,6 @@ flowchart TB
     subgraph UP["External upstream authority"]
         ZKPUP["trustoverip/dtgwg-zkp-tf"]
         AGTPUP["nomoticai/agtp"]
-        CTWGUP["trustoverip/ctwg-main-glossary"]
     end
 
     ONDTF -. "optional governance alignment" .-> GAAM
@@ -66,6 +66,7 @@ flowchart TB
     ONDTF -. "optional schema accelerator" .-> TIS
     ONDTF -->|evaluated by| DTGCA
     TSMM -.-> TIS
+    TIG -. "terminology alignment" .-> TSMM
     TIS --> ANAB
     GAAM -.-> ARPA
     GAAM -. "bounded authority concepts" .-> PM

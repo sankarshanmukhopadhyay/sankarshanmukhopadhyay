@@ -70,3 +70,8 @@ The monitor may produce evidence that a claim requires review. It cannot automat
 - close a repository-local governance decision.
 
 The machine produces observations and findings. Human governance produces disposition.
+
+
+## Repository identity churn
+
+Account discovery is bidirectional. In addition to detecting new public repositories without a disposition, the monitor tests whether governed active/review repository names are still publicly discoverable. `REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED` is evidence that the governed identity needs review; it is not evidence of deletion and causes no automatic reclassification.

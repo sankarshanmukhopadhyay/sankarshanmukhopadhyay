@@ -35,3 +35,40 @@ def discovery_findings(status: dict[str, Any], public_repositories: list[dict[st
             subject=name,
         ))
     return findings
+
+
+def registered_repository_churn_findings(status: dict[str, Any], public_repositories: list[dict[str, Any]], observed_at: str, severity: str = "medium") -> list[dict[str, Any]]:
+    """Flag governed active/review repositories that disappear from public account discovery.
+
+    This is a portfolio-governance signal for rename, deletion, privatization, transfer, or stale registry state.
+    It deliberately excludes historical, superseded, and archived records.
+    """
+    public_names = {r.get("name") for r in public_repositories if isinstance(r, dict) and r.get("name")}
+    findings: list[dict[str, Any]] = []
+    governed_dispositions = {"included", "adjacent", "upstream-reference", "adapted-upstream-work", "pending-review"}
+    for repo in status.get("repositories", []):
+        if not isinstance(repo, dict):
+            continue
+        name = repo.get("name")
+        if not name or name in public_names:
+            continue
+        if repo.get("portfolio_disposition") not in governed_dispositions:
+            continue
+        if repo.get("lifecycle") in {"superseded", "archived"}:
+            continue
+        findings.append(make_finding(
+            "sankarshanmukhopadhyay",
+            "REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED",
+            severity,
+            observed_at,
+            "A governed active or review repository is no longer present in public account discovery; its registry identity may be stale.",
+            {
+                "registered_repository": name,
+                "portfolio_disposition": repo.get("portfolio_disposition"),
+                "lifecycle": repo.get("lifecycle"),
+                "provenance": repo.get("provenance"),
+            },
+            "Determine whether the repository was renamed, transferred, privatized, deleted, or intentionally retired, then update the governed repository identity and relationships. Do not infer the new identity automatically.",
+            subject=name,
+        ))
+    return findings

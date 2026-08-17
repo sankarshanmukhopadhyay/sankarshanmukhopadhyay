@@ -28,6 +28,7 @@ planes:
   - trust-systems-meta-model
   - trust-infrastructure-schemas
   - trust-graph-artifacts
+  - trust-infrastructure-glossary
   protocols-and-profiles:
   - agent-registry-protocol
   - agent-name-assurance-baseline
@@ -45,7 +46,6 @@ planes:
   upstream-derived-collaboration:
   - agtp
   - dtgwg-zkp-tf
-  - ctwg-main-glossary
   - dtgwg-cred-tf
   - tswg-trust-registry-protocol
 relationships:
@@ -116,10 +116,6 @@ relationships:
   type: fork-of
   constraint: The fork retains no upstream governance or release authority; fork-local implementation, risk, deployment, and
     learning artefacts must preserve explicit upstream attribution.
-- from: ctwg-main-glossary
-  to: trustoverip/ctwg-main-glossary
-  type: fork-of
-  constraint: The fork conveys no authority over upstream governance, releases, or adoption.
 - from: agtp
   to: nomoticai/agtp
   type: fork-of
@@ -196,10 +192,13 @@ relationships:
   type: fork-of
   constraint: The fork retains no upstream governance or release authority; fork-local assurance tooling, pressure tests,
     security reviews, and adoption guidance must preserve explicit upstream attribution.
+- from: trust-infrastructure-glossary
+  to: trust-systems-meta-model
+  type: informative-alignment
+  constraint: The glossary may align terminology with TSMM concepts while retaining independent terminology governance and
+    release authority.
 external_repositories:
 - name: trustoverip/dtgwg-zkp-tf
-  kind: upstream
-- name: trustoverip/ctwg-main-glossary
   kind: upstream
 - name: nomoticai/agtp
   kind: upstream

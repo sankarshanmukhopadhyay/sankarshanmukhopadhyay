@@ -25,6 +25,9 @@ rules:
   repository_unavailable:
     enabled: true
     severity: critical
+  registered_repository_not_publicly_discovered:
+    enabled: true
+    severity: medium
   no_recent_activity:
     enabled: true
     severity: info
@@ -48,6 +51,7 @@ issue_routing:
     - REVIEW_OVERDUE
     - NO_RECENT_ACTIVITY
     - PUBLIC_REPOSITORY_WITHOUT_DISPOSITION
+    - REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED
   max_new_issues_per_run: 2
   comment_on_repeat: false
 publication:
@@ -55,6 +59,7 @@ publication:
   latest_findings: reports/portfolio-assurance/latest-findings.json
   history_directory: reports/portfolio-assurance/history
   documentation_page: docs/portfolio-assurance/dashboard.md
+  development_findings_directory: reports/portfolio-assurance/findings
 governance:
   automatic_status_changes: false
   automatic_issue_closure: false
