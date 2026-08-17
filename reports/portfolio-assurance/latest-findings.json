@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-16T05:19:32Z",
+  "generated_at": "2026-08-17T03:14:24Z",
   "findings": [],
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-08-16T05:19:32Z",
+      "observed_at": "2026-08-17T03:14:24Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -32,7 +32,7 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-08-16T05:19:32Z",
+      "observed_at": "2026-08-17T03:14:24Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -50,8 +50,8 @@
         },
         "workflow_runs": {
           "lookback_days": 7,
-          "completed_examined": 13,
-          "workflows_examined": 3,
+          "completed_examined": 8,
+          "workflows_examined": 2,
           "unresolved_failures": 0,
           "unresolved": []
         }
@@ -60,15 +60,15 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-08-16T05:19:32Z",
+      "observed_at": "2026-08-17T03:14:24Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-08-16T05:09:56Z",
-          "updated_at": "2026-08-16T05:10:01Z",
+          "pushed_at": "2026-08-16T05:41:08Z",
+          "updated_at": "2026-08-16T05:41:30Z",
           "open_issues_count": 0
         },
         "status_declaration": {
@@ -88,7 +88,7 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-08-16T05:19:32Z",
+      "observed_at": "2026-08-17T03:14:24Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -116,7 +116,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-08-16T05:19:32Z",
+      "observed_at": "2026-08-17T03:14:24Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -144,7 +144,7 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-08-16T05:19:32Z",
+      "observed_at": "2026-08-17T03:14:24Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -172,7 +172,7 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-08-16T05:19:32Z",
+      "observed_at": "2026-08-17T03:14:24Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -200,7 +200,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-08-16T05:19:32Z",
+      "observed_at": "2026-08-17T03:14:24Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -218,7 +218,7 @@
         },
         "workflow_runs": {
           "lookback_days": 7,
-          "completed_examined": 35,
+          "completed_examined": 25,
           "workflows_examined": 4,
           "unresolved_failures": 0,
           "unresolved": []
@@ -228,7 +228,7 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-08-16T05:19:32Z",
+      "observed_at": "2026-08-17T03:14:24Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -256,7 +256,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-08-16T05:19:32Z",
+      "observed_at": "2026-08-17T03:14:24Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -284,15 +284,15 @@
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-08-16T05:19:32Z",
+      "observed_at": "2026-08-17T03:14:24Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-08-16T04:31:25Z",
-          "updated_at": "2026-08-16T04:31:41Z",
+          "pushed_at": "2026-08-17T01:49:42Z",
+          "updated_at": "2026-08-17T01:49:46Z",
           "open_issues_count": 0
         },
         "workflow_runs": {
