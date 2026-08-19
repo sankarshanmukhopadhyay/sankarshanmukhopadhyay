@@ -1,5 +1,18 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-17T03:14:24Z",
-  "records": {}
+  "generated_at": "2026-08-19T03:07:01Z",
+  "records": {
+    "PF-85368F53178F": {
+      "finding_fingerprint": "PF-85368F53178F",
+      "repository": "rahp-toolkit",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": ".github/workflows/cross-spec-pressure-test.yml",
+      "dimension": "operational",
+      "status": "open",
+      "first_observed": "2026-08-19T03:07:01Z",
+      "last_observed": "2026-08-19T03:07:01Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-7911EEDF5DF7"
+    }
+  }
 }

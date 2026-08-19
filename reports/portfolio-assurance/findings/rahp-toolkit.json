@@ -1,20 +1,20 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-17T03:14:24Z",
+  "generated_at": "2026-08-19T03:07:01Z",
   "repository": "rahp-toolkit",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-17T03:14:24Z",
+    "observed_at": "2026-08-19T03:07:01Z",
     "default_branch": "main",
-    "head_sha": null,
-    "provenance_status": "unavailable"
+    "head_sha": "f561c7541b8c31365efff36a2cb8d7872b547906",
+    "provenance_status": "observed"
   },
   "assessment": {
     "operational": {
       "status": "evaluated",
       "description": "Repository availability and observable default-branch automation health.",
-      "open_findings": 0
+      "open_findings": 1
     },
     "governance": {
       "status": "evaluated",
@@ -37,9 +37,69 @@
     "dashboard": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/docs/portfolio-assurance/dashboard.html",
     "latest_report": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/latest.html"
   },
-  "finding_count": 0,
-  "findings": [],
-  "lifecycle": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "finding_id": "PAM-7911EEDF5DF7",
+      "finding_fingerprint": "PF-85368F53178F",
+      "repository": "rahp-toolkit",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": ".github/workflows/cross-spec-pressure-test.yml",
+      "severity": "medium",
+      "observed_at": "2026-08-19T03:07:01Z",
+      "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
+      "evidence": {
+        "lookback_days": 7,
+        "completed_examined": 50,
+        "workflows_examined": 7,
+        "unresolved_failures": 1,
+        "unresolved": [
+          {
+            "workflow_id": 337404001,
+            "name": "Run cross-specification pressure test",
+            "path": ".github/workflows/cross-spec-pressure-test.yml",
+            "conclusion": "failure",
+            "created_at": "2026-08-19T00:44:33Z",
+            "updated_at": "2026-08-19T00:44:49Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32202382447",
+            "head_sha": "420aae6b5d8fab2f242018b8038b38159d0fdfa0"
+          }
+        ]
+      },
+      "recommended_action": "Review the failed workflow, restore a successful default-branch run, or record an explicit accepted-risk disposition.",
+      "dimension": "operational",
+      "remediation": {
+        "objective": "Restore a successful latest completed default-branch run for the affected workflow or record an explicit repository-governed risk disposition.",
+        "acceptance_criteria": [
+          "The affected workflow's latest completed default-branch run succeeds, or an explicit governed disposition supersedes the operational expectation."
+        ],
+        "verification": [
+          "Run the affected workflow on the default branch.",
+          "Rerun the portfolio monitor and confirm the stable finding fingerprint is no longer open."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": true,
+        "target": "target-repository",
+        "minimum_severity": "medium"
+      }
+    }
+  ],
+  "lifecycle": [
+    {
+      "finding_fingerprint": "PF-85368F53178F",
+      "repository": "rahp-toolkit",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": ".github/workflows/cross-spec-pressure-test.yml",
+      "dimension": "operational",
+      "status": "open",
+      "first_observed": "2026-08-19T03:07:01Z",
+      "last_observed": "2026-08-19T03:07:01Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-7911EEDF5DF7"
+    }
+  ],
   "handoff": {
     "authority": "repository-local-governance",
     "intended_use": "Supply this dossier with the affected repository source during remediation planning and implementation.",

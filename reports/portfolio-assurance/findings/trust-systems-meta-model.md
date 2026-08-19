@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `trust-systems-meta-model`
 
-**Generated:** 2026-08-17T03:14:24Z  
+**Generated:** 2026-08-19T03:07:01Z  
 **Open findings:** 0  
-**Repository snapshot:** `not observed`  
+**Repository snapshot:** `41b48bcf1f9c661215f825a8d17ccd148c1677f0`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-systems-meta-model.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-systems-meta-model.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
