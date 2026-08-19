@@ -23,6 +23,21 @@ def normalize_target(source: Path, raw_target: str) -> Path | None:
     return (source.parent / target).resolve()
 
 
+def target_exists(target: Path) -> bool:
+    """Return True when a repository link resolves directly or via Jekyll's Markdown-to-HTML build.
+
+    GitHub Pages renders ``foo.md`` as ``foo.html``. Source Markdown therefore
+    legitimately links to the published ``.html`` URL even though that file does
+    not exist until Jekyll runs. The validator must accept that source/build pair
+    while continuing to reject genuinely missing HTML targets.
+    """
+    if target.exists():
+        return True
+    if target.suffix.lower() == ".html":
+        return target.with_suffix(".md").exists()
+    return False
+
+
 def main() -> int:
     failures: list[str] = []
     markdown_files = [p for p in ROOT.rglob("*.md") if ".git" not in p.parts]
@@ -37,7 +52,7 @@ def main() -> int:
             except ValueError:
                 failures.append(f"{source.relative_to(ROOT)}: escapes repository: {match.group(1)}")
                 continue
-            if not target.exists():
+            if not target_exists(target):
                 failures.append(f"{source.relative_to(ROOT)}: missing target: {match.group(1)}")
 
     if failures:
