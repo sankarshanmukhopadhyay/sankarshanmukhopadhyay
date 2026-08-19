@@ -1,41 +1,163 @@
-schema_version: '2.0'
+schema_version: '3.0'
 owner: sankarshanmukhopadhyay
 scope:
   portfolio_dispositions: [included]
   tiers: [flagship]
   provenance: [original]
   exclude_repositories: [sankarshanmukhopadhyay]
+
+assessment_dimensions:
+  operational:
+    status: evaluated
+    description: Repository availability and observable default-branch automation health.
+  governance:
+    status: evaluated
+    description: Portfolio review, status-declaration, lifecycle, and repository identity governance checks.
+  assurance:
+    status: not-evaluated
+    description: Substantive conformance, risk, control, and assurance evidence is not yet ingested by this monitor.
+  cross_specification:
+    status: not-evaluated
+    description: Cross-specification pressure-test evidence is not yet ingested by this monitor.
+
 collection:
   lookback_days: 7
   request_timeout_seconds: 20
   workflow_runs_per_repository: 50
+
 rules:
   review_overdue:
+    rule_id: REVIEW_OVERDUE
+    dimension: governance
     enabled: true
     severity: high
+    remediation_objective: Conduct and record the governed portfolio status review without changing substantive repository claims unless the review supports that change.
+    acceptance_criteria:
+      - The repository has a non-expired governed next-review date.
+      - The repository status declaration remains consistent with the reviewed portfolio state.
+    verification:
+      - Rerun the portfolio monitor and confirm REVIEW_OVERDUE is no longer open.
+
+  status_declaration_unobserved:
+    rule_id: STATUS_DECLARATION_UNOBSERVED
+    dimension: governance
+    enabled: true
+    severity: high
+    remediation_objective: Restore observable repository-local governance evidence before treating repository governance state as evaluated.
+    acceptance_criteria:
+      - The required status declaration can be fetched from the governed repository path.
+      - The declaration can be evaluated by the monitor.
+    verification:
+      - Rerun the monitor and confirm status-declaration evidence is observable.
+
   status_declaration_missing:
+    rule_id: STATUS_DECLARATION_MISSING
+    dimension: governance
     enabled: true
     severity: high
+    remediation_objective: Restore the required repository-local status declaration or explicitly revise the governed status-source contract.
+    acceptance_criteria:
+      - The required PROJECT-STATUS.yaml or governed equivalent exists at the declared path.
+      - Portfolio validation accepts the declaration contract.
+    verification:
+      - Rerun the monitor and confirm STATUS_DECLARATION_MISSING is no longer open.
+
   status_declaration_unreadable:
+    rule_id: STATUS_DECLARATION_UNREADABLE
+    dimension: governance
     enabled: true
     severity: high
-  default_branch_workflow_unresolved_failure:
+    remediation_objective: Correct the repository-local status declaration so it is machine-readable and can serve as governance evidence.
+    acceptance_criteria:
+      - The declaration parses as YAML.
+      - The declaration remains consistent with the governed portfolio schema and repository state.
+    verification:
+      - Run repository validation for PROJECT-STATUS.yaml.
+      - Rerun the portfolio monitor and confirm STATUS_DECLARATION_UNREADABLE is no longer open.
+
+  workflow_evidence_unavailable:
+    rule_id: WORKFLOW_EVIDENCE_UNAVAILABLE
+    dimension: operational
     enabled: true
     severity: medium
+    remediation_objective: Restore collection of default-branch workflow evidence before asserting that CI health is clear.
+    acceptance_criteria:
+      - GitHub Actions evidence for the default branch is observable to the monitor.
+      - The monitor can determine latest completed workflow state within the governed lookback window.
+    verification:
+      - Rerun the monitor and confirm workflow evidence is available.
+
+  default_branch_workflow_unresolved_failure:
+    rule_id: DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
+    dimension: operational
+    enabled: true
+    severity: medium
+    remediation_objective: Restore a successful latest completed default-branch run for the affected workflow or record an explicit repository-governed risk disposition.
+    acceptance_criteria:
+      - The affected workflow's latest completed default-branch run succeeds, or an explicit governed disposition supersedes the operational expectation.
+    verification:
+      - Run the affected workflow on the default branch.
+      - Rerun the portfolio monitor and confirm the stable finding fingerprint is no longer open.
+
   repository_unavailable:
+    rule_id: REPOSITORY_UNAVAILABLE
+    dimension: operational
     enabled: true
     severity: critical
+    remediation_objective: Restore public observability or update governed repository identity and lifecycle metadata to reflect the intentional change.
+    acceptance_criteria:
+      - The governed repository identity is publicly observable, or portfolio governance records an intentional rename, transfer, privatization, deletion, or retirement.
+    verification:
+      - Rerun public repository collection and the portfolio monitor.
+
   registered_repository_not_publicly_discovered:
+    rule_id: REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED
+    dimension: governance
     enabled: true
     severity: medium
+    remediation_objective: Reconcile the governed repository identity with the repository's actual rename, transfer, visibility, deletion, or retirement state.
+    acceptance_criteria:
+      - The governed registry points to the intended current repository identity, or the repository lifecycle/disposition records intentional retirement.
+      - No automatic identity inference is used as closure evidence.
+    verification:
+      - Run public-account discovery and portfolio validation.
+
   no_recent_activity:
+    rule_id: NO_RECENT_ACTIVITY
+    dimension: governance
     enabled: true
     severity: info
     threshold_days: 45
+    remediation_objective: Review whether the declared active lifecycle and operational status remain accurate; activity alone must not force a status change.
+    acceptance_criteria:
+      - A human review confirms or updates the declared lifecycle and operational status.
+    verification:
+      - Rerun portfolio validation and the monitor after any governed metadata change.
+
+discovery_rules:
+  public_repository_without_disposition:
+    rule_id: PUBLIC_REPOSITORY_WITHOUT_DISPOSITION
+    dimension: governance
+    remediation_objective: Assign an explicit governed account-level disposition after human review.
+    acceptance_criteria:
+      - The public repository has an explicit portfolio or account disposition.
+      - Discovery did not automatically enrol or classify the repository.
+    verification:
+      - Run public-account discovery and portfolio validation.
+  account_discovery_unavailable:
+    rule_id: ACCOUNT_DISCOVERY_UNAVAILABLE
+    dimension: governance
+    remediation_objective: Restore public-account discovery evidence before claiming portfolio discovery completeness.
+    acceptance_criteria:
+      - Public account discovery completes successfully.
+    verification:
+      - Rerun the portfolio monitor with GitHub API access.
+
 discovery:
   enabled: true
   severity: info
   automatic_enrolment: false
+
 issue_routing:
   # Capability is implemented but deliberately disabled until the GitHub App
   # described in docs/portfolio-assurance/operations.md is installed.
@@ -44,8 +166,10 @@ issue_routing:
   minimum_severity: medium
   eligible_rules:
     - REPOSITORY_UNAVAILABLE
+    - STATUS_DECLARATION_UNOBSERVED
     - STATUS_DECLARATION_MISSING
     - STATUS_DECLARATION_UNREADABLE
+    - WORKFLOW_EVIDENCE_UNAVAILABLE
     - DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
   excluded_rules:
     - REVIEW_OVERDUE
@@ -54,12 +178,15 @@ issue_routing:
     - REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED
   max_new_issues_per_run: 2
   comment_on_repeat: false
+
 publication:
   latest_report: reports/portfolio-assurance/latest.md
   latest_findings: reports/portfolio-assurance/latest-findings.json
+  finding_lifecycle: reports/portfolio-assurance/finding-lifecycle.json
   history_directory: reports/portfolio-assurance/history
   documentation_page: docs/portfolio-assurance/dashboard.md
   development_findings_directory: reports/portfolio-assurance/findings
+
 governance:
   automatic_status_changes: false
   automatic_issue_closure: false

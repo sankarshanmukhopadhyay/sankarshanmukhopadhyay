@@ -17,6 +17,11 @@ All notable changes to the portfolio coordination repository are documented here
 
 ### Added
 
+- Added repository remediation dossiers as the canonical portfolio-to-repository handoff artifact, with rendered views plus direct Markdown and JSON downloads.
+- Added repository snapshot provenance, including the observed default-branch commit SHA when available.
+- Added remediation objectives, acceptance criteria, verification guidance, assessment dimensions, and stable finding lifecycle evidence.
+- Added `finding-lifecycle.json` so open findings retain first/last-observed state and later disappearance is recorded as resolution rather than silently discarded.
+- Added fail-closed findings for unavailable required status-declaration evidence and unavailable workflow evidence.
 - Added schema-backed, per-repository portfolio finding feeds in downloadable JSON and Markdown forms, plus a machine-readable feed index.
 - Added documentation for using unresolved assurance findings as explicit development and release-planning inputs while preserving repository-local disposition authority.
 
@@ -30,6 +35,9 @@ All notable changes to the portfolio coordination repository are documented here
 
 ### Changed
 
+- Rescoped development finding feeds into consolidated repository remediation dossiers intended to travel with repository source during implementation work.
+- Separated operational and governance evaluation from substantive assurance and cross-specification assurance; unevaluated dimensions are now explicit rather than implicitly green.
+- Changed zero-finding language so it claims only that evaluated rules produced no findings, not that the repository or portfolio is fully assured.
 - Updated the portfolio register and public surfaces for the transition from `ctwg-main-glossary` to the independently governed `trust-infrastructure-glossary`.
 - Linked assurance dashboard finding counts to repository-scoped development feeds and included those feeds in workflow artifacts.
 - Reorganised supporting work by capability rather than as a flat repository list.

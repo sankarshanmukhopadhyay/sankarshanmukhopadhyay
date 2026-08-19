@@ -86,6 +86,12 @@ def collect_repository(owner: str, repo: dict[str, Any], policy: dict[str, Any],
             "updated_at": metadata.get("updated_at"), "open_issues_count": metadata.get("open_issues_count")
         }
         branch = metadata.get("default_branch", "main")
+        try:
+            commit = request_json(f"https://api.github.com/repos/{owner}/{name}/commits/{branch}", token, timeout)
+            observation["evidence"]["repository"]["head_sha"] = commit.get("sha") if isinstance(commit, dict) else None
+        except Exception as error:
+            observation["evidence"]["repository"]["head_sha"] = None
+            observation["evidence"]["repository"]["head_sha_error"] = str(error)
         status_source = repo.get("status_source", {})
         if status_source.get("type") == "member-declaration":
             path = status_source.get("path", "PROJECT-STATUS.yaml")
@@ -119,7 +125,56 @@ def make_finding(repository: str, rule_id: str, severity: str, observed_at: str,
     finding = _make_finding(repository, rule_id, severity, observed_at, claim, evidence, action, subject=subject)
     if repo is not None and policy is not None:
         finding["routing"] = routing_decision(repo, finding, policy)
+    if policy is not None:
+        finding = enrich_finding(finding, policy)
     return finding
+
+
+def rule_contract(policy: dict[str, Any], rule_id: str) -> dict[str, Any]:
+    for config in policy.get("rules", {}).values():
+        if isinstance(config, dict) and config.get("rule_id") == rule_id:
+            return config
+    for config in policy.get("discovery_rules", {}).values():
+        if isinstance(config, dict) and config.get("rule_id") == rule_id:
+            return config
+    return {}
+
+
+def enrich_finding(finding: dict[str, Any], policy: dict[str, Any]) -> dict[str, Any]:
+    contract = rule_contract(policy, str(finding.get("rule_id", "")))
+    finding["dimension"] = contract.get("dimension", finding.get("dimension", "unclassified"))
+    remediation = finding.setdefault("remediation", {})
+    remediation["objective"] = contract.get("remediation_objective", finding.get("recommended_action", "Review and disposition the finding."))
+    remediation["acceptance_criteria"] = list(contract.get("acceptance_criteria", remediation.get("acceptance_criteria", [])))
+    remediation["verification"] = list(contract.get("verification", remediation.get("verification", [])))
+    return finding
+
+
+def assessment_state(policy: dict[str, Any], findings: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    result: dict[str, dict[str, Any]] = {}
+    for dimension, config in policy.get("assessment_dimensions", {}).items():
+        result[dimension] = {
+            "status": config.get("status", "not-evaluated"),
+            "description": config.get("description", ""),
+            "open_findings": len([f for f in findings if f.get("dimension") == dimension]),
+        }
+    return result
+
+
+def repository_assessment(policy: dict[str, Any], findings: list[dict[str, Any]], *, directly_observed: bool) -> dict[str, dict[str, Any]]:
+    result: dict[str, dict[str, Any]] = {}
+    finding_dimensions = {str(f.get("dimension")) for f in findings}
+    for dimension, config in policy.get("assessment_dimensions", {}).items():
+        configured_status = config.get("status", "not-evaluated")
+        status = configured_status if directly_observed else "not-evaluated"
+        if dimension in finding_dimensions:
+            status = "evaluated"
+        result[dimension] = {
+            "status": status,
+            "description": config.get("description", ""),
+            "open_findings": len([f for f in findings if f.get("dimension") == dimension]),
+        }
+    return result
 
 
 def evaluate(repo: dict[str, Any], observation: dict[str, Any], policy: dict[str, Any], now: dt.datetime) -> list[dict[str, Any]]:
@@ -140,8 +195,12 @@ def evaluate(repo: dict[str, Any], observation: dict[str, Any], policy: dict[str
     except Exception:
         pass
     declaration = observation["evidence"].get("status_declaration")
-    if repo.get("status_source", {}).get("required") and declaration:
-        if not declaration.get("present") and rules["status_declaration_missing"]["enabled"]:
+    if repo.get("status_source", {}).get("required"):
+        if declaration is None and rules["status_declaration_unobserved"]["enabled"]:
+            findings.append(make_finding(name, "STATUS_DECLARATION_UNOBSERVED", rules["status_declaration_unobserved"]["severity"], observed_at,
+                "Required repository-local governance evidence could not be observed.", {"status_source": repo.get("status_source")},
+                "Restore observable status-declaration evidence before treating repository governance status as evaluated.", repo=repo, policy=policy))
+        elif not declaration.get("present") and rules["status_declaration_missing"]["enabled"]:
             findings.append(make_finding(name, "STATUS_DECLARATION_MISSING", rules["status_declaration_missing"]["severity"], observed_at,
                 "A required repository-local status declaration must exist.", declaration,
                 "Add the required status declaration or revise the governed status-source contract.", repo=repo, policy=policy))
@@ -150,7 +209,11 @@ def evaluate(repo: dict[str, Any], observation: dict[str, Any], policy: dict[str
                 "A required repository-local status declaration must be readable YAML.", declaration,
                 "Correct the declaration syntax and validate it against the portfolio schema.", repo=repo, policy=policy))
     workflows = observation["evidence"].get("workflow_runs", {})
-    if workflows.get("unresolved_failures", 0) > 0 and rules["default_branch_workflow_unresolved_failure"]["enabled"]:
+    if workflows.get("available") is False and rules["workflow_evidence_unavailable"]["enabled"]:
+        findings.append(make_finding(name, "WORKFLOW_EVIDENCE_UNAVAILABLE", rules["workflow_evidence_unavailable"]["severity"], observed_at,
+            "Default-branch workflow evidence could not be collected, so workflow health cannot be asserted.", workflows,
+            "Restore workflow evidence collection and rerun the monitor before treating CI health as evaluated.", repo=repo, policy=policy))
+    elif workflows.get("unresolved_failures", 0) > 0 and rules["default_branch_workflow_unresolved_failure"]["enabled"]:
         for unresolved in workflows.get("unresolved", []):
             subject = str(unresolved.get("path") or unresolved.get("name") or unresolved.get("workflow_id") or "workflow")
             findings.append(make_finding(name, "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
@@ -187,7 +250,11 @@ def render_report(repos: list[dict[str, Any]], observations: list[dict[str, Any]
         heading = f"Portfolio Assurance Report — {now.date().isoformat()}"
     monitored_findings = [f for f in findings if f["repository"] in by_repo]
     discovery_count = len([f for f in findings if f["rule_id"] == "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION"])
-    lines = front_matter + ["", f"# {heading}", "", f"**Observed:** {iso(now)}  ", f"**Scope:** {len(repos)} flagship original repositories  ", f"**Open findings:** {len(findings)}  ", f"**Unclassified public repositories:** {discovery_count}", "", "> This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.", "", "## Current observations", "", "| Repository | Availability | Status declaration | Workflow evidence | Findings |", "|---|---:|---:|---:|---:|"]
+    dimensions = assessment_state(load_yaml(POLICY_PATH), findings)
+    lines = front_matter + ["", f"# {heading}", "", f"**Observed:** {iso(now)}  ", f"**Scope:** {len(repos)} flagship original repositories  ", f"**Open findings:** {len(findings)}  ", f"**Unclassified public repositories:** {discovery_count}", "", "> This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.", "", "## Assessment boundary", "", "| Dimension | State | Open findings |", "|---|---|---:|"]
+    for dimension, state in dimensions.items():
+        lines.append(f"| {dimension.replace('_', ' ').title()} | `{state['status']}` | {state['open_findings']} |")
+    lines += ["", "> `evaluated` means only that the configured rules for that dimension ran against observable evidence. `not-evaluated` is explicit and must not be interpreted as green or assured.", "", "## Current observations", "", "| Repository | Availability | Status declaration | Workflow evidence | Remediation dossier |", "|---|---:|---:|---:|---|"]
     for repo in repos:
         obs = by_repo[repo["name"]]
         ev = obs.get("evidence", {})
@@ -195,10 +262,14 @@ def render_report(repos: list[dict[str, Any]], observations: list[dict[str, Any]
         decl = "n/a" if declaration is None else ("valid" if declaration.get("readable") else "attention")
         workflows = ev.get("workflow_runs", {})
         wf = "unavailable" if workflows.get("available") is False else f"{workflows.get('unresolved_failures', 0)} unresolved"
-        lines.append(f"| [{repo['name']}](https://github.com/sankarshanmukhopadhyay/{repo['name']}) | {'available' if obs['available'] else 'unavailable'} | {decl} | {wf} | [{len(f_by_repo.get(repo['name'], []))}](../../reports/portfolio-assurance/findings/{repo['name']}.html) |")
-    lines += ["", "## Findings", "", "Per-repository development feeds are published as downloadable JSON and Markdown under `reports/portfolio-assurance/findings/`. These feeds are intended to be supplied to the affected repository during release planning and implementation.", ""]
+        dossier = f_by_repo.get(repo['name'], [])
+        raw_base = f"https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/{repo['name']}"
+        view_url = f"https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/{repo['name']}.html"
+        links = f"[{len(dossier)} open]({view_url}) · [download MD]({raw_base}.md) · [JSON]({raw_base}.json)"
+        lines.append(f"| [{repo['name']}](https://github.com/sankarshanmukhopadhyay/{repo['name']}) | {'available' if obs['available'] else 'unavailable'} | {decl} | {wf} | {links} |")
+    lines += ["", "## Findings", "", "Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.", ""]
     if not findings:
-        lines.append("No findings were produced by the enabled rules.")
+        lines.append("No findings were produced in the currently evaluated dimensions. This does **not** mean that unevaluated assurance dimensions are green or complete.")
     for finding in sorted(findings, key=lambda x: (x["severity"], x["repository"], x["rule_id"], x.get("subject", ""))):
         lines += [f"### {finding['finding_id']}: {finding['repository']}", "", f"- **Fingerprint:** `{finding['finding_fingerprint']}`", f"- **Rule:** `{finding['rule_id']}`", f"- **Subject:** `{finding.get('subject', 'repository')}`", f"- **Severity:** `{finding['severity']}`", f"- **Claim:** {finding['claim']}", f"- **Recommended action:** {finding['recommended_action']}", f"- **Issue routing:** `{finding.get('routing', {}).get('target', 'central-review')}`", f"- **Automatic effect:** `{finding['automatic_effect']}`", ""]
     lines += ["## Governance boundary", "", "The monitor observes public evidence and evaluates configured rules. Account discovery can nominate unclassified repositories, and issue publication can route eligible actionable findings, but neither capability changes portfolio membership or repository authority. Portfolio classifications change only through reviewed governance updates. Repository-local evidence remains authoritative for implementation and release claims.", ""]
@@ -213,10 +284,46 @@ def finding_export_paths(repository: str, policy: dict[str, Any]) -> tuple[Path,
 
 def finding_export_urls(owner: str, repository: str) -> dict[str, str]:
     base = f"https://{owner}.github.io/{owner}/reports/portfolio-assurance/findings/{repository}"
-    return {"json": f"{base}.json", "markdown": f"{base}.md"}
+    raw = f"https://raw.githubusercontent.com/{owner}/{owner}/main/reports/portfolio-assurance/findings/{repository}"
+    return {"json": f"{base}.json", "markdown": f"{base}.html", "download_markdown": f"{raw}.md", "download_json": f"{raw}.json"}
 
 
-def write_finding_exports(findings: list[dict[str, Any]], policy: dict[str, Any], now: dt.datetime) -> None:
+def update_finding_lifecycle(findings: list[dict[str, Any]], policy: dict[str, Any], now: dt.datetime) -> dict[str, Any]:
+    path = ROOT / policy["publication"].get("finding_lifecycle", "reports/portfolio-assurance/finding-lifecycle.json")
+    previous: dict[str, Any] = {}
+    if path.exists():
+        try:
+            loaded = json.loads(path.read_text(encoding="utf-8"))
+            previous = loaded.get("records", {}) if isinstance(loaded, dict) else {}
+        except Exception:
+            previous = {}
+    current = {f["finding_fingerprint"]: f for f in findings}
+    records = dict(previous)
+    observed = iso(now)
+    for fingerprint, finding in current.items():
+        prior = records.get(fingerprint, {})
+        records[fingerprint] = {
+            "finding_fingerprint": fingerprint,
+            "repository": finding["repository"],
+            "rule_id": finding["rule_id"],
+            "subject": finding.get("subject", "repository"),
+            "dimension": finding.get("dimension", "unclassified"),
+            "status": "open",
+            "first_observed": prior.get("first_observed", finding["observed_at"]),
+            "last_observed": finding["observed_at"],
+            "resolved_at": None,
+            "latest_finding_id": finding["finding_id"],
+        }
+    for fingerprint, prior in list(records.items()):
+        if fingerprint not in current and prior.get("status") == "open":
+            records[fingerprint] = {**prior, "status": "resolved", "resolved_at": observed}
+    payload = {"schema_version": "1.0", "generated_at": observed, "records": records}
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    return payload
+
+
+def write_finding_exports(findings: list[dict[str, Any]], observations: list[dict[str, Any]], policy: dict[str, Any], now: dt.datetime, lifecycle: dict[str, Any]) -> None:
     owner = policy["owner"]
     repositories = sorted({f["repository"] for f in findings})
     configured = {r["name"] for r in load_yaml(STATUS_PATH).get("repositories", [])}
@@ -225,6 +332,7 @@ def write_finding_exports(findings: list[dict[str, Any]], policy: dict[str, Any]
     directory.mkdir(parents=True, exist_ok=True)
     expected: set[Path] = set()
     index: list[dict[str, Any]] = []
+    observation_by_repo = {o["repository"]: o for o in observations}
     for repository in repositories:
         repo_findings = sorted(
             [f for f in findings if f["repository"] == repository],
@@ -233,11 +341,24 @@ def write_finding_exports(findings: list[dict[str, Any]], policy: dict[str, Any]
         json_path, md_path = finding_export_paths(repository, policy)
         expected.update({json_path, md_path})
         urls = finding_export_urls(owner, repository)
+        observation = observation_by_repo.get(repository, {})
+        dimensions = repository_assessment(policy, repo_findings, directly_observed=repository in observation_by_repo)
+        repo_evidence = observation.get("evidence", {}).get("repository", {})
+        repository_snapshot = {
+            "observed_at": observation.get("observed_at", iso(now)),
+            "default_branch": repo_evidence.get("default_branch"),
+            "head_sha": repo_evidence.get("head_sha"),
+            "provenance_status": "observed" if repo_evidence.get("head_sha") else "unavailable",
+        }
+        lifecycle_records = [lifecycle.get("records", {}).get(f["finding_fingerprint"], {}) for f in repo_findings]
         payload = {
             "$schema": f"https://{owner}.github.io/{owner}/schemas/portfolio-finding-feed.schema.json",
-            "schema_version": "1.0",
+            "schema_version": "2.0",
             "generated_at": iso(now),
             "repository": repository,
+            "artifact_type": "repository-remediation-dossier",
+            "repository_snapshot": repository_snapshot,
+            "assessment": dimensions,
             "source": {
                 "monitor": f"https://github.com/{owner}/{owner}",
                 "dashboard": f"https://{owner}.github.io/{owner}/docs/portfolio-assurance/dashboard.html",
@@ -245,30 +366,53 @@ def write_finding_exports(findings: list[dict[str, Any]], policy: dict[str, Any]
             },
             "finding_count": len(repo_findings),
             "findings": repo_findings,
+            "lifecycle": lifecycle_records,
+            "handoff": {
+                "authority": "repository-local-governance",
+                "intended_use": "Supply this dossier with the affected repository source during remediation planning and implementation.",
+                "closure_rule": "A finding is closed only when a later monitor run no longer observes the condition and records closure evidence in the lifecycle registry.",
+            },
         }
         json_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
         lines = [
-            "---", "layout: default", f"title: Development findings — {repository}", "nav_exclude: true", "search_exclude: true", "---", "",
-            f"# Development findings — `{repository}`", "",
+            "---", "layout: default", f"title: Remediation dossier — {repository}", "nav_exclude: true", "search_exclude: true", "---", "",
+            f"# Repository remediation dossier — `{repository}`", "",
             f"**Generated:** {iso(now)}  ",
             f"**Open findings:** {len(repo_findings)}  ",
-            f"**Machine-readable feed:** [JSON]({urls['json']})", "",
-            "> This feed is a development input, not an automatic instruction or status change. Each finding must be reviewed, dispositioned, and closed using repository authority and release governance.", "",
+            f"**Repository snapshot:** `{repository_snapshot.get('head_sha') or 'not observed'}`  ",
+            f"**Download:** [Markdown]({urls['download_markdown']}) · [JSON]({urls['download_json']})", "",
+            "> **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.", "",
+            "## Assessment boundary", "",
+            "| Dimension | State | Open findings |", "|---|---|---:|",
         ]
+        for dimension, state in dimensions.items():
+            lines.append(f"| {dimension.replace('_', ' ').title()} | `{state['status']}` | {len([f for f in repo_findings if f.get('dimension') == dimension])} |")
+        lines += ["", "## Open findings", ""]
         if not repo_findings:
-            lines += ["No current findings are open for this repository.", ""]
+            lines += ["No findings are open in the currently evaluated dimensions. This is **not** evidence that dimensions marked `not-evaluated` are assured or complete.", ""]
         for finding in repo_findings:
+            life = lifecycle.get("records", {}).get(finding["finding_fingerprint"], {})
             lines += [
                 f"## {finding['finding_fingerprint']} — {finding['rule_id']}", "",
                 f"- Observation: `{finding['finding_id']}` at `{finding['observed_at']}`",
                 f"- Severity: `{finding['severity']}`",
+                f"- Dimension: `{finding.get('dimension', 'unclassified')}`",
                 f"- Subject: `{finding.get('subject', 'repository')}`",
+                f"- Lifecycle: `{life.get('status', 'open')}`; first observed `{life.get('first_observed', finding['observed_at'])}`",
                 f"- Claim: {finding['claim']}",
-                f"- Recommended action: {finding['recommended_action']}",
                 f"- Automatic effect: `{finding['automatic_effect']}`", "",
+                "### Evidence", "", "```json", json.dumps(finding.get("evidence", {}), indent=2, sort_keys=True), "```", "",
+                "### Remediation objective", "", finding.get("remediation", {}).get("objective", finding["recommended_action"]), "",
+                "### Acceptance criteria", "",
             ]
+            criteria = finding.get("remediation", {}).get("acceptance_criteria", [])
+            lines += [f"- [ ] {item}" for item in criteria] if criteria else ["- [ ] The observed condition is no longer present."]
+            lines += ["", "### Verification", ""]
+            verification = finding.get("remediation", {}).get("verification", [])
+            lines += [f"- {item}" for item in verification] if verification else ["- Rerun the portfolio assurance monitor and confirm the stable fingerprint is no longer open."]
+            lines += [""]
         md_path.write_text("\n".join(lines), encoding="utf-8")
-        index.append({"repository": repository, "finding_count": len(repo_findings), "json": urls["json"], "markdown": urls["markdown"]})
+        index.append({"repository": repository, "finding_count": len(repo_findings), "view": urls["markdown"], "download_markdown": urls["download_markdown"], "download_json": urls["download_json"]})
     # Remove stale per-repository exports after repository churn.
     for path in directory.glob("*.json"):
         if path not in expected and path.name != "index.json":
@@ -289,12 +433,13 @@ def write_outputs(dashboard_report: str, evidence_report: str, findings: list[di
     history = ROOT / publication["history_directory"]
     history.mkdir(parents=True, exist_ok=True)
     (history / f"{now.date().isoformat()}.md").write_text(evidence_report, encoding="utf-8")
-    write_finding_exports(findings, policy, now)
+    lifecycle = update_finding_lifecycle(findings, policy, now)
+    write_finding_exports(findings, observations, policy, now, lifecycle)
 
 
 def offline_observation(repo: dict[str, Any], now: dt.datetime) -> dict[str, Any]:
     declaration = repo.get("status_source", {})
-    evidence: dict[str, Any] = {"repository": {"pushed_at": iso(now), "default_branch": "main"}, "workflow_runs": {"lookback_days": 7, "completed_examined": 0, "workflows_examined": 0, "unresolved_failures": 0, "unresolved": []}}
+    evidence: dict[str, Any] = {"repository": {"pushed_at": iso(now), "default_branch": "main", "head_sha": None}, "workflow_runs": {"available": True, "lookback_days": 7, "completed_examined": 0, "workflows_examined": 0, "unresolved_failures": 0, "unresolved": []}}
     if declaration.get("type") == "member-declaration":
         evidence["status_declaration"] = {"path": declaration.get("path"), "present": True, "readable": True, "mode": "offline-validation"}
     return {"repository": repo["name"], "observed_at": iso(now), "available": True, "evidence": evidence, "collection_error": None}
@@ -317,14 +462,14 @@ def main() -> int:
     if not args.offline and policy.get("discovery", {}).get("enabled", False):
         try:
             public_repos = discover_public_repositories(policy["owner"], request_json, token, int(policy["collection"]["request_timeout_seconds"]))
-            findings.extend(discovery_findings(status, public_repos, iso(now), str(policy["discovery"].get("severity", "info"))))
+            findings.extend([enrich_finding(f, policy) for f in discovery_findings(status, public_repos, iso(now), str(policy["discovery"].get("severity", "info")))])
             if policy.get("rules", {}).get("registered_repository_not_publicly_discovered", {}).get("enabled", True):
                 churn_rule = policy["rules"]["registered_repository_not_publicly_discovered"]
-                findings.extend(registered_repository_churn_findings(status, public_repos, iso(now), str(churn_rule.get("severity", "medium"))))
+                findings.extend([enrich_finding(f, policy) for f in registered_repository_churn_findings(status, public_repos, iso(now), str(churn_rule.get("severity", "medium")))])
         except Exception as error:
-            findings.append(_make_finding(policy["owner"], "ACCOUNT_DISCOVERY_UNAVAILABLE", "low", iso(now),
+            findings.append(enrich_finding(_make_finding(policy["owner"], "ACCOUNT_DISCOVERY_UNAVAILABLE", "low", iso(now),
                 "Public account discovery could not be completed.", {"error": str(error)},
-                "Review GitHub API availability and monitor permissions; do not infer portfolio completeness from this run.", subject="public-account-discovery"))
+                "Review GitHub API availability and monitor permissions; do not infer portfolio completeness from this run.", subject="public-account-discovery"), policy))
     publication_records: list[dict[str, Any]] = []
     issue_cfg = policy.get("issue_routing", {})
     issue_token = os.getenv("PORTFOLIO_ISSUE_TOKEN")

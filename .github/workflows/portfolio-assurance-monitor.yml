@@ -63,6 +63,7 @@ jobs:
           path: |
             reports/portfolio-assurance/latest.md
             reports/portfolio-assurance/latest-findings.json
+            reports/portfolio-assurance/finding-lifecycle.json
             reports/portfolio-assurance/findings/*.json
             reports/portfolio-assurance/findings/*.md
             reports/portfolio-assurance/history/*.md

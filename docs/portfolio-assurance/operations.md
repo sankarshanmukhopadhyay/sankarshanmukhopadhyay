@@ -19,7 +19,7 @@ The workflow runs weekly and may also be invoked manually. Its normal sequence i
 4. evaluate deterministic findings;
 5. discover public repositories that lack an account-level disposition;
 6. optionally route eligible findings to affected repositories;
-7. render dashboard and retained evidence;
+7. render the dashboard, remediation dossiers, and finding lifecycle evidence;
 8. validate documentation links; and
 9. commit changed evidence surfaces.
 
@@ -106,15 +106,18 @@ The default `max_new_issues_per_run` is `2`, providing a hard blast-radius limit
 
 ## Recovery and closure
 
-The monitor does not automatically close issues. A later successful workflow run removes the active finding from subsequent reports, but issue closure remains a human disposition until a separately governed recovery/closure policy is adopted.
+The monitor maintains an observation-level lifecycle registry in `reports/portfolio-assurance/finding-lifecycle.json`. When a stable fingerprint that was previously open is no longer observed on a later run, the monitor records that finding condition as `resolved` with a resolution timestamp. This is machine-verifiable recovery evidence.
+
+The monitor still does **not** automatically close GitHub issues, accept risk, approve implementation, or make repository release decisions. Those remain human repository-governance actions.
 
 This preserves the distinction:
 
 ```text
-observation -> finding -> evidence publication -> disposition -> closure
+observation -> finding -> remediation dossier -> implementation -> re-observation -> finding recovery evidence
+                                                \-> governed issue/disposition closure
 ```
 
-Recovery evidence is machine-verifiable; closure authority is governed.
+Finding-condition recovery is machine-verifiable; implementation acceptance and issue closure authority remain governed.
 
 ## Public account discovery and repository churn
 
@@ -126,11 +129,11 @@ Discovery never means portfolio admission. The expected remediation for a new re
 
 ## Using findings during development and release work
 
-Each governed repository receives a current JSON and Markdown findings feed. The recommended development pattern is to download the target repository's JSON feed and supply it alongside the repository source at the beginning of a release or implementation cycle. This makes unresolved assurance findings explicit requirements for review without silently converting monitor recommendations into normative changes.
+Each governed repository receives a consolidated Markdown and JSON remediation dossier. The recommended development pattern is to download the target repository's Markdown dossier and supply it alongside the repository source at the beginning of a release or implementation cycle. The JSON form provides the equivalent machine-readable contract. This makes unresolved findings explicit requirements for review without silently converting monitor recommendations into normative changes.
 
 The stable `finding_fingerprint` is the cross-run key. Development work should record a disposition against that fingerprint, identify the files/tests changed, and produce validation evidence. A later monitor run then provides independent recovery evidence if the underlying condition is no longer observed.
 
-Consumers SHOULD treat the feed as untrusted external input to the implementation process: validate its schema/shape, preserve the source URL and generation timestamp, and require repository-local review before applying any recommended change.
+Consumers SHOULD treat the dossier as untrusted external input to the implementation process: validate its schema/shape, preserve the source URL and generation timestamp, and require repository-local review before applying any recommended change.
 
 ## Local validation
 
@@ -155,8 +158,9 @@ The monitor writes:
 - `docs/portfolio-assurance/dashboard.md` for the published current view;
 - `reports/portfolio-assurance/latest.md` for the latest evidence report;
 - `reports/portfolio-assurance/latest-findings.json` for machine-readable observations, findings, routing state, and issue-publication actions;
-- `reports/portfolio-assurance/findings/<repository>.json` and `.md` as portable, per-repository development feeds;
-- `reports/portfolio-assurance/findings/index.json` as a machine-readable feed catalogue; and
+- `reports/portfolio-assurance/findings/<repository>.json` and `.md` as portable, per-repository remediation dossiers;
+- `reports/portfolio-assurance/findings/index.json` as a machine-readable dossier catalogue;
+- `reports/portfolio-assurance/finding-lifecycle.json` as stable open/resolved finding-condition history; and
 - dated reports under `reports/portfolio-assurance/history/`.
 
 Generated findings always retain `automatic_effect: none`.

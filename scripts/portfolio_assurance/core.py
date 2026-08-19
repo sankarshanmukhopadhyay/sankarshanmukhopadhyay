@@ -41,6 +41,12 @@ def make_finding(repository: str, rule_id: str, severity: str, observed_at: str,
         "claim": claim,
         "evidence": evidence,
         "recommended_action": action,
+        "dimension": "unclassified",
+        "remediation": {
+            "objective": action,
+            "acceptance_criteria": [],
+            "verification": [],
+        },
         "automatic_effect": "none",
         "routing": routing or {"eligible": False, "target": "central-review"},
     }

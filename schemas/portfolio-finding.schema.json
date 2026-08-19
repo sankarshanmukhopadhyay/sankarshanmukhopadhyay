@@ -3,7 +3,7 @@
   "$id": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding.schema.json",
   "title": "Portfolio assurance finding",
   "type": "object",
-  "required": ["finding_id", "finding_fingerprint", "repository", "rule_id", "subject", "severity", "observed_at", "claim", "evidence", "recommended_action", "automatic_effect", "routing"],
+  "required": ["finding_id", "finding_fingerprint", "repository", "rule_id", "subject", "severity", "dimension", "observed_at", "claim", "evidence", "recommended_action", "remediation", "automatic_effect", "routing"],
   "properties": {
     "finding_id": {"type": "string", "pattern": "^PAM-[A-F0-9]{12}$"},
     "finding_fingerprint": {"type": "string", "pattern": "^PF-[A-F0-9]{12}$"},
@@ -11,10 +11,21 @@
     "rule_id": {"type": "string", "minLength": 1},
     "subject": {"type": "string", "minLength": 1},
     "severity": {"enum": ["critical", "high", "medium", "low", "info"]},
+    "dimension": {"enum": ["operational", "governance", "assurance", "cross_specification", "unclassified"]},
     "observed_at": {"type": "string", "format": "date-time"},
     "claim": {"type": "string", "minLength": 1},
     "evidence": {"type": "object"},
     "recommended_action": {"type": "string", "minLength": 1},
+    "remediation": {
+      "type": "object",
+      "required": ["objective", "acceptance_criteria", "verification"],
+      "properties": {
+        "objective": {"type": "string", "minLength": 1},
+        "acceptance_criteria": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "verification": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      },
+      "additionalProperties": false
+    },
     "automatic_effect": {"const": "none"},
     "routing": {
       "type": "object",

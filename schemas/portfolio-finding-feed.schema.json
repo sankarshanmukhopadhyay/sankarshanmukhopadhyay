@@ -1,14 +1,39 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
-  "title": "Portfolio assurance development finding feed",
+  "title": "Repository remediation dossier",
   "type": "object",
-  "required": ["$schema", "schema_version", "generated_at", "repository", "source", "finding_count", "findings"],
+  "required": ["$schema", "schema_version", "generated_at", "repository", "artifact_type", "repository_snapshot", "assessment", "source", "finding_count", "findings", "lifecycle", "handoff"],
   "properties": {
     "$schema": {"type": "string", "format": "uri"},
-    "schema_version": {"const": "1.0"},
+    "schema_version": {"const": "2.0"},
     "generated_at": {"type": "string", "format": "date-time"},
     "repository": {"type": "string", "minLength": 1},
+    "artifact_type": {"const": "repository-remediation-dossier"},
+    "repository_snapshot": {
+      "type": "object",
+      "required": ["observed_at", "default_branch", "head_sha", "provenance_status"],
+      "properties": {
+        "observed_at": {"type": "string", "format": "date-time"},
+        "default_branch": {"type": ["string", "null"]},
+        "head_sha": {"type": ["string", "null"]},
+        "provenance_status": {"enum": ["observed", "unavailable"]}
+      },
+      "additionalProperties": false
+    },
+    "assessment": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["status", "description", "open_findings"],
+        "properties": {
+          "status": {"enum": ["evaluated", "not-evaluated"]},
+          "description": {"type": "string"},
+          "open_findings": {"type": "integer", "minimum": 0}
+        },
+        "additionalProperties": false
+      }
+    },
     "source": {
       "type": "object",
       "required": ["monitor", "dashboard", "latest_report"],
@@ -20,9 +45,17 @@
       "additionalProperties": false
     },
     "finding_count": {"type": "integer", "minimum": 0},
-    "findings": {
-      "type": "array",
-      "items": {"$ref": "portfolio-finding.schema.json"}
+    "findings": {"type": "array", "items": {"$ref": "portfolio-finding.schema.json"}},
+    "lifecycle": {"type": "array", "items": {"type": "object"}},
+    "handoff": {
+      "type": "object",
+      "required": ["authority", "intended_use", "closure_rule"],
+      "properties": {
+        "authority": {"const": "repository-local-governance"},
+        "intended_use": {"type": "string", "minLength": 1},
+        "closure_rule": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": false

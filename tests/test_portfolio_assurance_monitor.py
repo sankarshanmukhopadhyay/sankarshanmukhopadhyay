@@ -64,11 +64,37 @@ class PortfolioAssuranceMonitorTests(unittest.TestCase):
         self.assertIn("parent: Portfolio Assurance Monitor", dashboard)
         self.assertIn("Portfolio Assurance Report — 2026-08-16", evidence)
         self.assertIn("first-party", dashboard)
+        self.assertIn("Assessment boundary", dashboard)
+        self.assertIn("`not-evaluated`", dashboard)
+        self.assertIn("download MD", dashboard)
 
     def test_publication_role_is_explicit(self):
         repos = pam.selected_repositories(self.status, self.policy)
         observations = [pam.offline_observation(repo, self.now) for repo in repos]
         with self.assertRaises(ValueError):
             pam.render_report(repos, observations, [], self.now, publication_role="unknown")
+
+    def test_required_status_evidence_fails_closed_when_unobserved(self):
+        repo = next(r for r in pam.selected_repositories(self.status, self.policy) if r.get("status_source", {}).get("required"))
+        observation = pam.offline_observation(repo, self.now)
+        observation["evidence"].pop("status_declaration", None)
+        findings = pam.evaluate(repo, observation, self.policy, self.now)
+        self.assertIn("STATUS_DECLARATION_UNOBSERVED", {f["rule_id"] for f in findings})
+
+    def test_unavailable_workflow_evidence_is_a_finding(self):
+        repo = pam.selected_repositories(self.status, self.policy)[0]
+        observation = pam.offline_observation(repo, self.now)
+        observation["evidence"]["workflow_runs"] = {"available": False, "error": "denied"}
+        findings = pam.evaluate(repo, observation, self.policy, self.now)
+        workflow = next(f for f in findings if f["rule_id"] == "WORKFLOW_EVIDENCE_UNAVAILABLE")
+        self.assertEqual(workflow["dimension"], "operational")
+        self.assertTrue(workflow["remediation"]["acceptance_criteria"])
+
+    def test_zero_findings_do_not_claim_complete_assurance(self):
+        repos = pam.selected_repositories(self.status, self.policy)
+        observations = [pam.offline_observation(repo, self.now) for repo in repos]
+        dashboard = pam.render_report(repos, observations, [], self.now, publication_role="dashboard")
+        self.assertIn("not-evaluated", dashboard)
+        self.assertIn("does **not** mean", dashboard)
 
 if __name__ == "__main__": unittest.main()

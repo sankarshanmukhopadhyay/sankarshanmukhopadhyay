@@ -9,14 +9,22 @@ python -m unittest discover -s tests -p 'test_*.py'
 python scripts/validate_portfolio.py
 python scripts/check_internal_links.py
 python scripts/check_site_navigation.py
+# JSON Schema validation of generated remediation dossiers
 ```
 
 ## Results
 
-- Monitor and validation test suite passed: 23 tests.
+- Monitor and validation test suite passed: 27 tests.
 - Portfolio validation passed: 37 classified repositories, 40 lightweight account dispositions, 33 authority scopes, 34 relationships.
 - Internal link validation passed: 80 Markdown files checked.
 - Site navigation validation passed: 8 unique visible titles checked.
+- 37 generated repository remediation dossier JSON files validated against `portfolio-finding-feed.schema.json`.
+
+## Remediation handoff validation
+
+The test suite verifies that repository remediation dossiers contain explicit assessment dimensions, remediation objectives, acceptance criteria, verification guidance, and repository snapshot provenance fields. It also verifies fail-closed handling when required status or workflow evidence cannot be observed, and lifecycle transition from an open stable fingerprint to a recorded resolved state when a later run no longer observes the condition.
+
+Generated dashboard and dossier pages in this commit were refreshed from the last stored **live** observation snapshot (`2026-08-17T03:14:24Z`), not from offline synthetic evidence. The next live workflow run will populate the newly collected default-branch commit SHA.
 
 ## GitHub Pages link validation contract
 

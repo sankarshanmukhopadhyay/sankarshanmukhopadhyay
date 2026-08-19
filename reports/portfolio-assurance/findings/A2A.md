@@ -1,16 +1,28 @@
 ---
 layout: default
-title: Development findings — A2A
+title: Remediation dossier — A2A
 nav_exclude: true
 search_exclude: true
 ---
 
-# Development findings — `A2A`
+# Repository remediation dossier — `A2A`
 
 **Generated:** 2026-08-17T03:14:24Z  
 **Open findings:** 0  
-**Machine-readable feed:** [JSON](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/A2A.json)
+**Repository snapshot:** `not observed`  
+**Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/A2A.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/A2A.json)
 
-> This feed is a development input, not an automatic instruction or status change. Each finding must be reviewed, dispositioned, and closed using repository authority and release governance.
+> **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
 
-No current findings are open for this repository.
+## Assessment boundary
+
+| Dimension | State | Open findings |
+|---|---|---:|
+| Operational | `not-evaluated` | 0 |
+| Governance | `not-evaluated` | 0 |
+| Assurance | `not-evaluated` | 0 |
+| Cross Specification | `not-evaluated` | 0 |
+
+## Open findings
+
+No findings are open in the currently evaluated dimensions. This is **not** evidence that dimensions marked `not-evaluated` are assured or complete.
