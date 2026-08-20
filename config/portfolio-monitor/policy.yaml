@@ -1,4 +1,4 @@
-schema_version: '3.0'
+schema_version: '3.1'
 owner: sankarshanmukhopadhyay
 scope:
   portfolio_dispositions: [included]
@@ -14,11 +14,11 @@ assessment_dimensions:
     status: evaluated
     description: Portfolio review, status-declaration, lifecycle, and repository identity governance checks.
   assurance:
-    status: not-evaluated
-    description: Substantive conformance, risk, control, and assurance evidence is not yet ingested by this monitor.
+    status: evaluated
+    description: Repository-specific assurance evidence coverage, execution state, provenance and freshness against governed repository revisions.
   cross_specification:
     status: not-evaluated
-    description: Cross-specification pressure-test evidence is not yet ingested by this monitor.
+    description: Cross-specification pressure-test evidence is not yet ingested as a portfolio-wide assurance dimension.
 
 collection:
   lookback_days: 7
@@ -99,6 +99,54 @@ rules:
       - Run the affected workflow on the default branch.
       - Rerun the portfolio monitor and confirm the stable finding fingerprint is no longer open.
 
+  assurance_evidence_missing:
+    rule_id: ASSURANCE_EVIDENCE_MISSING
+    dimension: assurance
+    enabled: true
+    severity: high
+    remediation_objective: Restore or execute the repository-native control required by the governed assurance contract.
+    acceptance_criteria:
+      - The required evidence is observable inside the governed lookback window.
+      - The evidence is attributable to the configured repository-native control.
+    verification:
+      - Execute the required repository-native control and rerun the portfolio monitor.
+
+  assurance_evidence_unobservable:
+    rule_id: ASSURANCE_EVIDENCE_UNOBSERVABLE
+    dimension: assurance
+    enabled: true
+    severity: high
+    remediation_objective: Restore evidence observability before treating the assurance claim as evaluated.
+    acceptance_criteria:
+      - The monitor can retrieve the configured evidence source.
+      - Evidence provenance identifies the producing workflow and repository revision.
+    verification:
+      - Rerun evidence collection and the portfolio monitor.
+
+  assurance_control_failed:
+    rule_id: ASSURANCE_CONTROL_FAILED
+    dimension: assurance
+    enabled: true
+    severity: high
+    remediation_objective: Resolve the failing repository-native assurance control or record an explicit governed disposition.
+    acceptance_criteria:
+      - The configured assurance control completes successfully.
+      - The resulting evidence remains attributable to the configured repository revision.
+    verification:
+      - Execute the control and rerun the portfolio monitor.
+
+  assurance_evidence_stale:
+    rule_id: ASSURANCE_EVIDENCE_STALE
+    dimension: assurance
+    enabled: true
+    severity: medium
+    remediation_objective: Regenerate assurance evidence against the current governed repository revision.
+    acceptance_criteria:
+      - The evidence-producing workflow succeeds against the current default-branch HEAD.
+      - The evidence HEAD SHA matches the governed repository HEAD SHA.
+    verification:
+      - Execute the configured control on the current default branch and rerun the monitor.
+
   repository_unavailable:
     rule_id: REPOSITORY_UNAVAILABLE
     dimension: operational
@@ -171,6 +219,10 @@ issue_routing:
     - STATUS_DECLARATION_UNREADABLE
     - WORKFLOW_EVIDENCE_UNAVAILABLE
     - DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
+    - ASSURANCE_EVIDENCE_MISSING
+    - ASSURANCE_EVIDENCE_UNOBSERVABLE
+    - ASSURANCE_CONTROL_FAILED
+    - ASSURANCE_EVIDENCE_STALE
   excluded_rules:
     - REVIEW_OVERDUE
     - NO_RECENT_ACTIVITY
