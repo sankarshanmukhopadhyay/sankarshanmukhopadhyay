@@ -7,21 +7,44 @@ nav_order: 4
 
 # Portfolio assurance operations
 
-The Portfolio Assurance Monitor is an evidence-producing governance control. It observes governed repositories, evaluates deterministic rules, detects account-level classification drift, and can route narrowly scoped actionable findings to affected repositories. Observation and publication do not transfer repository, release, specification, or portfolio authority.
+The Portfolio Assurance Monitor is an evidence-producing governance control. It observes governed repositories, evaluates deterministic operational, governance, and assurance-evidence rules, detects account-level classification drift, and can route narrowly scoped actionable findings to affected repositories. Observation and publication do not transfer repository, release, specification, risk-acceptance, or portfolio authority.
 
 ## Scheduled execution
 
-The workflow runs weekly and may also be invoked manually. Its normal sequence is:
+The workflow reevaluates portfolio evidence every six hours and may also be invoked manually. It also runs when governed monitor configuration, repository status data, monitor implementation, the monitor workflow, or the core assurance-operations documentation changes. Generated report commits do not retrigger the monitor.
+
+Its normal sequence is:
 
 1. validate portfolio governance data;
 2. execute the monitor tests;
-3. collect repository and workflow evidence;
-4. evaluate deterministic findings;
-5. discover public repositories that lack an account-level disposition;
-6. optionally route eligible findings to affected repositories;
-7. render the dashboard, remediation dossiers, and finding lifecycle evidence;
-8. validate documentation links; and
-9. commit changed evidence surfaces.
+3. collect repository metadata, default-branch HEAD, status declarations, and workflow evidence;
+4. evaluate deterministic operational and governance findings;
+5. evaluate repository-specific assurance evidence contracts, including required/optional semantics and freshness against governed revisions;
+6. discover public repositories that lack an account-level disposition;
+7. optionally route eligible findings to affected repositories;
+8. render the dashboard, assurance-state artifact, remediation dossiers, and finding lifecycle evidence;
+9. validate documentation links; and
+10. commit changed evidence surfaces.
+
+The six-hour cadence is an operational responsiveness control rather than an assurance claim. Repository-local evidence remains authoritative for the meaning of the underlying validation or conformance result.
+
+## Assurance evidence contracts
+
+Repository-specific contracts are defined in `config/portfolio-monitor/assurance-contracts.yaml`. A contract binds an explicit repository-native control to an assurance claim and states whether that evidence is required or optional and whether it must cover the current default-branch HEAD or may rely on the latest successful publication-specific execution.
+
+The current evidence states are:
+
+- `satisfied`: required evidence exists, succeeded, and meets the configured freshness policy;
+- `degraded`: the required evidence-producing control completed unsuccessfully;
+- `stale`: successful evidence exists but does not cover the governed revision required by policy;
+- `missing`: required evidence was not observed inside the governed evidence window;
+- `unobservable`: the configured evidence source could not be collected;
+- `not-applicable`: no required claim applies to the evaluated scope; and
+- `not-evaluated`: no governed contract or supported adapter exists.
+
+These are evidence-coverage states. They do not silently strengthen the authority of the producing workflow. A successful conformance workflow, for example, is reported as successful evidence from that workflow; the portfolio monitor does not independently redefine what conformance means.
+
+Optional evidence is recorded but cannot degrade the repository's aggregate assurance state. This keeps specialized mechanisms, including RAHP pressure tests, available as evidence sources without making any one mechanism the universal portfolio assurance provider.
 
 ## Workflow failure semantics
 
@@ -35,7 +58,9 @@ collection:
   workflow_runs_per_repository: 50
 ```
 
-The result count limits collection volume. The lookback window determines which evidence is admissible for this rule.
+The result count limits collection volume. The lookback window determines which evidence is admissible for operational workflow health and repository-specific workflow evidence claims.
+
+For `freshness: current-head`, a successful workflow run is insufficient unless its `head_sha` equals the observed default-branch HEAD. For path-filtered publication workflows, contracts may use `freshness: latest-success` when non-publication commits do not invalidate previously generated publication evidence.
 
 ## Stable finding identity
 
@@ -46,7 +71,7 @@ repository + rule + subject -> finding_fingerprint
 finding_fingerprint + observation date -> finding_id
 ```
 
-This distinction permits durable issue deduplication without erasing observation history.
+This distinction permits durable issue deduplication and machine-verifiable recovery without erasing observation history.
 
 ## Target-repository issue routing
 
@@ -87,7 +112,7 @@ Configure repository secrets:
 Then set `issue_routing.enabled: true`. The workflow uses `actions/create-github-app-token` to mint a short-lived installation token and invokes:
 
 ```bash
-python scripts/portfolio_assurance_monitor.py --publish-issues
+python scripts/portfolio_assurance_monitor_v3.py --publish-issues
 ```
 
 If the App credentials are absent, the evidence monitor continues to operate and no cross-repository issue writes occur.
@@ -100,7 +125,7 @@ Each generated issue contains a machine-readable marker:
 <!-- portfolio-assurance:fingerprint=PF-XXXXXXXXXXXX -->
 ```
 
-Before creation, the publisher searches the affected repository for an open issue containing that marker. Repeated observations are deduplicated. `comment_on_repeat` is false by default to avoid weekly noise.
+Before creation, the publisher searches the affected repository for an open issue containing that marker. Repeated observations are deduplicated. `comment_on_repeat` is false by default to avoid repetitive issue traffic.
 
 The default `max_new_issues_per_run` is `2`, providing a hard blast-radius limit even when multiple repositories fail simultaneously.
 
@@ -108,7 +133,7 @@ The default `max_new_issues_per_run` is `2`, providing a hard blast-radius limit
 
 The monitor maintains an observation-level lifecycle registry in `reports/portfolio-assurance/finding-lifecycle.json`. When a stable fingerprint that was previously open is no longer observed on a later run, the monitor records that finding condition as `resolved` with a resolution timestamp. This is machine-verifiable recovery evidence.
 
-The monitor still does **not** automatically close GitHub issues, accept risk, approve implementation, or make repository release decisions. Those remain human repository-governance actions.
+The monitor still does **not** automatically close GitHub issues, accept risk, approve implementation, change maturity/lifecycle, or make repository release decisions. Those remain repository- and portfolio-governance actions.
 
 This preserves the distinction:
 
@@ -140,7 +165,7 @@ Consumers SHOULD treat the dossier as untrusted external input to the implementa
 ```bash
 python scripts/validate_portfolio.py
 python -m unittest discover -s tests -p 'test_*.py'
-python scripts/portfolio_assurance_monitor.py --offline --check
+python scripts/portfolio_assurance_monitor_v3.py --offline --check
 python scripts/check_internal_links.py
 python scripts/check_site_navigation.py
 ```
@@ -148,7 +173,7 @@ python scripts/check_site_navigation.py
 A live dry run without issue publication can be executed with:
 
 ```bash
-GITHUB_TOKEN=... python scripts/portfolio_assurance_monitor.py --check
+GITHUB_TOKEN=... python scripts/portfolio_assurance_monitor_v3.py --check
 ```
 
 ## Evidence retained
@@ -158,6 +183,7 @@ The monitor writes:
 - `docs/portfolio-assurance/dashboard.md` for the published current view;
 - `reports/portfolio-assurance/latest.md` for the latest evidence report;
 - `reports/portfolio-assurance/latest-findings.json` for machine-readable observations, findings, routing state, and issue-publication actions;
+- `reports/portfolio-assurance/assurance-state.json` for repository-specific assurance profile, claim, state, producer, freshness, and revision coverage;
 - `reports/portfolio-assurance/findings/<repository>.json` and `.md` as portable, per-repository remediation dossiers;
 - `reports/portfolio-assurance/findings/index.json` as a machine-readable dossier catalogue;
 - `reports/portfolio-assurance/finding-lifecycle.json` as stable open/resolved finding-condition history; and
