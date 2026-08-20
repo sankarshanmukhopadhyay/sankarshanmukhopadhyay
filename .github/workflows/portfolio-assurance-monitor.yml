@@ -10,6 +10,8 @@ on:
       - "scripts/portfolio_assurance/**"
       - "scripts/portfolio_assurance_monitor*.py"
       - ".github/workflows/portfolio-assurance-monitor.yml"
+      - "docs/portfolio-assurance/operations.md"
+      - "docs/portfolio-assurance/assurance-contracts.md"
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
