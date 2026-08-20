@@ -62,8 +62,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - portfolio-classification
-  last_portfolio_review: '2026-07-21'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -75,16 +75,16 @@ repositories:
 - name: open-national-digital-trust-framework
   portfolio_disposition: included
   tier: flagship
-  maturity: working-draft
+  maturity: candidate
   lifecycle: active
-  operational_status: active-development
-  specification_status: working-draft
+  operational_status: active-validation
+  specification_status: candidate-specification
   role: jurisdiction-neutral-digital-trust-framework
   portfolio_member: true
   authority_scope:
   - national-digital-trust-framework
-  last_portfolio_review: '2026-07-21'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -104,8 +104,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - governance-authority-assurance-metamodel
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -125,8 +125,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - agent-registry-protocol
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -146,8 +146,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - canonical-semantics
-  last_portfolio_review: '2026-07-20'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -167,8 +167,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - portable-schema-contracts
-  last_portfolio_review: '2026-07-20'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -191,8 +191,8 @@ repositories:
   - implementation-guidance
   - negative-assurance-tests
   - epistemic-governance-patterns
-  last_portfolio_review: '2026-07-27'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -212,8 +212,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - agent-name-assurance-baseline
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -225,16 +225,16 @@ repositories:
 - name: TRQP-TSPP
   portfolio_disposition: included
   tier: flagship
-  maturity: candidate
+  maturity: implementation-draft
   lifecycle: active
   operational_status: active-validation
-  specification_status: candidate-specification
+  specification_status: working-draft
   role: trqp-security-profile
   portfolio_member: true
   authority_scope:
   - trqp-security-profile
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -254,8 +254,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - trqp-reference-verifier
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -267,16 +267,16 @@ repositories:
 - name: trqp-conformance-suite
   portfolio_disposition: included
   tier: flagship
-  maturity: pilot-ready
+  maturity: implementation-draft
   lifecycle: active
   operational_status: active-validation
-  specification_status: not-applicable
+  specification_status: candidate-specification
   role: trqp-conformance
   portfolio_member: true
   authority_scope:
   - trqp-conformance-tests
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -288,16 +288,16 @@ repositories:
 - name: trqp-assurance-hub
   portfolio_disposition: included
   tier: flagship
-  maturity: pilot-ready
+  maturity: candidate
   lifecycle: active
   operational_status: active-validation
-  specification_status: not-applicable
+  specification_status: candidate-specification
   role: trust-registry-assurance
   portfolio_member: true
   authority_scope:
   - trqp-assurance-workflows
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -317,8 +317,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - general-conformance-assurance
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -338,8 +338,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - erc-8004-assurance-profile
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -359,8 +359,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - kirana-operations-platform
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -380,8 +380,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - research-review-notes
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -401,8 +401,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - dpi-ai-governance-lab
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -422,8 +422,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - dpi-ai-governance-artifacts
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -443,8 +443,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - arf-onramp-guidance
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -464,8 +464,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - atal-enterprise-assurance-profile
-  last_portfolio_review: '2026-07-18'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -508,8 +508,8 @@ repositories:
   - policymesh-artifact-contracts
   - policymesh-policy-execution-semantics
   - policymesh-federation-behaviour
-  last_portfolio_review: '2026-08-12'
-  next_review: '2026-11-12'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: original
   portfolio_governance: controlled
   status_source:
@@ -636,8 +636,8 @@ repositories:
   portfolio_member: true
   authority_scope:
   - fork-local-zkp-implementation-guidance
-  last_portfolio_review: '2026-07-21'
-  next_review: '2026-10-01'
+  last_portfolio_review: '2026-08-20'
+  next_review: '2026-11-20'
   provenance: fork
   portfolio_governance: fork-derived-extension
   status_source:
