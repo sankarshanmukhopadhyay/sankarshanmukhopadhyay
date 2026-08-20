@@ -1,0 +1,238 @@
+schema_version: '1.0'
+state_vocabulary:
+  - satisfied
+  - degraded
+  - stale
+  - missing
+  - unobservable
+  - not-applicable
+  - not-evaluated
+
+# These contracts identify the repository-native evidence that supports a
+# portfolio assurance claim. They do not confer authority on the monitor to
+# make the underlying substantive claim; the monitor evaluates evidence
+# coverage, freshness and execution state only.
+repositories:
+  open-national-digital-trust-framework:
+    profile: specification
+    claims:
+      specification_quality:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/quality.yml
+          freshness: current-head
+      publication_integrity:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/pages.yml
+          freshness: current-head
+
+  governance-authority-assurance-metamodel:
+    profile: governance-model
+    claims:
+      model_validation:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/validate.yml
+          freshness: current-head
+      publication_integrity:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/verify-publication.yml
+          freshness: latest-success
+
+  agent-registry-protocol:
+    profile: protocol-specification
+    claims:
+      protocol_validation:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/validate.yml
+          freshness: current-head
+      publication_integrity:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/pages.yml
+          freshness: current-head
+      ietf_renderability:
+        required: false
+        evidence:
+          type: github-workflow
+          path: .github/workflows/ietf-draft.yml
+          freshness: latest-success
+
+  trust-systems-meta-model:
+    profile: semantic-model
+    claims:
+      model_validation:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/validate.yml
+          freshness: current-head
+      publication_integrity:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/pages.yml
+          freshness: current-head
+
+  trust-infrastructure-schemas:
+    profile: schema-library
+    claims:
+      schema_validation:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/validate-schemas.yml
+          freshness: current-head
+      publication_integrity:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/pages.yml
+          freshness: current-head
+
+  trust-graph-artifacts:
+    profile: executable-governance-incubator
+    claims:
+      native_model_validation:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/validate-tsmm-native.yml
+          freshness: current-head
+      publication_integrity:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/pages.yml
+          freshness: current-head
+
+  TRQP-TSPP:
+    profile: security-profile
+    claims:
+      profile_validation:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/ci.yml
+          freshness: current-head
+      portfolio_contract:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/portfolio-contract.yml
+          freshness: current-head
+      publication_integrity:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/pages.yml
+          freshness: current-head
+
+  cawg-trqp-verifier-refimpl:
+    profile: reference-implementation
+    claims:
+      implementation_validation:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/ci.yml
+          freshness: current-head
+      publication_integrity:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/pages.yml
+          freshness: current-head
+      package_publication:
+        required: false
+        evidence:
+          type: github-workflow
+          path: .github/workflows/pypi-publish.yml
+          freshness: latest-success
+
+  trqp-conformance-suite:
+    profile: conformance-suite
+    claims:
+      conformance_suite:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/cts.yml
+          freshness: current-head
+      portfolio_contract:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/portfolio-contract.yml
+          freshness: current-head
+      publication_integrity:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/pages.yml
+          freshness: current-head
+
+  trqp-assurance-hub:
+    profile: assurance-orchestrator
+    claims:
+      quality_validation:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/quality.yml
+          freshness: current-head
+      composed_assurance_smoke:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/combined-assurance-smoke.yml
+          freshness: current-head
+      portfolio_contract:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/portfolio-contract.yml
+          freshness: current-head
+      publication_integrity:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/pages.yml
+          freshness: current-head
+
+  rahp-toolkit:
+    profile: assurance-toolkit
+    claims:
+      toolkit_validation:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/validate.yml
+          freshness: current-head
+      corpus_integrity:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/corpus-status.yml
+          freshness: latest-success
+      publication_integrity:
+        required: true
+        evidence:
+          type: github-workflow
+          path: .github/workflows/pages.yml
+          freshness: current-head
+      cross_specification_pressure_test:
+        required: false
+        evidence:
+          type: github-workflow
+          path: .github/workflows/cross-spec-pressure-test.yml
+          freshness: latest-success
