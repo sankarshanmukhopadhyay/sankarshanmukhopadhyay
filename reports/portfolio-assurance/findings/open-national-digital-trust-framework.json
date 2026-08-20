@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-20T11:16:57Z",
+  "generated_at": "2026-08-20T11:19:32Z",
   "repository": "open-national-digital-trust-framework",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-20T11:16:57Z",
+    "observed_at": "2026-08-20T11:19:32Z",
     "default_branch": "main",
     "head_sha": "9dcd9af8fe5d1818fa7da94b55dc3b22a7fe5661",
     "provenance_status": "observed"
@@ -46,7 +46,7 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "claim": "The repository-native control bound to this assurance claim is currently failing.",
       "evidence": {
         "claim": "publication_integrity",
@@ -97,7 +97,7 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/quality.yml",
       "severity": "high",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "claim": "The repository-native control bound to this assurance claim is currently failing.",
       "evidence": {
         "claim": "specification_quality",
@@ -148,7 +148,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/pages.yml",
       "severity": "medium",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -232,7 +232,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/quality.yml",
       "severity": "medium",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -319,7 +319,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-20T11:13:29Z",
-      "last_observed": "2026-08-20T11:16:57Z",
+      "last_observed": "2026-08-20T11:19:32Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-F21F69217DE4"
     },
@@ -331,7 +331,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-20T11:13:29Z",
-      "last_observed": "2026-08-20T11:16:57Z",
+      "last_observed": "2026-08-20T11:19:32Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-E284F3DCC6F0"
     },
@@ -343,7 +343,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-20T10:54:49Z",
-      "last_observed": "2026-08-20T11:16:57Z",
+      "last_observed": "2026-08-20T11:19:32Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-BEB5B50F9786"
     },
@@ -355,7 +355,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-20T10:54:49Z",
-      "last_observed": "2026-08-20T11:16:57Z",
+      "last_observed": "2026-08-20T11:19:32Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-FB81693ED37C"
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T11:16:57Z",
+  "generated_at": "2026-08-20T11:19:32Z",
   "findings": [
     {
       "finding_id": "PAM-BEB5B50F9786",
@@ -8,7 +8,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/pages.yml",
       "severity": "medium",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -92,7 +92,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/quality.yml",
       "severity": "medium",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -176,7 +176,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/cross-spec-pressure-test.yml",
       "severity": "medium",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -335,7 +335,7 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/quality.yml",
       "severity": "high",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "claim": "The repository-native control bound to this assurance claim is currently failing.",
       "evidence": {
         "claim": "specification_quality",
@@ -386,7 +386,7 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "claim": "The repository-native control bound to this assurance claim is currently failing.",
       "evidence": {
         "claim": "publication_integrity",
@@ -434,7 +434,7 @@
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -442,7 +442,7 @@
           "default_branch": "main",
           "archived": false,
           "pushed_at": "2026-08-20T11:16:29Z",
-          "updated_at": "2026-08-20T10:34:46Z",
+          "updated_at": "2026-08-20T11:17:31Z",
           "open_issues_count": 0,
           "head_sha": "9dcd9af8fe5d1818fa7da94b55dc3b22a7fe5661"
         },
@@ -527,7 +527,7 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -604,7 +604,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -696,7 +696,7 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -758,7 +758,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -820,7 +820,7 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -882,7 +882,7 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -989,7 +989,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1081,7 +1081,7 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1173,7 +1173,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1280,7 +1280,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-08-20T11:16:57Z",
+      "observed_at": "2026-08-20T11:19:32Z",
       "available": true,
       "evidence": {
         "repository": {
