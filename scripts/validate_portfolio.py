@@ -77,12 +77,69 @@ def main():
             errors.append(f'{n}: active or review dispositions require a full repositories[] governance record')
         if not r.get('reason'): errors.append(f'{n}: account disposition requires reason')
     ext={x.get('name') for x in rel.get('external_repositories',[]) if isinstance(x,dict)}; fork_pairs=set(); types=set(rel.get('relationship_types',[]))
+
+    # The portfolio owns classification/topology, while TIS owns the portable
+    # relationship serialization contract and TSMM owns canonical semantics.
+    relationship_contract=rel.get('relationship_contract',{})
+    expected_contract={
+        'authority':'trust-infrastructure-schemas',
+        'version':'v0.13.0',
+        'schema':'https://raw.githubusercontent.com/sankarshanmukhopadhyay/trust-infrastructure-schemas/v0.13.0/portfolio/portfolio-relationship.schema.json',
+    }
+    if not isinstance(relationship_contract,dict):
+        errors.append('relationship_contract must be a mapping')
+        relationship_contract={}
+    for k,v in expected_contract.items():
+        if relationship_contract.get(k)!=v:
+            errors.append(f"relationship_contract.{k} must be {v!r}")
+    sem_auth=relationship_contract.get('semantic_authority',{})
+    if sem_auth.get('repository')!='trust-systems-meta-model' or sem_auth.get('reviewed_version')!='v0.24.0':
+        errors.append('relationship_contract.semantic_authority must pin trust-systems-meta-model v0.24.0')
+    class_auth=relationship_contract.get('classification_authority',{})
+    if class_auth.get('repository')!='sankarshanmukhopadhyay':
+        errors.append('relationship_contract.classification_authority must remain sankarshanmukhopadhyay')
+
+    tsmm_tis_pair={}
     for x in rel.get('relationships',[]):
         if x.get('from') not in names: errors.append(f"relationship from unknown {x.get('from')!r}")
         if x.get('to') not in names and x.get('to') not in ext: errors.append(f"relationship to unknown {x.get('to')!r}")
         if x.get('type') not in types: errors.append(f"ungoverned relationship type {x.get('type')!r}")
         if not x.get('constraint'): errors.append(f'relationship lacks constraint: {x!r}')
+        contract=x.get('contract')
+        if contract is not None:
+            if not isinstance(contract,dict):
+                errors.append(f"relationship contract must be mapping: {x!r}")
+            else:
+                if contract.get('semantics') not in {'canonical','derived','independent','not-applicable'}:
+                    errors.append(f"invalid relationship contract semantics: {x!r}")
+                if contract.get('serialization') not in {'canonical','independent','not-applicable'}:
+                    errors.append(f"invalid relationship contract serialization: {x!r}")
+        verification=x.get('verification')
+        if verification is not None:
+            if not isinstance(verification,dict) or not verification.get('source') or not verification.get('artifact'):
+                errors.append(f"invalid relationship verification contract: {x!r}")
         if x.get('type')=='fork-of': fork_pairs.add((x.get('from'),x.get('to')))
+        if (x.get('from'),x.get('to')) in {
+            ('trust-infrastructure-schemas','trust-systems-meta-model'),
+            ('trust-systems-meta-model','trust-infrastructure-schemas')
+        }:
+            tsmm_tis_pair[(x.get('from'),x.get('to'))]=x
+
+    tis_to_tsmm=tsmm_tis_pair.get(('trust-infrastructure-schemas','trust-systems-meta-model'))
+    if not tis_to_tsmm or tis_to_tsmm.get('type')!='normative-dependency':
+        errors.append('TIS -> TSMM must remain a normative-dependency')
+    elif tis_to_tsmm.get('contract')!={'semantics':'canonical','serialization':'independent'}:
+        errors.append('TIS -> TSMM must preserve canonical semantics and independent serialization')
+    elif tis_to_tsmm.get('verification')!={'source':'trust-infrastructure-schemas','artifact':'artifacts/portfolio/portfolio-alignment.json'}:
+        errors.append('TIS -> TSMM must cite TIS portfolio alignment evidence')
+
+    tsmm_to_tis=tsmm_tis_pair.get(('trust-systems-meta-model','trust-infrastructure-schemas'))
+    if not tsmm_to_tis or tsmm_to_tis.get('type')!='informative-alignment':
+        errors.append('TSMM -> TIS must remain an informative-alignment')
+    elif tsmm_to_tis.get('contract')!={'semantics':'canonical','serialization':'independent'}:
+        errors.append('TSMM -> TIS must preserve canonical semantics and independent serialization')
+    elif tsmm_to_tis.get('verification')!={'source':'trust-systems-meta-model','artifact':'artifacts/portfolio/portfolio-alignment.json'}:
+        errors.append('TSMM -> TIS must cite TSMM portfolio alignment evidence')
     for r in repos:
         if r.get('provenance')=='fork' and (r.get('name'),r.get('upstream')) not in fork_pairs: errors.append(f"{r.get('name')}: missing fork-of relationship")
     if errors:

@@ -35,6 +35,8 @@ All notable changes to the portfolio coordination repository are documented here
 
 ### Changed
 
+- Pinned the portfolio relationship contract to Trust Infrastructure Schemas v0.13.0 and the reviewed canonical semantic authority to Trust Systems Meta Model v0.24.0.
+- Added machine-verifiable TSMM/TIS relationship contract and alignment-evidence references to the canonical portfolio relationship registry.
 - Rescoped development finding feeds into consolidated repository remediation dossiers intended to travel with repository source during implementation work.
 - Separated operational and governance evaluation from substantive assurance and cross-specification assurance; unevaluated dimensions are now explicit rather than implicitly green.
 - Changed zero-finding language so it claims only that evaluated rules produced no findings, not that the repository or portfolio is fully assured.
@@ -48,6 +50,7 @@ All notable changes to the portfolio coordination repository are documented here
 
 ### Governance
 
+- Enforced the TSMM/TIS authority split in portfolio validation: TSMM remains canonical semantic authority, TIS remains portable serialization/validation authority, and this repository remains portfolio classification authority.
 - Observation signals may nominate human review but cannot create interoperability claims or portfolio classifications.
 - Interoperability experiments own only experimental compositions, evidence, findings, and maturity claims.
 - RAHP findings and tooling do not transfer governance, release, or adoption authority to reviewed specifications or external deployments.
