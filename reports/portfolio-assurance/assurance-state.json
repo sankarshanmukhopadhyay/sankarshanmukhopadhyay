@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-20T11:13:29Z",
+  "generated_at": "2026-08-20T11:16:57Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -372,7 +372,7 @@
     "TRQP-TSPP": {
       "repository": "TRQP-TSPP",
       "profile": "security-profile",
-      "state": "stale",
+      "state": "satisfied",
       "claims": [
         {
           "claim": "profile_validation",
@@ -427,9 +427,9 @@
           "required": true,
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/pages.yml",
-          "freshness_policy": "current-head",
-          "state": "stale",
-          "reason": "successful evidence does not cover the current default-branch HEAD",
+          "freshness_policy": "latest-success",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
           "evidence": {
             "workflow_id": 316453200,
             "name": "Deploy documentation to GitHub Pages",
@@ -444,18 +444,16 @@
             "head_sha": "4baefbd17369940b5e261bb62a0b3d7930d0177a",
             "head_branch": "main",
             "run_number": 13
-          },
-          "repository_head_sha": "b1d592ee0b58e47e6741ab4f583c824cd4c833d4",
-          "evidence_head_sha": "4baefbd17369940b5e261bb62a0b3d7930d0177a"
+          }
         }
       ],
       "required_claims": 3,
-      "satisfied_required_claims": 2
+      "satisfied_required_claims": 3
     },
     "cawg-trqp-verifier-refimpl": {
       "repository": "cawg-trqp-verifier-refimpl",
       "profile": "reference-implementation",
-      "state": "stale",
+      "state": "satisfied",
       "claims": [
         {
           "claim": "implementation_validation",
@@ -486,9 +484,9 @@
           "required": true,
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/pages.yml",
-          "freshness_policy": "current-head",
-          "state": "stale",
-          "reason": "successful evidence does not cover the current default-branch HEAD",
+          "freshness_policy": "latest-success",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
           "evidence": {
             "workflow_id": 315515884,
             "name": "Deploy Documentation (Just the Docs)",
@@ -503,9 +501,7 @@
             "head_sha": "39484f72b8cb01935d1303b0dd4f6fce0ad02ab7",
             "head_branch": "main",
             "run_number": 29
-          },
-          "repository_head_sha": "2870653c12748fc54ed05822f079ccac7424a7ec",
-          "evidence_head_sha": "39484f72b8cb01935d1303b0dd4f6fce0ad02ab7"
+          }
         },
         {
           "claim": "package_publication",
@@ -518,12 +514,12 @@
         }
       ],
       "required_claims": 2,
-      "satisfied_required_claims": 1
+      "satisfied_required_claims": 2
     },
     "trqp-conformance-suite": {
       "repository": "trqp-conformance-suite",
       "profile": "conformance-suite",
-      "state": "stale",
+      "state": "satisfied",
       "claims": [
         {
           "claim": "conformance_suite",
@@ -578,9 +574,9 @@
           "required": true,
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/pages.yml",
-          "freshness_policy": "current-head",
-          "state": "stale",
-          "reason": "successful evidence does not cover the current default-branch HEAD",
+          "freshness_policy": "latest-success",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
           "evidence": {
             "workflow_id": 316454130,
             "name": "Deploy documentation to GitHub Pages",
@@ -595,18 +591,16 @@
             "head_sha": "452483a29e3901eba82a36dc27721bbc53f023ce",
             "head_branch": "main",
             "run_number": 14
-          },
-          "repository_head_sha": "294bf81ffce8eb091a904f859adde0549041003f",
-          "evidence_head_sha": "452483a29e3901eba82a36dc27721bbc53f023ce"
+          }
         }
       ],
       "required_claims": 3,
-      "satisfied_required_claims": 2
+      "satisfied_required_claims": 3
     },
     "trqp-assurance-hub": {
       "repository": "trqp-assurance-hub",
       "profile": "assurance-orchestrator",
-      "state": "stale",
+      "state": "satisfied",
       "claims": [
         {
           "claim": "quality_validation",
@@ -685,9 +679,9 @@
           "required": true,
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/pages.yml",
-          "freshness_policy": "current-head",
-          "state": "stale",
-          "reason": "successful evidence does not cover the current default-branch HEAD",
+          "freshness_policy": "latest-success",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
           "evidence": {
             "workflow_id": 316454965,
             "name": "Deploy documentation to GitHub Pages",
@@ -702,13 +696,11 @@
             "head_sha": "da64e3b8032eff0efa5ab04302c964ee648c1618",
             "head_branch": "main",
             "run_number": 15
-          },
-          "repository_head_sha": "ee5e767e9134bb78dd8ee81772b75cc525d80a9b",
-          "evidence_head_sha": "da64e3b8032eff0efa5ab04302c964ee648c1618"
+          }
         }
       ],
       "required_claims": 4,
-      "satisfied_required_claims": 3
+      "satisfied_required_claims": 4
     },
     "rahp-toolkit": {
       "repository": "rahp-toolkit",

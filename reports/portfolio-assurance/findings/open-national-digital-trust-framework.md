@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `open-national-digital-trust-framework`
 
-**Generated:** 2026-08-20T11:13:29Z  
+**Generated:** 2026-08-20T11:16:57Z  
 **Open findings:** 4  
-**Repository snapshot:** `8ed4f45621cba23539a99f4336bf5f6b1a8d9702`  
+**Repository snapshot:** `9dcd9af8fe5d1818fa7da94b55dc3b22a7fe5661`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-93E0E95A35F2 — ASSURANCE_CONTROL_FAILED
 
-- Observation: `PAM-F21F69217DE4` at `2026-08-20T11:13:29Z`
+- Observation: `PAM-F21F69217DE4` at `2026-08-20T11:16:57Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
@@ -78,7 +78,7 @@ Resolve the failing repository-native assurance control or record an explicit go
 
 ## PF-AC63D3930AB3 — ASSURANCE_CONTROL_FAILED
 
-- Observation: `PAM-E284F3DCC6F0` at `2026-08-20T11:13:29Z`
+- Observation: `PAM-E284F3DCC6F0` at `2026-08-20T11:16:57Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/quality.yml`
@@ -129,7 +129,7 @@ Resolve the failing repository-native assurance control or record an explicit go
 
 ## PF-ADCE64569869 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-BEB5B50F9786` at `2026-08-20T11:13:29Z`
+- Observation: `PAM-BEB5B50F9786` at `2026-08-20T11:16:57Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/pages.yml`
@@ -213,7 +213,7 @@ Restore a successful latest completed default-branch run for the affected workfl
 
 ## PF-DCC0C9AA3F10 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-FB81693ED37C` at `2026-08-20T11:13:29Z`
+- Observation: `PAM-FB81693ED37C` at `2026-08-20T11:16:57Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/quality.yml`
