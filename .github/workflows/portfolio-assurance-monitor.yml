@@ -1,6 +1,14 @@
 name: Portfolio assurance monitor
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "config/portfolio-monitor/**"
+      - "data/repository-status.yaml"
+      - "scripts/portfolio_assurance/**"
+      - "scripts/portfolio_assurance_monitor*.py"
   schedule:
     - cron: "17 2 * * 1"
   workflow_dispatch:
@@ -47,11 +55,11 @@ jobs:
           private-key: ${{ secrets.PORTFOLIO_ASSURANCE_APP_PRIVATE_KEY }}
           owner: sankarshanmukhopadhyay
 
-      - name: Collect evidence, discover drift, and generate reports
+      - name: Collect evidence, evaluate assurance contracts, and generate reports
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PORTFOLIO_ISSUE_TOKEN: ${{ steps.issue-token.outputs.token }}
-        run: python scripts/portfolio_assurance_monitor.py --publish-issues
+        run: python scripts/portfolio_assurance_monitor_v3.py --publish-issues
 
       - name: Validate generated site links
         run: python scripts/check_internal_links.py
@@ -63,6 +71,7 @@ jobs:
           path: |
             reports/portfolio-assurance/latest.md
             reports/portfolio-assurance/latest-findings.json
+            reports/portfolio-assurance/assurance-state.json
             reports/portfolio-assurance/finding-lifecycle.json
             reports/portfolio-assurance/findings/*.json
             reports/portfolio-assurance/findings/*.md
@@ -78,5 +87,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/portfolio-assurance/dashboard.md reports/portfolio-assurance
-          git commit -m "chore(assurance): publish weekly portfolio evidence"
+          git commit -m "chore(assurance): publish portfolio evidence"
           git push
