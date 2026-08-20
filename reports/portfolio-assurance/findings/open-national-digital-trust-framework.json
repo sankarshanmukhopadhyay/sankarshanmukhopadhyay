@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-20T10:54:49Z",
+  "generated_at": "2026-08-20T11:13:29Z",
   "repository": "open-national-digital-trust-framework",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-20T10:54:49Z",
+    "observed_at": "2026-08-20T11:13:29Z",
     "default_branch": "main",
     "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702",
     "provenance_status": "observed"
@@ -22,13 +22,13 @@
       "open_findings": 0
     },
     "assurance": {
-      "status": "not-evaluated",
-      "description": "Substantive conformance, risk, control, and assurance evidence is not yet ingested by this monitor.",
-      "open_findings": 0
+      "status": "evaluated",
+      "description": "Repository-specific assurance evidence coverage, execution state, provenance and freshness against governed repository revisions.",
+      "open_findings": 2
     },
     "cross_specification": {
       "status": "not-evaluated",
-      "description": "Cross-specification pressure-test evidence is not yet ingested by this monitor.",
+      "description": "Cross-specification pressure-test evidence is not yet ingested as a portfolio-wide assurance dimension.",
       "open_findings": 0
     }
   },
@@ -37,8 +37,110 @@
     "dashboard": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/docs/portfolio-assurance/dashboard.html",
     "latest_report": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/latest.html"
   },
-  "finding_count": 2,
+  "finding_count": 4,
   "findings": [
+    {
+      "finding_id": "PAM-F21F69217DE4",
+      "finding_fingerprint": "PF-93E0E95A35F2",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "ASSURANCE_CONTROL_FAILED",
+      "subject": ".github/workflows/pages.yml",
+      "severity": "high",
+      "observed_at": "2026-08-20T11:13:29Z",
+      "claim": "The repository-native control bound to this assurance claim is currently failing.",
+      "evidence": {
+        "claim": "publication_integrity",
+        "state": "degraded",
+        "reason": "latest completed workflow conclusion is failure",
+        "freshness_policy": "current-head",
+        "repository_head_sha": null,
+        "evidence_head_sha": null,
+        "workflow": {
+          "workflow_id": 317410093,
+          "name": "Build and deploy GitHub Pages",
+          "path": ".github/workflows/pages.yml",
+          "conclusion": "failure",
+          "status": "completed",
+          "event": "push",
+          "created_at": "2026-08-20T10:33:58Z",
+          "updated_at": "2026-08-20T10:34:13Z",
+          "run_started_at": "2026-08-20T10:33:58Z",
+          "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/32359554330",
+          "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702",
+          "head_branch": "main",
+          "run_number": 44
+        }
+      },
+      "recommended_action": "Resolve the failing repository-native control or record an explicit governed disposition.",
+      "dimension": "assurance",
+      "remediation": {
+        "objective": "Resolve the failing repository-native assurance control or record an explicit governed disposition.",
+        "acceptance_criteria": [
+          "The configured assurance control completes successfully.",
+          "The resulting evidence remains attributable to the configured repository revision."
+        ],
+        "verification": [
+          "Execute the control and rerun the portfolio monitor."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": true,
+        "target": "target-repository",
+        "minimum_severity": "medium"
+      }
+    },
+    {
+      "finding_id": "PAM-E284F3DCC6F0",
+      "finding_fingerprint": "PF-AC63D3930AB3",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "ASSURANCE_CONTROL_FAILED",
+      "subject": ".github/workflows/quality.yml",
+      "severity": "high",
+      "observed_at": "2026-08-20T11:13:29Z",
+      "claim": "The repository-native control bound to this assurance claim is currently failing.",
+      "evidence": {
+        "claim": "specification_quality",
+        "state": "degraded",
+        "reason": "latest completed workflow conclusion is failure",
+        "freshness_policy": "current-head",
+        "repository_head_sha": null,
+        "evidence_head_sha": null,
+        "workflow": {
+          "workflow_id": 317410095,
+          "name": "Documentation quality",
+          "path": ".github/workflows/quality.yml",
+          "conclusion": "failure",
+          "status": "completed",
+          "event": "push",
+          "created_at": "2026-08-20T10:33:58Z",
+          "updated_at": "2026-08-20T10:34:12Z",
+          "run_started_at": "2026-08-20T10:33:58Z",
+          "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/32359554360",
+          "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702",
+          "head_branch": "main",
+          "run_number": 44
+        }
+      },
+      "recommended_action": "Resolve the failing repository-native control or record an explicit governed disposition.",
+      "dimension": "assurance",
+      "remediation": {
+        "objective": "Resolve the failing repository-native assurance control or record an explicit governed disposition.",
+        "acceptance_criteria": [
+          "The configured assurance control completes successfully.",
+          "The resulting evidence remains attributable to the configured repository revision."
+        ],
+        "verification": [
+          "Execute the control and rerun the portfolio monitor."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": true,
+        "target": "target-repository",
+        "minimum_severity": "medium"
+      }
+    },
     {
       "finding_id": "PAM-BEB5B50F9786",
       "finding_fingerprint": "PF-ADCE64569869",
@@ -46,23 +148,61 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/pages.yml",
       "severity": "medium",
-      "observed_at": "2026-08-20T10:54:49Z",
+      "observed_at": "2026-08-20T11:13:29Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
+        "available": true,
         "lookback_days": 7,
         "completed_examined": 12,
         "workflows_examined": 2,
         "unresolved_failures": 2,
+        "latest": [
+          {
+            "workflow_id": 317410093,
+            "name": "Build and deploy GitHub Pages",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "failure",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:33:58Z",
+            "updated_at": "2026-08-20T10:34:13Z",
+            "run_started_at": "2026-08-20T10:33:58Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/32359554330",
+            "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702",
+            "head_branch": "main",
+            "run_number": 44
+          },
+          {
+            "workflow_id": 317410095,
+            "name": "Documentation quality",
+            "path": ".github/workflows/quality.yml",
+            "conclusion": "failure",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:33:58Z",
+            "updated_at": "2026-08-20T10:34:12Z",
+            "run_started_at": "2026-08-20T10:33:58Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/32359554360",
+            "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702",
+            "head_branch": "main",
+            "run_number": 44
+          }
+        ],
         "unresolved": [
           {
             "workflow_id": 317410093,
             "name": "Build and deploy GitHub Pages",
             "path": ".github/workflows/pages.yml",
             "conclusion": "failure",
+            "status": "completed",
+            "event": "push",
             "created_at": "2026-08-20T10:33:58Z",
             "updated_at": "2026-08-20T10:34:13Z",
+            "run_started_at": "2026-08-20T10:33:58Z",
             "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/32359554330",
-            "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702"
+            "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702",
+            "head_branch": "main",
+            "run_number": 44
           }
         ]
       },
@@ -92,23 +232,61 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/quality.yml",
       "severity": "medium",
-      "observed_at": "2026-08-20T10:54:49Z",
+      "observed_at": "2026-08-20T11:13:29Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
+        "available": true,
         "lookback_days": 7,
         "completed_examined": 12,
         "workflows_examined": 2,
         "unresolved_failures": 2,
+        "latest": [
+          {
+            "workflow_id": 317410093,
+            "name": "Build and deploy GitHub Pages",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "failure",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:33:58Z",
+            "updated_at": "2026-08-20T10:34:13Z",
+            "run_started_at": "2026-08-20T10:33:58Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/32359554330",
+            "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702",
+            "head_branch": "main",
+            "run_number": 44
+          },
+          {
+            "workflow_id": 317410095,
+            "name": "Documentation quality",
+            "path": ".github/workflows/quality.yml",
+            "conclusion": "failure",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:33:58Z",
+            "updated_at": "2026-08-20T10:34:12Z",
+            "run_started_at": "2026-08-20T10:33:58Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/32359554360",
+            "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702",
+            "head_branch": "main",
+            "run_number": 44
+          }
+        ],
         "unresolved": [
           {
             "workflow_id": 317410095,
             "name": "Documentation quality",
             "path": ".github/workflows/quality.yml",
             "conclusion": "failure",
+            "status": "completed",
+            "event": "push",
             "created_at": "2026-08-20T10:33:58Z",
             "updated_at": "2026-08-20T10:34:12Z",
+            "run_started_at": "2026-08-20T10:33:58Z",
             "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/32359554360",
-            "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702"
+            "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702",
+            "head_branch": "main",
+            "run_number": 44
           }
         ]
       },
@@ -134,6 +312,30 @@
   ],
   "lifecycle": [
     {
+      "finding_fingerprint": "PF-93E0E95A35F2",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "ASSURANCE_CONTROL_FAILED",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-20T11:13:29Z",
+      "last_observed": "2026-08-20T11:13:29Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-F21F69217DE4"
+    },
+    {
+      "finding_fingerprint": "PF-AC63D3930AB3",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "ASSURANCE_CONTROL_FAILED",
+      "subject": ".github/workflows/quality.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-20T11:13:29Z",
+      "last_observed": "2026-08-20T11:13:29Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-E284F3DCC6F0"
+    },
+    {
       "finding_fingerprint": "PF-ADCE64569869",
       "repository": "open-national-digital-trust-framework",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
@@ -141,7 +343,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-20T10:54:49Z",
-      "last_observed": "2026-08-20T10:54:49Z",
+      "last_observed": "2026-08-20T11:13:29Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-BEB5B50F9786"
     },
@@ -153,7 +355,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-20T10:54:49Z",
-      "last_observed": "2026-08-20T10:54:49Z",
+      "last_observed": "2026-08-20T11:13:29Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-FB81693ED37C"
     }

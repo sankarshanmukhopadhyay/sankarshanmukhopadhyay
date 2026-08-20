@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `trust-graph-artifacts`
 
-**Generated:** 2026-08-20T10:54:49Z  
+**Generated:** 2026-08-20T11:13:29Z  
 **Open findings:** 0  
 **Repository snapshot:** `6171ed802fd34586dbad78f2c05d563e31905761`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.json)
@@ -20,7 +20,7 @@ search_exclude: true
 |---|---|---:|
 | Operational | `evaluated` | 0 |
 | Governance | `evaluated` | 0 |
-| Assurance | `not-evaluated` | 0 |
+| Assurance | `evaluated` | 0 |
 | Cross Specification | `not-evaluated` | 0 |
 
 ## Open findings

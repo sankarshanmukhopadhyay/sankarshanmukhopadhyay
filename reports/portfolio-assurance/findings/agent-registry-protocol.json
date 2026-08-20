@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-20T10:54:49Z",
+  "generated_at": "2026-08-20T11:13:29Z",
   "repository": "agent-registry-protocol",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-20T10:54:49Z",
+    "observed_at": "2026-08-20T11:13:29Z",
     "default_branch": "main",
     "head_sha": "676e7eaac99fefd822ee3e70e0abd9865e3f1956",
     "provenance_status": "observed"
@@ -22,13 +22,13 @@
       "open_findings": 0
     },
     "assurance": {
-      "status": "not-evaluated",
-      "description": "Substantive conformance, risk, control, and assurance evidence is not yet ingested by this monitor.",
+      "status": "evaluated",
+      "description": "Repository-specific assurance evidence coverage, execution state, provenance and freshness against governed repository revisions.",
       "open_findings": 0
     },
     "cross_specification": {
       "status": "not-evaluated",
-      "description": "Cross-specification pressure-test evidence is not yet ingested by this monitor.",
+      "description": "Cross-specification pressure-test evidence is not yet ingested as a portfolio-wide assurance dimension.",
       "open_findings": 0
     }
   },

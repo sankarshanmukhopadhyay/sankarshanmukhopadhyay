@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-20T10:54:49Z",
+  "generated_at": "2026-08-20T11:13:29Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -10,7 +10,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-19T03:07:01Z",
-      "last_observed": "2026-08-20T10:54:49Z",
+      "last_observed": "2026-08-20T11:13:29Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-74888B222EF0"
     },
@@ -22,7 +22,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-20T10:54:49Z",
-      "last_observed": "2026-08-20T10:54:49Z",
+      "last_observed": "2026-08-20T11:13:29Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-BEB5B50F9786"
     },
@@ -34,9 +34,81 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-20T10:54:49Z",
-      "last_observed": "2026-08-20T10:54:49Z",
+      "last_observed": "2026-08-20T11:13:29Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-FB81693ED37C"
+    },
+    "PF-AC63D3930AB3": {
+      "finding_fingerprint": "PF-AC63D3930AB3",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "ASSURANCE_CONTROL_FAILED",
+      "subject": ".github/workflows/quality.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-20T11:13:29Z",
+      "last_observed": "2026-08-20T11:13:29Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-E284F3DCC6F0"
+    },
+    "PF-93E0E95A35F2": {
+      "finding_fingerprint": "PF-93E0E95A35F2",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "ASSURANCE_CONTROL_FAILED",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-20T11:13:29Z",
+      "last_observed": "2026-08-20T11:13:29Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-F21F69217DE4"
+    },
+    "PF-54FF6F2FAF55": {
+      "finding_fingerprint": "PF-54FF6F2FAF55",
+      "repository": "TRQP-TSPP",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-20T11:13:29Z",
+      "last_observed": "2026-08-20T11:13:29Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-ED22FC52DC48"
+    },
+    "PF-2B2778E887E9": {
+      "finding_fingerprint": "PF-2B2778E887E9",
+      "repository": "cawg-trqp-verifier-refimpl",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-20T11:13:29Z",
+      "last_observed": "2026-08-20T11:13:29Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-EA2FD15868CF"
+    },
+    "PF-828DF4A3DE49": {
+      "finding_fingerprint": "PF-828DF4A3DE49",
+      "repository": "trqp-conformance-suite",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-20T11:13:29Z",
+      "last_observed": "2026-08-20T11:13:29Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-61C37E873800"
+    },
+    "PF-5FA38CA6ACF4": {
+      "finding_fingerprint": "PF-5FA38CA6ACF4",
+      "repository": "trqp-assurance-hub",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-20T11:13:29Z",
+      "last_observed": "2026-08-20T11:13:29Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-75FF505A7FD5"
     }
   }
 }

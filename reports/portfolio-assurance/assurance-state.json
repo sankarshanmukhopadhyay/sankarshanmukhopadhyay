@@ -1,0 +1,819 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-08-20T11:13:29Z",
+  "authority": "evidence-coverage-observation",
+  "states": {
+    "open-national-digital-trust-framework": {
+      "repository": "open-national-digital-trust-framework",
+      "profile": "specification",
+      "state": "degraded",
+      "claims": [
+        {
+          "claim": "specification_quality",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/quality.yml",
+          "freshness_policy": "current-head",
+          "state": "degraded",
+          "reason": "latest completed workflow conclusion is failure",
+          "evidence": {
+            "workflow_id": 317410095,
+            "name": "Documentation quality",
+            "path": ".github/workflows/quality.yml",
+            "conclusion": "failure",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:33:58Z",
+            "updated_at": "2026-08-20T10:34:12Z",
+            "run_started_at": "2026-08-20T10:33:58Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/32359554360",
+            "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702",
+            "head_branch": "main",
+            "run_number": 44
+          }
+        },
+        {
+          "claim": "publication_integrity",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/pages.yml",
+          "freshness_policy": "current-head",
+          "state": "degraded",
+          "reason": "latest completed workflow conclusion is failure",
+          "evidence": {
+            "workflow_id": 317410093,
+            "name": "Build and deploy GitHub Pages",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "failure",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:33:58Z",
+            "updated_at": "2026-08-20T10:34:13Z",
+            "run_started_at": "2026-08-20T10:33:58Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/32359554330",
+            "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702",
+            "head_branch": "main",
+            "run_number": 44
+          }
+        }
+      ],
+      "required_claims": 2,
+      "satisfied_required_claims": 0
+    },
+    "governance-authority-assurance-metamodel": {
+      "repository": "governance-authority-assurance-metamodel",
+      "profile": "governance-model",
+      "state": "satisfied",
+      "claims": [
+        {
+          "claim": "model_validation",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/validate.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 314123806,
+            "name": "Validate",
+            "path": ".github/workflows/validate.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:34:05Z",
+            "updated_at": "2026-08-20T10:35:20Z",
+            "run_started_at": "2026-08-20T10:34:05Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel/actions/runs/32359563293",
+            "head_sha": "0b1653efcf27d8ab7da90c9dbc222839f79b444d",
+            "head_branch": "main",
+            "run_number": 44
+          }
+        },
+        {
+          "claim": "publication_integrity",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/verify-publication.yml",
+          "freshness_policy": "latest-success",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 338457213,
+            "name": "Verify canonical publication",
+            "path": ".github/workflows/verify-publication.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "workflow_run",
+            "created_at": "2026-08-20T10:35:13Z",
+            "updated_at": "2026-08-20T10:35:23Z",
+            "run_started_at": "2026-08-20T10:35:13Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel/actions/runs/32359656509",
+            "head_sha": "0b1653efcf27d8ab7da90c9dbc222839f79b444d",
+            "head_branch": "main",
+            "run_number": 2
+          }
+        }
+      ],
+      "required_claims": 2,
+      "satisfied_required_claims": 2
+    },
+    "agent-registry-protocol": {
+      "repository": "agent-registry-protocol",
+      "profile": "protocol-specification",
+      "state": "satisfied",
+      "claims": [
+        {
+          "claim": "protocol_validation",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/validate.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 314181172,
+            "name": "Validate",
+            "path": ".github/workflows/validate.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:34:14Z",
+            "updated_at": "2026-08-20T10:34:40Z",
+            "run_started_at": "2026-08-20T10:34:14Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/32359574671",
+            "head_sha": "676e7eaac99fefd822ee3e70e0abd9865e3f1956",
+            "head_branch": "main",
+            "run_number": 67
+          }
+        },
+        {
+          "claim": "publication_integrity",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/pages.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 314182119,
+            "name": "Deploy GitHub Pages",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:34:14Z",
+            "updated_at": "2026-08-20T10:34:54Z",
+            "run_started_at": "2026-08-20T10:34:14Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/32359574793",
+            "head_sha": "676e7eaac99fefd822ee3e70e0abd9865e3f1956",
+            "head_branch": "main",
+            "run_number": 43
+          }
+        },
+        {
+          "claim": "ietf_renderability",
+          "required": false,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/ietf-draft.yml",
+          "freshness_policy": "latest-success",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 336969346,
+            "name": "IETF Internet-Draft",
+            "path": ".github/workflows/ietf-draft.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "workflow_dispatch",
+            "created_at": "2026-08-20T05:04:09Z",
+            "updated_at": "2026-08-20T05:04:43Z",
+            "run_started_at": "2026-08-20T05:04:09Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/32334190383",
+            "head_sha": "396924f23869c6308bbe295e15aad6555dfdbc6e",
+            "head_branch": "main",
+            "run_number": 5
+          }
+        }
+      ],
+      "required_claims": 2,
+      "satisfied_required_claims": 2
+    },
+    "trust-systems-meta-model": {
+      "repository": "trust-systems-meta-model",
+      "profile": "semantic-model",
+      "state": "satisfied",
+      "claims": [
+        {
+          "claim": "model_validation",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/validate.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 271080726,
+            "name": "Validate TSMM Candidate",
+            "path": ".github/workflows/validate.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:34:21Z",
+            "updated_at": "2026-08-20T10:34:35Z",
+            "run_started_at": "2026-08-20T10:34:21Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model/actions/runs/32359584153",
+            "head_sha": "e6f1f2920181968370722fb104be8d48fedd6efc",
+            "head_branch": "main",
+            "run_number": 15
+          }
+        },
+        {
+          "claim": "publication_integrity",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/pages.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 271080725,
+            "name": "Build and deploy GitHub Pages",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:34:21Z",
+            "updated_at": "2026-08-20T10:35:00Z",
+            "run_started_at": "2026-08-20T10:34:21Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model/actions/runs/32359584107",
+            "head_sha": "e6f1f2920181968370722fb104be8d48fedd6efc",
+            "head_branch": "main",
+            "run_number": 16
+          }
+        }
+      ],
+      "required_claims": 2,
+      "satisfied_required_claims": 2
+    },
+    "trust-infrastructure-schemas": {
+      "repository": "trust-infrastructure-schemas",
+      "profile": "schema-library",
+      "state": "satisfied",
+      "claims": [
+        {
+          "claim": "schema_validation",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/validate-schemas.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 235993015,
+            "name": "Validate TIS Candidate",
+            "path": ".github/workflows/validate-schemas.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:34:27Z",
+            "updated_at": "2026-08-20T10:34:45Z",
+            "run_started_at": "2026-08-20T10:34:27Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas/actions/runs/32359592888",
+            "head_sha": "bc6fb1a339fd8e8c3469f9e0bd999efdd6726412",
+            "head_branch": "main",
+            "run_number": 34
+          }
+        },
+        {
+          "claim": "publication_integrity",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/pages.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 316477083,
+            "name": "Build and deploy GitHub Pages",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:34:27Z",
+            "updated_at": "2026-08-20T10:35:04Z",
+            "run_started_at": "2026-08-20T10:34:27Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas/actions/runs/32359592902",
+            "head_sha": "bc6fb1a339fd8e8c3469f9e0bd999efdd6726412",
+            "head_branch": "main",
+            "run_number": 11
+          }
+        }
+      ],
+      "required_claims": 2,
+      "satisfied_required_claims": 2
+    },
+    "trust-graph-artifacts": {
+      "repository": "trust-graph-artifacts",
+      "profile": "executable-governance-incubator",
+      "state": "satisfied",
+      "claims": [
+        {
+          "claim": "native_model_validation",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/validate-tsmm-native.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 259914534,
+            "name": "validate-tsmm-native",
+            "path": ".github/workflows/validate-tsmm-native.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:34:34Z",
+            "updated_at": "2026-08-20T10:34:46Z",
+            "run_started_at": "2026-08-20T10:34:34Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/32359602617",
+            "head_sha": "6171ed802fd34586dbad78f2c05d563e31905761",
+            "head_branch": "main",
+            "run_number": 25
+          }
+        },
+        {
+          "claim": "publication_integrity",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/pages.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 271761811,
+            "name": "publish-docs",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:34:34Z",
+            "updated_at": "2026-08-20T10:35:48Z",
+            "run_started_at": "2026-08-20T10:34:34Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/32359602736",
+            "head_sha": "6171ed802fd34586dbad78f2c05d563e31905761",
+            "head_branch": "main",
+            "run_number": 10
+          }
+        }
+      ],
+      "required_claims": 2,
+      "satisfied_required_claims": 2
+    },
+    "TRQP-TSPP": {
+      "repository": "TRQP-TSPP",
+      "profile": "security-profile",
+      "state": "stale",
+      "claims": [
+        {
+          "claim": "profile_validation",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/ci.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 236888247,
+            "name": "TSPP CI",
+            "path": ".github/workflows/ci.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:34:41Z",
+            "updated_at": "2026-08-20T10:35:27Z",
+            "run_started_at": "2026-08-20T10:34:41Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/actions/runs/32359611424",
+            "head_sha": "b1d592ee0b58e47e6741ab4f583c824cd4c833d4",
+            "head_branch": "main",
+            "run_number": 155
+          }
+        },
+        {
+          "claim": "portfolio_contract",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/portfolio-contract.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 338452297,
+            "name": "Portfolio Integration Contract",
+            "path": ".github/workflows/portfolio-contract.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:34:41Z",
+            "updated_at": "2026-08-20T10:34:50Z",
+            "run_started_at": "2026-08-20T10:34:41Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/actions/runs/32359611394",
+            "head_sha": "b1d592ee0b58e47e6741ab4f583c824cd4c833d4",
+            "head_branch": "main",
+            "run_number": 15
+          }
+        },
+        {
+          "claim": "publication_integrity",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/pages.yml",
+          "freshness_policy": "current-head",
+          "state": "stale",
+          "reason": "successful evidence does not cover the current default-branch HEAD",
+          "evidence": {
+            "workflow_id": 316453200,
+            "name": "Deploy documentation to GitHub Pages",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T09:47:57Z",
+            "updated_at": "2026-08-20T09:48:34Z",
+            "run_started_at": "2026-08-20T09:47:57Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/actions/runs/32355712824",
+            "head_sha": "4baefbd17369940b5e261bb62a0b3d7930d0177a",
+            "head_branch": "main",
+            "run_number": 13
+          },
+          "repository_head_sha": "b1d592ee0b58e47e6741ab4f583c824cd4c833d4",
+          "evidence_head_sha": "4baefbd17369940b5e261bb62a0b3d7930d0177a"
+        }
+      ],
+      "required_claims": 3,
+      "satisfied_required_claims": 2
+    },
+    "cawg-trqp-verifier-refimpl": {
+      "repository": "cawg-trqp-verifier-refimpl",
+      "profile": "reference-implementation",
+      "state": "stale",
+      "claims": [
+        {
+          "claim": "implementation_validation",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/ci.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 248717477,
+            "name": "CI",
+            "path": ".github/workflows/ci.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:34:50Z",
+            "updated_at": "2026-08-20T10:35:16Z",
+            "run_started_at": "2026-08-20T10:34:50Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/32359624206",
+            "head_sha": "2870653c12748fc54ed05822f079ccac7424a7ec",
+            "head_branch": "main",
+            "run_number": 168
+          }
+        },
+        {
+          "claim": "publication_integrity",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/pages.yml",
+          "freshness_policy": "current-head",
+          "state": "stale",
+          "reason": "successful evidence does not cover the current default-branch HEAD",
+          "evidence": {
+            "workflow_id": 315515884,
+            "name": "Deploy Documentation (Just the Docs)",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T09:39:31Z",
+            "updated_at": "2026-08-20T09:40:05Z",
+            "run_started_at": "2026-08-20T09:39:31Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/32354999523",
+            "head_sha": "39484f72b8cb01935d1303b0dd4f6fce0ad02ab7",
+            "head_branch": "main",
+            "run_number": 29
+          },
+          "repository_head_sha": "2870653c12748fc54ed05822f079ccac7424a7ec",
+          "evidence_head_sha": "39484f72b8cb01935d1303b0dd4f6fce0ad02ab7"
+        },
+        {
+          "claim": "package_publication",
+          "required": false,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/pypi-publish.yml",
+          "freshness_policy": "latest-success",
+          "state": "missing",
+          "reason": "no completed workflow execution was observed inside the governed lookback window"
+        }
+      ],
+      "required_claims": 2,
+      "satisfied_required_claims": 1
+    },
+    "trqp-conformance-suite": {
+      "repository": "trqp-conformance-suite",
+      "profile": "conformance-suite",
+      "state": "stale",
+      "claims": [
+        {
+          "claim": "conformance_suite",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/cts.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 233220218,
+            "name": "CTS",
+            "path": ".github/workflows/cts.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:34:58Z",
+            "updated_at": "2026-08-20T10:35:27Z",
+            "run_started_at": "2026-08-20T10:34:58Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite/actions/runs/32359634957",
+            "head_sha": "294bf81ffce8eb091a904f859adde0549041003f",
+            "head_branch": "main",
+            "run_number": 108
+          }
+        },
+        {
+          "claim": "portfolio_contract",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/portfolio-contract.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 338452594,
+            "name": "Portfolio Integration Contract",
+            "path": ".github/workflows/portfolio-contract.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:34:59Z",
+            "updated_at": "2026-08-20T10:35:10Z",
+            "run_started_at": "2026-08-20T10:34:59Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite/actions/runs/32359635119",
+            "head_sha": "294bf81ffce8eb091a904f859adde0549041003f",
+            "head_branch": "main",
+            "run_number": 10
+          }
+        },
+        {
+          "claim": "publication_integrity",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/pages.yml",
+          "freshness_policy": "current-head",
+          "state": "stale",
+          "reason": "successful evidence does not cover the current default-branch HEAD",
+          "evidence": {
+            "workflow_id": 316454130,
+            "name": "Deploy documentation to GitHub Pages",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T09:48:03Z",
+            "updated_at": "2026-08-20T09:48:35Z",
+            "run_started_at": "2026-08-20T09:48:03Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite/actions/runs/32355721574",
+            "head_sha": "452483a29e3901eba82a36dc27721bbc53f023ce",
+            "head_branch": "main",
+            "run_number": 14
+          },
+          "repository_head_sha": "294bf81ffce8eb091a904f859adde0549041003f",
+          "evidence_head_sha": "452483a29e3901eba82a36dc27721bbc53f023ce"
+        }
+      ],
+      "required_claims": 3,
+      "satisfied_required_claims": 2
+    },
+    "trqp-assurance-hub": {
+      "repository": "trqp-assurance-hub",
+      "profile": "assurance-orchestrator",
+      "state": "stale",
+      "claims": [
+        {
+          "claim": "quality_validation",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/quality.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 236973230,
+            "name": "quality",
+            "path": ".github/workflows/quality.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:35:08Z",
+            "updated_at": "2026-08-20T10:35:31Z",
+            "run_started_at": "2026-08-20T10:35:08Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/32359649468",
+            "head_sha": "ee5e767e9134bb78dd8ee81772b75cc525d80a9b",
+            "head_branch": "main",
+            "run_number": 129
+          }
+        },
+        {
+          "claim": "composed_assurance_smoke",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/combined-assurance-smoke.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 236983557,
+            "name": "combined-assurance-smoke",
+            "path": ".github/workflows/combined-assurance-smoke.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:35:08Z",
+            "updated_at": "2026-08-20T10:35:33Z",
+            "run_started_at": "2026-08-20T10:35:08Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/32359649471",
+            "head_sha": "ee5e767e9134bb78dd8ee81772b75cc525d80a9b",
+            "head_branch": "main",
+            "run_number": 105
+          }
+        },
+        {
+          "claim": "portfolio_contract",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/portfolio-contract.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 338452388,
+            "name": "Portfolio Integration Contract",
+            "path": ".github/workflows/portfolio-contract.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T10:35:08Z",
+            "updated_at": "2026-08-20T10:35:21Z",
+            "run_started_at": "2026-08-20T10:35:08Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/32359649677",
+            "head_sha": "ee5e767e9134bb78dd8ee81772b75cc525d80a9b",
+            "head_branch": "main",
+            "run_number": 11
+          }
+        },
+        {
+          "claim": "publication_integrity",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/pages.yml",
+          "freshness_policy": "current-head",
+          "state": "stale",
+          "reason": "successful evidence does not cover the current default-branch HEAD",
+          "evidence": {
+            "workflow_id": 316454965,
+            "name": "Deploy documentation to GitHub Pages",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T09:48:11Z",
+            "updated_at": "2026-08-20T09:48:51Z",
+            "run_started_at": "2026-08-20T09:48:11Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/32355733023",
+            "head_sha": "da64e3b8032eff0efa5ab04302c964ee648c1618",
+            "head_branch": "main",
+            "run_number": 15
+          },
+          "repository_head_sha": "ee5e767e9134bb78dd8ee81772b75cc525d80a9b",
+          "evidence_head_sha": "da64e3b8032eff0efa5ab04302c964ee648c1618"
+        }
+      ],
+      "required_claims": 4,
+      "satisfied_required_claims": 3
+    },
+    "rahp-toolkit": {
+      "repository": "rahp-toolkit",
+      "profile": "assurance-toolkit",
+      "state": "satisfied",
+      "claims": [
+        {
+          "claim": "toolkit_validation",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/validate.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 331522431,
+            "name": "validate",
+            "path": ".github/workflows/validate.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T06:19:14Z",
+            "updated_at": "2026-08-20T06:20:19Z",
+            "run_started_at": "2026-08-20T06:19:14Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32339100508",
+            "head_sha": "d66dc86bc8229cda340bac181ae73c80860e6180",
+            "head_branch": "main",
+            "run_number": 73
+          }
+        },
+        {
+          "claim": "corpus_integrity",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/corpus-status.yml",
+          "freshness_policy": "latest-success",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 333347627,
+            "name": "Corpus source status",
+            "path": ".github/workflows/corpus-status.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "schedule",
+            "created_at": "2026-08-17T04:04:12Z",
+            "updated_at": "2026-08-17T04:04:26Z",
+            "run_started_at": "2026-08-17T04:04:12Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/31993181629",
+            "head_sha": "ec068f0077305d15e9e6ae3e1854fd7d39920592",
+            "head_branch": "main",
+            "run_number": 6
+          }
+        },
+        {
+          "claim": "publication_integrity",
+          "required": true,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/pages.yml",
+          "freshness_policy": "current-head",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 333196290,
+            "name": "Build and deploy RAHP documentation",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-08-20T06:19:14Z",
+            "updated_at": "2026-08-20T06:21:00Z",
+            "run_started_at": "2026-08-20T06:19:14Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32339100389",
+            "head_sha": "d66dc86bc8229cda340bac181ae73c80860e6180",
+            "head_branch": "main",
+            "run_number": 62
+          }
+        },
+        {
+          "claim": "cross_specification_pressure_test",
+          "required": false,
+          "evidence_type": "github-workflow",
+          "subject": ".github/workflows/cross-spec-pressure-test.yml",
+          "freshness_policy": "latest-success",
+          "state": "degraded",
+          "reason": "latest completed workflow conclusion is failure",
+          "evidence": {
+            "workflow_id": 337404001,
+            "name": "Run cross-specification pressure test",
+            "path": ".github/workflows/cross-spec-pressure-test.yml",
+            "conclusion": "failure",
+            "status": "completed",
+            "event": "workflow_dispatch",
+            "created_at": "2026-08-19T00:44:33Z",
+            "updated_at": "2026-08-19T00:44:49Z",
+            "run_started_at": "2026-08-19T00:44:33Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32202382447",
+            "head_sha": "420aae6b5d8fab2f242018b8038b38159d0fdfa0",
+            "head_branch": "main",
+            "run_number": 2
+          }
+        }
+      ],
+      "required_claims": 3,
+      "satisfied_required_claims": 3
+    }
+  }
+}

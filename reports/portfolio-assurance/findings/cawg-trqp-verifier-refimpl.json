@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-20T10:54:49Z",
+  "generated_at": "2026-08-20T11:13:29Z",
   "repository": "cawg-trqp-verifier-refimpl",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-20T10:54:49Z",
+    "observed_at": "2026-08-20T11:13:29Z",
     "default_branch": "main",
     "head_sha": "2870653c12748fc54ed05822f079ccac7424a7ec",
     "provenance_status": "observed"
@@ -22,13 +22,13 @@
       "open_findings": 0
     },
     "assurance": {
-      "status": "not-evaluated",
-      "description": "Substantive conformance, risk, control, and assurance evidence is not yet ingested by this monitor.",
-      "open_findings": 0
+      "status": "evaluated",
+      "description": "Repository-specific assurance evidence coverage, execution state, provenance and freshness against governed repository revisions.",
+      "open_findings": 1
     },
     "cross_specification": {
       "status": "not-evaluated",
-      "description": "Cross-specification pressure-test evidence is not yet ingested by this monitor.",
+      "description": "Cross-specification pressure-test evidence is not yet ingested as a portfolio-wide assurance dimension.",
       "open_findings": 0
     }
   },
@@ -37,9 +37,74 @@
     "dashboard": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/docs/portfolio-assurance/dashboard.html",
     "latest_report": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/latest.html"
   },
-  "finding_count": 0,
-  "findings": [],
-  "lifecycle": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "finding_id": "PAM-EA2FD15868CF",
+      "finding_fingerprint": "PF-2B2778E887E9",
+      "repository": "cawg-trqp-verifier-refimpl",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/pages.yml",
+      "severity": "medium",
+      "observed_at": "2026-08-20T11:13:29Z",
+      "claim": "Required assurance evidence is successful but does not cover the current governed repository state.",
+      "evidence": {
+        "claim": "publication_integrity",
+        "state": "stale",
+        "reason": "successful evidence does not cover the current default-branch HEAD",
+        "freshness_policy": "current-head",
+        "repository_head_sha": "2870653c12748fc54ed05822f079ccac7424a7ec",
+        "evidence_head_sha": "39484f72b8cb01935d1303b0dd4f6fce0ad02ab7",
+        "workflow": {
+          "workflow_id": 315515884,
+          "name": "Deploy Documentation (Just the Docs)",
+          "path": ".github/workflows/pages.yml",
+          "conclusion": "success",
+          "status": "completed",
+          "event": "push",
+          "created_at": "2026-08-20T09:39:31Z",
+          "updated_at": "2026-08-20T09:40:05Z",
+          "run_started_at": "2026-08-20T09:39:31Z",
+          "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/32354999523",
+          "head_sha": "39484f72b8cb01935d1303b0dd4f6fce0ad02ab7",
+          "head_branch": "main",
+          "run_number": 29
+        }
+      },
+      "recommended_action": "Regenerate the assurance evidence against the current default-branch HEAD.",
+      "dimension": "assurance",
+      "remediation": {
+        "objective": "Regenerate assurance evidence against the current governed repository revision.",
+        "acceptance_criteria": [
+          "The evidence-producing workflow succeeds against the current default-branch HEAD.",
+          "The evidence HEAD SHA matches the governed repository HEAD SHA."
+        ],
+        "verification": [
+          "Execute the configured control on the current default branch and rerun the monitor."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": true,
+        "target": "target-repository",
+        "minimum_severity": "medium"
+      }
+    }
+  ],
+  "lifecycle": [
+    {
+      "finding_fingerprint": "PF-2B2778E887E9",
+      "repository": "cawg-trqp-verifier-refimpl",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-20T11:13:29Z",
+      "last_observed": "2026-08-20T11:13:29Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-EA2FD15868CF"
+    }
+  ],
   "handoff": {
     "authority": "repository-local-governance",
     "intended_use": "Supply this dossier with the affected repository source during remediation planning and implementation.",
