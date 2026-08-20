@@ -53,7 +53,12 @@ def make_finding(repository: str, rule_id: str, severity: str, observed_at: str,
 
 
 def latest_workflow_states(workflow_runs: list[dict[str, Any]], now: dt.datetime, lookback_days: int) -> dict[str, Any]:
-    """Return latest completed state per workflow inside the governed lookback window."""
+    """Return latest completed state per workflow inside the governed lookback window.
+
+    The complete latest-state evidence is retained so higher-level assurance
+    contracts can bind a specific workflow to a specific claim. Operational
+    finding logic continues to use only ``unresolved`` failures.
+    """
     cutoff = now - dt.timedelta(days=lookback_days)
     in_window: list[dict[str, Any]] = []
     for run in workflow_runs:
@@ -71,22 +76,32 @@ def latest_workflow_states(workflow_runs: list[dict[str, Any]], now: dt.datetime
             latest[key] = run
     unresolved = [r for r in latest.values() if r.get("conclusion") in FAILURE_CONCLUSIONS]
     unresolved.sort(key=lambda r: str(r.get("name") or r.get("path") or r.get("workflow_id")))
+
+    def evidence_record(run: dict[str, Any]) -> dict[str, Any]:
+        return {
+            "workflow_id": run.get("workflow_id"),
+            "name": run.get("name"),
+            "path": run.get("path"),
+            "conclusion": run.get("conclusion"),
+            "status": run.get("status"),
+            "event": run.get("event"),
+            "created_at": run.get("created_at"),
+            "updated_at": run.get("updated_at"),
+            "run_started_at": run.get("run_started_at"),
+            "html_url": run.get("html_url"),
+            "head_sha": run.get("head_sha"),
+            "head_branch": run.get("head_branch"),
+            "run_number": run.get("run_number"),
+        }
+
+    latest_records = [evidence_record(r) for r in latest.values()]
+    latest_records.sort(key=lambda r: str(r.get("path") or r.get("name") or r.get("workflow_id")))
     return {
+        "available": True,
         "lookback_days": lookback_days,
         "completed_examined": len(in_window),
         "workflows_examined": len(latest),
         "unresolved_failures": len(unresolved),
-        "unresolved": [
-            {
-                "workflow_id": r.get("workflow_id"),
-                "name": r.get("name"),
-                "path": r.get("path"),
-                "conclusion": r.get("conclusion"),
-                "created_at": r.get("created_at"),
-                "updated_at": r.get("updated_at"),
-                "html_url": r.get("html_url"),
-                "head_sha": r.get("head_sha"),
-            }
-            for r in unresolved
-        ],
+        "latest": latest_records,
+        "unresolved": [evidence_record(r) for r in unresolved],
     }
