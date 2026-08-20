@@ -1,6 +1,12 @@
+import sys
+from pathlib import Path
 import unittest
 
-from scripts.portfolio_assurance.assurance import evaluate_repository_assurance
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT / "scripts") not in sys.path:
+    sys.path.insert(0, str(ROOT / "scripts"))
+
+from portfolio_assurance.assurance import evaluate_repository_assurance
 
 
 class AssuranceContractTests(unittest.TestCase):
