@@ -1,6 +1,14 @@
 name: Portfolio assurance monitor
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "config/portfolio-monitor/**"
+      - "data/repository-status.yaml"
+      - "scripts/portfolio_assurance/**"
+      - "scripts/portfolio_assurance_monitor*.py"
   schedule:
     - cron: "17 2 * * 1"
   workflow_dispatch:
@@ -79,5 +87,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/portfolio-assurance/dashboard.md reports/portfolio-assurance
-          git commit -m "chore(assurance): publish weekly portfolio evidence"
+          git commit -m "chore(assurance): publish portfolio evidence"
           git push
