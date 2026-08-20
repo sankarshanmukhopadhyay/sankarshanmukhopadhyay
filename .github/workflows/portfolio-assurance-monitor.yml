@@ -9,8 +9,9 @@ on:
       - "data/repository-status.yaml"
       - "scripts/portfolio_assurance/**"
       - "scripts/portfolio_assurance_monitor*.py"
+      - ".github/workflows/portfolio-assurance-monitor.yml"
   schedule:
-    - cron: "17 2 * * 1"
+    - cron: "17 */6 * * *"
   workflow_dispatch:
 
 permissions:
