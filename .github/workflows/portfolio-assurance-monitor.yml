@@ -47,11 +47,11 @@ jobs:
           private-key: ${{ secrets.PORTFOLIO_ASSURANCE_APP_PRIVATE_KEY }}
           owner: sankarshanmukhopadhyay
 
-      - name: Collect evidence, discover drift, and generate reports
+      - name: Collect evidence, evaluate assurance contracts, and generate reports
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PORTFOLIO_ISSUE_TOKEN: ${{ steps.issue-token.outputs.token }}
-        run: python scripts/portfolio_assurance_monitor.py --publish-issues
+        run: python scripts/portfolio_assurance_monitor_v3.py --publish-issues
 
       - name: Validate generated site links
         run: python scripts/check_internal_links.py
@@ -63,6 +63,7 @@ jobs:
           path: |
             reports/portfolio-assurance/latest.md
             reports/portfolio-assurance/latest-findings.json
+            reports/portfolio-assurance/assurance-state.json
             reports/portfolio-assurance/finding-lifecycle.json
             reports/portfolio-assurance/findings/*.json
             reports/portfolio-assurance/findings/*.md
