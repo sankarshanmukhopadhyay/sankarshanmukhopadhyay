@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-20T11:19:32Z",
+  "generated_at": "2026-08-20T11:22:59Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -10,7 +10,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-19T03:07:01Z",
-      "last_observed": "2026-08-20T11:19:32Z",
+      "last_observed": "2026-08-20T11:22:59Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-74888B222EF0"
     },
@@ -20,10 +20,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/pages.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-20T10:54:49Z",
       "last_observed": "2026-08-20T11:19:32Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-20T11:22:59Z",
       "latest_finding_id": "PAM-BEB5B50F9786"
     },
     "PF-DCC0C9AA3F10": {
@@ -32,10 +32,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/quality.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-20T10:54:49Z",
       "last_observed": "2026-08-20T11:19:32Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-20T11:22:59Z",
       "latest_finding_id": "PAM-FB81693ED37C"
     },
     "PF-AC63D3930AB3": {
@@ -44,10 +44,10 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/quality.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-20T11:13:29Z",
       "last_observed": "2026-08-20T11:19:32Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-20T11:22:59Z",
       "latest_finding_id": "PAM-E284F3DCC6F0"
     },
     "PF-93E0E95A35F2": {
@@ -56,10 +56,10 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-20T11:13:29Z",
       "last_observed": "2026-08-20T11:19:32Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-20T11:22:59Z",
       "latest_finding_id": "PAM-F21F69217DE4"
     },
     "PF-54FF6F2FAF55": {

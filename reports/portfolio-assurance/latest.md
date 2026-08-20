@@ -7,9 +7,9 @@ search_exclude: true
 
 # Portfolio Assurance Report — 2026-08-20
 
-**Observed:** 2026-08-20T11:19:32Z  
+**Observed:** 2026-08-20T11:22:59Z  
 **Scope:** 11 flagship original repositories  
-**Open findings:** 5  
+**Open findings:** 1  
 **Unclassified public repositories:** 0
 
 > This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.
@@ -18,9 +18,9 @@ search_exclude: true
 
 | Dimension | State | Open findings |
 |---|---|---:|
-| Operational | `evaluated` | 3 |
+| Operational | `evaluated` | 1 |
 | Governance | `evaluated` | 0 |
-| Assurance | `evaluated` | 2 |
+| Assurance | `evaluated` | 0 |
 | Cross Specification | `not-evaluated` | 0 |
 
 > `evaluated` means only that the configured rules for that dimension ran against observable evidence. `not-evaluated` is explicit and must not be interpreted as green or assured.
@@ -29,7 +29,7 @@ search_exclude: true
 
 | Repository | Availability | Status declaration | Workflow evidence | Remediation dossier |
 |---|---:|---:|---:|---|
-| [open-national-digital-trust-framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework) | available | valid | 2 unresolved | [4 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/open-national-digital-trust-framework.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.json) |
+| [open-national-digital-trust-framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/open-national-digital-trust-framework.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.json) |
 | [governance-authority-assurance-metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.json) |
 | [agent-registry-protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/agent-registry-protocol.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-registry-protocol.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-registry-protocol.json) |
 | [trust-systems-meta-model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trust-systems-meta-model.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-systems-meta-model.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-systems-meta-model.json) |
@@ -44,50 +44,6 @@ search_exclude: true
 ## Findings
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
-
-### PAM-F21F69217DE4: open-national-digital-trust-framework
-
-- **Fingerprint:** `PF-93E0E95A35F2`
-- **Rule:** `ASSURANCE_CONTROL_FAILED`
-- **Subject:** `.github/workflows/pages.yml`
-- **Severity:** `high`
-- **Claim:** The repository-native control bound to this assurance claim is currently failing.
-- **Recommended action:** Resolve the failing repository-native control or record an explicit governed disposition.
-- **Issue routing:** `target-repository`
-- **Automatic effect:** `none`
-
-### PAM-E284F3DCC6F0: open-national-digital-trust-framework
-
-- **Fingerprint:** `PF-AC63D3930AB3`
-- **Rule:** `ASSURANCE_CONTROL_FAILED`
-- **Subject:** `.github/workflows/quality.yml`
-- **Severity:** `high`
-- **Claim:** The repository-native control bound to this assurance claim is currently failing.
-- **Recommended action:** Resolve the failing repository-native control or record an explicit governed disposition.
-- **Issue routing:** `target-repository`
-- **Automatic effect:** `none`
-
-### PAM-BEB5B50F9786: open-national-digital-trust-framework
-
-- **Fingerprint:** `PF-ADCE64569869`
-- **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
-- **Subject:** `.github/workflows/pages.yml`
-- **Severity:** `medium`
-- **Claim:** The latest completed default-branch run for this workflow is failing within the governed observation window.
-- **Recommended action:** Review the failed workflow, restore a successful default-branch run, or record an explicit accepted-risk disposition.
-- **Issue routing:** `target-repository`
-- **Automatic effect:** `none`
-
-### PAM-FB81693ED37C: open-national-digital-trust-framework
-
-- **Fingerprint:** `PF-DCC0C9AA3F10`
-- **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
-- **Subject:** `.github/workflows/quality.yml`
-- **Severity:** `medium`
-- **Claim:** The latest completed default-branch run for this workflow is failing within the governed observation window.
-- **Recommended action:** Review the failed workflow, restore a successful default-branch run, or record an explicit accepted-risk disposition.
-- **Issue routing:** `target-repository`
-- **Automatic effect:** `none`
 
 ### PAM-74888B222EF0: rahp-toolkit
 
@@ -106,9 +62,9 @@ The assurance state below is calculated from repository-specific evidence contra
 
 | Repository | Profile | Assurance state | Required claims | Evidence coverage |
 |---|---|---|---:|---:|
-| [open-national-digital-trust-framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework) | `specification` | **degraded** | 2 | 0/2 |
-| ↳ `specification_quality` | required | `degraded` |  | latest completed workflow conclusion is failure |
-| ↳ `publication_integrity` | required | `degraded` |  | latest completed workflow conclusion is failure |
+| [open-national-digital-trust-framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework) | `specification` | **satisfied** | 2 | 2/2 |
+| ↳ `specification_quality` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
+| ↳ `publication_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 | [governance-authority-assurance-metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | `governance-model` | **satisfied** | 2 | 2/2 |
 | ↳ `model_validation` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 | ↳ `publication_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
