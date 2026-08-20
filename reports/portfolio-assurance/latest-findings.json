@@ -1,14 +1,106 @@
 {
-  "generated_at": "2026-08-19T03:07:01Z",
+  "generated_at": "2026-08-20T10:54:49Z",
   "findings": [
     {
-      "finding_id": "PAM-7911EEDF5DF7",
+      "finding_id": "PAM-BEB5B50F9786",
+      "finding_fingerprint": "PF-ADCE64569869",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": ".github/workflows/pages.yml",
+      "severity": "medium",
+      "observed_at": "2026-08-20T10:54:49Z",
+      "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
+      "evidence": {
+        "lookback_days": 7,
+        "completed_examined": 12,
+        "workflows_examined": 2,
+        "unresolved_failures": 2,
+        "unresolved": [
+          {
+            "workflow_id": 317410093,
+            "name": "Build and deploy GitHub Pages",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "failure",
+            "created_at": "2026-08-20T10:33:58Z",
+            "updated_at": "2026-08-20T10:34:13Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/32359554330",
+            "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702"
+          }
+        ]
+      },
+      "recommended_action": "Review the failed workflow, restore a successful default-branch run, or record an explicit accepted-risk disposition.",
+      "dimension": "operational",
+      "remediation": {
+        "objective": "Restore a successful latest completed default-branch run for the affected workflow or record an explicit repository-governed risk disposition.",
+        "acceptance_criteria": [
+          "The affected workflow's latest completed default-branch run succeeds, or an explicit governed disposition supersedes the operational expectation."
+        ],
+        "verification": [
+          "Run the affected workflow on the default branch.",
+          "Rerun the portfolio monitor and confirm the stable finding fingerprint is no longer open."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": true,
+        "target": "target-repository",
+        "minimum_severity": "medium"
+      }
+    },
+    {
+      "finding_id": "PAM-FB81693ED37C",
+      "finding_fingerprint": "PF-DCC0C9AA3F10",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": ".github/workflows/quality.yml",
+      "severity": "medium",
+      "observed_at": "2026-08-20T10:54:49Z",
+      "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
+      "evidence": {
+        "lookback_days": 7,
+        "completed_examined": 12,
+        "workflows_examined": 2,
+        "unresolved_failures": 2,
+        "unresolved": [
+          {
+            "workflow_id": 317410095,
+            "name": "Documentation quality",
+            "path": ".github/workflows/quality.yml",
+            "conclusion": "failure",
+            "created_at": "2026-08-20T10:33:58Z",
+            "updated_at": "2026-08-20T10:34:12Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/32359554360",
+            "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702"
+          }
+        ]
+      },
+      "recommended_action": "Review the failed workflow, restore a successful default-branch run, or record an explicit accepted-risk disposition.",
+      "dimension": "operational",
+      "remediation": {
+        "objective": "Restore a successful latest completed default-branch run for the affected workflow or record an explicit repository-governed risk disposition.",
+        "acceptance_criteria": [
+          "The affected workflow's latest completed default-branch run succeeds, or an explicit governed disposition supersedes the operational expectation."
+        ],
+        "verification": [
+          "Run the affected workflow on the default branch.",
+          "Rerun the portfolio monitor and confirm the stable finding fingerprint is no longer open."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": true,
+        "target": "target-repository",
+        "minimum_severity": "medium"
+      }
+    },
+    {
+      "finding_id": "PAM-74888B222EF0",
       "finding_fingerprint": "PF-85368F53178F",
       "repository": "rahp-toolkit",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/cross-spec-pressure-test.yml",
       "severity": "medium",
-      "observed_at": "2026-08-19T03:07:01Z",
+      "observed_at": "2026-08-20T10:54:49Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "lookback_days": 7,
@@ -51,17 +143,17 @@
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-08-19T03:07:01Z",
+      "observed_at": "2026-08-20T10:54:49Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-08-16T04:50:24Z",
-          "updated_at": "2026-08-16T04:50:32Z",
+          "pushed_at": "2026-08-20T10:33:56Z",
+          "updated_at": "2026-08-20T10:34:46Z",
           "open_issues_count": 0,
-          "head_sha": "af7d04b5a9ba2449ffb83a41f98ad4c32d0e355e"
+          "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -70,27 +162,48 @@
         },
         "workflow_runs": {
           "lookback_days": 7,
-          "completed_examined": 14,
+          "completed_examined": 12,
           "workflows_examined": 2,
-          "unresolved_failures": 0,
-          "unresolved": []
+          "unresolved_failures": 2,
+          "unresolved": [
+            {
+              "workflow_id": 317410093,
+              "name": "Build and deploy GitHub Pages",
+              "path": ".github/workflows/pages.yml",
+              "conclusion": "failure",
+              "created_at": "2026-08-20T10:33:58Z",
+              "updated_at": "2026-08-20T10:34:13Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/32359554330",
+              "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702"
+            },
+            {
+              "workflow_id": 317410095,
+              "name": "Documentation quality",
+              "path": ".github/workflows/quality.yml",
+              "conclusion": "failure",
+              "created_at": "2026-08-20T10:33:58Z",
+              "updated_at": "2026-08-20T10:34:12Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/32359554360",
+              "head_sha": "8ed4f45621cba23539a99f4336bf5f6b1a8d9702"
+            }
+          ]
         }
       },
       "collection_error": null
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-08-19T03:07:01Z",
+      "observed_at": "2026-08-20T10:54:49Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-08-11T02:07:08Z",
-          "updated_at": "2026-08-12T05:22:14Z",
+          "pushed_at": "2026-08-20T10:34:03Z",
+          "updated_at": "2026-08-20T10:35:46Z",
           "open_issues_count": 0,
-          "head_sha": "30b91d7c7f26ca761909d459fae7d8868b88cd57"
+          "head_sha": "0b1653efcf27d8ab7da90c9dbc222839f79b444d"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -99,8 +212,8 @@
         },
         "workflow_runs": {
           "lookback_days": 7,
-          "completed_examined": 0,
-          "workflows_examined": 0,
+          "completed_examined": 6,
+          "workflows_examined": 3,
           "unresolved_failures": 0,
           "unresolved": []
         }
@@ -109,17 +222,17 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-08-19T03:07:01Z",
+      "observed_at": "2026-08-20T10:54:49Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-08-18T12:38:01Z",
-          "updated_at": "2026-08-18T12:39:06Z",
+          "pushed_at": "2026-08-20T10:34:11Z",
+          "updated_at": "2026-08-20T10:35:58Z",
           "open_issues_count": 0,
-          "head_sha": "92429ae4bc8bb2f2e7d44b7c38f343bb6ccd66d6"
+          "head_sha": "676e7eaac99fefd822ee3e70e0abd9865e3f1956"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -128,7 +241,7 @@
         },
         "workflow_runs": {
           "lookback_days": 7,
-          "completed_examined": 22,
+          "completed_examined": 34,
           "workflows_examined": 4,
           "unresolved_failures": 0,
           "unresolved": []
@@ -138,17 +251,17 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-08-19T03:07:01Z",
+      "observed_at": "2026-08-20T10:54:49Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-07-21T04:05:32Z",
-          "updated_at": "2026-08-12T05:22:43Z",
+          "pushed_at": "2026-08-20T10:34:18Z",
+          "updated_at": "2026-08-20T10:36:04Z",
           "open_issues_count": 0,
-          "head_sha": "41b48bcf1f9c661215f825a8d17ccd148c1677f0"
+          "head_sha": "e6f1f2920181968370722fb104be8d48fedd6efc"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -157,8 +270,8 @@
         },
         "workflow_runs": {
           "lookback_days": 7,
-          "completed_examined": 0,
-          "workflows_examined": 0,
+          "completed_examined": 6,
+          "workflows_examined": 2,
           "unresolved_failures": 0,
           "unresolved": []
         }
@@ -167,17 +280,17 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-08-19T03:07:01Z",
+      "observed_at": "2026-08-20T10:54:49Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-07-20T05:22:36Z",
-          "updated_at": "2026-08-12T05:22:49Z",
+          "pushed_at": "2026-08-20T10:34:25Z",
+          "updated_at": "2026-08-20T10:36:07Z",
           "open_issues_count": 0,
-          "head_sha": "57bc199c994dce9eead99ed84ae81ba2efb71888"
+          "head_sha": "bc6fb1a339fd8e8c3469f9e0bd999efdd6726412"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -186,8 +299,8 @@
         },
         "workflow_runs": {
           "lookback_days": 7,
-          "completed_examined": 0,
-          "workflows_examined": 0,
+          "completed_examined": 10,
+          "workflows_examined": 2,
           "unresolved_failures": 0,
           "unresolved": []
         }
@@ -196,104 +309,17 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-08-19T03:07:01Z",
+      "observed_at": "2026-08-20T10:54:49Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-07-27T00:56:33Z",
-          "updated_at": "2026-08-12T05:22:54Z",
+          "pushed_at": "2026-08-20T10:34:32Z",
+          "updated_at": "2026-08-20T10:36:31Z",
           "open_issues_count": 0,
-          "head_sha": "9c8662012f787caf9e2c691b76c924df63b9e864"
-        },
-        "status_declaration": {
-          "path": "PROJECT-STATUS.yaml",
-          "present": true,
-          "readable": true
-        },
-        "workflow_runs": {
-          "lookback_days": 7,
-          "completed_examined": 0,
-          "workflows_examined": 0,
-          "unresolved_failures": 0,
-          "unresolved": []
-        }
-      },
-      "collection_error": null
-    },
-    {
-      "repository": "TRQP-TSPP",
-      "observed_at": "2026-08-19T03:07:01Z",
-      "available": true,
-      "evidence": {
-        "repository": {
-          "html_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP",
-          "default_branch": "main",
-          "archived": false,
-          "pushed_at": "2026-08-06T02:54:18Z",
-          "updated_at": "2026-08-12T05:23:08Z",
-          "open_issues_count": 4,
-          "head_sha": "d3942df02292a6dcb45719d1c4db7b1ba8d11a24"
-        },
-        "status_declaration": {
-          "path": "PROJECT-STATUS.yaml",
-          "present": true,
-          "readable": true
-        },
-        "workflow_runs": {
-          "lookback_days": 7,
-          "completed_examined": 3,
-          "workflows_examined": 1,
-          "unresolved_failures": 0,
-          "unresolved": []
-        }
-      },
-      "collection_error": null
-    },
-    {
-      "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-08-19T03:07:01Z",
-      "available": true,
-      "evidence": {
-        "repository": {
-          "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl",
-          "default_branch": "main",
-          "archived": false,
-          "pushed_at": "2026-08-16T04:41:09Z",
-          "updated_at": "2026-08-16T04:41:14Z",
-          "open_issues_count": 0,
-          "head_sha": "8d9a58b206e850f2c3405c8a28fca264064e82d0"
-        },
-        "status_declaration": {
-          "path": "PROJECT-STATUS.yaml",
-          "present": true,
-          "readable": true
-        },
-        "workflow_runs": {
-          "lookback_days": 7,
-          "completed_examined": 21,
-          "workflows_examined": 4,
-          "unresolved_failures": 0,
-          "unresolved": []
-        }
-      },
-      "collection_error": null
-    },
-    {
-      "repository": "trqp-conformance-suite",
-      "observed_at": "2026-08-19T03:07:01Z",
-      "available": true,
-      "evidence": {
-        "repository": {
-          "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite",
-          "default_branch": "main",
-          "archived": false,
-          "pushed_at": "2026-07-27T05:39:47Z",
-          "updated_at": "2026-08-12T05:23:19Z",
-          "open_issues_count": 0,
-          "head_sha": "0f6f64964e49e56c66544ad7c9feb1d27b304999"
+          "head_sha": "6171ed802fd34586dbad78f2c05d563e31905761"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -303,7 +329,7 @@
         "workflow_runs": {
           "lookback_days": 7,
           "completed_examined": 2,
-          "workflows_examined": 1,
+          "workflows_examined": 2,
           "unresolved_failures": 0,
           "unresolved": []
         }
@@ -311,18 +337,18 @@
       "collection_error": null
     },
     {
-      "repository": "trqp-assurance-hub",
-      "observed_at": "2026-08-19T03:07:01Z",
+      "repository": "TRQP-TSPP",
+      "observed_at": "2026-08-20T10:54:49Z",
       "available": true,
       "evidence": {
         "repository": {
-          "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub",
+          "html_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-07-27T05:47:55Z",
-          "updated_at": "2026-08-12T05:23:25Z",
+          "pushed_at": "2026-08-20T10:34:39Z",
+          "updated_at": "2026-08-20T10:36:39Z",
           "open_issues_count": 0,
-          "head_sha": "614be4044054beeb260c51da96511d7fb33598bd"
+          "head_sha": "b1d592ee0b58e47e6741ab4f583c824cd4c833d4"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -331,8 +357,95 @@
         },
         "workflow_runs": {
           "lookback_days": 7,
-          "completed_examined": 1,
-          "workflows_examined": 1,
+          "completed_examined": 25,
+          "workflows_examined": 5,
+          "unresolved_failures": 0,
+          "unresolved": []
+        }
+      },
+      "collection_error": null
+    },
+    {
+      "repository": "cawg-trqp-verifier-refimpl",
+      "observed_at": "2026-08-20T10:54:49Z",
+      "available": true,
+      "evidence": {
+        "repository": {
+          "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl",
+          "default_branch": "main",
+          "archived": false,
+          "pushed_at": "2026-08-20T10:34:48Z",
+          "updated_at": "2026-08-20T10:36:51Z",
+          "open_issues_count": 0,
+          "head_sha": "2870653c12748fc54ed05822f079ccac7424a7ec"
+        },
+        "status_declaration": {
+          "path": "PROJECT-STATUS.yaml",
+          "present": true,
+          "readable": true
+        },
+        "workflow_runs": {
+          "lookback_days": 7,
+          "completed_examined": 18,
+          "workflows_examined": 4,
+          "unresolved_failures": 0,
+          "unresolved": []
+        }
+      },
+      "collection_error": null
+    },
+    {
+      "repository": "trqp-conformance-suite",
+      "observed_at": "2026-08-20T10:54:49Z",
+      "available": true,
+      "evidence": {
+        "repository": {
+          "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite",
+          "default_branch": "main",
+          "archived": false,
+          "pushed_at": "2026-08-20T10:34:56Z",
+          "updated_at": "2026-08-20T10:35:14Z",
+          "open_issues_count": 1,
+          "head_sha": "294bf81ffce8eb091a904f859adde0549041003f"
+        },
+        "status_declaration": {
+          "path": "PROJECT-STATUS.yaml",
+          "present": true,
+          "readable": true
+        },
+        "workflow_runs": {
+          "lookback_days": 7,
+          "completed_examined": 15,
+          "workflows_examined": 4,
+          "unresolved_failures": 0,
+          "unresolved": []
+        }
+      },
+      "collection_error": null
+    },
+    {
+      "repository": "trqp-assurance-hub",
+      "observed_at": "2026-08-20T10:54:49Z",
+      "available": true,
+      "evidence": {
+        "repository": {
+          "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub",
+          "default_branch": "main",
+          "archived": false,
+          "pushed_at": "2026-08-20T10:35:06Z",
+          "updated_at": "2026-08-20T10:37:27Z",
+          "open_issues_count": 0,
+          "head_sha": "ee5e767e9134bb78dd8ee81772b75cc525d80a9b"
+        },
+        "status_declaration": {
+          "path": "PROJECT-STATUS.yaml",
+          "present": true,
+          "readable": true
+        },
+        "workflow_runs": {
+          "lookback_days": 7,
+          "completed_examined": 19,
+          "workflows_examined": 5,
           "unresolved_failures": 0,
           "unresolved": []
         }
@@ -341,17 +454,17 @@
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-08-19T03:07:01Z",
+      "observed_at": "2026-08-20T10:54:49Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-08-19T00:52:17Z",
-          "updated_at": "2026-08-19T00:52:22Z",
-          "open_issues_count": 2,
-          "head_sha": "f561c7541b8c31365efff36a2cb8d7872b547906"
+          "pushed_at": "2026-08-20T06:21:17Z",
+          "updated_at": "2026-08-20T06:19:18Z",
+          "open_issues_count": 7,
+          "head_sha": "d66dc86bc8229cda340bac181ae73c80860e6180"
         },
         "workflow_runs": {
           "lookback_days": 7,

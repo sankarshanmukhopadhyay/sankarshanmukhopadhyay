@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-08-19T03:07:01Z  
+**Generated:** 2026-08-20T10:54:49Z  
 **Open findings:** 1  
-**Repository snapshot:** `f561c7541b8c31365efff36a2cb8d7872b547906`  
+**Repository snapshot:** `d66dc86bc8229cda340bac181ae73c80860e6180`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-85368F53178F — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-7911EEDF5DF7` at `2026-08-19T03:07:01Z`
+- Observation: `PAM-74888B222EF0` at `2026-08-20T10:54:49Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/cross-spec-pressure-test.yml`

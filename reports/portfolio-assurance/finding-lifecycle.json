@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-19T03:07:01Z",
+  "generated_at": "2026-08-20T10:54:49Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -10,9 +10,33 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-19T03:07:01Z",
-      "last_observed": "2026-08-19T03:07:01Z",
+      "last_observed": "2026-08-20T10:54:49Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-7911EEDF5DF7"
+      "latest_finding_id": "PAM-74888B222EF0"
+    },
+    "PF-ADCE64569869": {
+      "finding_fingerprint": "PF-ADCE64569869",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "operational",
+      "status": "open",
+      "first_observed": "2026-08-20T10:54:49Z",
+      "last_observed": "2026-08-20T10:54:49Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-BEB5B50F9786"
+    },
+    "PF-DCC0C9AA3F10": {
+      "finding_fingerprint": "PF-DCC0C9AA3F10",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": ".github/workflows/quality.yml",
+      "dimension": "operational",
+      "status": "open",
+      "first_observed": "2026-08-20T10:54:49Z",
+      "last_observed": "2026-08-20T10:54:49Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-FB81693ED37C"
     }
   }
 }
