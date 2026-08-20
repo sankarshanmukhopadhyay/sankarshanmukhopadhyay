@@ -135,7 +135,8 @@ repositories:
         evidence:
           type: github-workflow
           path: .github/workflows/pages.yml
-          freshness: current-head
+          # This workflow intentionally runs only for documentation-affecting paths.
+          freshness: latest-success
 
   cawg-trqp-verifier-refimpl:
     profile: reference-implementation
@@ -151,7 +152,8 @@ repositories:
         evidence:
           type: github-workflow
           path: .github/workflows/pages.yml
-          freshness: current-head
+          # Publication does not need to be regenerated for non-documentation commits.
+          freshness: latest-success
       package_publication:
         required: false
         evidence:
@@ -179,7 +181,8 @@ repositories:
         evidence:
           type: github-workflow
           path: .github/workflows/pages.yml
-          freshness: current-head
+          # This workflow intentionally runs only for documentation-affecting paths.
+          freshness: latest-success
 
   trqp-assurance-hub:
     profile: assurance-orchestrator
@@ -207,7 +210,8 @@ repositories:
         evidence:
           type: github-workflow
           path: .github/workflows/pages.yml
-          freshness: current-head
+          # This workflow intentionally runs only for documentation-affecting paths.
+          freshness: latest-success
 
   rahp-toolkit:
     profile: assurance-toolkit
