@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-08-20T13:10:51Z  
+**Generated:** 2026-08-20T18:58:42Z  
 **Open findings:** 1  
 **Repository snapshot:** `d66dc86bc8229cda340bac181ae73c80860e6180`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-85368F53178F — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-74888B222EF0` at `2026-08-20T13:10:51Z`
+- Observation: `PAM-74888B222EF0` at `2026-08-20T18:58:42Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/cross-spec-pressure-test.yml`

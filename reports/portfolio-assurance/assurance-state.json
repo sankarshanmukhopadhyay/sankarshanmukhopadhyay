@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-20T13:10:51Z",
+  "generated_at": "2026-08-20T18:58:42Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -137,13 +137,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-08-20T10:34:14Z",
-            "updated_at": "2026-08-20T10:34:40Z",
-            "run_started_at": "2026-08-20T10:34:14Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/32359574671",
-            "head_sha": "676e7eaac99fefd822ee3e70e0abd9865e3f1956",
+            "created_at": "2026-08-20T15:18:04Z",
+            "updated_at": "2026-08-20T15:18:36Z",
+            "run_started_at": "2026-08-20T15:18:04Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/32385298180",
+            "head_sha": "48e66fe9730604934cbb615342f0e87b8cbbcc44",
             "head_branch": "main",
-            "run_number": 67
+            "run_number": 73
           }
         },
         {
@@ -161,13 +161,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-08-20T10:34:14Z",
-            "updated_at": "2026-08-20T10:34:54Z",
-            "run_started_at": "2026-08-20T10:34:14Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/32359574793",
-            "head_sha": "676e7eaac99fefd822ee3e70e0abd9865e3f1956",
+            "created_at": "2026-08-20T15:18:03Z",
+            "updated_at": "2026-08-20T15:18:46Z",
+            "run_started_at": "2026-08-20T15:18:03Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/32385297889",
+            "head_sha": "48e66fe9730604934cbb615342f0e87b8cbbcc44",
             "head_branch": "main",
-            "run_number": 43
+            "run_number": 44
           }
         },
         {
@@ -184,14 +184,14 @@
             "path": ".github/workflows/ietf-draft.yml",
             "conclusion": "success",
             "status": "completed",
-            "event": "workflow_dispatch",
-            "created_at": "2026-08-20T05:04:09Z",
-            "updated_at": "2026-08-20T05:04:43Z",
-            "run_started_at": "2026-08-20T05:04:09Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/32334190383",
-            "head_sha": "396924f23869c6308bbe295e15aad6555dfdbc6e",
+            "event": "push",
+            "created_at": "2026-08-20T15:18:03Z",
+            "updated_at": "2026-08-20T15:18:33Z",
+            "run_started_at": "2026-08-20T15:18:03Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/32385297867",
+            "head_sha": "48e66fe9730604934cbb615342f0e87b8cbbcc44",
             "head_branch": "main",
-            "run_number": 5
+            "run_number": 10
           }
         }
       ],
@@ -327,18 +327,18 @@
           "reason": "successful workflow evidence satisfies the configured freshness policy",
           "evidence": {
             "workflow_id": 259914534,
-            "name": "validate-tsmm-native",
+            "name": "validate-repository-assurance",
             "path": ".github/workflows/validate-tsmm-native.yml",
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-08-20T10:34:34Z",
-            "updated_at": "2026-08-20T10:34:46Z",
-            "run_started_at": "2026-08-20T10:34:34Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/32359602617",
-            "head_sha": "6171ed802fd34586dbad78f2c05d563e31905761",
+            "created_at": "2026-08-20T15:19:53Z",
+            "updated_at": "2026-08-20T15:20:09Z",
+            "run_started_at": "2026-08-20T15:19:53Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/32385480711",
+            "head_sha": "8e1bc441b55c640194e9e3af217efd6a2e264209",
             "head_branch": "main",
-            "run_number": 25
+            "run_number": 50
           }
         },
         {
@@ -356,13 +356,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-08-20T10:34:34Z",
-            "updated_at": "2026-08-20T10:35:48Z",
-            "run_started_at": "2026-08-20T10:34:34Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/32359602736",
-            "head_sha": "6171ed802fd34586dbad78f2c05d563e31905761",
+            "created_at": "2026-08-20T15:19:53Z",
+            "updated_at": "2026-08-20T15:21:05Z",
+            "run_started_at": "2026-08-20T15:19:53Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/32385481463",
+            "head_sha": "8e1bc441b55c640194e9e3af217efd6a2e264209",
             "head_branch": "main",
-            "run_number": 10
+            "run_number": 20
           }
         }
       ],
