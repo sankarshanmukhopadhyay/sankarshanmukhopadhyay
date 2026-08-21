@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-20T18:58:42Z",
+  "generated_at": "2026-08-21T01:57:07Z",
   "repository": "atal-enterprise-assurance-profile",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-20T18:58:42Z",
+    "observed_at": "2026-08-21T01:57:07Z",
     "default_branch": null,
     "head_sha": null,
     "provenance_status": "unavailable"

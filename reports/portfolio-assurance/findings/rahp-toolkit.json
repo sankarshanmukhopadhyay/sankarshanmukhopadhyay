@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-20T18:58:42Z",
+  "generated_at": "2026-08-21T01:57:07Z",
   "repository": "rahp-toolkit",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-20T18:58:42Z",
+    "observed_at": "2026-08-21T01:57:07Z",
     "default_branch": "main",
     "head_sha": "d66dc86bc8229cda340bac181ae73c80860e6180",
     "provenance_status": "observed"
@@ -40,13 +40,13 @@
   "finding_count": 1,
   "findings": [
     {
-      "finding_id": "PAM-74888B222EF0",
+      "finding_id": "PAM-F72E4B659F49",
       "finding_fingerprint": "PF-85368F53178F",
       "repository": "rahp-toolkit",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/cross-spec-pressure-test.yml",
       "severity": "medium",
-      "observed_at": "2026-08-20T18:58:42Z",
+      "observed_at": "2026-08-21T01:57:07Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -208,9 +208,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-19T03:07:01Z",
-      "last_observed": "2026-08-20T18:58:42Z",
+      "last_observed": "2026-08-21T01:57:07Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-74888B222EF0"
+      "latest_finding_id": "PAM-F72E4B659F49"
     }
   ],
   "handoff": {
