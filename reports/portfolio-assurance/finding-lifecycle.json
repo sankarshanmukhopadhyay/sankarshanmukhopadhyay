@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-21T01:57:07Z",
+  "generated_at": "2026-08-21T07:07:22Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -10,7 +10,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-19T03:07:01Z",
-      "last_observed": "2026-08-21T01:57:07Z",
+      "last_observed": "2026-08-21T07:07:22Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-F72E4B659F49"
     },
@@ -109,6 +109,30 @@
       "last_observed": "2026-08-20T11:13:29Z",
       "resolved_at": "2026-08-20T11:16:57Z",
       "latest_finding_id": "PAM-75FF505A7FD5"
+    },
+    "PF-8A31AAA852D1": {
+      "finding_fingerprint": "PF-8A31AAA852D1",
+      "repository": "rahp-toolkit",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/validate.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-21T07:07:22Z",
+      "last_observed": "2026-08-21T07:07:22Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-A056BBB17B2D"
+    },
+    "PF-237AE4A6472D": {
+      "finding_fingerprint": "PF-237AE4A6472D",
+      "repository": "rahp-toolkit",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-21T07:07:22Z",
+      "last_observed": "2026-08-21T07:07:22Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-E587CE2E9142"
     }
   }
 }

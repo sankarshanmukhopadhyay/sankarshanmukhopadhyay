@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-21T01:57:07Z",
+  "generated_at": "2026-08-21T07:07:22Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -705,7 +705,7 @@
     "rahp-toolkit": {
       "repository": "rahp-toolkit",
       "profile": "assurance-toolkit",
-      "state": "satisfied",
+      "state": "stale",
       "claims": [
         {
           "claim": "toolkit_validation",
@@ -713,8 +713,8 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/validate.yml",
           "freshness_policy": "current-head",
-          "state": "satisfied",
-          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "state": "stale",
+          "reason": "successful evidence does not cover the current default-branch HEAD",
           "evidence": {
             "workflow_id": 331522431,
             "name": "validate",
@@ -729,7 +729,9 @@
             "head_sha": "d66dc86bc8229cda340bac181ae73c80860e6180",
             "head_branch": "main",
             "run_number": 73
-          }
+          },
+          "repository_head_sha": "f6773115a21e891b07a3282307872bb713d8ef9e",
+          "evidence_head_sha": "d66dc86bc8229cda340bac181ae73c80860e6180"
         },
         {
           "claim": "corpus_integrity",
@@ -761,8 +763,8 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/pages.yml",
           "freshness_policy": "current-head",
-          "state": "satisfied",
-          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "state": "stale",
+          "reason": "successful evidence does not cover the current default-branch HEAD",
           "evidence": {
             "workflow_id": 333196290,
             "name": "Build and deploy RAHP documentation",
@@ -777,7 +779,9 @@
             "head_sha": "d66dc86bc8229cda340bac181ae73c80860e6180",
             "head_branch": "main",
             "run_number": 62
-          }
+          },
+          "repository_head_sha": "f6773115a21e891b07a3282307872bb713d8ef9e",
+          "evidence_head_sha": "d66dc86bc8229cda340bac181ae73c80860e6180"
         },
         {
           "claim": "cross_specification_pressure_test",
@@ -805,7 +809,7 @@
         }
       ],
       "required_claims": 3,
-      "satisfied_required_claims": 3
+      "satisfied_required_claims": 1
     }
   }
 }
