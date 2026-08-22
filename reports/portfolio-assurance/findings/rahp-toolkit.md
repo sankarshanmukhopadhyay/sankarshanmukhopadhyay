@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-08-21T18:55:58Z  
-**Open findings:** 3  
-**Repository snapshot:** `f6773115a21e891b07a3282307872bb713d8ef9e`  
+**Generated:** 2026-08-22T01:49:53Z  
+**Open findings:** 1  
+**Repository snapshot:** `a9caff2ee1b097bf96eaa12e45e9b0f2f2d419ab`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
@@ -18,270 +18,46 @@ search_exclude: true
 
 | Dimension | State | Open findings |
 |---|---|---:|
-| Operational | `evaluated` | 1 |
+| Operational | `evaluated` | 0 |
 | Governance | `evaluated` | 0 |
-| Assurance | `evaluated` | 2 |
+| Assurance | `evaluated` | 1 |
 | Cross Specification | `not-evaluated` | 0 |
 
 ## Open findings
 
-## PF-237AE4A6472D — ASSURANCE_EVIDENCE_STALE
+## PF-9769E5EB9C48 — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-E587CE2E9142` at `2026-08-21T18:55:58Z`
-- Severity: `medium`
+- Observation: `PAM-F28BE2B35454` at `2026-08-22T01:49:53Z`
+- Severity: `high`
 - Dimension: `assurance`
-- Subject: `.github/workflows/pages.yml`
-- Lifecycle: `open`; first observed `2026-08-21T07:07:22Z`
-- Claim: Required assurance evidence is successful but does not cover the current governed repository state.
+- Subject: `.github/workflows/corpus-status.yml`
+- Lifecycle: `open`; first observed `2026-08-22T01:49:53Z`
+- Claim: Required assurance evidence was not observed inside the governed evidence window.
 - Automatic effect: `none`
 
 ### Evidence
 
 ```json
 {
-  "claim": "publication_integrity",
-  "evidence_head_sha": "d66dc86bc8229cda340bac181ae73c80860e6180",
-  "freshness_policy": "current-head",
-  "reason": "successful evidence does not cover the current default-branch HEAD",
-  "repository_head_sha": "f6773115a21e891b07a3282307872bb713d8ef9e",
-  "state": "stale",
-  "workflow": {
-    "conclusion": "success",
-    "created_at": "2026-08-20T06:19:14Z",
-    "event": "push",
-    "head_branch": "main",
-    "head_sha": "d66dc86bc8229cda340bac181ae73c80860e6180",
-    "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32339100389",
-    "name": "Build and deploy RAHP documentation",
-    "path": ".github/workflows/pages.yml",
-    "run_number": 62,
-    "run_started_at": "2026-08-20T06:19:14Z",
-    "status": "completed",
-    "updated_at": "2026-08-20T06:21:00Z",
-    "workflow_id": 333196290
-  }
+  "claim": "corpus_integrity",
+  "evidence_head_sha": null,
+  "freshness_policy": "latest-success",
+  "reason": "no completed workflow execution was observed inside the governed lookback window",
+  "repository_head_sha": null,
+  "state": "missing",
+  "workflow": null
 }
 ```
 
 ### Remediation objective
 
-Regenerate assurance evidence against the current governed repository revision.
+Restore or execute the repository-native control required by the governed assurance contract.
 
 ### Acceptance criteria
 
-- [ ] The evidence-producing workflow succeeds against the current default-branch HEAD.
-- [ ] The evidence HEAD SHA matches the governed repository HEAD SHA.
+- [ ] The required evidence is observable inside the governed lookback window.
+- [ ] The evidence is attributable to the configured repository-native control.
 
 ### Verification
 
-- Execute the configured control on the current default branch and rerun the monitor.
-
-## PF-8A31AAA852D1 — ASSURANCE_EVIDENCE_STALE
-
-- Observation: `PAM-A056BBB17B2D` at `2026-08-21T18:55:58Z`
-- Severity: `medium`
-- Dimension: `assurance`
-- Subject: `.github/workflows/validate.yml`
-- Lifecycle: `open`; first observed `2026-08-21T07:07:22Z`
-- Claim: Required assurance evidence is successful but does not cover the current governed repository state.
-- Automatic effect: `none`
-
-### Evidence
-
-```json
-{
-  "claim": "toolkit_validation",
-  "evidence_head_sha": "d66dc86bc8229cda340bac181ae73c80860e6180",
-  "freshness_policy": "current-head",
-  "reason": "successful evidence does not cover the current default-branch HEAD",
-  "repository_head_sha": "f6773115a21e891b07a3282307872bb713d8ef9e",
-  "state": "stale",
-  "workflow": {
-    "conclusion": "success",
-    "created_at": "2026-08-20T06:19:14Z",
-    "event": "push",
-    "head_branch": "main",
-    "head_sha": "d66dc86bc8229cda340bac181ae73c80860e6180",
-    "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32339100508",
-    "name": "validate",
-    "path": ".github/workflows/validate.yml",
-    "run_number": 73,
-    "run_started_at": "2026-08-20T06:19:14Z",
-    "status": "completed",
-    "updated_at": "2026-08-20T06:20:19Z",
-    "workflow_id": 331522431
-  }
-}
-```
-
-### Remediation objective
-
-Regenerate assurance evidence against the current governed repository revision.
-
-### Acceptance criteria
-
-- [ ] The evidence-producing workflow succeeds against the current default-branch HEAD.
-- [ ] The evidence HEAD SHA matches the governed repository HEAD SHA.
-
-### Verification
-
-- Execute the configured control on the current default branch and rerun the monitor.
-
-## PF-85368F53178F — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
-
-- Observation: `PAM-F72E4B659F49` at `2026-08-21T18:55:58Z`
-- Severity: `medium`
-- Dimension: `operational`
-- Subject: `.github/workflows/cross-spec-pressure-test.yml`
-- Lifecycle: `open`; first observed `2026-08-19T03:07:01Z`
-- Claim: The latest completed default-branch run for this workflow is failing within the governed observation window.
-- Automatic effect: `none`
-
-### Evidence
-
-```json
-{
-  "available": true,
-  "completed_examined": 50,
-  "latest": [
-    {
-      "conclusion": "success",
-      "created_at": "2026-08-19T00:54:25Z",
-      "event": "workflow_dispatch",
-      "head_branch": "main",
-      "head_sha": "f561c7541b8c31365efff36a2cb8d7872b547906",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32202996271",
-      "name": "Run CAWG/C2PA cross-specification pressure test",
-      "path": ".github/workflows/cawg-cross-spec-pressure-test.yml",
-      "run_number": 1,
-      "run_started_at": "2026-08-19T00:54:25Z",
-      "status": "completed",
-      "updated_at": "2026-08-19T00:54:47Z",
-      "workflow_id": 337419009
-    },
-    {
-      "conclusion": "success",
-      "created_at": "2026-08-17T04:04:12Z",
-      "event": "schedule",
-      "head_branch": "main",
-      "head_sha": "ec068f0077305d15e9e6ae3e1854fd7d39920592",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/31993181629",
-      "name": "Corpus source status",
-      "path": ".github/workflows/corpus-status.yml",
-      "run_number": 6,
-      "run_started_at": "2026-08-17T04:04:12Z",
-      "status": "completed",
-      "updated_at": "2026-08-17T04:04:26Z",
-      "workflow_id": 333347627
-    },
-    {
-      "conclusion": "failure",
-      "created_at": "2026-08-19T00:44:33Z",
-      "event": "workflow_dispatch",
-      "head_branch": "main",
-      "head_sha": "420aae6b5d8fab2f242018b8038b38159d0fdfa0",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32202382447",
-      "name": "Run cross-specification pressure test",
-      "path": ".github/workflows/cross-spec-pressure-test.yml",
-      "run_number": 2,
-      "run_started_at": "2026-08-19T00:44:33Z",
-      "status": "completed",
-      "updated_at": "2026-08-19T00:44:49Z",
-      "workflow_id": 337404001
-    },
-    {
-      "conclusion": "success",
-      "created_at": "2026-08-19T04:38:26Z",
-      "event": "workflow_dispatch",
-      "head_branch": "main",
-      "head_sha": "6969731623a09d862c51e7fda641551190b3424d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32216489952",
-      "name": "Run DTG cross-specification pressure test",
-      "path": ".github/workflows/dtg-cross-spec-pressure-test.yml",
-      "run_number": 3,
-      "run_started_at": "2026-08-19T04:38:26Z",
-      "status": "completed",
-      "updated_at": "2026-08-19T04:38:47Z",
-      "workflow_id": 337419010
-    },
-    {
-      "conclusion": "success",
-      "created_at": "2026-08-21T04:19:00Z",
-      "event": "schedule",
-      "head_branch": "main",
-      "head_sha": "d66dc86bc8229cda340bac181ae73c80860e6180",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32446505602",
-      "name": "RAHP instance change watch",
-      "path": ".github/workflows/instance-watch.yml",
-      "run_number": 10,
-      "run_started_at": "2026-08-21T04:19:00Z",
-      "status": "completed",
-      "updated_at": "2026-08-21T04:20:08Z",
-      "workflow_id": 334033746
-    },
-    {
-      "conclusion": "success",
-      "created_at": "2026-08-20T06:19:14Z",
-      "event": "push",
-      "head_branch": "main",
-      "head_sha": "d66dc86bc8229cda340bac181ae73c80860e6180",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32339100389",
-      "name": "Build and deploy RAHP documentation",
-      "path": ".github/workflows/pages.yml",
-      "run_number": 62,
-      "run_started_at": "2026-08-20T06:19:14Z",
-      "status": "completed",
-      "updated_at": "2026-08-20T06:21:00Z",
-      "workflow_id": 333196290
-    },
-    {
-      "conclusion": "success",
-      "created_at": "2026-08-20T06:19:14Z",
-      "event": "push",
-      "head_branch": "main",
-      "head_sha": "d66dc86bc8229cda340bac181ae73c80860e6180",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32339100508",
-      "name": "validate",
-      "path": ".github/workflows/validate.yml",
-      "run_number": 73,
-      "run_started_at": "2026-08-20T06:19:14Z",
-      "status": "completed",
-      "updated_at": "2026-08-20T06:20:19Z",
-      "workflow_id": 331522431
-    }
-  ],
-  "lookback_days": 7,
-  "unresolved": [
-    {
-      "conclusion": "failure",
-      "created_at": "2026-08-19T00:44:33Z",
-      "event": "workflow_dispatch",
-      "head_branch": "main",
-      "head_sha": "420aae6b5d8fab2f242018b8038b38159d0fdfa0",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32202382447",
-      "name": "Run cross-specification pressure test",
-      "path": ".github/workflows/cross-spec-pressure-test.yml",
-      "run_number": 2,
-      "run_started_at": "2026-08-19T00:44:33Z",
-      "status": "completed",
-      "updated_at": "2026-08-19T00:44:49Z",
-      "workflow_id": 337404001
-    }
-  ],
-  "unresolved_failures": 1,
-  "workflows_examined": 7
-}
-```
-
-### Remediation objective
-
-Restore a successful latest completed default-branch run for the affected workflow or record an explicit repository-governed risk disposition.
-
-### Acceptance criteria
-
-- [ ] The affected workflow's latest completed default-branch run succeeds, or an explicit governed disposition supersedes the operational expectation.
-
-### Verification
-
-- Run the affected workflow on the default branch.
-- Rerun the portfolio monitor and confirm the stable finding fingerprint is no longer open.
+- Execute the required repository-native control and rerun the portfolio monitor.

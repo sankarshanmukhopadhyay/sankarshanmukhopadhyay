@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-21T18:55:58Z",
+  "generated_at": "2026-08-22T01:49:53Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -8,10 +8,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/cross-spec-pressure-test.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-19T03:07:01Z",
       "last_observed": "2026-08-21T18:55:58Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-22T01:49:53Z",
       "latest_finding_id": "PAM-F72E4B659F49"
     },
     "PF-ADCE64569869": {
@@ -116,10 +116,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/validate.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-21T07:07:22Z",
       "last_observed": "2026-08-21T18:55:58Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-22T01:49:53Z",
       "latest_finding_id": "PAM-A056BBB17B2D"
     },
     "PF-237AE4A6472D": {
@@ -128,11 +128,23 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-21T07:07:22Z",
       "last_observed": "2026-08-21T18:55:58Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-22T01:49:53Z",
       "latest_finding_id": "PAM-E587CE2E9142"
+    },
+    "PF-9769E5EB9C48": {
+      "finding_fingerprint": "PF-9769E5EB9C48",
+      "repository": "rahp-toolkit",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/corpus-status.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-22T01:49:53Z",
+      "last_observed": "2026-08-22T01:49:53Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-F28BE2B35454"
     }
   }
 }
