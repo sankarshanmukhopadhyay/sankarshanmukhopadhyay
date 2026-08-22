@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-08-22T01:49:53Z  
+**Generated:** 2026-08-22T06:59:11Z  
 **Open findings:** 1  
-**Repository snapshot:** `a9caff2ee1b097bf96eaa12e45e9b0f2f2d419ab`  
+**Repository snapshot:** `b2a014a71a784626b0399f0cff1ffe581e17625d`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-9769E5EB9C48 — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-F28BE2B35454` at `2026-08-22T01:49:53Z`
+- Observation: `PAM-F28BE2B35454` at `2026-08-22T06:59:11Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/corpus-status.yml`
