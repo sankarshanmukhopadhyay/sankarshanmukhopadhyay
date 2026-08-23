@@ -7,9 +7,9 @@ nav_order: 1
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-08-23T13:01:30Z  
+**Observed:** 2026-08-23T18:48:01Z  
 **Scope:** 11 flagship original repositories  
-**Open findings:** 1  
+**Open findings:** 2  
 **Unclassified public repositories:** 0
 
 > This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.
@@ -18,7 +18,7 @@ nav_order: 1
 
 | Dimension | State | Open findings |
 |---|---|---:|
-| Operational | `evaluated` | 0 |
+| Operational | `evaluated` | 1 |
 | Governance | `evaluated` | 0 |
 | Assurance | `evaluated` | 1 |
 | Cross Specification | `not-evaluated` | 0 |
@@ -39,7 +39,7 @@ nav_order: 1
 | [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json) |
 | [trqp-conformance-suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trqp-conformance-suite.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.json) |
 | [trqp-assurance-hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trqp-assurance-hub.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.json) |
-| [rahp-toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | available | n/a | 0 unresolved | [1 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/rahp-toolkit.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json) |
+| [rahp-toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | available | n/a | 1 unresolved | [2 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/rahp-toolkit.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json) |
 
 ## Findings
 
@@ -53,6 +53,17 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Severity:** `high`
 - **Claim:** Required assurance evidence was not observed inside the governed evidence window.
 - **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
+- **Issue routing:** `target-repository`
+- **Automatic effect:** `none`
+
+### PAM-8CC2EFD709C4: rahp-toolkit
+
+- **Fingerprint:** `PF-954D1C442655`
+- **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
+- **Subject:** `.github/workflows/release-v1.5.0.yml`
+- **Severity:** `medium`
+- **Claim:** The latest completed default-branch run for this workflow is failing within the governed observation window.
+- **Recommended action:** Review the failed workflow, restore a successful default-branch run, or record an explicit accepted-risk disposition.
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
