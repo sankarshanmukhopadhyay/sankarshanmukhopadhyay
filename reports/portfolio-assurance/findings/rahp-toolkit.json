@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-22T18:48:39Z",
+  "generated_at": "2026-08-23T01:59:06Z",
   "repository": "rahp-toolkit",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-22T18:48:39Z",
+    "observed_at": "2026-08-23T01:59:06Z",
     "default_branch": "main",
     "head_sha": "b2a014a71a784626b0399f0cff1ffe581e17625d",
     "provenance_status": "observed"
@@ -40,13 +40,13 @@
   "finding_count": 1,
   "findings": [
     {
-      "finding_id": "PAM-F28BE2B35454",
+      "finding_id": "PAM-9260689C0D6D",
       "finding_fingerprint": "PF-9769E5EB9C48",
       "repository": "rahp-toolkit",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "severity": "high",
-      "observed_at": "2026-08-22T18:48:39Z",
+      "observed_at": "2026-08-23T01:59:06Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "corpus_integrity",
@@ -86,9 +86,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-08-22T18:48:39Z",
+      "last_observed": "2026-08-23T01:59:06Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-F28BE2B35454"
+      "latest_finding_id": "PAM-9260689C0D6D"
     }
   ],
   "handoff": {

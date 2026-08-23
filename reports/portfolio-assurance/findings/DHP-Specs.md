@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `DHP-Specs`
 
-**Generated:** 2026-08-22T18:48:39Z  
+**Generated:** 2026-08-23T01:59:06Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/DHP-Specs.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/DHP-Specs.json)
