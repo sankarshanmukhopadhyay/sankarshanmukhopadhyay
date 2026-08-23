@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T01:59:06Z",
+  "generated_at": "2026-08-23T07:00:39Z",
   "findings": [
     {
       "finding_id": "PAM-9260689C0D6D",
@@ -8,7 +8,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "severity": "high",
-      "observed_at": "2026-08-23T01:59:06Z",
+      "observed_at": "2026-08-23T07:00:39Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "corpus_integrity",
@@ -42,7 +42,7 @@
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-08-23T01:59:06Z",
+      "observed_at": "2026-08-23T07:00:39Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -62,7 +62,7 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 6,
+          "completed_examined": 4,
           "workflows_examined": 2,
           "unresolved_failures": 0,
           "latest": [
@@ -104,7 +104,7 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-08-23T01:59:06Z",
+      "observed_at": "2026-08-23T07:00:39Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -181,7 +181,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-08-23T01:59:06Z",
+      "observed_at": "2026-08-23T07:00:39Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -201,7 +201,7 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 49,
+          "completed_examined": 39,
           "workflows_examined": 4,
           "unresolved_failures": 0,
           "latest": [
@@ -273,7 +273,7 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-08-23T01:59:06Z",
+      "observed_at": "2026-08-23T07:00:39Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -335,7 +335,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-08-23T01:59:06Z",
+      "observed_at": "2026-08-23T07:00:39Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -397,7 +397,7 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-08-23T01:59:06Z",
+      "observed_at": "2026-08-23T07:00:39Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -459,7 +459,7 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-08-23T01:59:06Z",
+      "observed_at": "2026-08-23T07:00:39Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -566,7 +566,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-08-23T01:59:06Z",
+      "observed_at": "2026-08-23T07:00:39Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -586,7 +586,7 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 17,
+          "completed_examined": 14,
           "workflows_examined": 4,
           "unresolved_failures": 0,
           "latest": [
@@ -658,7 +658,7 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-08-23T01:59:06Z",
+      "observed_at": "2026-08-23T07:00:39Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -750,7 +750,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-08-23T01:59:06Z",
+      "observed_at": "2026-08-23T07:00:39Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -857,7 +857,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-08-23T01:59:06Z",
+      "observed_at": "2026-08-23T07:00:39Z",
       "available": true,
       "evidence": {
         "repository": {
