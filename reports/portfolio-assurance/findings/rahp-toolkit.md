@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-08-23T18:48:01Z  
+**Generated:** 2026-08-24T01:57:24Z  
 **Open findings:** 2  
-**Repository snapshot:** `dd0f4be5b690a837bd60c444d9e30f16e60613ef`  
+**Repository snapshot:** `1ff01b44bb11f6f0d72b98a8bcbc8793960fd829`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-9769E5EB9C48 — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-9260689C0D6D` at `2026-08-23T18:48:01Z`
+- Observation: `PAM-9B1F9EEF070C` at `2026-08-24T01:57:24Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/corpus-status.yml`
@@ -64,7 +64,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-954D1C442655 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-8CC2EFD709C4` at `2026-08-23T18:48:01Z`
+- Observation: `PAM-E2C995567FB3` at `2026-08-24T01:57:24Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/release-v1.5.0.yml`
@@ -81,17 +81,17 @@ Restore or execute the repository-native control required by the governed assura
   "latest": [
     {
       "conclusion": "success",
-      "created_at": "2026-08-23T15:39:49Z",
+      "created_at": "2026-08-24T01:04:50Z",
       "event": "push",
       "head_branch": "main",
-      "head_sha": "dd0f4be5b690a837bd60c444d9e30f16e60613ef",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32649254617",
+      "head_sha": "1ff01b44bb11f6f0d72b98a8bcbc8793960fd829",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32678636830",
       "name": "Build and deploy RAHP documentation",
       "path": ".github/workflows/pages.yml",
-      "run_number": 159,
-      "run_started_at": "2026-08-23T15:39:49Z",
+      "run_number": 177,
+      "run_started_at": "2026-08-24T01:04:50Z",
       "status": "completed",
-      "updated_at": "2026-08-23T15:41:21Z",
+      "updated_at": "2026-08-24T01:05:47Z",
       "workflow_id": 333196290
     },
     {
@@ -126,17 +126,32 @@ Restore or execute the repository-native control required by the governed assura
     },
     {
       "conclusion": "success",
-      "created_at": "2026-08-23T15:39:49Z",
+      "created_at": "2026-08-24T00:40:56Z",
       "event": "push",
       "head_branch": "main",
-      "head_sha": "dd0f4be5b690a837bd60c444d9e30f16e60613ef",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32649254598",
+      "head_sha": "feda195e211eaa2cf3b61defce8e913f33d69d0d",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32677426239",
+      "name": "Publish qualified RAHP release",
+      "path": ".github/workflows/release.yml",
+      "run_number": 1,
+      "run_started_at": "2026-08-24T00:40:56Z",
+      "status": "completed",
+      "updated_at": "2026-08-24T00:41:16Z",
+      "workflow_id": 340849453
+    },
+    {
+      "conclusion": "success",
+      "created_at": "2026-08-24T01:04:50Z",
+      "event": "push",
+      "head_branch": "main",
+      "head_sha": "1ff01b44bb11f6f0d72b98a8bcbc8793960fd829",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32678636860",
       "name": "validate",
       "path": ".github/workflows/validate.yml",
-      "run_number": 170,
-      "run_started_at": "2026-08-23T15:39:49Z",
+      "run_number": 188,
+      "run_started_at": "2026-08-24T01:04:50Z",
       "status": "completed",
-      "updated_at": "2026-08-23T15:40:56Z",
+      "updated_at": "2026-08-24T01:05:28Z",
       "workflow_id": 331522431
     }
   ],
@@ -159,7 +174,7 @@ Restore or execute the repository-native control required by the governed assura
     }
   ],
   "unresolved_failures": 1,
-  "workflows_examined": 4
+  "workflows_examined": 5
 }
 ```
 
