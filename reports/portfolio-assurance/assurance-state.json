@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-24T01:57:24Z",
+  "generated_at": "2026-08-24T07:19:56Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -103,14 +103,14 @@
             "path": ".github/workflows/verify-publication.yml",
             "conclusion": "success",
             "status": "completed",
-            "event": "workflow_run",
-            "created_at": "2026-08-20T10:35:13Z",
-            "updated_at": "2026-08-20T10:35:23Z",
-            "run_started_at": "2026-08-20T10:35:13Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel/actions/runs/32359656509",
+            "event": "schedule",
+            "created_at": "2026-08-24T05:05:58Z",
+            "updated_at": "2026-08-24T05:06:08Z",
+            "run_started_at": "2026-08-24T05:05:58Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel/actions/runs/32692326925",
             "head_sha": "0b1653efcf27d8ab7da90c9dbc222839f79b444d",
             "head_branch": "main",
-            "run_number": 2
+            "run_number": 3
           }
         }
       ],
@@ -705,7 +705,7 @@
     "rahp-toolkit": {
       "repository": "rahp-toolkit",
       "profile": "assurance-toolkit",
-      "state": "missing",
+      "state": "stale",
       "claims": [
         {
           "claim": "toolkit_validation",
@@ -713,8 +713,8 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/validate.yml",
           "freshness_policy": "current-head",
-          "state": "satisfied",
-          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "state": "stale",
+          "reason": "successful evidence does not cover the current default-branch HEAD",
           "evidence": {
             "workflow_id": 331522431,
             "name": "validate",
@@ -729,7 +729,9 @@
             "head_sha": "1ff01b44bb11f6f0d72b98a8bcbc8793960fd829",
             "head_branch": "main",
             "run_number": 188
-          }
+          },
+          "repository_head_sha": "053f6b6e555f607076343ae422f2549fba869698",
+          "evidence_head_sha": "1ff01b44bb11f6f0d72b98a8bcbc8793960fd829"
         },
         {
           "claim": "corpus_integrity",
@@ -737,8 +739,23 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/corpus-status.yml",
           "freshness_policy": "latest-success",
-          "state": "missing",
-          "reason": "no completed workflow execution was observed inside the governed lookback window"
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 333347627,
+            "name": "Corpus source status",
+            "path": ".github/workflows/corpus-status.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "schedule",
+            "created_at": "2026-08-24T04:06:38Z",
+            "updated_at": "2026-08-24T04:06:56Z",
+            "run_started_at": "2026-08-24T04:06:38Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32688788144",
+            "head_sha": "1ff01b44bb11f6f0d72b98a8bcbc8793960fd829",
+            "head_branch": "main",
+            "run_number": 7
+          }
         },
         {
           "claim": "publication_integrity",
@@ -746,8 +763,8 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/pages.yml",
           "freshness_policy": "current-head",
-          "state": "satisfied",
-          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "state": "stale",
+          "reason": "successful evidence does not cover the current default-branch HEAD",
           "evidence": {
             "workflow_id": 333196290,
             "name": "Build and deploy RAHP documentation",
@@ -762,7 +779,9 @@
             "head_sha": "1ff01b44bb11f6f0d72b98a8bcbc8793960fd829",
             "head_branch": "main",
             "run_number": 177
-          }
+          },
+          "repository_head_sha": "053f6b6e555f607076343ae422f2549fba869698",
+          "evidence_head_sha": "1ff01b44bb11f6f0d72b98a8bcbc8793960fd829"
         },
         {
           "claim": "cross_specification_pressure_test",
@@ -775,7 +794,7 @@
         }
       ],
       "required_claims": 3,
-      "satisfied_required_claims": 2
+      "satisfied_required_claims": 1
     }
   }
 }

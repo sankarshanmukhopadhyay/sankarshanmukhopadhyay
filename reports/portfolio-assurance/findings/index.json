@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T01:57:24Z",
+  "generated_at": "2026-08-24T07:19:56Z",
   "repositories": [
     {
       "repository": "A2A",
@@ -185,7 +185,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "finding_count": 2,
+      "finding_count": 3,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/rahp-toolkit.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json"

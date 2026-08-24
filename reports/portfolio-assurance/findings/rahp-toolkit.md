@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-08-24T01:57:24Z  
-**Open findings:** 2  
-**Repository snapshot:** `1ff01b44bb11f6f0d72b98a8bcbc8793960fd829`  
+**Generated:** 2026-08-24T07:19:56Z  
+**Open findings:** 3  
+**Repository snapshot:** `053f6b6e555f607076343ae422f2549fba869698`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
@@ -20,51 +20,116 @@ search_exclude: true
 |---|---|---:|
 | Operational | `evaluated` | 1 |
 | Governance | `evaluated` | 0 |
-| Assurance | `evaluated` | 1 |
+| Assurance | `evaluated` | 2 |
 | Cross Specification | `not-evaluated` | 0 |
 
 ## Open findings
 
-## PF-9769E5EB9C48 — ASSURANCE_EVIDENCE_MISSING
+## PF-237AE4A6472D — ASSURANCE_EVIDENCE_STALE
 
-- Observation: `PAM-9B1F9EEF070C` at `2026-08-24T01:57:24Z`
-- Severity: `high`
+- Observation: `PAM-8D27ADA5C012` at `2026-08-24T07:19:56Z`
+- Severity: `medium`
 - Dimension: `assurance`
-- Subject: `.github/workflows/corpus-status.yml`
-- Lifecycle: `open`; first observed `2026-08-22T01:49:53Z`
-- Claim: Required assurance evidence was not observed inside the governed evidence window.
+- Subject: `.github/workflows/pages.yml`
+- Lifecycle: `open`; first observed `2026-08-21T07:07:22Z`
+- Claim: Required assurance evidence is successful but does not cover the current governed repository state.
 - Automatic effect: `none`
 
 ### Evidence
 
 ```json
 {
-  "claim": "corpus_integrity",
-  "evidence_head_sha": null,
-  "freshness_policy": "latest-success",
-  "reason": "no completed workflow execution was observed inside the governed lookback window",
-  "repository_head_sha": null,
-  "state": "missing",
-  "workflow": null
+  "claim": "publication_integrity",
+  "evidence_head_sha": "1ff01b44bb11f6f0d72b98a8bcbc8793960fd829",
+  "freshness_policy": "current-head",
+  "reason": "successful evidence does not cover the current default-branch HEAD",
+  "repository_head_sha": "053f6b6e555f607076343ae422f2549fba869698",
+  "state": "stale",
+  "workflow": {
+    "conclusion": "success",
+    "created_at": "2026-08-24T01:04:50Z",
+    "event": "push",
+    "head_branch": "main",
+    "head_sha": "1ff01b44bb11f6f0d72b98a8bcbc8793960fd829",
+    "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32678636830",
+    "name": "Build and deploy RAHP documentation",
+    "path": ".github/workflows/pages.yml",
+    "run_number": 177,
+    "run_started_at": "2026-08-24T01:04:50Z",
+    "status": "completed",
+    "updated_at": "2026-08-24T01:05:47Z",
+    "workflow_id": 333196290
+  }
 }
 ```
 
 ### Remediation objective
 
-Restore or execute the repository-native control required by the governed assurance contract.
+Regenerate assurance evidence against the current governed repository revision.
 
 ### Acceptance criteria
 
-- [ ] The required evidence is observable inside the governed lookback window.
-- [ ] The evidence is attributable to the configured repository-native control.
+- [ ] The evidence-producing workflow succeeds against the current default-branch HEAD.
+- [ ] The evidence HEAD SHA matches the governed repository HEAD SHA.
 
 ### Verification
 
-- Execute the required repository-native control and rerun the portfolio monitor.
+- Execute the configured control on the current default branch and rerun the monitor.
+
+## PF-8A31AAA852D1 — ASSURANCE_EVIDENCE_STALE
+
+- Observation: `PAM-1ED6843EC296` at `2026-08-24T07:19:56Z`
+- Severity: `medium`
+- Dimension: `assurance`
+- Subject: `.github/workflows/validate.yml`
+- Lifecycle: `open`; first observed `2026-08-21T07:07:22Z`
+- Claim: Required assurance evidence is successful but does not cover the current governed repository state.
+- Automatic effect: `none`
+
+### Evidence
+
+```json
+{
+  "claim": "toolkit_validation",
+  "evidence_head_sha": "1ff01b44bb11f6f0d72b98a8bcbc8793960fd829",
+  "freshness_policy": "current-head",
+  "reason": "successful evidence does not cover the current default-branch HEAD",
+  "repository_head_sha": "053f6b6e555f607076343ae422f2549fba869698",
+  "state": "stale",
+  "workflow": {
+    "conclusion": "success",
+    "created_at": "2026-08-24T01:04:50Z",
+    "event": "push",
+    "head_branch": "main",
+    "head_sha": "1ff01b44bb11f6f0d72b98a8bcbc8793960fd829",
+    "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32678636860",
+    "name": "validate",
+    "path": ".github/workflows/validate.yml",
+    "run_number": 188,
+    "run_started_at": "2026-08-24T01:04:50Z",
+    "status": "completed",
+    "updated_at": "2026-08-24T01:05:28Z",
+    "workflow_id": 331522431
+  }
+}
+```
+
+### Remediation objective
+
+Regenerate assurance evidence against the current governed repository revision.
+
+### Acceptance criteria
+
+- [ ] The evidence-producing workflow succeeds against the current default-branch HEAD.
+- [ ] The evidence HEAD SHA matches the governed repository HEAD SHA.
+
+### Verification
+
+- Execute the configured control on the current default branch and rerun the monitor.
 
 ## PF-954D1C442655 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-E2C995567FB3` at `2026-08-24T01:57:24Z`
+- Observation: `PAM-E2C995567FB3` at `2026-08-24T07:19:56Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/release-v1.5.0.yml`
@@ -79,6 +144,36 @@ Restore or execute the repository-native control required by the governed assura
   "available": true,
   "completed_examined": 50,
   "latest": [
+    {
+      "conclusion": "success",
+      "created_at": "2026-08-24T04:06:38Z",
+      "event": "schedule",
+      "head_branch": "main",
+      "head_sha": "1ff01b44bb11f6f0d72b98a8bcbc8793960fd829",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32688788144",
+      "name": "Corpus source status",
+      "path": ".github/workflows/corpus-status.yml",
+      "run_number": 7,
+      "run_started_at": "2026-08-24T04:06:38Z",
+      "status": "completed",
+      "updated_at": "2026-08-24T04:06:56Z",
+      "workflow_id": 333347627
+    },
+    {
+      "conclusion": "success",
+      "created_at": "2026-08-24T04:24:29Z",
+      "event": "schedule",
+      "head_branch": "main",
+      "head_sha": "1ff01b44bb11f6f0d72b98a8bcbc8793960fd829",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32689889673",
+      "name": "RAHP instance change watch",
+      "path": ".github/workflows/instance-watch.yml",
+      "run_number": 11,
+      "run_started_at": "2026-08-24T04:24:29Z",
+      "status": "completed",
+      "updated_at": "2026-08-24T04:25:18Z",
+      "workflow_id": 334033746
+    },
     {
       "conclusion": "success",
       "created_at": "2026-08-24T01:04:50Z",
@@ -174,7 +269,7 @@ Restore or execute the repository-native control required by the governed assura
     }
   ],
   "unresolved_failures": 1,
-  "workflows_examined": 5
+  "workflows_examined": 7
 }
 ```
 
