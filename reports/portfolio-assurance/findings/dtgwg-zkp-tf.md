@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `dtgwg-zkp-tf`
 
-**Generated:** 2026-08-24T13:12:19Z  
+**Generated:** 2026-08-24T18:58:33Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dtgwg-zkp-tf.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dtgwg-zkp-tf.json)
