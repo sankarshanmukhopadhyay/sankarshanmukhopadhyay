@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-25T01:52:08Z",
+  "generated_at": "2026-08-25T03:09:58Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -116,10 +116,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/validate.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-21T07:07:22Z",
       "last_observed": "2026-08-25T01:52:08Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-25T03:09:58Z",
       "latest_finding_id": "PAM-25C2BC5326BC"
     },
     "PF-237AE4A6472D": {
@@ -128,10 +128,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-21T07:07:22Z",
       "last_observed": "2026-08-25T01:52:08Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-25T03:09:58Z",
       "latest_finding_id": "PAM-6536D94C6FD0"
     },
     "PF-9769E5EB9C48": {
@@ -152,10 +152,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/release-v1.5.0.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-23T18:48:01Z",
       "last_observed": "2026-08-25T01:52:08Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-25T03:09:58Z",
       "latest_finding_id": "PAM-E14709C7B994"
     }
   }

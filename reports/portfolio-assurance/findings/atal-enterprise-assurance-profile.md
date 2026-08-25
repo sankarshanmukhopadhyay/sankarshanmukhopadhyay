@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `atal-enterprise-assurance-profile`
 
-**Generated:** 2026-08-25T01:52:08Z  
+**Generated:** 2026-08-25T03:09:58Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/atal-enterprise-assurance-profile.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/atal-enterprise-assurance-profile.json)
