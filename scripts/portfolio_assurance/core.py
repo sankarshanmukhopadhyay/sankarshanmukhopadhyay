@@ -52,12 +52,20 @@ def make_finding(repository: str, rule_id: str, severity: str, observed_at: str,
     }
 
 
-def latest_workflow_states(workflow_runs: list[dict[str, Any]], now: dt.datetime, lookback_days: int) -> dict[str, Any]:
+def latest_workflow_states(
+    workflow_runs: list[dict[str, Any]],
+    now: dt.datetime,
+    lookback_days: int,
+    *,
+    active_workflow_paths: set[str] | None = None,
+) -> dict[str, Any]:
     """Return latest completed state per workflow inside the governed lookback window.
 
-    The complete latest-state evidence is retained so higher-level assurance
-    contracts can bind a specific workflow to a specific claim. Operational
-    finding logic continues to use only ``unresolved`` failures.
+    When ``active_workflow_paths`` is supplied, runs belonging to workflow paths
+    that no longer exist in the current governed repository state are retained
+    as retired historical evidence but cannot create unresolved operational
+    failures. If the current workflow set cannot be collected, callers omit the
+    filter and the monitor preserves its conservative historical behaviour.
     """
     cutoff = now - dt.timedelta(days=lookback_days)
     in_window: list[dict[str, Any]] = []
@@ -74,8 +82,6 @@ def latest_workflow_states(workflow_runs: list[dict[str, Any]], now: dt.datetime
         key = str(run.get("workflow_id") or run.get("path") or run.get("name") or "unknown-workflow")
         if key not in latest:
             latest[key] = run
-    unresolved = [r for r in latest.values() if r.get("conclusion") in FAILURE_CONCLUSIONS]
-    unresolved.sort(key=lambda r: str(r.get("name") or r.get("path") or r.get("workflow_id")))
 
     def evidence_record(run: dict[str, Any]) -> dict[str, Any]:
         return {
@@ -94,14 +100,29 @@ def latest_workflow_states(workflow_runs: list[dict[str, Any]], now: dt.datetime
             "run_number": run.get("run_number"),
         }
 
-    latest_records = [evidence_record(r) for r in latest.values()]
+    retired: list[dict[str, Any]] = []
+    active_latest: list[dict[str, Any]] = []
+    for run in latest.values():
+        path = run.get("path")
+        if active_workflow_paths is not None and path and str(path) not in active_workflow_paths:
+            retired.append(run)
+        else:
+            active_latest.append(run)
+
+    unresolved = [r for r in active_latest if r.get("conclusion") in FAILURE_CONCLUSIONS]
+    unresolved.sort(key=lambda r: str(r.get("name") or r.get("path") or r.get("workflow_id")))
+    retired.sort(key=lambda r: str(r.get("name") or r.get("path") or r.get("workflow_id")))
+
+    latest_records = [evidence_record(r) for r in active_latest]
     latest_records.sort(key=lambda r: str(r.get("path") or r.get("name") or r.get("workflow_id")))
     return {
         "available": True,
         "lookback_days": lookback_days,
         "completed_examined": len(in_window),
-        "workflows_examined": len(latest),
+        "workflows_examined": len(active_latest),
+        "retired_workflows_examined": len(retired),
         "unresolved_failures": len(unresolved),
         "latest": latest_records,
+        "retired": [evidence_record(r) for r in retired],
         "unresolved": [evidence_record(r) for r in unresolved],
     }
