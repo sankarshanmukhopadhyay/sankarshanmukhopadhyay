@@ -7,7 +7,7 @@ search_exclude: true
 
 # Portfolio Assurance Report — 2026-08-25
 
-**Observed:** 2026-08-25T07:08:19Z  
+**Observed:** 2026-08-25T13:10:58Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 5  
 **Unclassified public repositories:** 2
@@ -45,11 +45,11 @@ search_exclude: true
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-77D0D742238F: sankarshanmukhopadhyay
+### PAM-C5F2288C46D4: sankarshanmukhopadhyay
 
-- **Fingerprint:** `PF-FE9A3049B948`
+- **Fingerprint:** `PF-C2F5EB728127`
 - **Rule:** `PUBLIC_REPOSITORY_WITHOUT_DISPOSITION`
-- **Subject:** `toip-portfolio-monitor`
+- **Subject:** `trust-ecosystem-monitor`
 - **Severity:** `info`
 - **Claim:** A public account repository has no governed account-level portfolio disposition.
 - **Recommended action:** Review the repository and assign an explicit included, adjacent, upstream-reference, adapted-upstream-work, historical, unrelated, or pending-review disposition. Discovery never auto-enrols a repository.

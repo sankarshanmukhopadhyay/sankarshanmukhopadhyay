@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-25T07:08:19Z",
+  "generated_at": "2026-08-25T13:10:58Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -118,7 +118,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-21T07:07:22Z",
-      "last_observed": "2026-08-25T07:08:19Z",
+      "last_observed": "2026-08-25T13:10:58Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-25C2BC5326BC"
     },
@@ -130,7 +130,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-21T07:07:22Z",
-      "last_observed": "2026-08-25T07:08:19Z",
+      "last_observed": "2026-08-25T13:10:58Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-6536D94C6FD0"
     },
@@ -166,7 +166,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-08-25T07:08:19Z",
+      "last_observed": "2026-08-25T13:10:58Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-9B3BD6646F7D"
     },
@@ -176,10 +176,10 @@
       "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
       "subject": "toip-portfolio-monitor",
       "dimension": "governance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-25T07:08:19Z",
       "last_observed": "2026-08-25T07:08:19Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-25T13:10:58Z",
       "latest_finding_id": "PAM-77D0D742238F"
     },
     "PF-D27366EBF074": {
@@ -190,9 +190,21 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-08-25T07:08:19Z",
+      "last_observed": "2026-08-25T13:10:58Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-63DBBC71B326"
+    },
+    "PF-C2F5EB728127": {
+      "finding_fingerprint": "PF-C2F5EB728127",
+      "repository": "sankarshanmukhopadhyay",
+      "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
+      "subject": "trust-ecosystem-monitor",
+      "dimension": "governance",
+      "status": "open",
+      "first_observed": "2026-08-25T13:10:58Z",
+      "last_observed": "2026-08-25T13:10:58Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-C5F2288C46D4"
     }
   }
 }

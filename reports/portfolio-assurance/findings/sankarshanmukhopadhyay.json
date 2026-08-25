@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-25T07:08:19Z",
+  "generated_at": "2026-08-25T13:10:58Z",
   "repository": "sankarshanmukhopadhyay",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-25T07:08:19Z",
+    "observed_at": "2026-08-25T13:10:58Z",
     "default_branch": null,
     "head_sha": null,
     "provenance_status": "unavailable"
@@ -40,17 +40,17 @@
   "finding_count": 2,
   "findings": [
     {
-      "finding_id": "PAM-77D0D742238F",
-      "finding_fingerprint": "PF-FE9A3049B948",
+      "finding_id": "PAM-C5F2288C46D4",
+      "finding_fingerprint": "PF-C2F5EB728127",
       "repository": "sankarshanmukhopadhyay",
       "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
-      "subject": "toip-portfolio-monitor",
+      "subject": "trust-ecosystem-monitor",
       "severity": "info",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "claim": "A public account repository has no governed account-level portfolio disposition.",
       "evidence": {
-        "repository": "toip-portfolio-monitor",
-        "html_url": "https://github.com/sankarshanmukhopadhyay/toip-portfolio-monitor",
+        "repository": "trust-ecosystem-monitor",
+        "html_url": "https://github.com/sankarshanmukhopadhyay/trust-ecosystem-monitor",
         "archived": false,
         "fork": false
       },
@@ -79,7 +79,7 @@
       "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
       "subject": "uncefact-portfolio-monitor",
       "severity": "info",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "claim": "A public account repository has no governed account-level portfolio disposition.",
       "evidence": {
         "repository": "uncefact-portfolio-monitor",
@@ -108,16 +108,16 @@
   ],
   "lifecycle": [
     {
-      "finding_fingerprint": "PF-FE9A3049B948",
+      "finding_fingerprint": "PF-C2F5EB728127",
       "repository": "sankarshanmukhopadhyay",
       "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
-      "subject": "toip-portfolio-monitor",
+      "subject": "trust-ecosystem-monitor",
       "dimension": "governance",
       "status": "open",
-      "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-08-25T07:08:19Z",
+      "first_observed": "2026-08-25T13:10:58Z",
+      "last_observed": "2026-08-25T13:10:58Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-77D0D742238F"
+      "latest_finding_id": "PAM-C5F2288C46D4"
     },
     {
       "finding_fingerprint": "PF-D27366EBF074",
@@ -127,7 +127,7 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-08-25T07:08:19Z",
+      "last_observed": "2026-08-25T13:10:58Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-63DBBC71B326"
     }

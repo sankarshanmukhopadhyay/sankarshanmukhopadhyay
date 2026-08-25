@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-08-25T07:08:19Z  
+**Generated:** 2026-08-25T13:10:58Z  
 **Open findings:** 3  
 **Repository snapshot:** `2af656939c8d0eca75edc21b013bff5cfe3b7efd`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-237AE4A6472D — ASSURANCE_EVIDENCE_STALE
 
-- Observation: `PAM-6536D94C6FD0` at `2026-08-25T07:08:19Z`
+- Observation: `PAM-6536D94C6FD0` at `2026-08-25T13:10:58Z`
 - Severity: `medium`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
@@ -78,7 +78,7 @@ Regenerate assurance evidence against the current governed repository revision.
 
 ## PF-8A31AAA852D1 — ASSURANCE_EVIDENCE_STALE
 
-- Observation: `PAM-25C2BC5326BC` at `2026-08-25T07:08:19Z`
+- Observation: `PAM-25C2BC5326BC` at `2026-08-25T13:10:58Z`
 - Severity: `medium`
 - Dimension: `assurance`
 - Subject: `.github/workflows/validate.yml`
@@ -129,7 +129,7 @@ Regenerate assurance evidence against the current governed repository revision.
 
 ## PF-4E123844FBF6 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-9B3BD6646F7D` at `2026-08-25T07:08:19Z`
+- Observation: `PAM-9B3BD6646F7D` at `2026-08-25T13:10:58Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/instance-watch.yml`

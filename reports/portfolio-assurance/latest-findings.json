@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T07:08:19Z",
+  "generated_at": "2026-08-25T13:10:58Z",
   "findings": [
     {
       "finding_id": "PAM-9B3BD6646F7D",
@@ -8,7 +8,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "severity": "medium",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -188,7 +188,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/validate.yml",
       "severity": "medium",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "claim": "Required assurance evidence is successful but does not cover the current governed repository state.",
       "evidence": {
         "claim": "toolkit_validation",
@@ -239,7 +239,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/pages.yml",
       "severity": "medium",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "claim": "Required assurance evidence is successful but does not cover the current governed repository state.",
       "evidence": {
         "claim": "publication_integrity",
@@ -284,17 +284,17 @@
       }
     },
     {
-      "finding_id": "PAM-77D0D742238F",
-      "finding_fingerprint": "PF-FE9A3049B948",
+      "finding_id": "PAM-C5F2288C46D4",
+      "finding_fingerprint": "PF-C2F5EB728127",
       "repository": "sankarshanmukhopadhyay",
       "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
-      "subject": "toip-portfolio-monitor",
+      "subject": "trust-ecosystem-monitor",
       "severity": "info",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "claim": "A public account repository has no governed account-level portfolio disposition.",
       "evidence": {
-        "repository": "toip-portfolio-monitor",
-        "html_url": "https://github.com/sankarshanmukhopadhyay/toip-portfolio-monitor",
+        "repository": "trust-ecosystem-monitor",
+        "html_url": "https://github.com/sankarshanmukhopadhyay/trust-ecosystem-monitor",
         "archived": false,
         "fork": false
       },
@@ -323,7 +323,7 @@
       "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
       "subject": "uncefact-portfolio-monitor",
       "severity": "info",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "claim": "A public account repository has no governed account-level portfolio disposition.",
       "evidence": {
         "repository": "uncefact-portfolio-monitor",
@@ -353,7 +353,7 @@
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -423,7 +423,7 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -510,7 +510,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -530,8 +530,8 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 37,
-          "workflows_examined": 4,
+          "completed_examined": 27,
+          "workflows_examined": 3,
           "retired_workflows_examined": 0,
           "unresolved_failures": 0,
           "latest": [
@@ -579,21 +579,6 @@
               "head_sha": "968c7b70af8871395ab44d3fd98bf56d61785988",
               "head_branch": "main",
               "run_number": 130
-            },
-            {
-              "workflow_id": 313435040,
-              "name": "Graph Update: pip in /ietf #1530885838",
-              "path": "dynamic/dependabot/update-graph",
-              "conclusion": "success",
-              "status": "completed",
-              "event": "dynamic",
-              "created_at": "2026-08-18T12:23:49Z",
-              "updated_at": "2026-08-18T12:24:31Z",
-              "run_started_at": "2026-08-18T12:23:49Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/32136604428",
-              "head_sha": "fc55332fb21e1f4bfd403a0ef84ba0b196584e11",
-              "head_branch": "main",
-              "run_number": 2
             }
           ],
           "retired": [],
@@ -612,7 +597,7 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -683,7 +668,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -753,7 +738,7 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -823,7 +808,7 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -941,7 +926,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1043,7 +1028,7 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1147,7 +1132,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1299,7 +1284,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-08-25T07:08:19Z",
+      "observed_at": "2026-08-25T13:10:58Z",
       "available": true,
       "evidence": {
         "repository": {
