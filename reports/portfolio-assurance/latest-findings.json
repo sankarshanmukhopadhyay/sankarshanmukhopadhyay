@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-25T03:09:58Z",
+  "generated_at": "2026-08-25T03:11:30Z",
   "findings": [],
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-08-25T03:09:58Z",
+      "observed_at": "2026-08-25T03:11:30Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -74,7 +74,7 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-08-25T03:09:58Z",
+      "observed_at": "2026-08-25T03:11:30Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -161,7 +161,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-08-25T03:09:58Z",
+      "observed_at": "2026-08-25T03:11:30Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -263,7 +263,7 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-08-25T03:09:58Z",
+      "observed_at": "2026-08-25T03:11:30Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -334,7 +334,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-08-25T03:09:58Z",
+      "observed_at": "2026-08-25T03:11:30Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -404,7 +404,7 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-08-25T03:09:58Z",
+      "observed_at": "2026-08-25T03:11:30Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -474,7 +474,7 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-08-25T03:09:58Z",
+      "observed_at": "2026-08-25T03:11:30Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -592,7 +592,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-08-25T03:09:58Z",
+      "observed_at": "2026-08-25T03:11:30Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -694,7 +694,7 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-08-25T03:09:58Z",
+      "observed_at": "2026-08-25T03:11:30Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -798,7 +798,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-08-25T03:09:58Z",
+      "observed_at": "2026-08-25T03:11:30Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -950,7 +950,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-08-25T03:09:58Z",
+      "observed_at": "2026-08-25T03:11:30Z",
       "available": true,
       "evidence": {
         "repository": {
