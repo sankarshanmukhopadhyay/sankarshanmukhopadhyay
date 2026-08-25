@@ -7,8 +7,8 @@ search_exclude: true
 
 # Repository remediation dossier — `sankarshanmukhopadhyay`
 
-**Generated:** 2026-08-25T13:10:58Z  
-**Open findings:** 2  
+**Generated:** 2026-08-25T18:56:28Z  
+**Open findings:** 3  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.json)
 
@@ -19,15 +19,49 @@ search_exclude: true
 | Dimension | State | Open findings |
 |---|---|---:|
 | Operational | `not-evaluated` | 0 |
-| Governance | `evaluated` | 2 |
+| Governance | `evaluated` | 3 |
 | Assurance | `not-evaluated` | 0 |
 | Cross Specification | `not-evaluated` | 0 |
 
 ## Open findings
 
+## PF-17A4BED96CDC — PUBLIC_REPOSITORY_WITHOUT_DISPOSITION
+
+- Observation: `PAM-59A685033931` at `2026-08-25T18:56:28Z`
+- Severity: `info`
+- Dimension: `governance`
+- Subject: `dtg-privacy-implementation-profile`
+- Lifecycle: `open`; first observed `2026-08-25T18:56:28Z`
+- Claim: A public account repository has no governed account-level portfolio disposition.
+- Automatic effect: `none`
+
+### Evidence
+
+```json
+{
+  "archived": false,
+  "fork": false,
+  "html_url": "https://github.com/sankarshanmukhopadhyay/dtg-privacy-implementation-profile",
+  "repository": "dtg-privacy-implementation-profile"
+}
+```
+
+### Remediation objective
+
+Assign an explicit governed account-level disposition after human review.
+
+### Acceptance criteria
+
+- [ ] The public repository has an explicit portfolio or account disposition.
+- [ ] Discovery did not automatically enrol or classify the repository.
+
+### Verification
+
+- Run public-account discovery and portfolio validation.
+
 ## PF-C2F5EB728127 — PUBLIC_REPOSITORY_WITHOUT_DISPOSITION
 
-- Observation: `PAM-C5F2288C46D4` at `2026-08-25T13:10:58Z`
+- Observation: `PAM-C5F2288C46D4` at `2026-08-25T18:56:28Z`
 - Severity: `info`
 - Dimension: `governance`
 - Subject: `trust-ecosystem-monitor`
@@ -61,7 +95,7 @@ Assign an explicit governed account-level disposition after human review.
 
 ## PF-D27366EBF074 — PUBLIC_REPOSITORY_WITHOUT_DISPOSITION
 
-- Observation: `PAM-63DBBC71B326` at `2026-08-25T13:10:58Z`
+- Observation: `PAM-63DBBC71B326` at `2026-08-25T18:56:28Z`
 - Severity: `info`
 - Dimension: `governance`
 - Subject: `uncefact-portfolio-monitor`

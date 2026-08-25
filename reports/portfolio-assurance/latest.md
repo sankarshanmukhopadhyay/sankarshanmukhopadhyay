@@ -7,10 +7,10 @@ search_exclude: true
 
 # Portfolio Assurance Report — 2026-08-25
 
-**Observed:** 2026-08-25T13:10:58Z  
+**Observed:** 2026-08-25T18:56:28Z  
 **Scope:** 11 flagship original repositories  
-**Open findings:** 5  
-**Unclassified public repositories:** 2
+**Open findings:** 6  
+**Unclassified public repositories:** 3
 
 > This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.
 
@@ -19,7 +19,7 @@ search_exclude: true
 | Dimension | State | Open findings |
 |---|---|---:|
 | Operational | `evaluated` | 1 |
-| Governance | `evaluated` | 2 |
+| Governance | `evaluated` | 3 |
 | Assurance | `evaluated` | 2 |
 | Cross Specification | `not-evaluated` | 0 |
 
@@ -44,6 +44,17 @@ search_exclude: true
 ## Findings
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
+
+### PAM-59A685033931: sankarshanmukhopadhyay
+
+- **Fingerprint:** `PF-17A4BED96CDC`
+- **Rule:** `PUBLIC_REPOSITORY_WITHOUT_DISPOSITION`
+- **Subject:** `dtg-privacy-implementation-profile`
+- **Severity:** `info`
+- **Claim:** A public account repository has no governed account-level portfolio disposition.
+- **Recommended action:** Review the repository and assign an explicit included, adjacent, upstream-reference, adapted-upstream-work, historical, unrelated, or pending-review disposition. Discovery never auto-enrols a repository.
+- **Issue routing:** `central-review`
+- **Automatic effect:** `none`
 
 ### PAM-C5F2288C46D4: sankarshanmukhopadhyay
 
