@@ -7,7 +7,7 @@ nav_order: 1
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-08-24T18:58:33Z  
+**Observed:** 2026-08-25T01:52:08Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 3  
 **Unclassified public repositories:** 0
@@ -45,7 +45,7 @@ nav_order: 1
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-8D27ADA5C012: rahp-toolkit
+### PAM-6536D94C6FD0: rahp-toolkit
 
 - **Fingerprint:** `PF-237AE4A6472D`
 - **Rule:** `ASSURANCE_EVIDENCE_STALE`
@@ -56,7 +56,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-1ED6843EC296: rahp-toolkit
+### PAM-25C2BC5326BC: rahp-toolkit
 
 - **Fingerprint:** `PF-8A31AAA852D1`
 - **Rule:** `ASSURANCE_EVIDENCE_STALE`
@@ -67,7 +67,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-E2C995567FB3: rahp-toolkit
+### PAM-E14709C7B994: rahp-toolkit
 
 - **Fingerprint:** `PF-954D1C442655`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`

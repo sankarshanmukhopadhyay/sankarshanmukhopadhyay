@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-24T18:58:33Z",
+  "generated_at": "2026-08-25T01:52:08Z",
   "repository": "rahp-toolkit",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-24T18:58:33Z",
+    "observed_at": "2026-08-25T01:52:08Z",
     "default_branch": "main",
     "head_sha": "053f6b6e555f607076343ae422f2549fba869698",
     "provenance_status": "observed"
@@ -40,13 +40,13 @@
   "finding_count": 3,
   "findings": [
     {
-      "finding_id": "PAM-8D27ADA5C012",
+      "finding_id": "PAM-6536D94C6FD0",
       "finding_fingerprint": "PF-237AE4A6472D",
       "repository": "rahp-toolkit",
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/pages.yml",
       "severity": "medium",
-      "observed_at": "2026-08-24T18:58:33Z",
+      "observed_at": "2026-08-25T01:52:08Z",
       "claim": "Required assurance evidence is successful but does not cover the current governed repository state.",
       "evidence": {
         "claim": "publication_integrity",
@@ -91,13 +91,13 @@
       }
     },
     {
-      "finding_id": "PAM-1ED6843EC296",
+      "finding_id": "PAM-25C2BC5326BC",
       "finding_fingerprint": "PF-8A31AAA852D1",
       "repository": "rahp-toolkit",
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/validate.yml",
       "severity": "medium",
-      "observed_at": "2026-08-24T18:58:33Z",
+      "observed_at": "2026-08-25T01:52:08Z",
       "claim": "Required assurance evidence is successful but does not cover the current governed repository state.",
       "evidence": {
         "claim": "toolkit_validation",
@@ -142,13 +142,13 @@
       }
     },
     {
-      "finding_id": "PAM-E2C995567FB3",
+      "finding_id": "PAM-E14709C7B994",
       "finding_fingerprint": "PF-954D1C442655",
       "repository": "rahp-toolkit",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/release-v1.5.0.yml",
       "severity": "medium",
-      "observed_at": "2026-08-24T18:58:33Z",
+      "observed_at": "2026-08-25T01:52:08Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -310,9 +310,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-21T07:07:22Z",
-      "last_observed": "2026-08-24T18:58:33Z",
+      "last_observed": "2026-08-25T01:52:08Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-8D27ADA5C012"
+      "latest_finding_id": "PAM-6536D94C6FD0"
     },
     {
       "finding_fingerprint": "PF-8A31AAA852D1",
@@ -322,9 +322,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-21T07:07:22Z",
-      "last_observed": "2026-08-24T18:58:33Z",
+      "last_observed": "2026-08-25T01:52:08Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-1ED6843EC296"
+      "latest_finding_id": "PAM-25C2BC5326BC"
     },
     {
       "finding_fingerprint": "PF-954D1C442655",
@@ -334,9 +334,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-23T18:48:01Z",
-      "last_observed": "2026-08-24T18:58:33Z",
+      "last_observed": "2026-08-25T01:52:08Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-E2C995567FB3"
+      "latest_finding_id": "PAM-E14709C7B994"
     }
   ],
   "handoff": {
