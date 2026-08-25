@@ -32,6 +32,74 @@ def bind_assurance_findings(
     return result
 
 
+def bind_current_workflow_inventory(
+    owner: str,
+    repo: dict[str, Any],
+    observation: dict[str, Any],
+    policy: dict[str, Any],
+    token: str | None,
+) -> None:
+    """Reconcile recent workflow evidence with workflows present at current HEAD.
+
+    A removed workflow can retain recent GitHub Actions runs inside the governed
+    lookback window. Those runs remain useful historical evidence, but they no
+    longer represent an active control and therefore must not create an open
+    operational failure or satisfy a current assurance claim.
+
+    Inventory collection fails closed: if the active workflow set cannot be
+    observed, the pre-existing conservative workflow evaluation is preserved.
+    """
+    if not observation.get("available"):
+        return
+    workflow_state = observation.get("evidence", {}).get("workflow_runs")
+    if not isinstance(workflow_state, dict) or workflow_state.get("available") is False:
+        return
+
+    timeout = int(policy["collection"]["request_timeout_seconds"])
+    name = str(repo["name"])
+    try:
+        inventory = legacy.request_json(
+            f"https://api.github.com/repos/{owner}/{name}/actions/workflows?per_page=100",
+            token,
+            timeout,
+        )
+    except Exception as error:
+        workflow_state["active_inventory_available"] = False
+        workflow_state["active_inventory_error"] = str(error)
+        return
+
+    workflows = inventory.get("workflows", []) if isinstance(inventory, dict) else []
+    active_paths = {
+        str(item.get("path"))
+        for item in workflows
+        if isinstance(item, dict) and item.get("path") and item.get("state") != "deleted"
+    }
+    workflow_state["active_inventory_available"] = True
+    workflow_state["active_workflow_paths"] = sorted(active_paths)
+
+    latest = list(workflow_state.get("latest", []))
+    retired = list(workflow_state.get("retired", []))
+    active_latest: list[dict[str, Any]] = []
+    for record in latest:
+        path = record.get("path") if isinstance(record, dict) else None
+        if path and str(path) not in active_paths:
+            retired.append(record)
+        else:
+            active_latest.append(record)
+
+    active_unresolved = [
+        record
+        for record in workflow_state.get("unresolved", [])
+        if not record.get("path") or str(record.get("path")) in active_paths
+    ]
+    workflow_state["latest"] = active_latest
+    workflow_state["retired"] = retired
+    workflow_state["workflows_examined"] = len(active_latest)
+    workflow_state["retired_workflows_examined"] = len(retired)
+    workflow_state["unresolved"] = active_unresolved
+    workflow_state["unresolved_failures"] = len(active_unresolved)
+
+
 def inject_assurance_section(report: str, section: str) -> str:
     marker = "## Governance boundary"
     if marker in report:
@@ -78,6 +146,10 @@ def main() -> int:
         else legacy.collect_repository(policy["owner"], repo, policy, token, now)
         for repo in repos
     ]
+
+    if not args.offline:
+        for repo, observation in zip(repos, observations):
+            bind_current_workflow_inventory(policy["owner"], repo, observation, policy, token)
 
     findings = [
         finding
