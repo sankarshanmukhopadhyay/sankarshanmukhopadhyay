@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-25T03:11:30Z",
+  "generated_at": "2026-08-25T07:08:19Z",
   "repository": "sankarshanmukhopadhyay",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-25T03:11:30Z",
+    "observed_at": "2026-08-25T07:08:19Z",
     "default_branch": null,
     "head_sha": null,
     "provenance_status": "unavailable"
@@ -17,9 +17,9 @@
       "open_findings": 0
     },
     "governance": {
-      "status": "not-evaluated",
+      "status": "evaluated",
       "description": "Portfolio review, status-declaration, lifecycle, and repository identity governance checks.",
-      "open_findings": 0
+      "open_findings": 2
     },
     "assurance": {
       "status": "not-evaluated",
@@ -37,9 +37,101 @@
     "dashboard": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/docs/portfolio-assurance/dashboard.html",
     "latest_report": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/latest.html"
   },
-  "finding_count": 0,
-  "findings": [],
-  "lifecycle": [],
+  "finding_count": 2,
+  "findings": [
+    {
+      "finding_id": "PAM-77D0D742238F",
+      "finding_fingerprint": "PF-FE9A3049B948",
+      "repository": "sankarshanmukhopadhyay",
+      "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
+      "subject": "toip-portfolio-monitor",
+      "severity": "info",
+      "observed_at": "2026-08-25T07:08:19Z",
+      "claim": "A public account repository has no governed account-level portfolio disposition.",
+      "evidence": {
+        "repository": "toip-portfolio-monitor",
+        "html_url": "https://github.com/sankarshanmukhopadhyay/toip-portfolio-monitor",
+        "archived": false,
+        "fork": false
+      },
+      "recommended_action": "Review the repository and assign an explicit included, adjacent, upstream-reference, adapted-upstream-work, historical, unrelated, or pending-review disposition. Discovery never auto-enrols a repository.",
+      "dimension": "governance",
+      "remediation": {
+        "objective": "Assign an explicit governed account-level disposition after human review.",
+        "acceptance_criteria": [
+          "The public repository has an explicit portfolio or account disposition.",
+          "Discovery did not automatically enrol or classify the repository."
+        ],
+        "verification": [
+          "Run public-account discovery and portfolio validation."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": false,
+        "target": "central-review"
+      }
+    },
+    {
+      "finding_id": "PAM-63DBBC71B326",
+      "finding_fingerprint": "PF-D27366EBF074",
+      "repository": "sankarshanmukhopadhyay",
+      "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
+      "subject": "uncefact-portfolio-monitor",
+      "severity": "info",
+      "observed_at": "2026-08-25T07:08:19Z",
+      "claim": "A public account repository has no governed account-level portfolio disposition.",
+      "evidence": {
+        "repository": "uncefact-portfolio-monitor",
+        "html_url": "https://github.com/sankarshanmukhopadhyay/uncefact-portfolio-monitor",
+        "archived": false,
+        "fork": false
+      },
+      "recommended_action": "Review the repository and assign an explicit included, adjacent, upstream-reference, adapted-upstream-work, historical, unrelated, or pending-review disposition. Discovery never auto-enrols a repository.",
+      "dimension": "governance",
+      "remediation": {
+        "objective": "Assign an explicit governed account-level disposition after human review.",
+        "acceptance_criteria": [
+          "The public repository has an explicit portfolio or account disposition.",
+          "Discovery did not automatically enrol or classify the repository."
+        ],
+        "verification": [
+          "Run public-account discovery and portfolio validation."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": false,
+        "target": "central-review"
+      }
+    }
+  ],
+  "lifecycle": [
+    {
+      "finding_fingerprint": "PF-FE9A3049B948",
+      "repository": "sankarshanmukhopadhyay",
+      "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
+      "subject": "toip-portfolio-monitor",
+      "dimension": "governance",
+      "status": "open",
+      "first_observed": "2026-08-25T07:08:19Z",
+      "last_observed": "2026-08-25T07:08:19Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-77D0D742238F"
+    },
+    {
+      "finding_fingerprint": "PF-D27366EBF074",
+      "repository": "sankarshanmukhopadhyay",
+      "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
+      "subject": "uncefact-portfolio-monitor",
+      "dimension": "governance",
+      "status": "open",
+      "first_observed": "2026-08-25T07:08:19Z",
+      "last_observed": "2026-08-25T07:08:19Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-63DBBC71B326"
+    }
+  ],
   "handoff": {
     "authority": "repository-local-governance",
     "intended_use": "Supply this dossier with the affected repository source during remediation planning and implementation.",
