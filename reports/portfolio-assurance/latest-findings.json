@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T13:16:29Z",
+  "generated_at": "2026-08-26T20:03:28Z",
   "findings": [
     {
       "finding_id": "PAM-BDD5049CC645",
@@ -8,7 +8,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "severity": "medium",
-      "observed_at": "2026-08-26T13:16:29Z",
+      "observed_at": "2026-08-26T20:03:28Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -189,7 +189,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/validate.yml",
       "severity": "medium",
-      "observed_at": "2026-08-26T13:16:29Z",
+      "observed_at": "2026-08-26T20:03:28Z",
       "claim": "Required assurance evidence is successful but does not cover the current governed repository state.",
       "evidence": {
         "claim": "toolkit_validation",
@@ -240,7 +240,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/pages.yml",
       "severity": "medium",
-      "observed_at": "2026-08-26T13:16:29Z",
+      "observed_at": "2026-08-26T20:03:28Z",
       "claim": "Required assurance evidence is successful but does not cover the current governed repository state.",
       "evidence": {
         "claim": "publication_integrity",
@@ -288,7 +288,7 @@
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-08-26T13:16:29Z",
+      "observed_at": "2026-08-26T20:03:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -358,7 +358,7 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-08-26T13:16:29Z",
+      "observed_at": "2026-08-26T20:03:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -445,7 +445,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-08-26T13:16:29Z",
+      "observed_at": "2026-08-26T20:03:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -454,7 +454,7 @@
           "archived": false,
           "pushed_at": "2026-08-22T03:40:37Z",
           "updated_at": "2026-08-22T03:34:03Z",
-          "open_issues_count": 0,
+          "open_issues_count": 1,
           "head_sha": "968c7b70af8871395ab44d3fd98bf56d61785988"
         },
         "status_declaration": {
@@ -465,7 +465,7 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 27,
+          "completed_examined": 22,
           "workflows_examined": 3,
           "retired_workflows_examined": 0,
           "unresolved_failures": 0,
@@ -532,7 +532,7 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-08-26T13:16:29Z",
+      "observed_at": "2026-08-26T20:03:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -603,7 +603,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-08-26T13:16:29Z",
+      "observed_at": "2026-08-26T20:03:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -673,7 +673,7 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-08-26T13:16:29Z",
+      "observed_at": "2026-08-26T20:03:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -743,7 +743,7 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-08-26T13:16:29Z",
+      "observed_at": "2026-08-26T20:03:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -861,7 +861,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-08-26T13:16:29Z",
+      "observed_at": "2026-08-26T20:03:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -963,7 +963,7 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-08-26T13:16:29Z",
+      "observed_at": "2026-08-26T20:03:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1067,7 +1067,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-08-26T13:16:29Z",
+      "observed_at": "2026-08-26T20:03:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1219,7 +1219,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-08-26T13:16:29Z",
+      "observed_at": "2026-08-26T20:03:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1228,7 +1228,7 @@
           "archived": false,
           "pushed_at": "2026-08-26T04:20:30Z",
           "updated_at": "2026-08-26T04:21:11Z",
-          "open_issues_count": 13,
+          "open_issues_count": 12,
           "head_sha": "2beebe0f2e19e2862e11d676cdd2baa32b6ec5b5"
         },
         "workflow_runs": {

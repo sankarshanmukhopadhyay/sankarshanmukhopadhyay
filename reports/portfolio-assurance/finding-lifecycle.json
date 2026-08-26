@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-26T13:16:29Z",
+  "generated_at": "2026-08-26T20:03:28Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -118,7 +118,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-21T07:07:22Z",
-      "last_observed": "2026-08-26T13:16:29Z",
+      "last_observed": "2026-08-26T20:03:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-1509B2F77EC6"
     },
@@ -130,7 +130,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-21T07:07:22Z",
-      "last_observed": "2026-08-26T13:16:29Z",
+      "last_observed": "2026-08-26T20:03:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-92FC55EFB386"
     },
@@ -166,7 +166,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-08-26T13:16:29Z",
+      "last_observed": "2026-08-26T20:03:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-BDD5049CC645"
     },

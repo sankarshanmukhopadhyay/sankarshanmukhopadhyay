@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `arf-onramp-pack`
 
-**Generated:** 2026-08-26T13:16:29Z  
+**Generated:** 2026-08-26T20:03:28Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/arf-onramp-pack.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/arf-onramp-pack.json)
