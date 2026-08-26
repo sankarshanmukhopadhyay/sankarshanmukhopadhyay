@@ -1,13 +1,13 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-26T01:57:56Z",
+  "generated_at": "2026-08-26T07:08:08Z",
   "repository": "rahp-toolkit",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-26T01:57:56Z",
+    "observed_at": "2026-08-26T07:08:08Z",
     "default_branch": "main",
-    "head_sha": "be0dd48f0cde8a8d19dd791c8ed52d7b679f50d8",
+    "head_sha": "2beebe0f2e19e2862e11d676cdd2baa32b6ec5b5",
     "provenance_status": "observed"
   },
   "assessment": {
@@ -24,7 +24,7 @@
     "assurance": {
       "status": "evaluated",
       "description": "Repository-specific assurance evidence coverage, execution state, provenance and freshness against governed repository revisions.",
-      "open_findings": 0
+      "open_findings": 2
     },
     "cross_specification": {
       "status": "not-evaluated",
@@ -37,8 +37,110 @@
     "dashboard": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/docs/portfolio-assurance/dashboard.html",
     "latest_report": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/latest.html"
   },
-  "finding_count": 1,
+  "finding_count": 3,
   "findings": [
+    {
+      "finding_id": "PAM-92FC55EFB386",
+      "finding_fingerprint": "PF-237AE4A6472D",
+      "repository": "rahp-toolkit",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/pages.yml",
+      "severity": "medium",
+      "observed_at": "2026-08-26T07:08:08Z",
+      "claim": "Required assurance evidence is successful but does not cover the current governed repository state.",
+      "evidence": {
+        "claim": "publication_integrity",
+        "state": "stale",
+        "reason": "successful evidence does not cover the current default-branch HEAD",
+        "freshness_policy": "current-head",
+        "repository_head_sha": "2beebe0f2e19e2862e11d676cdd2baa32b6ec5b5",
+        "evidence_head_sha": "be0dd48f0cde8a8d19dd791c8ed52d7b679f50d8",
+        "workflow": {
+          "workflow_id": 333196290,
+          "name": "Build and deploy RAHP documentation",
+          "path": ".github/workflows/pages.yml",
+          "conclusion": "success",
+          "status": "completed",
+          "event": "push",
+          "created_at": "2026-08-26T00:13:11Z",
+          "updated_at": "2026-08-26T00:14:11Z",
+          "run_started_at": "2026-08-26T00:13:11Z",
+          "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32914160311",
+          "head_sha": "be0dd48f0cde8a8d19dd791c8ed52d7b679f50d8",
+          "head_branch": "main",
+          "run_number": 183
+        }
+      },
+      "recommended_action": "Regenerate the assurance evidence against the current default-branch HEAD.",
+      "dimension": "assurance",
+      "remediation": {
+        "objective": "Regenerate assurance evidence against the current governed repository revision.",
+        "acceptance_criteria": [
+          "The evidence-producing workflow succeeds against the current default-branch HEAD.",
+          "The evidence HEAD SHA matches the governed repository HEAD SHA."
+        ],
+        "verification": [
+          "Execute the configured control on the current default branch and rerun the monitor."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": true,
+        "target": "target-repository",
+        "minimum_severity": "medium"
+      }
+    },
+    {
+      "finding_id": "PAM-1509B2F77EC6",
+      "finding_fingerprint": "PF-8A31AAA852D1",
+      "repository": "rahp-toolkit",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/validate.yml",
+      "severity": "medium",
+      "observed_at": "2026-08-26T07:08:08Z",
+      "claim": "Required assurance evidence is successful but does not cover the current governed repository state.",
+      "evidence": {
+        "claim": "toolkit_validation",
+        "state": "stale",
+        "reason": "successful evidence does not cover the current default-branch HEAD",
+        "freshness_policy": "current-head",
+        "repository_head_sha": "2beebe0f2e19e2862e11d676cdd2baa32b6ec5b5",
+        "evidence_head_sha": "be0dd48f0cde8a8d19dd791c8ed52d7b679f50d8",
+        "workflow": {
+          "workflow_id": 331522431,
+          "name": "validate",
+          "path": ".github/workflows/validate.yml",
+          "conclusion": "success",
+          "status": "completed",
+          "event": "push",
+          "created_at": "2026-08-26T00:13:11Z",
+          "updated_at": "2026-08-26T00:13:48Z",
+          "run_started_at": "2026-08-26T00:13:11Z",
+          "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32914160322",
+          "head_sha": "be0dd48f0cde8a8d19dd791c8ed52d7b679f50d8",
+          "head_branch": "main",
+          "run_number": 194
+        }
+      },
+      "recommended_action": "Regenerate the assurance evidence against the current default-branch HEAD.",
+      "dimension": "assurance",
+      "remediation": {
+        "objective": "Regenerate assurance evidence against the current governed repository revision.",
+        "acceptance_criteria": [
+          "The evidence-producing workflow succeeds against the current default-branch HEAD.",
+          "The evidence HEAD SHA matches the governed repository HEAD SHA."
+        ],
+        "verification": [
+          "Execute the configured control on the current default branch and rerun the monitor."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": true,
+        "target": "target-repository",
+        "minimum_severity": "medium"
+      }
+    },
     {
       "finding_id": "PAM-BDD5049CC645",
       "finding_fingerprint": "PF-4E123844FBF6",
@@ -46,7 +148,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "severity": "medium",
-      "observed_at": "2026-08-26T01:57:56Z",
+      "observed_at": "2026-08-26T07:08:08Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -78,13 +180,13 @@
             "conclusion": "failure",
             "status": "completed",
             "event": "schedule",
-            "created_at": "2026-08-25T04:19:06Z",
-            "updated_at": "2026-08-25T04:20:07Z",
-            "run_started_at": "2026-08-25T04:19:06Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32808497037",
-            "head_sha": "d0247d827e28ca1ae881962caa55dd0afbb66298",
+            "created_at": "2026-08-26T04:19:34Z",
+            "updated_at": "2026-08-26T04:20:33Z",
+            "run_started_at": "2026-08-26T04:19:34Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32929791994",
+            "head_sha": "be0dd48f0cde8a8d19dd791c8ed52d7b679f50d8",
             "head_branch": "main",
-            "run_number": 12
+            "run_number": 13
           },
           {
             "workflow_id": 333196290,
@@ -172,13 +274,13 @@
             "conclusion": "failure",
             "status": "completed",
             "event": "schedule",
-            "created_at": "2026-08-25T04:19:06Z",
-            "updated_at": "2026-08-25T04:20:07Z",
-            "run_started_at": "2026-08-25T04:19:06Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32808497037",
-            "head_sha": "d0247d827e28ca1ae881962caa55dd0afbb66298",
+            "created_at": "2026-08-26T04:19:34Z",
+            "updated_at": "2026-08-26T04:20:33Z",
+            "run_started_at": "2026-08-26T04:19:34Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/32929791994",
+            "head_sha": "be0dd48f0cde8a8d19dd791c8ed52d7b679f50d8",
             "head_branch": "main",
-            "run_number": 12
+            "run_number": 13
           }
         ],
         "active_inventory_available": true,
@@ -223,6 +325,30 @@
   ],
   "lifecycle": [
     {
+      "finding_fingerprint": "PF-237AE4A6472D",
+      "repository": "rahp-toolkit",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-21T07:07:22Z",
+      "last_observed": "2026-08-26T07:08:08Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-92FC55EFB386"
+    },
+    {
+      "finding_fingerprint": "PF-8A31AAA852D1",
+      "repository": "rahp-toolkit",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/validate.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-21T07:07:22Z",
+      "last_observed": "2026-08-26T07:08:08Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-1509B2F77EC6"
+    },
+    {
       "finding_fingerprint": "PF-4E123844FBF6",
       "repository": "rahp-toolkit",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
@@ -230,7 +356,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-08-26T01:57:56Z",
+      "last_observed": "2026-08-26T07:08:08Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-BDD5049CC645"
     }

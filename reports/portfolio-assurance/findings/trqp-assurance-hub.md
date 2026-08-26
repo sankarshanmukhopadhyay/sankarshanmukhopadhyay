@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `trqp-assurance-hub`
 
-**Generated:** 2026-08-26T01:57:56Z  
+**Generated:** 2026-08-26T07:08:08Z  
 **Open findings:** 0  
 **Repository snapshot:** `99ea493c5a933b47c9f7ec07a8a1b4f55d987364`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.json)

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-26T01:57:56Z",
+  "generated_at": "2026-08-26T07:08:08Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -116,11 +116,11 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/validate.yml",
       "dimension": "assurance",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-08-21T07:07:22Z",
-      "last_observed": "2026-08-25T18:56:28Z",
-      "resolved_at": "2026-08-26T00:22:44Z",
-      "latest_finding_id": "PAM-25C2BC5326BC"
+      "last_observed": "2026-08-26T07:08:08Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-1509B2F77EC6"
     },
     "PF-237AE4A6472D": {
       "finding_fingerprint": "PF-237AE4A6472D",
@@ -128,11 +128,11 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-08-21T07:07:22Z",
-      "last_observed": "2026-08-25T18:56:28Z",
-      "resolved_at": "2026-08-26T00:22:44Z",
-      "latest_finding_id": "PAM-6536D94C6FD0"
+      "last_observed": "2026-08-26T07:08:08Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-92FC55EFB386"
     },
     "PF-9769E5EB9C48": {
       "finding_fingerprint": "PF-9769E5EB9C48",
@@ -166,7 +166,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-08-26T01:57:56Z",
+      "last_observed": "2026-08-26T07:08:08Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-BDD5049CC645"
     },
