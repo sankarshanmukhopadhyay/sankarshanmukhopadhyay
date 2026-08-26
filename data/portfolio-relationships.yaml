@@ -47,11 +47,14 @@ planes:
   - cawg-trqp-verifier-refimpl
   - kiranaos
   - dpi-ai-governance-lab
+  - trust-ecosystem-monitor
+  - uncefact-portfolio-monitor
   conformance-evidence-and-assurance:
   - trqp-conformance-suite
   - trqp-assurance-hub
   - dtg-conformance-assurance
   - rahp-toolkit
+  - dtg-privacy-implementation-profile
   upstream-derived-collaboration:
   - agtp
   - dtgwg-zkp-tf
@@ -61,8 +64,7 @@ relationships:
 - from: open-national-digital-trust-framework
   to: governance-authority-assurance-metamodel
   type: informative-alignment
-  constraint: ONDTF may apply GAAM governance, authority, and assurance concepts without transferring framework or release
-    authority.
+  constraint: ONDTF may apply GAAM governance, authority, and assurance concepts without transferring framework or release authority.
 - from: open-national-digital-trust-framework
   to: trust-systems-meta-model
   type: supports
@@ -78,8 +80,7 @@ relationships:
 - from: trust-infrastructure-schemas
   to: trust-systems-meta-model
   type: normative-dependency
-  constraint: TIS derives canonical semantic meaning from TSMM but retains authority over schema design, identifiers, serialization,
-    validation contracts, and releases.
+  constraint: TIS derives canonical semantic meaning from TSMM but retains authority over schema design, identifiers, serialization, validation contracts, and releases.
   contract:
     semantics: canonical
     serialization: independent
@@ -135,8 +136,7 @@ relationships:
 - from: dtgwg-zkp-tf
   to: trustoverip/dtgwg-zkp-tf
   type: fork-of
-  constraint: The fork retains no upstream governance or release authority; fork-local implementation, risk, deployment, and
-    learning artefacts must preserve explicit upstream attribution.
+  constraint: The fork retains no upstream governance or release authority; fork-local implementation, risk, deployment, and learning artefacts must preserve explicit upstream attribution.
 - from: agtp
   to: nomoticai/agtp
   type: fork-of
@@ -172,18 +172,15 @@ relationships:
 - from: trust-graph-artifacts
   to: trust-systems-meta-model
   type: normative-dependency
-  constraint: TGA packages use TSMM canonical semantics. TGA may incubate candidate concepts but cannot modify or supersede
-    TSMM semantics.
+  constraint: TGA packages use TSMM canonical semantics. TGA may incubate candidate concepts but cannot modify or supersede TSMM semantics.
 - from: trust-graph-artifacts
   to: trust-systems-meta-model
   type: incubates
-  constraint: Stable cross-domain epistemic-governance concepts may be proposed through TSMM governance. Incubation creates
-    no canonical semantic authority.
+  constraint: Stable cross-domain epistemic-governance concepts may be proposed through TSMM governance. Incubation creates no canonical semantic authority.
 - from: PolicyMesh
   to: governance-authority-assurance-metamodel
   type: informative-alignment
-  constraint: PolicyMesh may consume GAAM governance and authority concepts but does not establish external mandate legitimacy
-    or modify GAAM semantics.
+  constraint: PolicyMesh may consume GAAM governance and authority concepts but does not establish external mandate legitimacy or modify GAAM semantics.
 - from: PolicyMesh
   to: trust-systems-meta-model
   type: informative-alignment
@@ -191,33 +188,51 @@ relationships:
 - from: PolicyMesh
   to: trust-protocol-interop-lab
   type: evaluated-by
-  constraint: Interop Lab experiments may test PolicyMesh compositions; experimental results do not confer policy authority
-    or certification.
+  constraint: Interop Lab experiments may test PolicyMesh compositions; experimental results do not confer policy authority or certification.
 - from: dtg-portfolio-monitor
   to: trust-protocol-interop-lab
   type: nominates-review-for
-  constraint: Portfolio change and convergence signals may nominate interoperability questions for human review but cannot
-    automatically admit cases or create interoperability claims.
+  constraint: Portfolio change and convergence signals may nominate interoperability questions for human review but cannot automatically admit cases or create interoperability claims.
 - from: trust-protocol-interop-lab
   to: rahp-toolkit
   type: evaluated-by
-  constraint: Consequential interoperability cases may receive portable RAHP pressure testing; findings do not alter reviewed
-    specifications or governance automatically.
+  constraint: Consequential interoperability cases may receive portable RAHP pressure testing; findings do not alter reviewed specifications or governance automatically.
 - from: rahp-toolkit
   to: dtg-conformance-assurance
   type: supports
-  constraint: RAHP risk, harm, guardrail, and security findings complement conformance evidence and do not substitute for
-    specification conformance testing.
+  constraint: RAHP risk, harm, guardrail, and security findings complement conformance evidence and do not substitute for specification conformance testing.
+- from: rahp-toolkit
+  to: dtg-privacy-implementation-profile
+  type: nominates-review-for
+  constraint: RAHP findings may nominate privacy-sensitive compositions for DPIP evaluation; nomination is not a privacy-conformance result.
+- from: dtg-privacy-implementation-profile
+  to: dtg-conformance-assurance
+  type: produces-evidence-for
+  constraint: DPIP may produce composed-interaction privacy evidence for broader assurance while retaining authority over its privacy invariants, profiles, findings, and evidence semantics.
+- from: dtgwg-zkp-tf
+  to: dtg-privacy-implementation-profile
+  type: evaluated-by
+  constraint: DPIP may evaluate privacy properties of composed interactions using ZKP component behaviour as input evidence; evaluation transfers no normative authority over the ZKP specification.
+- from: trust-ecosystem-monitor
+  to: dtg-portfolio-monitor
+  type: supports
+  constraint: Reusable monitoring infrastructure may support DTG observation while DTG Portfolio Monitor retains authority over its scope, signals, releases, and evidence.
+- from: trust-ecosystem-monitor
+  to: uncefact-portfolio-monitor
+  type: supports
+  constraint: Reusable monitoring infrastructure may support the UN/CEFACT deployment without transferring authority over UN/CEFACT repositories, governance, classifications, or releases.
+- from: uncefact-portfolio-monitor
+  to: trust-ecosystem-monitor
+  type: assurance-feedback-to
+  constraint: Deployment findings may improve reusable monitoring infrastructure but cannot silently change its contracts or governance.
 - from: dtgwg-rahp-tf
   to: trustoverip/dtgwg-rahp-tf
   type: fork-of
-  constraint: The fork retains no upstream governance or release authority; fork-local assurance tooling, pressure tests,
-    security reviews, and adoption guidance must preserve explicit upstream attribution.
+  constraint: The fork retains no upstream governance or release authority; fork-local assurance tooling, pressure tests, security reviews, and adoption guidance must preserve explicit upstream attribution.
 - from: trust-infrastructure-glossary
   to: trust-systems-meta-model
   type: informative-alignment
-  constraint: The glossary may align terminology with TSMM concepts while retaining independent terminology governance and
-    release authority.
+  constraint: The glossary may align terminology with TSMM concepts while retaining independent terminology governance and release authority.
 external_repositories:
 - name: trustoverip/dtgwg-zkp-tf
   kind: upstream
@@ -256,6 +271,15 @@ adoption_paths:
   - cawg-trqp-verifier-refimpl
   - trqp-conformance-suite
   - trqp-assurance-hub
+  dtg-composed-privacy:
+  - dtgwg-zkp-tf
+  - rahp-toolkit
+  - dtg-privacy-implementation-profile
+  - dtg-conformance-assurance
+  ecosystem-observation:
+  - trust-ecosystem-monitor
+  - dtg-portfolio-monitor
+  - uncefact-portfolio-monitor
   national-digital-trust-framework:
     core:
     - open-national-digital-trust-framework

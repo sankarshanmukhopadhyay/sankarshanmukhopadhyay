@@ -12,17 +12,17 @@ The authoritative state is maintained in [`data/repository-status.yaml`](../data
 | Repository | Tier | Maturity | Operational status |
 |---|---|---|---|
 | `sankarshanmukhopadhyay` | Flagship | Stable | Stable maintenance |
-| `open-national-digital-trust-framework` | Flagship | Working draft | Active development |
+| `open-national-digital-trust-framework` | Flagship | Candidate | Active validation |
 | `governance-authority-assurance-metamodel` | Flagship | Candidate | Active validation |
 | `agent-registry-protocol` | Flagship | Pilot ready | Active validation |
 | `trust-systems-meta-model` | Flagship | Candidate | Active validation |
 | `trust-infrastructure-schemas` | Flagship | Candidate | Active validation |
 | `trust-graph-artifacts` | Flagship | Implementation draft | Active development |
 | `rahp-toolkit` | Flagship | Stable | Stable maintenance |
-| `TRQP-TSPP` | Flagship | Candidate | Active validation |
+| `TRQP-TSPP` | Flagship | Implementation draft | Active validation |
 | `cawg-trqp-verifier-refimpl` | Flagship | Pilot ready | Active validation |
-| `trqp-conformance-suite` | Flagship | Pilot ready | Active validation |
-| `trqp-assurance-hub` | Flagship | Pilot ready | Active validation |
+| `trqp-conformance-suite` | Flagship | Implementation draft | Active validation |
+| `trqp-assurance-hub` | Flagship | Candidate | Active validation |
 
 ## Supporting original work
 
@@ -31,6 +31,8 @@ The authoritative state is maintained in [`data/repository-status.yaml`](../data
 | `PolicyMesh` | Supporting | Implementation draft | Policy authority evaluation and enforcement |
 | `trust-protocol-interop-lab` | Supporting | Implementation draft | Cross-protocol interoperability assurance lab |
 | `dtg-portfolio-monitor` | Supporting | Implementation draft | DTG ecosystem situational awareness |
+| `trust-ecosystem-monitor` | Supporting | Implementation draft | Reusable cross-ecosystem monitoring and evidence infrastructure |
+| `dtg-privacy-implementation-profile` | Supporting | Implementation draft | Composed-interaction privacy assurance for DTG |
 | `agent-name-assurance-baseline` | Supporting | Implementation draft | Agent name assurance |
 | `dtg-conformance-assurance` | Supporting | Implementation draft | General conformance and assurance |
 | `trust-infrastructure-glossary` | Supporting | Stable | Independent trust-infrastructure terminology |
@@ -46,6 +48,7 @@ The authoritative state is maintained in [`data/repository-status.yaml`](../data
 | `dpi-ai-governance-artifacts` | Supporting | Implementation draft | Applied governance artefacts |
 | `arf-onramp-pack` | Supporting | Implementation draft | Implementation onramp |
 | `atal-enterprise-assurance-profile` | Supporting | Working draft | Enterprise assurance profile |
+| `uncefact-portfolio-monitor` | Incubating | Implementation draft | UN/CEFACT ecosystem monitoring deployment and portability proof |
 
 ## Adapted upstream work
 

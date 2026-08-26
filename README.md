@@ -13,7 +13,7 @@ I design specifications, protocols, schemas, conformance systems, and reference 
 
 ## Explore the work
 
-**[Trust frameworks](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework)** · **[Governance and authority](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel)** · **[Agent infrastructure](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol)** · **[Policy execution](https://github.com/sankarshanmukhopadhyay/PolicyMesh)** · **[Assurance and RAHP](https://github.com/sankarshanmukhopadhyay/rahp-toolkit)** · **[Terminology](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-glossary)** · **[Portfolio dashboard](docs/portfolio-assurance/dashboard.md)**
+**[Trust frameworks](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework)** · **[Governance and authority](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel)** · **[Agent infrastructure](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol)** · **[Policy execution](https://github.com/sankarshanmukhopadhyay/PolicyMesh)** · **[Assurance and RAHP](https://github.com/sankarshanmukhopadhyay/rahp-toolkit)** · **[Composed privacy assurance](https://github.com/sankarshanmukhopadhyay/dtg-privacy-implementation-profile)** · **[Terminology](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-glossary)** · **[Portfolio dashboard](docs/portfolio-assurance/dashboard.md)**
 
 This profile presents a **curated trust-infrastructure portfolio**, not an exhaustive inventory of every public repository on this GitHub account. Portfolio membership, maturity, lifecycle, provenance, and authority are governed explicitly rather than inferred from repository activity.
 
@@ -28,6 +28,7 @@ This profile presents a **curated trust-infrastructure portfolio**, not an exhau
 | Deploy or evaluate an agent registry | [Agent Registry Protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) |
 | Determine whether an actor is permitted to act under mandate, evidence, policy, and time | [PolicyMesh](https://github.com/sankarshanmukhopadhyay/PolicyMesh) |
 | Pressure-test a specification for harms, security weaknesses, and governance failure modes | [RAHP Toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) |
+| Evaluate whether a composed DTG interaction preserves an asserted privacy property | [DTG Privacy Implementation Profile](https://github.com/sankarshanmukhopadhyay/dtg-privacy-implementation-profile) |
 | Test or assure a trust-registry deployment | [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) |
 
 ## Selected work
@@ -41,14 +42,16 @@ These repositories are representative entry points into the portfolio rather tha
 | Agent infrastructure | [Agent Registry Protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | Protocol, schemas, APIs, conformance tests, and reference artefacts for deployable agent registries |
 | Policy execution | [PolicyMesh](https://github.com/sankarshanmukhopadhyay/PolicyMesh) | Bounded evaluation of policy, mandate, evidence, scope, and time |
 | Assurance | [RAHP Toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | Portable risk, harms, security, and specification-assurance infrastructure |
+| Privacy assurance | [DTG Privacy Implementation Profile](https://github.com/sankarshanmukhopadhyay/dtg-privacy-implementation-profile) | Executable evaluation of privacy claims over composed DTG interactions |
 | Interoperability | [Trust Protocol Interop Lab](https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab) | Composition and seam testing across independently governed protocols |
+| Ecosystem observation | [Trust Ecosystem Monitor](https://github.com/sankarshanmukhopadhyay/trust-ecosystem-monitor) | Reusable observation and evidence infrastructure for standards and trust ecosystems |
 | Terminology | [Trust Infrastructure Glossary](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-glossary) | Independently governed, plain-language terminology for trust infrastructure |
 
 For the complete governed catalogue, maturity and lifecycle state, see **[Portfolio Status](docs/portfolio-status.md)**. For adapted, upstream-reference, adjacent, historical, and superseded work, see the **[Classification Policy](docs/portfolio-classification-policy.md)** and the machine-readable **[`data/repository-status.yaml`](data/repository-status.yaml)**.
 
 ## How the portfolio fits together
 
-The portfolio treats trust infrastructure as a set of separable but composable layers. Authority remains bounded: semantic models do not acquire protocol authority, interoperability experiments do not create adoption claims, and assurance findings do not modify normative content automatically.
+The portfolio treats trust infrastructure as a set of separable but composable layers. Authority remains bounded: semantic models do not acquire protocol authority, interoperability experiments do not create adoption claims, monitoring does not create ecosystem authority, and assurance findings do not modify normative content automatically.
 
 ```mermaid
 flowchart LR
@@ -61,8 +64,11 @@ flowchart LR
     T[Terminology] -. shared language .-> A
     T -. shared language .-> B
     T -. shared language .-> C
+    M[Ecosystem monitoring] -. nominates review .-> I
     I[Interop Lab] -. composition testing .-> C
     I -. evidence .-> E
+    R[RAHP] -. risk and harm review .-> P
+    P[DPIP] -. composed privacy evidence .-> E
 ```
 
 See **[Portfolio Architecture](portfolio/architecture.md)** for the full system view, authority boundaries, relationship semantics, and cross-repository dependencies.
