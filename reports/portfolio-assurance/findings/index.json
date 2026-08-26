@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T18:56:28Z",
+  "generated_at": "2026-08-26T00:22:44Z",
   "repositories": [
     {
       "repository": "A2A",
@@ -142,6 +142,13 @@
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dtg-portfolio-monitor.json"
     },
     {
+      "repository": "dtg-privacy-implementation-profile",
+      "finding_count": 0,
+      "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/dtg-privacy-implementation-profile.html",
+      "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dtg-privacy-implementation-profile.md",
+      "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dtg-privacy-implementation-profile.json"
+    },
+    {
       "repository": "dtgwg-cred-tf",
       "finding_count": 0,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/dtgwg-cred-tf.html",
@@ -185,7 +192,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "finding_count": 3,
+      "finding_count": 1,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/rahp-toolkit.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json"
@@ -199,7 +206,7 @@
     },
     {
       "repository": "sankarshanmukhopadhyay",
-      "finding_count": 3,
+      "finding_count": 0,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.json"
@@ -217,6 +224,13 @@
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trqp-conformance-suite.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.json"
+    },
+    {
+      "repository": "trust-ecosystem-monitor",
+      "finding_count": 0,
+      "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trust-ecosystem-monitor.html",
+      "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-ecosystem-monitor.md",
+      "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-ecosystem-monitor.json"
     },
     {
       "repository": "trust-graph-artifacts",
@@ -259,6 +273,13 @@
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/tswg-trust-registry-protocol.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/tswg-trust-registry-protocol.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/tswg-trust-registry-protocol.json"
+    },
+    {
+      "repository": "uncefact-portfolio-monitor",
+      "finding_count": 0,
+      "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/uncefact-portfolio-monitor.html",
+      "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/uncefact-portfolio-monitor.md",
+      "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/uncefact-portfolio-monitor.json"
     }
   ]
 }

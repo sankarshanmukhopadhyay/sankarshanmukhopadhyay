@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `agent-name-assurance-baseline`
 
-**Generated:** 2026-08-25T18:56:28Z  
+**Generated:** 2026-08-26T00:22:44Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-name-assurance-baseline.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-name-assurance-baseline.json)

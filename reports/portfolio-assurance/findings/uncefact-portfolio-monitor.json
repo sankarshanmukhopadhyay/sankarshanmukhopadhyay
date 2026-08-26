@@ -2,7 +2,7 @@
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
   "generated_at": "2026-08-26T00:22:44Z",
-  "repository": "DHP-Specs",
+  "repository": "uncefact-portfolio-monitor",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
     "observed_at": "2026-08-26T00:22:44Z",

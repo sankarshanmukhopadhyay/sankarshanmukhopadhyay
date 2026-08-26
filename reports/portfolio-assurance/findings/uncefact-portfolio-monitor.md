@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Remediation dossier — dpi-ai-governance-artifacts
+title: Remediation dossier — uncefact-portfolio-monitor
 nav_exclude: true
 search_exclude: true
 ---
 
-# Repository remediation dossier — `dpi-ai-governance-artifacts`
+# Repository remediation dossier — `uncefact-portfolio-monitor`
 
 **Generated:** 2026-08-26T00:22:44Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
-**Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dpi-ai-governance-artifacts.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dpi-ai-governance-artifacts.json)
+**Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/uncefact-portfolio-monitor.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/uncefact-portfolio-monitor.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
 

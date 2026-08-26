@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-25T18:56:28Z",
+  "generated_at": "2026-08-26T00:22:44Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -116,10 +116,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/validate.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-21T07:07:22Z",
       "last_observed": "2026-08-25T18:56:28Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-26T00:22:44Z",
       "latest_finding_id": "PAM-25C2BC5326BC"
     },
     "PF-237AE4A6472D": {
@@ -128,10 +128,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-21T07:07:22Z",
       "last_observed": "2026-08-25T18:56:28Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-26T00:22:44Z",
       "latest_finding_id": "PAM-6536D94C6FD0"
     },
     "PF-9769E5EB9C48": {
@@ -166,9 +166,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-08-25T18:56:28Z",
+      "last_observed": "2026-08-26T00:22:44Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-9B3BD6646F7D"
+      "latest_finding_id": "PAM-BDD5049CC645"
     },
     "PF-FE9A3049B948": {
       "finding_fingerprint": "PF-FE9A3049B948",
@@ -188,10 +188,10 @@
       "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
       "subject": "uncefact-portfolio-monitor",
       "dimension": "governance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-25T07:08:19Z",
       "last_observed": "2026-08-25T18:56:28Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-26T00:22:44Z",
       "latest_finding_id": "PAM-63DBBC71B326"
     },
     "PF-C2F5EB728127": {
@@ -200,10 +200,10 @@
       "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
       "subject": "trust-ecosystem-monitor",
       "dimension": "governance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-25T13:10:58Z",
       "last_observed": "2026-08-25T18:56:28Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-26T00:22:44Z",
       "latest_finding_id": "PAM-C5F2288C46D4"
     },
     "PF-17A4BED96CDC": {
@@ -212,10 +212,10 @@
       "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
       "subject": "dtg-privacy-implementation-profile",
       "dimension": "governance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-25T18:56:28Z",
       "last_observed": "2026-08-25T18:56:28Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-26T00:22:44Z",
       "latest_finding_id": "PAM-59A685033931"
     }
   }
