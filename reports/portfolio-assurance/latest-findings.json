@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T00:22:44Z",
+  "generated_at": "2026-08-26T01:57:56Z",
   "findings": [
     {
       "finding_id": "PAM-BDD5049CC645",
@@ -8,7 +8,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "severity": "medium",
-      "observed_at": "2026-08-26T00:22:44Z",
+      "observed_at": "2026-08-26T01:57:56Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -186,7 +186,7 @@
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-08-26T00:22:44Z",
+      "observed_at": "2026-08-26T01:57:56Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -256,7 +256,7 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-08-26T00:22:44Z",
+      "observed_at": "2026-08-26T01:57:56Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -343,7 +343,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-08-26T00:22:44Z",
+      "observed_at": "2026-08-26T01:57:56Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -430,7 +430,7 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-08-26T00:22:44Z",
+      "observed_at": "2026-08-26T01:57:56Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -501,7 +501,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-08-26T00:22:44Z",
+      "observed_at": "2026-08-26T01:57:56Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -571,17 +571,17 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-08-26T00:22:44Z",
+      "observed_at": "2026-08-26T01:57:56Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-08-22T03:34:40Z",
-          "updated_at": "2026-08-22T03:32:47Z",
+          "pushed_at": "2026-08-26T00:26:59Z",
+          "updated_at": "2026-08-26T00:27:31Z",
           "open_issues_count": 0,
-          "head_sha": "070c9ae5974a5a0ef46d3122d4c199a146f74b6c"
+          "head_sha": "6a9c8c93b4748b06d9c421eb45c045edd93f3e5e"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -591,7 +591,7 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 28,
+          "completed_examined": 30,
           "workflows_examined": 2,
           "retired_workflows_examined": 0,
           "unresolved_failures": 0,
@@ -603,13 +603,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-08-22T03:32:38Z",
-              "updated_at": "2026-08-22T03:33:47Z",
-              "run_started_at": "2026-08-22T03:32:38Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/32549265397",
-              "head_sha": "070c9ae5974a5a0ef46d3122d4c199a146f74b6c",
+              "created_at": "2026-08-26T00:27:02Z",
+              "updated_at": "2026-08-26T00:28:21Z",
+              "run_started_at": "2026-08-26T00:27:02Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/32915131437",
+              "head_sha": "6a9c8c93b4748b06d9c421eb45c045edd93f3e5e",
               "head_branch": "main",
-              "run_number": 23
+              "run_number": 24
             },
             {
               "workflow_id": 259914534,
@@ -618,13 +618,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-08-22T03:32:38Z",
-              "updated_at": "2026-08-22T03:32:52Z",
-              "run_started_at": "2026-08-22T03:32:38Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/32549265404",
-              "head_sha": "070c9ae5974a5a0ef46d3122d4c199a146f74b6c",
+              "created_at": "2026-08-26T00:27:02Z",
+              "updated_at": "2026-08-26T00:27:16Z",
+              "run_started_at": "2026-08-26T00:27:02Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/32915131464",
+              "head_sha": "6a9c8c93b4748b06d9c421eb45c045edd93f3e5e",
               "head_branch": "main",
-              "run_number": 56
+              "run_number": 58
             }
           ],
           "retired": [],
@@ -641,7 +641,7 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-08-26T00:22:44Z",
+      "observed_at": "2026-08-26T01:57:56Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -759,7 +759,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-08-26T00:22:44Z",
+      "observed_at": "2026-08-26T01:57:56Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -861,7 +861,7 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-08-26T00:22:44Z",
+      "observed_at": "2026-08-26T01:57:56Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -965,7 +965,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-08-26T00:22:44Z",
+      "observed_at": "2026-08-26T01:57:56Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1117,7 +1117,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-08-26T00:22:44Z",
+      "observed_at": "2026-08-26T01:57:56Z",
       "available": true,
       "evidence": {
         "repository": {

@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-26T00:22:44Z",
+  "generated_at": "2026-08-26T01:57:56Z",
   "repository": "rahp-toolkit",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-26T00:22:44Z",
+    "observed_at": "2026-08-26T01:57:56Z",
     "default_branch": "main",
     "head_sha": "be0dd48f0cde8a8d19dd791c8ed52d7b679f50d8",
     "provenance_status": "observed"
@@ -46,7 +46,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "severity": "medium",
-      "observed_at": "2026-08-26T00:22:44Z",
+      "observed_at": "2026-08-26T01:57:56Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -230,7 +230,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-08-26T00:22:44Z",
+      "last_observed": "2026-08-26T01:57:56Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-BDD5049CC645"
     }

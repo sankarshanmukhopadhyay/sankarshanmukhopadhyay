@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-08-26T00:22:44Z  
+**Generated:** 2026-08-26T01:57:56Z  
 **Open findings:** 1  
 **Repository snapshot:** `be0dd48f0cde8a8d19dd791c8ed52d7b679f50d8`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-4E123844FBF6 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-BDD5049CC645` at `2026-08-26T00:22:44Z`
+- Observation: `PAM-BDD5049CC645` at `2026-08-26T01:57:56Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/instance-watch.yml`
