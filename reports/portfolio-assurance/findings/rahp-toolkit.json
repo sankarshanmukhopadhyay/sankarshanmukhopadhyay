@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-26T07:08:08Z",
+  "generated_at": "2026-08-26T13:16:29Z",
   "repository": "rahp-toolkit",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-26T07:08:08Z",
+    "observed_at": "2026-08-26T13:16:29Z",
     "default_branch": "main",
     "head_sha": "2beebe0f2e19e2862e11d676cdd2baa32b6ec5b5",
     "provenance_status": "observed"
@@ -46,7 +46,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/pages.yml",
       "severity": "medium",
-      "observed_at": "2026-08-26T07:08:08Z",
+      "observed_at": "2026-08-26T13:16:29Z",
       "claim": "Required assurance evidence is successful but does not cover the current governed repository state.",
       "evidence": {
         "claim": "publication_integrity",
@@ -97,7 +97,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/validate.yml",
       "severity": "medium",
-      "observed_at": "2026-08-26T07:08:08Z",
+      "observed_at": "2026-08-26T13:16:29Z",
       "claim": "Required assurance evidence is successful but does not cover the current governed repository state.",
       "evidence": {
         "claim": "toolkit_validation",
@@ -148,7 +148,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "severity": "medium",
-      "observed_at": "2026-08-26T07:08:08Z",
+      "observed_at": "2026-08-26T13:16:29Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -332,7 +332,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-21T07:07:22Z",
-      "last_observed": "2026-08-26T07:08:08Z",
+      "last_observed": "2026-08-26T13:16:29Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-92FC55EFB386"
     },
@@ -344,7 +344,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-21T07:07:22Z",
-      "last_observed": "2026-08-26T07:08:08Z",
+      "last_observed": "2026-08-26T13:16:29Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-1509B2F77EC6"
     },
@@ -356,7 +356,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-08-26T07:08:08Z",
+      "last_observed": "2026-08-26T13:16:29Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-BDD5049CC645"
     }
