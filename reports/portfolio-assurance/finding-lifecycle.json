@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-26T20:03:28Z",
+  "generated_at": "2026-08-27T09:46:58Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -116,10 +116,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/validate.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-21T07:07:22Z",
       "last_observed": "2026-08-26T20:03:28Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-27T09:46:58Z",
       "latest_finding_id": "PAM-1509B2F77EC6"
     },
     "PF-237AE4A6472D": {
@@ -128,10 +128,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-21T07:07:22Z",
       "last_observed": "2026-08-26T20:03:28Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-27T09:46:58Z",
       "latest_finding_id": "PAM-92FC55EFB386"
     },
     "PF-9769E5EB9C48": {
@@ -140,11 +140,11 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "dimension": "assurance",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-08-24T01:57:24Z",
-      "resolved_at": "2026-08-24T07:19:56Z",
-      "latest_finding_id": "PAM-9B1F9EEF070C"
+      "last_observed": "2026-08-27T09:46:58Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-E6EE174525BB"
     },
     "PF-954D1C442655": {
       "finding_fingerprint": "PF-954D1C442655",
@@ -164,10 +164,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-25T07:08:19Z",
       "last_observed": "2026-08-26T20:03:28Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-27T09:46:58Z",
       "latest_finding_id": "PAM-BDD5049CC645"
     },
     "PF-FE9A3049B948": {
@@ -217,6 +217,18 @@
       "last_observed": "2026-08-25T18:56:28Z",
       "resolved_at": "2026-08-26T00:22:44Z",
       "latest_finding_id": "PAM-59A685033931"
+    },
+    "PF-40DA3BA7712C": {
+      "finding_fingerprint": "PF-40DA3BA7712C",
+      "repository": "rahp-toolkit",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": ".github/workflows/dtg-repository-review-worker.yml",
+      "dimension": "operational",
+      "status": "open",
+      "first_observed": "2026-08-27T09:46:58Z",
+      "last_observed": "2026-08-27T09:46:58Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-C15D3A94CA9B"
     }
   }
 }
