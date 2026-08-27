@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-27T09:46:58Z",
+  "generated_at": "2026-08-27T22:15:16Z",
   "repository": "dpi-ai-governance-lab",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-27T09:46:58Z",
+    "observed_at": "2026-08-27T22:15:16Z",
     "default_branch": null,
     "head_sha": null,
     "provenance_status": "unavailable"

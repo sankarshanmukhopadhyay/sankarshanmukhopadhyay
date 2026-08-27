@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-27T09:46:58Z",
+  "generated_at": "2026-08-27T22:15:16Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -142,7 +142,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-08-27T09:46:58Z",
+      "last_observed": "2026-08-27T22:15:16Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-E6EE174525BB"
     },
@@ -224,11 +224,71 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/dtg-repository-review-worker.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-27T09:46:58Z",
       "last_observed": "2026-08-27T09:46:58Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-27T22:15:16Z",
       "latest_finding_id": "PAM-C15D3A94CA9B"
+    },
+    "PF-EE7FADD90617": {
+      "finding_fingerprint": "PF-EE7FADD90617",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/quality.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-27T22:15:16Z",
+      "last_observed": "2026-08-27T22:15:16Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-EAE99E5C2075"
+    },
+    "PF-7AB5F3D457EE": {
+      "finding_fingerprint": "PF-7AB5F3D457EE",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-27T22:15:16Z",
+      "last_observed": "2026-08-27T22:15:16Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-97AB7F8855B0"
+    },
+    "PF-61F501F7DBEF": {
+      "finding_fingerprint": "PF-61F501F7DBEF",
+      "repository": "governance-authority-assurance-metamodel",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/validate.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-27T22:15:16Z",
+      "last_observed": "2026-08-27T22:15:16Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-0B84F5DA797A"
+    },
+    "PF-38863D0F6C2C": {
+      "finding_fingerprint": "PF-38863D0F6C2C",
+      "repository": "trust-infrastructure-schemas",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/validate-schemas.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-27T22:15:16Z",
+      "last_observed": "2026-08-27T22:15:16Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-E1CEE1D0699D"
+    },
+    "PF-67C44D44EC73": {
+      "finding_fingerprint": "PF-67C44D44EC73",
+      "repository": "trust-infrastructure-schemas",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-27T22:15:16Z",
+      "last_observed": "2026-08-27T22:15:16Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-1124F32A5564"
     }
   }
 }

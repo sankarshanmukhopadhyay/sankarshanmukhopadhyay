@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-27T09:46:58Z",
+  "generated_at": "2026-08-27T22:15:16Z",
   "repository": "open-national-digital-trust-framework",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-27T09:46:58Z",
+    "observed_at": "2026-08-27T22:15:16Z",
     "default_branch": "main",
     "head_sha": "9dcd9af8fe5d1818fa7da94b55dc3b22a7fe5661",
     "provenance_status": "observed"
@@ -24,7 +24,7 @@
     "assurance": {
       "status": "evaluated",
       "description": "Repository-specific assurance evidence coverage, execution state, provenance and freshness against governed repository revisions.",
-      "open_findings": 0
+      "open_findings": 2
     },
     "cross_specification": {
       "status": "not-evaluated",
@@ -37,9 +37,109 @@
     "dashboard": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/docs/portfolio-assurance/dashboard.html",
     "latest_report": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/latest.html"
   },
-  "finding_count": 0,
-  "findings": [],
-  "lifecycle": [],
+  "finding_count": 2,
+  "findings": [
+    {
+      "finding_id": "PAM-97AB7F8855B0",
+      "finding_fingerprint": "PF-7AB5F3D457EE",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/pages.yml",
+      "severity": "high",
+      "observed_at": "2026-08-27T22:15:16Z",
+      "claim": "Required assurance evidence was not observed inside the governed evidence window.",
+      "evidence": {
+        "claim": "publication_integrity",
+        "state": "missing",
+        "reason": "no completed workflow execution was observed inside the governed lookback window",
+        "freshness_policy": "current-head",
+        "repository_head_sha": null,
+        "evidence_head_sha": null,
+        "workflow": null
+      },
+      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
+      "dimension": "assurance",
+      "remediation": {
+        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
+        "acceptance_criteria": [
+          "The required evidence is observable inside the governed lookback window.",
+          "The evidence is attributable to the configured repository-native control."
+        ],
+        "verification": [
+          "Execute the required repository-native control and rerun the portfolio monitor."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": true,
+        "target": "target-repository",
+        "minimum_severity": "medium"
+      }
+    },
+    {
+      "finding_id": "PAM-EAE99E5C2075",
+      "finding_fingerprint": "PF-EE7FADD90617",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/quality.yml",
+      "severity": "high",
+      "observed_at": "2026-08-27T22:15:16Z",
+      "claim": "Required assurance evidence was not observed inside the governed evidence window.",
+      "evidence": {
+        "claim": "specification_quality",
+        "state": "missing",
+        "reason": "no completed workflow execution was observed inside the governed lookback window",
+        "freshness_policy": "current-head",
+        "repository_head_sha": null,
+        "evidence_head_sha": null,
+        "workflow": null
+      },
+      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
+      "dimension": "assurance",
+      "remediation": {
+        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
+        "acceptance_criteria": [
+          "The required evidence is observable inside the governed lookback window.",
+          "The evidence is attributable to the configured repository-native control."
+        ],
+        "verification": [
+          "Execute the required repository-native control and rerun the portfolio monitor."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": true,
+        "target": "target-repository",
+        "minimum_severity": "medium"
+      }
+    }
+  ],
+  "lifecycle": [
+    {
+      "finding_fingerprint": "PF-7AB5F3D457EE",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-27T22:15:16Z",
+      "last_observed": "2026-08-27T22:15:16Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-97AB7F8855B0"
+    },
+    {
+      "finding_fingerprint": "PF-EE7FADD90617",
+      "repository": "open-national-digital-trust-framework",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/quality.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-27T22:15:16Z",
+      "last_observed": "2026-08-27T22:15:16Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-EAE99E5C2075"
+    }
+  ],
   "handoff": {
     "authority": "repository-local-governance",
     "intended_use": "Supply this dossier with the affected repository source during remediation planning and implementation.",

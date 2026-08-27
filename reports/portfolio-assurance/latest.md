@@ -7,9 +7,9 @@ search_exclude: true
 
 # Portfolio Assurance Report — 2026-08-27
 
-**Observed:** 2026-08-27T09:46:58Z  
+**Observed:** 2026-08-27T22:15:16Z  
 **Scope:** 11 flagship original repositories  
-**Open findings:** 2  
+**Open findings:** 6  
 **Unclassified public repositories:** 0
 
 > This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.
@@ -18,9 +18,9 @@ search_exclude: true
 
 | Dimension | State | Open findings |
 |---|---|---:|
-| Operational | `evaluated` | 1 |
+| Operational | `evaluated` | 0 |
 | Governance | `evaluated` | 0 |
-| Assurance | `evaluated` | 1 |
+| Assurance | `evaluated` | 6 |
 | Cross Specification | `not-evaluated` | 0 |
 
 > `evaluated` means only that the configured rules for that dimension ran against observable evidence. `not-evaluated` is explicit and must not be interpreted as green or assured.
@@ -29,21 +29,54 @@ search_exclude: true
 
 | Repository | Availability | Status declaration | Workflow evidence | Remediation dossier |
 |---|---:|---:|---:|---|
-| [open-national-digital-trust-framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/open-national-digital-trust-framework.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.json) |
-| [governance-authority-assurance-metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.json) |
+| [open-national-digital-trust-framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework) | available | valid | 0 unresolved | [2 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/open-national-digital-trust-framework.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.json) |
+| [governance-authority-assurance-metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | available | valid | 0 unresolved | [1 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.json) |
 | [agent-registry-protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/agent-registry-protocol.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-registry-protocol.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-registry-protocol.json) |
 | [trust-systems-meta-model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trust-systems-meta-model.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-systems-meta-model.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-systems-meta-model.json) |
-| [trust-infrastructure-schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trust-infrastructure-schemas.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.json) |
+| [trust-infrastructure-schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | available | valid | 0 unresolved | [2 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trust-infrastructure-schemas.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.json) |
 | [trust-graph-artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trust-graph-artifacts.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.json) |
 | [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/TRQP-TSPP.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.json) |
 | [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json) |
 | [trqp-conformance-suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trqp-conformance-suite.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.json) |
 | [trqp-assurance-hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trqp-assurance-hub.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.json) |
-| [rahp-toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | available | n/a | 1 unresolved | [2 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/rahp-toolkit.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json) |
+| [rahp-toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | available | n/a | 0 unresolved | [1 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/rahp-toolkit.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json) |
 
 ## Findings
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
+
+### PAM-0B84F5DA797A: governance-authority-assurance-metamodel
+
+- **Fingerprint:** `PF-61F501F7DBEF`
+- **Rule:** `ASSURANCE_EVIDENCE_MISSING`
+- **Subject:** `.github/workflows/validate.yml`
+- **Severity:** `high`
+- **Claim:** Required assurance evidence was not observed inside the governed evidence window.
+- **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
+- **Issue routing:** `target-repository`
+- **Automatic effect:** `none`
+
+### PAM-97AB7F8855B0: open-national-digital-trust-framework
+
+- **Fingerprint:** `PF-7AB5F3D457EE`
+- **Rule:** `ASSURANCE_EVIDENCE_MISSING`
+- **Subject:** `.github/workflows/pages.yml`
+- **Severity:** `high`
+- **Claim:** Required assurance evidence was not observed inside the governed evidence window.
+- **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
+- **Issue routing:** `target-repository`
+- **Automatic effect:** `none`
+
+### PAM-EAE99E5C2075: open-national-digital-trust-framework
+
+- **Fingerprint:** `PF-EE7FADD90617`
+- **Rule:** `ASSURANCE_EVIDENCE_MISSING`
+- **Subject:** `.github/workflows/quality.yml`
+- **Severity:** `high`
+- **Claim:** Required assurance evidence was not observed inside the governed evidence window.
+- **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
+- **Issue routing:** `target-repository`
+- **Automatic effect:** `none`
 
 ### PAM-E6EE174525BB: rahp-toolkit
 
@@ -56,14 +89,25 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-C15D3A94CA9B: rahp-toolkit
+### PAM-1124F32A5564: trust-infrastructure-schemas
 
-- **Fingerprint:** `PF-40DA3BA7712C`
-- **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
-- **Subject:** `.github/workflows/dtg-repository-review-worker.yml`
-- **Severity:** `medium`
-- **Claim:** The latest completed default-branch run for this workflow is failing within the governed observation window.
-- **Recommended action:** Review the failed workflow, restore a successful default-branch run, or record an explicit accepted-risk disposition.
+- **Fingerprint:** `PF-67C44D44EC73`
+- **Rule:** `ASSURANCE_EVIDENCE_MISSING`
+- **Subject:** `.github/workflows/pages.yml`
+- **Severity:** `high`
+- **Claim:** Required assurance evidence was not observed inside the governed evidence window.
+- **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
+- **Issue routing:** `target-repository`
+- **Automatic effect:** `none`
+
+### PAM-E1CEE1D0699D: trust-infrastructure-schemas
+
+- **Fingerprint:** `PF-38863D0F6C2C`
+- **Rule:** `ASSURANCE_EVIDENCE_MISSING`
+- **Subject:** `.github/workflows/validate-schemas.yml`
+- **Severity:** `high`
+- **Claim:** Required assurance evidence was not observed inside the governed evidence window.
+- **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
@@ -73,11 +117,11 @@ The assurance state below is calculated from repository-specific evidence contra
 
 | Repository | Profile | Assurance state | Required claims | Evidence coverage |
 |---|---|---|---:|---:|
-| [open-national-digital-trust-framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework) | `specification` | **satisfied** | 2 | 2/2 |
-| ↳ `specification_quality` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
-| ↳ `publication_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
-| [governance-authority-assurance-metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | `governance-model` | **satisfied** | 2 | 2/2 |
-| ↳ `model_validation` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
+| [open-national-digital-trust-framework](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework) | `specification` | **missing** | 2 | 0/2 |
+| ↳ `specification_quality` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
+| ↳ `publication_integrity` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
+| [governance-authority-assurance-metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) | `governance-model` | **missing** | 2 | 1/2 |
+| ↳ `model_validation` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
 | ↳ `publication_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 | [agent-registry-protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | `protocol-specification` | **satisfied** | 2 | 2/2 |
 | ↳ `protocol_validation` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
@@ -86,9 +130,9 @@ The assurance state below is calculated from repository-specific evidence contra
 | [trust-systems-meta-model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | `semantic-model` | **satisfied** | 2 | 2/2 |
 | ↳ `model_validation` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 | ↳ `publication_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
-| [trust-infrastructure-schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | `schema-library` | **satisfied** | 2 | 2/2 |
-| ↳ `schema_validation` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
-| ↳ `publication_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
+| [trust-infrastructure-schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | `schema-library` | **missing** | 2 | 0/2 |
+| ↳ `schema_validation` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
+| ↳ `publication_integrity` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
 | [trust-graph-artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | `executable-governance-incubator` | **satisfied** | 2 | 2/2 |
 | ↳ `native_model_validation` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 | ↳ `publication_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
