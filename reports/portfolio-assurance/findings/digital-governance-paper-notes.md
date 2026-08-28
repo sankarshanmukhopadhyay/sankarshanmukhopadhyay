@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `digital-governance-paper-notes`
 
-**Generated:** 2026-08-27T22:15:16Z  
+**Generated:** 2026-08-28T11:22:17Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/digital-governance-paper-notes.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/digital-governance-paper-notes.json)

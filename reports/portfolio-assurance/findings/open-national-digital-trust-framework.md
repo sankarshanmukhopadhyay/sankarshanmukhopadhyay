@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `open-national-digital-trust-framework`
 
-**Generated:** 2026-08-27T22:15:16Z  
+**Generated:** 2026-08-28T11:22:17Z  
 **Open findings:** 2  
 **Repository snapshot:** `9dcd9af8fe5d1818fa7da94b55dc3b22a7fe5661`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-7AB5F3D457EE — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-97AB7F8855B0` at `2026-08-27T22:15:16Z`
+- Observation: `PAM-F7BAC65DE76F` at `2026-08-28T11:22:17Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
@@ -64,7 +64,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-EE7FADD90617 — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-EAE99E5C2075` at `2026-08-27T22:15:16Z`
+- Observation: `PAM-C503F792AFED` at `2026-08-28T11:22:17Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/quality.yml`

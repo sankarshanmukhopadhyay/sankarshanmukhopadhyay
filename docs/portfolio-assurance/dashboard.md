@@ -7,7 +7,7 @@ nav_order: 1
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-08-27T22:15:16Z  
+**Observed:** 2026-08-28T11:22:17Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 6  
 **Unclassified public repositories:** 0
@@ -45,7 +45,7 @@ nav_order: 1
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-0B84F5DA797A: governance-authority-assurance-metamodel
+### PAM-0CCFD5BF2D4F: governance-authority-assurance-metamodel
 
 - **Fingerprint:** `PF-61F501F7DBEF`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -56,7 +56,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-97AB7F8855B0: open-national-digital-trust-framework
+### PAM-F7BAC65DE76F: open-national-digital-trust-framework
 
 - **Fingerprint:** `PF-7AB5F3D457EE`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -67,7 +67,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-EAE99E5C2075: open-national-digital-trust-framework
+### PAM-C503F792AFED: open-national-digital-trust-framework
 
 - **Fingerprint:** `PF-EE7FADD90617`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -78,7 +78,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-E6EE174525BB: rahp-toolkit
+### PAM-D3786F77F024: rahp-toolkit
 
 - **Fingerprint:** `PF-9769E5EB9C48`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -89,7 +89,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-1124F32A5564: trust-infrastructure-schemas
+### PAM-EF4EF1F007AE: trust-infrastructure-schemas
 
 - **Fingerprint:** `PF-67C44D44EC73`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -100,7 +100,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-E1CEE1D0699D: trust-infrastructure-schemas
+### PAM-BA1525B0B5A1: trust-infrastructure-schemas
 
 - **Fingerprint:** `PF-38863D0F6C2C`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`

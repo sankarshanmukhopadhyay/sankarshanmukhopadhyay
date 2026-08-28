@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `governance-authority-assurance-metamodel`
 
-**Generated:** 2026-08-27T22:15:16Z  
+**Generated:** 2026-08-28T11:22:17Z  
 **Open findings:** 1  
 **Repository snapshot:** `0b1653efcf27d8ab7da90c9dbc222839f79b444d`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-61F501F7DBEF — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-0B84F5DA797A` at `2026-08-27T22:15:16Z`
+- Observation: `PAM-0CCFD5BF2D4F` at `2026-08-28T11:22:17Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/validate.yml`
