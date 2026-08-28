@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-28T11:22:17Z",
+  "generated_at": "2026-08-28T22:18:50Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -142,7 +142,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-08-28T11:22:17Z",
+      "last_observed": "2026-08-28T22:18:50Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-D3786F77F024"
     },
@@ -238,7 +238,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-27T22:15:16Z",
-      "last_observed": "2026-08-28T11:22:17Z",
+      "last_observed": "2026-08-28T22:18:50Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-C503F792AFED"
     },
@@ -250,7 +250,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-27T22:15:16Z",
-      "last_observed": "2026-08-28T11:22:17Z",
+      "last_observed": "2026-08-28T22:18:50Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-F7BAC65DE76F"
     },
@@ -262,7 +262,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-27T22:15:16Z",
-      "last_observed": "2026-08-28T11:22:17Z",
+      "last_observed": "2026-08-28T22:18:50Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-0CCFD5BF2D4F"
     },
@@ -274,7 +274,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-27T22:15:16Z",
-      "last_observed": "2026-08-28T11:22:17Z",
+      "last_observed": "2026-08-28T22:18:50Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-BA1525B0B5A1"
     },
@@ -286,9 +286,33 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-27T22:15:16Z",
-      "last_observed": "2026-08-28T11:22:17Z",
+      "last_observed": "2026-08-28T22:18:50Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-EF4EF1F007AE"
+    },
+    "PF-5D9AA2B3D63F": {
+      "finding_fingerprint": "PF-5D9AA2B3D63F",
+      "repository": "cawg-trqp-verifier-refimpl",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/ci.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-28T22:18:50Z",
+      "last_observed": "2026-08-28T22:18:50Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-E4659E672C1E"
+    },
+    "PF-D930ABA3415C": {
+      "finding_fingerprint": "PF-D930ABA3415C",
+      "repository": "cawg-trqp-verifier-refimpl",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-08-28T22:18:50Z",
+      "last_observed": "2026-08-28T22:18:50Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-D3BA837D9BA8"
     }
   }
 }

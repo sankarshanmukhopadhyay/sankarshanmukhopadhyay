@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-28T11:22:17Z",
+  "generated_at": "2026-08-28T22:18:50Z",
   "repository": "trust-infrastructure-schemas",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-28T11:22:17Z",
+    "observed_at": "2026-08-28T22:18:50Z",
     "default_branch": "main",
     "head_sha": "bc6fb1a339fd8e8c3469f9e0bd999efdd6726412",
     "provenance_status": "observed"
@@ -46,7 +46,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-08-28T11:22:17Z",
+      "observed_at": "2026-08-28T22:18:50Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "publication_integrity",
@@ -83,7 +83,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/validate-schemas.yml",
       "severity": "high",
-      "observed_at": "2026-08-28T11:22:17Z",
+      "observed_at": "2026-08-28T22:18:50Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "schema_validation",
@@ -123,7 +123,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-27T22:15:16Z",
-      "last_observed": "2026-08-28T11:22:17Z",
+      "last_observed": "2026-08-28T22:18:50Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-EF4EF1F007AE"
     },
@@ -135,7 +135,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-27T22:15:16Z",
-      "last_observed": "2026-08-28T11:22:17Z",
+      "last_observed": "2026-08-28T22:18:50Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-BA1525B0B5A1"
     }

@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `trust-infrastructure-schemas`
 
-**Generated:** 2026-08-28T11:22:17Z  
+**Generated:** 2026-08-28T22:18:50Z  
 **Open findings:** 2  
 **Repository snapshot:** `bc6fb1a339fd8e8c3469f9e0bd999efdd6726412`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-67C44D44EC73 — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-EF4EF1F007AE` at `2026-08-28T11:22:17Z`
+- Observation: `PAM-EF4EF1F007AE` at `2026-08-28T22:18:50Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
@@ -64,7 +64,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-38863D0F6C2C — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-BA1525B0B5A1` at `2026-08-28T11:22:17Z`
+- Observation: `PAM-BA1525B0B5A1` at `2026-08-28T22:18:50Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/validate-schemas.yml`

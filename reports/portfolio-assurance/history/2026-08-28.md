@@ -7,9 +7,9 @@ search_exclude: true
 
 # Portfolio Assurance Report — 2026-08-28
 
-**Observed:** 2026-08-28T11:22:17Z  
+**Observed:** 2026-08-28T22:18:50Z  
 **Scope:** 11 flagship original repositories  
-**Open findings:** 6  
+**Open findings:** 8  
 **Unclassified public repositories:** 0
 
 > This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.
@@ -20,7 +20,7 @@ search_exclude: true
 |---|---|---:|
 | Operational | `evaluated` | 0 |
 | Governance | `evaluated` | 0 |
-| Assurance | `evaluated` | 6 |
+| Assurance | `evaluated` | 8 |
 | Cross Specification | `not-evaluated` | 0 |
 
 > `evaluated` means only that the configured rules for that dimension ran against observable evidence. `not-evaluated` is explicit and must not be interpreted as green or assured.
@@ -36,7 +36,7 @@ search_exclude: true
 | [trust-infrastructure-schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | available | valid | 0 unresolved | [2 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trust-infrastructure-schemas.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.json) |
 | [trust-graph-artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trust-graph-artifacts.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.json) |
 | [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/TRQP-TSPP.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.json) |
-| [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json) |
+| [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | available | valid | 0 unresolved | [2 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json) |
 | [trqp-conformance-suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trqp-conformance-suite.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.json) |
 | [trqp-assurance-hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trqp-assurance-hub.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.json) |
 | [rahp-toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | available | n/a | 0 unresolved | [1 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/rahp-toolkit.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json) |
@@ -44,6 +44,28 @@ search_exclude: true
 ## Findings
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
+
+### PAM-E4659E672C1E: cawg-trqp-verifier-refimpl
+
+- **Fingerprint:** `PF-5D9AA2B3D63F`
+- **Rule:** `ASSURANCE_EVIDENCE_MISSING`
+- **Subject:** `.github/workflows/ci.yml`
+- **Severity:** `high`
+- **Claim:** Required assurance evidence was not observed inside the governed evidence window.
+- **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
+- **Issue routing:** `target-repository`
+- **Automatic effect:** `none`
+
+### PAM-D3BA837D9BA8: cawg-trqp-verifier-refimpl
+
+- **Fingerprint:** `PF-D930ABA3415C`
+- **Rule:** `ASSURANCE_EVIDENCE_MISSING`
+- **Subject:** `.github/workflows/pages.yml`
+- **Severity:** `high`
+- **Claim:** Required assurance evidence was not observed inside the governed evidence window.
+- **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
+- **Issue routing:** `target-repository`
+- **Automatic effect:** `none`
 
 ### PAM-0CCFD5BF2D4F: governance-authority-assurance-metamodel
 
@@ -140,9 +162,9 @@ The assurance state below is calculated from repository-specific evidence contra
 | ↳ `profile_validation` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 | ↳ `portfolio_contract` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 | ↳ `publication_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
-| [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | `reference-implementation` | **satisfied** | 2 | 2/2 |
-| ↳ `implementation_validation` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
-| ↳ `publication_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
+| [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | `reference-implementation` | **missing** | 2 | 0/2 |
+| ↳ `implementation_validation` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
+| ↳ `publication_integrity` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
 | ↳ `package_publication` | optional | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
 | [trqp-conformance-suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | `conformance-suite` | **satisfied** | 3 | 3/3 |
 | ↳ `conformance_suite` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
