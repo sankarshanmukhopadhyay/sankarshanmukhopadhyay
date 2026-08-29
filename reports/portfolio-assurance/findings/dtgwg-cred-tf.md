@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `dtgwg-cred-tf`
 
-**Generated:** 2026-08-28T22:18:50Z  
+**Generated:** 2026-08-29T07:03:49Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dtgwg-cred-tf.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dtgwg-cred-tf.json)

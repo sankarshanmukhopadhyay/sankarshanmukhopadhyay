@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-28T22:18:50Z",
+  "generated_at": "2026-08-29T07:03:49Z",
   "repository": "governance-authority-assurance-metamodel",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-28T22:18:50Z",
+    "observed_at": "2026-08-29T07:03:49Z",
     "default_branch": "main",
     "head_sha": "0b1653efcf27d8ab7da90c9dbc222839f79b444d",
     "provenance_status": "observed"
@@ -40,13 +40,13 @@
   "finding_count": 1,
   "findings": [
     {
-      "finding_id": "PAM-0CCFD5BF2D4F",
+      "finding_id": "PAM-A1AA584066F4",
       "finding_fingerprint": "PF-61F501F7DBEF",
       "repository": "governance-authority-assurance-metamodel",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/validate.yml",
       "severity": "high",
-      "observed_at": "2026-08-28T22:18:50Z",
+      "observed_at": "2026-08-29T07:03:49Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "model_validation",
@@ -86,9 +86,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-27T22:15:16Z",
-      "last_observed": "2026-08-28T22:18:50Z",
+      "last_observed": "2026-08-29T07:03:49Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-0CCFD5BF2D4F"
+      "latest_finding_id": "PAM-A1AA584066F4"
     }
   ],
   "handoff": {

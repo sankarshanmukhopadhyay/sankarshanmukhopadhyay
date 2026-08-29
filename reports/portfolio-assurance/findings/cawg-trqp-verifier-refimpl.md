@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `cawg-trqp-verifier-refimpl`
 
-**Generated:** 2026-08-28T22:18:50Z  
+**Generated:** 2026-08-29T07:03:49Z  
 **Open findings:** 2  
 **Repository snapshot:** `c1fdbae2837129272fda6e5cef69d9149db89e82`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-5D9AA2B3D63F — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-E4659E672C1E` at `2026-08-28T22:18:50Z`
+- Observation: `PAM-C6F6460FB29B` at `2026-08-29T07:03:49Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/ci.yml`
@@ -64,7 +64,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-D930ABA3415C — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-D3BA837D9BA8` at `2026-08-28T22:18:50Z`
+- Observation: `PAM-9BFF8BE53F5A` at `2026-08-29T07:03:49Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
