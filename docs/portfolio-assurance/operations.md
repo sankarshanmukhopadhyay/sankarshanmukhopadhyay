@@ -144,6 +144,32 @@ observation -> finding -> remediation dossier -> implementation -> re-observatio
 
 Finding-condition recovery is machine-verifiable; implementation acceptance and issue closure authority remain governed.
 
+
+## Repository remediation retest discipline
+
+When an actionable finding is routed to a target repository, remediation SHOULD follow an evidence-closed sequence:
+
+1. preserve the stable `finding_fingerprint` in the repository-local issue and PR;
+2. repair the repository-native control or evidence-production semantics without weakening the claim being tested;
+3. require successful repository-native validation before merge;
+4. require the governed default-branch evidence producer to execute after merge;
+5. rerun this monitor only after the relevant repository evidence is observable; and
+6. close the repository-local remediation issue only after the lifecycle registry records the fingerprint as `resolved`, unless repository governance explicitly accepts the residual risk.
+
+A PR merge or an unrelated green workflow is not sufficient recovery evidence. The authoritative implementation claim remains with the producing repository; the Portfolio Assurance Monitor independently records whether the configured evidence contract is now satisfied.
+
+This sequence provides a machine-verifiable control loop:
+
+```text
+finding fingerprint
+  -> repository-local remediation
+  -> native validation
+  -> default-branch evidence
+  -> portfolio re-observation
+  -> lifecycle resolution
+  -> governed issue closure
+```
+
 ## Public account discovery and repository churn
 
 The monitor compares live public repositories against `data/repository-status.yaml` in both directions. An unclassified public repository produces `PUBLIC_REPOSITORY_WITHOUT_DISPOSITION`. A governed active or review repository that disappears from public account discovery produces `REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED`.
