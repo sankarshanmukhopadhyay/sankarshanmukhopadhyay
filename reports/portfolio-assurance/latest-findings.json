@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-29T16:39:32Z",
+  "generated_at": "2026-08-29T16:42:43Z",
   "findings": [],
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-08-29T16:39:32Z",
+      "observed_at": "2026-08-29T16:42:43Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -13,7 +13,7 @@
           "archived": false,
           "pushed_at": "2026-08-29T16:35:18Z",
           "updated_at": "2026-08-29T16:35:29Z",
-          "open_issues_count": 1,
+          "open_issues_count": 0,
           "head_sha": "63d400cac36731d8c5cc80c2d54041cfb0bb42fe"
         },
         "status_declaration": {
@@ -74,7 +74,7 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-08-29T16:39:32Z",
+      "observed_at": "2026-08-29T16:42:43Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -83,7 +83,7 @@
           "archived": false,
           "pushed_at": "2026-08-29T16:33:15Z",
           "updated_at": "2026-08-29T16:33:20Z",
-          "open_issues_count": 1,
+          "open_issues_count": 0,
           "head_sha": "25c005f983ce98e389f9459255d45462e1878c5b"
         },
         "status_declaration": {
@@ -161,7 +161,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-08-29T16:39:32Z",
+      "observed_at": "2026-08-29T16:42:43Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -170,7 +170,7 @@
           "archived": false,
           "pushed_at": "2026-08-29T16:32:34Z",
           "updated_at": "2026-08-29T16:32:46Z",
-          "open_issues_count": 2,
+          "open_issues_count": 1,
           "head_sha": "c04b83c7dd6ab84c5417458aa9e39b5d5bffbe7f"
         },
         "status_declaration": {
@@ -233,7 +233,7 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-08-29T16:39:32Z",
+      "observed_at": "2026-08-29T16:42:43Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -304,7 +304,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-08-29T16:39:32Z",
+      "observed_at": "2026-08-29T16:42:43Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -374,7 +374,7 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-08-29T16:39:32Z",
+      "observed_at": "2026-08-29T16:42:43Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -444,7 +444,7 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-08-29T16:39:32Z",
+      "observed_at": "2026-08-29T16:42:43Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -562,7 +562,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-08-29T16:39:32Z",
+      "observed_at": "2026-08-29T16:42:43Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -571,7 +571,7 @@
           "archived": false,
           "pushed_at": "2026-08-29T16:32:38Z",
           "updated_at": "2026-08-29T16:32:43Z",
-          "open_issues_count": 1,
+          "open_issues_count": 0,
           "head_sha": "8e782210c890b89919296afcae9550283b8c64f3"
         },
         "status_declaration": {
@@ -649,7 +649,7 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-08-29T16:39:32Z",
+      "observed_at": "2026-08-29T16:42:43Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -753,7 +753,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-08-29T16:39:32Z",
+      "observed_at": "2026-08-29T16:42:43Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -762,7 +762,7 @@
           "archived": false,
           "pushed_at": "2026-08-29T16:30:00Z",
           "updated_at": "2026-08-29T16:30:08Z",
-          "open_issues_count": 5,
+          "open_issues_count": 4,
           "head_sha": "e34d44b35568202d585d7e19ba012f5ba911f94d"
         },
         "status_declaration": {
@@ -905,7 +905,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-08-29T16:39:32Z",
+      "observed_at": "2026-08-29T16:42:43Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -914,7 +914,7 @@
           "archived": false,
           "pushed_at": "2026-08-29T16:32:53Z",
           "updated_at": "2026-08-29T16:33:06Z",
-          "open_issues_count": 45,
+          "open_issues_count": 44,
           "head_sha": "f3bbb376d6fba2ff211a2614b73761d86428bfd1"
         },
         "workflow_runs": {
@@ -992,13 +992,13 @@
               "conclusion": "skipped",
               "status": "completed",
               "event": "issues",
-              "created_at": "2026-08-29T16:37:06Z",
-              "updated_at": "2026-08-29T16:37:08Z",
-              "run_started_at": "2026-08-29T16:37:06Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33263464681",
+              "created_at": "2026-08-29T16:41:17Z",
+              "updated_at": "2026-08-29T16:41:18Z",
+              "run_started_at": "2026-08-29T16:41:17Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33263648420",
               "head_sha": "f3bbb376d6fba2ff211a2614b73761d86428bfd1",
               "head_branch": "main",
-              "run_number": 204
+              "run_number": 205
             },
             {
               "workflow_id": 337419010,

@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-29T16:39:32Z",
+  "generated_at": "2026-08-29T16:42:43Z",
   "repository": "governance-authority-assurance-metamodel",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-29T16:39:32Z",
+    "observed_at": "2026-08-29T16:42:43Z",
     "default_branch": "main",
     "head_sha": "25c005f983ce98e389f9459255d45462e1878c5b",
     "provenance_status": "observed"
