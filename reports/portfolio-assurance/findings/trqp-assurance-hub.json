@@ -1,20 +1,20 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-29T07:03:49Z",
+  "generated_at": "2026-08-29T16:39:32Z",
   "repository": "trqp-assurance-hub",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-29T07:03:49Z",
+    "observed_at": "2026-08-29T16:39:32Z",
     "default_branch": "main",
-    "head_sha": "d8aae6fae93291efcc1fd160da36ab26230c0aa6",
+    "head_sha": "e34d44b35568202d585d7e19ba012f5ba911f94d",
     "provenance_status": "observed"
   },
   "assessment": {
     "operational": {
       "status": "evaluated",
       "description": "Repository availability and observable default-branch automation health.",
-      "open_findings": 1
+      "open_findings": 0
     },
     "governance": {
       "status": "evaluated",
@@ -37,197 +37,9 @@
     "dashboard": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/docs/portfolio-assurance/dashboard.html",
     "latest_report": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/latest.html"
   },
-  "finding_count": 1,
-  "findings": [
-    {
-      "finding_id": "PAM-A4F3418D842E",
-      "finding_fingerprint": "PF-72855B9E6190",
-      "repository": "trqp-assurance-hub",
-      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
-      "subject": ".github/workflows/publish-coordinated-stack-release.yml",
-      "severity": "medium",
-      "observed_at": "2026-08-29T07:03:49Z",
-      "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
-      "evidence": {
-        "available": true,
-        "lookback_days": 7,
-        "completed_examined": 29,
-        "workflows_examined": 7,
-        "retired_workflows_examined": 0,
-        "unresolved_failures": 1,
-        "latest": [
-          {
-            "workflow_id": 236983557,
-            "name": "combined-assurance-smoke",
-            "path": ".github/workflows/combined-assurance-smoke.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-08-29T03:14:39Z",
-            "updated_at": "2026-08-29T03:15:03Z",
-            "run_started_at": "2026-08-29T03:14:39Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33230901973",
-            "head_sha": "d8aae6fae93291efcc1fd160da36ab26230c0aa6",
-            "head_branch": "main",
-            "run_number": 123
-          },
-          {
-            "workflow_id": 316454965,
-            "name": "Deploy documentation to GitHub Pages",
-            "path": ".github/workflows/pages.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-08-29T03:14:39Z",
-            "updated_at": "2026-08-29T03:15:12Z",
-            "run_started_at": "2026-08-29T03:14:39Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33230901904",
-            "head_sha": "d8aae6fae93291efcc1fd160da36ab26230c0aa6",
-            "head_branch": "main",
-            "run_number": 31
-          },
-          {
-            "workflow_id": 338452388,
-            "name": "Portfolio Integration Contract",
-            "path": ".github/workflows/portfolio-contract.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-08-29T03:14:39Z",
-            "updated_at": "2026-08-29T03:14:50Z",
-            "run_started_at": "2026-08-29T03:14:39Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33230901877",
-            "head_sha": "d8aae6fae93291efcc1fd160da36ab26230c0aa6",
-            "head_branch": "main",
-            "run_number": 29
-          },
-          {
-            "workflow_id": 341731117,
-            "name": "publish-coordinated-stack-release",
-            "path": ".github/workflows/publish-coordinated-stack-release.yml",
-            "conclusion": "failure",
-            "status": "completed",
-            "event": "workflow_run",
-            "created_at": "2026-08-29T03:15:02Z",
-            "updated_at": "2026-08-29T03:15:15Z",
-            "run_started_at": "2026-08-29T03:15:02Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33230916311",
-            "head_sha": "d8aae6fae93291efcc1fd160da36ab26230c0aa6",
-            "head_branch": "main",
-            "run_number": 4
-          },
-          {
-            "workflow_id": 236973230,
-            "name": "quality",
-            "path": ".github/workflows/quality.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-08-29T03:14:39Z",
-            "updated_at": "2026-08-29T03:15:06Z",
-            "run_started_at": "2026-08-29T03:14:39Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33230901894",
-            "head_sha": "d8aae6fae93291efcc1fd160da36ab26230c0aa6",
-            "head_branch": "main",
-            "run_number": 147
-          },
-          {
-            "workflow_id": 341720596,
-            "name": "stack-release-eligibility",
-            "path": ".github/workflows/stack-release-eligibility.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-08-29T03:14:39Z",
-            "updated_at": "2026-08-29T03:15:00Z",
-            "run_started_at": "2026-08-29T03:14:39Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33230901863",
-            "head_sha": "d8aae6fae93291efcc1fd160da36ab26230c0aa6",
-            "head_branch": "main",
-            "run_number": 13
-          },
-          {
-            "workflow_id": 241319705,
-            "name": "github_actions in /. - Update #1544885139",
-            "path": "dynamic/dependabot/dependabot-updates",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "dynamic",
-            "created_at": "2026-08-29T04:01:57Z",
-            "updated_at": "2026-08-29T04:02:48Z",
-            "run_started_at": "2026-08-29T04:01:57Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33232827612",
-            "head_sha": "d8aae6fae93291efcc1fd160da36ab26230c0aa6",
-            "head_branch": "main",
-            "run_number": 32
-          }
-        ],
-        "retired": [],
-        "unresolved": [
-          {
-            "workflow_id": 341731117,
-            "name": "publish-coordinated-stack-release",
-            "path": ".github/workflows/publish-coordinated-stack-release.yml",
-            "conclusion": "failure",
-            "status": "completed",
-            "event": "workflow_run",
-            "created_at": "2026-08-29T03:15:02Z",
-            "updated_at": "2026-08-29T03:15:15Z",
-            "run_started_at": "2026-08-29T03:15:02Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33230916311",
-            "head_sha": "d8aae6fae93291efcc1fd160da36ab26230c0aa6",
-            "head_branch": "main",
-            "run_number": 4
-          }
-        ],
-        "active_inventory_available": true,
-        "active_workflow_paths": [
-          ".github/workflows/combined-assurance-smoke.yml",
-          ".github/workflows/dependabot-automerge.yml",
-          ".github/workflows/pages.yml",
-          ".github/workflows/portfolio-contract.yml",
-          ".github/workflows/publish-coordinated-stack-release.yml",
-          ".github/workflows/quality.yml",
-          ".github/workflows/stack-release-eligibility.yml",
-          "dynamic/dependabot/dependabot-updates",
-          "dynamic/dependabot/update-graph",
-          "dynamic/pages/pages-build-deployment"
-        ]
-      },
-      "recommended_action": "Review the failed workflow, restore a successful default-branch run, or record an explicit accepted-risk disposition.",
-      "dimension": "operational",
-      "remediation": {
-        "objective": "Restore a successful latest completed default-branch run for the affected workflow or record an explicit repository-governed risk disposition.",
-        "acceptance_criteria": [
-          "The affected workflow's latest completed default-branch run succeeds, or an explicit governed disposition supersedes the operational expectation."
-        ],
-        "verification": [
-          "Run the affected workflow on the default branch.",
-          "Rerun the portfolio monitor and confirm the stable finding fingerprint is no longer open."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    }
-  ],
-  "lifecycle": [
-    {
-      "finding_fingerprint": "PF-72855B9E6190",
-      "repository": "trqp-assurance-hub",
-      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
-      "subject": ".github/workflows/publish-coordinated-stack-release.yml",
-      "dimension": "operational",
-      "status": "open",
-      "first_observed": "2026-08-29T07:03:49Z",
-      "last_observed": "2026-08-29T07:03:49Z",
-      "resolved_at": null,
-      "latest_finding_id": "PAM-A4F3418D842E"
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
+  "lifecycle": [],
   "handoff": {
     "authority": "repository-local-governance",
     "intended_use": "Supply this dossier with the affected repository source during remediation planning and implementation.",

@@ -1,13 +1,13 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-08-29T07:03:49Z",
+  "generated_at": "2026-08-29T16:39:32Z",
   "repository": "governance-authority-assurance-metamodel",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-08-29T07:03:49Z",
+    "observed_at": "2026-08-29T16:39:32Z",
     "default_branch": "main",
-    "head_sha": "0b1653efcf27d8ab7da90c9dbc222839f79b444d",
+    "head_sha": "25c005f983ce98e389f9459255d45462e1878c5b",
     "provenance_status": "observed"
   },
   "assessment": {
@@ -24,7 +24,7 @@
     "assurance": {
       "status": "evaluated",
       "description": "Repository-specific assurance evidence coverage, execution state, provenance and freshness against governed repository revisions.",
-      "open_findings": 1
+      "open_findings": 0
     },
     "cross_specification": {
       "status": "not-evaluated",
@@ -37,60 +37,9 @@
     "dashboard": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/docs/portfolio-assurance/dashboard.html",
     "latest_report": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/latest.html"
   },
-  "finding_count": 1,
-  "findings": [
-    {
-      "finding_id": "PAM-A1AA584066F4",
-      "finding_fingerprint": "PF-61F501F7DBEF",
-      "repository": "governance-authority-assurance-metamodel",
-      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
-      "subject": ".github/workflows/validate.yml",
-      "severity": "high",
-      "observed_at": "2026-08-29T07:03:49Z",
-      "claim": "Required assurance evidence was not observed inside the governed evidence window.",
-      "evidence": {
-        "claim": "model_validation",
-        "state": "missing",
-        "reason": "no completed workflow execution was observed inside the governed lookback window",
-        "freshness_policy": "current-head",
-        "repository_head_sha": null,
-        "evidence_head_sha": null,
-        "workflow": null
-      },
-      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
-        "acceptance_criteria": [
-          "The required evidence is observable inside the governed lookback window.",
-          "The evidence is attributable to the configured repository-native control."
-        ],
-        "verification": [
-          "Execute the required repository-native control and rerun the portfolio monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    }
-  ],
-  "lifecycle": [
-    {
-      "finding_fingerprint": "PF-61F501F7DBEF",
-      "repository": "governance-authority-assurance-metamodel",
-      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
-      "subject": ".github/workflows/validate.yml",
-      "dimension": "assurance",
-      "status": "open",
-      "first_observed": "2026-08-27T22:15:16Z",
-      "last_observed": "2026-08-29T07:03:49Z",
-      "resolved_at": null,
-      "latest_finding_id": "PAM-A1AA584066F4"
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
+  "lifecycle": [],
   "handoff": {
     "authority": "repository-local-governance",
     "intended_use": "Supply this dossier with the affected repository source during remediation planning and implementation.",

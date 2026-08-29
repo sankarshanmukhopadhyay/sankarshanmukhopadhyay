@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-08-29T07:03:49Z  
-**Open findings:** 1  
-**Repository snapshot:** `19424d6b6dc79bfffe20c978221fadccb31c98c0`  
+**Generated:** 2026-08-29T16:39:32Z  
+**Open findings:** 0  
+**Repository snapshot:** `f3bbb376d6fba2ff211a2614b73761d86428bfd1`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
@@ -20,44 +20,9 @@ search_exclude: true
 |---|---|---:|
 | Operational | `evaluated` | 0 |
 | Governance | `evaluated` | 0 |
-| Assurance | `evaluated` | 1 |
+| Assurance | `evaluated` | 0 |
 | Cross Specification | `not-evaluated` | 0 |
 
 ## Open findings
 
-## PF-9769E5EB9C48 — ASSURANCE_EVIDENCE_MISSING
-
-- Observation: `PAM-603EA20CD3B0` at `2026-08-29T07:03:49Z`
-- Severity: `high`
-- Dimension: `assurance`
-- Subject: `.github/workflows/corpus-status.yml`
-- Lifecycle: `open`; first observed `2026-08-22T01:49:53Z`
-- Claim: Required assurance evidence was not observed inside the governed evidence window.
-- Automatic effect: `none`
-
-### Evidence
-
-```json
-{
-  "claim": "corpus_integrity",
-  "evidence_head_sha": null,
-  "freshness_policy": "latest-success",
-  "reason": "no completed workflow execution was observed inside the governed lookback window",
-  "repository_head_sha": null,
-  "state": "missing",
-  "workflow": null
-}
-```
-
-### Remediation objective
-
-Restore or execute the repository-native control required by the governed assurance contract.
-
-### Acceptance criteria
-
-- [ ] The required evidence is observable inside the governed lookback window.
-- [ ] The evidence is attributable to the configured repository-native control.
-
-### Verification
-
-- Execute the required repository-native control and rerun the portfolio monitor.
+No findings are open in the currently evaluated dimensions. This is **not** evidence that dimensions marked `not-evaluated` are assured or complete.

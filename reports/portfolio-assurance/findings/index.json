@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T07:03:49Z",
+  "generated_at": "2026-08-29T16:39:32Z",
   "repositories": [
     {
       "repository": "A2A",
@@ -52,7 +52,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "finding_count": 2,
+      "finding_count": 0,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/agent-registry-protocol.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-registry-protocol.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-registry-protocol.json"
@@ -87,7 +87,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "finding_count": 2,
+      "finding_count": 0,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json"
@@ -171,7 +171,7 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "finding_count": 1,
+      "finding_count": 0,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.json"
@@ -185,14 +185,14 @@
     },
     {
       "repository": "open-national-digital-trust-framework",
-      "finding_count": 2,
+      "finding_count": 0,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/open-national-digital-trust-framework.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.json"
     },
     {
       "repository": "rahp-toolkit",
-      "finding_count": 1,
+      "finding_count": 0,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/rahp-toolkit.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json"
@@ -213,7 +213,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "finding_count": 1,
+      "finding_count": 0,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trqp-assurance-hub.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.json"
