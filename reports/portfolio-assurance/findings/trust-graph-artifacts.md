@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `trust-graph-artifacts`
 
-**Generated:** 2026-08-29T20:54:51Z  
+**Generated:** 2026-08-30T05:23:14Z  
 **Open findings:** 0  
-**Repository snapshot:** `f0bdc309a691a7be8dca3b48fed8ac1555219bec`  
+**Repository snapshot:** `5f4b87c1501d83209cd0c4dff314ca951d4e8876`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
