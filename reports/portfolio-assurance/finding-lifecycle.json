@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-30T16:40:13Z",
+  "generated_at": "2026-08-30T21:04:50Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -356,10 +356,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/validate.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-30T16:40:13Z",
       "last_observed": "2026-08-30T16:40:13Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-30T21:04:50Z",
       "latest_finding_id": "PAM-72020381D03C"
     },
     "PF-9467E1566783": {
@@ -368,10 +368,10 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/validate.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-30T16:40:13Z",
       "last_observed": "2026-08-30T16:40:13Z",
-      "resolved_at": null,
+      "resolved_at": "2026-08-30T21:04:50Z",
       "latest_finding_id": "PAM-D3BF170E90CC"
     }
   }
