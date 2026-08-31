@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `ERC-8004-CSP`
 
-**Generated:** 2026-08-30T21:04:50Z  
+**Generated:** 2026-08-31T05:32:55Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/ERC-8004-CSP.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/ERC-8004-CSP.json)
