@@ -7,7 +7,7 @@ nav_order: 1
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-08-31T13:47:51Z  
+**Observed:** 2026-08-31T22:50:07Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 0  
 **Unclassified public repositories:** 0

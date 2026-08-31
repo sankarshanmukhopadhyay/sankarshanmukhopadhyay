@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-31T13:47:51Z",
+  "generated_at": "2026-08-31T22:50:07Z",
   "findings": [],
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-08-31T13:47:51Z",
+      "observed_at": "2026-08-31T22:50:07Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -74,7 +74,7 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-08-31T13:47:51Z",
+      "observed_at": "2026-08-31T22:50:07Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -161,7 +161,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-08-31T13:47:51Z",
+      "observed_at": "2026-08-31T22:50:07Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -233,7 +233,7 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-08-31T13:47:51Z",
+      "observed_at": "2026-08-31T22:50:07Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -352,7 +352,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-08-31T13:47:51Z",
+      "observed_at": "2026-08-31T22:50:07Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -422,7 +422,7 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-08-31T13:47:51Z",
+      "observed_at": "2026-08-31T22:50:07Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -492,7 +492,7 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-08-31T13:47:51Z",
+      "observed_at": "2026-08-31T22:50:07Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -612,7 +612,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-08-31T13:47:51Z",
+      "observed_at": "2026-08-31T22:50:07Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -699,7 +699,7 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-08-31T13:47:51Z",
+      "observed_at": "2026-08-31T22:50:07Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -821,7 +821,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-08-31T13:47:51Z",
+      "observed_at": "2026-08-31T22:50:07Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -975,7 +975,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-08-31T13:47:51Z",
+      "observed_at": "2026-08-31T22:50:07Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -984,7 +984,7 @@
           "archived": false,
           "pushed_at": "2026-08-31T11:25:39Z",
           "updated_at": "2026-08-31T11:28:11Z",
-          "open_issues_count": 31,
+          "open_issues_count": 33,
           "head_sha": "fe7552707fef6a7fbd0faa605008a20dcbb4508e"
         },
         "workflow_runs": {
@@ -999,16 +999,16 @@
               "workflow_id": 343490806,
               "name": "Execute bounded combined RAHP reviews",
               "path": ".github/workflows/combined-review-worker.yml",
-              "conclusion": "skipped",
+              "conclusion": "success",
               "status": "completed",
-              "event": "issues",
-              "created_at": "2026-08-31T11:27:51Z",
-              "updated_at": "2026-08-31T11:27:52Z",
-              "run_started_at": "2026-08-31T11:27:51Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33387073581",
+              "event": "schedule",
+              "created_at": "2026-08-31T20:12:33Z",
+              "updated_at": "2026-08-31T20:12:45Z",
+              "run_started_at": "2026-08-31T20:12:33Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33434767550",
               "head_sha": "fe7552707fef6a7fbd0faa605008a20dcbb4508e",
               "head_branch": "main",
-              "run_number": 405
+              "run_number": 409
             },
             {
               "workflow_id": 333347627,
@@ -1032,28 +1032,28 @@
               "conclusion": "success",
               "status": "completed",
               "event": "workflow_dispatch",
-              "created_at": "2026-08-31T11:26:21Z",
-              "updated_at": "2026-08-31T11:26:40Z",
-              "run_started_at": "2026-08-31T11:26:21Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33386959148",
+              "created_at": "2026-08-31T19:29:17Z",
+              "updated_at": "2026-08-31T19:29:40Z",
+              "run_started_at": "2026-08-31T19:29:17Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33430826168",
               "head_sha": "fe7552707fef6a7fbd0faa605008a20dcbb4508e",
               "head_branch": "main",
-              "run_number": 4
+              "run_number": 5
             },
             {
               "workflow_id": 342518526,
               "name": "Promote qualified RAHP referrals to DPIP",
               "path": ".github/workflows/dpip-handoff.yml",
-              "conclusion": "skipped",
+              "conclusion": "success",
               "status": "completed",
-              "event": "issues",
-              "created_at": "2026-08-31T11:27:51Z",
-              "updated_at": "2026-08-31T11:28:02Z",
-              "run_started_at": "2026-08-31T11:27:51Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33387073567",
+              "event": "schedule",
+              "created_at": "2026-08-31T20:51:54Z",
+              "updated_at": "2026-08-31T20:52:06Z",
+              "run_started_at": "2026-08-31T20:51:54Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33438319826",
               "head_sha": "fe7552707fef6a7fbd0faa605008a20dcbb4508e",
               "head_branch": "main",
-              "run_number": 298
+              "run_number": 302
             },
             {
               "workflow_id": 343401275,
@@ -1062,28 +1062,28 @@
               "conclusion": "success",
               "status": "completed",
               "event": "issue_comment",
-              "created_at": "2026-08-31T11:27:53Z",
-              "updated_at": "2026-08-31T11:28:22Z",
-              "run_started_at": "2026-08-31T11:27:53Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33387075204",
+              "created_at": "2026-08-31T19:30:42Z",
+              "updated_at": "2026-08-31T19:31:16Z",
+              "run_started_at": "2026-08-31T19:30:42Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33430958564",
               "head_sha": "fe7552707fef6a7fbd0faa605008a20dcbb4508e",
               "head_branch": "main",
-              "run_number": 60
+              "run_number": 62
             },
             {
               "workflow_id": 343549711,
               "name": "Reconcile DTG end-to-end assurance",
               "path": ".github/workflows/dtg-assurance-reconcile.yml",
-              "conclusion": "skipped",
+              "conclusion": "success",
               "status": "completed",
-              "event": "issues",
-              "created_at": "2026-08-31T11:27:52Z",
-              "updated_at": "2026-08-31T11:28:04Z",
-              "run_started_at": "2026-08-31T11:27:52Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33387074998",
+              "event": "schedule",
+              "created_at": "2026-08-31T20:22:17Z",
+              "updated_at": "2026-08-31T20:22:36Z",
+              "run_started_at": "2026-08-31T20:22:17Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33435656545",
               "head_sha": "fe7552707fef6a7fbd0faa605008a20dcbb4508e",
               "head_branch": "main",
-              "run_number": 455
+              "run_number": 461
             },
             {
               "workflow_id": 343470013,
@@ -1091,29 +1091,29 @@
               "path": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
               "conclusion": "success",
               "status": "completed",
-              "event": "push",
-              "created_at": "2026-08-31T11:25:42Z",
-              "updated_at": "2026-08-31T11:26:25Z",
-              "run_started_at": "2026-08-31T11:25:42Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33386908958",
+              "event": "schedule",
+              "created_at": "2026-08-31T19:28:36Z",
+              "updated_at": "2026-08-31T19:29:21Z",
+              "run_started_at": "2026-08-31T19:28:36Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33430764504",
               "head_sha": "fe7552707fef6a7fbd0faa605008a20dcbb4508e",
               "head_branch": "main",
-              "run_number": 33
+              "run_number": 34
             },
             {
               "workflow_id": 343549712,
               "name": "Advance DTG gatherer repository reviews",
               "path": ".github/workflows/dtg-repository-review-worker.yml",
-              "conclusion": "skipped",
+              "conclusion": "success",
               "status": "completed",
-              "event": "issues",
-              "created_at": "2026-08-31T11:27:51Z",
-              "updated_at": "2026-08-31T11:27:53Z",
-              "run_started_at": "2026-08-31T11:27:51Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33387073572",
+              "event": "schedule",
+              "created_at": "2026-08-31T20:13:47Z",
+              "updated_at": "2026-08-31T20:13:56Z",
+              "run_started_at": "2026-08-31T20:13:47Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33434881554",
               "head_sha": "fe7552707fef6a7fbd0faa605008a20dcbb4508e",
               "head_branch": "main",
-              "run_number": 395
+              "run_number": 399
             },
             {
               "workflow_id": 333196290,
