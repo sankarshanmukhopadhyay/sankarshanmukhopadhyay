@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-01T11:38:15Z",
+  "generated_at": "2026-09-01T16:39:26Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -166,7 +166,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-09-01T11:38:15Z",
+      "last_observed": "2026-09-01T16:39:26Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-54C986F2A31F"
     },
@@ -380,10 +380,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/ci.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T11:38:15Z",
       "last_observed": "2026-09-01T11:38:15Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-01T16:39:26Z",
       "latest_finding_id": "PAM-C04A075E8E14"
     },
     "PF-237ABBD2F674": {
@@ -392,10 +392,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/release.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T11:38:15Z",
       "last_observed": "2026-09-01T11:38:15Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-01T16:39:26Z",
       "latest_finding_id": "PAM-3F7E97D97250"
     },
     "PF-785DAD141304": {
@@ -404,10 +404,10 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/ci.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T11:38:15Z",
       "last_observed": "2026-09-01T11:38:15Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-01T16:39:26Z",
       "latest_finding_id": "PAM-E04015128681"
     }
   }
