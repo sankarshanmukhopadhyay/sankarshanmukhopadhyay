@@ -11,13 +11,23 @@ Contributions should improve portfolio legibility, machine-verifiable governance
 
 ## Validation
 
-Run:
+Before submitting a substantive change, run the same core checks exercised by CI:
 
 ```bash
 python scripts/validate_portfolio.py
+python scripts/portfolio_assurance_monitor_v3.py --offline --check
+python -m unittest discover -s tests -p 'test_*.py'
+python scripts/check_internal_links.py
+python scripts/check_site_navigation.py
 ```
 
-A contribution is ready when the validator passes, links introduced by the change are valid, and any affected review or impact record is updated.
+For changes affecting the published site, also run:
+
+```bash
+bundle exec jekyll build --trace
+```
+
+A contribution is ready when the relevant checks pass, links introduced by the change are valid, and any affected review or impact record is updated.
 
 ## Pull request evidence
 

@@ -83,6 +83,14 @@ jobs:
 
       - name: Commit changed reports
         run: |
+          changed_paths="$(git diff --name-only)"
+          disallowed_paths="$(printf '%s\n' "$changed_paths" | grep -Ev '^(docs/portfolio-assurance/dashboard\.md|reports/portfolio-assurance/)' || true)"
+          if [ -n "$disallowed_paths" ]; then
+            echo "Refusing to publish changes outside the delegated assurance-evidence paths:"
+            printf '%s\n' "$disallowed_paths"
+            exit 1
+          fi
+
           if git diff --quiet -- docs/portfolio-assurance/dashboard.md reports/portfolio-assurance; then
             echo "No assurance report changes to commit."
             exit 0

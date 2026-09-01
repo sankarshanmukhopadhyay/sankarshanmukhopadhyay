@@ -30,6 +30,17 @@ Changes to lifecycle, tier, authority, or cross-repository dependency records re
 3. an updated review date;
 4. a release-impact record when compatibility or authority changes.
 
+## Automated evidence publication
+
+Machine-generated portfolio-assurance evidence is not a portfolio classification or governance decision. The portfolio assurance workflow may publish only its governed generated outputs:
+
+- `docs/portfolio-assurance/dashboard.md`;
+- `reports/portfolio-assurance/**`.
+
+That automation MUST NOT modify portfolio membership, lifecycle, maturity, authority, relationship, policy, schema, configuration, workflow, or source-code declarations. A generated finding is evidence for review and does not itself change portfolio state or delegated authority.
+
+Direct publication to the default branch is permitted only when an explicit repository ruleset bypass delegates that capability to the assurance publisher. The bypass is scoped to publication of the generated paths above; changes to the evidence-generation mechanism itself remain subject to normal pull-request and validation requirements. If that bypass is absent or revoked, publication MUST fail closed rather than weakening branch protection.
+
 ## Revocation and supersession
 
 A repository may be demoted, archived, or superseded when maintenance ends, authority moves, or adoption gates are no longer met. The status registry must preserve the prior state through version control and identify the superseding repository where applicable.

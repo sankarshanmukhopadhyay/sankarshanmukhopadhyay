@@ -25,11 +25,12 @@ This profile presents a **curated trust-infrastructure portfolio**, not an exhau
 | Model authority, delegation, revocation, accountability, appeal, or remedy | [Governance, Authority and Assurance Metamodel](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel) |
 | Analyse the semantics of a trust system | [Trust Systems Meta Model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) |
 | Implement portable trust records or evidence contracts | [Trust Infrastructure Schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) |
+| Follow the Trust Systems Modelling Stack from semantics through portable contracts to executable governance | [TSMM](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) → [TIS](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) → [Trust Graph Artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) |
 | Deploy or evaluate an agent registry | [Agent Registry Protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) |
 | Determine whether an actor is permitted to act under mandate, evidence, policy, and time | [PolicyMesh](https://github.com/sankarshanmukhopadhyay/PolicyMesh) |
 | Pressure-test a specification for harms, security weaknesses, and governance failure modes | [RAHP Toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) |
 | Evaluate whether a composed DTG interaction preserves an asserted privacy property | [DTG Privacy Implementation Profile](https://github.com/sankarshanmukhopadhyay/dtg-privacy-implementation-profile) |
-| Test or assure a trust-registry deployment | [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) |
+| Implement, conform, or assure a TRQP trust-registry deployment | [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) → [reference verifier](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) → [conformance suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) → [assurance hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) |
 
 ## Selected work
 
@@ -52,6 +53,8 @@ For the complete governed catalogue, maturity and lifecycle state, see **[Portfo
 ## How the portfolio fits together
 
 The portfolio treats trust infrastructure as a set of separable but composable layers. Authority remains bounded: semantic models do not acquire protocol authority, interoperability experiments do not create adoption claims, monitoring does not create ecosystem authority, and assurance findings do not modify normative content automatically.
+
+The **Trust Systems Modelling Stack (TSMS)** is one concrete composition of these layers: [TSMM](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) owns canonical semantics, [TIS](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) owns portable contracts, and [Trust Graph Artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) owns executable governance patterns, implementation guidance, and negative assurance tests. Composition does not transfer authority between layers.
 
 ```mermaid
 flowchart LR

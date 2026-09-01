@@ -15,4 +15,8 @@ In scope:
 - validation bypasses affecting published assurance claims;
 - exposed credentials or sensitive configuration.
 
+## Assurance publisher boundary
+
+The portfolio assurance workflow has write capability solely to publish generated assurance evidence in the governed output paths documented in `GOVERNANCE.md`. Any ability to use that automation to modify governance declarations, relationship metadata, workflows, source code, schemas, configuration, or authority records is a security defect and should be reported privately.
+
 Project-specific implementation vulnerabilities must be reported to the affected member repository.
