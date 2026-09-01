@@ -1,34 +1,61 @@
 name: Build and deploy GitHub Pages
+
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "47 4 * * *"
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: pages-${{ github.ref }}
   cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build live Portfolio Work Queue
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python -m pip install pyyaml
+          python scripts/portfolio_work_queue.py
+
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3'
+          ruby-version: "3.3"
           bundler-cache: true
+
       - uses: actions/configure-pages@v5
+
       - name: Build site
         run: bundle exec jekyll build --trace
+
       - name: Verify generated site
-        run: test -f _site/index.html && grep -R "mermaid-init.js" _site >/dev/null
+        run: |
+          test -f _site/index.html
+          test -f _site/docs/portfolio-work/index.html
+          grep -R "Portfolio Work Queue" _site/docs/portfolio-work/index.html >/dev/null
+          grep -R "mermaid-init.js" _site >/dev/null
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+
   deploy:
     if: github.event_name != 'pull_request'
     environment:

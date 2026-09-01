@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-09-01T00:00:00Z",
+  "repositories": {
+    "open-national-digital-trust-framework": {
+      "issues": [
+        {"number": 10, "title": "Candidate validation: add independent conformance evidence", "url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/issues/10", "labels": ["validation"], "body": "Advance candidate validation with reproducible evidence."}
+      ],
+      "pull_requests": []
+    },
+    "TRQP-TSPP": {
+      "issues": [
+        {"number": 70, "title": "Release gate: implement invalidation capability", "url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/issues/70", "labels": ["release"], "body": "Required for the next TRQP Stack release."}
+      ],
+      "pull_requests": []
+    },
+    "rahp-toolkit": {
+      "issues": [],
+      "pull_requests": [
+        {"number": 999, "title": "build(deps): bump pyyaml", "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/999", "labels": ["dependencies"], "body": ""}
+      ]
+    },
+    "trust-protocol-interop-lab": {
+      "issues": [
+        {"number": 77, "title": "Architecture decision: change authority semantics", "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/issues/77", "labels": ["architecture", "governance"], "body": "Consequential authority change."},
+        {"number": 78, "title": "Interop harness blocked on upstream ratification", "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/issues/78", "labels": ["blocked", "upstream-blocked"], "body": "Waiting for upstream decision."}
+      ],
+      "pull_requests": []
+    }
+  }
+}

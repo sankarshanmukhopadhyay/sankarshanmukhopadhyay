@@ -1,6 +1,6 @@
 # Validation Evidence
 
-Validation date: 2026-08-19
+Validation date: 2026-09-01
 
 ## Commands
 
@@ -41,3 +41,10 @@ A local Jekyll build was not executed because Bundler is not installed in the pa
 `validate_portfolio.py` also enforces a portfolio discoverability invariant: every repository whose canonical disposition makes it a `portfolio_member: true` must be named on at least one designated public portfolio surface (`README.md`, `docs/portfolio-status.md`, or `portfolio/architecture.md`). This prevents a governed member from silently disappearing from public navigation while preserving the curated boundary.
 
 This local invariant is distinct from GitHub account discovery. Account discovery may report repositories that have no disposition, but it must never auto-enrol or auto-classify them.
+
+
+## Portfolio Work Queue validation
+
+The work-queue test fixture is deliberately adversarial. Validation asserts that dependency-maintenance noise does not outrank release-critical work, explicit external blockers do not appear as ready, consequential authority/governance changes require judgment, only governed repositories enter scope, and generation is deterministic for a fixed evidence snapshot.
+
+The GitHub Pages build runs the same builder against live GitHub Issue and pull-request evidence before Jekyll renders the site. The committed `docs/portfolio-work/index.md` and `data/portfolio-work-queue.json` are source placeholders; the published Pages artefact contains the live derived queue for that deployment.

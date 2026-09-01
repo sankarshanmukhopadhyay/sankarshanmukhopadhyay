@@ -21,6 +21,12 @@ A governed portfolio of frameworks, original specifications, protocols, schemas,
 | Produce trust-registry assurance evidence | [TRQP Assurance Hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | Original stack |
 | Apply adapted ZKP implementation, risk, and deployment guidance | [DTG ZKP Task Force fork](https://github.com/sankarshanmukhopadhyay/dtgwg-zkp-tf) | Adapted upstream work |
 
+## What should we work on next?
+
+The **[Portfolio Work Queue](docs/portfolio-work/index.md)** traverses governed project work signals and ranks bounded candidates by strategic priority, leverage, effort bucket, complexity, readiness, goal impact and confidence. Blocked work, external waiting, maintenance noise and consequential judgment are intentionally separated from immediately executable work.
+
+Use the published queue when choosing work for a 15-minute, one-hour, half-day or full-day execution window.
+
 ## Architecture
 
 ```mermaid
@@ -38,7 +44,7 @@ Read the [portfolio architecture](portfolio/architecture.md) and [human-readable
 
 ## Governance and evidence
 
-- [Portfolio governance](GOVERNANCE.md)
+- [Portfolio Work Queue](docs/portfolio-work/index.md)\n- [Portfolio governance](GOVERNANCE.md)
 - [Repository status registry](data/repository-status.yaml)
 - [Relationship registry](data/portfolio-relationships.yaml)
 - [Adoption readiness checklist](portfolio/adoption-checklist.md)

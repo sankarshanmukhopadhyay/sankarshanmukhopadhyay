@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "repository-source-placeholder",
+  "authority": {
+    "scope_source": "data/repository-status.yaml",
+    "statement": "Live queue evidence is generated during the GitHub Pages build; this committed file is only a source placeholder."
+  },
+  "candidates": []
+}
