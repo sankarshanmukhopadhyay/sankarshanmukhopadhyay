@@ -38,7 +38,7 @@ Read the [portfolio architecture](portfolio/architecture.md) and [human-readable
 
 ## Governance and evidence
 
-- [Portfolio governance](GOVERNANCE.md)
+- [Portfolio Work Queue](docs/portfolio-work/index.md)\n- [Portfolio governance](GOVERNANCE.md)
 - [Repository status registry](data/repository-status.yaml)
 - [Relationship registry](data/portfolio-relationships.yaml)
 - [Adoption readiness checklist](portfolio/adoption-checklist.md)
