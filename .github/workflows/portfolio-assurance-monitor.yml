@@ -32,6 +32,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -117,6 +118,9 @@ jobs:
             exit 1
           fi
 
+          # actions/checkout must not retain the default GITHUB_TOKEN credential.
+          # Publication authority belongs to the scoped Portfolio Assurance App token below.
+          git config --local --unset-all http.https://github.com/.extraheader || true
           git config user.name "portfolio-assurance[bot]"
           git config user.email "portfolio-assurance[bot]@users.noreply.github.com"
           git checkout -B "$PUBLICATION_BRANCH"
