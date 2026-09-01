@@ -83,8 +83,10 @@ Recommended GitHub App permissions:
 |---|---|
 | Metadata | Read |
 | Actions | Read |
-| Contents | Read |
+| Contents | Read and write* |
 | Issues | Read and write |
+
+\* `Contents: Read and write` is required only because this App is also the explicitly delegated publisher for generated assurance evidence in this profile repository. The workflow mints a separate publication token scoped to `sankarshanmukhopadhyay/sankarshanmukhopadhyay`; issue-routing and evidence-publication tokens remain separate.
 
 Do not use the profile repository's ordinary `GITHUB_TOKEN` for cross-repository issue publication. That token is repository-scoped. The workflow expects a separately generated installation token in `PORTFOLIO_ISSUE_TOKEN`.
 
@@ -115,7 +117,9 @@ Then set `issue_routing.enabled: true`. The workflow uses `actions/create-github
 python scripts/portfolio_assurance_monitor_v3.py --publish-issues
 ```
 
-If the App credentials are absent, the evidence monitor continues to operate and no cross-repository issue writes occur.
+If the App credentials are absent, evidence collection and evaluation may proceed, but protected-branch evidence publication fails closed and no cross-repository issue writes occur.
+
+For protected-branch publication, add the installed Portfolio Assurance GitHub App itself to the `protect-main` ruleset bypass list with **Always allow**. Do not grant a user, administrator role, or generic workflow principal a bypass. The repository-side publication token is scoped to this repository, and the workflow independently rejects generated changes outside `docs/portfolio-assurance/dashboard.md` and `reports/portfolio-assurance/**`.
 
 ## Deduplication and repeat observations
 

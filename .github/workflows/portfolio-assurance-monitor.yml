@@ -58,6 +58,19 @@ jobs:
           private-key: ${{ secrets.PORTFOLIO_ASSURANCE_APP_PRIVATE_KEY }}
           owner: sankarshanmukhopadhyay
 
+      - name: Create repository-scoped evidence publication token
+        id: publication-token
+        env:
+          APP_ID: ${{ secrets.PORTFOLIO_ASSURANCE_APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.PORTFOLIO_ASSURANCE_APP_PRIVATE_KEY }}
+        if: ${{ env.APP_ID != '' && env.APP_PRIVATE_KEY != '' }}
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.PORTFOLIO_ASSURANCE_APP_ID }}
+          private-key: ${{ secrets.PORTFOLIO_ASSURANCE_APP_PRIVATE_KEY }}
+          owner: sankarshanmukhopadhyay
+          repositories: sankarshanmukhopadhyay
+
       - name: Collect evidence, evaluate assurance contracts, and generate reports
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -82,6 +95,8 @@ jobs:
           retention-days: 90
 
       - name: Commit changed reports
+        env:
+          PORTFOLIO_PUBLICATION_TOKEN: ${{ steps.publication-token.outputs.token }}
         run: |
           changed_paths="$(git diff --name-only)"
           disallowed_paths="$(printf '%s\n' "$changed_paths" | grep -Ev '^(docs/portfolio-assurance/dashboard\.md|reports/portfolio-assurance/)' || true)"
@@ -95,8 +110,13 @@ jobs:
             echo "No assurance report changes to commit."
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -z "$PORTFOLIO_PUBLICATION_TOKEN" ]; then
+            echo "Refusing to publish without the repository-scoped Portfolio Assurance App token."
+            exit 1
+          fi
+
+          git config user.name "portfolio-assurance[bot]"
+          git config user.email "portfolio-assurance[bot]@users.noreply.github.com"
           git add docs/portfolio-assurance/dashboard.md reports/portfolio-assurance
           git commit -m "chore(assurance): publish portfolio evidence"
-          git push
+          git push "https://x-access-token:${PORTFOLIO_PUBLICATION_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main
