@@ -13,7 +13,7 @@ I design specifications, protocols, schemas, conformance systems, and reference 
 
 ## Explore the work
 
-**[Trust frameworks](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework)** · **[Governance and authority](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel)** · **[Agent infrastructure](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol)** · **[Policy execution](https://github.com/sankarshanmukhopadhyay/PolicyMesh)** · **[Assurance and RAHP](https://github.com/sankarshanmukhopadhyay/rahp-toolkit)** · **[Composed privacy assurance](https://github.com/sankarshanmukhopadhyay/dtg-privacy-implementation-profile)** · **[Terminology](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-glossary)** · **[Portfolio dashboard](docs/portfolio-assurance/dashboard.md)**
+**[Trust frameworks](https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework)** · **[Governance and authority](https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel)** · **[Agent infrastructure](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol)** · **[Policy execution](https://github.com/sankarshanmukhopadhyay/PolicyMesh)** · **[Assurance and RAHP](https://github.com/sankarshanmukhopadhyay/rahp-toolkit)** · **[Composed privacy assurance](https://github.com/sankarshanmukhopadhyay/dtg-privacy-implementation-profile)** · **[Terminology](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-glossary)** · **[Work queue](docs/portfolio-work/index.md)** · **[Portfolio dashboard](docs/portfolio-assurance/dashboard.md)**
 
 This profile presents a **curated trust-infrastructure portfolio**, not an exhaustive inventory of every public repository on this GitHub account. Portfolio membership, maturity, lifecycle, provenance, and authority are governed explicitly rather than inferred from repository activity.
 
@@ -98,7 +98,7 @@ Forks and adapted upstream work are identified explicitly. Inclusion in this por
 ## Working with this portfolio
 
 - **Browse the portfolio:** [GitHub Pages](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/)
-- **Understand portfolio status:** [Portfolio Status](docs/portfolio-status.md)
+- **Choose the next bounded work item:** [Portfolio Work Queue](docs/portfolio-work/index.md)\n- **Understand portfolio status:** [Portfolio Status](docs/portfolio-status.md)
 - **Understand the architecture:** [Portfolio Architecture](portfolio/architecture.md)
 - **Review assurance evidence:** [Portfolio Assurance](docs/portfolio-assurance/index.md)
 - **Review governance:** [GOVERNANCE.md](GOVERNANCE.md)
