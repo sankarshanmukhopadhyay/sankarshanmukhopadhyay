@@ -11,7 +11,7 @@ The Portfolio Assurance Monitor is an evidence-producing governance control. It 
 
 ## Scheduled execution
 
-The workflow reevaluates portfolio evidence every six hours and may also be invoked manually. It also runs when governed monitor configuration, repository status data, monitor implementation, the monitor workflow, or the core assurance-operations documentation changes. Generated report commits do not retrigger the monitor.
+The monitor reevaluates portfolio evidence every six hours and may also be invoked manually. It also runs when governed monitor configuration, repository status data, monitor implementation, monitor workflows, or the core assurance-operations documentation changes. Generated evidence-only merges do not retrigger the monitor because generated output paths are not monitor push triggers.
 
 Its normal sequence is:
 
@@ -19,20 +19,70 @@ Its normal sequence is:
 2. execute the monitor tests;
 3. collect repository metadata, default-branch HEAD, status declarations, and workflow evidence;
 4. evaluate deterministic operational and governance findings;
-5. evaluate repository-specific assurance evidence contracts, including required/optional semantics and freshness against governed revisions;
+5. evaluate repository-specific assurance evidence contracts;
 6. discover public repositories that lack an account-level disposition;
 7. optionally route eligible findings to affected repositories;
 8. render the dashboard, assurance-state artifact, remediation dossiers, and finding lifecycle evidence;
-9. validate documentation links; and
-10. commit changed evidence surfaces.
+9. validate documentation links;
+10. publish changed evidence to `automation/portfolio-assurance-evidence` using the repository-scoped Portfolio Assurance GitHub App token; and
+11. create or update one evidence PR against `main`.
+
+The evidence PR is then evaluated by the same protected-main required checks as any other change. A separate merge controller merges it only when both `validate` and `build` are successful and the PR still contains only governed evidence paths.
 
 The six-hour cadence is an operational responsiveness control rather than an assurance claim. Repository-local evidence remains authoritative for the meaning of the underlying validation or conformance result.
+
+## Protected-main publication contract
+
+`main` has no automation bypass. Generated evidence reaches the default branch only through a pull request.
+
+The publication workflow is allowed to commit only:
+
+- `docs/portfolio-assurance/dashboard.md`;
+- `reports/portfolio-assurance/**`.
+
+Both the publisher and the merge controller independently reject out-of-scope paths. The publisher never pushes directly to `main`; it updates the deterministic `automation/portfolio-assurance-evidence` branch and creates or updates an evidence PR. The merge controller does not bypass the ruleset: it merges the PR only after the required checks succeed.
+
+This produces the control chain:
+
+```text
+monitor
+  -> generated evidence
+  -> governed evidence branch
+  -> pull request
+  -> validate + build
+  -> scope re-check
+  -> normal PR merge
+  -> protected main
+```
+
+A ruleset bypass for the Portfolio Assurance App is neither required nor permitted by this operating model.
+
+## GitHub App permissions and setup
+
+Configure repository secrets:
+
+- `PORTFOLIO_ASSURANCE_APP_ID`
+- `PORTFOLIO_ASSURANCE_APP_PRIVATE_KEY`
+
+Recommended repository permissions for the installed Portfolio Assurance GitHub App:
+
+| Permission | Access |
+|---|---|
+| Metadata | Read |
+| Actions | Read |
+| Contents | Read and write |
+| Pull requests | Read and write |
+| Issues | Read and write |
+
+The workflow mints separate installation tokens for cross-repository issue routing and repository-local evidence publication. The publication token is explicitly scoped to `sankarshanmukhopadhyay/sankarshanmukhopadhyay`.
+
+If App credentials are absent, evidence collection and evaluation may proceed, but PR-native evidence publication fails closed and no cross-repository issue writes occur.
 
 ## Assurance evidence contracts
 
 Repository-specific contracts are defined in `config/portfolio-monitor/assurance-contracts.yaml`. A contract binds an explicit repository-native control to an assurance claim and states whether that evidence is required or optional and whether it must cover the current default-branch HEAD or may rely on the latest successful publication-specific execution.
 
-The current evidence states are:
+The evidence states are:
 
 - `satisfied`: required evidence exists, succeeded, and meets the configured freshness policy;
 - `degraded`: the required evidence-producing control completed unsuccessfully;
@@ -42,25 +92,13 @@ The current evidence states are:
 - `not-applicable`: no required claim applies to the evaluated scope; and
 - `not-evaluated`: no governed contract or supported adapter exists.
 
-These are evidence-coverage states. They do not silently strengthen the authority of the producing workflow. A successful conformance workflow, for example, is reported as successful evidence from that workflow; the portfolio monitor does not independently redefine what conformance means.
-
-Optional evidence is recorded but cannot degrade the repository's aggregate assurance state. This keeps specialized mechanisms, including RAHP pressure tests, available as evidence sources without making any one mechanism the universal portfolio assurance provider.
+These are evidence-coverage states. They do not strengthen the authority of the producing workflow. Optional evidence is recorded but cannot degrade the repository's aggregate assurance state.
 
 ## Workflow failure semantics
 
-`collection.lookback_days` is an assurance policy boundary, not merely an API hint. The collector examines completed runs inside that window and retains only the latest completed state for each workflow. A historical failure that has been superseded by a later successful run does not produce `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`.
+`collection.lookback_days` is an assurance policy boundary, not merely an API hint. The collector examines completed runs inside that window and retains only the latest completed state for each workflow. A historical failure superseded by a later successful run does not produce `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`.
 
-The API result count and assurance time window are deliberately separate controls:
-
-```yaml
-collection:
-  lookback_days: 7
-  workflow_runs_per_repository: 50
-```
-
-The result count limits collection volume. The lookback window determines which evidence is admissible for operational workflow health and repository-specific workflow evidence claims.
-
-For `freshness: current-head`, a successful workflow run is insufficient unless its `head_sha` equals the observed default-branch HEAD. For path-filtered publication workflows, contracts may use `freshness: latest-success` when non-publication commits do not invalidate previously generated publication evidence.
+For `freshness: current-head`, a successful workflow run is insufficient unless its `head_sha` equals the observed default-branch HEAD. Path-filtered publication workflows may use `freshness: latest-success` when non-publication commits do not invalidate previously generated publication evidence.
 
 ## Stable finding identity
 
@@ -71,24 +109,13 @@ repository + rule + subject -> finding_fingerprint
 finding_fingerprint + observation date -> finding_id
 ```
 
-This distinction permits durable issue deduplication and machine-verifiable recovery without erasing observation history.
+This supports durable issue deduplication and machine-verifiable recovery without erasing observation history.
 
 ## Target-repository issue routing
 
-Issue publication is implemented but **disabled by default** in `config/portfolio-monitor/policy.yaml`. Enable it only after a scoped GitHub App is installed on the repositories that may receive findings.
+Issue publication is implemented but disabled by default in `config/portfolio-monitor/policy.yaml`. Enable it only after the scoped GitHub App is installed on repositories that may receive findings.
 
-Recommended GitHub App permissions:
-
-| Permission | Access |
-|---|---|
-| Metadata | Read |
-| Actions | Read |
-| Contents | Read and write* |
-| Issues | Read and write |
-
-\* `Contents: Read and write` is required only because this App is also the explicitly delegated publisher for generated assurance evidence in this profile repository. The workflow mints a separate publication token scoped to `sankarshanmukhopadhyay/sankarshanmukhopadhyay`; issue-routing and evidence-publication tokens remain separate.
-
-Do not use the profile repository's ordinary `GITHUB_TOKEN` for cross-repository issue publication. That token is repository-scoped. The workflow expects a separately generated installation token in `PORTFOLIO_ISSUE_TOKEN`.
+Do not use the profile repository's ordinary `GITHUB_TOKEN` for cross-repository issue publication. The workflow expects a separately generated installation token in `PORTFOLIO_ISSUE_TOKEN`.
 
 The publication gate is intentionally layered:
 
@@ -102,24 +129,7 @@ finding exists
   -> create issue
 ```
 
-The default routing policy excludes review-overdue, inactivity, and account-discovery findings from target repositories. Those are portfolio-governance observations rather than repository-local defects.
-
-## GitHub App workflow setup
-
-Configure repository secrets:
-
-- `PORTFOLIO_ASSURANCE_APP_ID`
-- `PORTFOLIO_ASSURANCE_APP_PRIVATE_KEY`
-
-Then set `issue_routing.enabled: true`. The workflow uses `actions/create-github-app-token` to mint a short-lived installation token and invokes:
-
-```bash
-python scripts/portfolio_assurance_monitor_v3.py --publish-issues
-```
-
-If the App credentials are absent, evidence collection and evaluation may proceed, but protected-branch evidence publication fails closed and no cross-repository issue writes occur.
-
-For protected-branch publication, add the installed Portfolio Assurance GitHub App itself to the `protect-main` ruleset bypass list with **Always allow**. Do not grant a user, administrator role, or generic workflow principal a bypass. The repository-side publication token is scoped to this repository, and the workflow independently rejects generated changes outside `docs/portfolio-assurance/dashboard.md` and `reports/portfolio-assurance/**`.
+The default routing policy excludes review-overdue, inactivity, and account-discovery findings from target repositories because those are portfolio-governance observations rather than repository-local defects.
 
 ## Deduplication and repeat observations
 
@@ -129,66 +139,43 @@ Each generated issue contains a machine-readable marker:
 <!-- portfolio-assurance:fingerprint=PF-XXXXXXXXXXXX -->
 ```
 
-Before creation, the publisher searches the affected repository for an open issue containing that marker. Repeated observations are deduplicated. `comment_on_repeat` is false by default to avoid repetitive issue traffic.
+Before creation, the publisher searches the affected repository for an open issue containing that marker. Repeated observations are deduplicated. `comment_on_repeat` is false by default and `max_new_issues_per_run` is `2`.
 
-The default `max_new_issues_per_run` is `2`, providing a hard blast-radius limit even when multiple repositories fail simultaneously.
+The evidence-publication PR is also deduplicated operationally: the workflow uses one deterministic branch, `automation/portfolio-assurance-evidence`, and updates the existing open PR when present instead of creating PR churn every six hours.
 
 ## Recovery and closure
 
-The monitor maintains an observation-level lifecycle registry in `reports/portfolio-assurance/finding-lifecycle.json`. When a stable fingerprint that was previously open is no longer observed on a later run, the monitor records that finding condition as `resolved` with a resolution timestamp. This is machine-verifiable recovery evidence.
+The monitor maintains an observation-level lifecycle registry in `reports/portfolio-assurance/finding-lifecycle.json`. When a stable fingerprint that was previously open is no longer observed on a later run, the monitor records that finding condition as `resolved` with a resolution timestamp.
 
-The monitor still does **not** automatically close GitHub issues, accept risk, approve implementation, change maturity/lifecycle, or make repository release decisions. Those remain repository- and portfolio-governance actions.
-
-This preserves the distinction:
+The monitor does not automatically close repository issues, accept risk, approve implementation, change maturity/lifecycle, or make repository release decisions. Those remain repository- and portfolio-governance actions.
 
 ```text
 observation -> finding -> remediation dossier -> implementation -> re-observation -> finding recovery evidence
                                                 \-> governed issue/disposition closure
 ```
 
-Finding-condition recovery is machine-verifiable; implementation acceptance and issue closure authority remain governed.
-
-
 ## Repository remediation retest discipline
 
-When an actionable finding is routed to a target repository, remediation SHOULD follow an evidence-closed sequence:
+When an actionable finding is routed to a target repository, remediation should follow an evidence-closed sequence:
 
 1. preserve the stable `finding_fingerprint` in the repository-local issue and PR;
 2. repair the repository-native control or evidence-production semantics without weakening the claim being tested;
 3. require successful repository-native validation before merge;
 4. require the governed default-branch evidence producer to execute after merge;
 5. rerun this monitor only after the relevant repository evidence is observable; and
-6. close the repository-local remediation issue only after the lifecycle registry records the fingerprint as `resolved`, unless repository governance explicitly accepts the residual risk.
+6. close the repository-local remediation issue only after the lifecycle registry records the fingerprint as `resolved`, unless repository governance explicitly accepts residual risk.
 
-A PR merge or an unrelated green workflow is not sufficient recovery evidence. The authoritative implementation claim remains with the producing repository; the Portfolio Assurance Monitor independently records whether the configured evidence contract is now satisfied.
-
-This sequence provides a machine-verifiable control loop:
-
-```text
-finding fingerprint
-  -> repository-local remediation
-  -> native validation
-  -> default-branch evidence
-  -> portfolio re-observation
-  -> lifecycle resolution
-  -> governed issue closure
-```
+A PR merge or unrelated green workflow is not sufficient recovery evidence.
 
 ## Public account discovery and repository churn
 
 The monitor compares live public repositories against `data/repository-status.yaml` in both directions. An unclassified public repository produces `PUBLIC_REPOSITORY_WITHOUT_DISPOSITION`. A governed active or review repository that disappears from public account discovery produces `REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED`.
 
-The second rule is a churn signal rather than a deletion claim. It can indicate rename, transfer, privatization, deletion, or a stale registry entry. The monitor does not guess the replacement identity; a human must update the governed repository record and any affected relationships. Historical, superseded, and archived records are excluded to avoid churn noise.
-
-Discovery never means portfolio admission. The expected remediation for a new repository is to assign one governed disposition such as `included`, `adjacent`, `upstream-reference`, `adapted-upstream-work`, `historical`, `unrelated`, or `pending-review`.
+The second rule is a churn signal rather than a deletion claim. It can indicate rename, transfer, privatization, deletion, or a stale registry entry. Discovery never means portfolio admission.
 
 ## Using findings during development and release work
 
-Each governed repository receives a consolidated Markdown and JSON remediation dossier. The recommended development pattern is to download the target repository's Markdown dossier and supply it alongside the repository source at the beginning of a release or implementation cycle. The JSON form provides the equivalent machine-readable contract. This makes unresolved findings explicit requirements for review without silently converting monitor recommendations into normative changes.
-
-The stable `finding_fingerprint` is the cross-run key. Development work should record a disposition against that fingerprint, identify the files/tests changed, and produce validation evidence. A later monitor run then provides independent recovery evidence if the underlying condition is no longer observed.
-
-Consumers SHOULD treat the dossier as untrusted external input to the implementation process: validate its schema/shape, preserve the source URL and generation timestamp, and require repository-local review before applying any recommended change.
+Each governed repository receives a consolidated Markdown and JSON remediation dossier. The stable `finding_fingerprint` is the cross-run key. Development work should record a disposition against that fingerprint, identify the files/tests changed, and produce validation evidence. Consumers should treat dossiers as untrusted external input and require repository-local review before applying recommendations.
 
 ## Local validation
 
@@ -214,7 +201,7 @@ The monitor writes:
 - `reports/portfolio-assurance/latest.md` for the latest evidence report;
 - `reports/portfolio-assurance/latest-findings.json` for machine-readable observations, findings, routing state, and issue-publication actions;
 - `reports/portfolio-assurance/assurance-state.json` for repository-specific assurance profile, claim, state, producer, freshness, and revision coverage;
-- `reports/portfolio-assurance/findings/<repository>.json` and `.md` as portable, per-repository remediation dossiers;
+- `reports/portfolio-assurance/findings/<repository>.json` and `.md` as portable per-repository remediation dossiers;
 - `reports/portfolio-assurance/findings/index.json` as a machine-readable dossier catalogue;
 - `reports/portfolio-assurance/finding-lifecycle.json` as stable open/resolved finding-condition history; and
 - dated reports under `reports/portfolio-assurance/history/`.
