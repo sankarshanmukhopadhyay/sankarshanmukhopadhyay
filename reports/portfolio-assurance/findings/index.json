@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T11:38:15Z",
+  "generated_at": "2026-09-01T16:39:26Z",
   "repositories": [
     {
       "repository": "A2A",
@@ -87,7 +87,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "finding_count": 3,
+      "finding_count": 0,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json"
