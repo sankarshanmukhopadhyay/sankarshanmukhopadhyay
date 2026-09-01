@@ -1,0 +1,75 @@
+name: Merge portfolio assurance evidence
+
+on:
+  workflow_run:
+    workflows:
+      - Portfolio validation
+      - Build and deploy GitHub Pages
+    types:
+      - completed
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-assurance-evidence-merge
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create repository-scoped merge token
+        id: app-token
+        env:
+          APP_ID: ${{ secrets.PORTFOLIO_ASSURANCE_APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.PORTFOLIO_ASSURANCE_APP_PRIVATE_KEY }}
+        if: ${{ env.APP_ID != '' && env.APP_PRIVATE_KEY != '' }}
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.PORTFOLIO_ASSURANCE_APP_ID }}
+          private-key: ${{ secrets.PORTFOLIO_ASSURANCE_APP_PRIVATE_KEY }}
+          owner: sankarshanmukhopadhyay
+          repositories: sankarshanmukhopadhyay
+
+      - name: Merge governed evidence PR when both required checks pass
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          EXPECTED_BRANCH: automation/portfolio-assurance-evidence
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "No Portfolio Assurance App token; refusing automated merge."
+            exit 1
+          fi
+
+          pr_number="$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$EXPECTED_BRANCH" --base main --state open --json number --jq '.[0].number // empty')"
+          if [ -z "$pr_number" ]; then
+            echo "No open governed evidence PR."
+            exit 0
+          fi
+
+          files="$(gh pr view "$pr_number" --repo "$GITHUB_REPOSITORY" --json files --jq '.files[].path')"
+          disallowed="$(printf '%s\n' "$files" | grep -Ev '^(docs/portfolio-assurance/dashboard\.md|reports/portfolio-assurance/)' || true)"
+          if [ -n "$disallowed" ]; then
+            echo "Refusing to merge evidence PR with out-of-scope paths:"
+            printf '%s\n' "$disallowed"
+            exit 1
+          fi
+
+          checks="$(gh pr checks "$pr_number" --repo "$GITHUB_REPOSITORY" --json name,state)"
+          validate_state="$(printf '%s' "$checks" | jq -r '[.[] | select(.name == "validate") | .state] | last // "MISSING"')"
+          build_state="$(printf '%s' "$checks" | jq -r '[.[] | select(.name == "build") | .state] | last // "MISSING"')"
+
+          echo "validate=${validate_state} build=${build_state}"
+          if [ "$validate_state" != "SUCCESS" ] || [ "$build_state" != "SUCCESS" ]; then
+            echo "Required checks are not both successful yet; leaving PR open."
+            exit 0
+          fi
+
+          gh pr merge "$pr_number" \
+            --repo "$GITHUB_REPOSITORY" \
+            --squash \
+            --delete-branch \
+            --subject "chore(assurance): publish portfolio evidence" \
+            --body "Automated merge after protected-main required checks succeeded."
