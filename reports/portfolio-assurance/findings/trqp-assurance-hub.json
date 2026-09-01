@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-01T03:27:59Z",
+  "generated_at": "2026-09-01T05:06:32Z",
   "repository": "trqp-assurance-hub",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-01T03:27:59Z",
+    "observed_at": "2026-09-01T05:06:32Z",
     "default_branch": "main",
     "head_sha": "17d8dac2a605fbfe1ebcd368efdbc9dcc2575e64",
     "provenance_status": "observed"
