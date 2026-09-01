@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-work-queue.schema.json",
+  "title": "Portfolio Work Queue",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "authority", "candidates"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "generated_at": {"type": "string"},
+    "authority": {
+      "type": "object",
+      "required": ["scope_source", "statement"],
+      "properties": {
+        "scope_source": {"type": "string"},
+        "statement": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id","repository","title","url","source_type","state","effort","complexity","confidence","project_goal_impact","priority","leverage","rationale"],
+        "properties": {
+          "id": {"type":"string"},
+          "repository": {"type":"string"},
+          "title": {"type":"string"},
+          "url": {"type":"string","format":"uri"},
+          "source_type": {"enum":["issue","pull-request"]},
+          "state": {"enum":["ready","blocked","waiting-external","needs-judgment","maintenance"]},
+          "effort": {
+            "type":"object",
+            "required":["bucket","minutes"],
+            "properties":{"bucket":{"type":"string"},"minutes":{"type":"integer","minimum":1}},
+            "additionalProperties": false
+          },
+          "complexity": {"enum":["low","medium","high","consequential"]},
+          "confidence": {"enum":["low","medium","high"]},
+          "project_goal_impact": {"enum":["none","low","medium","high","very-high"]},
+          "priority": {"type":"number"},
+          "leverage": {"type":"number"},
+          "rationale": {"type":"array","items":{"type":"string"}},
+          "labels": {"type":"array","items":{"type":"string"}}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}
