@@ -1,0 +1,105 @@
+schema_version: "1.0"
+authority:
+  portfolio_scope: data/repository-status.yaml
+  statement: >-
+    This configuration controls portfolio-level discovery, prioritisation and presentation only.
+    Member repositories retain authority over project goals, normative content, implementation state,
+    releases and repository-local evidence.
+eligible:
+  dispositions: [included, adjacent, pending-review]
+  lifecycles: [active, maintenance]
+  operational_statuses: [active-development, active-validation, pilot-use, stable-maintenance]
+effort_buckets:
+  - {id: "le-15m", minutes: 15, label: "≤15m"}
+  - {id: "15-30m", minutes: 30, label: "15–30m"}
+  - {id: "30-60m", minutes: 60, label: "30–60m"}
+  - {id: "1-2h", minutes: 120, label: "1–2h"}
+  - {id: "2-4h", minutes: 240, label: "2–4h"}
+  - {id: "half-day", minutes: 360, label: "0.5 day"}
+  - {id: "one-day", minutes: 480, label: "1 day"}
+  - {id: "decompose", minutes: 1440, label: ">1 day — decompose"}
+scoring:
+  weights:
+    project_goal_impact: 30
+    portfolio_impact: 15
+    unblock_value: 15
+    release_proximity: 15
+    assurance_value: 10
+    adoption_value: 10
+    staleness_pressure: 5
+  penalties:
+    blocked: 45
+    waiting_external: 35
+    low_confidence: 8
+    maintenance_noise: 18
+  impact_values: {none: 0.0, low: 0.25, medium: 0.5, high: 0.75, very-high: 1.0}
+  complexity_order: [low, medium, high, consequential]
+  confidence_order: [low, medium, high]
+heuristics:
+  consequential_labels: [architecture, governance, normative, security, breaking-change, release]
+  maintenance_labels: [dependencies, dependabot, maintenance, chore]
+  blocked_labels: [blocked, waiting, upstream-blocked]
+  quick_labels:
+    "good first issue": "30-60m"
+    documentation: "30-60m"
+  title_signals:
+    release: [release, "release gate", cut, publish]
+    unblock: [blocker, unblock, blocked]
+    assurance: [assurance, conformance, validation, evidence, privacy, security]
+    adoption: [adoption, quickstart, "quick start", example, interoperability, pilot]
+project_goals:
+  open-national-digital-trust-framework:
+    statement: "Advance ONDTF through evidence-backed candidate validation without making external implementation a prerequisite for continued improvement."
+    horizon: "continuous"
+    signals: [validation, conformance, adoption, framework, implementation, roadmap]
+  trust-systems-meta-model:
+    statement: "Advance TSMS end-to-end executable interoperability while preserving TSMM semantic authority boundaries."
+    horizon: "2026-09-30"
+    signals: [tsms, semantic, "end-to-end", interoperability, evidence, release]
+  trust-infrastructure-schemas:
+    statement: "Advance TSMS portable contracts needed for end-to-end executable interoperability."
+    horizon: "2026-09-30"
+    signals: [tsms, schema, contract, interoperability, evidence, release]
+  trust-graph-artifacts:
+    statement: "Advance executable governance and TSMS end-to-end evidence without acquiring TSMM or TIS authority."
+    horizon: "2026-09-30"
+    signals: [tsms, executable, governance, interoperability, evidence, release]
+  TRQP-TSPP:
+    statement: "Deliver the next TRQP Stack release with testable invalidation and security-profile capability."
+    horizon: "2026-09-30"
+    signals: [trqp, invalidation, security, release, conformance, evidence]
+  trqp-conformance-suite:
+    statement: "Provide conformance evidence required for the next TRQP Stack release."
+    horizon: "2026-09-30"
+    signals: [trqp, conformance, release, invalidation, evidence]
+  cawg-trqp-verifier-refimpl:
+    statement: "Keep the TRQP reference verifier aligned with current profile and conformance requirements."
+    horizon: "2026-09-30"
+    signals: [trqp, verifier, release, conformance, invalidation]
+  trqp-assurance-hub:
+    statement: "Orchestrate evidence required to qualify the next TRQP Stack release."
+    horizon: "2026-09-30"
+    signals: [trqp, assurance, release, evidence, stack]
+  rahp-toolkit:
+    statement: "Keep RAHP stable, generic and evidence-driven while improving actionable assurance routing."
+    horizon: "continuous"
+    signals: [assurance, evidence, routing, generic, reconciliation, release]
+  dtg-privacy-implementation-profile:
+    statement: "Produce executable privacy evidence for compositions explicitly routed to DPIP."
+    horizon: "continuous"
+    signals: [privacy, evidence, composition, runtime, dpip]
+  trust-protocol-interop-lab:
+    statement: "Turn bounded cross-protocol propositions into reproducible interoperability evidence."
+    horizon: "continuous"
+    signals: [interoperability, experiment, evidence, composition, harness]
+  agent-registry-protocol:
+    statement: "Advance ARPA from pilot-ready specification toward independently consumable implementation and conformance evidence."
+    horizon: "continuous"
+    signals: [agent, registry, conformance, implementation, adoption, ietf]
+cross_repository_dependencies:
+  - {from: trust-systems-meta-model, to: trust-infrastructure-schemas, relation: semantic-input}
+  - {from: trust-infrastructure-schemas, to: trust-graph-artifacts, relation: contract-input}
+  - {from: TRQP-TSPP, to: trqp-conformance-suite, relation: profile-input}
+  - {from: trqp-conformance-suite, to: cawg-trqp-verifier-refimpl, relation: conformance-input}
+  - {from: cawg-trqp-verifier-refimpl, to: trqp-assurance-hub, relation: implementation-evidence}
+  - {from: rahp-toolkit, to: dtg-privacy-implementation-profile, relation: privacy-routing}
