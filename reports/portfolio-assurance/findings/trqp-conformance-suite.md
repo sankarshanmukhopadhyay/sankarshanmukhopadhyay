@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `trqp-conformance-suite`
 
-**Generated:** 2026-09-02T21:02:25Z  
+**Generated:** 2026-09-03T04:32:29Z  
 **Open findings:** 0  
-**Repository snapshot:** `ea3fed33a1edc3313735405f433a23f9d154d903`  
+**Repository snapshot:** `d53ce75b59afe1350c017e57c997922ad9ced9ca`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
