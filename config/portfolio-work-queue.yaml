@@ -1,10 +1,18 @@
-schema_version: "1.0"
+schema_version: "2.0"
 authority:
   portfolio_scope: data/repository-status.yaml
   statement: >-
-    This configuration controls portfolio-level discovery, prioritisation and presentation only.
+    This configuration controls portfolio-level discovery, prioritisation, reconciliation and presentation only.
     Member repositories retain authority over project goals, normative content, implementation state,
     releases and repository-local evidence.
+change_convention:
+  title_pattern: "<type>(<scope>): <imperative summary>"
+  types: [feat, fix, docs, test, chore, refactor, ci, perf, security, governance]
+  breaking_marker: "!"
+  statement: >-
+    A breaking marker means consumer-visible incompatibility, not merely a large change.
+    Security and governance are first-class portfolio types because collapsing them into fix/chore loses
+    material authority and assurance information.
 eligible:
   dispositions: [included, adjacent, pending-review]
   lifecycles: [active, maintenance]
@@ -32,6 +40,7 @@ scoring:
     waiting_external: 35
     low_confidence: 8
     maintenance_noise: 18
+    untyped_change: 4
   impact_values: {none: 0.0, low: 0.25, medium: 0.5, high: 0.75, very-high: 1.0}
   complexity_order: [low, medium, high, consequential]
   confidence_order: [low, medium, high]
@@ -39,6 +48,13 @@ heuristics:
   consequential_labels: [architecture, governance, normative, security, breaking-change, release]
   maintenance_labels: [dependencies, dependabot, maintenance, chore]
   blocked_labels: [blocked, waiting, upstream-blocked]
+  in_progress_labels: [in-progress, in progress, implementation-in-progress]
+  evidence_required_labels: [evidence-required, assessment-evidence-required, evidence required]
+  superseded_labels: [superseded, obsolete]
+  superseded_phrases:
+    - "superseded by"
+    - "already present on main"
+    - "equivalent work is already on main"
   explicit_wait_phrases:
     - "do not implement until"
     - "must wait for"
@@ -50,6 +66,8 @@ heuristics:
     - "until upstream terminology is ratified"
     - "until upstream is ratified"
     - "pending external decision"
+    - "keep #88 open until"
+    - "keep this issue open until"
   planning_title_prefixes:
     - "docs(roadmap):"
     - "roadmap:"
