@@ -1,6 +1,5 @@
 import json
 import unittest
-from pathlib import Path
 
 import yaml
 
@@ -18,12 +17,21 @@ class PortfolioWorkQueueReconciliationTests(unittest.TestCase):
     def test_unlabelled_explicit_upstream_wait_is_not_ready(self):
         queue = build_queue(self.registry, self.config, self.evidence)
         candidate = next(c for c in queue["candidates"] if c["id"] == "rahp-toolkit:issue:88")
-        self.assertEqual(candidate["state"], "waiting-external")
+        self.assertEqual(candidate["state"], "waiting_external")
+        self.assertEqual(candidate["dependency"]["kind"], "external")
 
     def test_docs_roadmap_pull_request_is_not_execution_work(self):
         queue = build_queue(self.registry, self.config, self.evidence)
         candidate = next(c for c in queue["candidates"] if c["id"] == "TRQP-TSPP:pull-request:68")
-        self.assertEqual(candidate["state"], "maintenance")
+        self.assertEqual(candidate["lane"], "planning")
+        self.assertNotEqual(candidate["lane"], "strategic")
+
+    def test_ready_is_positive_claim(self):
+        queue = build_queue(self.registry, self.config, self.evidence)
+        for candidate in queue["candidates"]:
+            if candidate["state"] == "ready":
+                self.assertEqual(candidate["dependency"]["kind"], "none")
+                self.assertNotEqual(candidate["complexity"], "consequential")
 
 
 if __name__ == "__main__":
