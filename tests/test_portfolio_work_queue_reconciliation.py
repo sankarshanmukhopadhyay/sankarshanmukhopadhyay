@@ -1,6 +1,6 @@
+import copy
 import json
 import unittest
-from pathlib import Path
 
 import yaml
 
@@ -18,12 +18,56 @@ class PortfolioWorkQueueReconciliationTests(unittest.TestCase):
     def test_unlabelled_explicit_upstream_wait_is_not_ready(self):
         queue = build_queue(self.registry, self.config, self.evidence)
         candidate = next(c for c in queue["candidates"] if c["id"] == "rahp-toolkit:issue:88")
-        self.assertEqual(candidate["state"], "waiting-external")
+        self.assertEqual(candidate["state"], "waiting_external")
+        self.assertEqual(candidate["dependency"]["kind"], "external")
 
     def test_docs_roadmap_pull_request_is_not_execution_work(self):
         queue = build_queue(self.registry, self.config, self.evidence)
         candidate = next(c for c in queue["candidates"] if c["id"] == "TRQP-TSPP:pull-request:68")
-        self.assertEqual(candidate["state"], "maintenance")
+        self.assertEqual(candidate["lane"], "planning")
+        self.assertNotEqual(candidate["lane"], "strategic")
+
+    def test_ready_is_positive_claim(self):
+        queue = build_queue(self.registry, self.config, self.evidence)
+        for candidate in queue["candidates"]:
+            if candidate["state"] == "ready":
+                self.assertEqual(candidate["dependency"]["kind"], "none")
+                self.assertNotEqual(candidate["complexity"], "consequential")
+
+    def test_breaking_title_routes_to_judgment_without_label(self):
+        evidence = copy.deepcopy(self.evidence)
+        evidence["repositories"].setdefault("rahp-toolkit", {}).setdefault("issues", []).append(
+            {
+                "number": 99901,
+                "title": "feat(controller)!: replace assurance state contract",
+                "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/issues/99901",
+                "labels": [],
+                "body": "Consumer-visible contract replacement.",
+                "updated_at": "2026-09-03T00:00:00Z",
+            }
+        )
+        queue = build_queue(self.registry, self.config, evidence)
+        candidate = next(c for c in queue["candidates"] if c["id"] == "rahp-toolkit:issue:99901")
+        self.assertTrue(candidate["change"]["breaking"])
+        self.assertEqual(candidate["state"], "needs_judgment")
+        self.assertEqual(candidate["complexity"], "consequential")
+
+    def test_security_type_routes_to_judgment_without_label(self):
+        evidence = copy.deepcopy(self.evidence)
+        evidence["repositories"].setdefault("rahp-toolkit", {}).setdefault("issues", []).append(
+            {
+                "number": 99902,
+                "title": "security(runtime): reject cross-context disclosure",
+                "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/issues/99902",
+                "labels": [],
+                "body": "Runtime security boundary hardening.",
+                "updated_at": "2026-09-03T00:00:00Z",
+            }
+        )
+        queue = build_queue(self.registry, self.config, evidence)
+        candidate = next(c for c in queue["candidates"] if c["id"] == "rahp-toolkit:issue:99902")
+        self.assertEqual(candidate["change"]["type"], "security")
+        self.assertEqual(candidate["state"], "needs_judgment")
 
 
 if __name__ == "__main__":

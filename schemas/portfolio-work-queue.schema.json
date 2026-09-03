@@ -5,7 +5,7 @@
   "type": "object",
   "required": ["schema_version", "generated_at", "authority", "candidates"],
   "properties": {
-    "schema_version": {"const": "1.0"},
+    "schema_version": {"const": "2.0"},
     "generated_at": {"type": "string"},
     "authority": {
       "type": "object",
@@ -20,14 +20,47 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id","repository","title","url","source_type","state","effort","complexity","confidence","project_goal_impact","priority","leverage","rationale"],
+        "required": ["id","repository","title","url","source_type","state","lane","change","dependency","evidence","effort","complexity","confidence","project_goal_impact","priority","leverage","rationale"],
         "properties": {
           "id": {"type":"string"},
           "repository": {"type":"string"},
           "title": {"type":"string"},
           "url": {"type":"string","format":"uri"},
           "source_type": {"enum":["issue","pull-request"]},
-          "state": {"enum":["ready","blocked","waiting-external","needs-judgment","maintenance"]},
+          "state": {"enum":["ready","in_progress","waiting_internal","waiting_external","needs_judgment","evidence_required","superseded","stale_candidate","completed"]},
+          "lane": {"enum":["strategic","maintenance","planning"]},
+          "change": {
+            "type":"object",
+            "required":["type","scope","breaking","typed","classification_source"],
+            "properties": {
+              "type":{"type":"string"},
+              "scope":{"type":["string","null"]},
+              "breaking":{"type":"boolean"},
+              "typed":{"type":"boolean"},
+              "classification_source":{"enum":["title","inferred"]}
+            },
+            "additionalProperties": false
+          },
+          "dependency": {
+            "type":"object",
+            "required":["kind","source","condition"],
+            "properties": {
+              "kind":{"enum":["none","internal","external"]},
+              "source":{"type":["string","null"]},
+              "condition":{"type":["string","null"]}
+            },
+            "additionalProperties": false
+          },
+          "evidence": {
+            "type":"object",
+            "required":["state","last_verified_at","source_updated_at"],
+            "properties": {
+              "state":{"enum":["unverified","partially_verified","verified","execution_evidence_pending","complete"]},
+              "last_verified_at":{"type":"string"},
+              "source_updated_at":{"type":["string","null"]}
+            },
+            "additionalProperties": false
+          },
           "effort": {
             "type":"object",
             "required":["bucket","minutes"],
@@ -42,7 +75,7 @@
           "rationale": {"type":"array","items":{"type":"string"}},
           "labels": {"type":"array","items":{"type":"string"}}
         },
-        "additionalProperties": true
+        "additionalProperties": false
       }
     }
   },

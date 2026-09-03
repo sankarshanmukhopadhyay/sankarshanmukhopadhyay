@@ -28,28 +28,38 @@ class PortfolioWorkQueueTests(unittest.TestCase):
         release = next(c for c in queue["candidates"] if c["repository"] == "TRQP-TSPP")
         dependency = next(c for c in queue["candidates"] if c["repository"] == "rahp-toolkit")
         self.assertGreater(release["priority"], dependency["priority"])
-        self.assertEqual(dependency["state"], "maintenance")
+        self.assertEqual(dependency["lane"], "maintenance")
 
     def test_external_blocker_not_ready(self):
         queue = self.build()
         blocked = next(c for c in queue["candidates"] if c["id"].endswith(":78"))
-        self.assertEqual(blocked["state"], "waiting-external")
+        self.assertEqual(blocked["state"], "waiting_external")
+        self.assertEqual(blocked["dependency"]["kind"], "external")
 
     def test_consequential_change_requires_judgment(self):
         queue = self.build()
         candidate = next(c for c in queue["candidates"] if c["id"].endswith(":77"))
         self.assertEqual(candidate["complexity"], "consequential")
-        self.assertEqual(candidate["state"], "needs-judgment")
+        self.assertEqual(candidate["state"], "needs_judgment")
+
+    def test_candidates_expose_reconciliation_evidence(self):
+        candidate = self.build()["candidates"][0]
+        self.assertIn("change", candidate)
+        self.assertIn("dependency", candidate)
+        self.assertIn("evidence", candidate)
+        self.assertIn(candidate["evidence"]["state"], {"verified", "complete"})
+        self.assertTrue(candidate["evidence"]["last_verified_at"])
 
     def test_output_is_deterministic_for_fixed_evidence(self):
         first = self.build()
         second = self.build()
         self.assertEqual(first, second)
         self.assertEqual([], validate_queue(first))
+        self.assertEqual(first["schema_version"], "2.0")
 
     def test_render_exposes_required_views(self):
         page = render_markdown(self.build(), self.config)
-        for heading in ["## Work now", "## Highest leverage", "## By available time", "## Needs judgment", "## Blocked or waiting", "## Maintenance lane"]:
+        for heading in ["## Work now", "## Highest leverage", "## By available time", "## Needs judgment", "## Non-executable / reconciliation", "## Maintenance and planning lane"]:
             self.assertIn(heading, page)
 
 
