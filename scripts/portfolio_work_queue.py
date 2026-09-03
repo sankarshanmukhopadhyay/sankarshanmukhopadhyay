@@ -127,7 +127,18 @@ def effort_for(item: dict[str, Any], config: dict[str, Any]) -> tuple[str, int, 
 def classify_state(item: dict[str, Any], config: dict[str, Any]) -> tuple[str, str]:
     labels = norm_labels(item)
     text = text_blob(item)
+    title = item.get("title", "").strip().lower()
     h = config["heuristics"]
+
+    # A repository-local statement that work must wait is stronger evidence than
+    # the absence of a blocker label. Keep the vocabulary narrow so generic
+    # mentions of upstream work do not become blockers by accident.
+    if has_any(text, h.get("explicit_wait_phrases", [])):
+        return "waiting-external", "Repository evidence explicitly requires an external/upstream condition before execution."
+
+    if any(title.startswith(prefix.lower()) for prefix in h.get("planning_title_prefixes", [])):
+        return "maintenance", "Planning/roadmap-only pull request is separated from executable implementation work."
+
     if any(x in labels for x in h["blocked_labels"]):
         if has_any(text, ["upstream", "external", "ratification", "third party", "independent implementation"]):
             return "waiting-external", "Explicit blocker depends on external/upstream evidence."
