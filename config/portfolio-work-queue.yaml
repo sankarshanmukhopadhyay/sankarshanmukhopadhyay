@@ -39,6 +39,20 @@ heuristics:
   consequential_labels: [architecture, governance, normative, security, breaking-change, release]
   maintenance_labels: [dependencies, dependabot, maintenance, chore]
   blocked_labels: [blocked, waiting, upstream-blocked]
+  explicit_wait_phrases:
+    - "do not implement until"
+    - "must wait for"
+    - "waiting for upstream"
+    - "wait for upstream"
+    - "blocked on upstream"
+    - "depends on upstream"
+    - "pending upstream"
+    - "until upstream terminology is ratified"
+    - "until upstream is ratified"
+    - "pending external decision"
+  planning_title_prefixes:
+    - "docs(roadmap):"
+    - "roadmap:"
   quick_labels:
     "good first issue": "30-60m"
     documentation: "30-60m"
