@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-09-03T00:00:00Z",
+  "repositories": {
+    "rahp-toolkit": {
+      "issues": [
+        {
+          "number": 88,
+          "title": "Track projected impact of upstream DTG terminology change",
+          "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/issues/88",
+          "labels": [],
+          "body": "Do not implement until upstream terminology is ratified. Work must wait for the upstream decision."
+        }
+      ],
+      "pull_requests": []
+    },
+    "TRQP-TSPP": {
+      "issues": [],
+      "pull_requests": [
+        {
+          "number": 68,
+          "title": "docs(roadmap): align TSPP with TRQP Stack 2026.2",
+          "url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/pull/68",
+          "labels": [],
+          "body": "Defines the September roadmap contribution and candidate release gates."
+        }
+      ]
+    }
+  }
+}
