@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-03T04:32:29Z",
+  "generated_at": "2026-09-03T11:13:03Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -140,10 +140,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-22T01:49:53Z",
       "last_observed": "2026-09-03T04:32:29Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-03T11:13:03Z",
       "latest_finding_id": "PAM-955AE2F41178"
     },
     "PF-954D1C442655": {
@@ -164,11 +164,11 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "dimension": "operational",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-09-02T16:33:50Z",
-      "resolved_at": "2026-09-02T21:02:25Z",
-      "latest_finding_id": "PAM-B483B7DAF348"
+      "last_observed": "2026-09-03T11:13:03Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-F8CDF188267F"
     },
     "PF-FE9A3049B948": {
       "finding_fingerprint": "PF-FE9A3049B948",
@@ -416,10 +416,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/validate.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T21:01:37Z",
       "last_observed": "2026-09-03T04:32:29Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-03T11:13:03Z",
       "latest_finding_id": "PAM-B50E7B5FE44C"
     },
     "PF-E8B1B5CFA71B": {
@@ -428,10 +428,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T21:01:37Z",
       "last_observed": "2026-09-03T04:32:29Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-03T11:13:03Z",
       "latest_finding_id": "PAM-17CE0D48CA88"
     }
   }
