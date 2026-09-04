@@ -34,6 +34,7 @@ jobs:
         run: |
           python -m pip install pyyaml
           python scripts/portfolio_work_queue.py
+          python scripts/portfolio_delivery_pulse.py
 
       - uses: ruby/setup-ruby@v1
         with:
@@ -49,7 +50,9 @@ jobs:
         run: |
           test -f _site/index.html
           test -f _site/docs/portfolio-work/index.html
+          test -f _site/data/portfolio-delivery-pulse.json
           grep -R "Portfolio Work Queue" _site/docs/portfolio-work/index.html >/dev/null
+          grep -R "Portfolio delivery pulse" _site/docs/portfolio-work/index.html >/dev/null
           grep -R "mermaid-init.js" _site >/dev/null
 
       - uses: actions/upload-pages-artifact@v3
