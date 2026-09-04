@@ -21,6 +21,12 @@ The live builder reads the governed portfolio registry, `config/portfolio-work-q
 
 Repository-local issues, pull requests, releases, rulesets, `PROJECT-STATUS.yaml`, roadmaps and assurance artifacts remain authoritative for the claims they make. The planner must not turn absence of a parsed blocker into evidence that no blocker exists.
 
+## Publication freshness
+
+The public GitHub Pages surface is rebuilt from live repository evidence on every push to `main`, on manual dispatch, and on an **hourly schedule**. The intended publication-staleness bound is therefore approximately one hour, subject to GitHub Actions scheduling and deployment availability.
+
+A published `ready` state is a time-bounded reconciliation claim. If the displayed **Evidence snapshot** is materially older than the expected refresh window, consumers should treat the queue as stale planning evidence and verify the source issue or pull request before execution. Closed or otherwise terminal source artifacts are never intentionally carried forward as executable candidates by a fresh build.
+
 ## Change convention
 
 Issue and pull-request titles should use:
@@ -74,14 +80,16 @@ Effort is not part of strategic priority. Leverage divides positive priority by 
 The planner is wrong if any of these occur:
 
 - a candidate is `ready` while carrying an unresolved dependency;
+- a closed/completed source artifact is emitted as `ready`;
 - consequential work is emitted as `ready`;
 - an external wait lacks external dependency evidence;
 - superseded/completed work retains executable priority;
 - dependency or roadmap noise dominates the strategic work-now view;
 - an ungoverned repository enters scope;
-- a ranking cannot explain its evidence and classification provenance.
+- a ranking cannot explain its evidence and classification provenance;
+- the public queue is treated as current despite an evidence snapshot outside the expected refresh window.
 
-Regression fixtures should deliberately falsify these rules. RAHP #88 is a canonical example: high importance does not make the issue executable while the authoritative issue says to wait for upstream WD02.
+Regression fixtures should deliberately falsify these rules. RAHP #88 is a canonical example: high importance does not make the issue executable while the authoritative issue says to wait for upstream WD02. Closed-work fixtures separately prove that terminal source state cannot retain executable priority.
 
 ## Schema v2 migration
 
