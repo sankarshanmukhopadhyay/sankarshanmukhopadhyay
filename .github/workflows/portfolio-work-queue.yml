@@ -23,14 +23,22 @@ jobs:
       - name: Install dependencies
         run: pip install pyyaml
 
-      - name: Build live work queue
+      - name: Build live work queue and delivery pulse
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
-          python scripts/portfolio_work_queue.py             --output-json artifacts/portfolio-work/portfolio-work-queue.json             --output-md artifacts/portfolio-work/index.md
+          python scripts/portfolio_work_queue.py \
+            --output-json artifacts/portfolio-work/portfolio-work-queue.json \
+            --output-md artifacts/portfolio-work/index.md
+          python scripts/portfolio_delivery_pulse.py \
+            --output-json artifacts/portfolio-work/portfolio-delivery-pulse.json \
+            --page artifacts/portfolio-work/index.md
 
       - name: Validate deterministic model against fixture
         run: python scripts/portfolio_work_queue.py --offline tests/fixtures/work-queue-evidence.json --check
+
+      - name: Run delivery-pulse tests
+        run: python -m unittest tests.test_portfolio_delivery_pulse
 
       - name: Upload live execution evidence
         uses: actions/upload-artifact@v4
