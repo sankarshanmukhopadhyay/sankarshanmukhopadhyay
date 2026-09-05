@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `governance-authority-assurance-metamodel`
 
-**Generated:** 2026-09-05T04:26:43Z  
+**Generated:** 2026-09-05T10:34:39Z  
 **Open findings:** 0  
-**Repository snapshot:** `25c005f983ce98e389f9459255d45462e1878c5b`  
+**Repository snapshot:** `45766b3f1c42516ed4fbb9a06a5db4612504417b`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.

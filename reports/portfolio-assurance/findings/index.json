@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T04:26:43Z",
+  "generated_at": "2026-09-05T10:34:39Z",
   "repositories": [
     {
       "repository": "A2A",
@@ -192,7 +192,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "finding_count": 4,
+      "finding_count": 0,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/rahp-toolkit.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json"
@@ -213,7 +213,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "finding_count": 0,
+      "finding_count": 2,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trqp-assurance-hub.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.json"
