@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-05T20:19:44Z",
+  "generated_at": "2026-09-06T04:37:51Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -722,13 +722,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-05T07:34:03Z",
-            "updated_at": "2026-09-05T07:35:00Z",
-            "run_started_at": "2026-09-05T07:34:03Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33952914916",
-            "head_sha": "10cc29a42a5f8b1ae378f868e7ad978458689288",
+            "created_at": "2026-09-06T04:31:24Z",
+            "updated_at": "2026-09-06T04:32:29Z",
+            "run_started_at": "2026-09-06T04:31:24Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34011713783",
+            "head_sha": "feb84899a4d28d65099bfa9817ab0d23b78d8dea",
             "head_branch": "main",
-            "run_number": 605
+            "run_number": 616
           }
         },
         {
@@ -746,13 +746,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-05T07:34:03Z",
-            "updated_at": "2026-09-05T07:34:19Z",
-            "run_started_at": "2026-09-05T07:34:03Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33952914912",
-            "head_sha": "10cc29a42a5f8b1ae378f868e7ad978458689288",
+            "created_at": "2026-09-06T04:31:24Z",
+            "updated_at": "2026-09-06T04:31:48Z",
+            "run_started_at": "2026-09-06T04:31:24Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34011713750",
+            "head_sha": "feb84899a4d28d65099bfa9817ab0d23b78d8dea",
             "head_branch": "main",
-            "run_number": 75
+            "run_number": 79
           }
         },
         {
@@ -770,13 +770,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-05T07:34:03Z",
-            "updated_at": "2026-09-05T07:35:11Z",
-            "run_started_at": "2026-09-05T07:34:03Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33952914914",
-            "head_sha": "10cc29a42a5f8b1ae378f868e7ad978458689288",
+            "created_at": "2026-09-06T04:31:24Z",
+            "updated_at": "2026-09-06T04:32:22Z",
+            "run_started_at": "2026-09-06T04:31:24Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34011713784",
+            "head_sha": "feb84899a4d28d65099bfa9817ab0d23b78d8dea",
             "head_branch": "main",
-            "run_number": 593
+            "run_number": 604
           }
         },
         {
@@ -785,23 +785,8 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/cross-spec-pressure-test.yml",
           "freshness_policy": "latest-success",
-          "state": "satisfied",
-          "reason": "successful workflow evidence satisfies the configured freshness policy",
-          "evidence": {
-            "workflow_id": 337404001,
-            "name": "Run cross-specification pressure test",
-            "path": ".github/workflows/cross-spec-pressure-test.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "workflow_dispatch",
-            "created_at": "2026-09-05T15:56:09Z",
-            "updated_at": "2026-09-05T15:56:31Z",
-            "run_started_at": "2026-09-05T15:56:09Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/33976299700",
-            "head_sha": "10cc29a42a5f8b1ae378f868e7ad978458689288",
-            "head_branch": "main",
-            "run_number": 16
-          }
+          "state": "missing",
+          "reason": "no completed workflow execution was observed inside the governed lookback window"
         }
       ],
       "required_claims": 3,
