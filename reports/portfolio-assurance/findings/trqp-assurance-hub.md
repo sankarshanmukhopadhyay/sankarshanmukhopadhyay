@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `trqp-assurance-hub`
 
-**Generated:** 2026-09-06T15:27:38Z  
+**Generated:** 2026-09-06T20:23:38Z  
 **Open findings:** 2  
 **Repository snapshot:** `8d45ac364294c38473eba2217e59e0019e8d243d`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-A4136D1F88AC — ASSURANCE_CONTROL_FAILED
 
-- Observation: `PAM-E3B1230EE307` at `2026-09-06T15:27:38Z`
+- Observation: `PAM-E3B1230EE307` at `2026-09-06T20:23:38Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
@@ -78,7 +78,7 @@ Resolve the failing repository-native assurance control or record an explicit go
 
 ## PF-0B036E077FB8 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-2AEC6B3B4147` at `2026-09-06T15:27:38Z`
+- Observation: `PAM-2AEC6B3B4147` at `2026-09-06T20:23:38Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/pages.yml`
