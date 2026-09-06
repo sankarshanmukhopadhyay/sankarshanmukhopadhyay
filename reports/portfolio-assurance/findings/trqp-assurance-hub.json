@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-06T04:37:51Z",
+  "generated_at": "2026-09-06T10:55:03Z",
   "repository": "trqp-assurance-hub",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-06T04:37:51Z",
+    "observed_at": "2026-09-06T10:55:03Z",
     "default_branch": "main",
     "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
     "provenance_status": "observed"
@@ -46,7 +46,7 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-06T04:37:51Z",
+      "observed_at": "2026-09-06T10:55:03Z",
       "claim": "The repository-native control bound to this assurance claim is currently failing.",
       "evidence": {
         "claim": "publication_integrity",
@@ -97,12 +97,12 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/pages.yml",
       "severity": "medium",
-      "observed_at": "2026-09-06T04:37:51Z",
+      "observed_at": "2026-09-06T10:55:03Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
         "lookback_days": 7,
-        "completed_examined": 50,
+        "completed_examined": 15,
         "workflows_examined": 8,
         "retired_workflows_examined": 0,
         "unresolved_failures": 1,
@@ -291,7 +291,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-05T10:34:39Z",
-      "last_observed": "2026-09-06T04:37:51Z",
+      "last_observed": "2026-09-06T10:55:03Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-E3B1230EE307"
     },
@@ -303,7 +303,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-09-05T10:34:39Z",
-      "last_observed": "2026-09-06T04:37:51Z",
+      "last_observed": "2026-09-06T10:55:03Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-2AEC6B3B4147"
     }

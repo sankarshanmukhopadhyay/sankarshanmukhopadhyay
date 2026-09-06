@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-06T04:37:51Z",
+  "generated_at": "2026-09-06T10:55:03Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -721,14 +721,14 @@
             "path": ".github/workflows/validate.yml",
             "conclusion": "success",
             "status": "completed",
-            "event": "push",
-            "created_at": "2026-09-06T04:31:24Z",
-            "updated_at": "2026-09-06T04:32:29Z",
-            "run_started_at": "2026-09-06T04:31:24Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34011713783",
+            "event": "schedule",
+            "created_at": "2026-09-06T07:56:38Z",
+            "updated_at": "2026-09-06T07:57:37Z",
+            "run_started_at": "2026-09-06T07:56:38Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34020486696",
             "head_sha": "feb84899a4d28d65099bfa9817ab0d23b78d8dea",
             "head_branch": "main",
-            "run_number": 616
+            "run_number": 617
           }
         },
         {
@@ -785,8 +785,23 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/cross-spec-pressure-test.yml",
           "freshness_policy": "latest-success",
-          "state": "missing",
-          "reason": "no completed workflow execution was observed inside the governed lookback window"
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 337404001,
+            "name": "Run cross-specification pressure test",
+            "path": ".github/workflows/cross-spec-pressure-test.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "workflow_dispatch",
+            "created_at": "2026-09-06T05:46:39Z",
+            "updated_at": "2026-09-06T05:47:07Z",
+            "run_started_at": "2026-09-06T05:46:39Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34014822108",
+            "head_sha": "feb84899a4d28d65099bfa9817ab0d23b78d8dea",
+            "head_branch": "main",
+            "run_number": 17
+          }
         }
       ],
       "required_claims": 3,
