@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-06T20:23:38Z",
+  "generated_at": "2026-09-07T04:39:54Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -442,9 +442,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-09-05T10:34:39Z",
-      "last_observed": "2026-09-06T20:23:38Z",
+      "last_observed": "2026-09-07T04:39:54Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-2AEC6B3B4147"
+      "latest_finding_id": "PAM-4F34B9CB560B"
     },
     "PF-A4136D1F88AC": {
       "finding_fingerprint": "PF-A4136D1F88AC",
@@ -454,9 +454,33 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-05T10:34:39Z",
-      "last_observed": "2026-09-06T20:23:38Z",
+      "last_observed": "2026-09-07T04:39:54Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-E3B1230EE307"
+      "latest_finding_id": "PAM-14A227F3EA56"
+    },
+    "PF-392606CD0C53": {
+      "finding_fingerprint": "PF-392606CD0C53",
+      "repository": "agent-registry-protocol",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/validate.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-09-07T04:39:54Z",
+      "last_observed": "2026-09-07T04:39:54Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-FF7A57A6D9C4"
+    },
+    "PF-2F100A769FFE": {
+      "finding_fingerprint": "PF-2F100A769FFE",
+      "repository": "agent-registry-protocol",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-09-07T04:39:54Z",
+      "last_observed": "2026-09-07T04:39:54Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-F3B32E3F3155"
     }
   }
 }

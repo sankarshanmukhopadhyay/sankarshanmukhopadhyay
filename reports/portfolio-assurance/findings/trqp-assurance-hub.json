@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-06T20:23:38Z",
+  "generated_at": "2026-09-07T04:39:54Z",
   "repository": "trqp-assurance-hub",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-06T20:23:38Z",
+    "observed_at": "2026-09-07T04:39:54Z",
     "default_branch": "main",
     "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
     "provenance_status": "observed"
@@ -40,13 +40,13 @@
   "finding_count": 2,
   "findings": [
     {
-      "finding_id": "PAM-E3B1230EE307",
+      "finding_id": "PAM-14A227F3EA56",
       "finding_fingerprint": "PF-A4136D1F88AC",
       "repository": "trqp-assurance-hub",
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-06T20:23:38Z",
+      "observed_at": "2026-09-07T04:39:54Z",
       "claim": "The repository-native control bound to this assurance claim is currently failing.",
       "evidence": {
         "claim": "publication_integrity",
@@ -91,13 +91,13 @@
       }
     },
     {
-      "finding_id": "PAM-2AEC6B3B4147",
+      "finding_id": "PAM-4F34B9CB560B",
       "finding_fingerprint": "PF-0B036E077FB8",
       "repository": "trqp-assurance-hub",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/pages.yml",
       "severity": "medium",
-      "observed_at": "2026-09-06T20:23:38Z",
+      "observed_at": "2026-09-07T04:39:54Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -291,9 +291,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-05T10:34:39Z",
-      "last_observed": "2026-09-06T20:23:38Z",
+      "last_observed": "2026-09-07T04:39:54Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-E3B1230EE307"
+      "latest_finding_id": "PAM-14A227F3EA56"
     },
     {
       "finding_fingerprint": "PF-0B036E077FB8",
@@ -303,9 +303,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-09-05T10:34:39Z",
-      "last_observed": "2026-09-06T20:23:38Z",
+      "last_observed": "2026-09-07T04:39:54Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-2AEC6B3B4147"
+      "latest_finding_id": "PAM-4F34B9CB560B"
     }
   ],
   "handoff": {
