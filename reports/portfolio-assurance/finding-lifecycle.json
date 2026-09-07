@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-07T04:39:54Z",
+  "generated_at": "2026-09-07T06:27:28Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -440,10 +440,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/pages.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-05T10:34:39Z",
       "last_observed": "2026-09-07T04:39:54Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-07T06:27:28Z",
       "latest_finding_id": "PAM-4F34B9CB560B"
     },
     "PF-A4136D1F88AC": {
@@ -452,10 +452,10 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-05T10:34:39Z",
       "last_observed": "2026-09-07T04:39:54Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-07T06:27:28Z",
       "latest_finding_id": "PAM-14A227F3EA56"
     },
     "PF-392606CD0C53": {
@@ -464,10 +464,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/validate.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-07T04:39:54Z",
       "last_observed": "2026-09-07T04:39:54Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-07T06:27:28Z",
       "latest_finding_id": "PAM-FF7A57A6D9C4"
     },
     "PF-2F100A769FFE": {
@@ -476,10 +476,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_STALE",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-07T04:39:54Z",
       "last_observed": "2026-09-07T04:39:54Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-07T06:27:28Z",
       "latest_finding_id": "PAM-F3B32E3F3155"
     }
   }
