@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-06T20:23:38Z",
+  "generated_at": "2026-09-07T04:39:54Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -120,7 +120,7 @@
     "agent-registry-protocol": {
       "repository": "agent-registry-protocol",
       "profile": "protocol-specification",
-      "state": "satisfied",
+      "state": "stale",
       "claims": [
         {
           "claim": "protocol_validation",
@@ -128,8 +128,8 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/validate.yml",
           "freshness_policy": "current-head",
-          "state": "satisfied",
-          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "state": "stale",
+          "reason": "successful evidence does not cover the current default-branch HEAD",
           "evidence": {
             "workflow_id": 314181172,
             "name": "Validate",
@@ -144,7 +144,9 @@
             "head_sha": "30c8562da47816742d14ffa3b07c6badbc78788a",
             "head_branch": "main",
             "run_number": 169
-          }
+          },
+          "repository_head_sha": "304cb571ee5e893352347df039fd46969cf91f0c",
+          "evidence_head_sha": "30c8562da47816742d14ffa3b07c6badbc78788a"
         },
         {
           "claim": "publication_integrity",
@@ -152,8 +154,8 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/pages.yml",
           "freshness_policy": "current-head",
-          "state": "satisfied",
-          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "state": "stale",
+          "reason": "successful evidence does not cover the current default-branch HEAD",
           "evidence": {
             "workflow_id": 314182119,
             "name": "Deploy GitHub Pages",
@@ -168,7 +170,9 @@
             "head_sha": "30c8562da47816742d14ffa3b07c6badbc78788a",
             "head_branch": "main",
             "run_number": 51
-          }
+          },
+          "repository_head_sha": "304cb571ee5e893352347df039fd46969cf91f0c",
+          "evidence_head_sha": "30c8562da47816742d14ffa3b07c6badbc78788a"
         },
         {
           "claim": "ietf_renderability",
@@ -196,7 +200,7 @@
         }
       ],
       "required_claims": 2,
-      "satisfied_required_claims": 2
+      "satisfied_required_claims": 0
     },
     "trust-systems-meta-model": {
       "repository": "trust-systems-meta-model",
@@ -722,13 +726,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-06T12:37:54Z",
-            "updated_at": "2026-09-06T12:38:49Z",
-            "run_started_at": "2026-09-06T12:37:54Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34033677659",
-            "head_sha": "c9d6686242e735e47fff3f7a70cef0f49a31dcb6",
+            "created_at": "2026-09-07T02:18:59Z",
+            "updated_at": "2026-09-07T02:20:07Z",
+            "run_started_at": "2026-09-07T02:18:59Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34075884183",
+            "head_sha": "7ea2069c3d2f0d4ac8fdbaf7b8e7e6e2a3225f7b",
             "head_branch": "main",
-            "run_number": 619
+            "run_number": 644
           }
         },
         {
@@ -746,13 +750,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-06T12:37:54Z",
-            "updated_at": "2026-09-06T12:38:19Z",
-            "run_started_at": "2026-09-06T12:37:54Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34033677581",
-            "head_sha": "c9d6686242e735e47fff3f7a70cef0f49a31dcb6",
+            "created_at": "2026-09-07T02:18:59Z",
+            "updated_at": "2026-09-07T02:19:18Z",
+            "run_started_at": "2026-09-07T02:18:59Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34075884165",
+            "head_sha": "7ea2069c3d2f0d4ac8fdbaf7b8e7e6e2a3225f7b",
             "head_branch": "main",
-            "run_number": 80
+            "run_number": 85
           }
         },
         {
@@ -770,13 +774,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-06T12:37:54Z",
-            "updated_at": "2026-09-06T12:38:43Z",
-            "run_started_at": "2026-09-06T12:37:54Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34033677585",
-            "head_sha": "c9d6686242e735e47fff3f7a70cef0f49a31dcb6",
+            "created_at": "2026-09-07T02:18:59Z",
+            "updated_at": "2026-09-07T02:19:54Z",
+            "run_started_at": "2026-09-07T02:18:59Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34075884206",
+            "head_sha": "7ea2069c3d2f0d4ac8fdbaf7b8e7e6e2a3225f7b",
             "head_branch": "main",
-            "run_number": 606
+            "run_number": 631
           }
         },
         {
@@ -794,13 +798,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "workflow_dispatch",
-            "created_at": "2026-09-06T16:09:39Z",
-            "updated_at": "2026-09-06T16:09:57Z",
-            "run_started_at": "2026-09-06T16:09:39Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34044551157",
-            "head_sha": "c9d6686242e735e47fff3f7a70cef0f49a31dcb6",
+            "created_at": "2026-09-07T02:02:50Z",
+            "updated_at": "2026-09-07T02:03:12Z",
+            "run_started_at": "2026-09-07T02:02:50Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34074964945",
+            "head_sha": "cc96b5630552b6c6ba4dbe10f6f1ddd52b02121a",
             "head_branch": "main",
-            "run_number": 18
+            "run_number": 19
           }
         }
       ],

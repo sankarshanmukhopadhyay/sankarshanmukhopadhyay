@@ -1,13 +1,13 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-06T20:23:38Z",
+  "generated_at": "2026-09-07T04:39:54Z",
   "repository": "agent-registry-protocol",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-06T20:23:38Z",
+    "observed_at": "2026-09-07T04:39:54Z",
     "default_branch": "main",
-    "head_sha": "30c8562da47816742d14ffa3b07c6badbc78788a",
+    "head_sha": "304cb571ee5e893352347df039fd46969cf91f0c",
     "provenance_status": "observed"
   },
   "assessment": {
@@ -24,7 +24,7 @@
     "assurance": {
       "status": "evaluated",
       "description": "Repository-specific assurance evidence coverage, execution state, provenance and freshness against governed repository revisions.",
-      "open_findings": 0
+      "open_findings": 2
     },
     "cross_specification": {
       "status": "not-evaluated",
@@ -37,9 +37,137 @@
     "dashboard": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/docs/portfolio-assurance/dashboard.html",
     "latest_report": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/latest.html"
   },
-  "finding_count": 0,
-  "findings": [],
-  "lifecycle": [],
+  "finding_count": 2,
+  "findings": [
+    {
+      "finding_id": "PAM-F3B32E3F3155",
+      "finding_fingerprint": "PF-2F100A769FFE",
+      "repository": "agent-registry-protocol",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/pages.yml",
+      "severity": "medium",
+      "observed_at": "2026-09-07T04:39:54Z",
+      "claim": "Required assurance evidence is successful but does not cover the current governed repository state.",
+      "evidence": {
+        "claim": "publication_integrity",
+        "state": "stale",
+        "reason": "successful evidence does not cover the current default-branch HEAD",
+        "freshness_policy": "current-head",
+        "repository_head_sha": "304cb571ee5e893352347df039fd46969cf91f0c",
+        "evidence_head_sha": "30c8562da47816742d14ffa3b07c6badbc78788a",
+        "workflow": {
+          "workflow_id": 314182119,
+          "name": "Deploy GitHub Pages",
+          "path": ".github/workflows/pages.yml",
+          "conclusion": "success",
+          "status": "completed",
+          "event": "push",
+          "created_at": "2026-09-05T07:34:22Z",
+          "updated_at": "2026-09-05T07:35:04Z",
+          "run_started_at": "2026-09-05T07:34:22Z",
+          "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/33952928561",
+          "head_sha": "30c8562da47816742d14ffa3b07c6badbc78788a",
+          "head_branch": "main",
+          "run_number": 51
+        }
+      },
+      "recommended_action": "Regenerate the assurance evidence against the current default-branch HEAD.",
+      "dimension": "assurance",
+      "remediation": {
+        "objective": "Regenerate assurance evidence against the current governed repository revision.",
+        "acceptance_criteria": [
+          "The evidence-producing workflow succeeds against the current default-branch HEAD.",
+          "The evidence HEAD SHA matches the governed repository HEAD SHA."
+        ],
+        "verification": [
+          "Execute the configured control on the current default branch and rerun the monitor."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": true,
+        "target": "target-repository",
+        "minimum_severity": "medium"
+      }
+    },
+    {
+      "finding_id": "PAM-FF7A57A6D9C4",
+      "finding_fingerprint": "PF-392606CD0C53",
+      "repository": "agent-registry-protocol",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/validate.yml",
+      "severity": "medium",
+      "observed_at": "2026-09-07T04:39:54Z",
+      "claim": "Required assurance evidence is successful but does not cover the current governed repository state.",
+      "evidence": {
+        "claim": "protocol_validation",
+        "state": "stale",
+        "reason": "successful evidence does not cover the current default-branch HEAD",
+        "freshness_policy": "current-head",
+        "repository_head_sha": "304cb571ee5e893352347df039fd46969cf91f0c",
+        "evidence_head_sha": "30c8562da47816742d14ffa3b07c6badbc78788a",
+        "workflow": {
+          "workflow_id": 314181172,
+          "name": "Validate",
+          "path": ".github/workflows/validate.yml",
+          "conclusion": "success",
+          "status": "completed",
+          "event": "push",
+          "created_at": "2026-09-05T07:34:22Z",
+          "updated_at": "2026-09-05T07:35:04Z",
+          "run_started_at": "2026-09-05T07:34:22Z",
+          "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/33952928657",
+          "head_sha": "30c8562da47816742d14ffa3b07c6badbc78788a",
+          "head_branch": "main",
+          "run_number": 169
+        }
+      },
+      "recommended_action": "Regenerate the assurance evidence against the current default-branch HEAD.",
+      "dimension": "assurance",
+      "remediation": {
+        "objective": "Regenerate assurance evidence against the current governed repository revision.",
+        "acceptance_criteria": [
+          "The evidence-producing workflow succeeds against the current default-branch HEAD.",
+          "The evidence HEAD SHA matches the governed repository HEAD SHA."
+        ],
+        "verification": [
+          "Execute the configured control on the current default branch and rerun the monitor."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": true,
+        "target": "target-repository",
+        "minimum_severity": "medium"
+      }
+    }
+  ],
+  "lifecycle": [
+    {
+      "finding_fingerprint": "PF-2F100A769FFE",
+      "repository": "agent-registry-protocol",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-09-07T04:39:54Z",
+      "last_observed": "2026-09-07T04:39:54Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-F3B32E3F3155"
+    },
+    {
+      "finding_fingerprint": "PF-392606CD0C53",
+      "repository": "agent-registry-protocol",
+      "rule_id": "ASSURANCE_EVIDENCE_STALE",
+      "subject": ".github/workflows/validate.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-09-07T04:39:54Z",
+      "last_observed": "2026-09-07T04:39:54Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-FF7A57A6D9C4"
+    }
+  ],
   "handoff": {
     "authority": "repository-local-governance",
     "intended_use": "Supply this dossier with the affected repository source during remediation planning and implementation.",
