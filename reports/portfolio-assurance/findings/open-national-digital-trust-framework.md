@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `open-national-digital-trust-framework`
 
-**Generated:** 2026-09-07T06:27:28Z  
+**Generated:** 2026-09-07T12:31:17Z  
 **Open findings:** 0  
 **Repository snapshot:** `f4d79e1194719989abeb94f75c7ad6204ed81f66`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.json)

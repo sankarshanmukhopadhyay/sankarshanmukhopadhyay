@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-07T06:27:28Z",
+  "generated_at": "2026-09-07T12:31:17Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -164,11 +164,11 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "dimension": "operational",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-09-05T04:26:43Z",
-      "resolved_at": "2026-09-05T10:34:39Z",
-      "latest_finding_id": "PAM-F927A253EFB9"
+      "last_observed": "2026-09-07T12:31:17Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-6A0BA3FF797A"
     },
     "PF-FE9A3049B948": {
       "finding_fingerprint": "PF-FE9A3049B948",
