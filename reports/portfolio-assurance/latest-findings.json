@@ -1,365 +1,20 @@
 {
-  "generated_at": "2026-09-07T04:39:54Z",
-  "findings": [
-    {
-      "finding_id": "PAM-4F34B9CB560B",
-      "finding_fingerprint": "PF-0B036E077FB8",
-      "repository": "trqp-assurance-hub",
-      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
-      "subject": ".github/workflows/pages.yml",
-      "severity": "medium",
-      "observed_at": "2026-09-07T04:39:54Z",
-      "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
-      "evidence": {
-        "available": true,
-        "lookback_days": 7,
-        "completed_examined": 15,
-        "workflows_examined": 8,
-        "retired_workflows_examined": 0,
-        "unresolved_failures": 1,
-        "latest": [
-          {
-            "workflow_id": 236983557,
-            "name": "combined-assurance-smoke",
-            "path": ".github/workflows/combined-assurance-smoke.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-09-05T07:59:10Z",
-            "updated_at": "2026-09-05T07:59:37Z",
-            "run_started_at": "2026-09-05T07:59:10Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954017094",
-            "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
-            "head_branch": "main",
-            "run_number": 171
-          },
-          {
-            "workflow_id": 345708524,
-            "name": "Lifecycle Recomposition",
-            "path": ".github/workflows/lifecycle-recomposition.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-09-05T07:59:10Z",
-            "updated_at": "2026-09-05T07:59:40Z",
-            "run_started_at": "2026-09-05T07:59:10Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954017076",
-            "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
-            "head_branch": "main",
-            "run_number": 46
-          },
-          {
-            "workflow_id": 316454965,
-            "name": "Deploy documentation to GitHub Pages",
-            "path": ".github/workflows/pages.yml",
-            "conclusion": "failure",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-09-05T07:59:10Z",
-            "updated_at": "2026-09-05T07:59:30Z",
-            "run_started_at": "2026-09-05T07:59:10Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954017112",
-            "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
-            "head_branch": "main",
-            "run_number": 57
-          },
-          {
-            "workflow_id": 338452388,
-            "name": "Portfolio Integration Contract",
-            "path": ".github/workflows/portfolio-contract.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-09-05T07:59:10Z",
-            "updated_at": "2026-09-05T07:59:55Z",
-            "run_started_at": "2026-09-05T07:59:10Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954017082",
-            "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
-            "head_branch": "main",
-            "run_number": 77
-          },
-          {
-            "workflow_id": 341731117,
-            "name": "publish-coordinated-stack-release",
-            "path": ".github/workflows/publish-coordinated-stack-release.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "workflow_run",
-            "created_at": "2026-09-05T07:59:39Z",
-            "updated_at": "2026-09-05T07:59:46Z",
-            "run_started_at": "2026-09-05T07:59:39Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954036458",
-            "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
-            "head_branch": "main",
-            "run_number": 44
-          },
-          {
-            "workflow_id": 236973230,
-            "name": "quality",
-            "path": ".github/workflows/quality.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-09-05T07:59:10Z",
-            "updated_at": "2026-09-05T07:59:35Z",
-            "run_started_at": "2026-09-05T07:59:10Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954017073",
-            "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
-            "head_branch": "main",
-            "run_number": 195
-          },
-          {
-            "workflow_id": 341720596,
-            "name": "stack-release-eligibility",
-            "path": ".github/workflows/stack-release-eligibility.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-09-05T07:59:10Z",
-            "updated_at": "2026-09-05T07:59:37Z",
-            "run_started_at": "2026-09-05T07:59:10Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954017069",
-            "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
-            "head_branch": "main",
-            "run_number": 53
-          },
-          {
-            "workflow_id": 241319705,
-            "name": "github_actions in /. - Update #1558352034",
-            "path": "dynamic/dependabot/dependabot-updates",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "dynamic",
-            "created_at": "2026-09-05T04:01:55Z",
-            "updated_at": "2026-09-05T04:03:04Z",
-            "run_started_at": "2026-09-05T04:01:55Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33943454315",
-            "head_sha": "3234c02f0e07edd32311c603bbd50e352c1ff286",
-            "head_branch": "main",
-            "run_number": 34
-          }
-        ],
-        "retired": [],
-        "unresolved": [
-          {
-            "workflow_id": 316454965,
-            "name": "Deploy documentation to GitHub Pages",
-            "path": ".github/workflows/pages.yml",
-            "conclusion": "failure",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-09-05T07:59:10Z",
-            "updated_at": "2026-09-05T07:59:30Z",
-            "run_started_at": "2026-09-05T07:59:10Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954017112",
-            "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
-            "head_branch": "main",
-            "run_number": 57
-          }
-        ],
-        "active_inventory_available": true,
-        "active_workflow_paths": [
-          ".github/workflows/combined-assurance-smoke.yml",
-          ".github/workflows/dependabot-automerge.yml",
-          ".github/workflows/lifecycle-recomposition.yml",
-          ".github/workflows/one-shot-tag-v1.12.0.yml",
-          ".github/workflows/pages.yml",
-          ".github/workflows/portfolio-contract.yml",
-          ".github/workflows/publish-coordinated-stack-release.yml",
-          ".github/workflows/quality.yml",
-          ".github/workflows/stack-release-eligibility.yml",
-          "dynamic/dependabot/dependabot-updates",
-          "dynamic/dependabot/update-graph",
-          "dynamic/pages/pages-build-deployment"
-        ]
-      },
-      "recommended_action": "Review the failed workflow, restore a successful default-branch run, or record an explicit accepted-risk disposition.",
-      "dimension": "operational",
-      "remediation": {
-        "objective": "Restore a successful latest completed default-branch run for the affected workflow or record an explicit repository-governed risk disposition.",
-        "acceptance_criteria": [
-          "The affected workflow's latest completed default-branch run succeeds, or an explicit governed disposition supersedes the operational expectation."
-        ],
-        "verification": [
-          "Run the affected workflow on the default branch.",
-          "Rerun the portfolio monitor and confirm the stable finding fingerprint is no longer open."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    },
-    {
-      "finding_id": "PAM-FF7A57A6D9C4",
-      "finding_fingerprint": "PF-392606CD0C53",
-      "repository": "agent-registry-protocol",
-      "rule_id": "ASSURANCE_EVIDENCE_STALE",
-      "subject": ".github/workflows/validate.yml",
-      "severity": "medium",
-      "observed_at": "2026-09-07T04:39:54Z",
-      "claim": "Required assurance evidence is successful but does not cover the current governed repository state.",
-      "evidence": {
-        "claim": "protocol_validation",
-        "state": "stale",
-        "reason": "successful evidence does not cover the current default-branch HEAD",
-        "freshness_policy": "current-head",
-        "repository_head_sha": "304cb571ee5e893352347df039fd46969cf91f0c",
-        "evidence_head_sha": "30c8562da47816742d14ffa3b07c6badbc78788a",
-        "workflow": {
-          "workflow_id": 314181172,
-          "name": "Validate",
-          "path": ".github/workflows/validate.yml",
-          "conclusion": "success",
-          "status": "completed",
-          "event": "push",
-          "created_at": "2026-09-05T07:34:22Z",
-          "updated_at": "2026-09-05T07:35:04Z",
-          "run_started_at": "2026-09-05T07:34:22Z",
-          "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/33952928657",
-          "head_sha": "30c8562da47816742d14ffa3b07c6badbc78788a",
-          "head_branch": "main",
-          "run_number": 169
-        }
-      },
-      "recommended_action": "Regenerate the assurance evidence against the current default-branch HEAD.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Regenerate assurance evidence against the current governed repository revision.",
-        "acceptance_criteria": [
-          "The evidence-producing workflow succeeds against the current default-branch HEAD.",
-          "The evidence HEAD SHA matches the governed repository HEAD SHA."
-        ],
-        "verification": [
-          "Execute the configured control on the current default branch and rerun the monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    },
-    {
-      "finding_id": "PAM-F3B32E3F3155",
-      "finding_fingerprint": "PF-2F100A769FFE",
-      "repository": "agent-registry-protocol",
-      "rule_id": "ASSURANCE_EVIDENCE_STALE",
-      "subject": ".github/workflows/pages.yml",
-      "severity": "medium",
-      "observed_at": "2026-09-07T04:39:54Z",
-      "claim": "Required assurance evidence is successful but does not cover the current governed repository state.",
-      "evidence": {
-        "claim": "publication_integrity",
-        "state": "stale",
-        "reason": "successful evidence does not cover the current default-branch HEAD",
-        "freshness_policy": "current-head",
-        "repository_head_sha": "304cb571ee5e893352347df039fd46969cf91f0c",
-        "evidence_head_sha": "30c8562da47816742d14ffa3b07c6badbc78788a",
-        "workflow": {
-          "workflow_id": 314182119,
-          "name": "Deploy GitHub Pages",
-          "path": ".github/workflows/pages.yml",
-          "conclusion": "success",
-          "status": "completed",
-          "event": "push",
-          "created_at": "2026-09-05T07:34:22Z",
-          "updated_at": "2026-09-05T07:35:04Z",
-          "run_started_at": "2026-09-05T07:34:22Z",
-          "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/33952928561",
-          "head_sha": "30c8562da47816742d14ffa3b07c6badbc78788a",
-          "head_branch": "main",
-          "run_number": 51
-        }
-      },
-      "recommended_action": "Regenerate the assurance evidence against the current default-branch HEAD.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Regenerate assurance evidence against the current governed repository revision.",
-        "acceptance_criteria": [
-          "The evidence-producing workflow succeeds against the current default-branch HEAD.",
-          "The evidence HEAD SHA matches the governed repository HEAD SHA."
-        ],
-        "verification": [
-          "Execute the configured control on the current default branch and rerun the monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    },
-    {
-      "finding_id": "PAM-14A227F3EA56",
-      "finding_fingerprint": "PF-A4136D1F88AC",
-      "repository": "trqp-assurance-hub",
-      "rule_id": "ASSURANCE_CONTROL_FAILED",
-      "subject": ".github/workflows/pages.yml",
-      "severity": "high",
-      "observed_at": "2026-09-07T04:39:54Z",
-      "claim": "The repository-native control bound to this assurance claim is currently failing.",
-      "evidence": {
-        "claim": "publication_integrity",
-        "state": "degraded",
-        "reason": "latest completed workflow conclusion is failure",
-        "freshness_policy": "latest-success",
-        "repository_head_sha": null,
-        "evidence_head_sha": null,
-        "workflow": {
-          "workflow_id": 316454965,
-          "name": "Deploy documentation to GitHub Pages",
-          "path": ".github/workflows/pages.yml",
-          "conclusion": "failure",
-          "status": "completed",
-          "event": "push",
-          "created_at": "2026-09-05T07:59:10Z",
-          "updated_at": "2026-09-05T07:59:30Z",
-          "run_started_at": "2026-09-05T07:59:10Z",
-          "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954017112",
-          "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
-          "head_branch": "main",
-          "run_number": 57
-        }
-      },
-      "recommended_action": "Resolve the failing repository-native control or record an explicit governed disposition.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Resolve the failing repository-native assurance control or record an explicit governed disposition.",
-        "acceptance_criteria": [
-          "The configured assurance control completes successfully.",
-          "The resulting evidence remains attributable to the configured repository revision."
-        ],
-        "verification": [
-          "Execute the control and rerun the portfolio monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    }
-  ],
+  "generated_at": "2026-09-07T06:27:28Z",
+  "findings": [],
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-09-07T04:39:54Z",
+      "observed_at": "2026-09-07T06:27:28Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-09-04T02:01:07Z",
-          "updated_at": "2026-09-04T02:01:16Z",
-          "open_issues_count": 1,
-          "head_sha": "d23d853b1d203cf564aba607683e83d747ef01f4"
+          "pushed_at": "2026-09-07T05:52:27Z",
+          "updated_at": "2026-09-07T05:51:22Z",
+          "open_issues_count": 2,
+          "head_sha": "f4d79e1194719989abeb94f75c7ad6204ed81f66"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -369,8 +24,8 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 6,
-          "workflows_examined": 2,
+          "completed_examined": 15,
+          "workflows_examined": 3,
           "retired_workflows_examined": 0,
           "unresolved_failures": 0,
           "latest": [
@@ -381,13 +36,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-04T02:01:10Z",
-              "updated_at": "2026-09-04T02:04:38Z",
-              "run_started_at": "2026-09-04T02:01:10Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/33827936258",
-              "head_sha": "d23d853b1d203cf564aba607683e83d747ef01f4",
+              "created_at": "2026-09-07T05:51:20Z",
+              "updated_at": "2026-09-07T05:54:52Z",
+              "run_started_at": "2026-09-07T05:51:20Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/34088395935",
+              "head_sha": "f4d79e1194719989abeb94f75c7ad6204ed81f66",
               "head_branch": "main",
-              "run_number": 49
+              "run_number": 53
             },
             {
               "workflow_id": 317410095,
@@ -396,13 +51,28 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-04T02:01:10Z",
-              "updated_at": "2026-09-04T02:04:24Z",
-              "run_started_at": "2026-09-04T02:01:10Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/33827936226",
-              "head_sha": "d23d853b1d203cf564aba607683e83d747ef01f4",
+              "created_at": "2026-09-07T05:51:20Z",
+              "updated_at": "2026-09-07T05:54:36Z",
+              "run_started_at": "2026-09-07T05:51:20Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/34088395946",
+              "head_sha": "f4d79e1194719989abeb94f75c7ad6204ed81f66",
               "head_branch": "main",
-              "run_number": 58
+              "run_number": 68
+            },
+            {
+              "workflow_id": 352022492,
+              "name": "github_actions in /. - Update #1560672037",
+              "path": "dynamic/dependabot/dependabot-updates",
+              "conclusion": "success",
+              "status": "completed",
+              "event": "dynamic",
+              "created_at": "2026-09-07T05:51:25Z",
+              "updated_at": "2026-09-07T05:52:31Z",
+              "run_started_at": "2026-09-07T05:51:25Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/34088400051",
+              "head_sha": "f4d79e1194719989abeb94f75c7ad6204ed81f66",
+              "head_branch": "main",
+              "run_number": 1
             }
           ],
           "retired": [],
@@ -411,6 +81,7 @@
           "active_workflow_paths": [
             ".github/workflows/pages.yml",
             ".github/workflows/quality.yml",
+            "dynamic/dependabot/dependabot-updates",
             "dynamic/dependabot/update-graph"
           ]
         }
@@ -419,17 +90,17 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-09-07T04:39:54Z",
+      "observed_at": "2026-09-07T06:27:28Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-09-05T08:01:02Z",
-          "updated_at": "2026-09-05T07:59:58Z",
-          "open_issues_count": 1,
-          "head_sha": "45766b3f1c42516ed4fbb9a06a5db4612504417b"
+          "pushed_at": "2026-09-07T05:52:22Z",
+          "updated_at": "2026-09-07T05:52:26Z",
+          "open_issues_count": 4,
+          "head_sha": "987d5f60c6ee2896652b65d67dbf9625156275b9"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -439,7 +110,7 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 6,
+          "completed_examined": 21,
           "workflows_examined": 4,
           "retired_workflows_examined": 0,
           "unresolved_failures": 0,
@@ -451,13 +122,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-05T07:59:57Z",
-              "updated_at": "2026-09-05T08:01:13Z",
-              "run_started_at": "2026-09-05T07:59:57Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel/actions/runs/33954048836",
-              "head_sha": "45766b3f1c42516ed4fbb9a06a5db4612504417b",
+              "created_at": "2026-09-07T05:52:25Z",
+              "updated_at": "2026-09-07T05:53:41Z",
+              "run_started_at": "2026-09-07T05:52:25Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel/actions/runs/34088461711",
+              "head_sha": "987d5f60c6ee2896652b65d67dbf9625156275b9",
               "head_branch": "main",
-              "run_number": 42
+              "run_number": 47
             },
             {
               "workflow_id": 314123806,
@@ -466,13 +137,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-05T07:59:57Z",
-              "updated_at": "2026-09-05T08:01:04Z",
-              "run_started_at": "2026-09-05T07:59:57Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel/actions/runs/33954048856",
-              "head_sha": "45766b3f1c42516ed4fbb9a06a5db4612504417b",
+              "created_at": "2026-09-07T05:52:25Z",
+              "updated_at": "2026-09-07T05:53:29Z",
+              "run_started_at": "2026-09-07T05:52:25Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel/actions/runs/34088461669",
+              "head_sha": "987d5f60c6ee2896652b65d67dbf9625156275b9",
               "head_branch": "main",
-              "run_number": 50
+              "run_number": 64
             },
             {
               "workflow_id": 338457213,
@@ -481,13 +152,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "workflow_run",
-              "created_at": "2026-09-05T08:01:15Z",
-              "updated_at": "2026-09-05T08:01:29Z",
-              "run_started_at": "2026-09-05T08:01:15Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel/actions/runs/33954117577",
-              "head_sha": "45766b3f1c42516ed4fbb9a06a5db4612504417b",
+              "created_at": "2026-09-07T05:53:42Z",
+              "updated_at": "2026-09-07T05:53:56Z",
+              "run_started_at": "2026-09-07T05:53:42Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel/actions/runs/34088540264",
+              "head_sha": "987d5f60c6ee2896652b65d67dbf9625156275b9",
               "head_branch": "main",
-              "run_number": 6
+              "run_number": 11
             },
             {
               "workflow_id": 329804496,
@@ -521,7 +192,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-09-07T04:39:54Z",
+      "observed_at": "2026-09-07T06:27:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -541,7 +212,7 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 7,
+          "completed_examined": 9,
           "workflows_examined": 4,
           "retired_workflows_examined": 0,
           "unresolved_failures": 0,
@@ -568,13 +239,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-05T07:34:22Z",
-              "updated_at": "2026-09-05T07:35:04Z",
-              "run_started_at": "2026-09-05T07:34:22Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/33952928561",
-              "head_sha": "30c8562da47816742d14ffa3b07c6badbc78788a",
+              "created_at": "2026-09-07T04:39:40Z",
+              "updated_at": "2026-09-07T04:40:50Z",
+              "run_started_at": "2026-09-07T04:39:40Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/34083927229",
+              "head_sha": "304cb571ee5e893352347df039fd46969cf91f0c",
               "head_branch": "main",
-              "run_number": 51
+              "run_number": 52
             },
             {
               "workflow_id": 314181172,
@@ -583,13 +254,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-05T07:34:22Z",
-              "updated_at": "2026-09-05T07:35:04Z",
-              "run_started_at": "2026-09-05T07:34:22Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/33952928657",
-              "head_sha": "30c8562da47816742d14ffa3b07c6badbc78788a",
+              "created_at": "2026-09-07T04:39:40Z",
+              "updated_at": "2026-09-07T04:40:30Z",
+              "run_started_at": "2026-09-07T04:39:40Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/agent-registry-protocol/actions/runs/34083927258",
+              "head_sha": "304cb571ee5e893352347df039fd46969cf91f0c",
               "head_branch": "main",
-              "run_number": 169
+              "run_number": 174
             },
             {
               "workflow_id": 314905788,
@@ -623,7 +294,7 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-09-07T04:39:54Z",
+      "observed_at": "2026-09-07T06:27:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -713,7 +384,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-09-07T04:39:54Z",
+      "observed_at": "2026-09-07T06:27:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -783,7 +454,7 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-09-07T04:39:54Z",
+      "observed_at": "2026-09-07T06:27:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -853,7 +524,7 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-09-07T04:39:54Z",
+      "observed_at": "2026-09-07T06:27:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -958,7 +629,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-09-07T04:39:54Z",
+      "observed_at": "2026-09-07T06:27:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1076,7 +747,7 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-09-07T04:39:54Z",
+      "observed_at": "2026-09-07T06:27:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1198,17 +869,17 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-09-07T04:39:54Z",
+      "observed_at": "2026-09-07T06:27:28Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-09-05T07:59:07Z",
-          "updated_at": "2026-09-05T07:59:26Z",
+          "pushed_at": "2026-09-07T06:23:53Z",
+          "updated_at": "2026-09-07T06:23:58Z",
           "open_issues_count": 0,
-          "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d"
+          "head_sha": "0844d9a15d1e56f5cb4ae65ded664d46e2facab3"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -1218,10 +889,10 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 15,
+          "completed_examined": 22,
           "workflows_examined": 8,
           "retired_workflows_examined": 0,
-          "unresolved_failures": 1,
+          "unresolved_failures": 0,
           "latest": [
             {
               "workflow_id": 236983557,
@@ -1230,13 +901,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-05T07:59:10Z",
-              "updated_at": "2026-09-05T07:59:37Z",
-              "run_started_at": "2026-09-05T07:59:10Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954017094",
-              "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
+              "created_at": "2026-09-07T06:23:56Z",
+              "updated_at": "2026-09-07T06:24:15Z",
+              "run_started_at": "2026-09-07T06:23:56Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/34090647718",
+              "head_sha": "0844d9a15d1e56f5cb4ae65ded664d46e2facab3",
               "head_branch": "main",
-              "run_number": 171
+              "run_number": 173
             },
             {
               "workflow_id": 345708524,
@@ -1245,28 +916,28 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-05T07:59:10Z",
-              "updated_at": "2026-09-05T07:59:40Z",
-              "run_started_at": "2026-09-05T07:59:10Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954017076",
-              "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
+              "created_at": "2026-09-07T06:23:56Z",
+              "updated_at": "2026-09-07T06:24:07Z",
+              "run_started_at": "2026-09-07T06:23:56Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/34090647783",
+              "head_sha": "0844d9a15d1e56f5cb4ae65ded664d46e2facab3",
               "head_branch": "main",
-              "run_number": 46
+              "run_number": 48
             },
             {
               "workflow_id": 316454965,
               "name": "Deploy documentation to GitHub Pages",
               "path": ".github/workflows/pages.yml",
-              "conclusion": "failure",
+              "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-05T07:59:10Z",
-              "updated_at": "2026-09-05T07:59:30Z",
-              "run_started_at": "2026-09-05T07:59:10Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954017112",
-              "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
+              "created_at": "2026-09-07T06:23:56Z",
+              "updated_at": "2026-09-07T06:24:34Z",
+              "run_started_at": "2026-09-07T06:23:56Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/34090647822",
+              "head_sha": "0844d9a15d1e56f5cb4ae65ded664d46e2facab3",
               "head_branch": "main",
-              "run_number": 57
+              "run_number": 59
             },
             {
               "workflow_id": 338452388,
@@ -1275,13 +946,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-05T07:59:10Z",
-              "updated_at": "2026-09-05T07:59:55Z",
-              "run_started_at": "2026-09-05T07:59:10Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954017082",
-              "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
+              "created_at": "2026-09-07T06:23:56Z",
+              "updated_at": "2026-09-07T06:24:05Z",
+              "run_started_at": "2026-09-07T06:23:56Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/34090647843",
+              "head_sha": "0844d9a15d1e56f5cb4ae65ded664d46e2facab3",
               "head_branch": "main",
-              "run_number": 77
+              "run_number": 79
             },
             {
               "workflow_id": 341731117,
@@ -1290,13 +961,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "workflow_run",
-              "created_at": "2026-09-05T07:59:39Z",
-              "updated_at": "2026-09-05T07:59:46Z",
-              "run_started_at": "2026-09-05T07:59:39Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954036458",
-              "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
+              "created_at": "2026-09-07T06:24:24Z",
+              "updated_at": "2026-09-07T06:24:36Z",
+              "run_started_at": "2026-09-07T06:24:24Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/34090683093",
+              "head_sha": "0844d9a15d1e56f5cb4ae65ded664d46e2facab3",
               "head_branch": "main",
-              "run_number": 44
+              "run_number": 45
             },
             {
               "workflow_id": 236973230,
@@ -1305,13 +976,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-05T07:59:10Z",
-              "updated_at": "2026-09-05T07:59:35Z",
-              "run_started_at": "2026-09-05T07:59:10Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954017073",
-              "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
+              "created_at": "2026-09-07T06:23:56Z",
+              "updated_at": "2026-09-07T06:24:21Z",
+              "run_started_at": "2026-09-07T06:23:56Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/34090647759",
+              "head_sha": "0844d9a15d1e56f5cb4ae65ded664d46e2facab3",
               "head_branch": "main",
-              "run_number": 195
+              "run_number": 197
             },
             {
               "workflow_id": 341720596,
@@ -1320,13 +991,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-05T07:59:10Z",
-              "updated_at": "2026-09-05T07:59:37Z",
-              "run_started_at": "2026-09-05T07:59:10Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954017069",
-              "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
+              "created_at": "2026-09-07T06:23:56Z",
+              "updated_at": "2026-09-07T06:24:20Z",
+              "run_started_at": "2026-09-07T06:23:56Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/34090647761",
+              "head_sha": "0844d9a15d1e56f5cb4ae65ded664d46e2facab3",
               "head_branch": "main",
-              "run_number": 53
+              "run_number": 54
             },
             {
               "workflow_id": 241319705,
@@ -1345,23 +1016,7 @@
             }
           ],
           "retired": [],
-          "unresolved": [
-            {
-              "workflow_id": 316454965,
-              "name": "Deploy documentation to GitHub Pages",
-              "path": ".github/workflows/pages.yml",
-              "conclusion": "failure",
-              "status": "completed",
-              "event": "push",
-              "created_at": "2026-09-05T07:59:10Z",
-              "updated_at": "2026-09-05T07:59:30Z",
-              "run_started_at": "2026-09-05T07:59:10Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/33954017112",
-              "head_sha": "8d45ac364294c38473eba2217e59e0019e8d243d",
-              "head_branch": "main",
-              "run_number": 57
-            }
-          ],
+          "unresolved": [],
           "active_inventory_available": true,
           "active_workflow_paths": [
             ".github/workflows/combined-assurance-smoke.yml",
@@ -1383,7 +1038,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-09-07T04:39:54Z",
+      "observed_at": "2026-09-07T06:27:28Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1392,7 +1047,7 @@
           "archived": false,
           "pushed_at": "2026-09-07T04:34:09Z",
           "updated_at": "2026-09-07T02:19:01Z",
-          "open_issues_count": 13,
+          "open_issues_count": 14,
           "head_sha": "7ea2069c3d2f0d4ac8fdbaf7b8e7e6e2a3225f7b"
         },
         "workflow_runs": {
@@ -1410,13 +1065,13 @@
               "conclusion": "skipped",
               "status": "completed",
               "event": "issues",
-              "created_at": "2026-09-07T04:33:56Z",
-              "updated_at": "2026-09-07T04:33:57Z",
-              "run_started_at": "2026-09-07T04:33:56Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34083573298",
+              "created_at": "2026-09-07T05:58:07Z",
+              "updated_at": "2026-09-07T05:58:08Z",
+              "run_started_at": "2026-09-07T05:58:07Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34088814705",
               "head_sha": "7ea2069c3d2f0d4ac8fdbaf7b8e7e6e2a3225f7b",
               "head_branch": "main",
-              "run_number": 544
+              "run_number": 546
             },
             {
               "workflow_id": 333347627,
@@ -1440,13 +1095,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "workflow_dispatch",
-              "created_at": "2026-09-07T02:02:50Z",
-              "updated_at": "2026-09-07T02:03:12Z",
-              "run_started_at": "2026-09-07T02:02:50Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34074964945",
-              "head_sha": "cc96b5630552b6c6ba4dbe10f6f1ddd52b02121a",
+              "created_at": "2026-09-07T05:56:57Z",
+              "updated_at": "2026-09-07T05:57:17Z",
+              "run_started_at": "2026-09-07T05:56:57Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34088739122",
+              "head_sha": "7ea2069c3d2f0d4ac8fdbaf7b8e7e6e2a3225f7b",
               "head_branch": "main",
-              "run_number": 19
+              "run_number": 20
             },
             {
               "workflow_id": 342518526,
@@ -1455,28 +1110,28 @@
               "conclusion": "skipped",
               "status": "completed",
               "event": "issues",
-              "created_at": "2026-09-07T02:04:05Z",
-              "updated_at": "2026-09-07T02:04:07Z",
-              "run_started_at": "2026-09-07T02:04:05Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34075032350",
-              "head_sha": "cc96b5630552b6c6ba4dbe10f6f1ddd52b02121a",
+              "created_at": "2026-09-07T05:58:07Z",
+              "updated_at": "2026-09-07T05:58:15Z",
+              "run_started_at": "2026-09-07T05:58:07Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34088814741",
+              "head_sha": "7ea2069c3d2f0d4ac8fdbaf7b8e7e6e2a3225f7b",
               "head_branch": "main",
-              "run_number": 410
+              "run_number": 412
             },
             {
               "workflow_id": 343401275,
               "name": "Reconcile RAHP-DPIP lifecycle and returns",
               "path": ".github/workflows/dpip-lifecycle.yml",
-              "conclusion": "skipped",
+              "conclusion": "success",
               "status": "completed",
               "event": "issue_comment",
-              "created_at": "2026-09-07T02:20:08Z",
-              "updated_at": "2026-09-07T02:20:09Z",
-              "run_started_at": "2026-09-07T02:20:08Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34075943966",
+              "created_at": "2026-09-07T05:58:04Z",
+              "updated_at": "2026-09-07T05:58:23Z",
+              "run_started_at": "2026-09-07T05:58:04Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34088812139",
               "head_sha": "7ea2069c3d2f0d4ac8fdbaf7b8e7e6e2a3225f7b",
               "head_branch": "main",
-              "run_number": 240
+              "run_number": 241
             },
             {
               "workflow_id": 343549711,
@@ -1485,13 +1140,13 @@
               "conclusion": "skipped",
               "status": "completed",
               "event": "issues",
-              "created_at": "2026-09-07T02:19:00Z",
-              "updated_at": "2026-09-07T02:19:01Z",
-              "run_started_at": "2026-09-07T02:19:00Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34075884746",
+              "created_at": "2026-09-07T05:58:07Z",
+              "updated_at": "2026-09-07T05:58:08Z",
+              "run_started_at": "2026-09-07T05:58:07Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34088814729",
               "head_sha": "7ea2069c3d2f0d4ac8fdbaf7b8e7e6e2a3225f7b",
               "head_branch": "main",
-              "run_number": 684
+              "run_number": 686
             },
             {
               "workflow_id": 343470013,
@@ -1499,14 +1154,14 @@
               "path": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
               "conclusion": "success",
               "status": "completed",
-              "event": "push",
-              "created_at": "2026-09-07T02:02:19Z",
-              "updated_at": "2026-09-07T02:02:52Z",
-              "run_started_at": "2026-09-07T02:02:19Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34074937687",
-              "head_sha": "cc96b5630552b6c6ba4dbe10f6f1ddd52b02121a",
+              "event": "schedule",
+              "created_at": "2026-09-07T05:56:25Z",
+              "updated_at": "2026-09-07T05:57:02Z",
+              "run_started_at": "2026-09-07T05:56:25Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34088708152",
+              "head_sha": "7ea2069c3d2f0d4ac8fdbaf7b8e7e6e2a3225f7b",
               "head_branch": "main",
-              "run_number": 49
+              "run_number": 50
             },
             {
               "workflow_id": 343549712,
@@ -1515,13 +1170,13 @@
               "conclusion": "skipped",
               "status": "completed",
               "event": "issues",
-              "created_at": "2026-09-07T04:33:56Z",
-              "updated_at": "2026-09-07T04:33:57Z",
-              "run_started_at": "2026-09-07T04:33:56Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34083573296",
+              "created_at": "2026-09-07T05:58:07Z",
+              "updated_at": "2026-09-07T05:58:08Z",
+              "run_started_at": "2026-09-07T05:58:07Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34088814699",
               "head_sha": "7ea2069c3d2f0d4ac8fdbaf7b8e7e6e2a3225f7b",
               "head_branch": "main",
-              "run_number": 534
+              "run_number": 536
             },
             {
               "workflow_id": 333196290,
