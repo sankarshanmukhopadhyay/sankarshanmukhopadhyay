@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-07T21:30:20Z",
+  "generated_at": "2026-09-08T04:34:10Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -164,10 +164,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-25T07:08:19Z",
       "last_observed": "2026-09-07T21:30:20Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-08T04:34:10Z",
       "latest_finding_id": "PAM-6A0BA3FF797A"
     },
     "PF-FE9A3049B948": {
@@ -416,10 +416,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/validate.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T21:01:37Z",
       "last_observed": "2026-09-07T21:30:20Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-08T04:34:10Z",
       "latest_finding_id": "PAM-C16E9E2AF8B4"
     },
     "PF-E8B1B5CFA71B": {
@@ -428,10 +428,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T21:01:37Z",
       "last_observed": "2026-09-07T21:30:20Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-08T04:34:10Z",
       "latest_finding_id": "PAM-690703573987"
     },
     "PF-0B036E077FB8": {
