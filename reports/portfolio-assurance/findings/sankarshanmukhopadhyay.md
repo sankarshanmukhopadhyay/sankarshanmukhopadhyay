@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `sankarshanmukhopadhyay`
 
-**Generated:** 2026-09-09T16:37:56Z  
+**Generated:** 2026-09-09T20:55:48Z  
 **Open findings:** 2  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-ED5F21FC8B99 — REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED
 
-- Observation: `PAM-D3B865143005` at `2026-09-09T16:37:56Z`
+- Observation: `PAM-D3B865143005` at `2026-09-09T20:55:48Z`
 - Severity: `medium`
 - Dimension: `governance`
 - Subject: `governance-authority-assurance-metamodel`
@@ -61,7 +61,7 @@ Reconcile the governed repository identity with the repository's actual rename, 
 
 ## PF-256136CAC38E — REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED
 
-- Observation: `PAM-C067F7D7DC08` at `2026-09-09T16:37:56Z`
+- Observation: `PAM-C067F7D7DC08` at `2026-09-09T20:55:48Z`
 - Severity: `medium`
 - Dimension: `governance`
 - Subject: `open-national-digital-trust-framework`
