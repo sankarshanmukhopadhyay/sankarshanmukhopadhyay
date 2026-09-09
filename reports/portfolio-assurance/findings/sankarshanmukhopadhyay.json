@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-09T16:37:56Z",
+  "generated_at": "2026-09-09T20:55:48Z",
   "repository": "sankarshanmukhopadhyay",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-09T16:37:56Z",
+    "observed_at": "2026-09-09T20:55:48Z",
     "default_branch": null,
     "head_sha": null,
     "provenance_status": "unavailable"
@@ -46,7 +46,7 @@
       "rule_id": "REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED",
       "subject": "governance-authority-assurance-metamodel",
       "severity": "medium",
-      "observed_at": "2026-09-09T16:37:56Z",
+      "observed_at": "2026-09-09T20:55:48Z",
       "claim": "A governed active or review repository is no longer present in public account discovery; its registry identity may be stale.",
       "evidence": {
         "registered_repository": "governance-authority-assurance-metamodel",
@@ -79,7 +79,7 @@
       "rule_id": "REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED",
       "subject": "open-national-digital-trust-framework",
       "severity": "medium",
-      "observed_at": "2026-09-09T16:37:56Z",
+      "observed_at": "2026-09-09T20:55:48Z",
       "claim": "A governed active or review repository is no longer present in public account discovery; its registry identity may be stale.",
       "evidence": {
         "registered_repository": "open-national-digital-trust-framework",
@@ -115,7 +115,7 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-09-09T16:37:56Z",
-      "last_observed": "2026-09-09T16:37:56Z",
+      "last_observed": "2026-09-09T20:55:48Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-D3B865143005"
     },
@@ -127,7 +127,7 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-09-09T16:37:56Z",
-      "last_observed": "2026-09-09T16:37:56Z",
+      "last_observed": "2026-09-09T20:55:48Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-C067F7D7DC08"
     }
