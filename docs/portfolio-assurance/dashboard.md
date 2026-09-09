@@ -7,9 +7,9 @@ nav_order: 1
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-09-09T11:21:31Z  
+**Observed:** 2026-09-09T16:37:56Z  
 **Scope:** 11 flagship original repositories  
-**Open findings:** 4  
+**Open findings:** 6  
 **Unclassified public repositories:** 0
 
 > This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.
@@ -19,7 +19,7 @@ nav_order: 1
 | Dimension | State | Open findings |
 |---|---|---:|
 | Operational | `evaluated` | 1 |
-| Governance | `evaluated` | 0 |
+| Governance | `evaluated` | 2 |
 | Assurance | `evaluated` | 3 |
 | Cross Specification | `not-evaluated` | 0 |
 
@@ -89,6 +89,28 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
+### PAM-D3B865143005: sankarshanmukhopadhyay
+
+- **Fingerprint:** `PF-ED5F21FC8B99`
+- **Rule:** `REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED`
+- **Subject:** `governance-authority-assurance-metamodel`
+- **Severity:** `medium`
+- **Claim:** A governed active or review repository is no longer present in public account discovery; its registry identity may be stale.
+- **Recommended action:** Determine whether the repository was renamed, transferred, privatized, deleted, or intentionally retired, then update the governed repository identity and relationships. Do not infer the new identity automatically.
+- **Issue routing:** `central-review`
+- **Automatic effect:** `none`
+
+### PAM-C067F7D7DC08: sankarshanmukhopadhyay
+
+- **Fingerprint:** `PF-256136CAC38E`
+- **Rule:** `REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED`
+- **Subject:** `open-national-digital-trust-framework`
+- **Severity:** `medium`
+- **Claim:** A governed active or review repository is no longer present in public account discovery; its registry identity may be stale.
+- **Recommended action:** Determine whether the repository was renamed, transferred, privatized, deleted, or intentionally retired, then update the governed repository identity and relationships. Do not infer the new identity automatically.
+- **Issue routing:** `central-review`
+- **Automatic effect:** `none`
+
 ## Assurance evidence coverage
 
 The assurance state below is calculated from repository-specific evidence contracts. The monitor evaluates whether required evidence exists, succeeds, and covers the governed repository revision; it does not replace the authority of the evidence-producing repository or tool.
@@ -135,7 +157,7 @@ The assurance state below is calculated from repository-specific evidence contra
 | ↳ `toolkit_validation` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
 | ↳ `corpus_integrity` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
 | ↳ `publication_integrity` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
-| ↳ `cross_specification_pressure_test` | optional | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
+| ↳ `cross_specification_pressure_test` | optional | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
 
 
 ## Governance boundary

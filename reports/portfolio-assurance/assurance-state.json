@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-09T11:21:31Z",
+  "generated_at": "2026-09-09T16:37:56Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -26,7 +26,7 @@
             "created_at": "2026-09-07T05:51:20Z",
             "updated_at": "2026-09-07T05:54:36Z",
             "run_started_at": "2026-09-07T05:51:20Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/34088395946",
+            "html_url": "https://github.com/qbf-consulting/open-national-digital-trust-framework/actions/runs/34088395946",
             "head_sha": "f4d79e1194719989abeb94f75c7ad6204ed81f66",
             "head_branch": "main",
             "run_number": 68
@@ -50,7 +50,7 @@
             "created_at": "2026-09-07T05:51:20Z",
             "updated_at": "2026-09-07T05:54:52Z",
             "run_started_at": "2026-09-07T05:51:20Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/open-national-digital-trust-framework/actions/runs/34088395935",
+            "html_url": "https://github.com/qbf-consulting/open-national-digital-trust-framework/actions/runs/34088395935",
             "head_sha": "f4d79e1194719989abeb94f75c7ad6204ed81f66",
             "head_branch": "main",
             "run_number": 53
@@ -83,7 +83,7 @@
             "created_at": "2026-09-07T05:52:25Z",
             "updated_at": "2026-09-07T05:53:29Z",
             "run_started_at": "2026-09-07T05:52:25Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel/actions/runs/34088461669",
+            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34088461669",
             "head_sha": "987d5f60c6ee2896652b65d67dbf9625156275b9",
             "head_branch": "main",
             "run_number": 64
@@ -107,7 +107,7 @@
             "created_at": "2026-09-07T09:27:17Z",
             "updated_at": "2026-09-07T09:27:30Z",
             "run_started_at": "2026-09-07T09:27:17Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/governance-authority-assurance-metamodel/actions/runs/34106097818",
+            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34106097818",
             "head_sha": "987d5f60c6ee2896652b65d67dbf9625156275b9",
             "head_branch": "main",
             "run_number": 12
@@ -740,23 +740,8 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/cross-spec-pressure-test.yml",
           "freshness_policy": "latest-success",
-          "state": "satisfied",
-          "reason": "successful workflow evidence satisfies the configured freshness policy",
-          "evidence": {
-            "workflow_id": 337404001,
-            "name": "Run cross-specification pressure test",
-            "path": ".github/workflows/cross-spec-pressure-test.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "workflow_dispatch",
-            "created_at": "2026-09-09T05:53:33Z",
-            "updated_at": "2026-09-09T05:54:00Z",
-            "run_started_at": "2026-09-09T05:53:33Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34316718050",
-            "head_sha": "bab211e85f073046daff884ac776bb8a3a337e97",
-            "head_branch": "main",
-            "run_number": 28
-          }
+          "state": "missing",
+          "reason": "no completed workflow execution was observed inside the governed lookback window"
         }
       ],
       "required_claims": 3,
