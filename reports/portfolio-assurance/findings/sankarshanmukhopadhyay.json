@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-09T11:21:31Z",
+  "generated_at": "2026-09-09T16:37:56Z",
   "repository": "sankarshanmukhopadhyay",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-09T11:21:31Z",
+    "observed_at": "2026-09-09T16:37:56Z",
     "default_branch": null,
     "head_sha": null,
     "provenance_status": "unavailable"
@@ -17,9 +17,9 @@
       "open_findings": 0
     },
     "governance": {
-      "status": "not-evaluated",
+      "status": "evaluated",
       "description": "Portfolio review, status-declaration, lifecycle, and repository identity governance checks.",
-      "open_findings": 0
+      "open_findings": 2
     },
     "assurance": {
       "status": "not-evaluated",
@@ -37,9 +37,101 @@
     "dashboard": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/docs/portfolio-assurance/dashboard.html",
     "latest_report": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/latest.html"
   },
-  "finding_count": 0,
-  "findings": [],
-  "lifecycle": [],
+  "finding_count": 2,
+  "findings": [
+    {
+      "finding_id": "PAM-D3B865143005",
+      "finding_fingerprint": "PF-ED5F21FC8B99",
+      "repository": "sankarshanmukhopadhyay",
+      "rule_id": "REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED",
+      "subject": "governance-authority-assurance-metamodel",
+      "severity": "medium",
+      "observed_at": "2026-09-09T16:37:56Z",
+      "claim": "A governed active or review repository is no longer present in public account discovery; its registry identity may be stale.",
+      "evidence": {
+        "registered_repository": "governance-authority-assurance-metamodel",
+        "portfolio_disposition": "included",
+        "lifecycle": "active",
+        "provenance": "original"
+      },
+      "recommended_action": "Determine whether the repository was renamed, transferred, privatized, deleted, or intentionally retired, then update the governed repository identity and relationships. Do not infer the new identity automatically.",
+      "dimension": "governance",
+      "remediation": {
+        "objective": "Reconcile the governed repository identity with the repository's actual rename, transfer, visibility, deletion, or retirement state.",
+        "acceptance_criteria": [
+          "The governed registry points to the intended current repository identity, or the repository lifecycle/disposition records intentional retirement.",
+          "No automatic identity inference is used as closure evidence."
+        ],
+        "verification": [
+          "Run public-account discovery and portfolio validation."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": false,
+        "target": "central-review"
+      }
+    },
+    {
+      "finding_id": "PAM-C067F7D7DC08",
+      "finding_fingerprint": "PF-256136CAC38E",
+      "repository": "sankarshanmukhopadhyay",
+      "rule_id": "REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED",
+      "subject": "open-national-digital-trust-framework",
+      "severity": "medium",
+      "observed_at": "2026-09-09T16:37:56Z",
+      "claim": "A governed active or review repository is no longer present in public account discovery; its registry identity may be stale.",
+      "evidence": {
+        "registered_repository": "open-national-digital-trust-framework",
+        "portfolio_disposition": "included",
+        "lifecycle": "active",
+        "provenance": "original"
+      },
+      "recommended_action": "Determine whether the repository was renamed, transferred, privatized, deleted, or intentionally retired, then update the governed repository identity and relationships. Do not infer the new identity automatically.",
+      "dimension": "governance",
+      "remediation": {
+        "objective": "Reconcile the governed repository identity with the repository's actual rename, transfer, visibility, deletion, or retirement state.",
+        "acceptance_criteria": [
+          "The governed registry points to the intended current repository identity, or the repository lifecycle/disposition records intentional retirement.",
+          "No automatic identity inference is used as closure evidence."
+        ],
+        "verification": [
+          "Run public-account discovery and portfolio validation."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": false,
+        "target": "central-review"
+      }
+    }
+  ],
+  "lifecycle": [
+    {
+      "finding_fingerprint": "PF-ED5F21FC8B99",
+      "repository": "sankarshanmukhopadhyay",
+      "rule_id": "REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED",
+      "subject": "governance-authority-assurance-metamodel",
+      "dimension": "governance",
+      "status": "open",
+      "first_observed": "2026-09-09T16:37:56Z",
+      "last_observed": "2026-09-09T16:37:56Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-D3B865143005"
+    },
+    {
+      "finding_fingerprint": "PF-256136CAC38E",
+      "repository": "sankarshanmukhopadhyay",
+      "rule_id": "REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED",
+      "subject": "open-national-digital-trust-framework",
+      "dimension": "governance",
+      "status": "open",
+      "first_observed": "2026-09-09T16:37:56Z",
+      "last_observed": "2026-09-09T16:37:56Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-C067F7D7DC08"
+    }
+  ],
   "handoff": {
     "authority": "repository-local-governance",
     "intended_use": "Supply this dossier with the affected repository source during remediation planning and implementation.",

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-09T11:21:31Z",
+  "generated_at": "2026-09-09T16:37:56Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -142,7 +142,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-09-09T11:21:31Z",
+      "last_observed": "2026-09-09T16:37:56Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-727E01626072"
     },
@@ -166,7 +166,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-09-09T11:21:31Z",
+      "last_observed": "2026-09-09T16:37:56Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-DD7EA3EA1700"
     },
@@ -418,7 +418,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-09-09T11:21:31Z",
+      "last_observed": "2026-09-09T16:37:56Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-6A8DD45B0DC2"
     },
@@ -430,7 +430,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-09-09T11:21:31Z",
+      "last_observed": "2026-09-09T16:37:56Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-F513ADB891DD"
     },
@@ -493,6 +493,30 @@
       "last_observed": "2026-09-08T16:37:26Z",
       "resolved_at": "2026-09-08T21:08:57Z",
       "latest_finding_id": "PAM-FDFBE5B28C71"
+    },
+    "PF-256136CAC38E": {
+      "finding_fingerprint": "PF-256136CAC38E",
+      "repository": "sankarshanmukhopadhyay",
+      "rule_id": "REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED",
+      "subject": "open-national-digital-trust-framework",
+      "dimension": "governance",
+      "status": "open",
+      "first_observed": "2026-09-09T16:37:56Z",
+      "last_observed": "2026-09-09T16:37:56Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-C067F7D7DC08"
+    },
+    "PF-ED5F21FC8B99": {
+      "finding_fingerprint": "PF-ED5F21FC8B99",
+      "repository": "sankarshanmukhopadhyay",
+      "rule_id": "REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED",
+      "subject": "governance-authority-assurance-metamodel",
+      "dimension": "governance",
+      "status": "open",
+      "first_observed": "2026-09-09T16:37:56Z",
+      "last_observed": "2026-09-09T16:37:56Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-D3B865143005"
     }
   }
 }
