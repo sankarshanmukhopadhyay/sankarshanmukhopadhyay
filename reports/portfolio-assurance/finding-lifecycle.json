@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-10T11:18:03Z",
+  "generated_at": "2026-09-10T16:23:42Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -140,10 +140,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-22T01:49:53Z",
       "last_observed": "2026-09-10T11:18:03Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-10T16:23:42Z",
       "latest_finding_id": "PAM-7C4F2BE57F3B"
     },
     "PF-954D1C442655": {
@@ -164,10 +164,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-25T07:08:19Z",
       "last_observed": "2026-09-10T11:18:03Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-10T16:23:42Z",
       "latest_finding_id": "PAM-971F96FE509A"
     },
     "PF-FE9A3049B948": {
@@ -274,7 +274,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-27T22:15:16Z",
-      "last_observed": "2026-09-10T11:18:03Z",
+      "last_observed": "2026-09-10T16:23:42Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-669D7529B8A1"
     },
@@ -286,7 +286,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-27T22:15:16Z",
-      "last_observed": "2026-09-10T11:18:03Z",
+      "last_observed": "2026-09-10T16:23:42Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-2A47430439F3"
     },
@@ -416,10 +416,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/validate.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T21:01:37Z",
       "last_observed": "2026-09-10T11:18:03Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-10T16:23:42Z",
       "latest_finding_id": "PAM-051A739F95E3"
     },
     "PF-E8B1B5CFA71B": {
@@ -428,10 +428,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T21:01:37Z",
       "last_observed": "2026-09-10T11:18:03Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-10T16:23:42Z",
       "latest_finding_id": "PAM-F685A964FF1B"
     },
     "PF-0B036E077FB8": {
@@ -526,7 +526,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-10T11:18:03Z",
+      "last_observed": "2026-09-10T16:23:42Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-8368280D721D"
     },
@@ -536,10 +536,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/pages.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-10T02:21:16Z",
       "last_observed": "2026-09-10T11:18:03Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-10T16:23:42Z",
       "latest_finding_id": "PAM-418991CDA7F4"
     },
     "PF-4D64FB03CE13": {
@@ -550,7 +550,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-10T11:18:03Z",
+      "last_observed": "2026-09-10T16:23:42Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-2E5B02A4165E"
     },
@@ -562,7 +562,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-10T11:18:03Z",
+      "last_observed": "2026-09-10T16:23:42Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-37B0B370F322"
     },
@@ -574,7 +574,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-10T11:18:03Z",
+      "last_observed": "2026-09-10T16:23:42Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-848A2C45A5F1"
     },
@@ -584,10 +584,10 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-10T02:21:16Z",
       "last_observed": "2026-09-10T11:18:03Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-10T16:23:42Z",
       "latest_finding_id": "PAM-58EEAB14C150"
     }
   }
