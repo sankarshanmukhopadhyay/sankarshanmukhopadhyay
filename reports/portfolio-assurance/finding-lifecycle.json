@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-09T20:55:48Z",
+  "generated_at": "2026-09-10T02:21:16Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -142,9 +142,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-09-09T20:55:48Z",
+      "last_observed": "2026-09-10T02:21:16Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-727E01626072"
+      "latest_finding_id": "PAM-7C4F2BE57F3B"
     },
     "PF-954D1C442655": {
       "finding_fingerprint": "PF-954D1C442655",
@@ -418,9 +418,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-09-09T20:55:48Z",
+      "last_observed": "2026-09-10T02:21:16Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-6A8DD45B0DC2"
+      "latest_finding_id": "PAM-051A739F95E3"
     },
     "PF-E8B1B5CFA71B": {
       "finding_fingerprint": "PF-E8B1B5CFA71B",
@@ -430,9 +430,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-09-09T20:55:48Z",
+      "last_observed": "2026-09-10T02:21:16Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-F513ADB891DD"
+      "latest_finding_id": "PAM-F685A964FF1B"
     },
     "PF-0B036E077FB8": {
       "finding_fingerprint": "PF-0B036E077FB8",
@@ -500,10 +500,10 @@
       "rule_id": "REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED",
       "subject": "open-national-digital-trust-framework",
       "dimension": "governance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-09T16:37:56Z",
       "last_observed": "2026-09-09T20:55:48Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-10T02:21:16Z",
       "latest_finding_id": "PAM-C067F7D7DC08"
     },
     "PF-ED5F21FC8B99": {
@@ -512,11 +512,83 @@
       "rule_id": "REGISTERED_REPOSITORY_NOT_PUBLICLY_DISCOVERED",
       "subject": "governance-authority-assurance-metamodel",
       "dimension": "governance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-09T16:37:56Z",
       "last_observed": "2026-09-09T20:55:48Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-10T02:21:16Z",
       "latest_finding_id": "PAM-D3B865143005"
+    },
+    "PF-62A35110D9A2": {
+      "finding_fingerprint": "PF-62A35110D9A2",
+      "repository": "governance-authority-assurance-metamodel",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": ".github/workflows/verify-publication.yml",
+      "dimension": "operational",
+      "status": "open",
+      "first_observed": "2026-09-10T02:21:16Z",
+      "last_observed": "2026-09-10T02:21:16Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-8368280D721D"
+    },
+    "PF-DE34E30A16D3": {
+      "finding_fingerprint": "PF-DE34E30A16D3",
+      "repository": "TRQP-TSPP",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "operational",
+      "status": "open",
+      "first_observed": "2026-09-10T02:21:16Z",
+      "last_observed": "2026-09-10T02:21:16Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-418991CDA7F4"
+    },
+    "PF-4D64FB03CE13": {
+      "finding_fingerprint": "PF-4D64FB03CE13",
+      "repository": "governance-authority-assurance-metamodel",
+      "rule_id": "ASSURANCE_CONTROL_FAILED",
+      "subject": ".github/workflows/verify-publication.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-09-10T02:21:16Z",
+      "last_observed": "2026-09-10T02:21:16Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-2E5B02A4165E"
+    },
+    "PF-820B3E478EBA": {
+      "finding_fingerprint": "PF-820B3E478EBA",
+      "repository": "trust-graph-artifacts",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/validate-tsmm-native.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-09-10T02:21:16Z",
+      "last_observed": "2026-09-10T02:21:16Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-37B0B370F322"
+    },
+    "PF-2B6A1AD853DF": {
+      "finding_fingerprint": "PF-2B6A1AD853DF",
+      "repository": "trust-graph-artifacts",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-09-10T02:21:16Z",
+      "last_observed": "2026-09-10T02:21:16Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-848A2C45A5F1"
+    },
+    "PF-25F4E070337B": {
+      "finding_fingerprint": "PF-25F4E070337B",
+      "repository": "TRQP-TSPP",
+      "rule_id": "ASSURANCE_CONTROL_FAILED",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-09-10T02:21:16Z",
+      "last_observed": "2026-09-10T02:21:16Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-58EEAB14C150"
     }
   }
 }
