@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `governance-authority-assurance-metamodel`
 
-**Generated:** 2026-09-10T04:41:23Z  
+**Generated:** 2026-09-10T11:18:03Z  
 **Open findings:** 2  
 **Repository snapshot:** `f7da10302ed9363e2546aaf103bb3f8f4e1fec55`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-4D64FB03CE13 — ASSURANCE_CONTROL_FAILED
 
-- Observation: `PAM-2E5B02A4165E` at `2026-09-10T04:41:23Z`
+- Observation: `PAM-2E5B02A4165E` at `2026-09-10T11:18:03Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/verify-publication.yml`
@@ -78,7 +78,7 @@ Resolve the failing repository-native assurance control or record an explicit go
 
 ## PF-62A35110D9A2 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-8368280D721D` at `2026-09-10T04:41:23Z`
+- Observation: `PAM-8368280D721D` at `2026-09-10T11:18:03Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/verify-publication.yml`
@@ -100,7 +100,7 @@ Resolve the failing repository-native assurance control or record an explicit go
     "dynamic/github-code-scanning/codeql"
   ],
   "available": true,
-  "completed_examined": 28,
+  "completed_examined": 30,
   "latest": [
     {
       "conclusion": "success",
@@ -149,17 +149,17 @@ Resolve the failing repository-native assurance control or record an explicit go
     },
     {
       "conclusion": "success",
-      "created_at": "2026-09-09T15:41:27Z",
+      "created_at": "2026-09-10T04:53:41Z",
       "event": "dynamic",
       "head_branch": "main",
-      "head_sha": "987d5f60c6ee2896652b65d67dbf9625156275b9",
-      "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34371887418",
-      "name": "github_actions in /. - Update #1566396995",
+      "head_sha": "f7da10302ed9363e2546aaf103bb3f8f4e1fec55",
+      "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34438939981",
+      "name": "github_actions in /. - Update #1567898254",
       "path": "dynamic/dependabot/dependabot-updates",
-      "run_number": 6,
-      "run_started_at": "2026-09-09T15:41:27Z",
+      "run_number": 9,
+      "run_started_at": "2026-09-10T04:53:41Z",
       "status": "completed",
-      "updated_at": "2026-09-09T15:42:36Z",
+      "updated_at": "2026-09-10T04:54:43Z",
       "workflow_id": 329804496
     },
     {

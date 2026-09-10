@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-10T04:41:23Z",
+  "generated_at": "2026-09-10T11:18:03Z",
   "repository": "TRQP-TSPP",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-10T04:41:23Z",
+    "observed_at": "2026-09-10T11:18:03Z",
     "default_branch": "main",
     "head_sha": "6f1772bb6d304401cfb700c480d54965b6526fdb",
     "provenance_status": "observed"
@@ -46,7 +46,7 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-10T04:41:23Z",
+      "observed_at": "2026-09-10T11:18:03Z",
       "claim": "The repository-native control bound to this assurance claim is currently failing.",
       "evidence": {
         "claim": "publication_integrity",
@@ -97,7 +97,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/pages.yml",
       "severity": "medium",
-      "observed_at": "2026-09-10T04:41:23Z",
+      "observed_at": "2026-09-10T11:18:03Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -228,7 +228,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-10T04:41:23Z",
+      "last_observed": "2026-09-10T11:18:03Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-58EEAB14C150"
     },
@@ -240,7 +240,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-10T04:41:23Z",
+      "last_observed": "2026-09-10T11:18:03Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-418991CDA7F4"
     }
