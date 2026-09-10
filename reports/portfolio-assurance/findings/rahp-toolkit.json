@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-09T20:55:48Z",
+  "generated_at": "2026-09-10T02:21:16Z",
   "repository": "rahp-toolkit",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-09T20:55:48Z",
+    "observed_at": "2026-09-10T02:21:16Z",
     "default_branch": "main",
     "head_sha": "bab211e85f073046daff884ac776bb8a3a337e97",
     "provenance_status": "observed"
@@ -40,13 +40,13 @@
   "finding_count": 3,
   "findings": [
     {
-      "finding_id": "PAM-727E01626072",
+      "finding_id": "PAM-7C4F2BE57F3B",
       "finding_fingerprint": "PF-9769E5EB9C48",
       "repository": "rahp-toolkit",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "severity": "high",
-      "observed_at": "2026-09-09T20:55:48Z",
+      "observed_at": "2026-09-10T02:21:16Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "corpus_integrity",
@@ -77,13 +77,13 @@
       }
     },
     {
-      "finding_id": "PAM-F513ADB891DD",
+      "finding_id": "PAM-F685A964FF1B",
       "finding_fingerprint": "PF-E8B1B5CFA71B",
       "repository": "rahp-toolkit",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-09T20:55:48Z",
+      "observed_at": "2026-09-10T02:21:16Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "publication_integrity",
@@ -114,13 +114,13 @@
       }
     },
     {
-      "finding_id": "PAM-6A8DD45B0DC2",
+      "finding_id": "PAM-051A739F95E3",
       "finding_fingerprint": "PF-40A9B6AD0B44",
       "repository": "rahp-toolkit",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/validate.yml",
       "severity": "high",
-      "observed_at": "2026-09-09T20:55:48Z",
+      "observed_at": "2026-09-10T02:21:16Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "toolkit_validation",
@@ -160,9 +160,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-09-09T20:55:48Z",
+      "last_observed": "2026-09-10T02:21:16Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-727E01626072"
+      "latest_finding_id": "PAM-7C4F2BE57F3B"
     },
     {
       "finding_fingerprint": "PF-E8B1B5CFA71B",
@@ -172,9 +172,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-09-09T20:55:48Z",
+      "last_observed": "2026-09-10T02:21:16Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-F513ADB891DD"
+      "latest_finding_id": "PAM-F685A964FF1B"
     },
     {
       "finding_fingerprint": "PF-40A9B6AD0B44",
@@ -184,9 +184,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-09-09T20:55:48Z",
+      "last_observed": "2026-09-10T02:21:16Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-6A8DD45B0DC2"
+      "latest_finding_id": "PAM-051A739F95E3"
     }
   ],
   "handoff": {
