@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-10T04:41:23Z",
+  "generated_at": "2026-09-10T11:18:03Z",
   "repository": "governance-authority-assurance-metamodel",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-10T04:41:23Z",
+    "observed_at": "2026-09-10T11:18:03Z",
     "default_branch": "main",
     "head_sha": "f7da10302ed9363e2546aaf103bb3f8f4e1fec55",
     "provenance_status": "observed"
@@ -46,7 +46,7 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/verify-publication.yml",
       "severity": "high",
-      "observed_at": "2026-09-10T04:41:23Z",
+      "observed_at": "2026-09-10T11:18:03Z",
       "claim": "The repository-native control bound to this assurance claim is currently failing.",
       "evidence": {
         "claim": "publication_integrity",
@@ -97,12 +97,12 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/verify-publication.yml",
       "severity": "medium",
-      "observed_at": "2026-09-10T04:41:23Z",
+      "observed_at": "2026-09-10T11:18:03Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
         "lookback_days": 7,
-        "completed_examined": 28,
+        "completed_examined": 30,
         "workflows_examined": 5,
         "retired_workflows_examined": 0,
         "unresolved_failures": 1,
@@ -154,18 +154,18 @@
           },
           {
             "workflow_id": 329804496,
-            "name": "github_actions in /. - Update #1566396995",
+            "name": "github_actions in /. - Update #1567898254",
             "path": "dynamic/dependabot/dependabot-updates",
             "conclusion": "success",
             "status": "completed",
             "event": "dynamic",
-            "created_at": "2026-09-09T15:41:27Z",
-            "updated_at": "2026-09-09T15:42:36Z",
-            "run_started_at": "2026-09-09T15:41:27Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34371887418",
-            "head_sha": "987d5f60c6ee2896652b65d67dbf9625156275b9",
+            "created_at": "2026-09-10T04:53:41Z",
+            "updated_at": "2026-09-10T04:54:43Z",
+            "run_started_at": "2026-09-10T04:53:41Z",
+            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34438939981",
+            "head_sha": "f7da10302ed9363e2546aaf103bb3f8f4e1fec55",
             "head_branch": "main",
-            "run_number": 6
+            "run_number": 9
           },
           {
             "workflow_id": 354485635,
@@ -240,7 +240,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-10T04:41:23Z",
+      "last_observed": "2026-09-10T11:18:03Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-2E5B02A4165E"
     },
@@ -252,7 +252,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-10T04:41:23Z",
+      "last_observed": "2026-09-10T11:18:03Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-8368280D721D"
     }

@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `agent-registry-protocol`
 
-**Generated:** 2026-09-10T04:41:23Z  
+**Generated:** 2026-09-10T11:18:03Z  
 **Open findings:** 0  
 **Repository snapshot:** `acf6328dfb5be40326717c3191cae23addb9a758`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-registry-protocol.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-registry-protocol.json)
