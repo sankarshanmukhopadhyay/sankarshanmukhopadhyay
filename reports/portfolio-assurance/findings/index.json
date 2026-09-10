@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T02:21:16Z",
+  "generated_at": "2026-09-10T04:41:23Z",
   "repositories": [
     {
       "repository": "A2A",
@@ -248,7 +248,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "finding_count": 0,
+      "finding_count": 2,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trust-infrastructure-schemas.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.json"

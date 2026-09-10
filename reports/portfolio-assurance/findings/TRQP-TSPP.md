@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `TRQP-TSPP`
 
-**Generated:** 2026-09-10T02:21:16Z  
+**Generated:** 2026-09-10T04:41:23Z  
 **Open findings:** 2  
 **Repository snapshot:** `6f1772bb6d304401cfb700c480d54965b6526fdb`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-25F4E070337B — ASSURANCE_CONTROL_FAILED
 
-- Observation: `PAM-58EEAB14C150` at `2026-09-10T02:21:16Z`
+- Observation: `PAM-58EEAB14C150` at `2026-09-10T04:41:23Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
@@ -78,7 +78,7 @@ Resolve the failing repository-native assurance control or record an explicit go
 
 ## PF-DE34E30A16D3 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-418991CDA7F4` at `2026-09-10T02:21:16Z`
+- Observation: `PAM-418991CDA7F4` at `2026-09-10T04:41:23Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/pages.yml`
@@ -103,7 +103,7 @@ Resolve the failing repository-native assurance control or record an explicit go
     "dynamic/pages/pages-build-deployment"
   ],
   "available": true,
-  "completed_examined": 14,
+  "completed_examined": 6,
   "latest": [
     {
       "conclusion": "success",
@@ -152,17 +152,17 @@ Resolve the failing repository-native assurance control or record an explicit go
     },
     {
       "conclusion": "success",
-      "created_at": "2026-09-03T04:18:01Z",
+      "created_at": "2026-09-10T02:52:46Z",
       "event": "dynamic",
       "head_branch": "main",
-      "head_sha": "cd90305519746e563632c53c6bae6698ed609db8",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/actions/runs/33714535616",
-      "name": "pip in /harness - Update #1554001854",
+      "head_sha": "6f1772bb6d304401cfb700c480d54965b6526fdb",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/actions/runs/34431154363",
+      "name": "pip in /examples/reference_sut - Update #1567652801",
       "path": "dynamic/dependabot/dependabot-updates",
-      "run_number": 105,
-      "run_started_at": "2026-09-03T04:18:01Z",
+      "run_number": 110,
+      "run_started_at": "2026-09-10T02:52:46Z",
       "status": "completed",
-      "updated_at": "2026-09-03T04:19:06Z",
+      "updated_at": "2026-09-10T02:53:46Z",
       "workflow_id": 240284144
     }
   ],

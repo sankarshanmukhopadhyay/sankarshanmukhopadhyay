@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-10T02:21:16Z",
+  "generated_at": "2026-09-10T04:41:23Z",
   "repository": "TRQP-TSPP",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-10T02:21:16Z",
+    "observed_at": "2026-09-10T04:41:23Z",
     "default_branch": "main",
     "head_sha": "6f1772bb6d304401cfb700c480d54965b6526fdb",
     "provenance_status": "observed"
@@ -46,7 +46,7 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-10T02:21:16Z",
+      "observed_at": "2026-09-10T04:41:23Z",
       "claim": "The repository-native control bound to this assurance claim is currently failing.",
       "evidence": {
         "claim": "publication_integrity",
@@ -97,12 +97,12 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/pages.yml",
       "severity": "medium",
-      "observed_at": "2026-09-10T02:21:16Z",
+      "observed_at": "2026-09-10T04:41:23Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
         "lookback_days": 7,
-        "completed_examined": 14,
+        "completed_examined": 6,
         "workflows_examined": 4,
         "retired_workflows_examined": 0,
         "unresolved_failures": 1,
@@ -154,18 +154,18 @@
           },
           {
             "workflow_id": 240284144,
-            "name": "pip in /harness - Update #1554001854",
+            "name": "pip in /examples/reference_sut - Update #1567652801",
             "path": "dynamic/dependabot/dependabot-updates",
             "conclusion": "success",
             "status": "completed",
             "event": "dynamic",
-            "created_at": "2026-09-03T04:18:01Z",
-            "updated_at": "2026-09-03T04:19:06Z",
-            "run_started_at": "2026-09-03T04:18:01Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/actions/runs/33714535616",
-            "head_sha": "cd90305519746e563632c53c6bae6698ed609db8",
+            "created_at": "2026-09-10T02:52:46Z",
+            "updated_at": "2026-09-10T02:53:46Z",
+            "run_started_at": "2026-09-10T02:52:46Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/actions/runs/34431154363",
+            "head_sha": "6f1772bb6d304401cfb700c480d54965b6526fdb",
             "head_branch": "main",
-            "run_number": 105
+            "run_number": 110
           }
         ],
         "retired": [],
@@ -228,7 +228,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-10T02:21:16Z",
+      "last_observed": "2026-09-10T04:41:23Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-58EEAB14C150"
     },
@@ -240,7 +240,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-10T02:21:16Z",
+      "last_observed": "2026-09-10T04:41:23Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-418991CDA7F4"
     }
