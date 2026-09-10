@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `dtgwg-rahp-tf`
 
-**Generated:** 2026-09-10T16:23:42Z  
+**Generated:** 2026-09-10T20:51:21Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dtgwg-rahp-tf.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dtgwg-rahp-tf.json)

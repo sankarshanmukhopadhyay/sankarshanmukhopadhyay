@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `trust-infrastructure-schemas`
 
-**Generated:** 2026-09-10T16:23:42Z  
-**Open findings:** 2  
-**Repository snapshot:** `b97c9f143d81f08f8b04b4ba07a0410b2597edd6`  
+**Generated:** 2026-09-10T20:51:21Z  
+**Open findings:** 0  
+**Repository snapshot:** `3fdf736780cdbc0da875c0c9c5b0f8e70ed6491a`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
@@ -20,81 +20,9 @@ search_exclude: true
 |---|---|---:|
 | Operational | `evaluated` | 0 |
 | Governance | `evaluated` | 0 |
-| Assurance | `evaluated` | 2 |
+| Assurance | `evaluated` | 0 |
 | Cross Specification | `not-evaluated` | 0 |
 
 ## Open findings
 
-## PF-67C44D44EC73 — ASSURANCE_EVIDENCE_MISSING
-
-- Observation: `PAM-2A47430439F3` at `2026-09-10T16:23:42Z`
-- Severity: `high`
-- Dimension: `assurance`
-- Subject: `.github/workflows/pages.yml`
-- Lifecycle: `open`; first observed `2026-08-27T22:15:16Z`
-- Claim: Required assurance evidence was not observed inside the governed evidence window.
-- Automatic effect: `none`
-
-### Evidence
-
-```json
-{
-  "claim": "publication_integrity",
-  "evidence_head_sha": null,
-  "freshness_policy": "current-head",
-  "reason": "no completed workflow execution was observed inside the governed lookback window",
-  "repository_head_sha": null,
-  "state": "missing",
-  "workflow": null
-}
-```
-
-### Remediation objective
-
-Restore or execute the repository-native control required by the governed assurance contract.
-
-### Acceptance criteria
-
-- [ ] The required evidence is observable inside the governed lookback window.
-- [ ] The evidence is attributable to the configured repository-native control.
-
-### Verification
-
-- Execute the required repository-native control and rerun the portfolio monitor.
-
-## PF-38863D0F6C2C — ASSURANCE_EVIDENCE_MISSING
-
-- Observation: `PAM-669D7529B8A1` at `2026-09-10T16:23:42Z`
-- Severity: `high`
-- Dimension: `assurance`
-- Subject: `.github/workflows/validate-schemas.yml`
-- Lifecycle: `open`; first observed `2026-08-27T22:15:16Z`
-- Claim: Required assurance evidence was not observed inside the governed evidence window.
-- Automatic effect: `none`
-
-### Evidence
-
-```json
-{
-  "claim": "schema_validation",
-  "evidence_head_sha": null,
-  "freshness_policy": "current-head",
-  "reason": "no completed workflow execution was observed inside the governed lookback window",
-  "repository_head_sha": null,
-  "state": "missing",
-  "workflow": null
-}
-```
-
-### Remediation objective
-
-Restore or execute the repository-native control required by the governed assurance contract.
-
-### Acceptance criteria
-
-- [ ] The required evidence is observable inside the governed lookback window.
-- [ ] The evidence is attributable to the configured repository-native control.
-
-### Verification
-
-- Execute the required repository-native control and rerun the portfolio monitor.
+No findings are open in the currently evaluated dimensions. This is **not** evidence that dimensions marked `not-evaluated` are assured or complete.
