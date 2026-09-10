@@ -1,0 +1,28 @@
+schema_version: '1.0'
+default_owner: sankarshanmukhopadhyay
+statement: >-
+  Portfolio membership records body-of-work provenance and relationships independently
+  of current GitHub ownership. This registry records the current institutional steward
+  used for repository discovery, status-contract validation, monitoring and links.
+repositories:
+  open-national-digital-trust-framework:
+    owner: qbf-consulting
+    steward: QBF Consulting LLP
+  governance-authority-assurance-metamodel:
+    owner: qbf-consulting
+    steward: QBF Consulting LLP
+  agent-registry-protocol:
+    owner: qbf-consulting
+    steward: QBF Consulting LLP
+  trust-systems-meta-model:
+    owner: qbf-consulting
+    steward: QBF Consulting LLP
+  trust-infrastructure-schemas:
+    owner: qbf-consulting
+    steward: QBF Consulting LLP
+  trust-graph-artifacts:
+    owner: sankarshanmukhopadhyay
+    steward: Sankarshan Mukhopadhyay
+    boundary_note: >-
+      Remains personally stewarded because it contains executable artifacts and
+      implementation patterns derived in part from the Trust Graph publishing programme.
