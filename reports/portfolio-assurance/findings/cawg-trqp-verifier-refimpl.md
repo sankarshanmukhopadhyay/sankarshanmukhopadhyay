@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `cawg-trqp-verifier-refimpl`
 
-**Generated:** 2026-09-11T11:19:41Z  
+**Generated:** 2026-09-11T16:27:45Z  
 **Open findings:** 0  
-**Repository snapshot:** `10ab1ad8bec07391761562dd3270679457ec6ae1`  
+**Repository snapshot:** `23ceae7141359244deabdfba01df922e99fa07dc`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.

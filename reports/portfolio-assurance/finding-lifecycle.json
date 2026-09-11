@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T11:19:41Z",
+  "generated_at": "2026-09-11T16:27:45Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -142,7 +142,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-09-11T11:19:41Z",
+      "last_observed": "2026-09-11T16:27:45Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-21D271000FD2"
     },
@@ -164,10 +164,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-25T07:08:19Z",
       "last_observed": "2026-09-11T11:19:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-11T16:27:45Z",
       "latest_finding_id": "PAM-69265D2150B2"
     },
     "PF-FE9A3049B948": {
@@ -224,11 +224,11 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/dtg-repository-review-worker.yml",
       "dimension": "operational",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-08-27T09:46:58Z",
-      "last_observed": "2026-08-27T09:46:58Z",
-      "resolved_at": "2026-08-27T22:15:16Z",
-      "latest_finding_id": "PAM-C15D3A94CA9B"
+      "last_observed": "2026-09-11T16:27:45Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-3ECA6C9EBFF5"
     },
     "PF-EE7FADD90617": {
       "finding_fingerprint": "PF-EE7FADD90617",
@@ -418,7 +418,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-09-11T11:19:41Z",
+      "last_observed": "2026-09-11T16:27:45Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-3A45BFD59576"
     },
@@ -430,7 +430,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-09-11T11:19:41Z",
+      "last_observed": "2026-09-11T16:27:45Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-70666B843A13"
     },
@@ -526,7 +526,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-11T11:19:41Z",
+      "last_observed": "2026-09-11T16:27:45Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-6AF8601A6904"
     },
@@ -550,7 +550,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-11T11:19:41Z",
+      "last_observed": "2026-09-11T16:27:45Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-0E0D7439BF8C"
     },
@@ -562,7 +562,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-11T11:19:41Z",
+      "last_observed": "2026-09-11T16:27:45Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-57FE02F08EDF"
     },
@@ -574,7 +574,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-11T11:19:41Z",
+      "last_observed": "2026-09-11T16:27:45Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-B944D675AEAE"
     },
@@ -589,6 +589,18 @@
       "last_observed": "2026-09-10T11:18:03Z",
       "resolved_at": "2026-09-10T16:23:42Z",
       "latest_finding_id": "PAM-58EEAB14C150"
+    },
+    "PF-D6A19F4EBA45": {
+      "finding_fingerprint": "PF-D6A19F4EBA45",
+      "repository": "rahp-toolkit",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": ".github/workflows/combined-review-worker.yml",
+      "dimension": "operational",
+      "status": "open",
+      "first_observed": "2026-09-11T16:27:45Z",
+      "last_observed": "2026-09-11T16:27:45Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-58C86E7A130C"
     }
   }
 }
