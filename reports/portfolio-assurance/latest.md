@@ -7,7 +7,7 @@ search_exclude: true
 
 # Portfolio Assurance Report — 2026-09-11
 
-**Observed:** 2026-09-11T16:27:45Z  
+**Observed:** 2026-09-11T20:57:28Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 9  
 **Unclassified public repositories:** 0
@@ -122,22 +122,22 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-58C86E7A130C: rahp-toolkit
+### PAM-7F9AEB261148: rahp-toolkit
 
-- **Fingerprint:** `PF-D6A19F4EBA45`
+- **Fingerprint:** `PF-601347CF535B`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
-- **Subject:** `.github/workflows/combined-review-worker.yml`
+- **Subject:** `.github/workflows/dpip-handoff.yml`
 - **Severity:** `medium`
 - **Claim:** The latest completed default-branch run for this workflow is failing within the governed observation window.
 - **Recommended action:** Review the failed workflow, restore a successful default-branch run, or record an explicit accepted-risk disposition.
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-3ECA6C9EBFF5: rahp-toolkit
+### PAM-062A1E1DE862: rahp-toolkit
 
-- **Fingerprint:** `PF-40DA3BA7712C`
+- **Fingerprint:** `PF-8D1B2E5DB31D`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
-- **Subject:** `.github/workflows/dtg-repository-review-worker.yml`
+- **Subject:** `.github/workflows/dpip-lifecycle.yml`
 - **Severity:** `medium`
 - **Claim:** The latest completed default-branch run for this workflow is failing within the governed observation window.
 - **Recommended action:** Review the failed workflow, restore a successful default-branch run, or record an explicit accepted-risk disposition.
@@ -190,7 +190,7 @@ The assurance state below is calculated from repository-specific evidence contra
 | ↳ `toolkit_validation` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
 | ↳ `corpus_integrity` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
 | ↳ `publication_integrity` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
-| ↳ `cross_specification_pressure_test` | optional | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
+| ↳ `cross_specification_pressure_test` | optional | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 
 
 ## Governance boundary
