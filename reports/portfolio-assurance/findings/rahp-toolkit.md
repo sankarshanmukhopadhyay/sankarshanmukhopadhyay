@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-09-10T20:51:21Z  
-**Open findings:** 0  
-**Repository snapshot:** `55febc989a1c619f0e442e40a7933c19b1157357`  
+**Generated:** 2026-09-11T04:38:51Z  
+**Open findings:** 3  
+**Repository snapshot:** `b8f620a49682a699e5208b737155be2c426568f6`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
@@ -20,9 +20,118 @@ search_exclude: true
 |---|---|---:|
 | Operational | `evaluated` | 0 |
 | Governance | `evaluated` | 0 |
-| Assurance | `evaluated` | 0 |
+| Assurance | `evaluated` | 3 |
 | Cross Specification | `not-evaluated` | 0 |
 
 ## Open findings
 
-No findings are open in the currently evaluated dimensions. This is **not** evidence that dimensions marked `not-evaluated` are assured or complete.
+## PF-9769E5EB9C48 — ASSURANCE_EVIDENCE_MISSING
+
+- Observation: `PAM-21D271000FD2` at `2026-09-11T04:38:51Z`
+- Severity: `high`
+- Dimension: `assurance`
+- Subject: `.github/workflows/corpus-status.yml`
+- Lifecycle: `open`; first observed `2026-08-22T01:49:53Z`
+- Claim: Required assurance evidence was not observed inside the governed evidence window.
+- Automatic effect: `none`
+
+### Evidence
+
+```json
+{
+  "claim": "corpus_integrity",
+  "evidence_head_sha": null,
+  "freshness_policy": "latest-success",
+  "reason": "no completed workflow execution was observed inside the governed lookback window",
+  "repository_head_sha": null,
+  "state": "missing",
+  "workflow": null
+}
+```
+
+### Remediation objective
+
+Restore or execute the repository-native control required by the governed assurance contract.
+
+### Acceptance criteria
+
+- [ ] The required evidence is observable inside the governed lookback window.
+- [ ] The evidence is attributable to the configured repository-native control.
+
+### Verification
+
+- Execute the required repository-native control and rerun the portfolio monitor.
+
+## PF-E8B1B5CFA71B — ASSURANCE_EVIDENCE_MISSING
+
+- Observation: `PAM-70666B843A13` at `2026-09-11T04:38:51Z`
+- Severity: `high`
+- Dimension: `assurance`
+- Subject: `.github/workflows/pages.yml`
+- Lifecycle: `open`; first observed `2026-09-01T21:01:37Z`
+- Claim: Required assurance evidence was not observed inside the governed evidence window.
+- Automatic effect: `none`
+
+### Evidence
+
+```json
+{
+  "claim": "publication_integrity",
+  "evidence_head_sha": null,
+  "freshness_policy": "current-head",
+  "reason": "no completed workflow execution was observed inside the governed lookback window",
+  "repository_head_sha": null,
+  "state": "missing",
+  "workflow": null
+}
+```
+
+### Remediation objective
+
+Restore or execute the repository-native control required by the governed assurance contract.
+
+### Acceptance criteria
+
+- [ ] The required evidence is observable inside the governed lookback window.
+- [ ] The evidence is attributable to the configured repository-native control.
+
+### Verification
+
+- Execute the required repository-native control and rerun the portfolio monitor.
+
+## PF-40A9B6AD0B44 — ASSURANCE_EVIDENCE_MISSING
+
+- Observation: `PAM-3A45BFD59576` at `2026-09-11T04:38:51Z`
+- Severity: `high`
+- Dimension: `assurance`
+- Subject: `.github/workflows/validate.yml`
+- Lifecycle: `open`; first observed `2026-09-01T21:01:37Z`
+- Claim: Required assurance evidence was not observed inside the governed evidence window.
+- Automatic effect: `none`
+
+### Evidence
+
+```json
+{
+  "claim": "toolkit_validation",
+  "evidence_head_sha": null,
+  "freshness_policy": "current-head",
+  "reason": "no completed workflow execution was observed inside the governed lookback window",
+  "repository_head_sha": null,
+  "state": "missing",
+  "workflow": null
+}
+```
+
+### Remediation objective
+
+Restore or execute the repository-native control required by the governed assurance contract.
+
+### Acceptance criteria
+
+- [ ] The required evidence is observable inside the governed lookback window.
+- [ ] The evidence is attributable to the configured repository-native control.
+
+### Verification
+
+- Execute the required repository-native control and rerun the portfolio monitor.
