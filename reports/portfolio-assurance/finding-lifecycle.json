@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T16:27:45Z",
+  "generated_at": "2026-09-11T20:57:28Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -142,7 +142,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-09-11T16:27:45Z",
+      "last_observed": "2026-09-11T20:57:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-21D271000FD2"
     },
@@ -224,10 +224,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/dtg-repository-review-worker.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-27T09:46:58Z",
       "last_observed": "2026-09-11T16:27:45Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-11T20:57:28Z",
       "latest_finding_id": "PAM-3ECA6C9EBFF5"
     },
     "PF-EE7FADD90617": {
@@ -418,7 +418,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-09-11T16:27:45Z",
+      "last_observed": "2026-09-11T20:57:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-3A45BFD59576"
     },
@@ -430,7 +430,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-09-11T16:27:45Z",
+      "last_observed": "2026-09-11T20:57:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-70666B843A13"
     },
@@ -526,7 +526,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-11T16:27:45Z",
+      "last_observed": "2026-09-11T20:57:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-6AF8601A6904"
     },
@@ -550,7 +550,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-11T16:27:45Z",
+      "last_observed": "2026-09-11T20:57:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-0E0D7439BF8C"
     },
@@ -562,7 +562,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-11T16:27:45Z",
+      "last_observed": "2026-09-11T20:57:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-57FE02F08EDF"
     },
@@ -574,7 +574,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-11T16:27:45Z",
+      "last_observed": "2026-09-11T20:57:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-B944D675AEAE"
     },
@@ -596,11 +596,35 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/combined-review-worker.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-11T16:27:45Z",
       "last_observed": "2026-09-11T16:27:45Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-11T20:57:28Z",
       "latest_finding_id": "PAM-58C86E7A130C"
+    },
+    "PF-601347CF535B": {
+      "finding_fingerprint": "PF-601347CF535B",
+      "repository": "rahp-toolkit",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": ".github/workflows/dpip-handoff.yml",
+      "dimension": "operational",
+      "status": "open",
+      "first_observed": "2026-09-11T20:57:28Z",
+      "last_observed": "2026-09-11T20:57:28Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-7F9AEB261148"
+    },
+    "PF-8D1B2E5DB31D": {
+      "finding_fingerprint": "PF-8D1B2E5DB31D",
+      "repository": "rahp-toolkit",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": ".github/workflows/dpip-lifecycle.yml",
+      "dimension": "operational",
+      "status": "open",
+      "first_observed": "2026-09-11T20:57:28Z",
+      "last_observed": "2026-09-11T20:57:28Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-062A1E1DE862"
     }
   }
 }

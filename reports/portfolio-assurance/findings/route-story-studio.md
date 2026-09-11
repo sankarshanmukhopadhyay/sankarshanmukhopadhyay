@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `route-story-studio`
 
-**Generated:** 2026-09-11T16:27:45Z  
+**Generated:** 2026-09-11T20:57:28Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/route-story-studio.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/route-story-studio.json)
