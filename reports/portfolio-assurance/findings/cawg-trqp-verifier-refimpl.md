@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `cawg-trqp-verifier-refimpl`
 
-**Generated:** 2026-09-12T15:31:02Z  
+**Generated:** 2026-09-12T20:32:32Z  
 **Open findings:** 1  
 **Repository snapshot:** `23ceae7141359244deabdfba01df922e99fa07dc`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-D930ABA3415C — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-6A03B95BA575` at `2026-09-12T15:31:02Z`
+- Observation: `PAM-6A03B95BA575` at `2026-09-12T20:32:32Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
