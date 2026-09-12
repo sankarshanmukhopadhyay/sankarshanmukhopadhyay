@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `governance-authority-assurance-metamodel`
 
-**Generated:** 2026-09-12T10:44:59Z  
+**Generated:** 2026-09-12T15:31:02Z  
 **Open findings:** 2  
 **Repository snapshot:** `f7da10302ed9363e2546aaf103bb3f8f4e1fec55`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-4D64FB03CE13 — ASSURANCE_CONTROL_FAILED
 
-- Observation: `PAM-B88F903B2309` at `2026-09-12T10:44:59Z`
+- Observation: `PAM-B88F903B2309` at `2026-09-12T15:31:02Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/verify-publication.yml`
@@ -78,7 +78,7 @@ Resolve the failing repository-native assurance control or record an explicit go
 
 ## PF-62A35110D9A2 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-A27B948F4F55` at `2026-09-12T10:44:59Z`
+- Observation: `PAM-A27B948F4F55` at `2026-09-12T15:31:02Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/verify-publication.yml`

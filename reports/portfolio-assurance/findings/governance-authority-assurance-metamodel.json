@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-12T10:44:59Z",
+  "generated_at": "2026-09-12T15:31:02Z",
   "repository": "governance-authority-assurance-metamodel",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-12T10:44:59Z",
+    "observed_at": "2026-09-12T15:31:02Z",
     "default_branch": "main",
     "head_sha": "f7da10302ed9363e2546aaf103bb3f8f4e1fec55",
     "provenance_status": "observed"
@@ -46,7 +46,7 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/verify-publication.yml",
       "severity": "high",
-      "observed_at": "2026-09-12T10:44:59Z",
+      "observed_at": "2026-09-12T15:31:02Z",
       "claim": "The repository-native control bound to this assurance claim is currently failing.",
       "evidence": {
         "claim": "publication_integrity",
@@ -97,7 +97,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/verify-publication.yml",
       "severity": "medium",
-      "observed_at": "2026-09-12T10:44:59Z",
+      "observed_at": "2026-09-12T15:31:02Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -240,7 +240,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-12T10:44:59Z",
+      "last_observed": "2026-09-12T15:31:02Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-B88F903B2309"
     },
@@ -252,7 +252,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-12T10:44:59Z",
+      "last_observed": "2026-09-12T15:31:02Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-A27B948F4F55"
     }
