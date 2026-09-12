@@ -7,7 +7,7 @@ nav_order: 1
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-09-12T10:44:59Z  
+**Observed:** 2026-09-12T15:31:02Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 6  
 **Unclassified public repositories:** 0
@@ -100,11 +100,11 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-4FD8D7C5BED2: rahp-toolkit
+### PAM-5F4E87E791CB: rahp-toolkit
 
-- **Fingerprint:** `PF-8D1B2E5DB31D`
+- **Fingerprint:** `PF-601347CF535B`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
-- **Subject:** `.github/workflows/dpip-lifecycle.yml`
+- **Subject:** `.github/workflows/dpip-handoff.yml`
 - **Severity:** `medium`
 - **Claim:** The latest completed default-branch run for this workflow is failing within the governed observation window.
 - **Recommended action:** Review the failed workflow, restore a successful default-branch run, or record an explicit accepted-risk disposition.
