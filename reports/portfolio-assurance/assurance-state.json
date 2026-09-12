@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-12T04:32:56Z",
+  "generated_at": "2026-09-12T10:44:59Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -423,7 +423,7 @@
     "cawg-trqp-verifier-refimpl": {
       "repository": "cawg-trqp-verifier-refimpl",
       "profile": "reference-implementation",
-      "state": "satisfied",
+      "state": "missing",
       "claims": [
         {
           "claim": "implementation_validation",
@@ -455,23 +455,8 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/pages.yml",
           "freshness_policy": "latest-success",
-          "state": "satisfied",
-          "reason": "successful workflow evidence satisfies the configured freshness policy",
-          "evidence": {
-            "workflow_id": 315515884,
-            "name": "Deploy Documentation (Just the Docs)",
-            "path": ".github/workflows/pages.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-09-05T08:02:59Z",
-            "updated_at": "2026-09-05T08:03:31Z",
-            "run_started_at": "2026-09-05T08:02:59Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/33954196733",
-            "head_sha": "10ab1ad8bec07391761562dd3270679457ec6ae1",
-            "head_branch": "main",
-            "run_number": 35
-          }
+          "state": "missing",
+          "reason": "no completed workflow execution was observed inside the governed lookback window"
         },
         {
           "claim": "package_publication",
@@ -484,7 +469,7 @@
         }
       ],
       "required_claims": 2,
-      "satisfied_required_claims": 2
+      "satisfied_required_claims": 1
     },
     "trqp-conformance-suite": {
       "repository": "trqp-conformance-suite",
@@ -764,13 +749,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "workflow_dispatch",
-            "created_at": "2026-09-12T01:26:21Z",
-            "updated_at": "2026-09-12T01:26:42Z",
-            "run_started_at": "2026-09-12T01:26:21Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34664817369",
-            "head_sha": "4a8b105043615de1f3dffa3dafb1d93a0ac37800",
+            "created_at": "2026-09-12T05:36:49Z",
+            "updated_at": "2026-09-12T05:37:12Z",
+            "run_started_at": "2026-09-12T05:36:49Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34676027482",
+            "head_sha": "8a396f96b0d0a8bce4ac24c262f5f629389ca7d2",
             "head_branch": "main",
-            "run_number": 39
+            "run_number": 42
           }
         }
       ],
