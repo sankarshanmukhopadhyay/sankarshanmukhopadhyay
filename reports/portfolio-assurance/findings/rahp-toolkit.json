@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-13T11:50:52Z",
+  "generated_at": "2026-09-13T16:15:56Z",
   "repository": "rahp-toolkit",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-13T11:50:52Z",
+    "observed_at": "2026-09-13T16:15:56Z",
     "default_branch": "main",
     "head_sha": "aba1a7e3fdac2de0dda7ecee8b5017bf59f549cc",
     "provenance_status": "observed"
@@ -46,7 +46,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "severity": "high",
-      "observed_at": "2026-09-13T11:50:52Z",
+      "observed_at": "2026-09-13T16:15:56Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "corpus_integrity",
@@ -83,7 +83,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-13T11:50:52Z",
+      "observed_at": "2026-09-13T16:15:56Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "publication_integrity",
@@ -123,7 +123,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-09-13T11:50:52Z",
+      "last_observed": "2026-09-13T16:15:56Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-1FACE12500DB"
     },
@@ -135,7 +135,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-09-13T11:50:52Z",
+      "last_observed": "2026-09-13T16:15:56Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-B7528BD93B58"
     }
