@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `governance-authority-assurance-metamodel`
 
-**Generated:** 2026-09-13T04:46:05Z  
+**Generated:** 2026-09-13T11:50:52Z  
 **Open findings:** 0  
 **Repository snapshot:** `ce4e7a3f51eb423c52d9ff6caeaefd8140a7af23`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/governance-authority-assurance-metamodel.json)
