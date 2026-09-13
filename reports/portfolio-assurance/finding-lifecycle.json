@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-12T20:32:32Z",
+  "generated_at": "2026-09-13T04:46:05Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -140,10 +140,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-22T01:49:53Z",
       "last_observed": "2026-09-12T20:32:32Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-13T04:46:05Z",
       "latest_finding_id": "PAM-007CC6ACBC3D"
     },
     "PF-954D1C442655": {
@@ -310,9 +310,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-28T22:18:50Z",
-      "last_observed": "2026-09-12T20:32:32Z",
+      "last_observed": "2026-09-13T04:46:05Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-6A03B95BA575"
+      "latest_finding_id": "PAM-9AC25E145C24"
     },
     "PF-72855B9E6190": {
       "finding_fingerprint": "PF-72855B9E6190",
@@ -416,10 +416,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/validate.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T21:01:37Z",
       "last_observed": "2026-09-12T20:32:32Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-13T04:46:05Z",
       "latest_finding_id": "PAM-3DD5A9023E6D"
     },
     "PF-E8B1B5CFA71B": {
@@ -428,10 +428,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T21:01:37Z",
       "last_observed": "2026-09-12T20:32:32Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-13T04:46:05Z",
       "latest_finding_id": "PAM-9921F3A554DF"
     },
     "PF-0B036E077FB8": {
@@ -524,10 +524,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/verify-publication.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-10T02:21:16Z",
       "last_observed": "2026-09-12T20:32:32Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-13T04:46:05Z",
       "latest_finding_id": "PAM-A27B948F4F55"
     },
     "PF-DE34E30A16D3": {
@@ -548,10 +548,10 @@
       "rule_id": "ASSURANCE_CONTROL_FAILED",
       "subject": ".github/workflows/verify-publication.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-10T02:21:16Z",
       "last_observed": "2026-09-12T20:32:32Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-13T04:46:05Z",
       "latest_finding_id": "PAM-B88F903B2309"
     },
     "PF-820B3E478EBA": {
@@ -562,9 +562,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-12T20:32:32Z",
+      "last_observed": "2026-09-13T04:46:05Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-093F16A4DDB2"
+      "latest_finding_id": "PAM-8130B047B25A"
     },
     "PF-2B6A1AD853DF": {
       "finding_fingerprint": "PF-2B6A1AD853DF",
@@ -574,9 +574,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-12T20:32:32Z",
+      "last_observed": "2026-09-13T04:46:05Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-224A3DF9E7E9"
+      "latest_finding_id": "PAM-B31E3A5E20B1"
     },
     "PF-25F4E070337B": {
       "finding_fingerprint": "PF-25F4E070337B",
@@ -608,10 +608,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/dpip-handoff.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-11T20:57:28Z",
       "last_observed": "2026-09-12T20:32:32Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-13T04:46:05Z",
       "latest_finding_id": "PAM-5F4E87E791CB"
     },
     "PF-8D1B2E5DB31D": {
@@ -620,10 +620,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/dpip-lifecycle.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-11T20:57:28Z",
       "last_observed": "2026-09-12T20:32:32Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-13T04:46:05Z",
       "latest_finding_id": "PAM-4FD8D7C5BED2"
     }
   }

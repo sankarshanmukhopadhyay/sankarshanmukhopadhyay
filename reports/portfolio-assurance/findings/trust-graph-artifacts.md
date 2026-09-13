@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `trust-graph-artifacts`
 
-**Generated:** 2026-09-12T20:32:32Z  
+**Generated:** 2026-09-13T04:46:05Z  
 **Open findings:** 2  
 **Repository snapshot:** `3694d63c677f02a4e4984f665cf8d60fc447993c`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-2B6A1AD853DF — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-224A3DF9E7E9` at `2026-09-12T20:32:32Z`
+- Observation: `PAM-B31E3A5E20B1` at `2026-09-13T04:46:05Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
@@ -64,7 +64,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-820B3E478EBA — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-093F16A4DDB2` at `2026-09-12T20:32:32Z`
+- Observation: `PAM-8130B047B25A` at `2026-09-13T04:46:05Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/validate-tsmm-native.yml`
