@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-12T20:32:32Z",
+  "generated_at": "2026-09-13T04:46:05Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -63,7 +63,7 @@
     "governance-authority-assurance-metamodel": {
       "repository": "governance-authority-assurance-metamodel",
       "profile": "governance-model",
-      "state": "degraded",
+      "state": "satisfied",
       "claims": [
         {
           "claim": "model_validation",
@@ -80,13 +80,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-10T00:46:57Z",
-            "updated_at": "2026-09-10T00:48:14Z",
-            "run_started_at": "2026-09-10T00:46:57Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34422741948",
-            "head_sha": "f7da10302ed9363e2546aaf103bb3f8f4e1fec55",
+            "created_at": "2026-09-13T01:29:30Z",
+            "updated_at": "2026-09-13T01:30:26Z",
+            "run_started_at": "2026-09-13T01:29:30Z",
+            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34730655563",
+            "head_sha": "ce4e7a3f51eb423c52d9ff6caeaefd8140a7af23",
             "head_branch": "main",
-            "run_number": 66
+            "run_number": 70
           }
         },
         {
@@ -95,27 +95,27 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/verify-publication.yml",
           "freshness_policy": "latest-success",
-          "state": "degraded",
-          "reason": "latest completed workflow conclusion is failure",
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
           "evidence": {
             "workflow_id": 338457213,
             "name": "Verify canonical publication",
             "path": ".github/workflows/verify-publication.yml",
-            "conclusion": "failure",
+            "conclusion": "success",
             "status": "completed",
             "event": "workflow_run",
-            "created_at": "2026-09-10T00:48:31Z",
-            "updated_at": "2026-09-10T00:50:20Z",
-            "run_started_at": "2026-09-10T00:48:31Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34422850256",
-            "head_sha": "f7da10302ed9363e2546aaf103bb3f8f4e1fec55",
+            "created_at": "2026-09-13T01:30:44Z",
+            "updated_at": "2026-09-13T01:30:53Z",
+            "run_started_at": "2026-09-13T01:30:44Z",
+            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34730713294",
+            "head_sha": "ce4e7a3f51eb423c52d9ff6caeaefd8140a7af23",
             "head_branch": "main",
-            "run_number": 13
+            "run_number": 14
           }
         }
       ],
       "required_claims": 2,
-      "satisfied_required_claims": 1
+      "satisfied_required_claims": 2
     },
     "agent-registry-protocol": {
       "repository": "agent-registry-protocol",
@@ -660,7 +660,7 @@
     "rahp-toolkit": {
       "repository": "rahp-toolkit",
       "profile": "assurance-toolkit",
-      "state": "missing",
+      "state": "satisfied",
       "claims": [
         {
           "claim": "toolkit_validation",
@@ -668,8 +668,23 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/validate.yml",
           "freshness_policy": "current-head",
-          "state": "missing",
-          "reason": "no completed workflow execution was observed inside the governed lookback window"
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 331522431,
+            "name": "validate",
+            "path": ".github/workflows/validate.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-09-13T01:23:26Z",
+            "updated_at": "2026-09-13T01:24:22Z",
+            "run_started_at": "2026-09-13T01:23:26Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34730403057",
+            "head_sha": "aba1a7e3fdac2de0dda7ecee8b5017bf59f549cc",
+            "head_branch": "main",
+            "run_number": 730
+          }
         },
         {
           "claim": "corpus_integrity",
@@ -677,8 +692,23 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/corpus-status.yml",
           "freshness_policy": "latest-success",
-          "state": "missing",
-          "reason": "no completed workflow execution was observed inside the governed lookback window"
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 333347627,
+            "name": "Corpus source status",
+            "path": ".github/workflows/corpus-status.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-09-13T01:23:27Z",
+            "updated_at": "2026-09-13T01:23:40Z",
+            "run_started_at": "2026-09-13T01:23:27Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34730403085",
+            "head_sha": "aba1a7e3fdac2de0dda7ecee8b5017bf59f549cc",
+            "head_branch": "main",
+            "run_number": 114
+          }
         },
         {
           "claim": "publication_integrity",
@@ -686,8 +716,23 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/pages.yml",
           "freshness_policy": "current-head",
-          "state": "missing",
-          "reason": "no completed workflow execution was observed inside the governed lookback window"
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 333196290,
+            "name": "Build and deploy RAHP documentation",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-09-13T01:23:26Z",
+            "updated_at": "2026-09-13T01:24:24Z",
+            "run_started_at": "2026-09-13T01:23:26Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34730403056",
+            "head_sha": "aba1a7e3fdac2de0dda7ecee8b5017bf59f549cc",
+            "head_branch": "main",
+            "run_number": 717
+          }
         },
         {
           "claim": "cross_specification_pressure_test",
@@ -700,7 +745,7 @@
         }
       ],
       "required_claims": 3,
-      "satisfied_required_claims": 0
+      "satisfied_required_claims": 3
     }
   }
 }

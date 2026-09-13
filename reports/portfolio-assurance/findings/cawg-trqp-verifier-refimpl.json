@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-12T20:32:32Z",
+  "generated_at": "2026-09-13T04:46:05Z",
   "repository": "cawg-trqp-verifier-refimpl",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-12T20:32:32Z",
+    "observed_at": "2026-09-13T04:46:05Z",
     "default_branch": "main",
     "head_sha": "23ceae7141359244deabdfba01df922e99fa07dc",
     "provenance_status": "observed"
@@ -40,13 +40,13 @@
   "finding_count": 1,
   "findings": [
     {
-      "finding_id": "PAM-6A03B95BA575",
+      "finding_id": "PAM-9AC25E145C24",
       "finding_fingerprint": "PF-D930ABA3415C",
       "repository": "cawg-trqp-verifier-refimpl",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-12T20:32:32Z",
+      "observed_at": "2026-09-13T04:46:05Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "publication_integrity",
@@ -86,9 +86,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-28T22:18:50Z",
-      "last_observed": "2026-09-12T20:32:32Z",
+      "last_observed": "2026-09-13T04:46:05Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-6A03B95BA575"
+      "latest_finding_id": "PAM-9AC25E145C24"
     }
   ],
   "handoff": {

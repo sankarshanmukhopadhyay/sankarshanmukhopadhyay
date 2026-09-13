@@ -1,20 +1,20 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-12T20:32:32Z",
+  "generated_at": "2026-09-13T04:46:05Z",
   "repository": "governance-authority-assurance-metamodel",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-12T20:32:32Z",
+    "observed_at": "2026-09-13T04:46:05Z",
     "default_branch": "main",
-    "head_sha": "f7da10302ed9363e2546aaf103bb3f8f4e1fec55",
+    "head_sha": "ce4e7a3f51eb423c52d9ff6caeaefd8140a7af23",
     "provenance_status": "observed"
   },
   "assessment": {
     "operational": {
       "status": "evaluated",
       "description": "Repository availability and observable default-branch automation health.",
-      "open_findings": 1
+      "open_findings": 0
     },
     "governance": {
       "status": "evaluated",
@@ -24,7 +24,7 @@
     "assurance": {
       "status": "evaluated",
       "description": "Repository-specific assurance evidence coverage, execution state, provenance and freshness against governed repository revisions.",
-      "open_findings": 1
+      "open_findings": 0
     },
     "cross_specification": {
       "status": "not-evaluated",
@@ -37,226 +37,9 @@
     "dashboard": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/docs/portfolio-assurance/dashboard.html",
     "latest_report": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/latest.html"
   },
-  "finding_count": 2,
-  "findings": [
-    {
-      "finding_id": "PAM-B88F903B2309",
-      "finding_fingerprint": "PF-4D64FB03CE13",
-      "repository": "governance-authority-assurance-metamodel",
-      "rule_id": "ASSURANCE_CONTROL_FAILED",
-      "subject": ".github/workflows/verify-publication.yml",
-      "severity": "high",
-      "observed_at": "2026-09-12T20:32:32Z",
-      "claim": "The repository-native control bound to this assurance claim is currently failing.",
-      "evidence": {
-        "claim": "publication_integrity",
-        "state": "degraded",
-        "reason": "latest completed workflow conclusion is failure",
-        "freshness_policy": "latest-success",
-        "repository_head_sha": null,
-        "evidence_head_sha": null,
-        "workflow": {
-          "workflow_id": 338457213,
-          "name": "Verify canonical publication",
-          "path": ".github/workflows/verify-publication.yml",
-          "conclusion": "failure",
-          "status": "completed",
-          "event": "workflow_run",
-          "created_at": "2026-09-10T00:48:31Z",
-          "updated_at": "2026-09-10T00:50:20Z",
-          "run_started_at": "2026-09-10T00:48:31Z",
-          "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34422850256",
-          "head_sha": "f7da10302ed9363e2546aaf103bb3f8f4e1fec55",
-          "head_branch": "main",
-          "run_number": 13
-        }
-      },
-      "recommended_action": "Resolve the failing repository-native control or record an explicit governed disposition.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Resolve the failing repository-native assurance control or record an explicit governed disposition.",
-        "acceptance_criteria": [
-          "The configured assurance control completes successfully.",
-          "The resulting evidence remains attributable to the configured repository revision."
-        ],
-        "verification": [
-          "Execute the control and rerun the portfolio monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    },
-    {
-      "finding_id": "PAM-A27B948F4F55",
-      "finding_fingerprint": "PF-62A35110D9A2",
-      "repository": "governance-authority-assurance-metamodel",
-      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
-      "subject": ".github/workflows/verify-publication.yml",
-      "severity": "medium",
-      "observed_at": "2026-09-12T20:32:32Z",
-      "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
-      "evidence": {
-        "available": true,
-        "lookback_days": 7,
-        "completed_examined": 25,
-        "workflows_examined": 5,
-        "retired_workflows_examined": 0,
-        "unresolved_failures": 1,
-        "latest": [
-          {
-            "workflow_id": 314124184,
-            "name": "Deploy GitHub Pages",
-            "path": ".github/workflows/pages.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-09-10T00:46:57Z",
-            "updated_at": "2026-09-10T00:48:30Z",
-            "run_started_at": "2026-09-10T00:46:57Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34422741925",
-            "head_sha": "f7da10302ed9363e2546aaf103bb3f8f4e1fec55",
-            "head_branch": "main",
-            "run_number": 48
-          },
-          {
-            "workflow_id": 314123806,
-            "name": "Validate",
-            "path": ".github/workflows/validate.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-09-10T00:46:57Z",
-            "updated_at": "2026-09-10T00:48:14Z",
-            "run_started_at": "2026-09-10T00:46:57Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34422741948",
-            "head_sha": "f7da10302ed9363e2546aaf103bb3f8f4e1fec55",
-            "head_branch": "main",
-            "run_number": 66
-          },
-          {
-            "workflow_id": 338457213,
-            "name": "Verify canonical publication",
-            "path": ".github/workflows/verify-publication.yml",
-            "conclusion": "failure",
-            "status": "completed",
-            "event": "workflow_run",
-            "created_at": "2026-09-10T00:48:31Z",
-            "updated_at": "2026-09-10T00:50:20Z",
-            "run_started_at": "2026-09-10T00:48:31Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34422850256",
-            "head_sha": "f7da10302ed9363e2546aaf103bb3f8f4e1fec55",
-            "head_branch": "main",
-            "run_number": 13
-          },
-          {
-            "workflow_id": 329804496,
-            "name": "github_actions in /. - Update #1567898254",
-            "path": "dynamic/dependabot/dependabot-updates",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "dynamic",
-            "created_at": "2026-09-10T04:53:41Z",
-            "updated_at": "2026-09-10T04:54:43Z",
-            "run_started_at": "2026-09-10T04:53:41Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34438939981",
-            "head_sha": "f7da10302ed9363e2546aaf103bb3f8f4e1fec55",
-            "head_branch": "main",
-            "run_number": 9
-          },
-          {
-            "workflow_id": 354485635,
-            "name": "Push on main",
-            "path": "dynamic/github-code-scanning/codeql",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "dynamic",
-            "created_at": "2026-09-10T00:46:56Z",
-            "updated_at": "2026-09-10T00:48:10Z",
-            "run_started_at": "2026-09-10T00:46:56Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34422741661",
-            "head_sha": "f7da10302ed9363e2546aaf103bb3f8f4e1fec55",
-            "head_branch": "main",
-            "run_number": 3
-          }
-        ],
-        "retired": [],
-        "unresolved": [
-          {
-            "workflow_id": 338457213,
-            "name": "Verify canonical publication",
-            "path": ".github/workflows/verify-publication.yml",
-            "conclusion": "failure",
-            "status": "completed",
-            "event": "workflow_run",
-            "created_at": "2026-09-10T00:48:31Z",
-            "updated_at": "2026-09-10T00:50:20Z",
-            "run_started_at": "2026-09-10T00:48:31Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34422850256",
-            "head_sha": "f7da10302ed9363e2546aaf103bb3f8f4e1fec55",
-            "head_branch": "main",
-            "run_number": 13
-          }
-        ],
-        "active_inventory_available": true,
-        "active_workflow_paths": [
-          ".github/workflows/pages.yml",
-          ".github/workflows/validate.yml",
-          ".github/workflows/verify-publication.yml",
-          "dynamic/dependabot/dependabot-updates",
-          "dynamic/dependabot/update-graph",
-          "dynamic/github-code-scanning/codeql"
-        ]
-      },
-      "recommended_action": "Review the failed workflow, restore a successful default-branch run, or record an explicit accepted-risk disposition.",
-      "dimension": "operational",
-      "remediation": {
-        "objective": "Restore a successful latest completed default-branch run for the affected workflow or record an explicit repository-governed risk disposition.",
-        "acceptance_criteria": [
-          "The affected workflow's latest completed default-branch run succeeds, or an explicit governed disposition supersedes the operational expectation."
-        ],
-        "verification": [
-          "Run the affected workflow on the default branch.",
-          "Rerun the portfolio monitor and confirm the stable finding fingerprint is no longer open."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    }
-  ],
-  "lifecycle": [
-    {
-      "finding_fingerprint": "PF-4D64FB03CE13",
-      "repository": "governance-authority-assurance-metamodel",
-      "rule_id": "ASSURANCE_CONTROL_FAILED",
-      "subject": ".github/workflows/verify-publication.yml",
-      "dimension": "assurance",
-      "status": "open",
-      "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-12T20:32:32Z",
-      "resolved_at": null,
-      "latest_finding_id": "PAM-B88F903B2309"
-    },
-    {
-      "finding_fingerprint": "PF-62A35110D9A2",
-      "repository": "governance-authority-assurance-metamodel",
-      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
-      "subject": ".github/workflows/verify-publication.yml",
-      "dimension": "operational",
-      "status": "open",
-      "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-12T20:32:32Z",
-      "resolved_at": null,
-      "latest_finding_id": "PAM-A27B948F4F55"
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
+  "lifecycle": [],
   "handoff": {
     "authority": "repository-local-governance",
     "intended_use": "Supply this dossier with the affected repository source during remediation planning and implementation.",
