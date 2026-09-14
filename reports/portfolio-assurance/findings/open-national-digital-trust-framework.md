@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `open-national-digital-trust-framework`
 
-**Generated:** 2026-09-14T04:55:01Z  
+**Generated:** 2026-09-14T12:44:43Z  
 **Open findings:** 0  
-**Repository snapshot:** `3897fd29de2134c7eb5d43d41bd1ff2a4c884b6e`  
+**Repository snapshot:** `ba187447104dfaf4b1a45ad644fe6dc2c0cc7386`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/open-national-digital-trust-framework.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.

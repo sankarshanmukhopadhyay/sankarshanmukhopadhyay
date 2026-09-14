@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `agent-registry-protocol`
 
-**Generated:** 2026-09-14T04:55:01Z  
+**Generated:** 2026-09-14T12:44:43Z  
 **Open findings:** 0  
-**Repository snapshot:** `468988fbbd5cd731ccd4e189bb6aec7695a62ef3`  
+**Repository snapshot:** `9ee355ad6d093f3c3ec51d62b2fc6699c745f3b7`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-registry-protocol.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-registry-protocol.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
