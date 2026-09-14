@@ -7,7 +7,7 @@ nav_order: 1
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-09-13T20:49:09Z  
+**Observed:** 2026-09-14T04:55:01Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 6  
 **Unclassified public repositories:** 0
@@ -45,7 +45,7 @@ nav_order: 1
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-9AC25E145C24: cawg-trqp-verifier-refimpl
+### PAM-61588D291604: cawg-trqp-verifier-refimpl
 
 - **Fingerprint:** `PF-D930ABA3415C`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -56,7 +56,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-1FACE12500DB: rahp-toolkit
+### PAM-9E0015AE26F6: rahp-toolkit
 
 - **Fingerprint:** `PF-9769E5EB9C48`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -67,7 +67,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-B7528BD93B58: rahp-toolkit
+### PAM-17BFB2090D0D: rahp-toolkit
 
 - **Fingerprint:** `PF-E8B1B5CFA71B`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -78,7 +78,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-DB478BC9A230: rahp-toolkit
+### PAM-468480FA6F3E: rahp-toolkit
 
 - **Fingerprint:** `PF-40A9B6AD0B44`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -89,7 +89,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-B31E3A5E20B1: trust-graph-artifacts
+### PAM-796118ABE4BF: trust-graph-artifacts
 
 - **Fingerprint:** `PF-2B6A1AD853DF`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -100,7 +100,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-8130B047B25A: trust-graph-artifacts
+### PAM-BE1D5F712526: trust-graph-artifacts
 
 - **Fingerprint:** `PF-820B3E478EBA`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -157,7 +157,7 @@ The assurance state below is calculated from repository-specific evidence contra
 | ↳ `toolkit_validation` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
 | ↳ `corpus_integrity` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
 | ↳ `publication_integrity` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
-| ↳ `cross_specification_pressure_test` | optional | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
+| ↳ `cross_specification_pressure_test` | optional | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
 
 
 ## Governance boundary
