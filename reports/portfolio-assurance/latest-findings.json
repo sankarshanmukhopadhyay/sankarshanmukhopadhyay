@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-13T20:49:09Z",
+  "generated_at": "2026-09-14T04:55:01Z",
   "findings": [
     {
-      "finding_id": "PAM-8130B047B25A",
+      "finding_id": "PAM-BE1D5F712526",
       "finding_fingerprint": "PF-820B3E478EBA",
       "repository": "trust-graph-artifacts",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/validate-tsmm-native.yml",
       "severity": "high",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "native_model_validation",
@@ -39,13 +39,13 @@
       }
     },
     {
-      "finding_id": "PAM-B31E3A5E20B1",
+      "finding_id": "PAM-796118ABE4BF",
       "finding_fingerprint": "PF-2B6A1AD853DF",
       "repository": "trust-graph-artifacts",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "publication_integrity",
@@ -76,13 +76,13 @@
       }
     },
     {
-      "finding_id": "PAM-9AC25E145C24",
+      "finding_id": "PAM-61588D291604",
       "finding_fingerprint": "PF-D930ABA3415C",
       "repository": "cawg-trqp-verifier-refimpl",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "publication_integrity",
@@ -113,13 +113,13 @@
       }
     },
     {
-      "finding_id": "PAM-DB478BC9A230",
+      "finding_id": "PAM-468480FA6F3E",
       "finding_fingerprint": "PF-40A9B6AD0B44",
       "repository": "rahp-toolkit",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/validate.yml",
       "severity": "high",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "toolkit_validation",
@@ -150,13 +150,13 @@
       }
     },
     {
-      "finding_id": "PAM-1FACE12500DB",
+      "finding_id": "PAM-9E0015AE26F6",
       "finding_fingerprint": "PF-9769E5EB9C48",
       "repository": "rahp-toolkit",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "severity": "high",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "corpus_integrity",
@@ -187,13 +187,13 @@
       }
     },
     {
-      "finding_id": "PAM-B7528BD93B58",
+      "finding_id": "PAM-17BFB2090D0D",
       "finding_fingerprint": "PF-E8B1B5CFA71B",
       "repository": "rahp-toolkit",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "publication_integrity",
@@ -227,7 +227,7 @@
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -247,7 +247,7 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 18,
+          "completed_examined": 16,
           "workflows_examined": 4,
           "retired_workflows_examined": 0,
           "unresolved_failures": 0,
@@ -329,17 +329,17 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-09-13T01:33:33Z",
-          "updated_at": "2026-09-13T01:29:31Z",
+          "pushed_at": "2026-09-14T04:51:44Z",
+          "updated_at": "2026-09-14T04:49:08Z",
           "open_issues_count": 6,
-          "head_sha": "ce4e7a3f51eb423c52d9ff6caeaefd8140a7af23"
+          "head_sha": "6fb07e39a6340d6d3064b324deb94f3f732d60a2"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -349,7 +349,7 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 29,
+          "completed_examined": 31,
           "workflows_examined": 5,
           "retired_workflows_examined": 0,
           "unresolved_failures": 0,
@@ -361,13 +361,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-13T01:29:30Z",
-              "updated_at": "2026-09-13T01:30:41Z",
-              "run_started_at": "2026-09-13T01:29:30Z",
-              "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34730655557",
-              "head_sha": "ce4e7a3f51eb423c52d9ff6caeaefd8140a7af23",
+              "created_at": "2026-09-14T04:49:07Z",
+              "updated_at": "2026-09-14T04:50:36Z",
+              "run_started_at": "2026-09-14T04:49:07Z",
+              "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34807417535",
+              "head_sha": "6fb07e39a6340d6d3064b324deb94f3f732d60a2",
               "head_branch": "main",
-              "run_number": 49
+              "run_number": 50
             },
             {
               "workflow_id": 314123806,
@@ -376,13 +376,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-13T01:29:30Z",
-              "updated_at": "2026-09-13T01:30:26Z",
-              "run_started_at": "2026-09-13T01:29:30Z",
-              "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34730655563",
-              "head_sha": "ce4e7a3f51eb423c52d9ff6caeaefd8140a7af23",
+              "created_at": "2026-09-14T04:49:07Z",
+              "updated_at": "2026-09-14T04:50:23Z",
+              "run_started_at": "2026-09-14T04:49:07Z",
+              "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34807417566",
+              "head_sha": "6fb07e39a6340d6d3064b324deb94f3f732d60a2",
               "head_branch": "main",
-              "run_number": 70
+              "run_number": 73
             },
             {
               "workflow_id": 338457213,
@@ -391,28 +391,28 @@
               "conclusion": "success",
               "status": "completed",
               "event": "workflow_run",
-              "created_at": "2026-09-13T01:30:44Z",
-              "updated_at": "2026-09-13T01:30:53Z",
-              "run_started_at": "2026-09-13T01:30:44Z",
-              "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34730713294",
-              "head_sha": "ce4e7a3f51eb423c52d9ff6caeaefd8140a7af23",
+              "created_at": "2026-09-14T04:50:38Z",
+              "updated_at": "2026-09-14T04:50:51Z",
+              "run_started_at": "2026-09-14T04:50:38Z",
+              "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34807504705",
+              "head_sha": "6fb07e39a6340d6d3064b324deb94f3f732d60a2",
               "head_branch": "main",
-              "run_number": 14
+              "run_number": 15
             },
             {
               "workflow_id": 329804496,
-              "name": "github_actions in /. - Update #1567898254",
+              "name": "github_actions in / for actions/deploy-pages, actions/upload-artifact - Update #1574539341",
               "path": "dynamic/dependabot/dependabot-updates",
               "conclusion": "success",
               "status": "completed",
               "event": "dynamic",
-              "created_at": "2026-09-10T04:53:41Z",
-              "updated_at": "2026-09-10T04:54:43Z",
-              "run_started_at": "2026-09-10T04:53:41Z",
-              "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34438939981",
-              "head_sha": "f7da10302ed9363e2546aaf103bb3f8f4e1fec55",
+              "created_at": "2026-09-14T04:50:27Z",
+              "updated_at": "2026-09-14T04:51:42Z",
+              "run_started_at": "2026-09-14T04:50:27Z",
+              "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34807493727",
+              "head_sha": "6fb07e39a6340d6d3064b324deb94f3f732d60a2",
               "head_branch": "main",
-              "run_number": 9
+              "run_number": 10
             },
             {
               "workflow_id": 354485635,
@@ -421,13 +421,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "dynamic",
-              "created_at": "2026-09-13T01:29:30Z",
-              "updated_at": "2026-09-13T01:30:43Z",
-              "run_started_at": "2026-09-13T01:29:30Z",
-              "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34730655050",
-              "head_sha": "ce4e7a3f51eb423c52d9ff6caeaefd8140a7af23",
+              "created_at": "2026-09-14T04:49:06Z",
+              "updated_at": "2026-09-14T04:50:24Z",
+              "run_started_at": "2026-09-14T04:49:06Z",
+              "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34807417160",
+              "head_sha": "6fb07e39a6340d6d3064b324deb94f3f732d60a2",
               "head_branch": "main",
-              "run_number": 6
+              "run_number": 9
             }
           ],
           "retired": [],
@@ -447,17 +447,17 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/qbf-consulting/agent-registry-protocol",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-09-12T00:45:55Z",
-          "updated_at": "2026-09-12T00:45:59Z",
+          "pushed_at": "2026-09-14T04:40:11Z",
+          "updated_at": "2026-09-14T04:40:15Z",
           "open_issues_count": 1,
-          "head_sha": "11704c9e3524cf405fb8452bb2c392e5f67fadd7"
+          "head_sha": "468988fbbd5cd731ccd4e189bb6aec7695a62ef3"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -467,7 +467,7 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 18,
+          "completed_examined": 20,
           "workflows_examined": 5,
           "retired_workflows_examined": 0,
           "unresolved_failures": 0,
@@ -479,13 +479,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-12T00:45:57Z",
-              "updated_at": "2026-09-12T00:46:18Z",
-              "run_started_at": "2026-09-12T00:45:57Z",
-              "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/34662710333",
-              "head_sha": "11704c9e3524cf405fb8452bb2c392e5f67fadd7",
+              "created_at": "2026-09-14T04:40:13Z",
+              "updated_at": "2026-09-14T04:40:31Z",
+              "run_started_at": "2026-09-14T04:40:13Z",
+              "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/34806908720",
+              "head_sha": "468988fbbd5cd731ccd4e189bb6aec7695a62ef3",
               "head_branch": "main",
-              "run_number": 65
+              "run_number": 68
             },
             {
               "workflow_id": 314182119,
@@ -494,13 +494,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-12T00:45:57Z",
-              "updated_at": "2026-09-12T00:46:52Z",
-              "run_started_at": "2026-09-12T00:45:57Z",
-              "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/34662710338",
-              "head_sha": "11704c9e3524cf405fb8452bb2c392e5f67fadd7",
+              "created_at": "2026-09-14T04:40:13Z",
+              "updated_at": "2026-09-14T04:40:58Z",
+              "run_started_at": "2026-09-14T04:40:13Z",
+              "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/34806908762",
+              "head_sha": "468988fbbd5cd731ccd4e189bb6aec7695a62ef3",
               "head_branch": "main",
-              "run_number": 54
+              "run_number": 55
             },
             {
               "workflow_id": 314181172,
@@ -509,13 +509,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-12T00:45:57Z",
-              "updated_at": "2026-09-12T00:46:27Z",
-              "run_started_at": "2026-09-12T00:45:57Z",
-              "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/34662710413",
-              "head_sha": "11704c9e3524cf405fb8452bb2c392e5f67fadd7",
+              "created_at": "2026-09-14T04:40:13Z",
+              "updated_at": "2026-09-14T04:40:43Z",
+              "run_started_at": "2026-09-14T04:40:13Z",
+              "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/34806908710",
+              "head_sha": "468988fbbd5cd731ccd4e189bb6aec7695a62ef3",
               "head_branch": "main",
-              "run_number": 197
+              "run_number": 206
             },
             {
               "workflow_id": 314905788,
@@ -534,18 +534,18 @@
             },
             {
               "workflow_id": 354524220,
-              "name": "Scheduled",
+              "name": "Push on main",
               "path": "dynamic/github-code-scanning/codeql",
               "conclusion": "success",
               "status": "completed",
               "event": "dynamic",
-              "created_at": "2026-09-13T18:02:51Z",
-              "updated_at": "2026-09-13T18:04:10Z",
-              "run_started_at": "2026-09-13T18:02:51Z",
-              "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/34773411396",
-              "head_sha": "11704c9e3524cf405fb8452bb2c392e5f67fadd7",
+              "created_at": "2026-09-14T04:40:13Z",
+              "updated_at": "2026-09-14T04:41:38Z",
+              "run_started_at": "2026-09-14T04:40:13Z",
+              "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/34806908305",
+              "head_sha": "468988fbbd5cd731ccd4e189bb6aec7695a62ef3",
               "head_branch": "main",
-              "run_number": 10
+              "run_number": 12
             }
           ],
           "retired": [],
@@ -565,17 +565,17 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-09-10T17:22:57Z",
-          "updated_at": "2026-09-10T17:23:02Z",
+          "pushed_at": "2026-09-14T04:39:17Z",
+          "updated_at": "2026-09-14T04:39:21Z",
           "open_issues_count": 2,
-          "head_sha": "d9a1da33b7c20bf06575f6aaa197fcc640b4f162"
+          "head_sha": "01591d98ed4f27353839cc0a89972e9d8ca1b0bc"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -585,7 +585,7 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 18,
+          "completed_examined": 21,
           "workflows_examined": 4,
           "retired_workflows_examined": 0,
           "unresolved_failures": 0,
@@ -597,13 +597,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-10T17:23:00Z",
-              "updated_at": "2026-09-10T17:23:42Z",
-              "run_started_at": "2026-09-10T17:23:00Z",
-              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/34507867293",
-              "head_sha": "d9a1da33b7c20bf06575f6aaa197fcc640b4f162",
+              "created_at": "2026-09-14T04:39:20Z",
+              "updated_at": "2026-09-14T04:40:15Z",
+              "run_started_at": "2026-09-14T04:39:20Z",
+              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/34806855606",
+              "head_sha": "01591d98ed4f27353839cc0a89972e9d8ca1b0bc",
               "head_branch": "main",
-              "run_number": 85
+              "run_number": 89
             },
             {
               "workflow_id": 271080726,
@@ -612,13 +612,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-10T17:23:00Z",
-              "updated_at": "2026-09-10T17:23:11Z",
-              "run_started_at": "2026-09-10T17:23:00Z",
-              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/34507867250",
-              "head_sha": "d9a1da33b7c20bf06575f6aaa197fcc640b4f162",
+              "created_at": "2026-09-14T04:39:20Z",
+              "updated_at": "2026-09-14T04:39:32Z",
+              "run_started_at": "2026-09-14T04:39:20Z",
+              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/34806855626",
+              "head_sha": "01591d98ed4f27353839cc0a89972e9d8ca1b0bc",
               "head_branch": "main",
-              "run_number": 84
+              "run_number": 88
             },
             {
               "workflow_id": 348971779,
@@ -642,13 +642,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "dynamic",
-              "created_at": "2026-09-10T17:23:00Z",
-              "updated_at": "2026-09-10T17:24:21Z",
-              "run_started_at": "2026-09-10T17:23:00Z",
-              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/34507867243",
-              "head_sha": "d9a1da33b7c20bf06575f6aaa197fcc640b4f162",
+              "created_at": "2026-09-14T04:39:20Z",
+              "updated_at": "2026-09-14T04:40:40Z",
+              "run_started_at": "2026-09-14T04:39:20Z",
+              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/34806855686",
+              "head_sha": "01591d98ed4f27353839cc0a89972e9d8ca1b0bc",
               "head_branch": "main",
-              "run_number": 18
+              "run_number": 22
             }
           ],
           "retired": [],
@@ -671,17 +671,17 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/qbf-consulting/trust-infrastructure-schemas",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-09-10T17:23:18Z",
-          "updated_at": "2026-09-10T17:23:22Z",
+          "pushed_at": "2026-09-14T04:39:55Z",
+          "updated_at": "2026-09-14T04:39:59Z",
           "open_issues_count": 1,
-          "head_sha": "3fdf736780cdbc0da875c0c9c5b0f8e70ed6491a"
+          "head_sha": "11ac1a92c5cfc3450ddcc08de10ed278c9a8713a"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -691,7 +691,7 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 5,
+          "completed_examined": 8,
           "workflows_examined": 3,
           "retired_workflows_examined": 0,
           "unresolved_failures": 0,
@@ -703,13 +703,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-10T17:23:20Z",
-              "updated_at": "2026-09-10T17:24:06Z",
-              "run_started_at": "2026-09-10T17:23:20Z",
-              "html_url": "https://github.com/qbf-consulting/trust-infrastructure-schemas/actions/runs/34507905360",
-              "head_sha": "3fdf736780cdbc0da875c0c9c5b0f8e70ed6491a",
+              "created_at": "2026-09-14T04:39:58Z",
+              "updated_at": "2026-09-14T04:40:41Z",
+              "run_started_at": "2026-09-14T04:39:58Z",
+              "html_url": "https://github.com/qbf-consulting/trust-infrastructure-schemas/actions/runs/34806890205",
+              "head_sha": "11ac1a92c5cfc3450ddcc08de10ed278c9a8713a",
               "head_branch": "main",
-              "run_number": 39
+              "run_number": 48
             },
             {
               "workflow_id": 235993015,
@@ -718,28 +718,28 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-10T17:23:20Z",
-              "updated_at": "2026-09-10T17:23:36Z",
-              "run_started_at": "2026-09-10T17:23:20Z",
-              "html_url": "https://github.com/qbf-consulting/trust-infrastructure-schemas/actions/runs/34507905496",
-              "head_sha": "3fdf736780cdbc0da875c0c9c5b0f8e70ed6491a",
+              "created_at": "2026-09-14T04:39:58Z",
+              "updated_at": "2026-09-14T04:40:10Z",
+              "run_started_at": "2026-09-14T04:39:58Z",
+              "html_url": "https://github.com/qbf-consulting/trust-infrastructure-schemas/actions/runs/34806890112",
+              "head_sha": "11ac1a92c5cfc3450ddcc08de10ed278c9a8713a",
               "head_branch": "main",
-              "run_number": 62
+              "run_number": 71
             },
             {
               "workflow_id": 354525163,
-              "name": "Scheduled",
+              "name": "Push on main",
               "path": "dynamic/github-code-scanning/codeql",
               "conclusion": "success",
               "status": "completed",
               "event": "dynamic",
-              "created_at": "2026-09-11T20:25:27Z",
-              "updated_at": "2026-09-11T20:26:45Z",
-              "run_started_at": "2026-09-11T20:25:27Z",
-              "html_url": "https://github.com/qbf-consulting/trust-infrastructure-schemas/actions/runs/34644134687",
-              "head_sha": "3fdf736780cdbc0da875c0c9c5b0f8e70ed6491a",
+              "created_at": "2026-09-14T04:39:57Z",
+              "updated_at": "2026-09-14T04:41:12Z",
+              "run_started_at": "2026-09-14T04:39:57Z",
+              "html_url": "https://github.com/qbf-consulting/trust-infrastructure-schemas/actions/runs/34806889450",
+              "head_sha": "11ac1a92c5cfc3450ddcc08de10ed278c9a8713a",
               "head_branch": "main",
-              "run_number": 9
+              "run_number": 18
             }
           ],
           "retired": [],
@@ -757,7 +757,7 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -796,14 +796,14 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-09-10T17:22:46Z",
+          "pushed_at": "2026-09-14T03:42:41Z",
           "updated_at": "2026-09-10T17:22:52Z",
           "open_issues_count": 4,
           "head_sha": "f3b78fde8d20d187fca1513c70e1aea678004175"
@@ -923,6 +923,7 @@
             ".github/workflows/portfolio-contract.yml",
             ".github/workflows/profile-posture-contract.yml",
             ".github/workflows/publish-component-release.yml",
+            ".github/workflows/v3-candidate.yml",
             ".github/workflows/wp8-evidence.yml",
             "dynamic/dependabot/dependabot-updates",
             "dynamic/dependabot/update-graph",
@@ -934,7 +935,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1022,14 +1023,14 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-09-10T17:22:37Z",
+          "pushed_at": "2026-09-14T03:39:56Z",
           "updated_at": "2026-09-10T17:22:42Z",
           "open_issues_count": 0,
           "head_sha": "afd31cd794cee43ed4c3e08f7fd25e97e9e829cd"
@@ -1166,6 +1167,7 @@
             ".github/workflows/portfolio-contract.yml",
             ".github/workflows/profile-evidence-contract.yml",
             ".github/workflows/publish-component-release.yml",
+            ".github/workflows/v3-candidate.yml",
             "dynamic/dependabot/dependabot-updates",
             "dynamic/dependabot/update-graph",
             "dynamic/pages/pages-build-deployment"
@@ -1176,14 +1178,14 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-09-10T17:14:23Z",
+          "pushed_at": "2026-09-14T03:46:06Z",
           "updated_at": "2026-09-10T17:12:36Z",
           "open_issues_count": 0,
           "head_sha": "c8b38abd8d663870c4f9bbaf4b2875d059cfc558"
@@ -1351,6 +1353,7 @@
             ".github/workflows/publish-coordinated-stack-release.yml",
             ".github/workflows/quality.yml",
             ".github/workflows/stack-release-eligibility.yml",
+            ".github/workflows/v3-candidate.yml",
             "dynamic/dependabot/dependabot-updates",
             "dynamic/dependabot/update-graph",
             "dynamic/pages/pages-build-deployment"
@@ -1361,7 +1364,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-09-13T20:49:09Z",
+      "observed_at": "2026-09-14T04:55:01Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1377,7 +1380,7 @@
           "available": true,
           "lookback_days": 7,
           "completed_examined": 50,
-          "workflows_examined": 7,
+          "workflows_examined": 5,
           "retired_workflows_examined": 0,
           "unresolved_failures": 0,
           "latest": [
@@ -1385,46 +1388,31 @@
               "workflow_id": 343490806,
               "name": "Execute bounded combined RAHP reviews",
               "path": ".github/workflows/combined-review-worker.yml",
-              "conclusion": "skipped",
-              "status": "completed",
-              "event": "issues",
-              "created_at": "2026-09-13T19:53:45Z",
-              "updated_at": "2026-09-13T19:53:47Z",
-              "run_started_at": "2026-09-13T19:53:45Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34779073784",
-              "head_sha": "aba1a7e3fdac2de0dda7ecee8b5017bf59f549cc",
-              "head_branch": "main",
-              "run_number": 831
-            },
-            {
-              "workflow_id": 337404001,
-              "name": "Run cross-specification pressure test",
-              "path": ".github/workflows/cross-spec-pressure-test.yml",
               "conclusion": "success",
               "status": "completed",
-              "event": "workflow_dispatch",
-              "created_at": "2026-09-13T16:56:22Z",
-              "updated_at": "2026-09-13T16:56:45Z",
-              "run_started_at": "2026-09-13T16:56:22Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34770073259",
+              "event": "schedule",
+              "created_at": "2026-09-14T01:14:21Z",
+              "updated_at": "2026-09-14T01:14:32Z",
+              "run_started_at": "2026-09-14T01:14:21Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34795268496",
               "head_sha": "aba1a7e3fdac2de0dda7ecee8b5017bf59f549cc",
               "head_branch": "main",
-              "run_number": 57
+              "run_number": 839
             },
             {
               "workflow_id": 342518526,
               "name": "Promote qualified RAHP referrals to DPIP",
               "path": ".github/workflows/dpip-handoff.yml",
-              "conclusion": "skipped",
+              "conclusion": "success",
               "status": "completed",
-              "event": "issues",
-              "created_at": "2026-09-13T19:53:45Z",
-              "updated_at": "2026-09-13T19:53:47Z",
-              "run_started_at": "2026-09-13T19:53:45Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34779073798",
+              "event": "schedule",
+              "created_at": "2026-09-14T01:11:22Z",
+              "updated_at": "2026-09-14T01:11:37Z",
+              "run_started_at": "2026-09-14T01:11:22Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34795102001",
               "head_sha": "aba1a7e3fdac2de0dda7ecee8b5017bf59f549cc",
               "head_branch": "main",
-              "run_number": 653
+              "run_number": 661
             },
             {
               "workflow_id": 343401275,
@@ -1433,13 +1421,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "schedule",
-              "created_at": "2026-09-13T18:57:08Z",
-              "updated_at": "2026-09-13T18:57:34Z",
-              "run_started_at": "2026-09-13T18:57:08Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34776189281",
+              "created_at": "2026-09-14T01:41:12Z",
+              "updated_at": "2026-09-14T01:41:42Z",
+              "run_started_at": "2026-09-14T01:41:12Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34796721113",
               "head_sha": "aba1a7e3fdac2de0dda7ecee8b5017bf59f549cc",
               "head_branch": "main",
-              "run_number": 548
+              "run_number": 551
             },
             {
               "workflow_id": 343549711,
@@ -1448,43 +1436,28 @@
               "conclusion": "skipped",
               "status": "completed",
               "event": "issues",
-              "created_at": "2026-09-13T19:53:45Z",
-              "updated_at": "2026-09-13T19:53:47Z",
-              "run_started_at": "2026-09-13T19:53:45Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34779073786",
+              "created_at": "2026-09-14T00:30:40Z",
+              "updated_at": "2026-09-14T00:30:41Z",
+              "run_started_at": "2026-09-14T00:30:40Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34792924090",
               "head_sha": "aba1a7e3fdac2de0dda7ecee8b5017bf59f549cc",
               "head_branch": "main",
-              "run_number": 1095
-            },
-            {
-              "workflow_id": 343470013,
-              "name": "Consume DTG Portfolio Monitor assurance signals",
-              "path": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
-              "conclusion": "success",
-              "status": "completed",
-              "event": "schedule",
-              "created_at": "2026-09-13T16:55:49Z",
-              "updated_at": "2026-09-13T16:56:28Z",
-              "run_started_at": "2026-09-13T16:55:49Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34770045375",
-              "head_sha": "aba1a7e3fdac2de0dda7ecee8b5017bf59f549cc",
-              "head_branch": "main",
-              "run_number": 71
+              "run_number": 1103
             },
             {
               "workflow_id": 343549712,
               "name": "Advance DTG gatherer repository reviews",
               "path": ".github/workflows/dtg-repository-review-worker.yml",
-              "conclusion": "skipped",
+              "conclusion": "success",
               "status": "completed",
-              "event": "issues",
-              "created_at": "2026-09-13T19:53:45Z",
-              "updated_at": "2026-09-13T19:53:53Z",
-              "run_started_at": "2026-09-13T19:53:45Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34779073785",
+              "event": "schedule",
+              "created_at": "2026-09-14T01:17:20Z",
+              "updated_at": "2026-09-14T01:17:34Z",
+              "run_started_at": "2026-09-14T01:17:20Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34795436388",
               "head_sha": "aba1a7e3fdac2de0dda7ecee8b5017bf59f549cc",
               "head_branch": "main",
-              "run_number": 821
+              "run_number": 830
             }
           ],
           "retired": [],

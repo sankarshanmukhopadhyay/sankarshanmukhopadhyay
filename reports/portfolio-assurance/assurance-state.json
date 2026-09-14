@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-13T20:49:09Z",
+  "generated_at": "2026-09-14T04:55:01Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -80,13 +80,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-13T01:29:30Z",
-            "updated_at": "2026-09-13T01:30:26Z",
-            "run_started_at": "2026-09-13T01:29:30Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34730655563",
-            "head_sha": "ce4e7a3f51eb423c52d9ff6caeaefd8140a7af23",
+            "created_at": "2026-09-14T04:49:07Z",
+            "updated_at": "2026-09-14T04:50:23Z",
+            "run_started_at": "2026-09-14T04:49:07Z",
+            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34807417566",
+            "head_sha": "6fb07e39a6340d6d3064b324deb94f3f732d60a2",
             "head_branch": "main",
-            "run_number": 70
+            "run_number": 73
           }
         },
         {
@@ -104,13 +104,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "workflow_run",
-            "created_at": "2026-09-13T01:30:44Z",
-            "updated_at": "2026-09-13T01:30:53Z",
-            "run_started_at": "2026-09-13T01:30:44Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34730713294",
-            "head_sha": "ce4e7a3f51eb423c52d9ff6caeaefd8140a7af23",
+            "created_at": "2026-09-14T04:50:38Z",
+            "updated_at": "2026-09-14T04:50:51Z",
+            "run_started_at": "2026-09-14T04:50:38Z",
+            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/34807504705",
+            "head_sha": "6fb07e39a6340d6d3064b324deb94f3f732d60a2",
             "head_branch": "main",
-            "run_number": 14
+            "run_number": 15
           }
         }
       ],
@@ -137,13 +137,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-12T00:45:57Z",
-            "updated_at": "2026-09-12T00:46:27Z",
-            "run_started_at": "2026-09-12T00:45:57Z",
-            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/34662710413",
-            "head_sha": "11704c9e3524cf405fb8452bb2c392e5f67fadd7",
+            "created_at": "2026-09-14T04:40:13Z",
+            "updated_at": "2026-09-14T04:40:43Z",
+            "run_started_at": "2026-09-14T04:40:13Z",
+            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/34806908710",
+            "head_sha": "468988fbbd5cd731ccd4e189bb6aec7695a62ef3",
             "head_branch": "main",
-            "run_number": 197
+            "run_number": 206
           }
         },
         {
@@ -161,13 +161,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-12T00:45:57Z",
-            "updated_at": "2026-09-12T00:46:52Z",
-            "run_started_at": "2026-09-12T00:45:57Z",
-            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/34662710338",
-            "head_sha": "11704c9e3524cf405fb8452bb2c392e5f67fadd7",
+            "created_at": "2026-09-14T04:40:13Z",
+            "updated_at": "2026-09-14T04:40:58Z",
+            "run_started_at": "2026-09-14T04:40:13Z",
+            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/34806908762",
+            "head_sha": "468988fbbd5cd731ccd4e189bb6aec7695a62ef3",
             "head_branch": "main",
-            "run_number": 54
+            "run_number": 55
           }
         },
         {
@@ -185,13 +185,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-12T00:45:57Z",
-            "updated_at": "2026-09-12T00:46:18Z",
-            "run_started_at": "2026-09-12T00:45:57Z",
-            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/34662710333",
-            "head_sha": "11704c9e3524cf405fb8452bb2c392e5f67fadd7",
+            "created_at": "2026-09-14T04:40:13Z",
+            "updated_at": "2026-09-14T04:40:31Z",
+            "run_started_at": "2026-09-14T04:40:13Z",
+            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/34806908720",
+            "head_sha": "468988fbbd5cd731ccd4e189bb6aec7695a62ef3",
             "head_branch": "main",
-            "run_number": 65
+            "run_number": 68
           }
         }
       ],
@@ -218,13 +218,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-10T17:23:00Z",
-            "updated_at": "2026-09-10T17:23:11Z",
-            "run_started_at": "2026-09-10T17:23:00Z",
-            "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/34507867250",
-            "head_sha": "d9a1da33b7c20bf06575f6aaa197fcc640b4f162",
+            "created_at": "2026-09-14T04:39:20Z",
+            "updated_at": "2026-09-14T04:39:32Z",
+            "run_started_at": "2026-09-14T04:39:20Z",
+            "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/34806855626",
+            "head_sha": "01591d98ed4f27353839cc0a89972e9d8ca1b0bc",
             "head_branch": "main",
-            "run_number": 84
+            "run_number": 88
           }
         },
         {
@@ -242,13 +242,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-10T17:23:00Z",
-            "updated_at": "2026-09-10T17:23:42Z",
-            "run_started_at": "2026-09-10T17:23:00Z",
-            "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/34507867293",
-            "head_sha": "d9a1da33b7c20bf06575f6aaa197fcc640b4f162",
+            "created_at": "2026-09-14T04:39:20Z",
+            "updated_at": "2026-09-14T04:40:15Z",
+            "run_started_at": "2026-09-14T04:39:20Z",
+            "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/34806855606",
+            "head_sha": "01591d98ed4f27353839cc0a89972e9d8ca1b0bc",
             "head_branch": "main",
-            "run_number": 85
+            "run_number": 89
           }
         }
       ],
@@ -275,13 +275,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-10T17:23:20Z",
-            "updated_at": "2026-09-10T17:23:36Z",
-            "run_started_at": "2026-09-10T17:23:20Z",
-            "html_url": "https://github.com/qbf-consulting/trust-infrastructure-schemas/actions/runs/34507905496",
-            "head_sha": "3fdf736780cdbc0da875c0c9c5b0f8e70ed6491a",
+            "created_at": "2026-09-14T04:39:58Z",
+            "updated_at": "2026-09-14T04:40:10Z",
+            "run_started_at": "2026-09-14T04:39:58Z",
+            "html_url": "https://github.com/qbf-consulting/trust-infrastructure-schemas/actions/runs/34806890112",
+            "head_sha": "11ac1a92c5cfc3450ddcc08de10ed278c9a8713a",
             "head_branch": "main",
-            "run_number": 62
+            "run_number": 71
           }
         },
         {
@@ -299,13 +299,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-10T17:23:20Z",
-            "updated_at": "2026-09-10T17:24:06Z",
-            "run_started_at": "2026-09-10T17:23:20Z",
-            "html_url": "https://github.com/qbf-consulting/trust-infrastructure-schemas/actions/runs/34507905360",
-            "head_sha": "3fdf736780cdbc0da875c0c9c5b0f8e70ed6491a",
+            "created_at": "2026-09-14T04:39:58Z",
+            "updated_at": "2026-09-14T04:40:41Z",
+            "run_started_at": "2026-09-14T04:39:58Z",
+            "html_url": "https://github.com/qbf-consulting/trust-infrastructure-schemas/actions/runs/34806890205",
+            "head_sha": "11ac1a92c5cfc3450ddcc08de10ed278c9a8713a",
             "head_branch": "main",
-            "run_number": 39
+            "run_number": 48
           }
         }
       ],
@@ -695,23 +695,8 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/cross-spec-pressure-test.yml",
           "freshness_policy": "latest-success",
-          "state": "satisfied",
-          "reason": "successful workflow evidence satisfies the configured freshness policy",
-          "evidence": {
-            "workflow_id": 337404001,
-            "name": "Run cross-specification pressure test",
-            "path": ".github/workflows/cross-spec-pressure-test.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "workflow_dispatch",
-            "created_at": "2026-09-13T16:56:22Z",
-            "updated_at": "2026-09-13T16:56:45Z",
-            "run_started_at": "2026-09-13T16:56:22Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34770073259",
-            "head_sha": "aba1a7e3fdac2de0dda7ecee8b5017bf59f549cc",
-            "head_branch": "main",
-            "run_number": 57
-          }
+          "state": "missing",
+          "reason": "no completed workflow execution was observed inside the governed lookback window"
         }
       ],
       "required_claims": 3,
