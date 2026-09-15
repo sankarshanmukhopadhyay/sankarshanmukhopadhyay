@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-09-14T21:48:41Z  
+**Generated:** 2026-09-15T04:53:17Z  
 **Open findings:** 3  
 **Repository snapshot:** `aba1a7e3fdac2de0dda7ecee8b5017bf59f549cc`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-9769E5EB9C48 — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-9E0015AE26F6` at `2026-09-14T21:48:41Z`
+- Observation: `PAM-44B62DCAE179` at `2026-09-15T04:53:17Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/corpus-status.yml`
@@ -64,7 +64,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-E8B1B5CFA71B — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-17BFB2090D0D` at `2026-09-14T21:48:41Z`
+- Observation: `PAM-94765BA544C1` at `2026-09-15T04:53:17Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
@@ -101,7 +101,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-40A9B6AD0B44 — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-468480FA6F3E` at `2026-09-14T21:48:41Z`
+- Observation: `PAM-ECF8976D5BE8` at `2026-09-15T04:53:17Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/validate.yml`
