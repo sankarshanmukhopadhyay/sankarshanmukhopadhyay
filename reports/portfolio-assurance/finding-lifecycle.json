@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-15T04:53:17Z",
+  "generated_at": "2026-09-15T11:43:18Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -142,7 +142,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-09-15T04:53:17Z",
+      "last_observed": "2026-09-15T11:43:18Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-44B62DCAE179"
     },
@@ -164,11 +164,11 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "dimension": "operational",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-09-14T12:44:43Z",
-      "resolved_at": "2026-09-14T21:48:41Z",
-      "latest_finding_id": "PAM-A7B722391B90"
+      "last_observed": "2026-09-15T11:43:18Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-E2B137C2B94C"
     },
     "PF-FE9A3049B948": {
       "finding_fingerprint": "PF-FE9A3049B948",
@@ -310,7 +310,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-28T22:18:50Z",
-      "last_observed": "2026-09-15T04:53:17Z",
+      "last_observed": "2026-09-15T11:43:18Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-8C1CE20B9274"
     },
@@ -418,7 +418,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-09-15T04:53:17Z",
+      "last_observed": "2026-09-15T11:43:18Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-ECF8976D5BE8"
     },
@@ -430,7 +430,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-09-15T04:53:17Z",
+      "last_observed": "2026-09-15T11:43:18Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-94765BA544C1"
     },
@@ -562,7 +562,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-15T04:53:17Z",
+      "last_observed": "2026-09-15T11:43:18Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-1C66E38A14FC"
     },
@@ -574,7 +574,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-10T02:21:16Z",
-      "last_observed": "2026-09-15T04:53:17Z",
+      "last_observed": "2026-09-15T11:43:18Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-6E3FCE6289EC"
     },

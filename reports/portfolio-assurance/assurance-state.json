@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-15T04:53:17Z",
+  "generated_at": "2026-09-15T11:43:18Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -704,13 +704,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "workflow_dispatch",
-            "created_at": "2026-09-14T18:31:19Z",
-            "updated_at": "2026-09-14T18:31:42Z",
-            "run_started_at": "2026-09-14T18:31:19Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34881304809",
+            "created_at": "2026-09-15T06:02:32Z",
+            "updated_at": "2026-09-15T06:02:58Z",
+            "run_started_at": "2026-09-15T06:02:32Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/34935201628",
             "head_sha": "aba1a7e3fdac2de0dda7ecee8b5017bf59f549cc",
             "head_branch": "main",
-            "run_number": 63
+            "run_number": 66
           }
         }
       ],
