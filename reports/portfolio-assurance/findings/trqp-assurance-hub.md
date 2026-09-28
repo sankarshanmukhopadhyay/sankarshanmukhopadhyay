@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `trqp-assurance-hub`
 
-**Generated:** 2026-09-28T05:22:26Z  
+**Generated:** 2026-09-28T13:52:39Z  
 **Open findings:** 4  
 **Repository snapshot:** `c8b38abd8d663870c4f9bbaf4b2875d059cfc558`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-C845136AA21D — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-56629E5053E4` at `2026-09-28T05:22:26Z`
+- Observation: `PAM-56629E5053E4` at `2026-09-28T13:52:39Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/combined-assurance-smoke.yml`
@@ -64,7 +64,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-777EE08AFB02 — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-7A3DB9CBEF38` at `2026-09-28T05:22:26Z`
+- Observation: `PAM-7A3DB9CBEF38` at `2026-09-28T13:52:39Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
@@ -101,7 +101,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-9D14CEA5F461 — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-A42E7F214014` at `2026-09-28T05:22:26Z`
+- Observation: `PAM-A42E7F214014` at `2026-09-28T13:52:39Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/portfolio-contract.yml`
@@ -138,7 +138,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-EAEC07563E26 — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-F72C8C5B988E` at `2026-09-28T05:22:26Z`
+- Observation: `PAM-F72C8C5B988E` at `2026-09-28T13:52:39Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/quality.yml`
