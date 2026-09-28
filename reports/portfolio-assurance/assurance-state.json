@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-28T05:22:26Z",
+  "generated_at": "2026-09-28T13:52:39Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -103,14 +103,14 @@
             "path": ".github/workflows/verify-publication.yml",
             "conclusion": "success",
             "status": "completed",
-            "event": "workflow_run",
-            "created_at": "2026-09-26T02:17:15Z",
-            "updated_at": "2026-09-26T02:17:27Z",
-            "run_started_at": "2026-09-26T02:17:15Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/36211204194",
+            "event": "schedule",
+            "created_at": "2026-09-28T11:01:44Z",
+            "updated_at": "2026-09-28T11:01:58Z",
+            "run_started_at": "2026-09-28T11:01:44Z",
+            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/36413177139",
             "head_sha": "0656bb02d3b1cff561a7843654e515574f3c25ec",
             "head_branch": "main",
-            "run_number": 37
+            "run_number": 38
           }
         }
       ],
@@ -137,13 +137,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-28T02:19:25Z",
-            "updated_at": "2026-09-28T02:19:58Z",
-            "run_started_at": "2026-09-28T02:19:25Z",
-            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/36369377012",
-            "head_sha": "7200c8512a13615d84c9711ac550da36ae338dd9",
+            "created_at": "2026-09-28T08:01:48Z",
+            "updated_at": "2026-09-28T08:02:20Z",
+            "run_started_at": "2026-09-28T08:01:48Z",
+            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/36394940870",
+            "head_sha": "cac54d02d4112609613c83e0dd9c5d2c5dce524a",
             "head_branch": "main",
-            "run_number": 521
+            "run_number": 553
           }
         },
         {
@@ -161,13 +161,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-28T02:19:25Z",
-            "updated_at": "2026-09-28T02:25:16Z",
-            "run_started_at": "2026-09-28T02:19:25Z",
-            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/36369377091",
-            "head_sha": "7200c8512a13615d84c9711ac550da36ae338dd9",
+            "created_at": "2026-09-28T08:01:48Z",
+            "updated_at": "2026-09-28T08:03:41Z",
+            "run_started_at": "2026-09-28T08:01:48Z",
+            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/36394940829",
+            "head_sha": "cac54d02d4112609613c83e0dd9c5d2c5dce524a",
             "head_branch": "main",
-            "run_number": 74
+            "run_number": 76
           }
         },
         {
@@ -185,13 +185,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-28T02:19:25Z",
-            "updated_at": "2026-09-28T02:19:45Z",
-            "run_started_at": "2026-09-28T02:19:25Z",
-            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/36369377013",
-            "head_sha": "7200c8512a13615d84c9711ac550da36ae338dd9",
+            "created_at": "2026-09-28T08:01:48Z",
+            "updated_at": "2026-09-28T08:02:12Z",
+            "run_started_at": "2026-09-28T08:01:48Z",
+            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/36394940940",
+            "head_sha": "cac54d02d4112609613c83e0dd9c5d2c5dce524a",
             "head_branch": "main",
-            "run_number": 249
+            "run_number": 278
           }
         }
       ],
@@ -542,8 +542,23 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/corpus-status.yml",
           "freshness_policy": "latest-success",
-          "state": "missing",
-          "reason": "no completed workflow execution was observed inside the governed lookback window"
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 333347627,
+            "name": "Corpus source status",
+            "path": ".github/workflows/corpus-status.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "schedule",
+            "created_at": "2026-09-28T09:49:55Z",
+            "updated_at": "2026-09-28T09:50:16Z",
+            "run_started_at": "2026-09-28T09:49:55Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36405973014",
+            "head_sha": "916acbf3f34a1fda1e6e75e5f2c70e87f53ec9ba",
+            "head_branch": "main",
+            "run_number": 161
+          }
         },
         {
           "claim": "publication_integrity",
@@ -560,27 +575,12 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/cross-spec-pressure-test.yml",
           "freshness_policy": "latest-success",
-          "state": "satisfied",
-          "reason": "successful workflow evidence satisfies the configured freshness policy",
-          "evidence": {
-            "workflow_id": 337404001,
-            "name": "Run cross-specification pressure test",
-            "path": ".github/workflows/cross-spec-pressure-test.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "workflow_dispatch",
-            "created_at": "2026-09-27T17:40:03Z",
-            "updated_at": "2026-09-27T17:40:24Z",
-            "run_started_at": "2026-09-27T17:40:03Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36337787121",
-            "head_sha": "f7c693d312e547dd725c3887a45fadd3268c6edf",
-            "head_branch": "main",
-            "run_number": 166
-          }
+          "state": "missing",
+          "reason": "no completed workflow execution was observed inside the governed lookback window"
         }
       ],
       "required_claims": 3,
-      "satisfied_required_claims": 0
+      "satisfied_required_claims": 1
     }
   }
 }
