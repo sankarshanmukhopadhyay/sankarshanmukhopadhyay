@@ -61,11 +61,11 @@ The authoritative state is maintained in [`data/repository-status.yaml`](../data
 
 ## Upstream references
 
-The governed upstream-reference set currently includes `agtp`, `dtgwg-cred-tf`, `tswg-trust-registry-protocol`, `conformance-test-suite`, `awesome-8004`, and `TokenTaxonomyFramework`. The former CTWG glossary fork has transitioned into the independently governed `trust-infrastructure-glossary`; its earlier upstream lineage is historical provenance rather than current portfolio authority. Reference forks use `upstream-tracking` maturity and identify the canonical upstream. Portfolio inclusion covers fork-local collaboration or reference use only and conveys no upstream governance, release, or adoption authority.
+The governed upstream-reference set currently includes `agtp`, `dtgwg-cred-tf`, `tswg-trust-registry-protocol`, `awesome-8004`, and `TokenTaxonomyFramework`. The former CTWG glossary fork has transitioned into the independently governed `trust-infrastructure-glossary`; its earlier upstream lineage is historical provenance rather than current portfolio authority. Reference forks use `upstream-tracking` maturity and identify the canonical upstream. Portfolio inclusion covers fork-local collaboration or reference use only and conveys no upstream governance, release, or adoption authority.
 
 ## Other governed dispositions
 
-Repositories such as `decentralized-directory-protocol`, `A2A`, and `route-story-studio` may remain `pending-review`; `DHP-Specs` is retained as historical portfolio material. Older public repositories that do not need full portfolio metadata are recorded in the lightweight `account_dispositions` section of the canonical registry as `historical` or `unrelated`. This prevents known legacy repositories from being repeatedly rediscovered while keeping the detailed `repositories[]` register focused on governed portfolio and review candidates.
+Repositories such as `decentralized-directory-protocol`, `A2A`, `conformance-test-suite`, and `route-story-studio` may remain `pending-review`; the declared `trustoverip/conformance-test-suite` upstream did not resolve during the 2026-09-28 review, so no current upstream-reference claim is made; `DHP-Specs` is retained as historical portfolio material. Older public repositories that do not need full portfolio metadata are recorded in the lightweight `account_dispositions` section of the canonical registry as `historical` or `unrelated`. This prevents known legacy repositories from being repeatedly rediscovered while keeping the detailed `repositories[]` register focused on governed portfolio and review candidates.
 
 ## Curated boundary
 
