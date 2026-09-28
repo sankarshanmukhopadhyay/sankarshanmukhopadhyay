@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `TokenTaxonomyFramework`
 
-**Generated:** 2026-09-28T13:52:39Z  
+**Generated:** 2026-09-28T23:15:33Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TokenTaxonomyFramework.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TokenTaxonomyFramework.json)
