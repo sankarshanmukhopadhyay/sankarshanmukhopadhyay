@@ -35,6 +35,9 @@ All notable changes to the portfolio coordination repository are documented here
 
 ### Changed
 
+- Reconciled QBF-stewarded project state with repository-local declarations: ONDTF v1.0.0 is recorded as a stable framework specification and Agent Registry Protocol as a candidate specification.
+- Added the QBF-stewarded Digital Trust Failure Corpus as governed supporting work without asserting a repository-local status contract that does not exist.
+- Refreshed personal-profile discoverability while preserving the boundary between body-of-work provenance and QBF institutional stewardship.
 - Pinned the portfolio relationship contract to Trust Infrastructure Schemas v0.13.0 and the reviewed canonical semantic authority to Trust Systems Meta Model v0.24.0.
 - Added machine-verifiable TSMM/TIS relationship contract and alignment-evidence references to the canonical portfolio relationship registry.
 - Rescoped development finding feeds into consolidated repository remediation dossiers intended to travel with repository source during implementation work.

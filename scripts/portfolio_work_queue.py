@@ -22,10 +22,11 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "data/repository-status.yaml"
+STEWARDSHIP = ROOT / "data/repository-stewardship.yaml"
 CONFIG = ROOT / "config/portfolio-work-queue.yaml"
 DEFAULT_JSON = ROOT / "data/portfolio-work-queue.json"
 DEFAULT_MD = ROOT / "docs/portfolio-work/index.md"
-OWNER = "sankarshanmukhopadhyay"
+DEFAULT_OWNER = "sankarshanmukhopadhyay"
 
 CHANGE_TITLE_RE = re.compile(
     r"^(?P<type>[a-z][a-z0-9-]*)(?:\((?P<scope>[^)]+)\))?(?P<breaking>!)?:\s+(?P<summary>.+)$",
@@ -48,6 +49,12 @@ VALID_LANES = {"strategic", "maintenance", "planning"}
 def load_yaml(path: Path) -> dict[str, Any]:
     with path.open(encoding="utf-8") as fh:
         return yaml.safe_load(fh) or {}
+
+
+def repository_owner(name: str) -> str:
+    stewardship = load_yaml(STEWARDSHIP)
+    entry = stewardship.get("repositories", {}).get(name, {})
+    return str(entry.get("owner") or stewardship.get("default_owner") or DEFAULT_OWNER)
 
 
 def norm_labels(item: dict[str, Any]) -> list[str]:
@@ -100,7 +107,8 @@ def collect_live(
     )
     evidence: dict[str, Any] = {"generated_at": observed_at, "repositories": {}}
     for name in sorted(repositories):
-        base = f"https://api.github.com/repos/{OWNER}/{urllib.parse.quote(name)}"
+        owner = repository_owner(name)
+        base = f"https://api.github.com/repos/{owner}/{urllib.parse.quote(name)}"
         issues = github_json(f"{base}/issues?state=open&per_page=100", token)
         pure_issues: list[dict[str, Any]] = []
         prs: list[dict[str, Any]] = []

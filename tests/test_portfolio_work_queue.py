@@ -4,7 +4,7 @@ from pathlib import Path
 
 import yaml
 
-from scripts.portfolio_work_queue import ROOT, build_queue, eligible_repositories, render_markdown, validate_queue
+from scripts.portfolio_work_queue import ROOT, build_queue, eligible_repositories, render_markdown, repository_owner, validate_queue
 
 
 class PortfolioWorkQueueTests(unittest.TestCase):
@@ -16,6 +16,10 @@ class PortfolioWorkQueueTests(unittest.TestCase):
 
     def build(self):
         return build_queue(self.registry, self.config, self.evidence)
+
+    def test_repository_owner_respects_stewardship_registry(self):
+        self.assertEqual("qbf-consulting", repository_owner("digital-trust-failure-corpus"))
+        self.assertEqual("sankarshanmukhopadhyay", repository_owner("rahp-toolkit"))
 
     def test_scope_is_governed(self):
         eligible = eligible_repositories(self.registry, self.config)

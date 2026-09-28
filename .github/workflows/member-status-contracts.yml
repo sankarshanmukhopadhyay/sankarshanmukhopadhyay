@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - "data/repository-status.yaml"
+      - "data/repository-stewardship.yaml"
       - "schemas/project-status.schema.json"
       - "scripts/validate_member_status_contracts.py"
       - ".github/workflows/member-status-contracts.yml"
@@ -11,6 +12,7 @@ on:
     branches: [main]
     paths:
       - "data/repository-status.yaml"
+      - "data/repository-stewardship.yaml"
       - "schemas/project-status.schema.json"
       - "scripts/validate_member_status_contracts.py"
       - ".github/workflows/member-status-contracts.yml"

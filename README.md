@@ -13,9 +13,11 @@ I design specifications, protocols, schemas, conformance systems, and reference 
 
 ## Explore the work
 
-**[Trust frameworks](https://github.com/qbf-consulting/open-national-digital-trust-framework)** · **[Governance and authority](https://github.com/qbf-consulting/governance-authority-assurance-metamodel)** · **[Agent infrastructure](https://github.com/qbf-consulting/agent-registry-protocol)** · **[Policy execution](https://github.com/sankarshanmukhopadhyay/PolicyMesh)** · **[Assurance and RAHP](https://github.com/sankarshanmukhopadhyay/rahp-toolkit)** · **[Composed privacy assurance](https://github.com/sankarshanmukhopadhyay/dtg-privacy-implementation-profile)** · **[Terminology](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-glossary)** · **[Work queue](docs/portfolio-work/index.md)** · **[Portfolio dashboard](docs/portfolio-assurance/dashboard.md)**
+**[Trust frameworks](https://github.com/qbf-consulting/open-national-digital-trust-framework)** · **[Governance and authority](https://github.com/qbf-consulting/governance-authority-assurance-metamodel)** · **[Agent infrastructure](https://github.com/qbf-consulting/agent-registry-protocol)** · **[Failure corpus](https://github.com/qbf-consulting/digital-trust-failure-corpus)** · **[Policy execution](https://github.com/sankarshanmukhopadhyay/PolicyMesh)** · **[Assurance and RAHP](https://github.com/sankarshanmukhopadhyay/rahp-toolkit)** · **[Composed privacy assurance](https://github.com/sankarshanmukhopadhyay/dtg-privacy-implementation-profile)** · **[Terminology](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-glossary)** · **[Work queue](docs/portfolio-work/index.md)** · **[Portfolio dashboard](docs/portfolio-assurance/dashboard.md)**
 
 This profile presents a **curated body-of-work portfolio**, not an ownership inventory. Projects remain part of the portfolio when institutional stewardship moves to an organisation such as [QBF Consulting](https://github.com/qbf-consulting). Repository ownership identifies current stewardship; portfolio inclusion records authorship, provenance, relationships and strategic context. Authority over normative content remains repository-local.
+
+Institutionally stewarded open-source and open-knowledge work is maintained through [QBF Consulting on GitHub](https://github.com/qbf-consulting) and [qbfconsulting.digital](https://qbfconsulting.digital); this personal profile remains the body-of-work and relationship front door.
 
 ## Start here
 
@@ -29,6 +31,7 @@ This profile presents a **curated body-of-work portfolio**, not an ownership inv
 | Deploy or evaluate an agent registry | [Agent Registry Protocol](https://github.com/qbf-consulting/agent-registry-protocol) |
 | Determine whether an actor is permitted to act under mandate, evidence, policy, and time | [PolicyMesh](https://github.com/sankarshanmukhopadhyay/PolicyMesh) |
 | Pressure-test a specification for harms, security weaknesses, and governance failure modes | [RAHP Toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) |
+| Reuse concrete digital-trust failure propositions, adversarial cases, and falsification criteria | [Digital Trust Failure Corpus](https://github.com/qbf-consulting/digital-trust-failure-corpus) |
 | Evaluate whether a composed DTG interaction preserves an asserted privacy property | [DTG Privacy Implementation Profile](https://github.com/sankarshanmukhopadhyay/dtg-privacy-implementation-profile) |
 | Implement, conform, or assure a TRQP trust-registry deployment | [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) → [reference verifier](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) → [conformance suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) → [assurance hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) |
 
@@ -41,6 +44,7 @@ This profile presents a **curated body-of-work portfolio**, not an ownership inv
 | Agent infrastructure | [Agent Registry Protocol](https://github.com/qbf-consulting/agent-registry-protocol) | QBF Consulting | Protocol, schemas, APIs, conformance tests, and reference artefacts for deployable agent registries |
 | Policy execution | [PolicyMesh](https://github.com/sankarshanmukhopadhyay/PolicyMesh) | Sankarshan | Bounded evaluation of policy, mandate, evidence, scope, and time |
 | Assurance | [RAHP Toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | Sankarshan | Portable risk, harms, security, and specification-assurance infrastructure |
+| Failure evidence | [Digital Trust Failure Corpus](https://github.com/qbf-consulting/digital-trust-failure-corpus) | QBF Consulting | Machine-readable failure conditions, adversarial configurations, and falsification criteria for digital trust systems |
 | Privacy assurance | [DTG Privacy Implementation Profile](https://github.com/sankarshanmukhopadhyay/dtg-privacy-implementation-profile) | Sankarshan | Executable evaluation of privacy claims over composed DTG interactions |
 | Interoperability | [Trust Protocol Interop Lab](https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab) | Sankarshan | Composition and seam testing across independently governed protocols |
 | Ecosystem observation | [Trust Ecosystem Monitor](https://github.com/sankarshanmukhopadhyay/trust-ecosystem-monitor) | Sankarshan | Reusable observation and evidence infrastructure for standards and trust ecosystems |

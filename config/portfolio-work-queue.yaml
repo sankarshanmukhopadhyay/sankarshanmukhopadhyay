@@ -16,7 +16,7 @@ change_convention:
 eligible:
   dispositions: [included, adjacent, pending-review]
   lifecycles: [active, maintenance]
-  operational_statuses: [active-development, active-validation, pilot-use, stable-maintenance]
+  operational_statuses: [active-development, active-validation, active-maintenance-and-adoption, pilot-use, stable-maintenance]
 effort_buckets:
   - {id: "le-15m", minutes: 15, label: "≤15m"}
   - {id: "15-30m", minutes: 30, label: "15–30m"}

@@ -52,6 +52,7 @@
           "enum": [
             "active-development",
             "active-validation",
+            "active-maintenance-and-adoption",
             "pilot-use",
             "stable-maintenance",
             "upstream-tracking",
@@ -65,7 +66,8 @@
             "working-draft",
             "community-draft",
             "candidate-specification",
-            "stable-specification"
+            "stable-specification",
+            "stable-framework-specification"
           ]
         },
         "intended_use": {

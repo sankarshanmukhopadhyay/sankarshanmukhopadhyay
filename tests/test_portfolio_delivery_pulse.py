@@ -1,12 +1,16 @@
 import unittest
 from datetime import datetime, timezone
 
-from scripts.portfolio_delivery_pulse import commit_kind, inject, render_markdown, summarize
+from scripts.portfolio_delivery_pulse import commit_kind, inject, render_markdown, repository_owner, summarize
 
 NOW = datetime(2026, 9, 4, 2, 30, tzinfo=timezone.utc)
 
 
 class PortfolioDeliveryPulseTests(unittest.TestCase):
+    def test_repository_owner_respects_stewardship_registry(self):
+        self.assertEqual("qbf-consulting", repository_owner("digital-trust-failure-corpus"))
+        self.assertEqual("sankarshanmukhopadhyay", repository_owner("rahp-toolkit"))
+
     def test_commit_classification_separates_automation_and_maintenance(self):
         bot = {"commit": {"message": "update generated data"}, "author": {"login": "dependabot[bot]", "type": "Bot"}}
         monitor = {"commit": {"message": "chore(monitor): update DTG portfolio observations"}}

@@ -19,8 +19,9 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "data/repository-status.yaml"
+STEWARDSHIP = ROOT / "data/repository-stewardship.yaml"
 CONFIG = ROOT / "config/portfolio-work-queue.yaml"
-OWNER = "sankarshanmukhopadhyay"
+DEFAULT_OWNER = "sankarshanmukhopadhyay"
 DEFAULT_JSON = ROOT / "data/portfolio-delivery-pulse.json"
 DEFAULT_MD = ROOT / "docs/portfolio-work/index.md"
 
@@ -39,6 +40,12 @@ MAINTENANCE_MESSAGE_PREFIXES = (
 def load_yaml(path: Path) -> dict[str, Any]:
     with path.open(encoding="utf-8") as fh:
         return yaml.safe_load(fh) or {}
+
+
+def repository_owner(name: str) -> str:
+    stewardship = load_yaml(STEWARDSHIP)
+    entry = stewardship.get("repositories", {}).get(name, {})
+    return str(entry.get("owner") or stewardship.get("default_owner") or DEFAULT_OWNER)
 
 
 def eligible_repositories() -> list[str]:
@@ -106,7 +113,8 @@ def commit_kind(item: dict[str, Any]) -> str:
 
 
 def collect_repository(name: str, since: datetime, token: str | None) -> dict[str, Any]:
-    base = f"https://api.github.com/repos/{OWNER}/{urllib.parse.quote(name)}"
+    owner = repository_owner(name)
+    base = f"https://api.github.com/repos/{owner}/{urllib.parse.quote(name)}"
     since_iso = since.isoformat().replace("+00:00", "Z")
     commits = github_paginated(f"{base}/commits?since={urllib.parse.quote(since_iso)}", token)
     pulls = github_paginated(f"{base}/pulls?state=closed&sort=updated&direction=desc", token)
@@ -188,7 +196,7 @@ def build_pulse(now: datetime, token: str | None) -> dict[str, Any]:
         "schema_version": "1.0",
         "generated_at": now.replace(microsecond=0).isoformat().replace("+00:00", "Z"),
         "scope": {
-            "owner": OWNER,
+            "owner": "mixed; see data/repository-stewardship.yaml",
             "repository_source": "data/repository-status.yaml + config/portfolio-work-queue.yaml eligible scope",
             "commit_scope": "default-branch commits returned by GitHub commits API",
             "statement": "Observational throughput evidence only; not assurance, maturity, health, or project authority.",

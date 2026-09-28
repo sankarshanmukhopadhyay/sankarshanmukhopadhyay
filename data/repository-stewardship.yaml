@@ -20,6 +20,9 @@ repositories:
   trust-infrastructure-schemas:
     owner: qbf-consulting
     steward: QBF Consulting LLP
+  digital-trust-failure-corpus:
+    owner: qbf-consulting
+    steward: QBF Consulting LLP
   trust-graph-artifacts:
     owner: sankarshanmukhopadhyay
     steward: Sankarshan Mukhopadhyay
