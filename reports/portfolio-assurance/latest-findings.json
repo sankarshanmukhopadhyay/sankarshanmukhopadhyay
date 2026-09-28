@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T03:54:08Z",
+  "generated_at": "2026-09-28T05:22:26Z",
   "findings": [
     {
       "finding_id": "PAM-2A04963159F8",
@@ -8,7 +8,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/ci.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "profile_validation",
@@ -45,7 +45,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/portfolio-contract.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "portfolio_contract",
@@ -82,7 +82,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "publication_integrity",
@@ -119,7 +119,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/ci.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "implementation_validation",
@@ -156,7 +156,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "publication_integrity",
@@ -193,7 +193,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/cts.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "conformance_suite",
@@ -230,7 +230,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/portfolio-contract.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "portfolio_contract",
@@ -267,7 +267,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "publication_integrity",
@@ -304,7 +304,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/quality.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "quality_validation",
@@ -341,7 +341,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/combined-assurance-smoke.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "composed_assurance_smoke",
@@ -378,7 +378,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/portfolio-contract.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "portfolio_contract",
@@ -415,7 +415,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "publication_integrity",
@@ -452,7 +452,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/validate.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "toolkit_validation",
@@ -489,7 +489,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "corpus_integrity",
@@ -526,7 +526,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "publication_integrity",
@@ -560,7 +560,7 @@
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -678,7 +678,7 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -812,7 +812,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -946,7 +946,7 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1113,7 +1113,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1215,7 +1215,7 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1301,7 +1301,7 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1365,7 +1365,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1423,7 +1423,7 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1488,7 +1488,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1554,7 +1554,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-09-28T03:54:08Z",
+      "observed_at": "2026-09-28T05:22:26Z",
       "available": true,
       "evidence": {
         "repository": {

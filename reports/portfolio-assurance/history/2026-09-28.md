@@ -7,7 +7,7 @@ search_exclude: true
 
 # Portfolio Assurance Report — 2026-09-28
 
-**Observed:** 2026-09-28T03:54:08Z  
+**Observed:** 2026-09-28T05:22:26Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 15  
 **Unclassified public repositories:** 0

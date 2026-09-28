@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `trqp-conformance-suite`
 
-**Generated:** 2026-09-28T03:54:08Z  
+**Generated:** 2026-09-28T05:22:26Z  
 **Open findings:** 3  
 **Repository snapshot:** `afd31cd794cee43ed4c3e08f7fd25e97e9e829cd`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-7689472EA3BE — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-C33B62B8BEA9` at `2026-09-28T03:54:08Z`
+- Observation: `PAM-C33B62B8BEA9` at `2026-09-28T05:22:26Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/cts.yml`
@@ -64,7 +64,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-7703FE18DB94 — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-FB70938488F5` at `2026-09-28T03:54:08Z`
+- Observation: `PAM-FB70938488F5` at `2026-09-28T05:22:26Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
@@ -101,7 +101,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-5B624F0DEAAD — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-7DA7B7F78E59` at `2026-09-28T03:54:08Z`
+- Observation: `PAM-7DA7B7F78E59` at `2026-09-28T05:22:26Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/portfolio-contract.yml`
