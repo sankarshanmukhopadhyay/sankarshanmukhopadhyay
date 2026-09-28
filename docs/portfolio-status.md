@@ -12,7 +12,7 @@ The authoritative state is maintained in [`data/repository-status.yaml`](../data
 | Repository | Tier | Maturity | Operational status |
 |---|---|---|---|
 | `sankarshanmukhopadhyay` | Flagship | Stable | Stable maintenance |
-| `open-national-digital-trust-framework` | Flagship | Candidate | Active validation |
+| `open-national-digital-trust-framework` | Flagship | Stable | Active maintenance and adoption |
 | `governance-authority-assurance-metamodel` | Flagship | Candidate | Active validation |
 | `agent-registry-protocol` | Flagship | Pilot ready | Active validation |
 | `trust-systems-meta-model` | Flagship | Candidate | Active validation |
@@ -36,6 +36,7 @@ The authoritative state is maintained in [`data/repository-status.yaml`](../data
 | `agent-name-assurance-baseline` | Supporting | Implementation draft | Agent name assurance |
 | `dtg-conformance-assurance` | Supporting | Implementation draft | General conformance and assurance |
 | `trust-infrastructure-glossary` | Supporting | Stable | Independent trust-infrastructure terminology |
+| `digital-trust-failure-corpus` | Supporting | Implementation draft | Digital-trust failure and falsification corpus |
 | `ERC-8004-CSP` | Supporting | Implementation draft | Ecosystem-specific agent profile |
 
 ## Adjacent work
