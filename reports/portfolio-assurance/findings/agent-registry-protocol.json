@@ -1,13 +1,13 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-15T21:20:09Z",
+  "generated_at": "2026-09-28T03:54:08Z",
   "repository": "agent-registry-protocol",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-15T21:20:09Z",
+    "observed_at": "2026-09-28T03:54:08Z",
     "default_branch": "main",
-    "head_sha": "9ee355ad6d093f3c3ec51d62b2fc6699c745f3b7",
+    "head_sha": "7200c8512a13615d84c9711ac550da36ae338dd9",
     "provenance_status": "observed"
   },
   "assessment": {

@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Remediation dossier — trust-infrastructure-glossary
+title: Remediation dossier — digital-trust-failure-corpus
 nav_exclude: true
 search_exclude: true
 ---
 
-# Repository remediation dossier — `trust-infrastructure-glossary`
+# Repository remediation dossier — `digital-trust-failure-corpus`
 
 **Generated:** 2026-09-28T03:54:08Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
-**Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-glossary.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-glossary.json)
+**Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/digital-trust-failure-corpus.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/digital-trust-failure-corpus.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
 
