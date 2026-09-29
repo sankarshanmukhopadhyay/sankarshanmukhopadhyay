@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-28T23:15:33Z",
+  "generated_at": "2026-09-29T05:42:41Z",
   "repository": "trqp-assurance-hub",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-28T23:15:33Z",
+    "observed_at": "2026-09-29T05:42:41Z",
     "default_branch": "main",
     "head_sha": "c8b38abd8d663870c4f9bbaf4b2875d059cfc558",
     "provenance_status": "observed"
@@ -40,13 +40,13 @@
   "finding_count": 4,
   "findings": [
     {
-      "finding_id": "PAM-56629E5053E4",
+      "finding_id": "PAM-A5EEA4A214AA",
       "finding_fingerprint": "PF-C845136AA21D",
       "repository": "trqp-assurance-hub",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/combined-assurance-smoke.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T23:15:33Z",
+      "observed_at": "2026-09-29T05:42:41Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "composed_assurance_smoke",
@@ -77,13 +77,13 @@
       }
     },
     {
-      "finding_id": "PAM-7A3DB9CBEF38",
+      "finding_id": "PAM-6E9906B9BB40",
       "finding_fingerprint": "PF-777EE08AFB02",
       "repository": "trqp-assurance-hub",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T23:15:33Z",
+      "observed_at": "2026-09-29T05:42:41Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "publication_integrity",
@@ -114,13 +114,13 @@
       }
     },
     {
-      "finding_id": "PAM-A42E7F214014",
+      "finding_id": "PAM-CCF6654FB6C7",
       "finding_fingerprint": "PF-9D14CEA5F461",
       "repository": "trqp-assurance-hub",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/portfolio-contract.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T23:15:33Z",
+      "observed_at": "2026-09-29T05:42:41Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "portfolio_contract",
@@ -151,13 +151,13 @@
       }
     },
     {
-      "finding_id": "PAM-F72C8C5B988E",
+      "finding_id": "PAM-B05250C7D17D",
       "finding_fingerprint": "PF-EAEC07563E26",
       "repository": "trqp-assurance-hub",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/quality.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T23:15:33Z",
+      "observed_at": "2026-09-29T05:42:41Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "quality_validation",
@@ -197,9 +197,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-09-28T23:15:33Z",
+      "last_observed": "2026-09-29T05:42:41Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-56629E5053E4"
+      "latest_finding_id": "PAM-A5EEA4A214AA"
     },
     {
       "finding_fingerprint": "PF-777EE08AFB02",
@@ -209,9 +209,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-09-28T23:15:33Z",
+      "last_observed": "2026-09-29T05:42:41Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-7A3DB9CBEF38"
+      "latest_finding_id": "PAM-6E9906B9BB40"
     },
     {
       "finding_fingerprint": "PF-9D14CEA5F461",
@@ -221,9 +221,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-09-28T23:15:33Z",
+      "last_observed": "2026-09-29T05:42:41Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-A42E7F214014"
+      "latest_finding_id": "PAM-CCF6654FB6C7"
     },
     {
       "finding_fingerprint": "PF-EAEC07563E26",
@@ -233,9 +233,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-09-28T23:15:33Z",
+      "last_observed": "2026-09-29T05:42:41Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-F72C8C5B988E"
+      "latest_finding_id": "PAM-B05250C7D17D"
     }
   ],
   "handoff": {

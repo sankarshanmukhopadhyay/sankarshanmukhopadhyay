@@ -7,9 +7,9 @@ nav_order: 1
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-09-28T23:15:33Z  
+**Observed:** 2026-09-29T05:42:41Z  
 **Scope:** 11 flagship original repositories  
-**Open findings:** 15  
+**Open findings:** 12  
 **Unclassified public repositories:** 0
 
 > This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.
@@ -18,9 +18,9 @@ nav_order: 1
 
 | Dimension | State | Open findings |
 |---|---|---:|
-| Operational | `evaluated` | 1 |
+| Operational | `evaluated` | 0 |
 | Governance | `evaluated` | 0 |
-| Assurance | `evaluated` | 14 |
+| Assurance | `evaluated` | 12 |
 | Cross Specification | `not-evaluated` | 0 |
 
 > `evaluated` means only that the configured rules for that dimension ran against observable evidence. `not-evaluated` is explicit and must not be interpreted as green or assured.
@@ -39,13 +39,13 @@ nav_order: 1
 | [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | available | valid | 0 unresolved | [2 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json) |
 | [trqp-conformance-suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | available | valid | 0 unresolved | [3 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trqp-conformance-suite.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.json) |
 | [trqp-assurance-hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | available | valid | 0 unresolved | [4 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trqp-assurance-hub.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.json) |
-| [rahp-toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | available | n/a | 1 unresolved | [3 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/rahp-toolkit.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json) |
+| [rahp-toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | available | n/a | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/rahp-toolkit.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json) |
 
 ## Findings
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-2A04963159F8: TRQP-TSPP
+### PAM-5DC5A206D679: TRQP-TSPP
 
 - **Fingerprint:** `PF-E87C22B11E6D`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -56,7 +56,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-B22A12AD095A: TRQP-TSPP
+### PAM-7D6E3780B796: TRQP-TSPP
 
 - **Fingerprint:** `PF-9C213FA6D34C`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -67,7 +67,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-038F55B9F2C5: TRQP-TSPP
+### PAM-E62C6EA604A4: TRQP-TSPP
 
 - **Fingerprint:** `PF-C97FFAD16838`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -78,7 +78,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-CE9F4A3F825C: cawg-trqp-verifier-refimpl
+### PAM-0F2D43095533: cawg-trqp-verifier-refimpl
 
 - **Fingerprint:** `PF-5D9AA2B3D63F`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -89,7 +89,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-8A557880BD7C: cawg-trqp-verifier-refimpl
+### PAM-85C98AA1C1BF: cawg-trqp-verifier-refimpl
 
 - **Fingerprint:** `PF-D930ABA3415C`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -100,29 +100,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-BE426C057634: rahp-toolkit
-
-- **Fingerprint:** `PF-E8B1B5CFA71B`
-- **Rule:** `ASSURANCE_EVIDENCE_MISSING`
-- **Subject:** `.github/workflows/pages.yml`
-- **Severity:** `high`
-- **Claim:** Required assurance evidence was not observed inside the governed evidence window.
-- **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
-- **Issue routing:** `target-repository`
-- **Automatic effect:** `none`
-
-### PAM-3B104AEA80E2: rahp-toolkit
-
-- **Fingerprint:** `PF-40A9B6AD0B44`
-- **Rule:** `ASSURANCE_EVIDENCE_MISSING`
-- **Subject:** `.github/workflows/validate.yml`
-- **Severity:** `high`
-- **Claim:** Required assurance evidence was not observed inside the governed evidence window.
-- **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
-- **Issue routing:** `target-repository`
-- **Automatic effect:** `none`
-
-### PAM-56629E5053E4: trqp-assurance-hub
+### PAM-A5EEA4A214AA: trqp-assurance-hub
 
 - **Fingerprint:** `PF-C845136AA21D`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -133,7 +111,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-7A3DB9CBEF38: trqp-assurance-hub
+### PAM-6E9906B9BB40: trqp-assurance-hub
 
 - **Fingerprint:** `PF-777EE08AFB02`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -144,7 +122,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-A42E7F214014: trqp-assurance-hub
+### PAM-CCF6654FB6C7: trqp-assurance-hub
 
 - **Fingerprint:** `PF-9D14CEA5F461`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -155,7 +133,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-F72C8C5B988E: trqp-assurance-hub
+### PAM-B05250C7D17D: trqp-assurance-hub
 
 - **Fingerprint:** `PF-EAEC07563E26`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -166,7 +144,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-C33B62B8BEA9: trqp-conformance-suite
+### PAM-7D392A944B1E: trqp-conformance-suite
 
 - **Fingerprint:** `PF-7689472EA3BE`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -177,7 +155,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-FB70938488F5: trqp-conformance-suite
+### PAM-ADB86436421A: trqp-conformance-suite
 
 - **Fingerprint:** `PF-7703FE18DB94`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -188,7 +166,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-7DA7B7F78E59: trqp-conformance-suite
+### PAM-53652F2A037A: trqp-conformance-suite
 
 - **Fingerprint:** `PF-5B624F0DEAAD`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -196,17 +174,6 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Severity:** `high`
 - **Claim:** Required assurance evidence was not observed inside the governed evidence window.
 - **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
-- **Issue routing:** `target-repository`
-- **Automatic effect:** `none`
-
-### PAM-B1A6EACB3C58: rahp-toolkit
-
-- **Fingerprint:** `PF-4E123844FBF6`
-- **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
-- **Subject:** `.github/workflows/instance-watch.yml`
-- **Severity:** `medium`
-- **Claim:** The latest completed default-branch run for this workflow is failing within the governed observation window.
-- **Recommended action:** Review the failed workflow, restore a successful default-branch run, or record an explicit accepted-risk disposition.
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
@@ -252,10 +219,10 @@ The assurance state below is calculated from repository-specific evidence contra
 | ↳ `composed_assurance_smoke` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
 | ↳ `portfolio_contract` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
 | ↳ `publication_integrity` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
-| [rahp-toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | `assurance-toolkit` | **missing** | 3 | 1/3 |
-| ↳ `toolkit_validation` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
+| [rahp-toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | `assurance-toolkit` | **satisfied** | 3 | 3/3 |
+| ↳ `toolkit_validation` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 | ↳ `corpus_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
-| ↳ `publication_integrity` | required | `missing` |  | no completed workflow execution was observed inside the governed lookback window |
+| ↳ `publication_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 | ↳ `cross_specification_pressure_test` | optional | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 
 
