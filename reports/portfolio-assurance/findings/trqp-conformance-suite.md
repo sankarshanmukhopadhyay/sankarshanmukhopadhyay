@@ -7,8 +7,8 @@ search_exclude: true
 
 # Repository remediation dossier — `trqp-conformance-suite`
 
-**Generated:** 2026-09-29T05:42:41Z  
-**Open findings:** 3  
+**Generated:** 2026-09-29T06:27:10Z  
+**Open findings:** 0  
 **Repository snapshot:** `afd31cd794cee43ed4c3e08f7fd25e97e9e829cd`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.json)
 
@@ -20,118 +20,9 @@ search_exclude: true
 |---|---|---:|
 | Operational | `evaluated` | 0 |
 | Governance | `evaluated` | 0 |
-| Assurance | `evaluated` | 3 |
+| Assurance | `evaluated` | 0 |
 | Cross Specification | `not-evaluated` | 0 |
 
 ## Open findings
 
-## PF-7689472EA3BE — ASSURANCE_EVIDENCE_MISSING
-
-- Observation: `PAM-7D392A944B1E` at `2026-09-29T05:42:41Z`
-- Severity: `high`
-- Dimension: `assurance`
-- Subject: `.github/workflows/cts.yml`
-- Lifecycle: `open`; first observed `2026-09-28T03:54:08Z`
-- Claim: Required assurance evidence was not observed inside the governed evidence window.
-- Automatic effect: `none`
-
-### Evidence
-
-```json
-{
-  "claim": "conformance_suite",
-  "evidence_head_sha": null,
-  "freshness_policy": "current-head",
-  "reason": "no completed workflow execution was observed inside the governed lookback window",
-  "repository_head_sha": null,
-  "state": "missing",
-  "workflow": null
-}
-```
-
-### Remediation objective
-
-Restore or execute the repository-native control required by the governed assurance contract.
-
-### Acceptance criteria
-
-- [ ] The required evidence is observable inside the governed lookback window.
-- [ ] The evidence is attributable to the configured repository-native control.
-
-### Verification
-
-- Execute the required repository-native control and rerun the portfolio monitor.
-
-## PF-7703FE18DB94 — ASSURANCE_EVIDENCE_MISSING
-
-- Observation: `PAM-ADB86436421A` at `2026-09-29T05:42:41Z`
-- Severity: `high`
-- Dimension: `assurance`
-- Subject: `.github/workflows/pages.yml`
-- Lifecycle: `open`; first observed `2026-09-28T03:54:08Z`
-- Claim: Required assurance evidence was not observed inside the governed evidence window.
-- Automatic effect: `none`
-
-### Evidence
-
-```json
-{
-  "claim": "publication_integrity",
-  "evidence_head_sha": null,
-  "freshness_policy": "latest-success",
-  "reason": "no completed workflow execution was observed inside the governed lookback window",
-  "repository_head_sha": null,
-  "state": "missing",
-  "workflow": null
-}
-```
-
-### Remediation objective
-
-Restore or execute the repository-native control required by the governed assurance contract.
-
-### Acceptance criteria
-
-- [ ] The required evidence is observable inside the governed lookback window.
-- [ ] The evidence is attributable to the configured repository-native control.
-
-### Verification
-
-- Execute the required repository-native control and rerun the portfolio monitor.
-
-## PF-5B624F0DEAAD — ASSURANCE_EVIDENCE_MISSING
-
-- Observation: `PAM-53652F2A037A` at `2026-09-29T05:42:41Z`
-- Severity: `high`
-- Dimension: `assurance`
-- Subject: `.github/workflows/portfolio-contract.yml`
-- Lifecycle: `open`; first observed `2026-09-28T03:54:08Z`
-- Claim: Required assurance evidence was not observed inside the governed evidence window.
-- Automatic effect: `none`
-
-### Evidence
-
-```json
-{
-  "claim": "portfolio_contract",
-  "evidence_head_sha": null,
-  "freshness_policy": "current-head",
-  "reason": "no completed workflow execution was observed inside the governed lookback window",
-  "repository_head_sha": null,
-  "state": "missing",
-  "workflow": null
-}
-```
-
-### Remediation objective
-
-Restore or execute the repository-native control required by the governed assurance contract.
-
-### Acceptance criteria
-
-- [ ] The required evidence is observable inside the governed lookback window.
-- [ ] The evidence is attributable to the configured repository-native control.
-
-### Verification
-
-- Execute the required repository-native control and rerun the portfolio monitor.
+No findings are open in the currently evaluated dimensions. This is **not** evidence that dimensions marked `not-evaluated` are assured or complete.

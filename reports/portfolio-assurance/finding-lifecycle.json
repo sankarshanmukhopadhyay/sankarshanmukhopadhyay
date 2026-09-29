@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-29T05:42:41Z",
+  "generated_at": "2026-09-29T06:27:10Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -296,10 +296,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/ci.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-28T22:18:50Z",
       "last_observed": "2026-09-29T05:42:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-29T06:27:10Z",
       "latest_finding_id": "PAM-0F2D43095533"
     },
     "PF-D930ABA3415C": {
@@ -308,10 +308,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-28T22:18:50Z",
       "last_observed": "2026-09-29T05:42:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-29T06:27:10Z",
       "latest_finding_id": "PAM-85C98AA1C1BF"
     },
     "PF-72855B9E6190": {
@@ -632,10 +632,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/ci.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-28T03:54:08Z",
       "last_observed": "2026-09-29T05:42:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-29T06:27:10Z",
       "latest_finding_id": "PAM-5DC5A206D679"
     },
     "PF-C97FFAD16838": {
@@ -644,10 +644,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/portfolio-contract.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-28T03:54:08Z",
       "last_observed": "2026-09-29T05:42:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-29T06:27:10Z",
       "latest_finding_id": "PAM-E62C6EA604A4"
     },
     "PF-9C213FA6D34C": {
@@ -656,10 +656,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-28T03:54:08Z",
       "last_observed": "2026-09-29T05:42:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-29T06:27:10Z",
       "latest_finding_id": "PAM-7D6E3780B796"
     },
     "PF-7689472EA3BE": {
@@ -668,10 +668,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/cts.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-28T03:54:08Z",
       "last_observed": "2026-09-29T05:42:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-29T06:27:10Z",
       "latest_finding_id": "PAM-7D392A944B1E"
     },
     "PF-5B624F0DEAAD": {
@@ -680,10 +680,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/portfolio-contract.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-28T03:54:08Z",
       "last_observed": "2026-09-29T05:42:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-29T06:27:10Z",
       "latest_finding_id": "PAM-53652F2A037A"
     },
     "PF-7703FE18DB94": {
@@ -692,10 +692,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-28T03:54:08Z",
       "last_observed": "2026-09-29T05:42:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-29T06:27:10Z",
       "latest_finding_id": "PAM-ADB86436421A"
     },
     "PF-EAEC07563E26": {
@@ -704,10 +704,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/quality.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-28T03:54:08Z",
       "last_observed": "2026-09-29T05:42:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-29T06:27:10Z",
       "latest_finding_id": "PAM-B05250C7D17D"
     },
     "PF-C845136AA21D": {
@@ -716,10 +716,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/combined-assurance-smoke.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-28T03:54:08Z",
       "last_observed": "2026-09-29T05:42:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-29T06:27:10Z",
       "latest_finding_id": "PAM-A5EEA4A214AA"
     },
     "PF-9D14CEA5F461": {
@@ -728,10 +728,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/portfolio-contract.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-28T03:54:08Z",
       "last_observed": "2026-09-29T05:42:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-29T06:27:10Z",
       "latest_finding_id": "PAM-CCF6654FB6C7"
     },
     "PF-777EE08AFB02": {
@@ -740,10 +740,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-28T03:54:08Z",
       "last_observed": "2026-09-29T05:42:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-09-29T06:27:10Z",
       "latest_finding_id": "PAM-6E9906B9BB40"
     }
   }

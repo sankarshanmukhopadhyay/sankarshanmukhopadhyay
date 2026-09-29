@@ -1,455 +1,10 @@
 {
-  "generated_at": "2026-09-29T05:42:41Z",
-  "findings": [
-    {
-      "finding_id": "PAM-5DC5A206D679",
-      "finding_fingerprint": "PF-E87C22B11E6D",
-      "repository": "TRQP-TSPP",
-      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
-      "subject": ".github/workflows/ci.yml",
-      "severity": "high",
-      "observed_at": "2026-09-29T05:42:41Z",
-      "claim": "Required assurance evidence was not observed inside the governed evidence window.",
-      "evidence": {
-        "claim": "profile_validation",
-        "state": "missing",
-        "reason": "no completed workflow execution was observed inside the governed lookback window",
-        "freshness_policy": "current-head",
-        "repository_head_sha": null,
-        "evidence_head_sha": null,
-        "workflow": null
-      },
-      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
-        "acceptance_criteria": [
-          "The required evidence is observable inside the governed lookback window.",
-          "The evidence is attributable to the configured repository-native control."
-        ],
-        "verification": [
-          "Execute the required repository-native control and rerun the portfolio monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    },
-    {
-      "finding_id": "PAM-E62C6EA604A4",
-      "finding_fingerprint": "PF-C97FFAD16838",
-      "repository": "TRQP-TSPP",
-      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
-      "subject": ".github/workflows/portfolio-contract.yml",
-      "severity": "high",
-      "observed_at": "2026-09-29T05:42:41Z",
-      "claim": "Required assurance evidence was not observed inside the governed evidence window.",
-      "evidence": {
-        "claim": "portfolio_contract",
-        "state": "missing",
-        "reason": "no completed workflow execution was observed inside the governed lookback window",
-        "freshness_policy": "current-head",
-        "repository_head_sha": null,
-        "evidence_head_sha": null,
-        "workflow": null
-      },
-      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
-        "acceptance_criteria": [
-          "The required evidence is observable inside the governed lookback window.",
-          "The evidence is attributable to the configured repository-native control."
-        ],
-        "verification": [
-          "Execute the required repository-native control and rerun the portfolio monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    },
-    {
-      "finding_id": "PAM-7D6E3780B796",
-      "finding_fingerprint": "PF-9C213FA6D34C",
-      "repository": "TRQP-TSPP",
-      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
-      "subject": ".github/workflows/pages.yml",
-      "severity": "high",
-      "observed_at": "2026-09-29T05:42:41Z",
-      "claim": "Required assurance evidence was not observed inside the governed evidence window.",
-      "evidence": {
-        "claim": "publication_integrity",
-        "state": "missing",
-        "reason": "no completed workflow execution was observed inside the governed lookback window",
-        "freshness_policy": "latest-success",
-        "repository_head_sha": null,
-        "evidence_head_sha": null,
-        "workflow": null
-      },
-      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
-        "acceptance_criteria": [
-          "The required evidence is observable inside the governed lookback window.",
-          "The evidence is attributable to the configured repository-native control."
-        ],
-        "verification": [
-          "Execute the required repository-native control and rerun the portfolio monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    },
-    {
-      "finding_id": "PAM-0F2D43095533",
-      "finding_fingerprint": "PF-5D9AA2B3D63F",
-      "repository": "cawg-trqp-verifier-refimpl",
-      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
-      "subject": ".github/workflows/ci.yml",
-      "severity": "high",
-      "observed_at": "2026-09-29T05:42:41Z",
-      "claim": "Required assurance evidence was not observed inside the governed evidence window.",
-      "evidence": {
-        "claim": "implementation_validation",
-        "state": "missing",
-        "reason": "no completed workflow execution was observed inside the governed lookback window",
-        "freshness_policy": "current-head",
-        "repository_head_sha": null,
-        "evidence_head_sha": null,
-        "workflow": null
-      },
-      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
-        "acceptance_criteria": [
-          "The required evidence is observable inside the governed lookback window.",
-          "The evidence is attributable to the configured repository-native control."
-        ],
-        "verification": [
-          "Execute the required repository-native control and rerun the portfolio monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    },
-    {
-      "finding_id": "PAM-85C98AA1C1BF",
-      "finding_fingerprint": "PF-D930ABA3415C",
-      "repository": "cawg-trqp-verifier-refimpl",
-      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
-      "subject": ".github/workflows/pages.yml",
-      "severity": "high",
-      "observed_at": "2026-09-29T05:42:41Z",
-      "claim": "Required assurance evidence was not observed inside the governed evidence window.",
-      "evidence": {
-        "claim": "publication_integrity",
-        "state": "missing",
-        "reason": "no completed workflow execution was observed inside the governed lookback window",
-        "freshness_policy": "latest-success",
-        "repository_head_sha": null,
-        "evidence_head_sha": null,
-        "workflow": null
-      },
-      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
-        "acceptance_criteria": [
-          "The required evidence is observable inside the governed lookback window.",
-          "The evidence is attributable to the configured repository-native control."
-        ],
-        "verification": [
-          "Execute the required repository-native control and rerun the portfolio monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    },
-    {
-      "finding_id": "PAM-7D392A944B1E",
-      "finding_fingerprint": "PF-7689472EA3BE",
-      "repository": "trqp-conformance-suite",
-      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
-      "subject": ".github/workflows/cts.yml",
-      "severity": "high",
-      "observed_at": "2026-09-29T05:42:41Z",
-      "claim": "Required assurance evidence was not observed inside the governed evidence window.",
-      "evidence": {
-        "claim": "conformance_suite",
-        "state": "missing",
-        "reason": "no completed workflow execution was observed inside the governed lookback window",
-        "freshness_policy": "current-head",
-        "repository_head_sha": null,
-        "evidence_head_sha": null,
-        "workflow": null
-      },
-      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
-        "acceptance_criteria": [
-          "The required evidence is observable inside the governed lookback window.",
-          "The evidence is attributable to the configured repository-native control."
-        ],
-        "verification": [
-          "Execute the required repository-native control and rerun the portfolio monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    },
-    {
-      "finding_id": "PAM-53652F2A037A",
-      "finding_fingerprint": "PF-5B624F0DEAAD",
-      "repository": "trqp-conformance-suite",
-      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
-      "subject": ".github/workflows/portfolio-contract.yml",
-      "severity": "high",
-      "observed_at": "2026-09-29T05:42:41Z",
-      "claim": "Required assurance evidence was not observed inside the governed evidence window.",
-      "evidence": {
-        "claim": "portfolio_contract",
-        "state": "missing",
-        "reason": "no completed workflow execution was observed inside the governed lookback window",
-        "freshness_policy": "current-head",
-        "repository_head_sha": null,
-        "evidence_head_sha": null,
-        "workflow": null
-      },
-      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
-        "acceptance_criteria": [
-          "The required evidence is observable inside the governed lookback window.",
-          "The evidence is attributable to the configured repository-native control."
-        ],
-        "verification": [
-          "Execute the required repository-native control and rerun the portfolio monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    },
-    {
-      "finding_id": "PAM-ADB86436421A",
-      "finding_fingerprint": "PF-7703FE18DB94",
-      "repository": "trqp-conformance-suite",
-      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
-      "subject": ".github/workflows/pages.yml",
-      "severity": "high",
-      "observed_at": "2026-09-29T05:42:41Z",
-      "claim": "Required assurance evidence was not observed inside the governed evidence window.",
-      "evidence": {
-        "claim": "publication_integrity",
-        "state": "missing",
-        "reason": "no completed workflow execution was observed inside the governed lookback window",
-        "freshness_policy": "latest-success",
-        "repository_head_sha": null,
-        "evidence_head_sha": null,
-        "workflow": null
-      },
-      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
-        "acceptance_criteria": [
-          "The required evidence is observable inside the governed lookback window.",
-          "The evidence is attributable to the configured repository-native control."
-        ],
-        "verification": [
-          "Execute the required repository-native control and rerun the portfolio monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    },
-    {
-      "finding_id": "PAM-B05250C7D17D",
-      "finding_fingerprint": "PF-EAEC07563E26",
-      "repository": "trqp-assurance-hub",
-      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
-      "subject": ".github/workflows/quality.yml",
-      "severity": "high",
-      "observed_at": "2026-09-29T05:42:41Z",
-      "claim": "Required assurance evidence was not observed inside the governed evidence window.",
-      "evidence": {
-        "claim": "quality_validation",
-        "state": "missing",
-        "reason": "no completed workflow execution was observed inside the governed lookback window",
-        "freshness_policy": "current-head",
-        "repository_head_sha": null,
-        "evidence_head_sha": null,
-        "workflow": null
-      },
-      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
-        "acceptance_criteria": [
-          "The required evidence is observable inside the governed lookback window.",
-          "The evidence is attributable to the configured repository-native control."
-        ],
-        "verification": [
-          "Execute the required repository-native control and rerun the portfolio monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    },
-    {
-      "finding_id": "PAM-A5EEA4A214AA",
-      "finding_fingerprint": "PF-C845136AA21D",
-      "repository": "trqp-assurance-hub",
-      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
-      "subject": ".github/workflows/combined-assurance-smoke.yml",
-      "severity": "high",
-      "observed_at": "2026-09-29T05:42:41Z",
-      "claim": "Required assurance evidence was not observed inside the governed evidence window.",
-      "evidence": {
-        "claim": "composed_assurance_smoke",
-        "state": "missing",
-        "reason": "no completed workflow execution was observed inside the governed lookback window",
-        "freshness_policy": "current-head",
-        "repository_head_sha": null,
-        "evidence_head_sha": null,
-        "workflow": null
-      },
-      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
-        "acceptance_criteria": [
-          "The required evidence is observable inside the governed lookback window.",
-          "The evidence is attributable to the configured repository-native control."
-        ],
-        "verification": [
-          "Execute the required repository-native control and rerun the portfolio monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    },
-    {
-      "finding_id": "PAM-CCF6654FB6C7",
-      "finding_fingerprint": "PF-9D14CEA5F461",
-      "repository": "trqp-assurance-hub",
-      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
-      "subject": ".github/workflows/portfolio-contract.yml",
-      "severity": "high",
-      "observed_at": "2026-09-29T05:42:41Z",
-      "claim": "Required assurance evidence was not observed inside the governed evidence window.",
-      "evidence": {
-        "claim": "portfolio_contract",
-        "state": "missing",
-        "reason": "no completed workflow execution was observed inside the governed lookback window",
-        "freshness_policy": "current-head",
-        "repository_head_sha": null,
-        "evidence_head_sha": null,
-        "workflow": null
-      },
-      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
-        "acceptance_criteria": [
-          "The required evidence is observable inside the governed lookback window.",
-          "The evidence is attributable to the configured repository-native control."
-        ],
-        "verification": [
-          "Execute the required repository-native control and rerun the portfolio monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    },
-    {
-      "finding_id": "PAM-6E9906B9BB40",
-      "finding_fingerprint": "PF-777EE08AFB02",
-      "repository": "trqp-assurance-hub",
-      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
-      "subject": ".github/workflows/pages.yml",
-      "severity": "high",
-      "observed_at": "2026-09-29T05:42:41Z",
-      "claim": "Required assurance evidence was not observed inside the governed evidence window.",
-      "evidence": {
-        "claim": "publication_integrity",
-        "state": "missing",
-        "reason": "no completed workflow execution was observed inside the governed lookback window",
-        "freshness_policy": "latest-success",
-        "repository_head_sha": null,
-        "evidence_head_sha": null,
-        "workflow": null
-      },
-      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
-      "dimension": "assurance",
-      "remediation": {
-        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
-        "acceptance_criteria": [
-          "The required evidence is observable inside the governed lookback window.",
-          "The evidence is attributable to the configured repository-native control."
-        ],
-        "verification": [
-          "Execute the required repository-native control and rerun the portfolio monitor."
-        ]
-      },
-      "automatic_effect": "none",
-      "routing": {
-        "eligible": true,
-        "target": "target-repository",
-        "minimum_severity": "medium"
-      }
-    }
-  ],
+  "generated_at": "2026-09-29T06:27:10Z",
+  "findings": [],
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-09-29T05:42:41Z",
+      "observed_at": "2026-09-29T06:27:10Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -560,14 +115,52 @@
             "dynamic/dependabot/dependabot-updates",
             "dynamic/dependabot/update-graph",
             "dynamic/github-code-scanning/codeql"
-          ]
+          ],
+          "contract_evidence": {
+            ".github/workflows/quality.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 317410095,
+                "name": "Documentation quality",
+                "path": ".github/workflows/quality.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-28T00:34:55Z",
+                "updated_at": "2026-09-28T00:38:13Z",
+                "run_started_at": "2026-09-28T00:34:55Z",
+                "html_url": "https://github.com/qbf-consulting/open-national-digital-trust-framework/actions/runs/36362732091",
+                "head_sha": "201bcacdb9b0595f2693c73440598c4b0e89b10d",
+                "head_branch": "main",
+                "run_number": 80
+              }
+            },
+            ".github/workflows/pages.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 317410093,
+                "name": "Build and deploy GitHub Pages",
+                "path": ".github/workflows/pages.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-28T00:34:55Z",
+                "updated_at": "2026-09-28T00:38:27Z",
+                "run_started_at": "2026-09-28T00:34:55Z",
+                "html_url": "https://github.com/qbf-consulting/open-national-digital-trust-framework/actions/runs/36362732153",
+                "head_sha": "201bcacdb9b0595f2693c73440598c4b0e89b10d",
+                "head_branch": "main",
+                "run_number": 56
+              }
+            }
+          }
         }
       },
       "collection_error": null
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-09-29T05:42:41Z",
+      "observed_at": "2026-09-29T06:27:10Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -694,24 +287,62 @@
             "dynamic/dependabot/dependabot-updates",
             "dynamic/dependabot/update-graph",
             "dynamic/github-code-scanning/codeql"
-          ]
+          ],
+          "contract_evidence": {
+            ".github/workflows/validate.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 314123806,
+                "name": "Validate",
+                "path": ".github/workflows/validate.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-26T02:16:23Z",
+                "updated_at": "2026-09-26T02:17:09Z",
+                "run_started_at": "2026-09-26T02:16:23Z",
+                "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/36211156836",
+                "head_sha": "0656bb02d3b1cff561a7843654e515574f3c25ec",
+                "head_branch": "main",
+                "run_number": 159
+              }
+            },
+            ".github/workflows/verify-publication.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 338457213,
+                "name": "Verify canonical publication",
+                "path": ".github/workflows/verify-publication.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "schedule",
+                "created_at": "2026-09-28T11:01:44Z",
+                "updated_at": "2026-09-28T11:01:58Z",
+                "run_started_at": "2026-09-28T11:01:44Z",
+                "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/36413177139",
+                "head_sha": "0656bb02d3b1cff561a7843654e515574f3c25ec",
+                "head_branch": "main",
+                "run_number": 38
+              }
+            }
+          }
         }
       },
       "collection_error": null
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-09-29T05:42:41Z",
+      "observed_at": "2026-09-29T06:27:10Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/qbf-consulting/agent-registry-protocol",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-09-29T05:40:33Z",
-          "updated_at": "2026-09-29T05:36:34Z",
+          "pushed_at": "2026-09-29T05:44:55Z",
+          "updated_at": "2026-09-29T05:44:18Z",
           "open_issues_count": 0,
-          "head_sha": "2efba3753ff20df9cfe08809dea29544b816d4fe"
+          "head_sha": "2f1bdc94392fb0b39ca60edc98c00a7d1da9e91d"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -748,13 +379,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-29T05:36:32Z",
-              "updated_at": "2026-09-29T05:37:25Z",
-              "run_started_at": "2026-09-29T05:36:32Z",
-              "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/36526965835",
-              "head_sha": "2efba3753ff20df9cfe08809dea29544b816d4fe",
+              "created_at": "2026-09-29T05:44:16Z",
+              "updated_at": "2026-09-29T05:45:13Z",
+              "run_started_at": "2026-09-29T05:44:16Z",
+              "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/36527578305",
+              "head_sha": "2f1bdc94392fb0b39ca60edc98c00a7d1da9e91d",
               "head_branch": "main",
-              "run_number": 78
+              "run_number": 79
             },
             {
               "workflow_id": 364794181,
@@ -778,13 +409,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-29T05:36:32Z",
-              "updated_at": "2026-09-29T05:37:07Z",
-              "run_started_at": "2026-09-29T05:36:32Z",
-              "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/36526965955",
-              "head_sha": "2efba3753ff20df9cfe08809dea29544b816d4fe",
+              "created_at": "2026-09-29T05:44:16Z",
+              "updated_at": "2026-09-29T05:44:46Z",
+              "run_started_at": "2026-09-29T05:44:16Z",
+              "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/36527578342",
+              "head_sha": "2f1bdc94392fb0b39ca60edc98c00a7d1da9e91d",
               "head_branch": "main",
-              "run_number": 597
+              "run_number": 601
             },
             {
               "workflow_id": 314905788,
@@ -823,13 +454,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "dynamic",
-              "created_at": "2026-09-29T05:36:32Z",
-              "updated_at": "2026-09-29T05:37:58Z",
-              "run_started_at": "2026-09-29T05:36:32Z",
-              "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/36526965543",
-              "head_sha": "2efba3753ff20df9cfe08809dea29544b816d4fe",
+              "created_at": "2026-09-29T05:44:16Z",
+              "updated_at": "2026-09-29T05:45:37Z",
+              "run_started_at": "2026-09-29T05:44:16Z",
+              "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/36527578049",
+              "head_sha": "2f1bdc94392fb0b39ca60edc98c00a7d1da9e91d",
               "head_branch": "main",
-              "run_number": 150
+              "run_number": 152
             }
           ],
           "retired": [],
@@ -843,14 +474,70 @@
             "dynamic/dependabot/dependabot-updates",
             "dynamic/dependabot/update-graph",
             "dynamic/github-code-scanning/codeql"
-          ]
+          ],
+          "contract_evidence": {
+            ".github/workflows/validate.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 314181172,
+                "name": "Validate",
+                "path": ".github/workflows/validate.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-29T05:44:16Z",
+                "updated_at": "2026-09-29T05:44:46Z",
+                "run_started_at": "2026-09-29T05:44:16Z",
+                "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/36527578342",
+                "head_sha": "2f1bdc94392fb0b39ca60edc98c00a7d1da9e91d",
+                "head_branch": "main",
+                "run_number": 601
+              }
+            },
+            ".github/workflows/pages.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 314182119,
+                "name": "Deploy GitHub Pages",
+                "path": ".github/workflows/pages.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-29T05:44:16Z",
+                "updated_at": "2026-09-29T05:45:13Z",
+                "run_started_at": "2026-09-29T05:44:16Z",
+                "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/36527578305",
+                "head_sha": "2f1bdc94392fb0b39ca60edc98c00a7d1da9e91d",
+                "head_branch": "main",
+                "run_number": 79
+              }
+            },
+            ".github/workflows/ietf-draft.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 336969346,
+                "name": "IETF Internet-Draft",
+                "path": ".github/workflows/ietf-draft.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-29T05:36:32Z",
+                "updated_at": "2026-09-29T05:36:54Z",
+                "run_started_at": "2026-09-29T05:36:32Z",
+                "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/36526965881",
+                "head_sha": "2efba3753ff20df9cfe08809dea29544b816d4fe",
+                "head_branch": "main",
+                "run_number": 315
+              }
+            }
+          }
         }
       },
       "collection_error": null
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-09-29T05:42:41Z",
+      "observed_at": "2026-09-29T06:27:10Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1010,14 +697,52 @@
             "dynamic/dependabot/update-graph",
             "dynamic/github-code-scanning/codeql",
             "dynamic/pages/pages-build-deployment"
-          ]
+          ],
+          "contract_evidence": {
+            ".github/workflows/validate.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 271080726,
+                "name": "Validate TSMM Candidate",
+                "path": ".github/workflows/validate.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-28T02:21:26Z",
+                "updated_at": "2026-09-28T02:21:44Z",
+                "run_started_at": "2026-09-28T02:21:26Z",
+                "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/36369504525",
+                "head_sha": "17d9e786bcd1e1e9b5c8332cbe16a256769eacd6",
+                "head_branch": "main",
+                "run_number": 111
+              }
+            },
+            ".github/workflows/pages.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 271080725,
+                "name": "Build and deploy GitHub Pages",
+                "path": ".github/workflows/pages.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-28T02:21:26Z",
+                "updated_at": "2026-09-28T02:22:11Z",
+                "run_started_at": "2026-09-28T02:21:26Z",
+                "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/36369504621",
+                "head_sha": "17d9e786bcd1e1e9b5c8332cbe16a256769eacd6",
+                "head_branch": "main",
+                "run_number": 112
+              }
+            }
+          }
         }
       },
       "collection_error": null
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-09-29T05:42:41Z",
+      "observed_at": "2026-09-29T06:27:10Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1112,14 +837,52 @@
             ".github/workflows/validate-schemas.yml",
             "dynamic/github-code-scanning/codeql",
             "dynamic/pages/pages-build-deployment"
-          ]
+          ],
+          "contract_evidence": {
+            ".github/workflows/validate-schemas.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 235993015,
+                "name": "Validate TIS Candidate",
+                "path": ".github/workflows/validate-schemas.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-28T02:43:58Z",
+                "updated_at": "2026-09-28T02:44:09Z",
+                "run_started_at": "2026-09-28T02:43:58Z",
+                "html_url": "https://github.com/qbf-consulting/trust-infrastructure-schemas/actions/runs/36370940722",
+                "head_sha": "14bc58feac3681a47c598cca159e4df81c5566c0",
+                "head_branch": "main",
+                "run_number": 95
+              }
+            },
+            ".github/workflows/pages.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 316477083,
+                "name": "Build and deploy GitHub Pages",
+                "path": ".github/workflows/pages.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-28T02:43:58Z",
+                "updated_at": "2026-09-28T02:44:31Z",
+                "run_started_at": "2026-09-28T02:43:58Z",
+                "html_url": "https://github.com/qbf-consulting/trust-infrastructure-schemas/actions/runs/36370940837",
+                "head_sha": "14bc58feac3681a47c598cca159e4df81c5566c0",
+                "head_branch": "main",
+                "run_number": 72
+              }
+            }
+          }
         }
       },
       "collection_error": null
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-09-29T05:42:41Z",
+      "observed_at": "2026-09-29T06:27:10Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1198,14 +961,52 @@
             ".github/workflows/publish-component-release.yml",
             ".github/workflows/validate-tsmm-native.yml",
             "dynamic/dependabot/update-graph"
-          ]
+          ],
+          "contract_evidence": {
+            ".github/workflows/validate-tsmm-native.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 259914534,
+                "name": "validate-repository-assurance",
+                "path": ".github/workflows/validate-tsmm-native.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-23T05:28:00Z",
+                "updated_at": "2026-09-23T05:28:14Z",
+                "run_started_at": "2026-09-23T05:28:00Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/35822517360",
+                "head_sha": "38e4d84f1d237eb0d52b912b3c062c0fa2cbbceb",
+                "head_branch": "main",
+                "run_number": 81
+              }
+            },
+            ".github/workflows/pages.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 271761811,
+                "name": "publish-docs",
+                "path": ".github/workflows/pages.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-23T05:28:00Z",
+                "updated_at": "2026-09-23T05:29:14Z",
+                "run_started_at": "2026-09-23T05:28:00Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/35822517333",
+                "head_sha": "38e4d84f1d237eb0d52b912b3c062c0fa2cbbceb",
+                "head_branch": "main",
+                "run_number": 31
+              }
+            }
+          }
         }
       },
       "collection_error": null
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-09-29T05:42:41Z",
+      "observed_at": "2026-09-29T06:27:10Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1262,14 +1063,70 @@
             "dynamic/dependabot/dependabot-updates",
             "dynamic/dependabot/update-graph",
             "dynamic/pages/pages-build-deployment"
-          ]
+          ],
+          "contract_evidence": {
+            ".github/workflows/ci.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 236888247,
+                "name": "TSPP CI",
+                "path": ".github/workflows/ci.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-16T05:31:35Z",
+                "updated_at": "2026-09-16T05:32:20Z",
+                "run_started_at": "2026-09-16T05:31:35Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/actions/runs/35059861394",
+                "head_sha": "52b85bea6ac7c4dadea167a099227dde8542241c",
+                "head_branch": "main",
+                "run_number": 211
+              }
+            },
+            ".github/workflows/portfolio-contract.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 338452297,
+                "name": "Portfolio Integration Contract",
+                "path": ".github/workflows/portfolio-contract.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-16T05:31:35Z",
+                "updated_at": "2026-09-16T05:31:46Z",
+                "run_started_at": "2026-09-16T05:31:35Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/actions/runs/35059861432",
+                "head_sha": "52b85bea6ac7c4dadea167a099227dde8542241c",
+                "head_branch": "main",
+                "run_number": 71
+              }
+            },
+            ".github/workflows/pages.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 316453200,
+                "name": "Deploy documentation to GitHub Pages",
+                "path": ".github/workflows/pages.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-10T17:22:49Z",
+                "updated_at": "2026-09-10T17:23:32Z",
+                "run_started_at": "2026-09-10T17:22:49Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/TRQP-TSPP/actions/runs/34507849100",
+                "head_sha": "f3b78fde8d20d187fca1513c70e1aea678004175",
+                "head_branch": "main",
+                "run_number": 40
+              }
+            }
+          }
         }
       },
       "collection_error": null
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-09-29T05:42:41Z",
+      "observed_at": "2026-09-29T06:27:10Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1320,14 +1177,56 @@
             ".github/workflows/release.yml",
             "dynamic/dependabot/dependabot-updates",
             "dynamic/dependabot/update-graph"
-          ]
+          ],
+          "contract_evidence": {
+            ".github/workflows/ci.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 248717477,
+                "name": "CI",
+                "path": ".github/workflows/ci.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-11T15:39:23Z",
+                "updated_at": "2026-09-11T15:39:50Z",
+                "run_started_at": "2026-09-11T15:39:23Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/34617413379",
+                "head_sha": "23ceae7141359244deabdfba01df922e99fa07dc",
+                "head_branch": "main",
+                "run_number": 294
+              }
+            },
+            ".github/workflows/pages.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 315515884,
+                "name": "Deploy Documentation (Just the Docs)",
+                "path": ".github/workflows/pages.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-05T08:02:59Z",
+                "updated_at": "2026-09-05T08:03:31Z",
+                "run_started_at": "2026-09-05T08:02:59Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/33954196733",
+                "head_sha": "10ab1ad8bec07391761562dd3270679457ec6ae1",
+                "head_branch": "main",
+                "run_number": 35
+              }
+            },
+            ".github/workflows/pypi-publish.yml": {
+              "available": true,
+              "run": null
+            }
+          }
         }
       },
       "collection_error": null
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-09-29T05:42:41Z",
+      "observed_at": "2026-09-29T06:27:10Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1385,14 +1284,70 @@
             "dynamic/dependabot/dependabot-updates",
             "dynamic/dependabot/update-graph",
             "dynamic/pages/pages-build-deployment"
-          ]
+          ],
+          "contract_evidence": {
+            ".github/workflows/cts.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 233220218,
+                "name": "CTS",
+                "path": ".github/workflows/cts.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-10T17:22:40Z",
+                "updated_at": "2026-09-10T17:23:07Z",
+                "run_started_at": "2026-09-10T17:22:40Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite/actions/runs/34507833609",
+                "head_sha": "afd31cd794cee43ed4c3e08f7fd25e97e9e829cd",
+                "head_branch": "main",
+                "run_number": 147
+              }
+            },
+            ".github/workflows/portfolio-contract.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 338452594,
+                "name": "Portfolio Integration Contract",
+                "path": ".github/workflows/portfolio-contract.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-10T17:22:40Z",
+                "updated_at": "2026-09-10T17:22:49Z",
+                "run_started_at": "2026-09-10T17:22:40Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite/actions/runs/34507833405",
+                "head_sha": "afd31cd794cee43ed4c3e08f7fd25e97e9e829cd",
+                "head_branch": "main",
+                "run_number": 49
+              }
+            },
+            ".github/workflows/pages.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 316454130,
+                "name": "Deploy documentation to GitHub Pages",
+                "path": ".github/workflows/pages.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-10T17:22:40Z",
+                "updated_at": "2026-09-10T17:23:22Z",
+                "run_started_at": "2026-09-10T17:22:40Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite/actions/runs/34507833599",
+                "head_sha": "afd31cd794cee43ed4c3e08f7fd25e97e9e829cd",
+                "head_branch": "main",
+                "run_number": 43
+              }
+            }
+          }
         }
       },
       "collection_error": null
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-09-29T05:42:41Z",
+      "observed_at": "2026-09-29T06:27:10Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1451,30 +1406,104 @@
             "dynamic/dependabot/dependabot-updates",
             "dynamic/dependabot/update-graph",
             "dynamic/pages/pages-build-deployment"
-          ]
+          ],
+          "contract_evidence": {
+            ".github/workflows/quality.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 236973230,
+                "name": "quality",
+                "path": ".github/workflows/quality.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-10T17:12:35Z",
+                "updated_at": "2026-09-10T17:12:57Z",
+                "run_started_at": "2026-09-10T17:12:35Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/34506796644",
+                "head_sha": "c8b38abd8d663870c4f9bbaf4b2875d059cfc558",
+                "head_branch": "main",
+                "run_number": 248
+              }
+            },
+            ".github/workflows/combined-assurance-smoke.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 236983557,
+                "name": "combined-assurance-smoke",
+                "path": ".github/workflows/combined-assurance-smoke.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-10T17:12:35Z",
+                "updated_at": "2026-09-10T17:12:54Z",
+                "run_started_at": "2026-09-10T17:12:35Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/34506796669",
+                "head_sha": "c8b38abd8d663870c4f9bbaf4b2875d059cfc558",
+                "head_branch": "main",
+                "run_number": 224
+              }
+            },
+            ".github/workflows/portfolio-contract.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 338452388,
+                "name": "Portfolio Integration Contract",
+                "path": ".github/workflows/portfolio-contract.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-10T17:12:35Z",
+                "updated_at": "2026-09-10T17:12:46Z",
+                "run_started_at": "2026-09-10T17:12:35Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/34506796635",
+                "head_sha": "c8b38abd8d663870c4f9bbaf4b2875d059cfc558",
+                "head_branch": "main",
+                "run_number": 130
+              }
+            },
+            ".github/workflows/pages.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 316454965,
+                "name": "Deploy documentation to GitHub Pages",
+                "path": ".github/workflows/pages.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-10T17:12:35Z",
+                "updated_at": "2026-09-10T17:13:10Z",
+                "run_started_at": "2026-09-10T17:12:35Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/34506796641",
+                "head_sha": "c8b38abd8d663870c4f9bbaf4b2875d059cfc558",
+                "head_branch": "main",
+                "run_number": 89
+              }
+            }
+          }
         }
       },
       "collection_error": null
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-09-29T05:42:41Z",
+      "observed_at": "2026-09-29T06:27:10Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-09-29T00:08:38Z",
-          "updated_at": "2026-09-29T00:04:12Z",
-          "open_issues_count": 41,
-          "head_sha": "d815ac6f3264ad45c5a48db9a60fda76bf280306"
+          "pushed_at": "2026-09-29T06:22:12Z",
+          "updated_at": "2026-09-29T06:22:17Z",
+          "open_issues_count": 36,
+          "head_sha": "99aca3d628f9e2a9962cf33bdf3fc4286dcf4cba"
         },
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
           "completed_examined": 50,
-          "workflows_examined": 11,
+          "workflows_examined": 8,
           "retired_workflows_examined": 0,
           "unresolved_failures": 0,
           "latest": [
@@ -1485,13 +1514,13 @@
               "conclusion": "skipped",
               "status": "completed",
               "event": "issues",
-              "created_at": "2026-09-29T01:20:24Z",
-              "updated_at": "2026-09-29T01:20:25Z",
-              "run_started_at": "2026-09-29T01:20:24Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36507427485",
+              "created_at": "2026-09-29T05:53:50Z",
+              "updated_at": "2026-09-29T05:53:51Z",
+              "run_started_at": "2026-09-29T05:53:50Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36528347452",
               "head_sha": "d815ac6f3264ad45c5a48db9a60fda76bf280306",
               "head_branch": "main",
-              "run_number": 1490
+              "run_number": 1505
             },
             {
               "workflow_id": 333347627,
@@ -1500,28 +1529,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-29T00:04:10Z",
-              "updated_at": "2026-09-29T00:04:25Z",
-              "run_started_at": "2026-09-29T00:04:10Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36501233644",
-              "head_sha": "d815ac6f3264ad45c5a48db9a60fda76bf280306",
+              "created_at": "2026-09-29T06:22:15Z",
+              "updated_at": "2026-09-29T06:22:34Z",
+              "run_started_at": "2026-09-29T06:22:15Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36530713205",
+              "head_sha": "99aca3d628f9e2a9962cf33bdf3fc4286dcf4cba",
               "head_branch": "main",
-              "run_number": 163
-            },
-            {
-              "workflow_id": 337404001,
-              "name": "Run cross-specification pressure test",
-              "path": ".github/workflows/cross-spec-pressure-test.yml",
-              "conclusion": "success",
-              "status": "completed",
-              "event": "workflow_dispatch",
-              "created_at": "2026-09-29T00:06:34Z",
-              "updated_at": "2026-09-29T00:06:56Z",
-              "run_started_at": "2026-09-29T00:06:34Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36501438963",
-              "head_sha": "d815ac6f3264ad45c5a48db9a60fda76bf280306",
-              "head_branch": "main",
-              "run_number": 175
+              "run_number": 164
             },
             {
               "workflow_id": 342518526,
@@ -1530,73 +1544,58 @@
               "conclusion": "skipped",
               "status": "completed",
               "event": "issues",
-              "created_at": "2026-09-29T01:20:24Z",
-              "updated_at": "2026-09-29T01:20:25Z",
-              "run_started_at": "2026-09-29T01:20:24Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36507427484",
+              "created_at": "2026-09-29T05:53:50Z",
+              "updated_at": "2026-09-29T05:53:56Z",
+              "run_started_at": "2026-09-29T05:53:50Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36528347502",
               "head_sha": "d815ac6f3264ad45c5a48db9a60fda76bf280306",
               "head_branch": "main",
-              "run_number": 1224
+              "run_number": 1237
             },
             {
               "workflow_id": 343401275,
               "name": "Reconcile RAHP-DPIP lifecycle and returns",
               "path": ".github/workflows/dpip-lifecycle.yml",
-              "conclusion": "success",
+              "conclusion": "skipped",
               "status": "completed",
-              "event": "schedule",
-              "created_at": "2026-09-29T01:16:32Z",
-              "updated_at": "2026-09-29T01:16:49Z",
-              "run_started_at": "2026-09-29T01:16:32Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36507122683",
-              "head_sha": "d815ac6f3264ad45c5a48db9a60fda76bf280306",
+              "event": "issue_comment",
+              "created_at": "2026-09-29T06:22:41Z",
+              "updated_at": "2026-09-29T06:22:42Z",
+              "run_started_at": "2026-09-29T06:22:41Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36530748710",
+              "head_sha": "99aca3d628f9e2a9962cf33bdf3fc4286dcf4cba",
               "head_branch": "main",
-              "run_number": 827
+              "run_number": 837
             },
             {
               "workflow_id": 343549711,
               "name": "Reconcile DTG end-to-end assurance",
               "path": ".github/workflows/dtg-assurance-reconcile.yml",
-              "conclusion": "skipped",
-              "status": "completed",
-              "event": "issues",
-              "created_at": "2026-09-29T01:20:24Z",
-              "updated_at": "2026-09-29T01:20:26Z",
-              "run_started_at": "2026-09-29T01:20:24Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36507427464",
-              "head_sha": "d815ac6f3264ad45c5a48db9a60fda76bf280306",
-              "head_branch": "main",
-              "run_number": 1844
-            },
-            {
-              "workflow_id": 343470013,
-              "name": "Consume DTG Portfolio Monitor assurance signals",
-              "path": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
               "conclusion": "success",
               "status": "completed",
-              "event": "push",
-              "created_at": "2026-09-29T00:04:09Z",
-              "updated_at": "2026-09-29T00:06:40Z",
-              "run_started_at": "2026-09-29T00:04:09Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36501233590",
+              "event": "schedule",
+              "created_at": "2026-09-29T06:09:10Z",
+              "updated_at": "2026-09-29T06:09:32Z",
+              "run_started_at": "2026-09-29T06:09:10Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36529611918",
               "head_sha": "d815ac6f3264ad45c5a48db9a60fda76bf280306",
               "head_branch": "main",
-              "run_number": 105
+              "run_number": 1870
             },
             {
               "workflow_id": 343549712,
               "name": "Advance DTG gatherer repository reviews",
               "path": ".github/workflows/dtg-repository-review-worker.yml",
-              "conclusion": "skipped",
+              "conclusion": "success",
               "status": "completed",
-              "event": "issues",
-              "created_at": "2026-09-29T01:20:24Z",
-              "updated_at": "2026-09-29T01:20:26Z",
-              "run_started_at": "2026-09-29T01:20:24Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36507427411",
+              "event": "schedule",
+              "created_at": "2026-09-29T05:58:36Z",
+              "updated_at": "2026-09-29T05:58:46Z",
+              "run_started_at": "2026-09-29T05:58:36Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36528727274",
               "head_sha": "d815ac6f3264ad45c5a48db9a60fda76bf280306",
               "head_branch": "main",
-              "run_number": 1479
+              "run_number": 1494
             },
             {
               "workflow_id": 333196290,
@@ -1605,13 +1604,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-29T00:04:10Z",
-              "updated_at": "2026-09-29T00:05:06Z",
-              "run_started_at": "2026-09-29T00:04:10Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36501233607",
-              "head_sha": "d815ac6f3264ad45c5a48db9a60fda76bf280306",
+              "created_at": "2026-09-29T06:22:15Z",
+              "updated_at": "2026-09-29T06:23:48Z",
+              "run_started_at": "2026-09-29T06:22:15Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36530713160",
+              "head_sha": "99aca3d628f9e2a9962cf33bdf3fc4286dcf4cba",
               "head_branch": "main",
-              "run_number": 947
+              "run_number": 949
             },
             {
               "workflow_id": 331522431,
@@ -1620,28 +1619,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-09-29T00:04:09Z",
-              "updated_at": "2026-09-29T00:05:21Z",
-              "run_started_at": "2026-09-29T00:04:09Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36501233596",
-              "head_sha": "d815ac6f3264ad45c5a48db9a60fda76bf280306",
+              "created_at": "2026-09-29T06:22:15Z",
+              "updated_at": "2026-09-29T06:23:27Z",
+              "run_started_at": "2026-09-29T06:22:15Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36530713135",
+              "head_sha": "99aca3d628f9e2a9962cf33bdf3fc4286dcf4cba",
               "head_branch": "main",
-              "run_number": 963
-            },
-            {
-              "workflow_id": 345766991,
-              "name": "Workflow governance",
-              "path": ".github/workflows/workflow-governance.yml",
-              "conclusion": "success",
-              "status": "completed",
-              "event": "push",
-              "created_at": "2026-09-28T23:59:23Z",
-              "updated_at": "2026-09-28T23:59:46Z",
-              "run_started_at": "2026-09-28T23:59:23Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36500823967",
-              "head_sha": "12a683be1330bbc4a254cb2343a37039684228a9",
-              "head_branch": "main",
-              "run_number": 232
+              "run_number": 965
             }
           ],
           "retired": [],
@@ -1679,7 +1663,67 @@
             ".github/workflows/workflow-governance.yml",
             "dynamic/dependabot/dependabot-updates",
             "dynamic/dependabot/update-graph"
-          ]
+          ],
+          "contract_evidence": {
+            ".github/workflows/validate.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 331522431,
+                "name": "validate",
+                "path": ".github/workflows/validate.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-29T06:22:15Z",
+                "updated_at": "2026-09-29T06:23:27Z",
+                "run_started_at": "2026-09-29T06:22:15Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36530713135",
+                "head_sha": "99aca3d628f9e2a9962cf33bdf3fc4286dcf4cba",
+                "head_branch": "main",
+                "run_number": 965
+              }
+            },
+            ".github/workflows/corpus-status.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 333347627,
+                "name": "Corpus source status",
+                "path": ".github/workflows/corpus-status.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-29T06:22:15Z",
+                "updated_at": "2026-09-29T06:22:34Z",
+                "run_started_at": "2026-09-29T06:22:15Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36530713205",
+                "head_sha": "99aca3d628f9e2a9962cf33bdf3fc4286dcf4cba",
+                "head_branch": "main",
+                "run_number": 164
+              }
+            },
+            ".github/workflows/pages.yml": {
+              "available": true,
+              "run": {
+                "workflow_id": 333196290,
+                "name": "Build and deploy RAHP documentation",
+                "path": ".github/workflows/pages.yml",
+                "conclusion": "success",
+                "status": "completed",
+                "event": "push",
+                "created_at": "2026-09-29T06:22:15Z",
+                "updated_at": "2026-09-29T06:23:48Z",
+                "run_started_at": "2026-09-29T06:22:15Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36530713160",
+                "head_sha": "99aca3d628f9e2a9962cf33bdf3fc4286dcf4cba",
+                "head_branch": "main",
+                "run_number": 949
+              }
+            },
+            ".github/workflows/cross-spec-pressure-test.yml": {
+              "available": true,
+              "run": null
+            }
+          }
         }
       },
       "collection_error": null
