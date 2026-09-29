@@ -38,6 +38,55 @@ def bind_current_workflow_inventory(owner,repo,observation,policy,token):
     active_unresolved=[r for r in workflow_state.get("unresolved",[]) if not r.get("path") or str(r.get("path")) in active_paths]
     workflow_state.update(latest=active_latest,retired=retired,workflows_examined=len(active_latest),retired_workflows_examined=len(retired),unresolved=active_unresolved,unresolved_failures=len(active_unresolved))
 
+def collect_contract_workflow_evidence(owner, repo, observation, contract, policy, token):
+    """Collect workflow evidence according to assurance-contract semantics.
+
+    The operational lookback remains authoritative for unresolved operational
+    failures. Assurance evidence is resolved separately so a quiet repository
+    does not lose valid evidence merely because time passed.
+    """
+    if not observation.get("available"):
+        return
+    workflow_state=observation.get("evidence",{}).get("workflow_runs")
+    if not isinstance(workflow_state,dict) or workflow_state.get("available") is False:
+        return
+    timeout=int(policy["collection"]["request_timeout_seconds"]); name=str(repo["name"])
+    contract_records={}
+    for claim_name,claim in contract.get("claims",{}).items():
+        evidence=claim.get("evidence",{})
+        if evidence.get("type")!="github-workflow":
+            continue
+        path=str(evidence.get("path") or "")
+        freshness=str(evidence.get("freshness","current-head"))
+        if not path:
+            continue
+        try:
+            if freshness=="current-head":
+                head_sha=observation.get("evidence",{}).get("repository",{}).get("head_sha")
+                if not head_sha:
+                    contract_records[path]={"available":False,"error":"repository HEAD is not observable"}
+                    continue
+                payload=legacy.request_json(
+                    f"https://api.github.com/repos/{owner}/{name}/actions/runs?head_sha={head_sha}&status=completed&per_page=100",
+                    token,timeout,
+                )
+            elif freshness=="latest-success":
+                payload=legacy.request_json(
+                    f"https://api.github.com/repos/{owner}/{name}/actions/runs?status=completed&per_page=100",
+                    token,timeout,
+                )
+            else:
+                contract_records[path]={"available":False,"error":f"unsupported freshness policy: {freshness}"}
+                continue
+            runs=payload.get("workflow_runs",[]) if isinstance(payload,dict) else []
+            matching=[run for run in runs if str(run.get("path") or "")==path]
+            if freshness=="latest-success":
+                matching=[run for run in matching if str(run.get("conclusion") or "") in {"success","neutral","skipped"}]
+            contract_records[path]={"available":True,"run":legacy.latest_workflow_states(matching,legacy.utc_now(),36500).get("latest",[None])[0] if matching else None}
+        except Exception as error:
+            contract_records[path]={"available":False,"error":str(error)}
+    workflow_state["contract_evidence"]=contract_records
+
 def inject_assurance_section(report,section):
     marker="## Governance boundary"; return report.replace(marker,f"{section}\n\n{marker}",1) if marker in report else f"{report}\n\n{section}\n"
 
@@ -53,7 +102,10 @@ def main():
     now=legacy.utc_now(); token=os.getenv("GITHUB_TOKEN")
     observations=[legacy.offline_observation(r,now) if args.offline else legacy.collect_repository(repo_owner(r,stewardship,policy["owner"]),r,policy,token,now) for r in repos]
     if not args.offline:
-        for repo,obs in zip(repos,observations): bind_current_workflow_inventory(repo_owner(repo,stewardship,policy["owner"]),repo,obs,policy,token)
+        for repo,obs in zip(repos,observations):
+            owner=repo_owner(repo,stewardship,policy["owner"])
+            bind_current_workflow_inventory(owner,repo,obs,policy,token)
+            collect_contract_workflow_evidence(owner,repo,obs,contracts.get("repositories",{}).get(str(repo["name"]),{}),policy,token)
     findings=[f for r,o in zip(repos,observations) for f in legacy.evaluate(r,o,policy,now)]
     assurance_states,assurance_findings=evaluate_portfolio_assurance(repos,observations,contracts); findings.extend(bind_assurance_findings(repos,assurance_findings,policy))
     # Account discovery remains scoped to the personal account; transferred portfolio members are deliberately excluded from churn inference.

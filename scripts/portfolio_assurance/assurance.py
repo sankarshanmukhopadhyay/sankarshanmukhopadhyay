@@ -52,11 +52,17 @@ def evaluate_workflow_claim(
         result.update(state="unobservable", reason="workflow evidence is not observable")
         return result
 
-    run = workflow_index(observation).get(path)
+    contract_evidence = workflows.get("contract_evidence", {}) if isinstance(workflows, dict) else {}
+    contract_record = contract_evidence.get(path) if isinstance(contract_evidence, dict) else None
+    if isinstance(contract_record, dict) and contract_record.get("available") is False:
+        result.update(state="unobservable", reason=f"contract evidence could not be collected: {contract_record.get('error') or 'unknown error'}")
+        return result
+
+    run = contract_record.get("run") if isinstance(contract_record, dict) else workflow_index(observation).get(path)
     if run is None:
         result.update(
             state="missing",
-            reason="no completed workflow execution was observed inside the governed lookback window",
+            reason="no completed workflow execution satisfying the configured evidence contract was observed",
         )
         return result
 
@@ -102,7 +108,7 @@ def finding_for_claim(repository: str, observed_at: str, result: dict[str, Any])
     }
     if state == "missing":
         rule_id, severity = "ASSURANCE_EVIDENCE_MISSING", "high"
-        claim = "Required assurance evidence was not observed inside the governed evidence window."
+        claim = "Required assurance evidence satisfying the configured evidence contract was not observed."
         action = "Restore or execute the repository-native assurance control and publish observable evidence."
     elif state == "unobservable":
         rule_id, severity = "ASSURANCE_EVIDENCE_UNOBSERVABLE", "high"
