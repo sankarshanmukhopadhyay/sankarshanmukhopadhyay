@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-28T23:15:33Z",
+  "generated_at": "2026-09-29T05:42:41Z",
   "repository": "TRQP-TSPP",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-28T23:15:33Z",
+    "observed_at": "2026-09-29T05:42:41Z",
     "default_branch": "main",
     "head_sha": "52b85bea6ac7c4dadea167a099227dde8542241c",
     "provenance_status": "observed"
@@ -40,13 +40,13 @@
   "finding_count": 3,
   "findings": [
     {
-      "finding_id": "PAM-2A04963159F8",
+      "finding_id": "PAM-5DC5A206D679",
       "finding_fingerprint": "PF-E87C22B11E6D",
       "repository": "TRQP-TSPP",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/ci.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T23:15:33Z",
+      "observed_at": "2026-09-29T05:42:41Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "profile_validation",
@@ -77,13 +77,13 @@
       }
     },
     {
-      "finding_id": "PAM-B22A12AD095A",
+      "finding_id": "PAM-7D6E3780B796",
       "finding_fingerprint": "PF-9C213FA6D34C",
       "repository": "TRQP-TSPP",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T23:15:33Z",
+      "observed_at": "2026-09-29T05:42:41Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "publication_integrity",
@@ -114,13 +114,13 @@
       }
     },
     {
-      "finding_id": "PAM-038F55B9F2C5",
+      "finding_id": "PAM-E62C6EA604A4",
       "finding_fingerprint": "PF-C97FFAD16838",
       "repository": "TRQP-TSPP",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/portfolio-contract.yml",
       "severity": "high",
-      "observed_at": "2026-09-28T23:15:33Z",
+      "observed_at": "2026-09-29T05:42:41Z",
       "claim": "Required assurance evidence was not observed inside the governed evidence window.",
       "evidence": {
         "claim": "portfolio_contract",
@@ -160,9 +160,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-09-28T23:15:33Z",
+      "last_observed": "2026-09-29T05:42:41Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-2A04963159F8"
+      "latest_finding_id": "PAM-5DC5A206D679"
     },
     {
       "finding_fingerprint": "PF-9C213FA6D34C",
@@ -172,9 +172,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-09-28T23:15:33Z",
+      "last_observed": "2026-09-29T05:42:41Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-B22A12AD095A"
+      "latest_finding_id": "PAM-7D6E3780B796"
     },
     {
       "finding_fingerprint": "PF-C97FFAD16838",
@@ -184,9 +184,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-09-28T23:15:33Z",
+      "last_observed": "2026-09-29T05:42:41Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-038F55B9F2C5"
+      "latest_finding_id": "PAM-E62C6EA604A4"
     }
   ],
   "handoff": {
