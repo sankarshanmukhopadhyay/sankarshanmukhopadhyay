@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-29T22:14:15Z",
+  "generated_at": "2026-09-30T05:31:19Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -722,13 +722,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-29T15:12:51Z",
-            "updated_at": "2026-09-29T15:14:03Z",
-            "run_started_at": "2026-09-29T15:12:51Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36588466329",
-            "head_sha": "5ee7b7a63ad8162e050dfee40a3bc1209022656d",
+            "created_at": "2026-09-30T00:28:21Z",
+            "updated_at": "2026-09-30T00:29:22Z",
+            "run_started_at": "2026-09-30T00:28:21Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36650493808",
+            "head_sha": "62c03de46bd12a647219910014872d223acb1de7",
             "head_branch": "main",
-            "run_number": 977
+            "run_number": 997
           }
         },
         {
@@ -746,13 +746,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-29T15:12:51Z",
-            "updated_at": "2026-09-29T15:13:11Z",
-            "run_started_at": "2026-09-29T15:12:51Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36588466354",
-            "head_sha": "5ee7b7a63ad8162e050dfee40a3bc1209022656d",
+            "created_at": "2026-09-30T00:28:21Z",
+            "updated_at": "2026-09-30T00:28:35Z",
+            "run_started_at": "2026-09-30T00:28:21Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36650493821",
+            "head_sha": "62c03de46bd12a647219910014872d223acb1de7",
             "head_branch": "main",
-            "run_number": 167
+            "run_number": 175
           }
         },
         {
@@ -770,13 +770,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-09-29T15:12:51Z",
-            "updated_at": "2026-09-29T15:13:54Z",
-            "run_started_at": "2026-09-29T15:12:51Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36588466422",
-            "head_sha": "5ee7b7a63ad8162e050dfee40a3bc1209022656d",
+            "created_at": "2026-09-30T00:28:21Z",
+            "updated_at": "2026-09-30T00:29:23Z",
+            "run_started_at": "2026-09-30T00:28:21Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36650493819",
+            "head_sha": "62c03de46bd12a647219910014872d223acb1de7",
             "head_branch": "main",
-            "run_number": 961
+            "run_number": 981
           }
         },
         {
@@ -785,23 +785,8 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/cross-spec-pressure-test.yml",
           "freshness_policy": "latest-success",
-          "state": "satisfied",
-          "reason": "successful workflow evidence satisfies the configured freshness policy",
-          "evidence": {
-            "workflow_id": 337404001,
-            "name": "Run cross-specification pressure test",
-            "path": ".github/workflows/cross-spec-pressure-test.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "workflow_dispatch",
-            "created_at": "2026-09-29T18:36:33Z",
-            "updated_at": "2026-09-29T18:36:54Z",
-            "run_started_at": "2026-09-29T18:36:33Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/36613267735",
-            "head_sha": "5ee7b7a63ad8162e050dfee40a3bc1209022656d",
-            "head_branch": "main",
-            "run_number": 178
-          }
+          "state": "missing",
+          "reason": "no completed workflow execution satisfying the configured evidence contract was observed"
         }
       ],
       "required_claims": 3,
