@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-09-29T22:14:15Z  
+**Generated:** 2026-09-30T05:31:19Z  
 **Open findings:** 0  
-**Repository snapshot:** `5ee7b7a63ad8162e050dfee40a3bc1209022656d`  
+**Repository snapshot:** `62c03de46bd12a647219910014872d223acb1de7`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
