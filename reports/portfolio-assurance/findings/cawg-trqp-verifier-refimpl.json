@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-10-01T13:12:13Z",
+  "generated_at": "2026-10-01T22:40:25Z",
   "repository": "cawg-trqp-verifier-refimpl",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-10-01T13:12:13Z",
+    "observed_at": "2026-10-01T22:40:25Z",
     "default_branch": "main",
     "head_sha": "23ceae7141359244deabdfba01df922e99fa07dc",
     "provenance_status": "observed"
