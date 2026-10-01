@@ -1,13 +1,13 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-30T22:14:55Z",
+  "generated_at": "2026-10-01T05:51:28Z",
   "repository": "rahp-toolkit",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-30T22:14:55Z",
+    "observed_at": "2026-10-01T05:51:28Z",
     "default_branch": "main",
-    "head_sha": "7a3ae08878eac35467fa1761178ff426462bc68b",
+    "head_sha": "9ac4452b94ebd18a84cc798e0411210f11d03734",
     "provenance_status": "observed"
   },
   "assessment": {

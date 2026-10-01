@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-09-30T22:14:55Z",
+  "generated_at": "2026-10-01T05:51:28Z",
   "repository": "trqp-conformance-suite",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-09-30T22:14:55Z",
+    "observed_at": "2026-10-01T05:51:28Z",
     "default_branch": "main",
     "head_sha": "afd31cd794cee43ed4c3e08f7fd25e97e9e829cd",
     "provenance_status": "observed"
@@ -24,7 +24,7 @@
     "assurance": {
       "status": "evaluated",
       "description": "Repository-specific assurance evidence coverage, execution state, provenance and freshness against governed repository revisions.",
-      "open_findings": 0
+      "open_findings": 1
     },
     "cross_specification": {
       "status": "not-evaluated",
@@ -37,9 +37,60 @@
     "dashboard": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/docs/portfolio-assurance/dashboard.html",
     "latest_report": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/latest.html"
   },
-  "finding_count": 0,
-  "findings": [],
-  "lifecycle": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "finding_id": "PAM-0DD811147D00",
+      "finding_fingerprint": "PF-7689472EA3BE",
+      "repository": "trqp-conformance-suite",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/cts.yml",
+      "severity": "high",
+      "observed_at": "2026-10-01T05:51:28Z",
+      "claim": "Required assurance evidence satisfying the configured evidence contract was not observed.",
+      "evidence": {
+        "claim": "conformance_suite",
+        "state": "missing",
+        "reason": "no completed workflow execution satisfying the configured evidence contract was observed",
+        "freshness_policy": "current-head",
+        "repository_head_sha": null,
+        "evidence_head_sha": null,
+        "workflow": null
+      },
+      "recommended_action": "Restore or execute the repository-native assurance control and publish observable evidence.",
+      "dimension": "assurance",
+      "remediation": {
+        "objective": "Restore or execute the repository-native control required by the governed assurance contract.",
+        "acceptance_criteria": [
+          "The required evidence is observable inside the governed lookback window.",
+          "The evidence is attributable to the configured repository-native control."
+        ],
+        "verification": [
+          "Execute the required repository-native control and rerun the portfolio monitor."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": true,
+        "target": "target-repository",
+        "minimum_severity": "medium"
+      }
+    }
+  ],
+  "lifecycle": [
+    {
+      "finding_fingerprint": "PF-7689472EA3BE",
+      "repository": "trqp-conformance-suite",
+      "rule_id": "ASSURANCE_EVIDENCE_MISSING",
+      "subject": ".github/workflows/cts.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-09-28T03:54:08Z",
+      "last_observed": "2026-10-01T05:51:28Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-0DD811147D00"
+    }
+  ],
   "handoff": {
     "authority": "repository-local-governance",
     "intended_use": "Supply this dossier with the affected repository source during remediation planning and implementation.",

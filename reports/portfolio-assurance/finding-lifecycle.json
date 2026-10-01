@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-30T22:14:55Z",
+  "generated_at": "2026-10-01T05:51:28Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -668,11 +668,11 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/cts.yml",
       "dimension": "assurance",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-09-29T05:42:41Z",
-      "resolved_at": "2026-09-29T06:27:10Z",
-      "latest_finding_id": "PAM-7D392A944B1E"
+      "last_observed": "2026-10-01T05:51:28Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-0DD811147D00"
     },
     "PF-5B624F0DEAAD": {
       "finding_fingerprint": "PF-5B624F0DEAAD",
