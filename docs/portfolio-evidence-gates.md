@@ -4,6 +4,8 @@ This page explains the evidence-gated maturity overlay in `data/portfolio-eviden
 
 The overlay refines the existing portfolio maturity register. It does not replace `data/repository-status.yaml`, which remains the canonical control surface for portfolio membership, tier, maturity, lifecycle, authority, provenance and review dates.
 
+For the strategy context behind this model, see [`portfolio-strategy-context.md`](portfolio-strategy-context.md).
+
 ## Purpose
 
 The existing register answers:
