@@ -1,5 +1,5 @@
 schema_version: '0.1'
-status: initial-calibration
+status: expanded-calibration
 scope:
   basis: data/repository-status.yaml
   statement: >-
@@ -133,3 +133,117 @@ initial_calibration:
     stop_condition: pause-until-external-evidence
     external_dependency: External implementers, reviewers or admitted target systems.
     qbf_relevance: Potential shared evidence lab for QBF assurance propositions and personal upstream-facing experiments.
+  - repository: open-national-digital-trust-framework
+    owner: qbf-consulting
+    portfolio_view: qbf-institutional
+    repo_role: jurisdiction-neutral-digital-trust-framework
+    current_maturity_boundary: >-
+      Stable framework content can support reference, adoption discussion and
+      jurisdiction-neutral design review. Further progress should be tied to
+      adoption evidence, implementation use or formal review feedback.
+    claim_boundary: >-
+      The framework may be presented as a stable public artifact, but not as
+      formally adopted by a jurisdiction or deployed by an authority without
+      explicit external evidence.
+    next_evidence_gate: [adoption-clarity, release-evidence]
+    gate_state: waiting-external-evidence
+    stop_condition: pause-until-external-evidence
+    external_dependency: Adopter, reviewer, jurisdictional implementation or public deployment evidence.
+    qbf_relevance: Core QBF institutional framework asset.
+  - repository: governance-authority-assurance-metamodel
+    owner: qbf-consulting
+    portfolio_view: qbf-institutional
+    repo_role: normative-governance-authority-model
+    current_maturity_boundary: >-
+      Candidate governance-authority semantics can support modeling, review and
+      assurance alignment. Further progress should be tied to validation against
+      concrete authority, delegation, enforcement or revocation cases.
+    claim_boundary: >-
+      The metamodel should not be claimed as a universal governance ontology,
+      implementation standard or externally validated assurance model without
+      independent review or implementation binding.
+    next_evidence_gate: [assessment-result, implementation-binding, independent-reproduction]
+    gate_state: ready
+    stop_condition: pause-until-external-evidence
+    external_dependency: External model review, implementation use or assurance case binding.
+    qbf_relevance: Core QBF semantics asset for governance and authority assurance.
+  - repository: trust-systems-meta-model
+    owner: qbf-consulting
+    portfolio_view: qbf-institutional
+    repo_role: canonical-semantic-model
+    current_maturity_boundary: >-
+      Candidate canonical semantics can govern vocabulary alignment across the
+      portfolio. The next valuable work is alignment evidence from dependent
+      schemas, tools or assurance artifacts.
+    claim_boundary: >-
+      The model should not claim canonical status outside the governed portfolio
+      or external ecosystems without explicit adoption or alignment evidence.
+    next_evidence_gate: [implementation-binding, assessment-result, release-evidence]
+    gate_state: ready
+    stop_condition: pause-until-external-evidence
+    external_dependency: Dependent schema alignment, external reviewer or adopter evidence.
+    qbf_relevance: QBF semantic backbone for cross-repo interoperability.
+  - repository: trust-infrastructure-schemas
+    owner: qbf-consulting
+    portfolio_view: qbf-institutional
+    repo_role: portable-schema-contracts
+    current_maturity_boundary: >-
+      Candidate portable schema contracts can encode governance, evidence and
+      relationship records. Further progress should produce validation, example
+      instances or downstream conformance evidence.
+    claim_boundary: >-
+      Schema validity is not operational assurance, ecosystem conformance or
+      adoption evidence unless tied to validated instances and consumers.
+    next_evidence_gate: [implementation-binding, release-evidence, independent-reproduction]
+    gate_state: ready
+    stop_condition: continue-internal-hardening
+    external_dependency: Downstream consumers, validation artifacts or interop examples.
+    qbf_relevance: QBF machine-verifiable contract layer.
+  - repository: trust-graph-artifacts
+    owner: qbf-consulting
+    portfolio_view: qbf-institutional
+    repo_role: executable-governance-incubator
+    current_maturity_boundary: >-
+      Incubates executable governance patterns and negative-assurance tests.
+      Further progress should be limited to patterns that can produce reusable
+      artifacts, tests or adoption-ready examples.
+    claim_boundary: >-
+      Incubator artifacts should not be presented as stable controls, deployed
+      governance infrastructure or independently validated assurance evidence.
+    next_evidence_gate: [implementation-binding, adoption-clarity, release-evidence]
+    gate_state: ready
+    stop_condition: continue-internal-hardening
+    external_dependency: Reusable examples, downstream adoption or test evidence.
+    qbf_relevance: QBF pattern incubator and source for future governed assets.
+  - repository: digital-governance-paper-notes
+    owner: sankarshanmukhopadhyay
+    portfolio_view: personal-upstream-facing
+    repo_role: research-analysis-and-review-archive
+    current_maturity_boundary: >-
+      Stable research notes can support synthesis, issue commentary and concept
+      discovery. The repository should remain a research archive unless a note is
+      promoted into an executable framework, schema or assurance case elsewhere.
+    claim_boundary: >-
+      Paper review notes are not evidence of implementation validity, consensus,
+      formal peer review by the portfolio, or QBF institutional position.
+    next_evidence_gate: [maintenance-only, adoption-clarity]
+    gate_state: ready
+    stop_condition: maintenance-only
+    external_dependency: New papers, explicit synthesis need or downstream promotion target.
+    qbf_relevance: Background research source; not a QBF institutional assurance surface.
+  - repository: kiranaos
+    owner: sankarshanmukhopadhyay
+    portfolio_view: personal-upstream-facing
+    repo_role: applied-product-and-domain-demonstrator
+    current_maturity_boundary: >-
+      Applied product work can demonstrate domain design patterns, but further
+      work should be driven by user, deployment or issue-template feedback rather
+      than speculative internal expansion.
+    claim_boundary: >-
+      Product-roadmap completion should not be treated as deployment evidence,
+      user validation or operational readiness without external use evidence.
+    next_evidence_gate: [usability-validation, adoption-clarity, implementation-binding]
+    gate_state: waiting-external-evidence
+    stop_condition: pause-until-external-evidence
+    external_dependency: User feedback, deployment candidate or concrete issue report.
+    qbf_relevance: Adjacent applied learning surface; not core QBF trust-infrastructure evidence.
