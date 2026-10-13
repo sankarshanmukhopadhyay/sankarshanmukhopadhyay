@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-01T22:40:25Z",
+  "generated_at": "2026-10-13T14:09:56Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -166,9 +166,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-10-01T22:40:25Z",
+      "last_observed": "2026-10-13T14:09:56Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-F42B7B592E31"
+      "latest_finding_id": "PAM-9BE914AB7FCB"
     },
     "PF-FE9A3049B948": {
       "finding_fingerprint": "PF-FE9A3049B948",

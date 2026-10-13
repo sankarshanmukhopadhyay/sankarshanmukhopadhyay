@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Portfolio Assurance Report — 2026-10-01
+title: Portfolio Assurance Report — 2026-10-13
 nav_exclude: true
 search_exclude: true
 ---
 
-# Portfolio Assurance Report — 2026-10-01
+# Portfolio Assurance Report — 2026-10-13
 
-**Observed:** 2026-10-01T22:40:25Z  
+**Observed:** 2026-10-13T14:09:56Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 1  
 **Unclassified public repositories:** 0
@@ -45,7 +45,7 @@ search_exclude: true
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-F42B7B592E31: rahp-toolkit
+### PAM-9BE914AB7FCB: rahp-toolkit
 
 - **Fingerprint:** `PF-4E123844FBF6`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`

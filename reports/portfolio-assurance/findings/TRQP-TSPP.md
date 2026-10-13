@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `TRQP-TSPP`
 
-**Generated:** 2026-10-01T22:40:25Z  
+**Generated:** 2026-10-13T14:09:56Z  
 **Open findings:** 0  
-**Repository snapshot:** `52b85bea6ac7c4dadea167a099227dde8542241c`  
+**Repository snapshot:** `ea2e74f37e496087d5261a71b24b8f93ceebb721`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
