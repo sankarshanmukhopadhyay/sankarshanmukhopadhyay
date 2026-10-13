@@ -1,0 +1,135 @@
+schema_version: '0.1'
+status: initial-calibration
+scope:
+  basis: data/repository-status.yaml
+  statement: >-
+    This overlay refines the portfolio maturity register by recording evidence
+    boundaries, next valid evidence gates and stop conditions. It does not replace
+    repository classification, maturity, lifecycle, authority or review-date
+    controls in data/repository-status.yaml.
+controlled_vocabularies:
+  portfolio_view: [personal-upstream-facing, qbf-institutional, shared]
+  gate_state: [not-started, ready, waiting-external-evidence, blocked, complete]
+  evidence_gate:
+    - adoption-clarity
+    - implementation-binding
+    - independent-reproduction
+    - assessment-result
+    - non-synthetic-target
+    - upstream-decision
+    - release-evidence
+    - usability-validation
+    - maintenance-only
+  stop_condition:
+    - pause-until-external-evidence
+    - pause-until-upstream-decision
+    - pause-until-implementation-target
+    - maintenance-only
+    - continue-internal-hardening
+principles:
+  - name: evidence-before-expansion
+    statement: >-
+      New portfolio work should change adoption clarity, evidence quality,
+      assessment readiness, implementation binding, independent reproducibility
+      or documentation usability.
+  - name: no-internal-overclaim
+    statement: >-
+      Repository-owned fixtures, documentation, or CI runs must not be promoted
+      into independent reproduction, production assurance, ecosystem conformance,
+      or consumer-safety claims.
+  - name: explicit-stop-points
+    statement: >-
+      A repository is mature when it can state what evidence it cannot produce
+      internally and what external gate is required next.
+views:
+  personal-upstream-facing:
+    purpose: >-
+      Tracks personal, experimental, upstream-facing and contribution-oriented
+      work where the next gate may depend on upstream review, independent audit,
+      or external implementation adoption.
+  qbf-institutional:
+    purpose: >-
+      Tracks institutional, assurance, corpus, protocol and client-facing assets
+      whose public claims must remain bounded by evidence and adoption state.
+initial_calibration:
+  - repository: digital-trust-failure-corpus
+    owner: qbf-consulting
+    portfolio_view: qbf-institutional
+    repo_role: failure-corpus-and-assurance-workbench
+    current_maturity_boundary: >-
+      CPC-001 has repository-owned synthetic execution, CI-backed synthetic
+      evidence and explicit gates for independent reproduction, RAHP assessment
+      and non-synthetic target admission.
+    claim_boundary: >-
+      The corpus may claim executable synthetic evidence and evidence-gated
+      readiness, but not independent reproduction, product safety, ARPA
+      conformance, completed RAHP assessment or consumer usability validation.
+    next_evidence_gate: [non-synthetic-target, independent-reproduction, assessment-result]
+    gate_state: waiting-external-evidence
+    stop_condition: pause-until-external-evidence
+    external_dependency: >-
+      Concrete implementation target, independent reviewer/environment or actual
+      RAHP assessment execution.
+    qbf_relevance: Core QBF assurance asset and failure-proposition workbench.
+  - repository: rahp-toolkit
+    owner: sankarshanmukhopadhyay
+    portfolio_view: personal-upstream-facing
+    repo_role: assessment-toolkit-and-evidence-controller
+    current_maturity_boundary: >-
+      Produces assessment artifacts, controller outputs and release-comparison
+      evidence; further progress should be tied to concrete assessment targets,
+      audit preparation or upstream convergence.
+    claim_boundary: >-
+      Tool output is assessment evidence, not automatic governance acceptance,
+      interoperability certification or implementation approval.
+    next_evidence_gate: [assessment-result, independent-reproduction, upstream-decision]
+    gate_state: ready
+    stop_condition: pause-until-external-evidence
+    external_dependency: >-
+      Independent audit, upstream RAHP decision, or concrete target assessment.
+    qbf_relevance: Method source and possible assessment substrate; not itself a QBF client-facing claim.
+  - repository: agent-registry-protocol
+    owner: qbf-consulting
+    portfolio_view: qbf-institutional
+    repo_role: protocol-specification-for-agent-authority-control
+    current_maturity_boundary: >-
+      Candidate protocol semantics and documentation are available; stronger
+      claims require implementation, interop or adoption evidence.
+    claim_boundary: >-
+      The protocol may describe authority, delegation and lifecycle semantics;
+      it should not claim deployment safety or ecosystem adoption without evidence.
+    next_evidence_gate: [implementation-binding, independent-reproduction, release-evidence]
+    gate_state: ready
+    stop_condition: pause-until-implementation-target
+    external_dependency: Implementer, interop environment or adopter feedback.
+    qbf_relevance: QBF protocol asset and candidate implementation target for assurance cases such as CPC-001.
+  - repository: tswg-trust-registry-protocol
+    owner: sankarshanmukhopadhyay
+    portfolio_view: personal-upstream-facing
+    repo_role: downstream-analysis-and-upstream-convergence-work
+    current_maturity_boundary: >-
+      Downstream synthesis can prepare upstream contributions, but authority for
+      canonical protocol acceptance remains upstream.
+    claim_boundary: >-
+      Downstream analysis should not be presented as upstream acceptance,
+      deployment readiness or conformance evidence.
+    next_evidence_gate: [upstream-decision, implementation-binding]
+    gate_state: waiting-external-evidence
+    stop_condition: pause-until-upstream-decision
+    external_dependency: Upstream maintainers or implementation target.
+    qbf_relevance: Pattern source for registry assurance; not a QBF-owned institutional surface by default.
+  - repository: trust-protocol-interop-lab
+    owner: sankarshanmukhopadhyay
+    portfolio_view: shared
+    repo_role: interoperability-lab-and-experimental-composition-surface
+    current_maturity_boundary: >-
+      Can demonstrate experimental compositions and collect evidence, but does
+      not by itself confer production interoperability or governance acceptance.
+    claim_boundary: >-
+      Lab success is bounded experimental evidence unless independently reproduced
+      and tied to admitted implementation targets.
+    next_evidence_gate: [implementation-binding, independent-reproduction, assessment-result]
+    gate_state: ready
+    stop_condition: pause-until-external-evidence
+    external_dependency: External implementers, reviewers or admitted target systems.
+    qbf_relevance: Potential shared evidence lab for QBF assurance propositions and personal upstream-facing experiments.
