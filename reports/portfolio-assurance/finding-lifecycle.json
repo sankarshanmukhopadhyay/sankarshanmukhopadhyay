@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-14T11:50:14Z",
+  "generated_at": "2026-10-14T17:09:02Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -164,10 +164,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-25T07:08:19Z",
       "last_observed": "2026-10-14T11:50:14Z",
-      "resolved_at": null,
+      "resolved_at": "2026-10-14T17:09:02Z",
       "latest_finding_id": "PAM-66D53ACDA56C"
     },
     "PF-FE9A3049B948": {
@@ -745,6 +745,30 @@
       "last_observed": "2026-09-29T05:42:41Z",
       "resolved_at": "2026-09-29T06:27:10Z",
       "latest_finding_id": "PAM-6E9906B9BB40"
+    },
+    "PF-D7F92BB59D15": {
+      "finding_fingerprint": "PF-D7F92BB59D15",
+      "repository": "rahp-toolkit",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "operational",
+      "status": "open",
+      "first_observed": "2026-10-14T17:09:02Z",
+      "last_observed": "2026-10-14T17:09:02Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-15207169D99D"
+    },
+    "PF-20C330F3C144": {
+      "finding_fingerprint": "PF-20C330F3C144",
+      "repository": "rahp-toolkit",
+      "rule_id": "ASSURANCE_CONTROL_FAILED",
+      "subject": ".github/workflows/pages.yml",
+      "dimension": "assurance",
+      "status": "open",
+      "first_observed": "2026-10-14T17:09:02Z",
+      "last_observed": "2026-10-14T17:09:02Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-8AC1864FE5BD"
     }
   }
 }
