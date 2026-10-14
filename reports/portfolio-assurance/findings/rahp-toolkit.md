@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-10-14T11:50:14Z  
-**Open findings:** 1  
-**Repository snapshot:** `88cf85e09375483b526e57d4873274ca8860d82d`  
+**Generated:** 2026-10-14T17:09:02Z  
+**Open findings:** 2  
+**Repository snapshot:** `3b2c738a403ba682125f6b5c8b48320f9b4c4173`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
@@ -20,18 +20,69 @@ search_exclude: true
 |---|---|---:|
 | Operational | `evaluated` | 1 |
 | Governance | `evaluated` | 0 |
-| Assurance | `evaluated` | 0 |
+| Assurance | `evaluated` | 1 |
 | Cross Specification | `not-evaluated` | 0 |
 
 ## Open findings
 
-## PF-4E123844FBF6 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
+## PF-20C330F3C144 — ASSURANCE_CONTROL_FAILED
 
-- Observation: `PAM-66D53ACDA56C` at `2026-10-14T11:50:14Z`
+- Observation: `PAM-8AC1864FE5BD` at `2026-10-14T17:09:02Z`
+- Severity: `high`
+- Dimension: `assurance`
+- Subject: `.github/workflows/pages.yml`
+- Lifecycle: `open`; first observed `2026-10-14T17:09:02Z`
+- Claim: The repository-native control bound to this assurance claim is currently failing.
+- Automatic effect: `none`
+
+### Evidence
+
+```json
+{
+  "claim": "publication_integrity",
+  "evidence_head_sha": null,
+  "freshness_policy": "current-head",
+  "reason": "latest completed workflow conclusion is failure",
+  "repository_head_sha": null,
+  "state": "degraded",
+  "workflow": {
+    "conclusion": "failure",
+    "created_at": "2026-10-14T16:22:05Z",
+    "event": "push",
+    "head_branch": "main",
+    "head_sha": "3b2c738a403ba682125f6b5c8b48320f9b4c4173",
+    "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38597476932",
+    "name": "Build and deploy RAHP documentation",
+    "path": ".github/workflows/pages.yml",
+    "run_number": 1180,
+    "run_started_at": "2026-10-14T16:22:05Z",
+    "status": "completed",
+    "updated_at": "2026-10-14T16:23:07Z",
+    "workflow_id": 333196290
+  }
+}
+```
+
+### Remediation objective
+
+Resolve the failing repository-native assurance control or record an explicit governed disposition.
+
+### Acceptance criteria
+
+- [ ] The configured assurance control completes successfully.
+- [ ] The resulting evidence remains attributable to the configured repository revision.
+
+### Verification
+
+- Execute the control and rerun the portfolio monitor.
+
+## PF-D7F92BB59D15 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
+
+- Observation: `PAM-15207169D99D` at `2026-10-14T17:09:02Z`
 - Severity: `medium`
 - Dimension: `operational`
-- Subject: `.github/workflows/instance-watch.yml`
-- Lifecycle: `open`; first observed `2026-08-25T07:08:19Z`
+- Subject: `.github/workflows/pages.yml`
+- Lifecycle: `open`; first observed `2026-10-14T17:09:02Z`
 - Claim: The latest completed default-branch run for this workflow is failing within the governed observation window.
 - Automatic effect: `none`
 
@@ -82,17 +133,17 @@ search_exclude: true
       "available": true,
       "run": {
         "conclusion": "success",
-        "created_at": "2026-10-14T02:20:46Z",
+        "created_at": "2026-10-14T16:22:05Z",
         "event": "push",
         "head_branch": "main",
-        "head_sha": "88cf85e09375483b526e57d4873274ca8860d82d",
-        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38500539890",
+        "head_sha": "3b2c738a403ba682125f6b5c8b48320f9b4c4173",
+        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38597477024",
         "name": "Corpus source status",
         "path": ".github/workflows/corpus-status.yml",
-        "run_number": 243,
-        "run_started_at": "2026-10-14T02:20:46Z",
+        "run_number": 247,
+        "run_started_at": "2026-10-14T16:22:05Z",
         "status": "completed",
-        "updated_at": "2026-10-14T02:21:06Z",
+        "updated_at": "2026-10-14T16:22:27Z",
         "workflow_id": 333347627
       }
     },
@@ -103,18 +154,18 @@ search_exclude: true
     ".github/workflows/pages.yml": {
       "available": true,
       "run": {
-        "conclusion": "success",
-        "created_at": "2026-10-14T02:20:46Z",
+        "conclusion": "failure",
+        "created_at": "2026-10-14T16:22:05Z",
         "event": "push",
         "head_branch": "main",
-        "head_sha": "88cf85e09375483b526e57d4873274ca8860d82d",
-        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38500539865",
+        "head_sha": "3b2c738a403ba682125f6b5c8b48320f9b4c4173",
+        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38597476932",
         "name": "Build and deploy RAHP documentation",
         "path": ".github/workflows/pages.yml",
-        "run_number": 1158,
-        "run_started_at": "2026-10-14T02:20:46Z",
+        "run_number": 1180,
+        "run_started_at": "2026-10-14T16:22:05Z",
         "status": "completed",
-        "updated_at": "2026-10-14T02:21:46Z",
+        "updated_at": "2026-10-14T16:23:07Z",
         "workflow_id": 333196290
       }
     },
@@ -122,17 +173,17 @@ search_exclude: true
       "available": true,
       "run": {
         "conclusion": "success",
-        "created_at": "2026-10-14T02:20:46Z",
+        "created_at": "2026-10-14T16:22:05Z",
         "event": "push",
         "head_branch": "main",
-        "head_sha": "88cf85e09375483b526e57d4873274ca8860d82d",
-        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38500539867",
+        "head_sha": "3b2c738a403ba682125f6b5c8b48320f9b4c4173",
+        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38597477058",
         "name": "validate",
         "path": ".github/workflows/validate.yml",
-        "run_number": 1176,
-        "run_started_at": "2026-10-14T02:20:46Z",
+        "run_number": 1198,
+        "run_started_at": "2026-10-14T16:22:05Z",
         "status": "completed",
-        "updated_at": "2026-10-14T02:22:07Z",
+        "updated_at": "2026-10-14T16:23:15Z",
         "workflow_id": 331522431
       }
     }
@@ -140,152 +191,122 @@ search_exclude: true
   "latest": [
     {
       "conclusion": "skipped",
-      "created_at": "2026-10-14T08:07:02Z",
+      "created_at": "2026-10-14T15:38:22Z",
       "event": "issues",
       "head_branch": "main",
       "head_sha": "88cf85e09375483b526e57d4873274ca8860d82d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38532870022",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38591076726",
       "name": "Execute bounded combined RAHP reviews",
       "path": ".github/workflows/combined-review-worker.yml",
-      "run_number": 1893,
-      "run_started_at": "2026-10-14T08:07:02Z",
+      "run_number": 1902,
+      "run_started_at": "2026-10-14T15:38:22Z",
       "status": "completed",
-      "updated_at": "2026-10-14T08:07:03Z",
+      "updated_at": "2026-10-14T15:38:23Z",
       "workflow_id": 343490806
     },
     {
       "conclusion": "success",
-      "created_at": "2026-10-14T02:20:46Z",
+      "created_at": "2026-10-14T16:22:05Z",
       "event": "push",
       "head_branch": "main",
-      "head_sha": "88cf85e09375483b526e57d4873274ca8860d82d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38500539890",
+      "head_sha": "3b2c738a403ba682125f6b5c8b48320f9b4c4173",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38597477024",
       "name": "Corpus source status",
       "path": ".github/workflows/corpus-status.yml",
-      "run_number": 243,
-      "run_started_at": "2026-10-14T02:20:46Z",
+      "run_number": 247,
+      "run_started_at": "2026-10-14T16:22:05Z",
       "status": "completed",
-      "updated_at": "2026-10-14T02:21:06Z",
+      "updated_at": "2026-10-14T16:22:27Z",
       "workflow_id": 333347627
     },
     {
       "conclusion": "skipped",
-      "created_at": "2026-10-14T08:07:02Z",
+      "created_at": "2026-10-14T14:09:22Z",
       "event": "issues",
       "head_branch": "main",
       "head_sha": "88cf85e09375483b526e57d4873274ca8860d82d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38532869944",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38577992987",
       "name": "Promote qualified RAHP referrals to DPIP",
       "path": ".github/workflows/dpip-handoff.yml",
-      "run_number": 1563,
-      "run_started_at": "2026-10-14T08:07:02Z",
+      "run_number": 1570,
+      "run_started_at": "2026-10-14T14:09:22Z",
       "status": "completed",
-      "updated_at": "2026-10-14T08:07:12Z",
+      "updated_at": "2026-10-14T14:09:24Z",
       "workflow_id": 342518526
     },
     {
-      "conclusion": "success",
-      "created_at": "2026-10-14T05:25:16Z",
-      "event": "schedule",
+      "conclusion": "skipped",
+      "created_at": "2026-10-14T16:11:55Z",
+      "event": "issue_comment",
       "head_branch": "main",
-      "head_sha": "88cf85e09375483b526e57d4873274ca8860d82d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38516536823",
+      "head_sha": "597729e594e0dbdf643bc7f893985cd2fb3b37c3",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38596008304",
       "name": "Reconcile RAHP-DPIP lifecycle and returns",
       "path": ".github/workflows/dpip-lifecycle.yml",
-      "run_number": 1128,
-      "run_started_at": "2026-10-14T05:25:16Z",
+      "run_number": 1141,
+      "run_started_at": "2026-10-14T16:11:55Z",
       "status": "completed",
-      "updated_at": "2026-10-14T05:25:49Z",
+      "updated_at": "2026-10-14T16:11:56Z",
       "workflow_id": 343401275
     },
     {
       "conclusion": "skipped",
-      "created_at": "2026-10-14T08:07:02Z",
+      "created_at": "2026-10-14T16:12:02Z",
       "event": "issues",
       "head_branch": "main",
-      "head_sha": "88cf85e09375483b526e57d4873274ca8860d82d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38532869893",
+      "head_sha": "597729e594e0dbdf643bc7f893985cd2fb3b37c3",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38596024350",
       "name": "Reconcile DTG end-to-end assurance",
       "path": ".github/workflows/dtg-assurance-reconcile.yml",
-      "run_number": 2335,
-      "run_started_at": "2026-10-14T08:07:02Z",
+      "run_number": 2353,
+      "run_started_at": "2026-10-14T16:12:02Z",
       "status": "completed",
-      "updated_at": "2026-10-14T08:07:03Z",
+      "updated_at": "2026-10-14T16:12:04Z",
       "workflow_id": 343549711
     },
     {
-      "conclusion": "success",
-      "created_at": "2026-10-14T05:59:51Z",
-      "event": "schedule",
-      "head_branch": "main",
-      "head_sha": "88cf85e09375483b526e57d4873274ca8860d82d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38519653062",
-      "name": "Consume DTG Portfolio Monitor assurance signals",
-      "path": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
-      "run_number": 138,
-      "run_started_at": "2026-10-14T05:59:51Z",
-      "status": "completed",
-      "updated_at": "2026-10-14T06:00:41Z",
-      "workflow_id": 343470013
-    },
-    {
       "conclusion": "skipped",
-      "created_at": "2026-10-14T08:07:02Z",
+      "created_at": "2026-10-14T15:38:22Z",
       "event": "issues",
       "head_branch": "main",
       "head_sha": "88cf85e09375483b526e57d4873274ca8860d82d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38532869947",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38591076717",
       "name": "Advance DTG gatherer repository reviews",
       "path": ".github/workflows/dtg-repository-review-worker.yml",
-      "run_number": 1882,
-      "run_started_at": "2026-10-14T08:07:02Z",
+      "run_number": 1891,
+      "run_started_at": "2026-10-14T15:38:22Z",
       "status": "completed",
-      "updated_at": "2026-10-14T08:07:03Z",
+      "updated_at": "2026-10-14T15:38:24Z",
       "workflow_id": 343549712
     },
     {
       "conclusion": "failure",
-      "created_at": "2026-10-14T08:59:14Z",
-      "event": "schedule",
-      "head_branch": "main",
-      "head_sha": "88cf85e09375483b526e57d4873274ca8860d82d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38539040472",
-      "name": "Incremental DTG/CAWG monitor \u00b7 schedule \u00b7",
-      "path": ".github/workflows/instance-watch.yml",
-      "run_number": 57,
-      "run_started_at": "2026-10-14T08:59:14Z",
-      "status": "completed",
-      "updated_at": "2026-10-14T09:02:13Z",
-      "workflow_id": 334033746
-    },
-    {
-      "conclusion": "success",
-      "created_at": "2026-10-14T02:20:46Z",
+      "created_at": "2026-10-14T16:22:05Z",
       "event": "push",
       "head_branch": "main",
-      "head_sha": "88cf85e09375483b526e57d4873274ca8860d82d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38500539865",
+      "head_sha": "3b2c738a403ba682125f6b5c8b48320f9b4c4173",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38597476932",
       "name": "Build and deploy RAHP documentation",
       "path": ".github/workflows/pages.yml",
-      "run_number": 1158,
-      "run_started_at": "2026-10-14T02:20:46Z",
+      "run_number": 1180,
+      "run_started_at": "2026-10-14T16:22:05Z",
       "status": "completed",
-      "updated_at": "2026-10-14T02:21:46Z",
+      "updated_at": "2026-10-14T16:23:07Z",
       "workflow_id": 333196290
     },
     {
       "conclusion": "success",
-      "created_at": "2026-10-14T02:20:46Z",
+      "created_at": "2026-10-14T16:22:05Z",
       "event": "push",
       "head_branch": "main",
-      "head_sha": "88cf85e09375483b526e57d4873274ca8860d82d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38500539867",
+      "head_sha": "3b2c738a403ba682125f6b5c8b48320f9b4c4173",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38597477058",
       "name": "validate",
       "path": ".github/workflows/validate.yml",
-      "run_number": 1176,
-      "run_started_at": "2026-10-14T02:20:46Z",
+      "run_number": 1198,
+      "run_started_at": "2026-10-14T16:22:05Z",
       "status": "completed",
-      "updated_at": "2026-10-14T02:22:07Z",
+      "updated_at": "2026-10-14T16:23:15Z",
       "workflow_id": 331522431
     }
   ],
@@ -295,22 +316,22 @@ search_exclude: true
   "unresolved": [
     {
       "conclusion": "failure",
-      "created_at": "2026-10-14T08:59:14Z",
-      "event": "schedule",
+      "created_at": "2026-10-14T16:22:05Z",
+      "event": "push",
       "head_branch": "main",
-      "head_sha": "88cf85e09375483b526e57d4873274ca8860d82d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38539040472",
-      "name": "Incremental DTG/CAWG monitor \u00b7 schedule \u00b7",
-      "path": ".github/workflows/instance-watch.yml",
-      "run_number": 57,
-      "run_started_at": "2026-10-14T08:59:14Z",
+      "head_sha": "3b2c738a403ba682125f6b5c8b48320f9b4c4173",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38597476932",
+      "name": "Build and deploy RAHP documentation",
+      "path": ".github/workflows/pages.yml",
+      "run_number": 1180,
+      "run_started_at": "2026-10-14T16:22:05Z",
       "status": "completed",
-      "updated_at": "2026-10-14T09:02:13Z",
-      "workflow_id": 334033746
+      "updated_at": "2026-10-14T16:23:07Z",
+      "workflow_id": 333196290
     }
   ],
   "unresolved_failures": 1,
-  "workflows_examined": 10
+  "workflows_examined": 8
 }
 ```
 
