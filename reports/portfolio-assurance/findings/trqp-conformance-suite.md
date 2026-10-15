@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `trqp-conformance-suite`
 
-**Generated:** 2026-10-14T17:09:02Z  
+**Generated:** 2026-10-15T04:36:56Z  
 **Open findings:** 0  
 **Repository snapshot:** `5df55ff4d6ca7bb679ba1752481cc434358a043e`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.json)

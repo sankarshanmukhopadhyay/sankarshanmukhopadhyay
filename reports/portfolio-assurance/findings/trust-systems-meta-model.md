@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `trust-systems-meta-model`
 
-**Generated:** 2026-10-14T17:09:02Z  
+**Generated:** 2026-10-15T04:36:56Z  
 **Open findings:** 0  
 **Repository snapshot:** `6e3198560719203b8a90ff7fc6ce4be8ff47857b`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-systems-meta-model.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-systems-meta-model.json)
