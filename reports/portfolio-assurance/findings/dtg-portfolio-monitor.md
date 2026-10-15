@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `dtg-portfolio-monitor`
 
-**Generated:** 2026-10-15T11:26:58Z  
+**Generated:** 2026-10-15T16:59:38Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dtg-portfolio-monitor.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dtg-portfolio-monitor.json)
