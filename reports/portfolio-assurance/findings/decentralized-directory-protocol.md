@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `decentralized-directory-protocol`
 
-**Generated:** 2026-10-15T16:59:38Z  
+**Generated:** 2026-10-15T21:21:50Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/decentralized-directory-protocol.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/decentralized-directory-protocol.json)
