@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-10-16T11:22:17Z  
+**Generated:** 2026-10-16T16:38:12Z  
 **Open findings:** 1  
 **Repository snapshot:** `f68cad8826e0b1a26e1a14f0d3587a7426742a35`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-4E123844FBF6 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-34D982BC9AFD` at `2026-10-16T11:22:17Z`
+- Observation: `PAM-34D982BC9AFD` at `2026-10-16T16:38:12Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/instance-watch.yml`
@@ -141,17 +141,17 @@ search_exclude: true
   "latest": [
     {
       "conclusion": "skipped",
-      "created_at": "2026-10-16T06:31:02Z",
+      "created_at": "2026-10-16T12:01:02Z",
       "event": "issues",
       "head_branch": "main",
-      "head_sha": "eeb181b1bd98236cf7829d0ede0626aa2a04e292",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38861654466",
+      "head_sha": "f68cad8826e0b1a26e1a14f0d3587a7426742a35",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38897618786",
       "name": "Execute bounded combined RAHP reviews",
       "path": ".github/workflows/combined-review-worker.yml",
-      "run_number": 1942,
-      "run_started_at": "2026-10-16T06:31:02Z",
+      "run_number": 1947,
+      "run_started_at": "2026-10-16T12:01:02Z",
       "status": "completed",
-      "updated_at": "2026-10-16T06:31:09Z",
+      "updated_at": "2026-10-16T12:01:03Z",
       "workflow_id": 343490806
     },
     {
@@ -171,47 +171,47 @@ search_exclude: true
     },
     {
       "conclusion": "skipped",
-      "created_at": "2026-10-16T06:31:02Z",
+      "created_at": "2026-10-16T12:01:02Z",
       "event": "issues",
       "head_branch": "main",
-      "head_sha": "eeb181b1bd98236cf7829d0ede0626aa2a04e292",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38861654593",
+      "head_sha": "f68cad8826e0b1a26e1a14f0d3587a7426742a35",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38897618587",
       "name": "Promote qualified RAHP referrals to DPIP",
       "path": ".github/workflows/dpip-handoff.yml",
-      "run_number": 1605,
-      "run_started_at": "2026-10-16T06:31:02Z",
+      "run_number": 1610,
+      "run_started_at": "2026-10-16T12:01:02Z",
       "status": "completed",
-      "updated_at": "2026-10-16T06:31:03Z",
+      "updated_at": "2026-10-16T12:01:03Z",
       "workflow_id": 342518526
     },
     {
       "conclusion": "success",
-      "created_at": "2026-10-16T05:01:43Z",
+      "created_at": "2026-10-16T11:54:52Z",
       "event": "schedule",
       "head_branch": "main",
-      "head_sha": "eeb181b1bd98236cf7829d0ede0626aa2a04e292",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38853637851",
+      "head_sha": "f68cad8826e0b1a26e1a14f0d3587a7426742a35",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38896934049",
       "name": "Reconcile RAHP-DPIP lifecycle and returns",
       "path": ".github/workflows/dpip-lifecycle.yml",
-      "run_number": 1148,
-      "run_started_at": "2026-10-16T05:01:43Z",
+      "run_number": 1149,
+      "run_started_at": "2026-10-16T11:54:52Z",
       "status": "completed",
-      "updated_at": "2026-10-16T05:02:16Z",
+      "updated_at": "2026-10-16T11:55:22Z",
       "workflow_id": 343401275
     },
     {
       "conclusion": "skipped",
-      "created_at": "2026-10-16T06:31:02Z",
+      "created_at": "2026-10-16T12:01:02Z",
       "event": "issues",
       "head_branch": "main",
-      "head_sha": "eeb181b1bd98236cf7829d0ede0626aa2a04e292",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38861654254",
+      "head_sha": "f68cad8826e0b1a26e1a14f0d3587a7426742a35",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38897618989",
       "name": "Reconcile DTG end-to-end assurance",
       "path": ".github/workflows/dtg-assurance-reconcile.yml",
-      "run_number": 2393,
-      "run_started_at": "2026-10-16T06:31:02Z",
+      "run_number": 2398,
+      "run_started_at": "2026-10-16T12:01:02Z",
       "status": "completed",
-      "updated_at": "2026-10-16T06:31:03Z",
+      "updated_at": "2026-10-16T12:01:03Z",
       "workflow_id": 343549711
     },
     {
@@ -231,17 +231,17 @@ search_exclude: true
     },
     {
       "conclusion": "skipped",
-      "created_at": "2026-10-16T06:31:02Z",
+      "created_at": "2026-10-16T12:01:02Z",
       "event": "issues",
       "head_branch": "main",
-      "head_sha": "eeb181b1bd98236cf7829d0ede0626aa2a04e292",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38861654639",
+      "head_sha": "f68cad8826e0b1a26e1a14f0d3587a7426742a35",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38897618548",
       "name": "Advance DTG gatherer repository reviews",
       "path": ".github/workflows/dtg-repository-review-worker.yml",
-      "run_number": 1931,
-      "run_started_at": "2026-10-16T06:31:02Z",
+      "run_number": 1936,
+      "run_started_at": "2026-10-16T12:01:02Z",
       "status": "completed",
-      "updated_at": "2026-10-16T06:31:03Z",
+      "updated_at": "2026-10-16T12:01:03Z",
       "workflow_id": 343549712
     },
     {
@@ -288,21 +288,6 @@ search_exclude: true
       "status": "completed",
       "updated_at": "2026-10-16T07:23:41Z",
       "workflow_id": 331522431
-    },
-    {
-      "conclusion": "success",
-      "created_at": "2026-10-15T21:04:38Z",
-      "event": "dynamic",
-      "head_branch": "main",
-      "head_sha": "eeb181b1bd98236cf7829d0ede0626aa2a04e292",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/38807061110",
-      "name": "bundler in /. - Update #1630177904",
-      "path": "dynamic/dependabot/dependabot-updates",
-      "run_number": 19,
-      "run_started_at": "2026-10-15T21:04:38Z",
-      "status": "completed",
-      "updated_at": "2026-10-15T21:05:16Z",
-      "workflow_id": 350766881
     }
   ],
   "lookback_days": 7,
@@ -326,7 +311,7 @@ search_exclude: true
     }
   ],
   "unresolved_failures": 1,
-  "workflows_examined": 11
+  "workflows_examined": 10
 }
 ```
 
