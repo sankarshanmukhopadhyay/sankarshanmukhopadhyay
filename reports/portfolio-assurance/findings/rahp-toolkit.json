@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-10-17T15:33:03Z",
+  "generated_at": "2026-10-17T20:35:30Z",
   "repository": "rahp-toolkit",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-10-17T15:33:03Z",
+    "observed_at": "2026-10-17T20:35:30Z",
     "default_branch": "main",
     "head_sha": "f68cad8826e0b1a26e1a14f0d3587a7426742a35",
     "provenance_status": "observed"
@@ -46,7 +46,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "severity": "high",
-      "observed_at": "2026-10-17T15:33:03Z",
+      "observed_at": "2026-10-17T20:35:30Z",
       "claim": "Required assurance evidence satisfying the configured evidence contract was not observed.",
       "evidence": {
         "claim": "corpus_integrity",
@@ -83,7 +83,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-10-17T15:33:03Z",
+      "observed_at": "2026-10-17T20:35:30Z",
       "claim": "Required assurance evidence satisfying the configured evidence contract was not observed.",
       "evidence": {
         "claim": "publication_integrity",
@@ -120,7 +120,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/validate.yml",
       "severity": "high",
-      "observed_at": "2026-10-17T15:33:03Z",
+      "observed_at": "2026-10-17T20:35:30Z",
       "claim": "Required assurance evidence satisfying the configured evidence contract was not observed.",
       "evidence": {
         "claim": "toolkit_validation",
@@ -160,7 +160,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-10-17T15:33:03Z",
+      "last_observed": "2026-10-17T20:35:30Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-E1BEFE838560"
     },
@@ -172,7 +172,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-10-17T15:33:03Z",
+      "last_observed": "2026-10-17T20:35:30Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-54115744425B"
     },
@@ -184,7 +184,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-10-17T15:33:03Z",
+      "last_observed": "2026-10-17T20:35:30Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-9FB5F0794CF9"
     }
