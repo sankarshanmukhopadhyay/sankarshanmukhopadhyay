@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `digital-trust-failure-corpus`
 
-**Generated:** 2026-10-18T11:02:34Z  
+**Generated:** 2026-10-18T15:51:02Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/digital-trust-failure-corpus.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/digital-trust-failure-corpus.json)

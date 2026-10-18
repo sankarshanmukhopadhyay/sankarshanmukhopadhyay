@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `cawg-trqp-verifier-refimpl`
 
-**Generated:** 2026-10-18T11:02:34Z  
+**Generated:** 2026-10-18T15:51:02Z  
 **Open findings:** 0  
 **Repository snapshot:** `fd7c5f2cdf52a82fe4382ef6637ce5b7deac4ef2`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json)
