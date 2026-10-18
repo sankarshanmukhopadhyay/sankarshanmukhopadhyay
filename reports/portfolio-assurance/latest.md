@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Portfolio Assurance Report — 2026-10-17
+title: Portfolio Assurance Report — 2026-10-18
 nav_exclude: true
 search_exclude: true
 ---
 
-# Portfolio Assurance Report — 2026-10-17
+# Portfolio Assurance Report — 2026-10-18
 
-**Observed:** 2026-10-17T20:35:30Z  
+**Observed:** 2026-10-18T04:31:18Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 3  
 **Unclassified public repositories:** 0
@@ -45,7 +45,7 @@ search_exclude: true
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-E1BEFE838560: rahp-toolkit
+### PAM-2C232AC0E513: rahp-toolkit
 
 - **Fingerprint:** `PF-9769E5EB9C48`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -56,7 +56,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-54115744425B: rahp-toolkit
+### PAM-006F4DF3AA63: rahp-toolkit
 
 - **Fingerprint:** `PF-E8B1B5CFA71B`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -67,7 +67,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-9FB5F0794CF9: rahp-toolkit
+### PAM-1BE4FE548FA4: rahp-toolkit
 
 - **Fingerprint:** `PF-40A9B6AD0B44`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
