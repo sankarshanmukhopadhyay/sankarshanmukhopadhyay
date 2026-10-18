@@ -7,9 +7,9 @@ search_exclude: true
 
 # Portfolio Assurance Report — 2026-10-18
 
-**Observed:** 2026-10-18T04:31:18Z  
+**Observed:** 2026-10-18T11:02:34Z  
 **Scope:** 11 flagship original repositories  
-**Open findings:** 3  
+**Open findings:** 0  
 **Unclassified public repositories:** 0
 
 > This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.
@@ -20,7 +20,7 @@ search_exclude: true
 |---|---|---:|
 | Operational | `evaluated` | 0 |
 | Governance | `evaluated` | 0 |
-| Assurance | `evaluated` | 3 |
+| Assurance | `evaluated` | 0 |
 | Cross Specification | `not-evaluated` | 0 |
 
 > `evaluated` means only that the configured rules for that dimension ran against observable evidence. `not-evaluated` is explicit and must not be interpreted as green or assured.
@@ -39,45 +39,13 @@ search_exclude: true
 | [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json) |
 | [trqp-conformance-suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trqp-conformance-suite.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.json) |
 | [trqp-assurance-hub](https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trqp-assurance-hub.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.json) |
-| [rahp-toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | available | n/a | 0 unresolved | [3 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/rahp-toolkit.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json) |
+| [rahp-toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | available | n/a | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/rahp-toolkit.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json) |
 
 ## Findings
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-2C232AC0E513: rahp-toolkit
-
-- **Fingerprint:** `PF-9769E5EB9C48`
-- **Rule:** `ASSURANCE_EVIDENCE_MISSING`
-- **Subject:** `.github/workflows/corpus-status.yml`
-- **Severity:** `high`
-- **Claim:** Required assurance evidence satisfying the configured evidence contract was not observed.
-- **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
-- **Issue routing:** `target-repository`
-- **Automatic effect:** `none`
-
-### PAM-006F4DF3AA63: rahp-toolkit
-
-- **Fingerprint:** `PF-E8B1B5CFA71B`
-- **Rule:** `ASSURANCE_EVIDENCE_MISSING`
-- **Subject:** `.github/workflows/pages.yml`
-- **Severity:** `high`
-- **Claim:** Required assurance evidence satisfying the configured evidence contract was not observed.
-- **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
-- **Issue routing:** `target-repository`
-- **Automatic effect:** `none`
-
-### PAM-1BE4FE548FA4: rahp-toolkit
-
-- **Fingerprint:** `PF-40A9B6AD0B44`
-- **Rule:** `ASSURANCE_EVIDENCE_MISSING`
-- **Subject:** `.github/workflows/validate.yml`
-- **Severity:** `high`
-- **Claim:** Required assurance evidence satisfying the configured evidence contract was not observed.
-- **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
-- **Issue routing:** `target-repository`
-- **Automatic effect:** `none`
-
+No findings were produced in the currently evaluated dimensions. This does **not** mean that unevaluated assurance dimensions are green or complete.
 ## Assurance evidence coverage
 
 The assurance state below is calculated from repository-specific evidence contracts. The monitor evaluates whether required evidence exists, succeeds, and covers the governed repository revision; it does not replace the authority of the evidence-producing repository or tool.
@@ -120,10 +88,10 @@ The assurance state below is calculated from repository-specific evidence contra
 | ↳ `composed_assurance_smoke` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 | ↳ `portfolio_contract` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 | ↳ `publication_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
-| [rahp-toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | `assurance-toolkit` | **missing** | 3 | 0/3 |
-| ↳ `toolkit_validation` | required | `missing` |  | no completed workflow execution satisfying the configured evidence contract was observed |
-| ↳ `corpus_integrity` | required | `missing` |  | no completed workflow execution satisfying the configured evidence contract was observed |
-| ↳ `publication_integrity` | required | `missing` |  | no completed workflow execution satisfying the configured evidence contract was observed |
+| [rahp-toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | `assurance-toolkit` | **satisfied** | 3 | 3/3 |
+| ↳ `toolkit_validation` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
+| ↳ `corpus_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
+| ↳ `publication_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 | ↳ `cross_specification_pressure_test` | optional | `missing` |  | no completed workflow execution satisfying the configured evidence contract was observed |
 
 
