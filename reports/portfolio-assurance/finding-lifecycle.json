@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-19T04:38:54Z",
+  "generated_at": "2026-10-19T13:12:11Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -164,11 +164,11 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "dimension": "operational",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-10-16T21:06:36Z",
-      "resolved_at": "2026-10-17T04:23:59Z",
-      "latest_finding_id": "PAM-34D982BC9AFD"
+      "last_observed": "2026-10-19T13:12:11Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-4963E8C9C18C"
     },
     "PF-FE9A3049B948": {
       "finding_fingerprint": "PF-FE9A3049B948",
@@ -416,11 +416,11 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/validate.yml",
       "dimension": "assurance",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-10-18T04:31:18Z",
-      "resolved_at": "2026-10-18T11:02:34Z",
-      "latest_finding_id": "PAM-1BE4FE548FA4"
+      "last_observed": "2026-10-19T13:12:11Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-DF15DBC62AE6"
     },
     "PF-E8B1B5CFA71B": {
       "finding_fingerprint": "PF-E8B1B5CFA71B",
@@ -428,11 +428,11 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-10-18T04:31:18Z",
-      "resolved_at": "2026-10-18T11:02:34Z",
-      "latest_finding_id": "PAM-006F4DF3AA63"
+      "last_observed": "2026-10-19T13:12:11Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-21BEE5A90989"
     },
     "PF-0B036E077FB8": {
       "finding_fingerprint": "PF-0B036E077FB8",
