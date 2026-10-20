@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-10-20T04:48:46Z",
+  "generated_at": "2026-10-20T11:34:12Z",
   "repository": "kiranaos",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-10-20T04:48:46Z",
+    "observed_at": "2026-10-20T11:34:12Z",
     "default_branch": null,
     "head_sha": null,
     "provenance_status": "unavailable"
