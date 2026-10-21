@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-20T21:36:12Z",
+  "generated_at": "2026-10-21T02:19:45Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -137,13 +137,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-10-13T03:56:28Z",
-            "updated_at": "2026-10-13T03:57:07Z",
-            "run_started_at": "2026-10-13T03:56:28Z",
-            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/38344060195",
-            "head_sha": "cab3f5814661c6e7016f490f42d7e7beb9ea4b23",
+            "created_at": "2026-10-21T01:11:38Z",
+            "updated_at": "2026-10-21T01:12:38Z",
+            "run_started_at": "2026-10-21T01:11:38Z",
+            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/39525869294",
+            "head_sha": "4696d65bf68b11d567c7f948a58e087201ca56ee",
             "head_branch": "main",
-            "run_number": 652
+            "run_number": 658
           }
         },
         {
@@ -161,13 +161,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-10-13T03:56:28Z",
-            "updated_at": "2026-10-13T03:57:34Z",
-            "run_started_at": "2026-10-13T03:56:28Z",
-            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/38344060213",
-            "head_sha": "cab3f5814661c6e7016f490f42d7e7beb9ea4b23",
+            "created_at": "2026-10-21T01:11:38Z",
+            "updated_at": "2026-10-21T01:13:39Z",
+            "run_started_at": "2026-10-21T01:11:38Z",
+            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/39525869481",
+            "head_sha": "4696d65bf68b11d567c7f948a58e087201ca56ee",
             "head_branch": "main",
-            "run_number": 85
+            "run_number": 86
           }
         },
         {
@@ -617,13 +617,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-10-12T03:44:46Z",
-            "updated_at": "2026-10-12T03:45:05Z",
-            "run_started_at": "2026-10-12T03:44:46Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/38200961544",
-            "head_sha": "89f2de9dcf3aff12727a283c96e015868869eccf",
+            "created_at": "2026-10-21T01:11:47Z",
+            "updated_at": "2026-10-21T01:12:08Z",
+            "run_started_at": "2026-10-21T01:11:47Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/39525883638",
+            "head_sha": "0a6f43f6042f65fe7a5c262b10bdc88010b2a4ef",
             "head_branch": "main",
-            "run_number": 284
+            "run_number": 286
           }
         },
         {
@@ -641,13 +641,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-10-12T03:44:46Z",
-            "updated_at": "2026-10-12T03:45:07Z",
-            "run_started_at": "2026-10-12T03:44:46Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/38200961530",
-            "head_sha": "89f2de9dcf3aff12727a283c96e015868869eccf",
+            "created_at": "2026-10-21T01:11:47Z",
+            "updated_at": "2026-10-21T01:12:12Z",
+            "run_started_at": "2026-10-21T01:11:47Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/39525883781",
+            "head_sha": "0a6f43f6042f65fe7a5c262b10bdc88010b2a4ef",
             "head_branch": "main",
-            "run_number": 260
+            "run_number": 262
           }
         },
         {
@@ -665,13 +665,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-10-12T03:44:46Z",
-            "updated_at": "2026-10-12T03:44:58Z",
-            "run_started_at": "2026-10-12T03:44:46Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/38200961613",
-            "head_sha": "89f2de9dcf3aff12727a283c96e015868869eccf",
+            "created_at": "2026-10-21T01:11:47Z",
+            "updated_at": "2026-10-21T01:11:56Z",
+            "run_started_at": "2026-10-21T01:11:47Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-assurance-hub/actions/runs/39525883708",
+            "head_sha": "0a6f43f6042f65fe7a5c262b10bdc88010b2a4ef",
             "head_branch": "main",
-            "run_number": 166
+            "run_number": 168
           }
         },
         {
