@@ -53,7 +53,7 @@ repositories:
 - {name: route-story-studio, portfolio_disposition: pending-review, tier: incubating, maturity: exploratory, lifecycle: active, operational_status: active-development, specification_status: not-applicable, role: route-story-authoring-and-visualization-studio, portfolio_member: false, authority_scope: [], last_portfolio_review: '2026-08-16', next_review: '2026-10-16', provenance: original, portfolio_governance: controlled, status_source: {type: portfolio-declaration, path: data/repository-status.yaml, required: false}, upstream: null, upstream_adoption_status: not-applicable}
 account_dispositions:
 - {name: uncefact-GRID, portfolio_disposition: historical, reason: 'Retained as historical UN/CEFACT GRID working material; the repository README identifies the UN/CEFACT GitLab repository as the actual project repository.'}
-- {name: rahp-persona-threat-model, portfolio_disposition: pending-review, reason: 'Standalone RAHP persona threat-model work retained pending an explicit disposition against the current RAHP Toolkit.'}
+- {name: rahp-persona-threat-model, portfolio_disposition: historical, reason: 'Retained as historical standalone RAHP persona threat-model work; it is not part of the current curated portfolio lifecycle.'}
 - {name: utsomanush, portfolio_disposition: unrelated, reason: 'Public repository outside the curated trust-infrastructure portfolio.'}
 - {name: aries-rfcs, portfolio_disposition: historical, reason: 'Known public repository retained as account history; not part of the active curated trust-infrastructure portfolio.'}
 - {name: asciidoc-cheatsheet, portfolio_disposition: unrelated, reason: 'Known public repository outside the curated trust-infrastructure portfolio.'}
