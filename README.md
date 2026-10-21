@@ -15,6 +15,12 @@ This is a **curated body-of-work portfolio**, not an ownership inventory. Instit
 
 **Terminology:** [Trust Infrastructure Glossary](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-glossary) · **Writing:** [The Trust Graph](https://thetrustgraph.substack.com/) · **Full portfolio status:** [Portfolio Status](docs/portfolio-status.md)
 
+### Interpreting the repository tab
+
+GitHub's repository list is an **account activity view, not the portfolio lifecycle model**. It includes historical forks, unrelated earlier open-source work, upstream collaboration copies, experiments, and maintained portfolio repositories. A recent GitHub timestamp may therefore reflect dependency maintenance, branch housekeeping, upstream synchronization, or other repository operations rather than resumed product development.
+
+Use [Portfolio Status](docs/portfolio-status.md) and the governed [repository status registry](data/repository-status.yaml) to determine whether work is active, maintained, dormant, upstream-tracking, historical, or outside the curated portfolio. Historical and unrelated repositories are retained where they preserve useful contribution provenance; their presence does not make them current portfolio priorities.
+
 ## Start here
 
 Maturity below is derived from the canonical [data/repository-status.yaml](data/repository-status.yaml) registry and is validated in CI.
