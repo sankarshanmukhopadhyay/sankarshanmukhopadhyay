@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `dtg-privacy-implementation-profile`
 
-**Generated:** 2026-10-21T17:10:57Z  
+**Generated:** 2026-10-21T21:41:41Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dtg-privacy-implementation-profile.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dtg-privacy-implementation-profile.json)
