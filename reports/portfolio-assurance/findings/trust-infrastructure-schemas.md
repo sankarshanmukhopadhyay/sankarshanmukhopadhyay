@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `trust-infrastructure-schemas`
 
-**Generated:** 2026-10-21T21:41:41Z  
+**Generated:** 2026-10-22T04:42:40Z  
 **Open findings:** 0  
-**Repository snapshot:** `7df4daeac2bb7f983656227ca3875e737b187812`  
+**Repository snapshot:** `4caf302657dac646c949ebff5073c5e5ded5dd7e`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
