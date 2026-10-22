@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-22T11:50:16Z",
+  "generated_at": "2026-10-22T17:09:15Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -658,7 +658,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-10-22T11:50:16Z",
+      "last_observed": "2026-10-22T17:09:15Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-8849257BAA12"
     },
