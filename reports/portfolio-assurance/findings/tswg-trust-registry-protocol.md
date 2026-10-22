@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `tswg-trust-registry-protocol`
 
-**Generated:** 2026-10-22T17:09:15Z  
+**Generated:** 2026-10-22T21:34:23Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/tswg-trust-registry-protocol.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/tswg-trust-registry-protocol.json)
