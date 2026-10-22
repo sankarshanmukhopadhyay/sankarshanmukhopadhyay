@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-21T21:41:41Z",
+  "generated_at": "2026-10-22T04:42:40Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -140,10 +140,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-22T01:49:53Z",
       "last_observed": "2026-10-21T21:41:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-10-22T04:42:40Z",
       "latest_finding_id": "PAM-F69598DC9DB6"
     },
     "PF-954D1C442655": {
@@ -164,10 +164,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-25T07:08:19Z",
       "last_observed": "2026-10-21T21:41:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-10-22T04:42:40Z",
       "latest_finding_id": "PAM-5485504B1D06"
     },
     "PF-FE9A3049B948": {
@@ -416,10 +416,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/validate.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T21:01:37Z",
       "last_observed": "2026-10-21T21:41:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-10-22T04:42:40Z",
       "latest_finding_id": "PAM-4F8F067CFF93"
     },
     "PF-E8B1B5CFA71B": {
@@ -428,10 +428,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T21:01:37Z",
       "last_observed": "2026-10-21T21:41:41Z",
-      "resolved_at": null,
+      "resolved_at": "2026-10-22T04:42:40Z",
       "latest_finding_id": "PAM-5CD4A5A7A63C"
     },
     "PF-0B036E077FB8": {
@@ -656,11 +656,11 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-09-29T05:42:41Z",
-      "resolved_at": "2026-09-29T06:27:10Z",
-      "latest_finding_id": "PAM-7D6E3780B796"
+      "last_observed": "2026-10-22T04:42:40Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-8849257BAA12"
     },
     "PF-7689472EA3BE": {
       "finding_fingerprint": "PF-7689472EA3BE",
