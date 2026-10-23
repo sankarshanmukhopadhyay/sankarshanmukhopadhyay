@@ -7,7 +7,7 @@ nav_order: 1
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-10-22T21:34:23Z  
+**Observed:** 2026-10-23T04:47:23Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 1  
 **Unclassified public repositories:** 0
@@ -45,7 +45,7 @@ nav_order: 1
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-8849257BAA12: TRQP-TSPP
+### PAM-EE9DC2CAEC4B: TRQP-TSPP
 
 - **Fingerprint:** `PF-9C213FA6D34C`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
