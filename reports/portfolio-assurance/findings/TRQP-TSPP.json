@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-10-24T10:57:47Z",
+  "generated_at": "2026-10-24T15:56:19Z",
   "repository": "TRQP-TSPP",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-10-24T10:57:47Z",
+    "observed_at": "2026-10-24T15:56:19Z",
     "default_branch": "main",
     "head_sha": "e4c05acf9dc0c291891ddb803589656158451cba",
     "provenance_status": "observed"
@@ -46,7 +46,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-10-24T10:57:47Z",
+      "observed_at": "2026-10-24T15:56:19Z",
       "claim": "Required assurance evidence satisfying the configured evidence contract was not observed.",
       "evidence": {
         "claim": "publication_integrity",
@@ -86,7 +86,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-10-24T10:57:47Z",
+      "last_observed": "2026-10-24T15:56:19Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-CB92CF8536F7"
     }
