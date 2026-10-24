@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-24T04:34:39Z",
+  "generated_at": "2026-10-24T10:57:47Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -658,7 +658,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-10-24T04:34:39Z",
+      "last_observed": "2026-10-24T10:57:47Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-CB92CF8536F7"
     },
@@ -769,6 +769,18 @@
       "last_observed": "2026-10-14T17:09:02Z",
       "resolved_at": "2026-10-15T04:36:56Z",
       "latest_finding_id": "PAM-8AC1864FE5BD"
+    },
+    "PF-175F07FC3EA4": {
+      "finding_fingerprint": "PF-175F07FC3EA4",
+      "repository": "rahp-toolkit",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
+      "dimension": "operational",
+      "status": "open",
+      "first_observed": "2026-10-24T10:57:47Z",
+      "last_observed": "2026-10-24T10:57:47Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-696D3D68D911"
     }
   }
 }
