@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `dpi-ai-governance-lab`
 
-**Generated:** 2026-10-24T20:47:43Z  
+**Generated:** 2026-10-25T04:39:17Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dpi-ai-governance-lab.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dpi-ai-governance-lab.json)
