@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-25T11:25:48Z",
+  "generated_at": "2026-10-25T16:16:30Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -140,10 +140,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-22T01:49:53Z",
       "last_observed": "2026-10-25T11:25:48Z",
-      "resolved_at": null,
+      "resolved_at": "2026-10-25T16:16:30Z",
       "latest_finding_id": "PAM-0B3E0175074E"
     },
     "PF-954D1C442655": {
@@ -428,10 +428,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T21:01:37Z",
       "last_observed": "2026-10-25T11:25:48Z",
-      "resolved_at": null,
+      "resolved_at": "2026-10-25T16:16:30Z",
       "latest_finding_id": "PAM-71B2E5D1D5CA"
     },
     "PF-0B036E077FB8": {
@@ -658,7 +658,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-10-25T11:25:48Z",
+      "last_observed": "2026-10-25T16:16:30Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-006670496CF0"
     },
@@ -776,10 +776,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-10-24T10:57:47Z",
       "last_observed": "2026-10-25T11:25:48Z",
-      "resolved_at": null,
+      "resolved_at": "2026-10-25T16:16:30Z",
       "latest_finding_id": "PAM-6D5B4E117E34"
     }
   }
