@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Portfolio Assurance Report — 2026-10-25
+title: Portfolio Assurance Report — 2026-10-26
 nav_exclude: true
 search_exclude: true
 ---
 
-# Portfolio Assurance Report — 2026-10-25
+# Portfolio Assurance Report — 2026-10-26
 
-**Observed:** 2026-10-25T20:49:24Z  
+**Observed:** 2026-10-26T04:45:09Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 2  
 **Unclassified public repositories:** 0
@@ -45,7 +45,7 @@ search_exclude: true
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-006670496CF0: TRQP-TSPP
+### PAM-FCF708957EF0: TRQP-TSPP
 
 - **Fingerprint:** `PF-9C213FA6D34C`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -56,7 +56,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-6D5B4E117E34: rahp-toolkit
+### PAM-0341DE08406C: rahp-toolkit
 
 - **Fingerprint:** `PF-175F07FC3EA4`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`

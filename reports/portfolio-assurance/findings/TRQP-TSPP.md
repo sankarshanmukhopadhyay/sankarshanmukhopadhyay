@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `TRQP-TSPP`
 
-**Generated:** 2026-10-25T20:49:24Z  
+**Generated:** 2026-10-26T04:45:09Z  
 **Open findings:** 1  
-**Repository snapshot:** `e4c05acf9dc0c291891ddb803589656158451cba`  
+**Repository snapshot:** `117b2205135cda34413e89cecd57914e3d4d47b7`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-9C213FA6D34C — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-006670496CF0` at `2026-10-25T20:49:24Z`
+- Observation: `PAM-FCF708957EF0` at `2026-10-26T04:45:09Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
