@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T04:45:09Z",
+  "generated_at": "2026-10-26T13:00:04Z",
   "repositories": [
     {
       "repository": "A2A",
@@ -87,7 +87,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "finding_count": 0,
+      "finding_count": 1,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json"
@@ -199,7 +199,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "finding_count": 1,
+      "finding_count": 2,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/rahp-toolkit.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json"
