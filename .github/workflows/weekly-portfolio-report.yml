@@ -1,0 +1,63 @@
+name: Weekly portfolio report
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 4 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  propose:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test reporting window
+        run: python -m unittest tests.test_weekly_portfolio_report
+      - name: Create repository-scoped publication token
+        id: app-token
+        env:
+          APP_ID: ${{ secrets.PORTFOLIO_ASSURANCE_APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.PORTFOLIO_ASSURANCE_APP_PRIVATE_KEY }}
+        if: ${{ env.APP_ID != '' && env.APP_PRIVATE_KEY != '' }}
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.PORTFOLIO_ASSURANCE_APP_ID }}
+          private-key: ${{ secrets.PORTFOLIO_ASSURANCE_APP_PRIVATE_KEY }}
+          owner: sankarshanmukhopadhyay
+          repositories: sankarshanmukhopadhyay
+      - name: Collect last completed week
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/weekly_portfolio_report.py
+      - name: Create reviewed publication proposal
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$GH_TOKEN" ]]; then
+            echo "Repository-scoped publication app token unavailable; refusing push."
+            exit 1
+          fi
+          if [[ -z "$(git status --porcelain -- docs/weekly-reports reports/weekly)" ]]; then exit 0; fi
+          branch="reports/weekly-$(date -u +%G-W%V)"
+          if git ls-remote --exit-code --heads origin "$branch" > /dev/null; then
+            echo "Existing reporting branch, will not overwrite"; exit 0
+          fi
+          git checkout -b "$branch"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/weekly-reports reports/weekly
+          git commit -s -m "docs(reports): propose completed weekly portfolio report"
+          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push -u origin "$branch"
+          gh pr create --base main --head "$branch" --title "docs(reports): review completed weekly portfolio report" --body "Generated activity evidence only. Human review must validate summary and source links. Bot commits carry bot DCO sign-off; no human DCO certification is impersonated."
