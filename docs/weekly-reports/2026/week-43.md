@@ -46,3 +46,29 @@ Assess whether RAHP's new evidence baseline is independently consumable; test re
 ## Evidence boundary
 
 Counts are author-attributed merges, not complete portfolio default-branch commits. No week-over-week test-count delta or independent assurance claim is made. [Methodology](../methodology.md).
+
+## October 2026 upstream contribution reconciliation
+
+*Added 27 October 2026. This is an additive, separately attributed reconciliation. It does not replace the original owner-scoped merged-PR baseline above.*
+
+| External GitHub author-attributed event | Observed count |
+|---|---:|
+| PRs opened | 7 |
+| PRs merged by upstream | 3 |
+| Issues opened | 12 |
+
+These events took place in repositories **outside** `sankarshanmukhopadhyay` and `qbf-consulting`. Counts are GitHub public issue-search results scoped to the stated calendar dates and excluded portfolio owners. Creation and merger are different events and can involve the same PR. A merger is an upstream decision, not a claim of authority by this portfolio. No issue closure events were observed in this external-author search for the period.
+
+### Representative upstream evidence
+
+- [Pinned VRC reassessment (merged)](https://github.com/trustoverip/dtgwg-rahp-tf/pull/33)
+- [Incremental assurance model (merged)](https://github.com/trustoverip/dtgwg-rahp-tf/pull/23)
+- [Shared vocabulary validation (merged)](https://github.com/trustoverip/dtgwg-rahp-tf/pull/21)
+- [Risk acceptance procedure (proposed)](https://github.com/trustoverip/dtgwg-rahp-tf/pull/42)
+- [Contribution decision procedure (proposed)](https://github.com/trustoverip/dtgwg-rahp-tf/pull/41)
+- [Governance decision authority (issue opened)](https://github.com/trustoverip/dtgwg-rahp-tf/issues/43)
+- [Composition conformance contract (issue opened)](https://github.com/trustoverip/dtgwg-vti-spec/issues/74)
+
+**Interpretation:** Upstream RAHP accepted three author-attributed PRs while new governance, review and assurance issues and PRs were proposed. This materially broadens the week's recorded impact beyond the original 99 owner-scoped merges. Proposed governance mechanisms do not become binding merely by being filed.
+
+**Coverage boundary:** These numbers do not include GitHub reviews/comments on others' issues or PRs, GitLab discussions, standards mailing lists, direct pushes, or private contributions. The search was a retrospective public-source observation, not a contemporaneously frozen record. See [methodology](../methodology.md).
