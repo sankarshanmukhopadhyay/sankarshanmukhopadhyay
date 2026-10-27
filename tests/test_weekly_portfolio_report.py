@@ -53,6 +53,17 @@ class WeeklyPortfolioTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             search("issue", "created", date(2026,10,19), date(2026,10,26), "", fetch)
 
+    def test_search_uses_supported_sort_for_closed_events(self):
+        from urllib.parse import urlsplit, parse_qs
+        seen = []
+        def fetch(url, token):
+            seen.append(parse_qs(urlsplit(url).query)["sort"][0])
+            return {"total_count": 0, "incomplete_results": False, "items": []}
+        search("issue", "closed", date(2026,10,19), date(2026,10,26), "", fetch)
+        search("pull-request", "merged", date(2026,10,19), date(2026,10,26), "", fetch)
+        search("issue", "created", date(2026,10,19), date(2026,10,26), "", fetch)
+        self.assertEqual(["updated", "updated", "created"], seen)
+
 
 if __name__ == "__main__":
     unittest.main()
