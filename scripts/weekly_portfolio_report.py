@@ -39,7 +39,7 @@ def search(kind, event, start, end, token, fetch=source_fetch):
     results = []
     for page in range(1, 12):
         url = "https://api.github.com/search/issues?" + urllib.parse.urlencode(
-            {"q": q, "sort": event if event != "merged" else "updated",
+            {"q": q, "sort": "created" if event == "created" else "updated",
              "per_page": 100, "page": page})
         payload = fetch(url, token)
         if payload.get("incomplete_results") or payload.get("total_count", 0) > 1000:
