@@ -26,3 +26,24 @@ The TRQP assurance stack advanced release qualification and published **TRQP Sta
 ## Evidence boundary
 
 The 43 count is GitHub author-attributed merged PR activity. No portfolio-wide test-count comparison, complete commit checkpoint ledger or external certification is asserted. [Methodology](../methodology.md).
+
+## October 2026 upstream contribution reconciliation
+
+*Added 27 October 2026. This is an additive, separately attributed reconciliation. It does not replace the original owner-scoped merged-PR baseline above.*
+
+| External GitHub author-attributed event | Observed count |
+|---|---:|
+| PRs opened | 0 |
+| PRs merged by upstream | 0 |
+| Issues opened | 2 |
+
+These events took place in repositories **outside** `sankarshanmukhopadhyay` and `qbf-consulting`. Counts are GitHub public issue-search results scoped to the stated calendar dates and excluded portfolio owners. Creation and merger are different events and can involve the same PR. A merger is an upstream decision, not a claim of authority by this portfolio. No issue closure events were observed in this external-author search for the period.
+
+### Representative upstream evidence
+
+- [Care Signals evidence availability](https://github.com/JessHines360/protocol-of-care-for-agents/issues/7)
+- [A2A downgrade observability](https://github.com/JessHines360/protocol-of-care-for-agents/issues/6)
+
+**Interpretation:** External protocol-of-care issues raised distinct evidence-state and downgrade-observability questions; their adoption or disposition is not established.
+
+**Coverage boundary:** These numbers do not include GitHub reviews/comments on others' issues or PRs, GitLab discussions, standards mailing lists, direct pushes, or private contributions. The search was a retrospective public-source observation, not a contemporaneously frozen record. See [methodology](../methodology.md).
