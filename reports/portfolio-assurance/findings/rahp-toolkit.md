@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-10-26T22:39:11Z  
+**Generated:** 2026-10-27T05:02:19Z  
 **Open findings:** 2  
-**Repository snapshot:** `d548622e849ed7968d68fae66a07ff536dde4649`  
+**Repository snapshot:** `c84d88dfdd7adad43962ce6981283d15c61dc6c0`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-175F07FC3EA4 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-0341DE08406C` at `2026-10-26T22:39:11Z`
+- Observation: `PAM-C6A1FF2DF1A7` at `2026-10-27T05:02:19Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/dtg-portfolio-materiality-handoff.yml`
@@ -83,17 +83,17 @@ search_exclude: true
       "available": true,
       "run": {
         "conclusion": "success",
-        "created_at": "2026-10-26T08:58:48Z",
-        "event": "schedule",
+        "created_at": "2026-10-27T04:36:08Z",
+        "event": "push",
         "head_branch": "main",
-        "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40296072701",
+        "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40450633296",
         "name": "Corpus source status",
         "path": ".github/workflows/corpus-status.yml",
-        "run_number": 320,
-        "run_started_at": "2026-10-26T08:58:48Z",
+        "run_number": 322,
+        "run_started_at": "2026-10-27T04:36:08Z",
         "status": "completed",
-        "updated_at": "2026-10-26T08:59:14Z",
+        "updated_at": "2026-10-27T04:36:30Z",
         "workflow_id": 333347627
       }
     },
@@ -105,17 +105,17 @@ search_exclude: true
       "available": true,
       "run": {
         "conclusion": "success",
-        "created_at": "2026-10-26T02:09:33Z",
+        "created_at": "2026-10-27T04:36:08Z",
         "event": "push",
         "head_branch": "main",
-        "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40257698895",
+        "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40450633299",
         "name": "Build and deploy RAHP documentation",
         "path": ".github/workflows/pages.yml",
-        "run_number": 1440,
-        "run_started_at": "2026-10-26T02:09:33Z",
+        "run_number": 1445,
+        "run_started_at": "2026-10-27T04:36:08Z",
         "status": "completed",
-        "updated_at": "2026-10-26T02:10:52Z",
+        "updated_at": "2026-10-27T04:37:27Z",
         "workflow_id": 333196290
       }
     },
@@ -123,17 +123,17 @@ search_exclude: true
       "available": true,
       "run": {
         "conclusion": "success",
-        "created_at": "2026-10-26T02:09:33Z",
+        "created_at": "2026-10-27T04:36:08Z",
         "event": "push",
         "head_branch": "main",
-        "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40257699068",
+        "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40450633325",
         "name": "validate",
         "path": ".github/workflows/validate.yml",
-        "run_number": 1460,
-        "run_started_at": "2026-10-26T02:09:33Z",
+        "run_number": 1465,
+        "run_started_at": "2026-10-27T04:36:08Z",
         "status": "completed",
-        "updated_at": "2026-10-26T02:11:02Z",
+        "updated_at": "2026-10-27T04:37:46Z",
         "workflow_id": 331522431
       }
     }
@@ -141,47 +141,47 @@ search_exclude: true
   "latest": [
     {
       "conclusion": "success",
-      "created_at": "2026-10-26T08:58:48Z",
-      "event": "schedule",
+      "created_at": "2026-10-27T04:36:08Z",
+      "event": "push",
       "head_branch": "main",
-      "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40296072701",
+      "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40450633296",
       "name": "Corpus source status",
       "path": ".github/workflows/corpus-status.yml",
-      "run_number": 320,
-      "run_started_at": "2026-10-26T08:58:48Z",
+      "run_number": 322,
+      "run_started_at": "2026-10-27T04:36:08Z",
       "status": "completed",
-      "updated_at": "2026-10-26T08:59:14Z",
+      "updated_at": "2026-10-27T04:36:30Z",
       "workflow_id": 333347627
     },
     {
       "conclusion": "skipped",
-      "created_at": "2026-10-26T20:51:00Z",
-      "event": "issues",
+      "created_at": "2026-10-27T03:42:59Z",
+      "event": "issue_comment",
       "head_branch": "main",
       "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40399279370",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40445707368",
       "name": "Reconcile RAHP-DPIP lifecycle and returns",
       "path": ".github/workflows/dpip-lifecycle.yml",
-      "run_number": 1394,
-      "run_started_at": "2026-10-26T20:51:00Z",
+      "run_number": 1398,
+      "run_started_at": "2026-10-27T03:42:59Z",
       "status": "completed",
-      "updated_at": "2026-10-26T20:51:01Z",
+      "updated_at": "2026-10-27T03:43:00Z",
       "workflow_id": 343401275
     },
     {
-      "conclusion": "skipped",
-      "created_at": "2026-10-26T20:51:00Z",
-      "event": "issues",
+      "conclusion": "success",
+      "created_at": "2026-10-26T22:51:36Z",
+      "event": "schedule",
       "head_branch": "main",
       "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40399279510",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40415621171",
       "name": "Reconcile DTG end-to-end assurance",
       "path": ".github/workflows/dtg-assurance-reconcile.yml",
-      "run_number": 2725,
-      "run_started_at": "2026-10-26T20:51:00Z",
+      "run_number": 2726,
+      "run_started_at": "2026-10-26T22:51:36Z",
       "status": "completed",
-      "updated_at": "2026-10-26T20:51:02Z",
+      "updated_at": "2026-10-26T22:51:59Z",
       "workflow_id": 343549711
     },
     {
@@ -216,47 +216,47 @@ search_exclude: true
     },
     {
       "conclusion": "success",
-      "created_at": "2026-10-26T02:09:33Z",
+      "created_at": "2026-10-27T04:36:08Z",
       "event": "push",
       "head_branch": "main",
-      "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40257698895",
+      "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40450633299",
       "name": "Build and deploy RAHP documentation",
       "path": ".github/workflows/pages.yml",
-      "run_number": 1440,
-      "run_started_at": "2026-10-26T02:09:33Z",
+      "run_number": 1445,
+      "run_started_at": "2026-10-27T04:36:08Z",
       "status": "completed",
-      "updated_at": "2026-10-26T02:10:52Z",
+      "updated_at": "2026-10-27T04:37:27Z",
       "workflow_id": 333196290
     },
     {
       "conclusion": "skipped",
-      "created_at": "2026-10-26T20:51:00Z",
+      "created_at": "2026-10-27T00:19:52Z",
       "event": "issues",
       "head_branch": "main",
       "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40399279563",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40425698754",
       "name": "Advance bounded RAHP review workers",
       "path": ".github/workflows/review-workers.yml",
-      "run_number": 29,
-      "run_started_at": "2026-10-26T20:51:00Z",
+      "run_number": 31,
+      "run_started_at": "2026-10-27T00:19:52Z",
       "status": "completed",
-      "updated_at": "2026-10-26T20:51:07Z",
+      "updated_at": "2026-10-27T00:19:53Z",
       "workflow_id": 396124313
     },
     {
       "conclusion": "success",
-      "created_at": "2026-10-26T02:09:33Z",
+      "created_at": "2026-10-27T04:36:08Z",
       "event": "push",
       "head_branch": "main",
-      "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40257699068",
+      "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40450633325",
       "name": "validate",
       "path": ".github/workflows/validate.yml",
-      "run_number": 1460,
-      "run_started_at": "2026-10-26T02:09:33Z",
+      "run_number": 1465,
+      "run_started_at": "2026-10-27T04:36:08Z",
       "status": "completed",
-      "updated_at": "2026-10-26T02:11:02Z",
+      "updated_at": "2026-10-27T04:37:46Z",
       "workflow_id": 331522431
     }
   ],
@@ -300,7 +300,7 @@ Restore a successful latest completed default-branch run for the affected workfl
 
 ## PF-4E123844FBF6 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-E9DB242479A2` at `2026-10-26T22:39:11Z`
+- Observation: `PAM-5597F08E4337` at `2026-10-27T05:02:19Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/instance-watch.yml`
@@ -356,17 +356,17 @@ Restore a successful latest completed default-branch run for the affected workfl
       "available": true,
       "run": {
         "conclusion": "success",
-        "created_at": "2026-10-26T08:58:48Z",
-        "event": "schedule",
+        "created_at": "2026-10-27T04:36:08Z",
+        "event": "push",
         "head_branch": "main",
-        "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40296072701",
+        "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40450633296",
         "name": "Corpus source status",
         "path": ".github/workflows/corpus-status.yml",
-        "run_number": 320,
-        "run_started_at": "2026-10-26T08:58:48Z",
+        "run_number": 322,
+        "run_started_at": "2026-10-27T04:36:08Z",
         "status": "completed",
-        "updated_at": "2026-10-26T08:59:14Z",
+        "updated_at": "2026-10-27T04:36:30Z",
         "workflow_id": 333347627
       }
     },
@@ -378,17 +378,17 @@ Restore a successful latest completed default-branch run for the affected workfl
       "available": true,
       "run": {
         "conclusion": "success",
-        "created_at": "2026-10-26T02:09:33Z",
+        "created_at": "2026-10-27T04:36:08Z",
         "event": "push",
         "head_branch": "main",
-        "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40257698895",
+        "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40450633299",
         "name": "Build and deploy RAHP documentation",
         "path": ".github/workflows/pages.yml",
-        "run_number": 1440,
-        "run_started_at": "2026-10-26T02:09:33Z",
+        "run_number": 1445,
+        "run_started_at": "2026-10-27T04:36:08Z",
         "status": "completed",
-        "updated_at": "2026-10-26T02:10:52Z",
+        "updated_at": "2026-10-27T04:37:27Z",
         "workflow_id": 333196290
       }
     },
@@ -396,17 +396,17 @@ Restore a successful latest completed default-branch run for the affected workfl
       "available": true,
       "run": {
         "conclusion": "success",
-        "created_at": "2026-10-26T02:09:33Z",
+        "created_at": "2026-10-27T04:36:08Z",
         "event": "push",
         "head_branch": "main",
-        "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40257699068",
+        "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40450633325",
         "name": "validate",
         "path": ".github/workflows/validate.yml",
-        "run_number": 1460,
-        "run_started_at": "2026-10-26T02:09:33Z",
+        "run_number": 1465,
+        "run_started_at": "2026-10-27T04:36:08Z",
         "status": "completed",
-        "updated_at": "2026-10-26T02:11:02Z",
+        "updated_at": "2026-10-27T04:37:46Z",
         "workflow_id": 331522431
       }
     }
@@ -414,47 +414,47 @@ Restore a successful latest completed default-branch run for the affected workfl
   "latest": [
     {
       "conclusion": "success",
-      "created_at": "2026-10-26T08:58:48Z",
-      "event": "schedule",
+      "created_at": "2026-10-27T04:36:08Z",
+      "event": "push",
       "head_branch": "main",
-      "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40296072701",
+      "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40450633296",
       "name": "Corpus source status",
       "path": ".github/workflows/corpus-status.yml",
-      "run_number": 320,
-      "run_started_at": "2026-10-26T08:58:48Z",
+      "run_number": 322,
+      "run_started_at": "2026-10-27T04:36:08Z",
       "status": "completed",
-      "updated_at": "2026-10-26T08:59:14Z",
+      "updated_at": "2026-10-27T04:36:30Z",
       "workflow_id": 333347627
     },
     {
       "conclusion": "skipped",
-      "created_at": "2026-10-26T20:51:00Z",
-      "event": "issues",
+      "created_at": "2026-10-27T03:42:59Z",
+      "event": "issue_comment",
       "head_branch": "main",
       "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40399279370",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40445707368",
       "name": "Reconcile RAHP-DPIP lifecycle and returns",
       "path": ".github/workflows/dpip-lifecycle.yml",
-      "run_number": 1394,
-      "run_started_at": "2026-10-26T20:51:00Z",
+      "run_number": 1398,
+      "run_started_at": "2026-10-27T03:42:59Z",
       "status": "completed",
-      "updated_at": "2026-10-26T20:51:01Z",
+      "updated_at": "2026-10-27T03:43:00Z",
       "workflow_id": 343401275
     },
     {
-      "conclusion": "skipped",
-      "created_at": "2026-10-26T20:51:00Z",
-      "event": "issues",
+      "conclusion": "success",
+      "created_at": "2026-10-26T22:51:36Z",
+      "event": "schedule",
       "head_branch": "main",
       "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40399279510",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40415621171",
       "name": "Reconcile DTG end-to-end assurance",
       "path": ".github/workflows/dtg-assurance-reconcile.yml",
-      "run_number": 2725,
-      "run_started_at": "2026-10-26T20:51:00Z",
+      "run_number": 2726,
+      "run_started_at": "2026-10-26T22:51:36Z",
       "status": "completed",
-      "updated_at": "2026-10-26T20:51:02Z",
+      "updated_at": "2026-10-26T22:51:59Z",
       "workflow_id": 343549711
     },
     {
@@ -489,47 +489,47 @@ Restore a successful latest completed default-branch run for the affected workfl
     },
     {
       "conclusion": "success",
-      "created_at": "2026-10-26T02:09:33Z",
+      "created_at": "2026-10-27T04:36:08Z",
       "event": "push",
       "head_branch": "main",
-      "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40257698895",
+      "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40450633299",
       "name": "Build and deploy RAHP documentation",
       "path": ".github/workflows/pages.yml",
-      "run_number": 1440,
-      "run_started_at": "2026-10-26T02:09:33Z",
+      "run_number": 1445,
+      "run_started_at": "2026-10-27T04:36:08Z",
       "status": "completed",
-      "updated_at": "2026-10-26T02:10:52Z",
+      "updated_at": "2026-10-27T04:37:27Z",
       "workflow_id": 333196290
     },
     {
       "conclusion": "skipped",
-      "created_at": "2026-10-26T20:51:00Z",
+      "created_at": "2026-10-27T00:19:52Z",
       "event": "issues",
       "head_branch": "main",
       "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40399279563",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40425698754",
       "name": "Advance bounded RAHP review workers",
       "path": ".github/workflows/review-workers.yml",
-      "run_number": 29,
-      "run_started_at": "2026-10-26T20:51:00Z",
+      "run_number": 31,
+      "run_started_at": "2026-10-27T00:19:52Z",
       "status": "completed",
-      "updated_at": "2026-10-26T20:51:07Z",
+      "updated_at": "2026-10-27T00:19:53Z",
       "workflow_id": 396124313
     },
     {
       "conclusion": "success",
-      "created_at": "2026-10-26T02:09:33Z",
+      "created_at": "2026-10-27T04:36:08Z",
       "event": "push",
       "head_branch": "main",
-      "head_sha": "d548622e849ed7968d68fae66a07ff536dde4649",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40257699068",
+      "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40450633325",
       "name": "validate",
       "path": ".github/workflows/validate.yml",
-      "run_number": 1460,
-      "run_started_at": "2026-10-26T02:09:33Z",
+      "run_number": 1465,
+      "run_started_at": "2026-10-27T04:36:08Z",
       "status": "completed",
-      "updated_at": "2026-10-26T02:11:02Z",
+      "updated_at": "2026-10-27T04:37:46Z",
       "workflow_id": 331522431
     }
   ],
