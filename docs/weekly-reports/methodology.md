@@ -45,3 +45,16 @@ The ledger records five separately dated lifecycle events: PR opened, PR merged,
 **Coverage exclusions:** Issue/PR review comments, review submissions, discussions, GitLab and other standards platforms, commits pushed directly, private contributions, and contributions authored by other maintainers are not included. In particular, comments on existing upstream issues are important activity that this collector **does not yet represent**. Do not call the result a complete contribution inventory. Adding comments/reviews requires a separate event source with stable IDs and timestamps, not inference from `updated_at`.
 
 The original October Week 40–43 backfill remains an immutable **legacy owner-scoped merged-PR editorial baseline**. No historical report should be rewritten with broader totals without a separately traceable reconciliation; schema 2.0 starts with newly generated weeks. The generator refuses incomplete GitHub searches and refuses to overwrite archived reports. No automated determination of substantive merit, acceptance, conformance or assurance is made.
+
+## October 2026 external GitHub reconciliation (27 October)
+
+The Week 40–43 published narratives were originally scoped to personal/QBF author-attributed PR merges. An additive, dated external contribution section was appended to each report on 27 October 2026. The expanded external observations use GitHub issue search restricted to public repositories outside both owner scopes, `author:sankarshanmukhopadhyay`, and the respective inclusive October calendar days. Values were cross-checked against source links. They are separate event counts, not an amendment of the original owner-scoped baseline. Week 40 is October 1–4 only.
+
+| Week | External PRs opened | External PRs merged | External issues opened |
+|---|---:|---:|---:|
+| 40 | 0 | 0 | 2 |
+| 41 | 11 | 4 | 4 |
+| 42 | 1 | 3 | 0 |
+| 43 | 7 | 3 | 12 |
+
+This October reconciliation does not purport to reconstruct discussions, reviews, GitLab activity, private contributions or a historical point-in-time GitHub snapshot. External PR merge is evidence of upstream integration but not of independent assurance or normative approval beyond that project's documented process. Current generator schema 2.0 applies to future weeks; October appendices are a separately sourced retrospective.
