@@ -35,3 +35,13 @@ Weekly automation signs its own bot-authored commits with the bot's public norep
 - The weekly source query is GitHub's API snapshot at run time; late edits may change descriptions, but merge timestamps remain the reporting attribution.
 - GitHub search imposes query pagination and result bounds. Any incomplete result or overflow must fail rather than silently produce a complete-looking report.
 - Historical backfill describes evidence available at preparation time, not a historical snapshot of every PR's state as of the original Sunday.
+
+## Expanded contribution footprint (schema 2.0)
+
+Starting with reports generated after the October backfill, GitHub collection searches the **author's public contributions across all repository owners**, not merely the two maintained scopes. Each event is attributed to either `portfolio` (repository owned by `sankarshanmukhopadhyay` or `qbf-consulting`) or `external` (all other owners). Owner identity is not a claim of authorship, acceptance authority, or maturity.
+
+The ledger records five separately dated lifecycle events: PR opened, PR merged, PR closed without merge, issue opened, and issue closed. One PR can have an opening event in one week and a merger in another; neither event is silently dropped. Closure of a merged PR is **not** counted again as unmerged closure. Items are deduplicated by platform, type, repository, number and event. Records include source URLs and event timestamps. Report sections separate portfolio and external work, and keep GitHub metadata distinct from editorial impact statements.
+
+**Coverage exclusions:** Issue/PR review comments, review submissions, discussions, GitLab and other standards platforms, commits pushed directly, private contributions, and contributions authored by other maintainers are not included. In particular, comments on existing upstream issues are important activity that this collector **does not yet represent**. Do not call the result a complete contribution inventory. Adding comments/reviews requires a separate event source with stable IDs and timestamps, not inference from `updated_at`.
+
+The original October Week 40–43 backfill remains an immutable **legacy owner-scoped merged-PR editorial baseline**. No historical report should be rewritten with broader totals without a separately traceable reconciliation; schema 2.0 starts with newly generated weeks. The generator refuses incomplete GitHub searches and refuses to overwrite archived reports. No automated determination of substantive merit, acceptance, conformance or assurance is made.
