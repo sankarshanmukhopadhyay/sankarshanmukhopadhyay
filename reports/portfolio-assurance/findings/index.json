@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T12:52:31Z",
+  "generated_at": "2026-10-28T22:33:41Z",
   "repositories": [
     {
       "repository": "A2A",
@@ -52,7 +52,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "finding_count": 2,
+      "finding_count": 0,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/agent-registry-protocol.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-registry-protocol.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-registry-protocol.json"

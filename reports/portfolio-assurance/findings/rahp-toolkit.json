@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-10-28T12:52:31Z",
+  "generated_at": "2026-10-28T22:33:41Z",
   "repository": "rahp-toolkit",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-10-28T12:52:31Z",
+    "observed_at": "2026-10-28T22:33:41Z",
     "default_branch": "main",
     "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
     "provenance_status": "observed"
@@ -46,7 +46,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
       "severity": "medium",
-      "observed_at": "2026-10-28T12:52:31Z",
+      "observed_at": "2026-10-28T22:33:41Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -75,16 +75,16 @@
             "workflow_id": 343401275,
             "name": "Reconcile RAHP-DPIP lifecycle and returns",
             "path": ".github/workflows/dpip-lifecycle.yml",
-            "conclusion": "skipped",
+            "conclusion": "success",
             "status": "completed",
-            "event": "issue_comment",
-            "created_at": "2026-10-28T12:25:23Z",
-            "updated_at": "2026-10-28T12:25:30Z",
-            "run_started_at": "2026-10-28T12:25:23Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40687668952",
+            "event": "schedule",
+            "created_at": "2026-10-28T20:33:44Z",
+            "updated_at": "2026-10-28T20:34:57Z",
+            "run_started_at": "2026-10-28T20:33:44Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40764382852",
             "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
             "head_branch": "main",
-            "run_number": 1440
+            "run_number": 1446
           },
           {
             "workflow_id": 343549711,
@@ -93,13 +93,13 @@
             "conclusion": "skipped",
             "status": "completed",
             "event": "issues",
-            "created_at": "2026-10-28T11:51:11Z",
-            "updated_at": "2026-10-28T11:51:12Z",
-            "run_started_at": "2026-10-28T11:51:11Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40683147575",
-            "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+            "created_at": "2026-10-28T13:39:54Z",
+            "updated_at": "2026-10-28T13:39:55Z",
+            "run_started_at": "2026-10-28T13:39:54Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40698511395",
+            "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
             "head_branch": "main",
-            "run_number": 2759
+            "run_number": 2764
           },
           {
             "workflow_id": 343470013,
@@ -108,13 +108,13 @@
             "conclusion": "failure",
             "status": "completed",
             "event": "schedule",
-            "created_at": "2026-10-28T06:46:39Z",
-            "updated_at": "2026-10-28T06:46:51Z",
-            "run_started_at": "2026-10-28T06:46:39Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40645920258",
-            "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+            "created_at": "2026-10-28T18:45:35Z",
+            "updated_at": "2026-10-28T18:45:52Z",
+            "run_started_at": "2026-10-28T18:45:35Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40748096091",
+            "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
             "head_branch": "main",
-            "run_number": 170
+            "run_number": 171
           },
           {
             "workflow_id": 334033746,
@@ -153,13 +153,13 @@
             "conclusion": "skipped",
             "status": "completed",
             "event": "issues",
-            "created_at": "2026-10-28T11:51:11Z",
-            "updated_at": "2026-10-28T11:51:12Z",
-            "run_started_at": "2026-10-28T11:51:11Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40683146783",
-            "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+            "created_at": "2026-10-28T13:39:54Z",
+            "updated_at": "2026-10-28T13:40:03Z",
+            "run_started_at": "2026-10-28T13:39:54Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40698511441",
+            "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
             "head_branch": "main",
-            "run_number": 62
+            "run_number": 68
           },
           {
             "workflow_id": 331522431,
@@ -201,13 +201,13 @@
             "conclusion": "failure",
             "status": "completed",
             "event": "schedule",
-            "created_at": "2026-10-28T06:46:39Z",
-            "updated_at": "2026-10-28T06:46:51Z",
-            "run_started_at": "2026-10-28T06:46:39Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40645920258",
-            "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+            "created_at": "2026-10-28T18:45:35Z",
+            "updated_at": "2026-10-28T18:45:52Z",
+            "run_started_at": "2026-10-28T18:45:35Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40748096091",
+            "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
             "head_branch": "main",
-            "run_number": 170
+            "run_number": 171
           }
         ],
         "active_inventory_available": true,
@@ -335,7 +335,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "severity": "medium",
-      "observed_at": "2026-10-28T12:52:31Z",
+      "observed_at": "2026-10-28T22:33:41Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -364,16 +364,16 @@
             "workflow_id": 343401275,
             "name": "Reconcile RAHP-DPIP lifecycle and returns",
             "path": ".github/workflows/dpip-lifecycle.yml",
-            "conclusion": "skipped",
+            "conclusion": "success",
             "status": "completed",
-            "event": "issue_comment",
-            "created_at": "2026-10-28T12:25:23Z",
-            "updated_at": "2026-10-28T12:25:30Z",
-            "run_started_at": "2026-10-28T12:25:23Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40687668952",
+            "event": "schedule",
+            "created_at": "2026-10-28T20:33:44Z",
+            "updated_at": "2026-10-28T20:34:57Z",
+            "run_started_at": "2026-10-28T20:33:44Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40764382852",
             "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
             "head_branch": "main",
-            "run_number": 1440
+            "run_number": 1446
           },
           {
             "workflow_id": 343549711,
@@ -382,13 +382,13 @@
             "conclusion": "skipped",
             "status": "completed",
             "event": "issues",
-            "created_at": "2026-10-28T11:51:11Z",
-            "updated_at": "2026-10-28T11:51:12Z",
-            "run_started_at": "2026-10-28T11:51:11Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40683147575",
-            "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+            "created_at": "2026-10-28T13:39:54Z",
+            "updated_at": "2026-10-28T13:39:55Z",
+            "run_started_at": "2026-10-28T13:39:54Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40698511395",
+            "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
             "head_branch": "main",
-            "run_number": 2759
+            "run_number": 2764
           },
           {
             "workflow_id": 343470013,
@@ -397,13 +397,13 @@
             "conclusion": "failure",
             "status": "completed",
             "event": "schedule",
-            "created_at": "2026-10-28T06:46:39Z",
-            "updated_at": "2026-10-28T06:46:51Z",
-            "run_started_at": "2026-10-28T06:46:39Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40645920258",
-            "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+            "created_at": "2026-10-28T18:45:35Z",
+            "updated_at": "2026-10-28T18:45:52Z",
+            "run_started_at": "2026-10-28T18:45:35Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40748096091",
+            "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
             "head_branch": "main",
-            "run_number": 170
+            "run_number": 171
           },
           {
             "workflow_id": 334033746,
@@ -442,13 +442,13 @@
             "conclusion": "skipped",
             "status": "completed",
             "event": "issues",
-            "created_at": "2026-10-28T11:51:11Z",
-            "updated_at": "2026-10-28T11:51:12Z",
-            "run_started_at": "2026-10-28T11:51:11Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40683146783",
-            "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
+            "created_at": "2026-10-28T13:39:54Z",
+            "updated_at": "2026-10-28T13:40:03Z",
+            "run_started_at": "2026-10-28T13:39:54Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40698511441",
+            "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
             "head_branch": "main",
-            "run_number": 62
+            "run_number": 68
           },
           {
             "workflow_id": 331522431,
@@ -627,7 +627,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-24T10:57:47Z",
-      "last_observed": "2026-10-28T12:52:31Z",
+      "last_observed": "2026-10-28T22:33:41Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-F9D2E42F124C"
     },
@@ -639,7 +639,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-10-28T12:52:31Z",
+      "last_observed": "2026-10-28T22:33:41Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-7C256736190B"
     }
