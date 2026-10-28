@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-10-27T22:12:31Z",
+  "generated_at": "2026-10-28T05:40:33Z",
   "repository": "cawg-trqp-verifier-refimpl",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-10-27T22:12:31Z",
+    "observed_at": "2026-10-28T05:40:33Z",
     "default_branch": "main",
     "head_sha": "ada8927d17f0d5007b83416d412c1f656e01da6d",
     "provenance_status": "observed"
@@ -40,13 +40,13 @@
   "finding_count": 1,
   "findings": [
     {
-      "finding_id": "PAM-43B6A440EF09",
+      "finding_id": "PAM-697FF1ED590B",
       "finding_fingerprint": "PF-398FA7C456CF",
       "repository": "cawg-trqp-verifier-refimpl",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/publication-link-audit.yml",
       "severity": "medium",
-      "observed_at": "2026-10-27T22:12:31Z",
+      "observed_at": "2026-10-28T05:40:33Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -264,9 +264,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-26T13:00:04Z",
-      "last_observed": "2026-10-27T22:12:31Z",
+      "last_observed": "2026-10-28T05:40:33Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-43B6A440EF09"
+      "latest_finding_id": "PAM-697FF1ED590B"
     }
   ],
   "handoff": {
