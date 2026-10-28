@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-10-28T12:52:31Z  
+**Generated:** 2026-10-28T22:33:41Z  
 **Open findings:** 2  
 **Repository snapshot:** `7fb34a0400ea27c20f0149825a481f2bc90b2912`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-175F07FC3EA4 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-F9D2E42F124C` at `2026-10-28T12:52:31Z`
+- Observation: `PAM-F9D2E42F124C` at `2026-10-28T22:33:41Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/dtg-portfolio-materiality-handoff.yml`
@@ -156,48 +156,48 @@ search_exclude: true
       "workflow_id": 333347627
     },
     {
-      "conclusion": "skipped",
-      "created_at": "2026-10-28T12:25:23Z",
-      "event": "issue_comment",
+      "conclusion": "success",
+      "created_at": "2026-10-28T20:33:44Z",
+      "event": "schedule",
       "head_branch": "main",
       "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40687668952",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40764382852",
       "name": "Reconcile RAHP-DPIP lifecycle and returns",
       "path": ".github/workflows/dpip-lifecycle.yml",
-      "run_number": 1440,
-      "run_started_at": "2026-10-28T12:25:23Z",
+      "run_number": 1446,
+      "run_started_at": "2026-10-28T20:33:44Z",
       "status": "completed",
-      "updated_at": "2026-10-28T12:25:30Z",
+      "updated_at": "2026-10-28T20:34:57Z",
       "workflow_id": 343401275
     },
     {
       "conclusion": "skipped",
-      "created_at": "2026-10-28T11:51:11Z",
+      "created_at": "2026-10-28T13:39:54Z",
       "event": "issues",
       "head_branch": "main",
-      "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40683147575",
+      "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40698511395",
       "name": "Reconcile DTG end-to-end assurance",
       "path": ".github/workflows/dtg-assurance-reconcile.yml",
-      "run_number": 2759,
-      "run_started_at": "2026-10-28T11:51:11Z",
+      "run_number": 2764,
+      "run_started_at": "2026-10-28T13:39:54Z",
       "status": "completed",
-      "updated_at": "2026-10-28T11:51:12Z",
+      "updated_at": "2026-10-28T13:39:55Z",
       "workflow_id": 343549711
     },
     {
       "conclusion": "failure",
-      "created_at": "2026-10-28T06:46:39Z",
+      "created_at": "2026-10-28T18:45:35Z",
       "event": "schedule",
       "head_branch": "main",
-      "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40645920258",
+      "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40748096091",
       "name": "Consume DTG Portfolio Monitor assurance signals",
       "path": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
-      "run_number": 170,
-      "run_started_at": "2026-10-28T06:46:39Z",
+      "run_number": 171,
+      "run_started_at": "2026-10-28T18:45:35Z",
       "status": "completed",
-      "updated_at": "2026-10-28T06:46:51Z",
+      "updated_at": "2026-10-28T18:45:52Z",
       "workflow_id": 343470013
     },
     {
@@ -232,17 +232,17 @@ search_exclude: true
     },
     {
       "conclusion": "skipped",
-      "created_at": "2026-10-28T11:51:11Z",
+      "created_at": "2026-10-28T13:39:54Z",
       "event": "issues",
       "head_branch": "main",
-      "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40683146783",
+      "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40698511441",
       "name": "Advance bounded RAHP review workers",
       "path": ".github/workflows/review-workers.yml",
-      "run_number": 62,
-      "run_started_at": "2026-10-28T11:51:11Z",
+      "run_number": 68,
+      "run_started_at": "2026-10-28T13:39:54Z",
       "status": "completed",
-      "updated_at": "2026-10-28T11:51:12Z",
+      "updated_at": "2026-10-28T13:40:03Z",
       "workflow_id": 396124313
     },
     {
@@ -282,17 +282,17 @@ search_exclude: true
   "unresolved": [
     {
       "conclusion": "failure",
-      "created_at": "2026-10-28T06:46:39Z",
+      "created_at": "2026-10-28T18:45:35Z",
       "event": "schedule",
       "head_branch": "main",
-      "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40645920258",
+      "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40748096091",
       "name": "Consume DTG Portfolio Monitor assurance signals",
       "path": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
-      "run_number": 170,
-      "run_started_at": "2026-10-28T06:46:39Z",
+      "run_number": 171,
+      "run_started_at": "2026-10-28T18:45:35Z",
       "status": "completed",
-      "updated_at": "2026-10-28T06:46:51Z",
+      "updated_at": "2026-10-28T18:45:52Z",
       "workflow_id": 343470013
     }
   ],
@@ -316,7 +316,7 @@ Restore a successful latest completed default-branch run for the affected workfl
 
 ## PF-4E123844FBF6 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-7C256736190B` at `2026-10-28T12:52:31Z`
+- Observation: `PAM-7C256736190B` at `2026-10-28T22:33:41Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/instance-watch.yml`
@@ -445,48 +445,48 @@ Restore a successful latest completed default-branch run for the affected workfl
       "workflow_id": 333347627
     },
     {
-      "conclusion": "skipped",
-      "created_at": "2026-10-28T12:25:23Z",
-      "event": "issue_comment",
+      "conclusion": "success",
+      "created_at": "2026-10-28T20:33:44Z",
+      "event": "schedule",
       "head_branch": "main",
       "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40687668952",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40764382852",
       "name": "Reconcile RAHP-DPIP lifecycle and returns",
       "path": ".github/workflows/dpip-lifecycle.yml",
-      "run_number": 1440,
-      "run_started_at": "2026-10-28T12:25:23Z",
+      "run_number": 1446,
+      "run_started_at": "2026-10-28T20:33:44Z",
       "status": "completed",
-      "updated_at": "2026-10-28T12:25:30Z",
+      "updated_at": "2026-10-28T20:34:57Z",
       "workflow_id": 343401275
     },
     {
       "conclusion": "skipped",
-      "created_at": "2026-10-28T11:51:11Z",
+      "created_at": "2026-10-28T13:39:54Z",
       "event": "issues",
       "head_branch": "main",
-      "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40683147575",
+      "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40698511395",
       "name": "Reconcile DTG end-to-end assurance",
       "path": ".github/workflows/dtg-assurance-reconcile.yml",
-      "run_number": 2759,
-      "run_started_at": "2026-10-28T11:51:11Z",
+      "run_number": 2764,
+      "run_started_at": "2026-10-28T13:39:54Z",
       "status": "completed",
-      "updated_at": "2026-10-28T11:51:12Z",
+      "updated_at": "2026-10-28T13:39:55Z",
       "workflow_id": 343549711
     },
     {
       "conclusion": "failure",
-      "created_at": "2026-10-28T06:46:39Z",
+      "created_at": "2026-10-28T18:45:35Z",
       "event": "schedule",
       "head_branch": "main",
-      "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40645920258",
+      "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40748096091",
       "name": "Consume DTG Portfolio Monitor assurance signals",
       "path": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
-      "run_number": 170,
-      "run_started_at": "2026-10-28T06:46:39Z",
+      "run_number": 171,
+      "run_started_at": "2026-10-28T18:45:35Z",
       "status": "completed",
-      "updated_at": "2026-10-28T06:46:51Z",
+      "updated_at": "2026-10-28T18:45:52Z",
       "workflow_id": 343470013
     },
     {
@@ -521,17 +521,17 @@ Restore a successful latest completed default-branch run for the affected workfl
     },
     {
       "conclusion": "skipped",
-      "created_at": "2026-10-28T11:51:11Z",
+      "created_at": "2026-10-28T13:39:54Z",
       "event": "issues",
       "head_branch": "main",
-      "head_sha": "c84d88dfdd7adad43962ce6981283d15c61dc6c0",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40683146783",
+      "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/40698511441",
       "name": "Advance bounded RAHP review workers",
       "path": ".github/workflows/review-workers.yml",
-      "run_number": 62,
-      "run_started_at": "2026-10-28T11:51:11Z",
+      "run_number": 68,
+      "run_started_at": "2026-10-28T13:39:54Z",
       "status": "completed",
-      "updated_at": "2026-10-28T11:51:12Z",
+      "updated_at": "2026-10-28T13:40:03Z",
       "workflow_id": 396124313
     },
     {
