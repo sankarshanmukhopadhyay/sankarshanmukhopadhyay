@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-28T22:33:41Z",
+  "generated_at": "2026-10-29T05:46:11Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -185,13 +185,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-10-28T14:15:14Z",
-            "updated_at": "2026-10-28T14:15:37Z",
-            "run_started_at": "2026-10-28T14:15:14Z",
-            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/40704112103",
-            "head_sha": "a8fe3bf27849853c99facc1dcd26958dd43b559f",
-            "head_branch": "main",
-            "run_number": 364
+            "created_at": "2026-10-28T22:35:24Z",
+            "updated_at": "2026-10-28T22:35:53Z",
+            "run_started_at": "2026-10-28T22:35:24Z",
+            "html_url": "https://github.com/qbf-consulting/agent-registry-protocol/actions/runs/40781128732",
+            "head_sha": "3f1c8d74a5203f6162e152d2ad9106cb67036bc0",
+            "head_branch": "dependabot/bundler/ruby-dependencies-b6b8cdc8a6",
+            "run_number": 365
           }
         }
       ],
