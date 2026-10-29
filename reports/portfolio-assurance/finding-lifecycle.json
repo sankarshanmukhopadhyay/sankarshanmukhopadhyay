@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-29T05:46:11Z",
+  "generated_at": "2026-10-29T12:58:35Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -164,11 +164,11 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "dimension": "operational",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-10-28T22:33:41Z",
-      "resolved_at": "2026-10-29T05:46:11Z",
-      "latest_finding_id": "PAM-7C256736190B"
+      "last_observed": "2026-10-29T12:58:35Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-FE0139E1EE20"
     },
     "PF-FE9A3049B948": {
       "finding_fingerprint": "PF-FE9A3049B948",
@@ -658,7 +658,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-10-29T05:46:11Z",
+      "last_observed": "2026-10-29T12:58:35Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-4ACC85F2D62C"
     },
@@ -778,7 +778,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-24T10:57:47Z",
-      "last_observed": "2026-10-29T05:46:11Z",
+      "last_observed": "2026-10-29T12:58:35Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-74EABC0EC0C5"
     },
@@ -790,7 +790,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-26T13:00:04Z",
-      "last_observed": "2026-10-29T05:46:11Z",
+      "last_observed": "2026-10-29T12:58:35Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-1B652C97B7C3"
     }
