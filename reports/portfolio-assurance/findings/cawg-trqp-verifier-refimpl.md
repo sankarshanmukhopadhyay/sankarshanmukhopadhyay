@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `cawg-trqp-verifier-refimpl`
 
-**Generated:** 2026-10-30T05:46:14Z  
+**Generated:** 2026-10-30T12:53:12Z  
 **Open findings:** 1  
 **Repository snapshot:** `ada8927d17f0d5007b83416d412c1f656e01da6d`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-398FA7C456CF — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-5F569B6E8728` at `2026-10-30T05:46:14Z`
+- Observation: `PAM-5F569B6E8728` at `2026-10-30T12:53:12Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/publication-link-audit.yml`
@@ -52,7 +52,7 @@ search_exclude: true
     "dynamic/dependabot/update-graph"
   ],
   "available": true,
-  "completed_examined": 37,
+  "completed_examined": 35,
   "contract_evidence": {
     ".github/workflows/ci.yml": {
       "available": true,
@@ -173,17 +173,17 @@ search_exclude: true
     },
     {
       "conclusion": "success",
-      "created_at": "2026-10-23T11:23:01Z",
+      "created_at": "2026-10-30T11:23:28Z",
       "event": "dynamic",
       "head_branch": "main",
-      "head_sha": "47e08a7eb8cadb95b6aae06b3835661a48d915ed",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/39945681613",
-      "name": "bundler in / for jekyll-seo-tag, jekyll-relative-links - Update #1647638685",
+      "head_sha": "ada8927d17f0d5007b83416d412c1f656e01da6d",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/41047740908",
+      "name": "github_actions in /. - Update #1665554789",
       "path": "dynamic/dependabot/dependabot-updates",
-      "run_number": 107,
-      "run_started_at": "2026-10-23T11:23:01Z",
+      "run_number": 111,
+      "run_started_at": "2026-10-30T11:23:28Z",
       "status": "completed",
-      "updated_at": "2026-10-23T11:23:50Z",
+      "updated_at": "2026-10-30T11:24:39Z",
       "workflow_id": 261742867
     },
     {
