@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-29T22:44:23Z",
+  "generated_at": "2026-10-30T05:46:14Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -140,11 +140,11 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "dimension": "assurance",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-10-25T11:25:48Z",
-      "resolved_at": "2026-10-25T16:16:30Z",
-      "latest_finding_id": "PAM-0B3E0175074E"
+      "last_observed": "2026-10-30T05:46:14Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-2434225AE280"
     },
     "PF-954D1C442655": {
       "finding_fingerprint": "PF-954D1C442655",
@@ -166,9 +166,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-10-29T22:44:23Z",
+      "last_observed": "2026-10-30T05:46:14Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-FE0139E1EE20"
+      "latest_finding_id": "PAM-6E4D62C91F28"
     },
     "PF-FE9A3049B948": {
       "finding_fingerprint": "PF-FE9A3049B948",
@@ -658,9 +658,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-10-29T22:44:23Z",
+      "last_observed": "2026-10-30T05:46:14Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-4ACC85F2D62C"
+      "latest_finding_id": "PAM-BBB644A15AC3"
     },
     "PF-7689472EA3BE": {
       "finding_fingerprint": "PF-7689472EA3BE",
@@ -778,9 +778,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-24T10:57:47Z",
-      "last_observed": "2026-10-29T22:44:23Z",
+      "last_observed": "2026-10-30T05:46:14Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-74EABC0EC0C5"
+      "latest_finding_id": "PAM-DE82A01E3D4F"
     },
     "PF-398FA7C456CF": {
       "finding_fingerprint": "PF-398FA7C456CF",
@@ -790,9 +790,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-26T13:00:04Z",
-      "last_observed": "2026-10-29T22:44:23Z",
+      "last_observed": "2026-10-30T05:46:14Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-1B652C97B7C3"
+      "latest_finding_id": "PAM-5F569B6E8728"
     }
   }
 }
