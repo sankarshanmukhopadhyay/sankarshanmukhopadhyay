@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `cawg-trqp-verifier-refimpl`
 
-**Generated:** 2026-10-30T22:17:23Z  
+**Generated:** 2026-10-31T05:38:30Z  
 **Open findings:** 1  
 **Repository snapshot:** `ada8927d17f0d5007b83416d412c1f656e01da6d`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-398FA7C456CF — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-5F569B6E8728` at `2026-10-30T22:17:23Z`
+- Observation: `PAM-1324AC1EF401` at `2026-10-31T05:38:30Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/publication-link-audit.yml`
