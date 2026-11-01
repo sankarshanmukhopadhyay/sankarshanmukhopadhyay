@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-31T21:31:47Z",
+  "generated_at": "2026-11-01T06:01:01Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -142,9 +142,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-10-31T21:31:47Z",
+      "last_observed": "2026-11-01T06:01:01Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-F62328B16EDC"
+      "latest_finding_id": "PAM-7D26F38B1D80"
     },
     "PF-954D1C442655": {
       "finding_fingerprint": "PF-954D1C442655",
@@ -418,9 +418,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-10-31T21:31:47Z",
+      "last_observed": "2026-11-01T06:01:01Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-C574627D2E8F"
+      "latest_finding_id": "PAM-CB78C368118A"
     },
     "PF-E8B1B5CFA71B": {
       "finding_fingerprint": "PF-E8B1B5CFA71B",
@@ -430,9 +430,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-10-31T21:31:47Z",
+      "last_observed": "2026-11-01T06:01:01Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-F74DE58A2E99"
+      "latest_finding_id": "PAM-85D4D9629A62"
     },
     "PF-0B036E077FB8": {
       "finding_fingerprint": "PF-0B036E077FB8",
@@ -658,9 +658,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-10-31T21:31:47Z",
+      "last_observed": "2026-11-01T06:01:01Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-4BCB2F0E26CC"
+      "latest_finding_id": "PAM-6C52AEA93A1D"
     },
     "PF-7689472EA3BE": {
       "finding_fingerprint": "PF-7689472EA3BE",
@@ -778,9 +778,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-24T10:57:47Z",
-      "last_observed": "2026-10-31T21:31:47Z",
+      "last_observed": "2026-11-01T06:01:01Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-D5333AB99A91"
+      "latest_finding_id": "PAM-CDCE2A02421E"
     },
     "PF-398FA7C456CF": {
       "finding_fingerprint": "PF-398FA7C456CF",
@@ -790,9 +790,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-26T13:00:04Z",
-      "last_observed": "2026-10-31T21:31:47Z",
+      "last_observed": "2026-11-01T06:01:01Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-1324AC1EF401"
+      "latest_finding_id": "PAM-E289FE6C841A"
     }
   }
 }
