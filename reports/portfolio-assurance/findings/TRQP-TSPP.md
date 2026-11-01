@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `TRQP-TSPP`
 
-**Generated:** 2026-11-01T06:01:01Z  
+**Generated:** 2026-11-01T13:21:40Z  
 **Open findings:** 1  
 **Repository snapshot:** `117b2205135cda34413e89cecd57914e3d4d47b7`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-9C213FA6D34C — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-6C52AEA93A1D` at `2026-11-01T06:01:01Z`
+- Observation: `PAM-6C52AEA93A1D` at `2026-11-01T13:21:40Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
