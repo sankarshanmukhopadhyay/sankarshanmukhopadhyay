@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-11-01T22:00:06Z  
+**Generated:** 2026-11-02T05:59:25Z  
 **Open findings:** 3  
 **Repository snapshot:** `7fb34a0400ea27c20f0149825a481f2bc90b2912`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-9769E5EB9C48 — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-7D26F38B1D80` at `2026-11-01T22:00:06Z`
+- Observation: `PAM-799D816B7F57` at `2026-11-02T05:59:25Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/corpus-status.yml`
@@ -64,7 +64,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-E8B1B5CFA71B — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-85D4D9629A62` at `2026-11-01T22:00:06Z`
+- Observation: `PAM-65CD50C060B3` at `2026-11-02T05:59:25Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
@@ -101,7 +101,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-175F07FC3EA4 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-CDCE2A02421E` at `2026-11-01T22:00:06Z`
+- Observation: `PAM-05A4B93E324A` at `2026-11-02T05:59:25Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/dtg-portfolio-materiality-handoff.yml`
@@ -188,32 +188,32 @@ Restore or execute the repository-native control required by the governed assura
   "latest": [
     {
       "conclusion": "skipped",
-      "created_at": "2026-11-01T16:32:26Z",
+      "created_at": "2026-11-02T01:08:37Z",
       "event": "issues",
       "head_branch": "main",
       "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/41326849172",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/41370881932",
       "name": "Reconcile RAHP-DPIP lifecycle and returns",
       "path": ".github/workflows/dpip-lifecycle.yml",
-      "run_number": 1515,
-      "run_started_at": "2026-11-01T16:32:26Z",
+      "run_number": 1520,
+      "run_started_at": "2026-11-02T01:08:37Z",
       "status": "completed",
-      "updated_at": "2026-11-01T16:32:27Z",
+      "updated_at": "2026-11-02T01:08:46Z",
       "workflow_id": 343401275
     },
     {
-      "conclusion": "success",
-      "created_at": "2026-11-01T18:04:32Z",
-      "event": "schedule",
+      "conclusion": "skipped",
+      "created_at": "2026-11-02T01:08:37Z",
+      "event": "issues",
       "head_branch": "main",
       "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/41334692850",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/41370882170",
       "name": "Reconcile DTG end-to-end assurance",
       "path": ".github/workflows/dtg-assurance-reconcile.yml",
-      "run_number": 2832,
-      "run_started_at": "2026-11-01T18:04:32Z",
+      "run_number": 2837,
+      "run_started_at": "2026-11-02T01:08:37Z",
       "status": "completed",
-      "updated_at": "2026-11-01T18:04:58Z",
+      "updated_at": "2026-11-02T01:08:38Z",
       "workflow_id": 343549711
     },
     {
@@ -232,18 +232,18 @@ Restore or execute the repository-native control required by the governed assura
       "workflow_id": 343470013
     },
     {
-      "conclusion": "success",
-      "created_at": "2026-11-01T17:58:39Z",
-      "event": "schedule",
+      "conclusion": "skipped",
+      "created_at": "2026-11-02T01:08:37Z",
+      "event": "issues",
       "head_branch": "main",
       "head_sha": "7fb34a0400ea27c20f0149825a481f2bc90b2912",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/41334187252",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/41370881867",
       "name": "Advance bounded RAHP review workers",
       "path": ".github/workflows/review-workers.yml",
-      "run_number": 136,
-      "run_started_at": "2026-11-01T17:58:39Z",
+      "run_number": 141,
+      "run_started_at": "2026-11-02T01:08:37Z",
       "status": "completed",
-      "updated_at": "2026-11-01T17:58:50Z",
+      "updated_at": "2026-11-02T01:08:38Z",
       "workflow_id": 396124313
     },
     {

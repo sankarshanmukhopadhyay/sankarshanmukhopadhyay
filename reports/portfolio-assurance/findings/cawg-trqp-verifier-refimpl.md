@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `cawg-trqp-verifier-refimpl`
 
-**Generated:** 2026-11-01T22:00:06Z  
+**Generated:** 2026-11-02T05:59:25Z  
 **Open findings:** 1  
 **Repository snapshot:** `ada8927d17f0d5007b83416d412c1f656e01da6d`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-398FA7C456CF — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-E289FE6C841A` at `2026-11-01T22:00:06Z`
+- Observation: `PAM-FB7965E1DB23` at `2026-11-02T05:59:25Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/publication-link-audit.yml`
@@ -52,7 +52,7 @@ search_exclude: true
     "dynamic/dependabot/update-graph"
   ],
   "available": true,
-  "completed_examined": 35,
+  "completed_examined": 6,
   "contract_evidence": {
     ".github/workflows/ci.yml": {
       "available": true,
@@ -112,36 +112,6 @@ search_exclude: true
       "workflow_id": 381758282
     },
     {
-      "conclusion": "success",
-      "created_at": "2026-10-26T01:31:59Z",
-      "event": "push",
-      "head_branch": "main",
-      "head_sha": "ada8927d17f0d5007b83416d412c1f656e01da6d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/40254676124",
-      "name": "CI",
-      "path": ".github/workflows/ci.yml",
-      "run_number": 434,
-      "run_started_at": "2026-10-26T01:31:59Z",
-      "status": "completed",
-      "updated_at": "2026-10-26T01:32:26Z",
-      "workflow_id": 248717477
-    },
-    {
-      "conclusion": "success",
-      "created_at": "2026-10-26T01:31:59Z",
-      "event": "push",
-      "head_branch": "main",
-      "head_sha": "ada8927d17f0d5007b83416d412c1f656e01da6d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/40254676085",
-      "name": "Deploy Documentation (Just the Docs)",
-      "path": ".github/workflows/pages.yml",
-      "run_number": 44,
-      "run_started_at": "2026-10-26T01:31:59Z",
-      "status": "completed",
-      "updated_at": "2026-10-26T01:33:12Z",
-      "workflow_id": 315515884
-    },
-    {
       "conclusion": "failure",
       "created_at": "2026-10-26T08:49:05Z",
       "event": "schedule",
@@ -158,21 +128,6 @@ search_exclude: true
     },
     {
       "conclusion": "success",
-      "created_at": "2026-10-26T01:31:59Z",
-      "event": "push",
-      "head_branch": "main",
-      "head_sha": "ada8927d17f0d5007b83416d412c1f656e01da6d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/40254676103",
-      "name": "Release",
-      "path": ".github/workflows/release.yml",
-      "run_number": 16,
-      "run_started_at": "2026-10-26T01:31:59Z",
-      "status": "completed",
-      "updated_at": "2026-10-26T01:32:07Z",
-      "workflow_id": 347445405
-    },
-    {
-      "conclusion": "success",
       "created_at": "2026-10-30T11:23:28Z",
       "event": "dynamic",
       "head_branch": "main",
@@ -185,21 +140,6 @@ search_exclude: true
       "status": "completed",
       "updated_at": "2026-10-30T11:24:39Z",
       "workflow_id": 261742867
-    },
-    {
-      "conclusion": "success",
-      "created_at": "2026-10-26T00:14:16Z",
-      "event": "dynamic",
-      "head_branch": "main",
-      "head_sha": "ed553ab0ae476d1e5c7fb20466db2b1a584bf694",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/40248365960",
-      "name": "Configured Graph Update: pip in /. #1652259640",
-      "path": "dynamic/dependabot/update-graph",
-      "run_number": 24,
-      "run_started_at": "2026-10-26T00:14:16Z",
-      "status": "completed",
-      "updated_at": "2026-10-26T00:15:09Z",
-      "workflow_id": 303797171
     }
   ],
   "lookback_days": 7,
@@ -223,7 +163,7 @@ search_exclude: true
     }
   ],
   "unresolved_failures": 1,
-  "workflows_examined": 7
+  "workflows_examined": 3
 }
 ```
 
