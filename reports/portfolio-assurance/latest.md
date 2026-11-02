@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Portfolio Assurance Report — 2026-11-01
+title: Portfolio Assurance Report — 2026-11-02
 nav_exclude: true
 search_exclude: true
 ---
 
-# Portfolio Assurance Report — 2026-11-01
+# Portfolio Assurance Report — 2026-11-02
 
-**Observed:** 2026-11-01T22:00:06Z  
+**Observed:** 2026-11-02T05:59:25Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 5  
 **Unclassified public repositories:** 0
@@ -45,7 +45,7 @@ search_exclude: true
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-6C52AEA93A1D: TRQP-TSPP
+### PAM-13E932674031: TRQP-TSPP
 
 - **Fingerprint:** `PF-9C213FA6D34C`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -56,7 +56,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-7D26F38B1D80: rahp-toolkit
+### PAM-799D816B7F57: rahp-toolkit
 
 - **Fingerprint:** `PF-9769E5EB9C48`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -67,7 +67,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-85D4D9629A62: rahp-toolkit
+### PAM-65CD50C060B3: rahp-toolkit
 
 - **Fingerprint:** `PF-E8B1B5CFA71B`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -78,7 +78,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-E289FE6C841A: cawg-trqp-verifier-refimpl
+### PAM-FB7965E1DB23: cawg-trqp-verifier-refimpl
 
 - **Fingerprint:** `PF-398FA7C456CF`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
@@ -89,7 +89,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-CDCE2A02421E: rahp-toolkit
+### PAM-05A4B93E324A: rahp-toolkit
 
 - **Fingerprint:** `PF-175F07FC3EA4`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
