@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-03T14:10:58Z",
+  "generated_at": "2026-11-03T23:21:51Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -80,13 +80,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-11-03T14:02:25Z",
-            "updated_at": "2026-11-03T14:04:01Z",
-            "run_started_at": "2026-11-03T14:02:25Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/41649790671",
-            "head_sha": "4d1cf1a91361c0f7dfa8cf348ad23ef50adf323b",
+            "created_at": "2026-11-03T15:53:10Z",
+            "updated_at": "2026-11-03T15:54:21Z",
+            "run_started_at": "2026-11-03T15:53:10Z",
+            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/41668474701",
+            "head_sha": "7d67d034fede4501e9fd30d6757a118167469e48",
             "head_branch": "main",
-            "run_number": 190
+            "run_number": 232
           }
         },
         {
@@ -104,13 +104,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "workflow_run",
-            "created_at": "2026-11-03T14:04:31Z",
-            "updated_at": "2026-11-03T14:04:44Z",
-            "run_started_at": "2026-11-03T14:04:31Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/41650120009",
-            "head_sha": "4d1cf1a91361c0f7dfa8cf348ad23ef50adf323b",
+            "created_at": "2026-11-03T15:54:48Z",
+            "updated_at": "2026-11-03T15:55:01Z",
+            "run_started_at": "2026-11-03T15:54:48Z",
+            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/41668754765",
+            "head_sha": "7d67d034fede4501e9fd30d6757a118167469e48",
             "head_branch": "main",
-            "run_number": 51
+            "run_number": 65
           }
         }
       ],
