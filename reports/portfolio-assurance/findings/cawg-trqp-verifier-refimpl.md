@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `cawg-trqp-verifier-refimpl`
 
-**Generated:** 2026-11-02T05:59:25Z  
+**Generated:** 2026-11-03T00:56:51Z  
 **Open findings:** 1  
 **Repository snapshot:** `ada8927d17f0d5007b83416d412c1f656e01da6d`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-398FA7C456CF — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-FB7965E1DB23` at `2026-11-02T05:59:25Z`
+- Observation: `PAM-F33D971A0C96` at `2026-11-03T00:56:51Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/publication-link-audit.yml`
@@ -113,17 +113,17 @@ search_exclude: true
     },
     {
       "conclusion": "failure",
-      "created_at": "2026-10-26T08:49:05Z",
+      "created_at": "2026-11-02T10:56:08Z",
       "event": "schedule",
       "head_branch": "main",
       "head_sha": "ada8927d17f0d5007b83416d412c1f656e01da6d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/40294912258",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/41432727239",
       "name": "Public Documentation Link Audit",
       "path": ".github/workflows/publication-link-audit.yml",
-      "run_number": 1,
-      "run_started_at": "2026-10-26T08:49:05Z",
+      "run_number": 2,
+      "run_started_at": "2026-11-02T10:56:08Z",
       "status": "completed",
-      "updated_at": "2026-10-26T08:49:30Z",
+      "updated_at": "2026-11-02T10:56:55Z",
       "workflow_id": 396546945
     },
     {
@@ -148,17 +148,17 @@ search_exclude: true
   "unresolved": [
     {
       "conclusion": "failure",
-      "created_at": "2026-10-26T08:49:05Z",
+      "created_at": "2026-11-02T10:56:08Z",
       "event": "schedule",
       "head_branch": "main",
       "head_sha": "ada8927d17f0d5007b83416d412c1f656e01da6d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/40294912258",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/41432727239",
       "name": "Public Documentation Link Audit",
       "path": ".github/workflows/publication-link-audit.yml",
-      "run_number": 1,
-      "run_started_at": "2026-10-26T08:49:05Z",
+      "run_number": 2,
+      "run_started_at": "2026-11-02T10:56:08Z",
       "status": "completed",
-      "updated_at": "2026-10-26T08:49:30Z",
+      "updated_at": "2026-11-02T10:56:55Z",
       "workflow_id": 396546945
     }
   ],
