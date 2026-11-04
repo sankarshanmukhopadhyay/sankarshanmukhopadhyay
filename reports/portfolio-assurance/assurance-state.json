@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-04T06:18:59Z",
+  "generated_at": "2026-11-04T19:44:05Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -80,13 +80,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "push",
-            "created_at": "2026-11-03T15:53:10Z",
-            "updated_at": "2026-11-03T15:54:21Z",
-            "run_started_at": "2026-11-03T15:53:10Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/41668474701",
-            "head_sha": "7d67d034fede4501e9fd30d6757a118167469e48",
+            "created_at": "2026-11-04T14:30:25Z",
+            "updated_at": "2026-11-04T14:31:33Z",
+            "run_started_at": "2026-11-04T14:30:25Z",
+            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/41848228266",
+            "head_sha": "d247c89f348782c789b4fdfd065ae95612cc6445",
             "head_branch": "main",
-            "run_number": 232
+            "run_number": 261
           }
         },
         {
@@ -104,13 +104,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "workflow_run",
-            "created_at": "2026-11-03T15:54:48Z",
-            "updated_at": "2026-11-03T15:55:01Z",
-            "run_started_at": "2026-11-03T15:54:48Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/41668754765",
-            "head_sha": "7d67d034fede4501e9fd30d6757a118167469e48",
+            "created_at": "2026-11-04T14:31:44Z",
+            "updated_at": "2026-11-04T14:31:59Z",
+            "run_started_at": "2026-11-04T14:31:44Z",
+            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/41848456688",
+            "head_sha": "d247c89f348782c789b4fdfd065ae95612cc6445",
             "head_branch": "main",
-            "run_number": 65
+            "run_number": 77
           }
         }
       ],
@@ -504,7 +504,7 @@
     "trqp-conformance-suite": {
       "repository": "trqp-conformance-suite",
       "profile": "conformance-suite",
-      "state": "satisfied",
+      "state": "missing",
       "claims": [
         {
           "claim": "conformance_suite",
@@ -560,27 +560,12 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/pages.yml",
           "freshness_policy": "latest-success",
-          "state": "satisfied",
-          "reason": "successful workflow evidence satisfies the configured freshness policy",
-          "evidence": {
-            "workflow_id": 316454130,
-            "name": "Deploy documentation to GitHub Pages",
-            "path": ".github/workflows/pages.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-10-02T01:10:58Z",
-            "updated_at": "2026-10-02T01:11:36Z",
-            "run_started_at": "2026-10-02T01:10:58Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite/actions/runs/36949690039",
-            "head_sha": "0738c3cf86fddb99d761ed21d63d870eefdc5f76",
-            "head_branch": "main",
-            "run_number": 53
-          }
+          "state": "missing",
+          "reason": "no completed workflow execution satisfying the configured evidence contract was observed"
         }
       ],
       "required_claims": 3,
-      "satisfied_required_claims": 3
+      "satisfied_required_claims": 2
     },
     "trqp-assurance-hub": {
       "repository": "trqp-assurance-hub",
