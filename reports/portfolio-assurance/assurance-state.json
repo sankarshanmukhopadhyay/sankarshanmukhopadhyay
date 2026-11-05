@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-04T19:44:05Z",
+  "generated_at": "2026-11-05T06:43:55Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -504,7 +504,7 @@
     "trqp-conformance-suite": {
       "repository": "trqp-conformance-suite",
       "profile": "conformance-suite",
-      "state": "missing",
+      "state": "satisfied",
       "claims": [
         {
           "claim": "conformance_suite",
@@ -560,12 +560,27 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/pages.yml",
           "freshness_policy": "latest-success",
-          "state": "missing",
-          "reason": "no completed workflow execution satisfying the configured evidence contract was observed"
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 316454130,
+            "name": "Deploy documentation to GitHub Pages",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-10-02T01:10:58Z",
+            "updated_at": "2026-10-02T01:11:36Z",
+            "run_started_at": "2026-10-02T01:10:58Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite/actions/runs/36949690039",
+            "head_sha": "0738c3cf86fddb99d761ed21d63d870eefdc5f76",
+            "head_branch": "main",
+            "run_number": 53
+          }
         }
       ],
       "required_claims": 3,
-      "satisfied_required_claims": 2
+      "satisfied_required_claims": 3
     },
     "trqp-assurance-hub": {
       "repository": "trqp-assurance-hub",
