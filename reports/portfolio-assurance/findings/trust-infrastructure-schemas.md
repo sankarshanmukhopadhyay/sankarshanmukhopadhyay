@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `trust-infrastructure-schemas`
 
-**Generated:** 2026-11-05T06:43:55Z  
+**Generated:** 2026-11-05T19:55:48Z  
 **Open findings:** 0  
 **Repository snapshot:** `cd2407113ab58dd767dddcf292e3b1842983a401`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.json)
