@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-04T19:44:05Z",
+  "generated_at": "2026-11-05T06:43:55Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -166,9 +166,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-11-04T19:44:05Z",
+      "last_observed": "2026-11-05T06:43:55Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-FDB68BE3F864"
+      "latest_finding_id": "PAM-08375648CF9E"
     },
     "PF-FE9A3049B948": {
       "finding_fingerprint": "PF-FE9A3049B948",
@@ -658,9 +658,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-11-04T19:44:05Z",
+      "last_observed": "2026-11-05T06:43:55Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-639405892D05"
+      "latest_finding_id": "PAM-60E28EFFAF2E"
     },
     "PF-7689472EA3BE": {
       "finding_fingerprint": "PF-7689472EA3BE",
@@ -692,10 +692,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-28T03:54:08Z",
       "last_observed": "2026-11-04T19:44:05Z",
-      "resolved_at": null,
+      "resolved_at": "2026-11-05T06:43:55Z",
       "latest_finding_id": "PAM-0D5B78F404D5"
     },
     "PF-EAEC07563E26": {
@@ -778,9 +778,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-24T10:57:47Z",
-      "last_observed": "2026-11-04T19:44:05Z",
+      "last_observed": "2026-11-05T06:43:55Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-F56D8E052D2C"
+      "latest_finding_id": "PAM-65698CD0CB05"
     },
     "PF-398FA7C456CF": {
       "finding_fingerprint": "PF-398FA7C456CF",
@@ -790,9 +790,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-26T13:00:04Z",
-      "last_observed": "2026-11-04T19:44:05Z",
+      "last_observed": "2026-11-05T06:43:55Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-7B503B6F78A2"
+      "latest_finding_id": "PAM-DAD708A5E58D"
     },
     "PF-914D332B3242": {
       "finding_fingerprint": "PF-914D332B3242",
@@ -802,9 +802,9 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-03T00:56:51Z",
-      "last_observed": "2026-11-04T19:44:05Z",
+      "last_observed": "2026-11-05T06:43:55Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-F1CE3CC2DA94"
+      "latest_finding_id": "PAM-D68470E1B525"
     }
   }
 }
