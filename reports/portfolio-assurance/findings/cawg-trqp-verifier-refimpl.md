@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `cawg-trqp-verifier-refimpl`
 
-**Generated:** 2026-11-06T06:41:59Z  
+**Generated:** 2026-11-06T19:23:08Z  
 **Open findings:** 1  
 **Repository snapshot:** `f007b9316350145138f4169aaf65273843e41080`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-398FA7C456CF — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-190197FDA4BB` at `2026-11-06T06:41:59Z`
+- Observation: `PAM-190197FDA4BB` at `2026-11-06T19:23:08Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/publication-link-audit.yml`
@@ -173,17 +173,17 @@ search_exclude: true
     },
     {
       "conclusion": "success",
-      "created_at": "2026-11-03T02:05:19Z",
+      "created_at": "2026-11-06T11:23:24Z",
       "event": "dynamic",
       "head_branch": "main",
-      "head_sha": "858901fc68a419b77fb154bf5c3797d91636c764",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/41563893240",
-      "name": "github_actions in / for actions/upload-artifact - Update #1676206538",
+      "head_sha": "f007b9316350145138f4169aaf65273843e41080",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/42209884772",
+      "name": "bundler in /. - Update #1685191573",
       "path": "dynamic/dependabot/dependabot-updates",
-      "run_number": 112,
-      "run_started_at": "2026-11-03T02:05:19Z",
+      "run_number": 113,
+      "run_started_at": "2026-11-06T11:23:24Z",
       "status": "completed",
-      "updated_at": "2026-11-03T02:06:30Z",
+      "updated_at": "2026-11-06T11:24:01Z",
       "workflow_id": 261742867
     },
     {
