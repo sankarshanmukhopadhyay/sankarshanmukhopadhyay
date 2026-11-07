@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-11-07T05:56:28Z",
+  "generated_at": "2026-11-07T12:58:25Z",
   "repository": "sankarshanmukhopadhyay",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-11-07T05:56:28Z",
+    "observed_at": "2026-11-07T12:58:25Z",
     "default_branch": null,
     "head_sha": null,
     "provenance_status": "unavailable"
@@ -46,7 +46,7 @@
       "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
       "subject": "egwg-reporting-tf-prototype-mcp",
       "severity": "info",
-      "observed_at": "2026-11-07T05:56:28Z",
+      "observed_at": "2026-11-07T12:58:25Z",
       "claim": "A public account repository has no governed account-level portfolio disposition.",
       "evidence": {
         "repository": "egwg-reporting-tf-prototype-mcp",
@@ -82,7 +82,7 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-03T00:56:51Z",
-      "last_observed": "2026-11-07T05:56:28Z",
+      "last_observed": "2026-11-07T12:58:25Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-4A5B18E77B9A"
     }
