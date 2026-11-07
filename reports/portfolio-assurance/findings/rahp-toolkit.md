@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-11-07T12:58:25Z  
+**Generated:** 2026-11-07T21:48:35Z  
 **Open findings:** 4  
 **Repository snapshot:** `db09379ffcc80f3fa2f071acb510d633e2ab3e2c`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-9769E5EB9C48 — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-AA9486BF0EDD` at `2026-11-07T12:58:25Z`
+- Observation: `PAM-AA9486BF0EDD` at `2026-11-07T21:48:35Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/corpus-status.yml`
@@ -64,7 +64,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-E8B1B5CFA71B — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-40AE62FB9531` at `2026-11-07T12:58:25Z`
+- Observation: `PAM-40AE62FB9531` at `2026-11-07T21:48:35Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/pages.yml`
@@ -101,7 +101,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-40A9B6AD0B44 — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-218AAFFEA189` at `2026-11-07T12:58:25Z`
+- Observation: `PAM-218AAFFEA189` at `2026-11-07T21:48:35Z`
 - Severity: `high`
 - Dimension: `assurance`
 - Subject: `.github/workflows/validate.yml`
@@ -138,7 +138,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ## PF-175F07FC3EA4 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-CE595E5AC242` at `2026-11-07T12:58:25Z`
+- Observation: `PAM-CE595E5AC242` at `2026-11-07T21:48:35Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/dtg-portfolio-materiality-handoff.yml`
@@ -211,78 +211,63 @@ Restore or execute the repository-native control required by the governed assura
   "latest": [
     {
       "conclusion": "skipped",
-      "created_at": "2026-11-07T10:47:15Z",
+      "created_at": "2026-11-07T20:38:06Z",
       "event": "issues",
       "head_branch": "main",
       "head_sha": "db09379ffcc80f3fa2f071acb510d633e2ab3e2c",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42365414150",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42411999583",
       "name": "Reconcile RAHP-DPIP lifecycle and returns",
       "path": ".github/workflows/dpip-lifecycle.yml",
-      "run_number": 1640,
-      "run_started_at": "2026-11-07T10:47:15Z",
+      "run_number": 1645,
+      "run_started_at": "2026-11-07T20:38:06Z",
       "status": "completed",
-      "updated_at": "2026-11-07T10:47:25Z",
+      "updated_at": "2026-11-07T20:38:08Z",
       "workflow_id": 343401275
     },
     {
       "conclusion": "skipped",
-      "created_at": "2026-11-07T10:47:14Z",
+      "created_at": "2026-11-07T20:38:06Z",
       "event": "issues",
       "head_branch": "main",
       "head_sha": "db09379ffcc80f3fa2f071acb510d633e2ab3e2c",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42365413900",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42411999506",
       "name": "Reconcile DTG end-to-end assurance",
       "path": ".github/workflows/dtg-assurance-reconcile.yml",
-      "run_number": 2922,
-      "run_started_at": "2026-11-07T10:47:14Z",
+      "run_number": 2927,
+      "run_started_at": "2026-11-07T20:38:06Z",
       "status": "completed",
-      "updated_at": "2026-11-07T10:47:16Z",
+      "updated_at": "2026-11-07T20:38:07Z",
       "workflow_id": 343549711
     },
     {
       "conclusion": "failure",
-      "created_at": "2026-11-07T06:59:26Z",
+      "created_at": "2026-11-07T17:59:11Z",
       "event": "schedule",
       "head_branch": "main",
       "head_sha": "db09379ffcc80f3fa2f071acb510d633e2ab3e2c",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42349339644",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42398970044",
       "name": "Consume DTG Portfolio Monitor assurance signals",
       "path": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
-      "run_number": 190,
-      "run_started_at": "2026-11-07T06:59:26Z",
+      "run_number": 191,
+      "run_started_at": "2026-11-07T17:59:11Z",
       "status": "completed",
-      "updated_at": "2026-11-07T06:59:42Z",
+      "updated_at": "2026-11-07T17:59:24Z",
       "workflow_id": 343470013
     },
     {
       "conclusion": "skipped",
-      "created_at": "2026-11-07T10:47:15Z",
+      "created_at": "2026-11-07T20:38:06Z",
       "event": "issues",
       "head_branch": "main",
       "head_sha": "db09379ffcc80f3fa2f071acb510d633e2ab3e2c",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42365413994",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42411999545",
       "name": "Advance bounded RAHP review workers",
       "path": ".github/workflows/review-workers.yml",
-      "run_number": 223,
-      "run_started_at": "2026-11-07T10:47:15Z",
+      "run_number": 228,
+      "run_started_at": "2026-11-07T20:38:06Z",
       "status": "completed",
-      "updated_at": "2026-11-07T10:47:15Z",
+      "updated_at": "2026-11-07T20:38:07Z",
       "workflow_id": 396124313
-    },
-    {
-      "conclusion": "success",
-      "created_at": "2026-11-06T22:12:24Z",
-      "event": "schedule",
-      "head_branch": "main",
-      "head_sha": "db09379ffcc80f3fa2f071acb510d633e2ab3e2c",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42302885984",
-      "name": "Workflow governance",
-      "path": ".github/workflows/workflow-governance.yml",
-      "run_number": 368,
-      "run_started_at": "2026-11-06T22:12:24Z",
-      "status": "completed",
-      "updated_at": "2026-11-06T22:12:42Z",
-      "workflow_id": 345766991
     }
   ],
   "lookback_days": 7,
@@ -291,22 +276,22 @@ Restore or execute the repository-native control required by the governed assura
   "unresolved": [
     {
       "conclusion": "failure",
-      "created_at": "2026-11-07T06:59:26Z",
+      "created_at": "2026-11-07T17:59:11Z",
       "event": "schedule",
       "head_branch": "main",
       "head_sha": "db09379ffcc80f3fa2f071acb510d633e2ab3e2c",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42349339644",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42398970044",
       "name": "Consume DTG Portfolio Monitor assurance signals",
       "path": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
-      "run_number": 190,
-      "run_started_at": "2026-11-07T06:59:26Z",
+      "run_number": 191,
+      "run_started_at": "2026-11-07T17:59:11Z",
       "status": "completed",
-      "updated_at": "2026-11-07T06:59:42Z",
+      "updated_at": "2026-11-07T17:59:24Z",
       "workflow_id": 343470013
     }
   ],
   "unresolved_failures": 1,
-  "workflows_examined": 5
+  "workflows_examined": 4
 }
 ```
 
