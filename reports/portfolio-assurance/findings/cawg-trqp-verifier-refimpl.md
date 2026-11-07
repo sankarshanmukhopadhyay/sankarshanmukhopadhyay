@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `cawg-trqp-verifier-refimpl`
 
-**Generated:** 2026-11-06T19:23:08Z  
+**Generated:** 2026-11-07T05:56:28Z  
 **Open findings:** 1  
 **Repository snapshot:** `f007b9316350145138f4169aaf65273843e41080`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-398FA7C456CF — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-190197FDA4BB` at `2026-11-06T19:23:08Z`
+- Observation: `PAM-EADED14D9BD6` at `2026-11-07T05:56:28Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/publication-link-audit.yml`
@@ -98,17 +98,17 @@ search_exclude: true
   "latest": [
     {
       "conclusion": "success",
-      "created_at": "2026-10-30T21:39:44Z",
+      "created_at": "2026-11-06T22:16:01Z",
       "event": "schedule",
       "head_branch": "main",
-      "head_sha": "ada8927d17f0d5007b83416d412c1f656e01da6d",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/41132681639",
+      "head_sha": "f007b9316350145138f4169aaf65273843e41080",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/42303367119",
       "name": "Weekly merged-branch housekeeping",
       "path": ".github/workflows/branch-housekeeping.yml",
-      "run_number": 3,
-      "run_started_at": "2026-10-30T21:39:44Z",
+      "run_number": 4,
+      "run_started_at": "2026-11-06T22:16:01Z",
       "status": "completed",
-      "updated_at": "2026-10-30T21:39:56Z",
+      "updated_at": "2026-11-06T22:16:10Z",
       "workflow_id": 381758282
     },
     {
