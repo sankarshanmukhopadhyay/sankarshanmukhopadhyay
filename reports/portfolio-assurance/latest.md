@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Portfolio Assurance Report — 2026-11-06
+title: Portfolio Assurance Report — 2026-11-07
 nav_exclude: true
 search_exclude: true
 ---
 
-# Portfolio Assurance Report — 2026-11-06
+# Portfolio Assurance Report — 2026-11-07
 
-**Observed:** 2026-11-06T19:23:08Z  
+**Observed:** 2026-11-07T05:56:28Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 8  
 **Unclassified public repositories:** 1
@@ -45,7 +45,7 @@ search_exclude: true
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-A62531E8132D: TRQP-TSPP
+### PAM-AEFDAADE8029: TRQP-TSPP
 
 - **Fingerprint:** `PF-9C213FA6D34C`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -56,7 +56,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-3B7998459987: rahp-toolkit
+### PAM-AA9486BF0EDD: rahp-toolkit
 
 - **Fingerprint:** `PF-9769E5EB9C48`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -67,7 +67,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-965488CB0D2B: rahp-toolkit
+### PAM-40AE62FB9531: rahp-toolkit
 
 - **Fingerprint:** `PF-E8B1B5CFA71B`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -78,7 +78,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-E0711E1F3DE9: rahp-toolkit
+### PAM-218AAFFEA189: rahp-toolkit
 
 - **Fingerprint:** `PF-40A9B6AD0B44`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -89,7 +89,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-50FEE43848A3: sankarshanmukhopadhyay
+### PAM-4A5B18E77B9A: sankarshanmukhopadhyay
 
 - **Fingerprint:** `PF-914D332B3242`
 - **Rule:** `PUBLIC_REPOSITORY_WITHOUT_DISPOSITION`
@@ -100,7 +100,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `central-review`
 - **Automatic effect:** `none`
 
-### PAM-190197FDA4BB: cawg-trqp-verifier-refimpl
+### PAM-EADED14D9BD6: cawg-trqp-verifier-refimpl
 
 - **Fingerprint:** `PF-398FA7C456CF`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
@@ -111,7 +111,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-1ECEE2158E32: rahp-toolkit
+### PAM-CE595E5AC242: rahp-toolkit
 
 - **Fingerprint:** `PF-175F07FC3EA4`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
@@ -122,7 +122,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-1234660885FC: rahp-toolkit
+### PAM-4523A5261D81: rahp-toolkit
 
 - **Fingerprint:** `PF-4E123844FBF6`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
