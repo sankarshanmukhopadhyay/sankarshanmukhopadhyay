@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-11-07T21:48:35Z",
+  "generated_at": "2026-11-08T05:58:43Z",
   "repository": "trust-graph-artifacts",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-11-07T21:48:35Z",
+    "observed_at": "2026-11-08T05:58:43Z",
     "default_branch": "main",
     "head_sha": "38e4d84f1d237eb0d52b912b3c062c0fa2cbbceb",
     "provenance_status": "observed"
@@ -19,7 +19,7 @@
     "governance": {
       "status": "evaluated",
       "description": "Portfolio review, status-declaration, lifecycle, and repository identity governance checks.",
-      "open_findings": 0
+      "open_findings": 1
     },
     "assurance": {
       "status": "evaluated",
@@ -37,9 +37,54 @@
     "dashboard": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/docs/portfolio-assurance/dashboard.html",
     "latest_report": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/latest.html"
   },
-  "finding_count": 0,
-  "findings": [],
-  "lifecycle": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "finding_id": "PAM-8163C23AFDF7",
+      "finding_fingerprint": "PF-6220CA1F99B1",
+      "repository": "trust-graph-artifacts",
+      "rule_id": "NO_RECENT_ACTIVITY",
+      "subject": "repository",
+      "severity": "info",
+      "observed_at": "2026-11-08T05:58:43Z",
+      "claim": "An active flagship repository has exceeded the configured activity-review threshold.",
+      "evidence": {
+        "pushed_at": "2026-09-23T05:30:03Z",
+        "threshold_days": 45
+      },
+      "recommended_action": "Review whether the declared lifecycle and operational status remain accurate. Activity alone does not determine health.",
+      "dimension": "governance",
+      "remediation": {
+        "objective": "Review whether the declared active lifecycle and operational status remain accurate; activity alone must not force a status change.",
+        "acceptance_criteria": [
+          "A human review confirms or updates the declared lifecycle and operational status."
+        ],
+        "verification": [
+          "Rerun portfolio validation and the monitor after any governed metadata change."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": false,
+        "target": "central-review",
+        "minimum_severity": "medium"
+      }
+    }
+  ],
+  "lifecycle": [
+    {
+      "finding_fingerprint": "PF-6220CA1F99B1",
+      "repository": "trust-graph-artifacts",
+      "rule_id": "NO_RECENT_ACTIVITY",
+      "subject": "repository",
+      "dimension": "governance",
+      "status": "open",
+      "first_observed": "2026-11-08T05:58:43Z",
+      "last_observed": "2026-11-08T05:58:43Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-8163C23AFDF7"
+    }
+  ],
   "handoff": {
     "authority": "repository-local-governance",
     "intended_use": "Supply this dossier with the affected repository source during remediation planning and implementation.",

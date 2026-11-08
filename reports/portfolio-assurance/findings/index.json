@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T21:48:35Z",
+  "generated_at": "2026-11-08T05:58:43Z",
   "repositories": [
     {
       "repository": "A2A",
@@ -241,7 +241,7 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "finding_count": 0,
+      "finding_count": 1,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trust-graph-artifacts.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.json"

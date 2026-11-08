@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Portfolio Assurance Report — 2026-11-07
+title: Portfolio Assurance Report — 2026-11-08
 nav_exclude: true
 search_exclude: true
 ---
 
-# Portfolio Assurance Report — 2026-11-07
+# Portfolio Assurance Report — 2026-11-08
 
-**Observed:** 2026-11-07T21:48:35Z  
+**Observed:** 2026-11-08T05:58:43Z  
 **Scope:** 11 flagship original repositories  
-**Open findings:** 7  
+**Open findings:** 8  
 **Unclassified public repositories:** 1
 
 > This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.
@@ -19,7 +19,7 @@ search_exclude: true
 | Dimension | State | Open findings |
 |---|---|---:|
 | Operational | `evaluated` | 2 |
-| Governance | `evaluated` | 1 |
+| Governance | `evaluated` | 2 |
 | Assurance | `evaluated` | 4 |
 | Cross Specification | `not-evaluated` | 0 |
 
@@ -34,7 +34,7 @@ search_exclude: true
 | [agent-registry-protocol](https://github.com/sankarshanmukhopadhyay/agent-registry-protocol) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/agent-registry-protocol.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-registry-protocol.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/agent-registry-protocol.json) |
 | [trust-systems-meta-model](https://github.com/sankarshanmukhopadhyay/trust-systems-meta-model) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trust-systems-meta-model.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-systems-meta-model.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-systems-meta-model.json) |
 | [trust-infrastructure-schemas](https://github.com/sankarshanmukhopadhyay/trust-infrastructure-schemas) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trust-infrastructure-schemas.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-infrastructure-schemas.json) |
-| [trust-graph-artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trust-graph-artifacts.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.json) |
+| [trust-graph-artifacts](https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts) | available | valid | 0 unresolved | [1 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trust-graph-artifacts.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.json) |
 | [TRQP-TSPP](https://github.com/sankarshanmukhopadhyay/TRQP-TSPP) | available | valid | 0 unresolved | [1 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/TRQP-TSPP.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.json) |
 | [cawg-trqp-verifier-refimpl](https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl) | available | valid | 1 unresolved | [1 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json) |
 | [trqp-conformance-suite](https://github.com/sankarshanmukhopadhyay/trqp-conformance-suite) | available | valid | 0 unresolved | [0 open](https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/trqp-conformance-suite.html) · [download MD](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-conformance-suite.json) |
@@ -45,7 +45,7 @@ search_exclude: true
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-AEFDAADE8029: TRQP-TSPP
+### PAM-5A6D0D6A47AA: TRQP-TSPP
 
 - **Fingerprint:** `PF-9C213FA6D34C`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -56,7 +56,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-AA9486BF0EDD: rahp-toolkit
+### PAM-362A63E0F6BE: rahp-toolkit
 
 - **Fingerprint:** `PF-9769E5EB9C48`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -67,7 +67,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-40AE62FB9531: rahp-toolkit
+### PAM-23EB91E78FA4: rahp-toolkit
 
 - **Fingerprint:** `PF-E8B1B5CFA71B`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -78,7 +78,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-218AAFFEA189: rahp-toolkit
+### PAM-9A0666E6B254: rahp-toolkit
 
 - **Fingerprint:** `PF-40A9B6AD0B44`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -89,7 +89,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-4A5B18E77B9A: sankarshanmukhopadhyay
+### PAM-F664E5D20734: sankarshanmukhopadhyay
 
 - **Fingerprint:** `PF-914D332B3242`
 - **Rule:** `PUBLIC_REPOSITORY_WITHOUT_DISPOSITION`
@@ -100,7 +100,18 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `central-review`
 - **Automatic effect:** `none`
 
-### PAM-EADED14D9BD6: cawg-trqp-verifier-refimpl
+### PAM-8163C23AFDF7: trust-graph-artifacts
+
+- **Fingerprint:** `PF-6220CA1F99B1`
+- **Rule:** `NO_RECENT_ACTIVITY`
+- **Subject:** `repository`
+- **Severity:** `info`
+- **Claim:** An active flagship repository has exceeded the configured activity-review threshold.
+- **Recommended action:** Review whether the declared lifecycle and operational status remain accurate. Activity alone does not determine health.
+- **Issue routing:** `central-review`
+- **Automatic effect:** `none`
+
+### PAM-026E0B44CF30: cawg-trqp-verifier-refimpl
 
 - **Fingerprint:** `PF-398FA7C456CF`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
@@ -111,7 +122,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-CE595E5AC242: rahp-toolkit
+### PAM-1F484ABFECD1: rahp-toolkit
 
 - **Fingerprint:** `PF-175F07FC3EA4`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
