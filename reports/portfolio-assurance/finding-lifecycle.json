@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-09T06:23:48Z",
+  "generated_at": "2026-11-09T22:20:03Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -140,10 +140,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-08-22T01:49:53Z",
       "last_observed": "2026-11-09T06:23:48Z",
-      "resolved_at": null,
+      "resolved_at": "2026-11-09T22:20:03Z",
       "latest_finding_id": "PAM-59EFD93E6CFB"
     },
     "PF-954D1C442655": {
@@ -164,11 +164,11 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "dimension": "operational",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-11-07T05:56:28Z",
-      "resolved_at": "2026-11-07T12:58:25Z",
-      "latest_finding_id": "PAM-4523A5261D81"
+      "last_observed": "2026-11-09T22:20:03Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-4C21C1B975D1"
     },
     "PF-FE9A3049B948": {
       "finding_fingerprint": "PF-FE9A3049B948",
@@ -430,7 +430,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-11-09T06:23:48Z",
+      "last_observed": "2026-11-09T22:20:03Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-AA7C4727ED5C"
     },
@@ -658,7 +658,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-11-09T06:23:48Z",
+      "last_observed": "2026-11-09T22:20:03Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-5463B2516542"
     },
@@ -778,7 +778,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-24T10:57:47Z",
-      "last_observed": "2026-11-09T06:23:48Z",
+      "last_observed": "2026-11-09T22:20:03Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-70FAB0FED2AE"
     },
@@ -790,7 +790,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-26T13:00:04Z",
-      "last_observed": "2026-11-09T06:23:48Z",
+      "last_observed": "2026-11-09T22:20:03Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-43FFBC3558F4"
     },
@@ -802,7 +802,7 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-03T00:56:51Z",
-      "last_observed": "2026-11-09T06:23:48Z",
+      "last_observed": "2026-11-09T22:20:03Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-D02821816561"
     },
@@ -814,7 +814,7 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-08T05:58:43Z",
-      "last_observed": "2026-11-09T06:23:48Z",
+      "last_observed": "2026-11-09T22:20:03Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-CC8157AC89A9"
     }
