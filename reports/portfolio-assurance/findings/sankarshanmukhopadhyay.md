@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `sankarshanmukhopadhyay`
 
-**Generated:** 2026-11-08T22:02:48Z  
+**Generated:** 2026-11-09T06:23:48Z  
 **Open findings:** 1  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-914D332B3242 — PUBLIC_REPOSITORY_WITHOUT_DISPOSITION
 
-- Observation: `PAM-F664E5D20734` at `2026-11-08T22:02:48Z`
+- Observation: `PAM-D02821816561` at `2026-11-09T06:23:48Z`
 - Severity: `info`
 - Dimension: `governance`
 - Subject: `egwg-reporting-tf-prototype-mcp`
