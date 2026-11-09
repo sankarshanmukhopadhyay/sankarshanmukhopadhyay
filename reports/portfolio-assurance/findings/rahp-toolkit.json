@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-11-08T22:02:48Z",
+  "generated_at": "2026-11-09T06:23:48Z",
   "repository": "rahp-toolkit",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-11-08T22:02:48Z",
+    "observed_at": "2026-11-09T06:23:48Z",
     "default_branch": "main",
     "head_sha": "db09379ffcc80f3fa2f071acb510d633e2ab3e2c",
     "provenance_status": "observed"
@@ -40,13 +40,13 @@
   "finding_count": 3,
   "findings": [
     {
-      "finding_id": "PAM-362A63E0F6BE",
+      "finding_id": "PAM-59EFD93E6CFB",
       "finding_fingerprint": "PF-9769E5EB9C48",
       "repository": "rahp-toolkit",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "severity": "high",
-      "observed_at": "2026-11-08T22:02:48Z",
+      "observed_at": "2026-11-09T06:23:48Z",
       "claim": "Required assurance evidence satisfying the configured evidence contract was not observed.",
       "evidence": {
         "claim": "corpus_integrity",
@@ -77,13 +77,13 @@
       }
     },
     {
-      "finding_id": "PAM-23EB91E78FA4",
+      "finding_id": "PAM-AA7C4727ED5C",
       "finding_fingerprint": "PF-E8B1B5CFA71B",
       "repository": "rahp-toolkit",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-11-08T22:02:48Z",
+      "observed_at": "2026-11-09T06:23:48Z",
       "claim": "Required assurance evidence satisfying the configured evidence contract was not observed.",
       "evidence": {
         "claim": "publication_integrity",
@@ -114,13 +114,13 @@
       }
     },
     {
-      "finding_id": "PAM-1F484ABFECD1",
+      "finding_id": "PAM-70FAB0FED2AE",
       "finding_fingerprint": "PF-175F07FC3EA4",
       "repository": "rahp-toolkit",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
       "severity": "medium",
-      "observed_at": "2026-11-08T22:02:48Z",
+      "observed_at": "2026-11-09T06:23:48Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -134,16 +134,16 @@
             "workflow_id": 343401275,
             "name": "Reconcile RAHP-DPIP lifecycle and returns",
             "path": ".github/workflows/dpip-lifecycle.yml",
-            "conclusion": "success",
+            "conclusion": "skipped",
             "status": "completed",
-            "event": "schedule",
-            "created_at": "2026-11-08T19:57:42Z",
-            "updated_at": "2026-11-08T19:58:38Z",
-            "run_started_at": "2026-11-08T19:57:42Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42517634742",
+            "event": "issues",
+            "created_at": "2026-11-09T03:06:22Z",
+            "updated_at": "2026-11-09T03:06:23Z",
+            "run_started_at": "2026-11-09T03:06:22Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42554514039",
             "head_sha": "db09379ffcc80f3fa2f071acb510d633e2ab3e2c",
             "head_branch": "main",
-            "run_number": 1661
+            "run_number": 1670
           },
           {
             "workflow_id": 343549711,
@@ -152,13 +152,13 @@
             "conclusion": "skipped",
             "status": "completed",
             "event": "issues",
-            "created_at": "2026-11-08T13:59:26Z",
-            "updated_at": "2026-11-08T13:59:27Z",
-            "run_started_at": "2026-11-08T13:59:26Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42487550204",
+            "created_at": "2026-11-09T03:06:22Z",
+            "updated_at": "2026-11-09T03:06:23Z",
+            "run_started_at": "2026-11-09T03:06:22Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42554514011",
             "head_sha": "db09379ffcc80f3fa2f071acb510d633e2ab3e2c",
             "head_branch": "main",
-            "run_number": 2942
+            "run_number": 2951
           },
           {
             "workflow_id": 343470013,
@@ -182,13 +182,13 @@
             "conclusion": "skipped",
             "status": "completed",
             "event": "issues",
-            "created_at": "2026-11-08T13:59:26Z",
-            "updated_at": "2026-11-08T13:59:34Z",
-            "run_started_at": "2026-11-08T13:59:26Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42487550268",
+            "created_at": "2026-11-09T03:06:22Z",
+            "updated_at": "2026-11-09T03:06:23Z",
+            "run_started_at": "2026-11-09T03:06:22Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42554514022",
             "head_sha": "db09379ffcc80f3fa2f071acb510d633e2ab3e2c",
             "head_branch": "main",
-            "run_number": 243
+            "run_number": 252
           },
           {
             "workflow_id": 331522431,
@@ -324,9 +324,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-11-08T22:02:48Z",
+      "last_observed": "2026-11-09T06:23:48Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-362A63E0F6BE"
+      "latest_finding_id": "PAM-59EFD93E6CFB"
     },
     {
       "finding_fingerprint": "PF-E8B1B5CFA71B",
@@ -336,9 +336,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-11-08T22:02:48Z",
+      "last_observed": "2026-11-09T06:23:48Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-23EB91E78FA4"
+      "latest_finding_id": "PAM-AA7C4727ED5C"
     },
     {
       "finding_fingerprint": "PF-175F07FC3EA4",
@@ -348,9 +348,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-24T10:57:47Z",
-      "last_observed": "2026-11-08T22:02:48Z",
+      "last_observed": "2026-11-09T06:23:48Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-1F484ABFECD1"
+      "latest_finding_id": "PAM-70FAB0FED2AE"
     }
   ],
   "handoff": {
