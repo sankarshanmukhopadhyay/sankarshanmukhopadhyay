@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-09T06:23:48Z",
+  "generated_at": "2026-11-09T22:20:03Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -103,14 +103,14 @@
             "path": ".github/workflows/verify-publication.yml",
             "conclusion": "success",
             "status": "completed",
-            "event": "workflow_run",
-            "created_at": "2026-11-04T14:31:44Z",
-            "updated_at": "2026-11-04T14:31:59Z",
-            "run_started_at": "2026-11-04T14:31:44Z",
-            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/41848456688",
+            "event": "schedule",
+            "created_at": "2026-11-09T13:01:23Z",
+            "updated_at": "2026-11-09T13:01:39Z",
+            "run_started_at": "2026-11-09T13:01:23Z",
+            "html_url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/actions/runs/42621831282",
             "head_sha": "d247c89f348782c789b4fdfd065ae95612cc6445",
             "head_branch": "main",
-            "run_number": 77
+            "run_number": 78
           }
         }
       ],
@@ -722,8 +722,23 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/corpus-status.yml",
           "freshness_policy": "latest-success",
-          "state": "missing",
-          "reason": "no completed workflow execution satisfying the configured evidence contract was observed"
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 333347627,
+            "name": "Corpus source status",
+            "path": ".github/workflows/corpus-status.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "schedule",
+            "created_at": "2026-11-09T11:36:31Z",
+            "updated_at": "2026-11-09T11:36:52Z",
+            "run_started_at": "2026-11-09T11:36:31Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42610392951",
+            "head_sha": "db09379ffcc80f3fa2f071acb510d633e2ab3e2c",
+            "head_branch": "main",
+            "run_number": 336
+          }
         },
         {
           "claim": "publication_integrity",
@@ -745,7 +760,7 @@
         }
       ],
       "required_claims": 3,
-      "satisfied_required_claims": 1
+      "satisfied_required_claims": 2
     }
   }
 }
