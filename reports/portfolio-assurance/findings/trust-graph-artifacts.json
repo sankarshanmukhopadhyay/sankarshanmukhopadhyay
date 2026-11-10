@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-11-09T22:20:03Z",
+  "generated_at": "2026-11-10T07:15:25Z",
   "repository": "trust-graph-artifacts",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-11-09T22:20:03Z",
+    "observed_at": "2026-11-10T07:15:25Z",
     "default_branch": "main",
     "head_sha": "38e4d84f1d237eb0d52b912b3c062c0fa2cbbceb",
     "provenance_status": "observed"
@@ -40,13 +40,13 @@
   "finding_count": 1,
   "findings": [
     {
-      "finding_id": "PAM-CC8157AC89A9",
+      "finding_id": "PAM-3E709D77A6E0",
       "finding_fingerprint": "PF-6220CA1F99B1",
       "repository": "trust-graph-artifacts",
       "rule_id": "NO_RECENT_ACTIVITY",
       "subject": "repository",
       "severity": "info",
-      "observed_at": "2026-11-09T22:20:03Z",
+      "observed_at": "2026-11-10T07:15:25Z",
       "claim": "An active flagship repository has exceeded the configured activity-review threshold.",
       "evidence": {
         "pushed_at": "2026-09-23T05:30:03Z",
@@ -80,9 +80,9 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-08T05:58:43Z",
-      "last_observed": "2026-11-09T22:20:03Z",
+      "last_observed": "2026-11-10T07:15:25Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-CC8157AC89A9"
+      "latest_finding_id": "PAM-3E709D77A6E0"
     }
   ],
   "handoff": {

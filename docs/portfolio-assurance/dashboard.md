@@ -7,7 +7,7 @@ nav_order: 1
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-11-09T22:20:03Z  
+**Observed:** 2026-11-10T07:15:25Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 7  
 **Unclassified public repositories:** 1
@@ -45,7 +45,7 @@ nav_order: 1
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-5463B2516542: TRQP-TSPP
+### PAM-20F0320B09A7: TRQP-TSPP
 
 - **Fingerprint:** `PF-9C213FA6D34C`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -56,7 +56,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-AA7C4727ED5C: rahp-toolkit
+### PAM-CA88AC9666C2: rahp-toolkit
 
 - **Fingerprint:** `PF-E8B1B5CFA71B`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -67,7 +67,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-D02821816561: sankarshanmukhopadhyay
+### PAM-59F10893DF78: sankarshanmukhopadhyay
 
 - **Fingerprint:** `PF-914D332B3242`
 - **Rule:** `PUBLIC_REPOSITORY_WITHOUT_DISPOSITION`
@@ -78,7 +78,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `central-review`
 - **Automatic effect:** `none`
 
-### PAM-CC8157AC89A9: trust-graph-artifacts
+### PAM-3E709D77A6E0: trust-graph-artifacts
 
 - **Fingerprint:** `PF-6220CA1F99B1`
 - **Rule:** `NO_RECENT_ACTIVITY`
@@ -89,7 +89,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `central-review`
 - **Automatic effect:** `none`
 
-### PAM-43FFBC3558F4: cawg-trqp-verifier-refimpl
+### PAM-D617C6F57AAC: cawg-trqp-verifier-refimpl
 
 - **Fingerprint:** `PF-398FA7C456CF`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
@@ -100,7 +100,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-70FAB0FED2AE: rahp-toolkit
+### PAM-7792100725DA: rahp-toolkit
 
 - **Fingerprint:** `PF-175F07FC3EA4`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
@@ -111,7 +111,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-4C21C1B975D1: rahp-toolkit
+### PAM-AAA250B4A6B2: rahp-toolkit
 
 - **Fingerprint:** `PF-4E123844FBF6`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
