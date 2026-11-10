@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-10T07:15:25Z",
+  "generated_at": "2026-11-10T19:42:27Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -166,7 +166,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-11-10T07:15:25Z",
+      "last_observed": "2026-11-10T19:42:27Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-AAA250B4A6B2"
     },
@@ -430,7 +430,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-11-10T07:15:25Z",
+      "last_observed": "2026-11-10T19:42:27Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-CA88AC9666C2"
     },
@@ -658,7 +658,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-11-10T07:15:25Z",
+      "last_observed": "2026-11-10T19:42:27Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-20F0320B09A7"
     },
@@ -778,7 +778,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-24T10:57:47Z",
-      "last_observed": "2026-11-10T07:15:25Z",
+      "last_observed": "2026-11-10T19:42:27Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-7792100725DA"
     },
@@ -790,7 +790,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-26T13:00:04Z",
-      "last_observed": "2026-11-10T07:15:25Z",
+      "last_observed": "2026-11-10T19:42:27Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-D617C6F57AAC"
     },
@@ -802,7 +802,7 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-03T00:56:51Z",
-      "last_observed": "2026-11-10T07:15:25Z",
+      "last_observed": "2026-11-10T19:42:27Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-59F10893DF78"
     },
@@ -814,7 +814,7 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-08T05:58:43Z",
-      "last_observed": "2026-11-10T07:15:25Z",
+      "last_observed": "2026-11-10T19:42:27Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-3E709D77A6E0"
     }
