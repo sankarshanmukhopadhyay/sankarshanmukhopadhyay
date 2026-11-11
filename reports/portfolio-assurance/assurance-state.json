@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-10T19:42:27Z",
+  "generated_at": "2026-11-11T06:14:47Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -698,23 +698,8 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/validate.yml",
           "freshness_policy": "current-head",
-          "state": "satisfied",
-          "reason": "successful workflow evidence satisfies the configured freshness policy",
-          "evidence": {
-            "workflow_id": 331522431,
-            "name": "validate",
-            "path": ".github/workflows/validate.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "schedule",
-            "created_at": "2026-11-08T10:27:38Z",
-            "updated_at": "2026-11-08T10:28:15Z",
-            "run_started_at": "2026-11-08T10:27:38Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/42471512486",
-            "head_sha": "db09379ffcc80f3fa2f071acb510d633e2ab3e2c",
-            "head_branch": "main",
-            "run_number": 1508
-          }
+          "state": "missing",
+          "reason": "no completed workflow execution satisfying the configured evidence contract was observed"
         },
         {
           "claim": "corpus_integrity",
@@ -760,7 +745,7 @@
         }
       ],
       "required_claims": 3,
-      "satisfied_required_claims": 2
+      "satisfied_required_claims": 1
     }
   }
 }
