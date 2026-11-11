@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `trust-graph-artifacts`
 
-**Generated:** 2026-11-10T19:42:27Z  
+**Generated:** 2026-11-11T06:14:47Z  
 **Open findings:** 1  
 **Repository snapshot:** `38e4d84f1d237eb0d52b912b3c062c0fa2cbbceb`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-6220CA1F99B1 — NO_RECENT_ACTIVITY
 
-- Observation: `PAM-3E709D77A6E0` at `2026-11-10T19:42:27Z`
+- Observation: `PAM-93AD452B6983` at `2026-11-11T06:14:47Z`
 - Severity: `info`
 - Dimension: `governance`
 - Subject: `repository`
