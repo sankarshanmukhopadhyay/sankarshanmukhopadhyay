@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-11T06:14:47Z",
+  "generated_at": "2026-11-11T14:26:28Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -166,7 +166,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-11-11T06:14:47Z",
+      "last_observed": "2026-11-11T14:26:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-94AB97AED23E"
     },
@@ -416,10 +416,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/validate.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T21:01:37Z",
       "last_observed": "2026-11-11T06:14:47Z",
-      "resolved_at": null,
+      "resolved_at": "2026-11-11T14:26:28Z",
       "latest_finding_id": "PAM-A21E22D50570"
     },
     "PF-E8B1B5CFA71B": {
@@ -428,10 +428,10 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-09-01T21:01:37Z",
       "last_observed": "2026-11-11T06:14:47Z",
-      "resolved_at": null,
+      "resolved_at": "2026-11-11T14:26:28Z",
       "latest_finding_id": "PAM-949CD02C1DC0"
     },
     "PF-0B036E077FB8": {
@@ -658,7 +658,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-11-11T06:14:47Z",
+      "last_observed": "2026-11-11T14:26:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-208C901F1AAB"
     },
@@ -776,10 +776,10 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
       "dimension": "operational",
-      "status": "open",
+      "status": "resolved",
       "first_observed": "2026-10-24T10:57:47Z",
       "last_observed": "2026-11-11T06:14:47Z",
-      "resolved_at": null,
+      "resolved_at": "2026-11-11T14:26:28Z",
       "latest_finding_id": "PAM-89273F4CC5AA"
     },
     "PF-398FA7C456CF": {
@@ -790,7 +790,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-26T13:00:04Z",
-      "last_observed": "2026-11-11T06:14:47Z",
+      "last_observed": "2026-11-11T14:26:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-AFE0CE77EC10"
     },
@@ -802,7 +802,7 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-03T00:56:51Z",
-      "last_observed": "2026-11-11T06:14:47Z",
+      "last_observed": "2026-11-11T14:26:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-EB9BFAA5BC5E"
     },
@@ -814,7 +814,7 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-08T05:58:43Z",
-      "last_observed": "2026-11-11T06:14:47Z",
+      "last_observed": "2026-11-11T14:26:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-93AD452B6983"
     }

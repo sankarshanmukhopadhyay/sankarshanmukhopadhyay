@@ -1,13 +1,13 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-11-11T06:14:47Z",
+  "generated_at": "2026-11-11T14:26:28Z",
   "repository": "cawg-trqp-verifier-refimpl",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-11-11T06:14:47Z",
+    "observed_at": "2026-11-11T14:26:28Z",
     "default_branch": "main",
-    "head_sha": "f007b9316350145138f4169aaf65273843e41080",
+    "head_sha": "e2121e7b5166abef46227f029ee072ea0d4e9afe",
     "provenance_status": "observed"
   },
   "assessment": {
@@ -46,13 +46,13 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/publication-link-audit.yml",
       "severity": "medium",
-      "observed_at": "2026-11-11T06:14:47Z",
+      "observed_at": "2026-11-11T14:26:28Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
         "lookback_days": 7,
-        "completed_examined": 6,
-        "workflows_examined": 3,
+        "completed_examined": 20,
+        "workflows_examined": 7,
         "retired_workflows_examined": 0,
         "unresolved_failures": 1,
         "latest": [
@@ -72,6 +72,36 @@
             "run_number": 4
           },
           {
+            "workflow_id": 248717477,
+            "name": "CI",
+            "path": ".github/workflows/ci.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-11-11T10:31:16Z",
+            "updated_at": "2026-11-11T10:31:45Z",
+            "run_started_at": "2026-11-11T10:31:16Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/43004299807",
+            "head_sha": "e2121e7b5166abef46227f029ee072ea0d4e9afe",
+            "head_branch": "main",
+            "run_number": 532
+          },
+          {
+            "workflow_id": 315515884,
+            "name": "Deploy Documentation (Just the Docs)",
+            "path": ".github/workflows/pages.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-11-11T10:31:16Z",
+            "updated_at": "2026-11-11T10:31:49Z",
+            "run_started_at": "2026-11-11T10:31:16Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/43004299597",
+            "head_sha": "e2121e7b5166abef46227f029ee072ea0d4e9afe",
+            "head_branch": "main",
+            "run_number": 50
+          },
+          {
             "workflow_id": 396546945,
             "name": "Public Documentation Link Audit",
             "path": ".github/workflows/publication-link-audit.yml",
@@ -87,19 +117,49 @@
             "run_number": 3
           },
           {
+            "workflow_id": 347445405,
+            "name": "Release",
+            "path": ".github/workflows/release.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "push",
+            "created_at": "2026-11-11T10:31:16Z",
+            "updated_at": "2026-11-11T10:31:54Z",
+            "run_started_at": "2026-11-11T10:31:16Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/43004299550",
+            "head_sha": "e2121e7b5166abef46227f029ee072ea0d4e9afe",
+            "head_branch": "main",
+            "run_number": 26
+          },
+          {
             "workflow_id": 261742867,
-            "name": "bundler in /. - Update #1685191573",
+            "name": "pip in / for pytest - Update #1695584426",
             "path": "dynamic/dependabot/dependabot-updates",
             "conclusion": "success",
             "status": "completed",
             "event": "dynamic",
-            "created_at": "2026-11-06T11:23:24Z",
-            "updated_at": "2026-11-06T11:24:01Z",
-            "run_started_at": "2026-11-06T11:23:24Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/42209884772",
-            "head_sha": "f007b9316350145138f4169aaf65273843e41080",
+            "created_at": "2026-11-11T10:32:38Z",
+            "updated_at": "2026-11-11T10:34:27Z",
+            "run_started_at": "2026-11-11T10:32:38Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/43004491596",
+            "head_sha": "e2121e7b5166abef46227f029ee072ea0d4e9afe",
             "head_branch": "main",
-            "run_number": 113
+            "run_number": 117
+          },
+          {
+            "workflow_id": 303797171,
+            "name": "Configured Graph Update: pip in /. #1695580550",
+            "path": "dynamic/dependabot/update-graph",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "dynamic",
+            "created_at": "2026-11-11T10:31:23Z",
+            "updated_at": "2026-11-11T10:32:08Z",
+            "run_started_at": "2026-11-11T10:31:23Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/43004314852",
+            "head_sha": "e2121e7b5166abef46227f029ee072ea0d4e9afe",
+            "head_branch": "main",
+            "run_number": 26
           }
         ],
         "retired": [],
@@ -142,13 +202,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-11-03T03:55:26Z",
-              "updated_at": "2026-11-03T03:56:05Z",
-              "run_started_at": "2026-11-03T03:55:26Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/41575054440",
-              "head_sha": "f007b9316350145138f4169aaf65273843e41080",
+              "created_at": "2026-11-11T10:31:16Z",
+              "updated_at": "2026-11-11T10:31:45Z",
+              "run_started_at": "2026-11-11T10:31:16Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/43004299807",
+              "head_sha": "e2121e7b5166abef46227f029ee072ea0d4e9afe",
               "head_branch": "main",
-              "run_number": 510
+              "run_number": 532
             }
           },
           ".github/workflows/pages.yml": {
@@ -160,13 +220,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-11-03T03:55:26Z",
-              "updated_at": "2026-11-03T03:56:01Z",
-              "run_started_at": "2026-11-03T03:55:26Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/41575054319",
-              "head_sha": "f007b9316350145138f4169aaf65273843e41080",
+              "created_at": "2026-11-11T10:31:16Z",
+              "updated_at": "2026-11-11T10:31:49Z",
+              "run_started_at": "2026-11-11T10:31:16Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/43004299597",
+              "head_sha": "e2121e7b5166abef46227f029ee072ea0d4e9afe",
               "head_branch": "main",
-              "run_number": 48
+              "run_number": 50
             }
           },
           ".github/workflows/pypi-publish.yml": {
@@ -204,7 +264,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-26T13:00:04Z",
-      "last_observed": "2026-11-11T06:14:47Z",
+      "last_observed": "2026-11-11T14:26:28Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-AFE0CE77EC10"
     }
