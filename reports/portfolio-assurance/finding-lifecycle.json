@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-11T14:26:28Z",
+  "generated_at": "2026-11-12T00:41:21Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -166,9 +166,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-11-11T14:26:28Z",
+      "last_observed": "2026-11-12T00:41:21Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-94AB97AED23E"
+      "latest_finding_id": "PAM-892BF036A5EC"
     },
     "PF-FE9A3049B948": {
       "finding_fingerprint": "PF-FE9A3049B948",
@@ -658,9 +658,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-11-11T14:26:28Z",
+      "last_observed": "2026-11-12T00:41:21Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-208C901F1AAB"
+      "latest_finding_id": "PAM-96EE0B262F80"
     },
     "PF-7689472EA3BE": {
       "finding_fingerprint": "PF-7689472EA3BE",
@@ -776,11 +776,11 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/dtg-portfolio-materiality-handoff.yml",
       "dimension": "operational",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-10-24T10:57:47Z",
-      "last_observed": "2026-11-11T06:14:47Z",
-      "resolved_at": "2026-11-11T14:26:28Z",
-      "latest_finding_id": "PAM-89273F4CC5AA"
+      "last_observed": "2026-11-12T00:41:21Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-967E2CF9FA7C"
     },
     "PF-398FA7C456CF": {
       "finding_fingerprint": "PF-398FA7C456CF",
@@ -790,9 +790,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-26T13:00:04Z",
-      "last_observed": "2026-11-11T14:26:28Z",
+      "last_observed": "2026-11-12T00:41:21Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-AFE0CE77EC10"
+      "latest_finding_id": "PAM-EAED307E065C"
     },
     "PF-914D332B3242": {
       "finding_fingerprint": "PF-914D332B3242",
@@ -802,9 +802,9 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-03T00:56:51Z",
-      "last_observed": "2026-11-11T14:26:28Z",
+      "last_observed": "2026-11-12T00:41:21Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-EB9BFAA5BC5E"
+      "latest_finding_id": "PAM-D0B32581DC0C"
     },
     "PF-6220CA1F99B1": {
       "finding_fingerprint": "PF-6220CA1F99B1",
@@ -814,9 +814,9 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-08T05:58:43Z",
-      "last_observed": "2026-11-11T14:26:28Z",
+      "last_observed": "2026-11-12T00:41:21Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-93AD452B6983"
+      "latest_finding_id": "PAM-B75F8A0A1141"
     }
   }
 }
