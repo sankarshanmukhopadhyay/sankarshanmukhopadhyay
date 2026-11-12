@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-12T00:41:21Z",
+  "generated_at": "2026-11-12T15:12:39Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -166,7 +166,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-11-12T00:41:21Z",
+      "last_observed": "2026-11-12T15:12:39Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-892BF036A5EC"
     },
@@ -658,7 +658,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-11-12T00:41:21Z",
+      "last_observed": "2026-11-12T15:12:39Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-96EE0B262F80"
     },
@@ -778,7 +778,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-24T10:57:47Z",
-      "last_observed": "2026-11-12T00:41:21Z",
+      "last_observed": "2026-11-12T15:12:39Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-967E2CF9FA7C"
     },
@@ -790,7 +790,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-26T13:00:04Z",
-      "last_observed": "2026-11-12T00:41:21Z",
+      "last_observed": "2026-11-12T15:12:39Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-EAED307E065C"
     },
@@ -802,7 +802,7 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-03T00:56:51Z",
-      "last_observed": "2026-11-12T00:41:21Z",
+      "last_observed": "2026-11-12T15:12:39Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-D0B32581DC0C"
     },
@@ -814,7 +814,7 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-08T05:58:43Z",
-      "last_observed": "2026-11-12T00:41:21Z",
+      "last_observed": "2026-11-12T15:12:39Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-B75F8A0A1141"
     }
