@@ -125,6 +125,47 @@ class WeeklyPortfolioTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, "missing evidence ledger"):
                 reporting.update_archive_index()
 
+    def test_empty_pull_request_metadata_is_still_a_pull_request(self):
+        item = hit("trustoverip/upstream", 44, pr=True, created="2026-10-27T12:00:00Z")
+        item["pull_request"] = {}  # Present but falsey, as a sparse API response.
+        def fetch(url, token):
+            return {"total_count": 1, "incomplete_results": False, "items": [item]}
+        result = search("pull-request", "created", date(2026, 10, 26),
+                        date(2026, 11, 2), "token", fetch)
+        self.assertEqual(1, len(result))
+        self.assertEqual("pull-request", result[0]["kind"])
+
+    def test_cross_kind_hits_are_filtered_and_disclosed_not_counted(self):
+        pr = hit("trustoverip/upstream", 44, pr=True, created="2026-10-27T12:00:00Z")
+        issue = hit("trustoverip/upstream", 45, created="2026-10-28T12:00:00Z")
+        def fetch(url, token):
+            from urllib.parse import parse_qs, urlsplit
+            query = parse_qs(urlsplit(url).query)["q"][0]
+            if "is:pull-request" in query and "created:" in query:
+                records = [pr, issue]
+            elif "is:issue" in query and "created:" in query:
+                records = [issue, pr]
+            else:
+                records = []
+            return {"total_count": len(records), "incomplete_results": False,
+                    "items": records}
+        result = collect(date(2026, 10, 26), date(2026, 11, 2), "token", fetch)
+        self.assertEqual(2, len(result["events"]))
+        self.assertEqual("complete_with_filtered_search_hits", result["collection_status"])
+        self.assertEqual(2, len(result["excluded_cross_kind_search_hits"]))
+        self.assertEqual(1, result["counts"]["external|pull-request|created"])
+        self.assertEqual(1, result["counts"]["external|issue|created"])
+
+    def test_conflicting_url_and_type_metadata_fails_closed(self):
+        item = hit("trustoverip/upstream", 44, pr=True)
+        item["html_url"] = item["html_url"].replace("/pull/", "/issues/")
+        def fetch(url, token):
+            return {"total_count": 1, "incomplete_results": False, "items": [item]}
+        with self.assertRaisesRegex(RuntimeError, "Contradictory kind metadata"):
+            search("pull-request", "created", date(2026, 10, 19),
+                   date(2026, 10, 26), "token", fetch)
+
+
 
 if __name__ == "__main__":
     unittest.main()
