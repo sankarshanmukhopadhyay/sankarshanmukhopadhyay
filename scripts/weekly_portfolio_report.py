@@ -33,7 +33,7 @@ def source_fetch(url, token):
         return json.load(response)
 
 
-def search(kind, event, start, end, token, fetch=source_fetch):
+def search(kind, event, start, end, token, fetch=source_fetch, anomalies=None):
     if kind not in EVENTS or event not in EVENTS[kind]:
         raise ValueError("Unknown type/event pair")
     # Search all GitHub organizations, including upstream; avoid owner restrictions.
@@ -61,9 +61,24 @@ def search(kind, event, start, end, token, fetch=source_fetch):
     end_utc = datetime.combine(end, datetime.min.time(), timezone.utc)
     events = []
     for item in results:
-        actual_kind = "pull-request" if item.get("pull_request") else "issue"
+        # GitHub's issue-search endpoint returns PRs and issues in one wire
+        # format. An empty but present pull_request object is still a PR.
+        # Validate against the canonical browser path before classification.
+        url = item.get("html_url", "")
+        path = urllib.parse.urlparse(url).path.split("/")
+        if len(path) != 5 or path[3] not in ("pull", "issues") or not path[4].isdigit():
+            raise RuntimeError(f"Unrecognized GitHub search result URL: {url!r}")
+        url_kind = "pull-request" if path[3] == "pull" else "issue"
+        actual_kind = "pull-request" if item.get("pull_request") is not None else "issue"
+        if actual_kind != url_kind:
+            raise RuntimeError(f"Contradictory kind metadata for GitHub result: {url}")
         if actual_kind != kind:
-            raise RuntimeError("Search returned mismatched record kind")
+            # A wrong-kind hit is not an eligible event. Retain its identity
+            # in the ledger instead of silently masking search anomalies.
+            if anomalies is not None:
+                anomalies.append({"query_kind": kind, "query_event": event,
+                                  "returned_kind": actual_kind, "url": url})
+            continue
         if kind == "pull-request" and event == "merged":
             timestamp = item["pull_request"].get("merged_at")
         else:
@@ -87,8 +102,9 @@ def search(kind, event, start, end, token, fetch=source_fetch):
 
 
 def collect(start, end, token, fetch=source_fetch):
+    anomalies = []
     events = [item for kind in KINDS for event in EVENTS[kind]
-              for item in search(kind, event, start, end, token, fetch)]
+              for item in search(kind, event, start, end, token, fetch, anomalies)]
     events.sort(key=lambda x: (x["occurred_at"], x["key"]))
     keys = [x["key"] for x in events]
     if len(keys) != len(set(keys)):
@@ -96,9 +112,10 @@ def collect(start, end, token, fetch=source_fetch):
     counts = Counter((x["scope"], x["kind"], x["event"]) for x in events)
     return {"schema_version": "2.0", "kind": "derived-weekly-contribution-events",
             "window": {"start_inclusive_utc": str(start), "end_exclusive_utc": str(end)},
-            "author": AUTHOR, "collection_status": "complete",
+            "author": AUTHOR, "collection_status": "complete_with_filtered_search_hits" if anomalies else "complete",
             "source": "GitHub public issue search; event timestamps rechecked in UTC",
             "counts": {"|".join(k): v for k, v in sorted(counts.items())},
+            "excluded_cross_kind_search_hits": anomalies,
             "events": events, "limitations": [
                 "Author-attributed PRs/issues only; comments, reviews, discussions, private content, direct pushes and GitLab excluded",
                 "GitHub event occurrence does not imply upstream acceptance or independent assurance",
@@ -198,7 +215,7 @@ def render(result):
     lines += ["", "## Evidence and interpretation limits", "",
               "These are events from GitHub Search, not independent implementation evidence. Reviews, comments, discussions, GitLab, private work and collaborator-authored activity are not covered. Upstream owners retain all governance and acceptance authority.",
               "", "[Reporting methodology](../methodology.md).",
-              f"Evidence ledger: \`reports/weekly/{y}/week-{w:02d}.json\`.", ""]
+              f"Evidence ledger: `reports/weekly/{y}/week-{w:02d}.json`.", ""]
     return "\n".join(lines)
 
 
