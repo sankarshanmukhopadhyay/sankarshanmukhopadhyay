@@ -2,6 +2,7 @@
 """Weekly contribution events; observational, never an assertion of upstream authority."""
 import argparse
 import json
+import re
 import os
 import sys
 import urllib.parse
@@ -13,6 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 AUTHOR = "sankarshanmukhopadhyay"
 OWNERS = ("sankarshanmukhopadhyay", "qbf-consulting")
+FIRST_OPERATIONAL_WEEK = date(2026, 10, 26)  # October 1-25 is curated backfill.
 KINDS = ("pull-request", "issue")
 EVENTS = {"pull-request": ("created", "merged", "closed"), "issue": ("created", "closed")}
 
@@ -110,6 +112,58 @@ def output_paths(start):
     return ROOT / "docs/weekly-reports" / str(y) / f"week-{w:02d}.md", ROOT / "reports/weekly" / str(y) / f"week-{w:02d}.json"
 
 
+def missing_completed_weeks(today):
+    """Return fully absent weeks; never silently overwrite partial evidence."""
+    _, end = last_week(today)
+    weeks = []
+    start = FIRST_OPERATIONAL_WEEK
+    while start < end:
+        md, ledger = output_paths(start)
+        if md.exists() != ledger.exists():
+            raise RuntimeError(f"Partial weekly archive for {start}: Markdown/JSON disagree")
+        if not md.exists():
+            weeks.append(start)
+        start += timedelta(days=7)
+    return weeks
+
+
+def update_archive_index():
+    """Synchronize visible navigation from existing report artifacts."""
+    index = ROOT / "docs/weekly-reports/index.md"
+    text = index.read_text(encoding="utf-8")
+    begin = "<!-- BEGIN GENERATED WEEKLY REPORT INDEX -->"
+    finish = "<!-- END GENERATED WEEKLY REPORT INDEX -->"
+    files = sorted((ROOT / "docs/weekly-reports").glob("[0-9][0-9][0-9][0-9]/week-*.md"), reverse=True)
+    operational = []
+    for file in files:
+        match = re.fullmatch(r"week-(\\d{2})\\.md", file.name)
+        if not match:
+            continue
+        year = int(file.parent.name)
+        week = int(match.group(1))
+        start = date.fromisocalendar(year, week, 1)
+        if start < FIRST_OPERATIONAL_WEEK:
+            continue
+        ledger = ROOT / "reports/weekly" / str(year) / f"week-{week:02d}.json"
+        if not ledger.exists():
+            raise RuntimeError(f"Report missing evidence ledger: {file}")
+        end = start + timedelta(days=6)
+        operational.append(f"- [{start:%-d %B}–{end:%-d %B %Y}]({year}/week-{week:02d}.md)")
+    block = begin + "\\n\\n## Operational weekly reports\\n\\n" + (
+        "\\n".join(operational) if operational else "No operational reports have been published yet."
+    ) + "\\n\\n" + finish
+    if begin in text or finish in text:
+        if text.count(begin) != 1 or text.count(finish) != 1:
+            raise RuntimeError("Malformed generated weekly index markers")
+        text = text[:text.index(begin)] + block + text[text.index(finish) + len(finish):]
+    else:
+        marker = "[Reporting methodology](methodology.md)"
+        if text.count(marker) != 1:
+            raise RuntimeError("Weekly archive has no unique insertion marker")
+        text = text.replace(marker, block + "\\n\\n" + marker)
+    index.write_text(text, encoding="utf-8")
+
+
 def render(result):
     start = date.fromisoformat(result["window"]["start_inclusive_utc"])
     end = date.fromisoformat(result["window"]["end_exclusive_utc"])
@@ -151,30 +205,47 @@ def render(result):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--start", help="UTC Monday of a completed week")
+    parser.add_argument("--catch-up", action="store_true", help="Generate all missing completed operational weeks")
     parser.add_argument("--out-json", help="Explicit evidence output path for validation")
     parser.add_argument("--out-md", help="Explicit Markdown output path")
     args = parser.parse_args()
     today = datetime.now(timezone.utc).date()
-    if args.start:
+    if args.catch_up and (args.start or args.out_json or args.out_md):
+        parser.error("--catch-up cannot be combined with --start or explicit outputs")
+    if args.catch_up:
+        starts = missing_completed_weeks(today)
+    elif args.start:
         start = date.fromisoformat(args.start)
-        end = start + timedelta(days=7)
-        if start.weekday() or end > today:
+        if start.weekday() or start + timedelta(days=7) > today:
             parser.error("Window must be a completed Monday-to-Monday UTC week")
+        starts = [start]
     else:
-        start, end = last_week(today)
-    doc, ledger = output_paths(start)
-    if args.out_json:
-        ledger = Path(args.out_json)
-    if args.out_md:
-        doc = Path(args.out_md)
-    if doc.exists() or ledger.exists():
-        print("Existing archive not overwritten:", doc)
-        return
-    evidence = collect(start, end, os.getenv("GH_TOKEN") or os.getenv("GITHUB_TOKEN") or "")
-    doc.parent.mkdir(parents=True, exist_ok=True)
-    ledger.parent.mkdir(parents=True, exist_ok=True)
-    ledger.write_text(json.dumps(evidence, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    doc.write_text(render(evidence), encoding="utf-8")
+        starts = [last_week(today)[0]]
+    token = os.getenv("GH_TOKEN") or os.getenv("GITHUB_TOKEN") or ""
+    if not token:
+        raise RuntimeError("GitHub API token required; cannot claim complete evidence")
+    for start in starts:
+        end = start + timedelta(days=7)
+        doc, ledger = output_paths(start)
+        if not args.catch_up:
+            if args.out_json:
+                ledger = Path(args.out_json)
+            if args.out_md:
+                doc = Path(args.out_md)
+        if doc.exists() != ledger.exists():
+            raise RuntimeError(f"Partial weekly archive for {start}; refusing overwrite")
+        if doc.exists():
+            print("Existing archive not overwritten:", doc)
+            continue
+        evidence = collect(start, end, token)
+        doc.parent.mkdir(parents=True, exist_ok=True)
+        ledger.parent.mkdir(parents=True, exist_ok=True)
+        ledger.write_text(json.dumps(evidence, indent=2, ensure_ascii=False) + "\\n", encoding="utf-8")
+        doc.write_text(render(evidence), encoding="utf-8")
+        print(f"Generated completed week: {start} to {end}")
+    if not args.out_md and not args.out_json:
+        update_archive_index()
+
 
 
 if __name__ == "__main__":
