@@ -2,6 +2,11 @@ name: Weekly portfolio report
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/weekly_portfolio_report.py'
+      - '.github/workflows/weekly-portfolio-report.yml'
   schedule:
     - cron: '23 4 * * 1'
 
@@ -60,4 +65,4 @@ jobs:
           git add docs/weekly-reports reports/weekly
           git commit -s -m "docs(reports): propose recovered completed weekly reports"
           git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push -u origin "$branch"
-          gh pr create --base main --head "$branch" --title "docs(reports): review completed weekly portfolio reports" --body "Generated missing completed weeks and rebuilt the archive index. The Markdown drafts and JSON ledgers are derived GitHub activity evidence only. Human review must validate completeness, meaning, source links and DCO before merge. Bot commits carry the bot\x27s own DCO sign-off; no human certification is impersonated."
+          gh pr create --base main --head "$branch" --title "docs(reports): review completed weekly portfolio reports" --body "Generated missing completed weeks and rebuilt the archive index. The Markdown drafts and JSON ledgers are derived GitHub activity evidence only. Human review must validate completeness, meaning, source links and DCO before merge. Bot commits carry the bot's own DCO sign-off; no human certification is impersonated."
