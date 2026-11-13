@@ -25,7 +25,7 @@ class WeeklyPortfolioTests(unittest.TestCase):
         def fetch(url, token):
             from urllib.parse import urlsplit, parse_qs
             q = parse_qs(urlsplit(url).query)["q"][0]
-            if "is:pull-request" in q and "merged:" in q:
+            if "is:pr" in q and "type:issue" not in q and "merged:" in q:
                 records = [hit("trustoverip/dtgwg-rahp-tf", 33, True, merged="2026-10-22T12:00:00Z")]
             elif "type:issue" in q and "-is:pr" in q and "created:" in q:
                 records = [hit("unrelated/project", 12)]
