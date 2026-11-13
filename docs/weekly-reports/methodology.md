@@ -34,6 +34,7 @@ The workflow requires the configured repository-scoped GitHub App token to creat
 - No inference of a repository's maturity or assurance state from PR counts.
 - The weekly source query is GitHub's API snapshot at run time; late edits may change descriptions, but merge timestamps remain the reporting attribution.
 - GitHub search imposes query pagination and result bounds. Any incomplete result or overflow must fail rather than silently produce a complete-looking report.
+- GitHub issue-search results are cross-type records. The collector cross-checks the `pull_request` marker with the canonical `/pull/` or `/issues/` path. An unambiguous wrong-kind hit is excluded from the requested kind and retained in `excluded_cross_kind_search_hits`, with `collection_status: complete_with_filtered_search_hits`. Contradictory kind metadata, missing timestamps, and incomplete/paginated search results still fail closed. This status establishes only the bounded query result, not independent source completeness.
 - Historical backfill describes evidence available at preparation time, not a historical snapshot of every PR's state as of the original Sunday.
 
 ## Expanded contribution footprint (schema 2.0)
