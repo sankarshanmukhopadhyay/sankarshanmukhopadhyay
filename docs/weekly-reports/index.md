@@ -11,10 +11,10 @@ This archive explains material changes in the public repositories owned by `sank
 
 ## October 2026
 
-- [1–4 October (partial first week)](2026/week-40.md)
-- [5–11 October](2026/week-41.md)
-- [12–18 October](2026/week-42.md)
-- [19–25 October](2026/week-43.md)
+- [1–4 October (partial first week)](2026/week-40.html)
+- [5–11 October](2026/week-41.html)
+- [12–18 October](2026/week-42.html)
+- [19–25 October](2026/week-43.html)
 
 <!-- BEGIN GENERATED WEEKLY REPORT INDEX -->
 
