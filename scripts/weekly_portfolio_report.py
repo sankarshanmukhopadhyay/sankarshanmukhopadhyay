@@ -149,9 +149,9 @@ def update_archive_index():
             raise RuntimeError(f"Report missing evidence ledger: {file}")
         end = start + timedelta(days=6)
         operational.append(f"- [{start:%-d %B}–{end:%-d %B %Y}]({year}/week-{week:02d}.md)")
-    block = begin + "\n\\n## Operational weekly reports\\n\\n" + (
+    block = begin + "\n\n## Operational weekly reports\n\n" + (
         "\n".join(operational) if operational else "No operational reports have been published yet."
-    ) + "\n\\n" + finish
+    ) + "\n\n" + finish
     if begin in text or finish in text:
         if text.count(begin) != 1 or text.count(finish) != 1:
             raise RuntimeError("Malformed generated weekly index markers")
@@ -160,7 +160,7 @@ def update_archive_index():
         marker = "[Reporting methodology](methodology.md)"
         if text.count(marker) != 1:
             raise RuntimeError("Weekly archive has no unique insertion marker")
-        text = text.replace(marker, block + "\n\\n" + marker)
+        text = text.replace(marker, block + "\n\n" + marker)
     index.write_text(text, encoding="utf-8")
 
 
