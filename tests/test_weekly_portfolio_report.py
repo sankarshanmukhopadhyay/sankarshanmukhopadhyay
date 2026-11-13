@@ -25,9 +25,9 @@ class WeeklyPortfolioTests(unittest.TestCase):
         def fetch(url, token):
             from urllib.parse import urlsplit, parse_qs
             q = parse_qs(urlsplit(url).query)["q"][0]
-            if "is:pull-request" in q and "merged:" in q:
+            if "is:pr" in q and "type:issue" not in q and "merged:" in q:
                 records = [hit("trustoverip/dtgwg-rahp-tf", 33, True, merged="2026-10-22T12:00:00Z")]
-            elif "is:issue" in q and "created:" in q:
+            elif "type:issue" in q and "-is:pr" in q and "created:" in q:
                 records = [hit("unrelated/project", 12)]
             else:
                 records = []
@@ -135,26 +135,29 @@ class WeeklyPortfolioTests(unittest.TestCase):
         self.assertEqual(1, len(result))
         self.assertEqual("pull-request", result[0]["kind"])
 
-    def test_cross_kind_hits_are_filtered_and_disclosed_not_counted(self):
-        pr = hit("trustoverip/upstream", 44, pr=True, created="2026-10-27T12:00:00Z")
+    def test_issue_query_excludes_prs_and_counts_issue_events(self):
+        from urllib.parse import parse_qs, urlsplit
+        seen = []
         issue = hit("trustoverip/upstream", 45, created="2026-10-28T12:00:00Z")
         def fetch(url, token):
-            from urllib.parse import parse_qs, urlsplit
             query = parse_qs(urlsplit(url).query)["q"][0]
-            if "is:pull-request" in query and "created:" in query:
-                records = [pr, issue]
-            elif "is:issue" in query and "created:" in query:
-                records = [issue, pr]
-            else:
-                records = []
+            seen.append(query)
+            records = [issue] if "type:issue" in query and "created:" in query else []
             return {"total_count": len(records), "incomplete_results": False,
                     "items": records}
         result = collect(date(2026, 10, 26), date(2026, 11, 2), "token", fetch)
-        self.assertEqual(2, len(result["events"]))
-        self.assertEqual("complete_with_filtered_search_hits", result["collection_status"])
-        self.assertEqual(2, len(result["excluded_cross_kind_search_hits"]))
-        self.assertEqual(1, result["counts"]["external|pull-request|created"])
         self.assertEqual(1, result["counts"]["external|issue|created"])
+        self.assertEqual("complete", result["collection_status"])
+        self.assertTrue(any("type:issue -is:pr" in q for q in seen))
+        self.assertTrue(any("is:pr" in q and "type:issue" not in q for q in seen))
+
+    def test_wrong_kind_issue_search_fails_instead_of_reporting_zero(self):
+        pr = hit("trustoverip/upstream", 44, pr=True, created="2026-10-27T12:00:00Z")
+        def fetch(url, token):
+            return {"total_count": 1, "incomplete_results": False, "items": [pr]}
+        with self.assertRaisesRegex(RuntimeError, "Cross-kind GitHub search response"):
+            search("issue", "created", date(2026, 10, 26),
+                   date(2026, 11, 2), "token", fetch)
 
     def test_conflicting_url_and_type_metadata_fails_closed(self):
         item = hit("trustoverip/upstream", 44, pr=True)
