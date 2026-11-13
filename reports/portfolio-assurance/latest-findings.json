@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T03:52:11Z",
+  "generated_at": "2026-11-13T06:42:31Z",
   "findings": [
     {
       "finding_id": "PAM-C05E1E976A21",
@@ -8,7 +8,7 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/publication-link-audit.yml",
       "severity": "medium",
-      "observed_at": "2026-11-13T03:52:11Z",
+      "observed_at": "2026-11-13T06:42:31Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -223,7 +223,7 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-11-13T03:52:11Z",
+      "observed_at": "2026-11-13T06:42:31Z",
       "claim": "Required assurance evidence satisfying the configured evidence contract was not observed.",
       "evidence": {
         "claim": "publication_integrity",
@@ -260,7 +260,7 @@
       "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
       "subject": "egwg-reporting-tf-prototype-mcp",
       "severity": "info",
-      "observed_at": "2026-11-13T03:52:11Z",
+      "observed_at": "2026-11-13T06:42:31Z",
       "claim": "A public account repository has no governed account-level portfolio disposition.",
       "evidence": {
         "repository": "egwg-reporting-tf-prototype-mcp",
@@ -290,7 +290,7 @@
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-11-13T03:52:11Z",
+      "observed_at": "2026-11-13T06:42:31Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -403,7 +403,7 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-11-13T03:52:11Z",
+      "observed_at": "2026-11-13T06:42:31Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -608,7 +608,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-11-13T03:52:11Z",
+      "observed_at": "2026-11-13T06:42:31Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -785,17 +785,17 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-11-13T03:52:11Z",
+      "observed_at": "2026-11-13T06:42:31Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-11-13T03:51:28Z",
+          "pushed_at": "2026-11-13T04:18:08Z",
           "updated_at": "2026-10-26T01:58:38Z",
-          "open_issues_count": 1,
-          "head_sha": "362a74a81f6f04dc616dc4d314f2a1cc3ec14530"
+          "open_issues_count": 0,
+          "head_sha": "746b7c7bdc2dd54bef03095289c057481f26c61b"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -805,8 +805,8 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 8,
-          "workflows_examined": 5,
+          "completed_examined": 27,
+          "workflows_examined": 9,
           "retired_workflows_examined": 0,
           "unresolved_failures": 0,
           "latest": [
@@ -832,13 +832,73 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-11-13T03:51:30Z",
-              "updated_at": "2026-11-13T03:52:10Z",
-              "run_started_at": "2026-11-13T03:51:30Z",
-              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/43361707089",
-              "head_sha": "362a74a81f6f04dc616dc4d314f2a1cc3ec14530",
+              "created_at": "2026-11-13T04:17:55Z",
+              "updated_at": "2026-11-13T04:18:32Z",
+              "run_started_at": "2026-11-13T04:17:55Z",
+              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/43364594481",
+              "head_sha": "746b7c7bdc2dd54bef03095289c057481f26c61b",
               "head_branch": "main",
-              "run_number": 126
+              "run_number": 134
+            },
+            {
+              "workflow_id": 345712805,
+              "name": "Release Codename Policy",
+              "path": ".github/workflows/release-codename-policy.yml",
+              "conclusion": "success",
+              "status": "completed",
+              "event": "push",
+              "created_at": "2026-11-13T04:16:17Z",
+              "updated_at": "2026-11-13T04:16:25Z",
+              "run_started_at": "2026-11-13T04:16:17Z",
+              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/43364418048",
+              "head_sha": "0fb5e9eaa9adcb43c62b5d771cff30fd2479fa50",
+              "head_branch": "main",
+              "run_number": 17
+            },
+            {
+              "workflow_id": 416860703,
+              "name": "TSMS 2026.3 Candidate Qualification",
+              "path": ".github/workflows/tsms-2026-3-candidate.yml",
+              "conclusion": "success",
+              "status": "completed",
+              "event": "push",
+              "created_at": "2026-11-13T04:01:09Z",
+              "updated_at": "2026-11-13T04:01:22Z",
+              "run_started_at": "2026-11-13T04:01:09Z",
+              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/43362726479",
+              "head_sha": "e4e58a8c6b12f5437e9f455c65e03b6fd9ccce3a",
+              "head_branch": "main",
+              "run_number": 2
+            },
+            {
+              "workflow_id": 416869675,
+              "name": "TSMS Publish Stack 2026.3",
+              "path": ".github/workflows/tsms-2026-3-publish.yml",
+              "conclusion": "success",
+              "status": "completed",
+              "event": "push",
+              "created_at": "2026-11-13T04:17:55Z",
+              "updated_at": "2026-11-13T04:18:16Z",
+              "run_started_at": "2026-11-13T04:17:55Z",
+              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/43364594394",
+              "head_sha": "746b7c7bdc2dd54bef03095289c057481f26c61b",
+              "head_branch": "main",
+              "run_number": 2
+            },
+            {
+              "workflow_id": 345704270,
+              "name": "TSMS Publish Release",
+              "path": ".github/workflows/tsms-publish-release.yml",
+              "conclusion": "success",
+              "status": "completed",
+              "event": "push",
+              "created_at": "2026-11-13T04:01:09Z",
+              "updated_at": "2026-11-13T04:01:25Z",
+              "run_started_at": "2026-11-13T04:01:09Z",
+              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/43362726541",
+              "head_sha": "e4e58a8c6b12f5437e9f455c65e03b6fd9ccce3a",
+              "head_branch": "main",
+              "run_number": 13
             },
             {
               "workflow_id": 271080726,
@@ -847,13 +907,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-11-13T03:51:30Z",
-              "updated_at": "2026-11-13T03:51:43Z",
-              "run_started_at": "2026-11-13T03:51:30Z",
-              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/43361707172",
-              "head_sha": "362a74a81f6f04dc616dc4d314f2a1cc3ec14530",
+              "created_at": "2026-11-13T04:17:55Z",
+              "updated_at": "2026-11-13T04:18:07Z",
+              "run_started_at": "2026-11-13T04:17:55Z",
+              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/43364594349",
+              "head_sha": "746b7c7bdc2dd54bef03095289c057481f26c61b",
               "head_branch": "main",
-              "run_number": 125
+              "run_number": 133
             },
             {
               "workflow_id": 348971779,
@@ -877,13 +937,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "dynamic",
-              "created_at": "2026-11-13T03:36:49Z",
-              "updated_at": "2026-11-13T03:37:58Z",
-              "run_started_at": "2026-11-13T03:36:49Z",
-              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/43360135705",
-              "head_sha": "0f83ca3331a7d834dcf3ca3bab16ef3cf175c8a8",
+              "created_at": "2026-11-13T04:17:55Z",
+              "updated_at": "2026-11-13T04:19:04Z",
+              "run_started_at": "2026-11-13T04:17:55Z",
+              "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/43364594921",
+              "head_sha": "746b7c7bdc2dd54bef03095289c057481f26c61b",
               "head_branch": "main",
-              "run_number": 66
+              "run_number": 76
             }
           ],
           "retired": [],
@@ -895,6 +955,8 @@
             ".github/workflows/pages.yml",
             ".github/workflows/publish-component-release.yml",
             ".github/workflows/release-codename-policy.yml",
+            ".github/workflows/tsms-2026-3-candidate.yml",
+            ".github/workflows/tsms-2026-3-publish.yml",
             ".github/workflows/tsms-publish-release.yml",
             ".github/workflows/tsms-release-gate.yml",
             ".github/workflows/validate.yml",
@@ -913,13 +975,13 @@
                 "conclusion": "success",
                 "status": "completed",
                 "event": "push",
-                "created_at": "2026-11-13T03:51:30Z",
-                "updated_at": "2026-11-13T03:51:43Z",
-                "run_started_at": "2026-11-13T03:51:30Z",
-                "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/43361707172",
-                "head_sha": "362a74a81f6f04dc616dc4d314f2a1cc3ec14530",
+                "created_at": "2026-11-13T04:17:55Z",
+                "updated_at": "2026-11-13T04:18:07Z",
+                "run_started_at": "2026-11-13T04:17:55Z",
+                "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/43364594349",
+                "head_sha": "746b7c7bdc2dd54bef03095289c057481f26c61b",
                 "head_branch": "main",
-                "run_number": 125
+                "run_number": 133
               }
             },
             ".github/workflows/pages.yml": {
@@ -931,13 +993,13 @@
                 "conclusion": "success",
                 "status": "completed",
                 "event": "push",
-                "created_at": "2026-11-13T03:51:30Z",
-                "updated_at": "2026-11-13T03:52:10Z",
-                "run_started_at": "2026-11-13T03:51:30Z",
-                "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/43361707089",
-                "head_sha": "362a74a81f6f04dc616dc4d314f2a1cc3ec14530",
+                "created_at": "2026-11-13T04:17:55Z",
+                "updated_at": "2026-11-13T04:18:32Z",
+                "run_started_at": "2026-11-13T04:17:55Z",
+                "html_url": "https://github.com/qbf-consulting/trust-systems-meta-model/actions/runs/43364594481",
+                "head_sha": "746b7c7bdc2dd54bef03095289c057481f26c61b",
                 "head_branch": "main",
-                "run_number": 126
+                "run_number": 134
               }
             }
           }
@@ -947,7 +1009,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-11-13T03:52:11Z",
+      "observed_at": "2026-11-13T06:42:31Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1089,17 +1151,17 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-11-13T03:52:11Z",
+      "observed_at": "2026-11-13T06:42:31Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-11-13T03:51:48Z",
+          "pushed_at": "2026-11-13T03:56:53Z",
           "updated_at": "2026-09-23T05:28:01Z",
-          "open_issues_count": 1,
-          "head_sha": "1d83c64a1d0208e6d7a85e844299841ad2283795"
+          "open_issues_count": 0,
+          "head_sha": "5dda45001bebab5e69cd58a4466308f361c6e422"
         },
         "status_declaration": {
           "path": "PROJECT-STATUS.yaml",
@@ -1109,8 +1171,8 @@
         "workflow_runs": {
           "available": true,
           "lookback_days": 7,
-          "completed_examined": 2,
-          "workflows_examined": 2,
+          "completed_examined": 7,
+          "workflows_examined": 3,
           "retired_workflows_examined": 0,
           "unresolved_failures": 0,
           "latest": [
@@ -1121,13 +1183,28 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-11-13T03:49:22Z",
-              "updated_at": "2026-11-13T03:50:33Z",
-              "run_started_at": "2026-11-13T03:49:22Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/43361476245",
-              "head_sha": "1d83c64a1d0208e6d7a85e844299841ad2283795",
+              "created_at": "2026-11-13T03:56:56Z",
+              "updated_at": "2026-11-13T03:58:24Z",
+              "run_started_at": "2026-11-13T03:56:56Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/43362278718",
+              "head_sha": "5dda45001bebab5e69cd58a4466308f361c6e422",
               "head_branch": "main",
-              "run_number": 32
+              "run_number": 34
+            },
+            {
+              "workflow_id": 364838130,
+              "name": "Publish TGA Component Release",
+              "path": ".github/workflows/publish-component-release.yml",
+              "conclusion": "success",
+              "status": "completed",
+              "event": "push",
+              "created_at": "2026-11-13T03:55:34Z",
+              "updated_at": "2026-11-13T03:55:51Z",
+              "run_started_at": "2026-11-13T03:55:34Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/43362137408",
+              "head_sha": "69692732f61a9f0426ed4a901a4f2702be139593",
+              "head_branch": "main",
+              "run_number": 2
             },
             {
               "workflow_id": 259914534,
@@ -1136,13 +1213,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "push",
-              "created_at": "2026-11-13T03:49:22Z",
-              "updated_at": "2026-11-13T03:49:36Z",
-              "run_started_at": "2026-11-13T03:49:22Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/43361475902",
-              "head_sha": "1d83c64a1d0208e6d7a85e844299841ad2283795",
+              "created_at": "2026-11-13T03:56:56Z",
+              "updated_at": "2026-11-13T03:57:10Z",
+              "run_started_at": "2026-11-13T03:56:56Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/43362278631",
+              "head_sha": "5dda45001bebab5e69cd58a4466308f361c6e422",
               "head_branch": "main",
-              "run_number": 83
+              "run_number": 88
             }
           ],
           "retired": [],
@@ -1164,13 +1241,13 @@
                 "conclusion": "success",
                 "status": "completed",
                 "event": "push",
-                "created_at": "2026-11-13T03:49:22Z",
-                "updated_at": "2026-11-13T03:49:36Z",
-                "run_started_at": "2026-11-13T03:49:22Z",
-                "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/43361475902",
-                "head_sha": "1d83c64a1d0208e6d7a85e844299841ad2283795",
+                "created_at": "2026-11-13T03:56:56Z",
+                "updated_at": "2026-11-13T03:57:10Z",
+                "run_started_at": "2026-11-13T03:56:56Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/43362278631",
+                "head_sha": "5dda45001bebab5e69cd58a4466308f361c6e422",
                 "head_branch": "main",
-                "run_number": 83
+                "run_number": 88
               }
             },
             ".github/workflows/pages.yml": {
@@ -1182,13 +1259,13 @@
                 "conclusion": "success",
                 "status": "completed",
                 "event": "push",
-                "created_at": "2026-11-13T03:49:22Z",
-                "updated_at": "2026-11-13T03:50:33Z",
-                "run_started_at": "2026-11-13T03:49:22Z",
-                "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/43361476245",
-                "head_sha": "1d83c64a1d0208e6d7a85e844299841ad2283795",
+                "created_at": "2026-11-13T03:56:56Z",
+                "updated_at": "2026-11-13T03:58:24Z",
+                "run_started_at": "2026-11-13T03:56:56Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/trust-graph-artifacts/actions/runs/43362278718",
+                "head_sha": "5dda45001bebab5e69cd58a4466308f361c6e422",
                 "head_branch": "main",
-                "run_number": 32
+                "run_number": 34
               }
             }
           }
@@ -1198,7 +1275,7 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-11-13T03:52:11Z",
+      "observed_at": "2026-11-13T06:42:31Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1321,7 +1398,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-11-13T03:52:11Z",
+      "observed_at": "2026-11-13T06:42:31Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1530,7 +1607,7 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-11-13T03:52:11Z",
+      "observed_at": "2026-11-13T06:42:31Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1667,7 +1744,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-11-13T03:52:11Z",
+      "observed_at": "2026-11-13T06:42:31Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1826,7 +1903,7 @@
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-11-13T03:52:11Z",
+      "observed_at": "2026-11-13T06:42:31Z",
       "available": true,
       "evidence": {
         "repository": {
