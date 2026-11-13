@@ -46,12 +46,12 @@ jobs:
         run: python scripts/weekly_portfolio_report.py --catch-up
       - name: Create reviewed publication proposal
         env:
-          GH_TOKEN: ${{ steps.app-token.outputs.token || github.token }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         shell: bash
         run: |
           set -euo pipefail
           if [[ -z "$GH_TOKEN" ]]; then
-            echo "No repository publication credential; cannot propose reviewed evidence."
+            echo "Missing repository-scoped GitHub App token; cannot create a PR that triggers required checks."
             exit 1
           fi
           if [[ -z "$(git status --porcelain -- docs/weekly-reports reports/weekly)" ]]; then exit 0; fi
