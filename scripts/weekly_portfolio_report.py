@@ -148,7 +148,7 @@ def update_archive_index():
         if not ledger.exists():
             raise RuntimeError(f"Report missing evidence ledger: {file}")
         end = start + timedelta(days=6)
-        operational.append(f"- [{start:%-d %B}–{end:%-d %B %Y}]({year}/week-{week:02d}.md)")
+        operational.append(f"- [{start.day} {start:%B}–{end.day} {end:%B %Y}]({year}/week-{week:02d}.html)")
     block = begin + "\n\n## Operational weekly reports\n\n" + (
         "\n".join(operational) if operational else "No operational reports have been published yet."
     ) + "\n\n" + finish
