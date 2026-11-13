@@ -55,6 +55,9 @@ jobs:
           test -f _site/docs/weekly-reports/2026/week-40.html
           test -f _site/docs/weekly-reports/2026/week-43.html
           grep -q "Weekly Portfolio Reports" _site/docs/weekly-reports/index.html
+          for source in docs/weekly-reports/20*/week-*.md; do
+            test -f "_site/${source%.md}.html" || { echo "Missing rendered report: $source"; exit 1; }
+          done
           test -f _site/data/portfolio-delivery-pulse.json
           grep -R "Portfolio Work Queue" _site/docs/portfolio-work/index.html >/dev/null
           grep -R "Portfolio delivery pulse" _site/docs/portfolio-work/index.html >/dev/null
