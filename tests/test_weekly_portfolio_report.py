@@ -1,4 +1,8 @@
 import unittest
+import tempfile
+from pathlib import Path
+from unittest.mock import patch
+from scripts import weekly_portfolio_report as reporting
 from datetime import date
 from scripts.weekly_portfolio_report import last_week, search, collect, render
 
@@ -63,6 +67,63 @@ class WeeklyPortfolioTests(unittest.TestCase):
         search("pull-request", "merged", date(2026,10,19), date(2026,10,26), "", fetch)
         search("issue", "created", date(2026,10,19), date(2026,10,26), "", fetch)
         self.assertEqual(["updated", "updated", "created"], seen)
+
+    def test_catch_up_discovers_each_missing_completed_week(self):
+        with tempfile.TemporaryDirectory() as tmp, patch.object(reporting, "ROOT", Path(tmp)):
+            self.assertEqual(
+                [date(2026, 10, 26), date(2026, 11, 2)],
+                reporting.missing_completed_weeks(date(2026, 11, 13)),
+            )
+            md, ledger = reporting.output_paths(date(2026, 10, 26))
+            md.parent.mkdir(parents=True)
+            ledger.parent.mkdir(parents=True)
+            md.write_text("draft", encoding="utf-8")
+            ledger.write_text("{}", encoding="utf-8")
+            self.assertEqual(
+                [date(2026, 11, 2)],
+                reporting.missing_completed_weeks(date(2026, 11, 13)),
+            )
+
+    def test_partial_archive_fails_closed(self):
+        with tempfile.TemporaryDirectory() as tmp, patch.object(reporting, "ROOT", Path(tmp)):
+            md, _ = reporting.output_paths(date(2026, 10, 26))
+            md.parent.mkdir(parents=True)
+            md.write_text("unpaired report", encoding="utf-8")
+            with self.assertRaisesRegex(RuntimeError, "Partial weekly archive"):
+                reporting.missing_completed_weeks(date(2026, 11, 13))
+
+    def test_index_tracks_existing_ledgers_and_is_idempotent(self):
+        with tempfile.TemporaryDirectory() as tmp, patch.object(reporting, "ROOT", Path(tmp)):
+            index = Path(tmp) / "docs/weekly-reports/index.md"
+            index.parent.mkdir(parents=True)
+            index.write_text("# Weekly Portfolio Reports\n\n"
+                             "## October 2026\n\n- curated October archive\n\n"
+                             "[Reporting methodology](methodology.md)\n", encoding="utf-8")
+            for start in [date(2026, 10, 26), date(2026, 11, 2)]:
+                md, ledger = reporting.output_paths(start)
+                md.parent.mkdir(parents=True, exist_ok=True)
+                ledger.parent.mkdir(parents=True, exist_ok=True)
+                md.write_text("report", encoding="utf-8")
+                ledger.write_text("{}", encoding="utf-8")
+            reporting.update_archive_index()
+            text = index.read_text(encoding="utf-8")
+            self.assertIn("(2026/week-44.html)", text)
+            self.assertIn("(2026/week-45.html)", text)
+            self.assertLess(text.index("week-45.html"), text.index("week-44.html"))
+            self.assertIn("curated October archive", text)
+            reporting.update_archive_index()
+            self.assertEqual(text, index.read_text(encoding="utf-8"))
+
+    def test_index_does_not_publish_report_without_ledger(self):
+        with tempfile.TemporaryDirectory() as tmp, patch.object(reporting, "ROOT", Path(tmp)):
+            index = Path(tmp) / "docs/weekly-reports/index.md"
+            index.parent.mkdir(parents=True)
+            index.write_text("[Reporting methodology](methodology.md)", encoding="utf-8")
+            md, _ = reporting.output_paths(date(2026, 10, 26))
+            md.parent.mkdir(parents=True)
+            md.write_text("report", encoding="utf-8")
+            with self.assertRaisesRegex(RuntimeError, "missing evidence ledger"):
+                reporting.update_archive_index()
 
 
 if __name__ == "__main__":
