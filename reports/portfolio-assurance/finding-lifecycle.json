@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-13T06:42:31Z",
+  "generated_at": "2026-11-13T19:40:13Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -164,11 +164,11 @@
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/instance-watch.yml",
       "dimension": "operational",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-08-25T07:08:19Z",
-      "last_observed": "2026-11-12T23:37:33Z",
-      "resolved_at": "2026-11-13T03:52:11Z",
-      "latest_finding_id": "PAM-892BF036A5EC"
+      "last_observed": "2026-11-13T19:40:13Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-50C518D72920"
     },
     "PF-FE9A3049B948": {
       "finding_fingerprint": "PF-FE9A3049B948",
@@ -658,7 +658,7 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-28T03:54:08Z",
-      "last_observed": "2026-11-13T06:42:31Z",
+      "last_observed": "2026-11-13T19:40:13Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-2D2511F6CAF1"
     },
@@ -790,7 +790,7 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-26T13:00:04Z",
-      "last_observed": "2026-11-13T06:42:31Z",
+      "last_observed": "2026-11-13T19:40:13Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-C05E1E976A21"
     },
@@ -802,7 +802,7 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-03T00:56:51Z",
-      "last_observed": "2026-11-13T06:42:31Z",
+      "last_observed": "2026-11-13T19:40:13Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-6D32E2CDE577"
     },
@@ -817,6 +817,18 @@
       "last_observed": "2026-11-12T23:37:33Z",
       "resolved_at": "2026-11-13T03:52:11Z",
       "latest_finding_id": "PAM-B75F8A0A1141"
+    },
+    "PF-4D74736ECAA1": {
+      "finding_fingerprint": "PF-4D74736ECAA1",
+      "repository": "cawg-trqp-verifier-refimpl",
+      "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
+      "subject": "dynamic/dependabot/dependabot-updates",
+      "dimension": "operational",
+      "status": "open",
+      "first_observed": "2026-11-13T19:40:13Z",
+      "last_observed": "2026-11-13T19:40:13Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-E190E4D68FC9"
     }
   }
 }
