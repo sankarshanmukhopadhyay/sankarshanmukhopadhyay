@@ -33,11 +33,15 @@ def source_fetch(url, token):
         return json.load(response)
 
 
-def search(kind, event, start, end, token, fetch=source_fetch, anomalies=None):
+def search(kind, event, start, end, token, fetch=source_fetch):
     if kind not in EVENTS or event not in EVENTS[kind]:
         raise ValueError("Unknown type/event pair")
     # Search all GitHub organizations, including upstream; avoid owner restrictions.
-    q = f"author:{AUTHOR} is:{kind} {event}:{start}..{end - timedelta(days=1)}"
+    # GitHub issue search shares its endpoint with PRs. Specify a positive
+    # issue type and an explicit PR exclusion; never infer zero issue events
+    # from a PR-only response to an issue query.
+    kind_filter = "type:issue -is:pr" if kind == "issue" else "is:pr"
+    q = f"author:{AUTHOR} {kind_filter} {event}:{start}..{end - timedelta(days=1)}"
     results = []
     for page in range(1, 12):
         url = "https://api.github.com/search/issues?" + urllib.parse.urlencode(
@@ -73,12 +77,12 @@ def search(kind, event, start, end, token, fetch=source_fetch, anomalies=None):
         if actual_kind != url_kind:
             raise RuntimeError(f"Contradictory kind metadata for GitHub result: {url}")
         if actual_kind != kind:
-            # A wrong-kind hit is not an eligible event. Retain its identity
-            # in the ledger instead of silently masking search anomalies.
-            if anomalies is not None:
-                anomalies.append({"query_kind": kind, "query_event": event,
-                                  "returned_kind": actual_kind, "url": url})
-            continue
+            # This indicates that the type-filtered source query cannot
+            # establish completeness. Do not publish a zero-filled report.
+            raise RuntimeError(
+                f"Cross-kind GitHub search response for {kind}/{event}: "
+                f"returned {actual_kind} at {url}"
+            )
         if kind == "pull-request" and event == "merged":
             timestamp = item["pull_request"].get("merged_at")
         else:
@@ -102,9 +106,8 @@ def search(kind, event, start, end, token, fetch=source_fetch, anomalies=None):
 
 
 def collect(start, end, token, fetch=source_fetch):
-    anomalies = []
     events = [item for kind in KINDS for event in EVENTS[kind]
-              for item in search(kind, event, start, end, token, fetch, anomalies)]
+              for item in search(kind, event, start, end, token, fetch)]
     events.sort(key=lambda x: (x["occurred_at"], x["key"]))
     keys = [x["key"] for x in events]
     if len(keys) != len(set(keys)):
@@ -112,10 +115,9 @@ def collect(start, end, token, fetch=source_fetch):
     counts = Counter((x["scope"], x["kind"], x["event"]) for x in events)
     return {"schema_version": "2.0", "kind": "derived-weekly-contribution-events",
             "window": {"start_inclusive_utc": str(start), "end_exclusive_utc": str(end)},
-            "author": AUTHOR, "collection_status": "complete_with_filtered_search_hits" if anomalies else "complete",
+            "author": AUTHOR, "collection_status": "complete",
             "source": "GitHub public issue search; event timestamps rechecked in UTC",
             "counts": {"|".join(k): v for k, v in sorted(counts.items())},
-            "excluded_cross_kind_search_hits": anomalies,
             "events": events, "limitations": [
                 "Author-attributed PRs/issues only; comments, reviews, discussions, private content, direct pushes and GitLab excluded",
                 "GitHub event occurrence does not imply upstream acceptance or independent assurance",
