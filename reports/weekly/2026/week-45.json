@@ -1,0 +1,1881 @@
+{
+  "schema_version": "2.0",
+  "kind": "derived-weekly-contribution-events",
+  "window": {
+    "start_inclusive_utc": "2026-11-02",
+    "end_exclusive_utc": "2026-11-09"
+  },
+  "author": "sankarshanmukhopadhyay",
+  "collection_status": "complete_with_filtered_search_hits",
+  "source": "GitHub public issue search; event timestamps rechecked in UTC",
+  "counts": {
+    "external|pull-request|created": 11,
+    "external|pull-request|merged": 8,
+    "portfolio|pull-request|created": 46,
+    "portfolio|pull-request|merged": 44
+  },
+  "excluded_cross_kind_search_hits": [
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/115"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/114"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/113"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/112"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/111"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/110"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/109"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/108"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/107"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/106"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/105"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/104"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/103"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/101"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/100"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/99"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/98"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/97"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/96"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/digital-governance-paper-notes/pull/355"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/95"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/94"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/91"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/88"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/86"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/85"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1176"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/258"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/83"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/56"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/55"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/257"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/256"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1175"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1173"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1172"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/88"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/255"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/87"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1171"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/86"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/254"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/85"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1170"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1169"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1168"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/digital-governance-paper-notes/pull/354"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/84"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/Inky-Tech-Pty-Ltd/VillageLink/pull/83"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/Inky-Tech-Pty-Ltd/Cobble/pull/26"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/Inky-Tech-Pty-Ltd/VillageLink/pull/80"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/trustoverip/egwg-reporting-tf-prototype-mcp/pull/25"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/trustoverip/egwg-reporting-tf-prototype-mcp/pull/24"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/trustoverip/egwg-reporting-tf-prototype-mcp/pull/23"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/52"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/50"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "created",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/48"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1173"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1176"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1175"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/115"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/114"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/113"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/112"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/111"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/109"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/110"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/108"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/107"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/104"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/106"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/103"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/Inky-Tech-Pty-Ltd/VillageLink/pull/83"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/Inky-Tech-Pty-Ltd/VillageLink/pull/80"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/55"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/48"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/101"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/100"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/99"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/98"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/97"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/96"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/95"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/digital-governance-paper-notes/pull/355"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/94"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/91"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/88"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/86"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/85"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/83"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/256"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/257"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/255"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/40"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/32"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/31"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1172"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1171"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1170"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1169"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1168"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/88"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/254"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/87"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/86"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/85"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/digital-governance-paper-notes/pull/354"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/84"
+    },
+    {
+      "query_kind": "issue",
+      "query_event": "closed",
+      "returned_kind": "pull-request",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/22"
+    }
+  ],
+  "events": [
+    {
+      "key": "github:pull-request:trustoverip/dtgwg-rahp-tf#22:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "trustoverip/dtgwg-rahp-tf",
+      "scope": "external",
+      "number": 22,
+      "title": "fix(validation): fail closed on missing schema dependency (Increment 4)",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/22",
+      "occurred_at": "2026-11-02T09:21:42Z"
+    },
+    {
+      "key": "github:pull-request:trustoverip/dtgwg-rahp-tf#48:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "trustoverip/dtgwg-rahp-tf",
+      "scope": "external",
+      "number": 48,
+      "title": "fix(validation): reject incomplete accepted risk records",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/48",
+      "occurred_at": "2026-11-02T23:22:38Z"
+    },
+    {
+      "key": "github:pull-request:trustoverip/dtgwg-rahp-tf#50:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "trustoverip/dtgwg-rahp-tf",
+      "scope": "external",
+      "number": 50,
+      "title": "docs(adoption): add first-use RAHP specification tutorial",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/50",
+      "occurred_at": "2026-11-02T23:42:39Z"
+    },
+    {
+      "key": "github:pull-request:trustoverip/dtgwg-rahp-tf#52:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "trustoverip/dtgwg-rahp-tf",
+      "scope": "external",
+      "number": 52,
+      "title": "docs(example): add TEA delegated-authority worked example",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/52",
+      "occurred_at": "2026-11-02T23:56:11Z"
+    },
+    {
+      "key": "github:pull-request:trustoverip/egwg-reporting-tf-prototype-mcp#23:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "trustoverip/egwg-reporting-tf-prototype-mcp",
+      "scope": "external",
+      "number": 23,
+      "title": "test(evaluation): add reproducible retrieval evidence baseline",
+      "url": "https://github.com/trustoverip/egwg-reporting-tf-prototype-mcp/pull/23",
+      "occurred_at": "2026-11-03T00:22:33Z"
+    },
+    {
+      "key": "github:pull-request:trustoverip/egwg-reporting-tf-prototype-mcp#24:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "trustoverip/egwg-reporting-tf-prototype-mcp",
+      "scope": "external",
+      "number": 24,
+      "title": "fix(retrieval): withhold unresolved provenance joins",
+      "url": "https://github.com/trustoverip/egwg-reporting-tf-prototype-mcp/pull/24",
+      "occurred_at": "2026-11-03T00:29:39Z"
+    },
+    {
+      "key": "github:pull-request:trustoverip/egwg-reporting-tf-prototype-mcp#25:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "trustoverip/egwg-reporting-tf-prototype-mcp",
+      "scope": "external",
+      "number": 25,
+      "title": "feat(assurance): add read-only index consistency diagnostics",
+      "url": "https://github.com/trustoverip/egwg-reporting-tf-prototype-mcp/pull/25",
+      "occurred_at": "2026-11-03T00:40:37Z"
+    },
+    {
+      "key": "github:pull-request:Inky-Tech-Pty-Ltd/VillageLink#80:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "Inky-Tech-Pty-Ltd/VillageLink",
+      "scope": "external",
+      "number": 80,
+      "title": "test: exercise Star Credential interchange boundaries",
+      "url": "https://github.com/Inky-Tech-Pty-Ltd/VillageLink/pull/80",
+      "occurred_at": "2026-11-03T01:13:29Z"
+    },
+    {
+      "key": "github:pull-request:Inky-Tech-Pty-Ltd/Cobble#26:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "Inky-Tech-Pty-Ltd/Cobble",
+      "scope": "external",
+      "number": 26,
+      "title": "test: fail-closed evidence and graph boundary regressions",
+      "url": "https://github.com/Inky-Tech-Pty-Ltd/Cobble/pull/26",
+      "occurred_at": "2026-11-03T01:13:32Z"
+    },
+    {
+      "key": "github:pull-request:Inky-Tech-Pty-Ltd/VillageLink#83:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "Inky-Tech-Pty-Ltd/VillageLink",
+      "scope": "external",
+      "number": 83,
+      "title": "research(g1): paired synthetic G0/G1 benchmark with adversarial controls",
+      "url": "https://github.com/Inky-Tech-Pty-Ltd/VillageLink/pull/83",
+      "occurred_at": "2026-11-03T01:39:06Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl#84:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl",
+      "scope": "portfolio",
+      "number": 84,
+      "title": "feat(delegated-creator): harden Session 2 subject and signer evidence boundaries",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/84",
+      "occurred_at": "2026-11-03T01:52:40Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl#84:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl",
+      "scope": "portfolio",
+      "number": 84,
+      "title": "feat(delegated-creator): harden Session 2 subject and signer evidence boundaries",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/84",
+      "occurred_at": "2026-11-03T01:55:05Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/digital-governance-paper-notes#354:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/digital-governance-paper-notes",
+      "scope": "portfolio",
+      "number": 354,
+      "title": "docs(review): add Permission to Learn AI copyright review",
+      "url": "https://github.com/sankarshanmukhopadhyay/digital-governance-paper-notes/pull/354",
+      "occurred_at": "2026-11-03T02:17:46Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/digital-governance-paper-notes#354:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/digital-governance-paper-notes",
+      "scope": "portfolio",
+      "number": 354,
+      "title": "docs(review): add Permission to Learn AI copyright review",
+      "url": "https://github.com/sankarshanmukhopadhyay/digital-governance-paper-notes/pull/354",
+      "occurred_at": "2026-11-03T02:19:49Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1168:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1168,
+      "title": "test(eucalyptus): qualify targeted native execution residuals (#965)",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1168",
+      "occurred_at": "2026-11-03T02:28:37Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1168:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1168,
+      "title": "test(eucalyptus): qualify targeted native execution residuals (#965)",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1168",
+      "occurred_at": "2026-11-03T02:37:53Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1169:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1169,
+      "title": "docs(eucalyptus): attribute frozen OpenVTC test failure and later correction (#965)",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1169",
+      "occurred_at": "2026-11-03T02:54:12Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1169:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1169,
+      "title": "docs(eucalyptus): attribute frozen OpenVTC test failure and later correction (#965)",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1169",
+      "occurred_at": "2026-11-03T02:56:25Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1170:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1170,
+      "title": "fix(adoption): source review provenance from declared stable release",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1170",
+      "occurred_at": "2026-11-03T03:00:44Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl#85:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl",
+      "scope": "portfolio",
+      "number": 85,
+      "title": "chore(release): prepare v0.20.0 experimental Delegated Creator baseline",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/85",
+      "occurred_at": "2026-11-03T03:06:35Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/trust-protocol-interop-lab#254:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/trust-protocol-interop-lab",
+      "scope": "portfolio",
+      "number": 254,
+      "title": "test(interop): execute frozen Eucalyptus native consumer evidence (#966)",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/254",
+      "occurred_at": "2026-11-03T03:07:04Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl#85:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl",
+      "scope": "portfolio",
+      "number": 85,
+      "title": "chore(release): prepare v0.20.0 experimental Delegated Creator baseline",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/85",
+      "occurred_at": "2026-11-03T03:07:35Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1170:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1170,
+      "title": "fix(adoption): source review provenance from declared stable release",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1170",
+      "occurred_at": "2026-11-03T03:07:35Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl#86:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl",
+      "scope": "portfolio",
+      "number": 86,
+      "title": "fix(release): verify latest publication using GitHub API",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/86",
+      "occurred_at": "2026-11-03T03:09:26Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl#86:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl",
+      "scope": "portfolio",
+      "number": 86,
+      "title": "fix(release): verify latest publication using GitHub API",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/86",
+      "occurred_at": "2026-11-03T03:10:18Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1171:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1171,
+      "title": "test(adoption): qualify Hello RAHP's real offline first-run scaffold",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1171",
+      "occurred_at": "2026-11-03T03:12:24Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1171:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1171,
+      "title": "test(adoption): qualify Hello RAHP's real offline first-run scaffold",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1171",
+      "occurred_at": "2026-11-03T03:19:31Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl#87:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl",
+      "scope": "portfolio",
+      "number": 87,
+      "title": "docs: reconcile v0.20.0 consumer guidance and preserve historical v3 presentation",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/87",
+      "occurred_at": "2026-11-03T03:23:23Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl#87:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl",
+      "scope": "portfolio",
+      "number": 87,
+      "title": "docs: reconcile v0.20.0 consumer guidance and preserve historical v3 presentation",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/87",
+      "occurred_at": "2026-11-03T03:25:10Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/trust-protocol-interop-lab#254:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/trust-protocol-interop-lab",
+      "scope": "portfolio",
+      "number": 254,
+      "title": "test(interop): execute frozen Eucalyptus native consumer evidence (#966)",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/254",
+      "occurred_at": "2026-11-03T03:26:01Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/trust-protocol-interop-lab#255:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/trust-protocol-interop-lab",
+      "scope": "portfolio",
+      "number": 255,
+      "title": "test(interop): qualify Eucalyptus post-restart evidence boundary without false PASS",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/255",
+      "occurred_at": "2026-11-03T03:35:35Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl#88:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl",
+      "scope": "portfolio",
+      "number": 88,
+      "title": "docs(presentation): publish v4 explainer alongside historical v3",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/88",
+      "occurred_at": "2026-11-03T03:47:33Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl#88:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl",
+      "scope": "portfolio",
+      "number": 88,
+      "title": "docs(presentation): publish v4 explainer alongside historical v3",
+      "url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/pull/88",
+      "occurred_at": "2026-11-03T03:55:24Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1172:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1172,
+      "title": "docs(assurance): rebaseline Trust Task error semantics provenance (#691)",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1172",
+      "occurred_at": "2026-11-03T04:08:09Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1172:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1172,
+      "title": "docs(assurance): rebaseline Trust Task error semantics provenance (#691)",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1172",
+      "occurred_at": "2026-11-03T04:10:53Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1173:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1173,
+      "title": "docs(research): test protection-coverage view on existing RAHP evidence (#1159)",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1173",
+      "occurred_at": "2026-11-03T04:13:21Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1173:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1173,
+      "title": "docs(research): test protection-coverage view on existing RAHP evidence (#1159)",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1173",
+      "occurred_at": "2026-11-03T04:16:24Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1175:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1175,
+      "title": "assurance(delta): reconcile Trust Tasks release semantics and narrow #272 owners",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1175",
+      "occurred_at": "2026-11-03T04:32:14Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1175:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1175,
+      "title": "assurance(delta): reconcile Trust Tasks release semantics and narrow #272 owners",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1175",
+      "occurred_at": "2026-11-03T04:34:07Z"
+    },
+    {
+      "key": "github:pull-request:trustoverip/dtgwg-rahp-tf#31:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "trustoverip/dtgwg-rahp-tf",
+      "scope": "external",
+      "number": 31,
+      "title": "review: record reviewer and local hypothesis namespace",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/31",
+      "occurred_at": "2026-11-03T06:58:54Z"
+    },
+    {
+      "key": "github:pull-request:trustoverip/dtgwg-rahp-tf#32:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "trustoverip/dtgwg-rahp-tf",
+      "scope": "external",
+      "number": 32,
+      "title": "governance: make pull requests independently reviewable",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/32",
+      "occurred_at": "2026-11-03T07:00:41Z"
+    },
+    {
+      "key": "github:pull-request:trustoverip/dtgwg-rahp-tf#40:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "trustoverip/dtgwg-rahp-tf",
+      "scope": "external",
+      "number": 40,
+      "title": "docs(adoption): qualify upstream functional sufficiency and repeatable reviews",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/40",
+      "occurred_at": "2026-11-03T08:24:15Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/trust-protocol-interop-lab#255:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/trust-protocol-interop-lab",
+      "scope": "portfolio",
+      "number": 255,
+      "title": "test(interop): qualify Eucalyptus post-restart evidence boundary without false PASS",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/255",
+      "occurred_at": "2026-11-03T12:56:39Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/trust-protocol-interop-lab#256:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/trust-protocol-interop-lab",
+      "scope": "portfolio",
+      "number": 256,
+      "title": "test(interop): qualify post-fix VTI consumer semantics and restart effects",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/256",
+      "occurred_at": "2026-11-03T13:00:42Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/trust-protocol-interop-lab#257:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/trust-protocol-interop-lab",
+      "scope": "portfolio",
+      "number": 257,
+      "title": "fix(interop): pin credential target dependency resolution for action-time CI",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/257",
+      "occurred_at": "2026-11-03T13:06:23Z"
+    },
+    {
+      "key": "github:pull-request:trustoverip/dtgwg-rahp-tf#55:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "trustoverip/dtgwg-rahp-tf",
+      "scope": "external",
+      "number": 55,
+      "title": "fix(review): harden replay evidence privacy and failure-path assurance",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/55",
+      "occurred_at": "2026-11-03T13:16:24Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/trust-protocol-interop-lab#257:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/trust-protocol-interop-lab",
+      "scope": "portfolio",
+      "number": 257,
+      "title": "fix(interop): pin credential target dependency resolution for action-time CI",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/257",
+      "occurred_at": "2026-11-03T13:24:05Z"
+    },
+    {
+      "key": "github:pull-request:trustoverip/dtgwg-rahp-tf#56:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "trustoverip/dtgwg-rahp-tf",
+      "scope": "external",
+      "number": 56,
+      "title": "docs(method): examine control-induced harms and clarify Stage 2",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/56",
+      "occurred_at": "2026-11-03T13:25:44Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/trust-protocol-interop-lab#256:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/trust-protocol-interop-lab",
+      "scope": "portfolio",
+      "number": 256,
+      "title": "test(interop): qualify post-fix VTI consumer semantics and restart effects",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/256",
+      "occurred_at": "2026-11-03T13:37:50Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#83:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 83,
+      "title": "docs(gaam): reconcile conceptual model and implementation journey",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/83",
+      "occurred_at": "2026-11-03T13:57:38Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#83:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 83,
+      "title": "docs(gaam): reconcile conceptual model and implementation journey",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/83",
+      "occurred_at": "2026-11-03T14:02:23Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/trust-protocol-interop-lab#258:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/trust-protocol-interop-lab",
+      "scope": "portfolio",
+      "number": 258,
+      "title": "test(interop): source-pin VTI task-size admission evidence for RAHP #1174",
+      "url": "https://github.com/sankarshanmukhopadhyay/trust-protocol-interop-lab/pull/258",
+      "occurred_at": "2026-11-03T14:03:53Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1176:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1176,
+      "title": "docs(assurance): qualify cold-reader protection research and first adoption",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1176",
+      "occurred_at": "2026-11-03T14:07:20Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/rahp-toolkit#1176:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/rahp-toolkit",
+      "scope": "portfolio",
+      "number": 1176,
+      "title": "docs(assurance): qualify cold-reader protection research and first adoption",
+      "url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/pull/1176",
+      "occurred_at": "2026-11-03T14:09:43Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#85:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 85,
+      "title": "docs(pilots): deliver evidence-gated zero-to-GAAM pilot readiness",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/85",
+      "occurred_at": "2026-11-03T14:23:24Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#85:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 85,
+      "title": "docs(pilots): deliver evidence-gated zero-to-GAAM pilot readiness",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/85",
+      "occurred_at": "2026-11-03T14:27:12Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#86:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 86,
+      "title": "docs(pilots): keep GAAM pilot guidance self-contained",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/86",
+      "occurred_at": "2026-11-03T14:34:02Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#86:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 86,
+      "title": "docs(pilots): keep GAAM pilot guidance self-contained",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/86",
+      "occurred_at": "2026-11-03T14:35:42Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#88:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 88,
+      "title": "security(deps): patch DOMPurify and KaTeX in Mermaid validation toolchain",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/88",
+      "occurred_at": "2026-11-03T14:46:19Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#88:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 88,
+      "title": "security(deps): patch DOMPurify and KaTeX in Mermaid validation toolchain",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/88",
+      "occurred_at": "2026-11-03T14:48:58Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#91:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 91,
+      "title": "chore(deps): gate npm updates to tested major lines and preserve security updates",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/91",
+      "occurred_at": "2026-11-03T14:54:04Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#91:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 91,
+      "title": "chore(deps): gate npm updates to tested major lines and preserve security updates",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/91",
+      "occurred_at": "2026-11-03T14:55:40Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#94:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 94,
+      "title": "fix(tooling,docs): repair CLI regression tests and excluded publication links",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/94",
+      "occurred_at": "2026-11-03T15:03:44Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#94:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 94,
+      "title": "fix(tooling,docs): repair CLI regression tests and excluded publication links",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/94",
+      "occurred_at": "2026-11-03T15:10:55Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#95:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 95,
+      "title": "feat(assurance): audit requirement references without overstating verification",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/95",
+      "occurred_at": "2026-11-03T15:11:13Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/digital-governance-paper-notes#355:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "sankarshanmukhopadhyay/digital-governance-paper-notes",
+      "scope": "portfolio",
+      "number": 355,
+      "title": "docs(review): add governance review of surveillance authorisation (#348)",
+      "url": "https://github.com/sankarshanmukhopadhyay/digital-governance-paper-notes/pull/355",
+      "occurred_at": "2026-11-03T15:13:58Z"
+    },
+    {
+      "key": "github:pull-request:sankarshanmukhopadhyay/digital-governance-paper-notes#355:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "sankarshanmukhopadhyay/digital-governance-paper-notes",
+      "scope": "portfolio",
+      "number": 355,
+      "title": "docs(review): add governance review of surveillance authorisation (#348)",
+      "url": "https://github.com/sankarshanmukhopadhyay/digital-governance-paper-notes/pull/355",
+      "occurred_at": "2026-11-03T15:15:14Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#95:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 95,
+      "title": "feat(assurance): audit requirement references without overstating verification",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/95",
+      "occurred_at": "2026-11-03T15:15:45Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#96:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 96,
+      "title": "feat(conformance): introduce v2 raw-artifact authority vectors and reason checks",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/96",
+      "occurred_at": "2026-11-03T15:16:15Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#96:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 96,
+      "title": "feat(conformance): introduce v2 raw-artifact authority vectors and reason checks",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/96",
+      "occurred_at": "2026-11-03T15:18:10Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#97:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 97,
+      "title": "feat(schema): introduce opt-in candidate schema extensions without revising frozen baseline",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/97",
+      "occurred_at": "2026-11-03T15:19:24Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#97:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 97,
+      "title": "feat(schema): introduce opt-in candidate schema extensions without revising frozen baseline",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/97",
+      "occurred_at": "2026-11-03T15:22:53Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#98:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 98,
+      "title": "docs(governance): expose unresolved candidate decisions and identifier resolution boundary",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/98",
+      "occurred_at": "2026-11-03T15:25:02Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#98:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 98,
+      "title": "docs(governance): expose unresolved candidate decisions and identifier resolution boundary",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/98",
+      "occurred_at": "2026-11-03T15:26:44Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#99:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 99,
+      "title": "fix(validation): make generated assurance evidence run-specific and clean-tree reproducible",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/99",
+      "occurred_at": "2026-11-03T15:28:11Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#99:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 99,
+      "title": "fix(validation): make generated assurance evidence run-specific and clean-tree reproducible",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/99",
+      "occurred_at": "2026-11-03T15:32:36Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#100:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 100,
+      "title": "docs(assurance): disposition all adversarial findings and bound adopter configurations",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/100",
+      "occurred_at": "2026-11-03T15:37:08Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#100:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 100,
+      "title": "docs(assurance): disposition all adversarial findings and bound adopter configurations",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/100",
+      "occurred_at": "2026-11-03T15:38:57Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#101:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 101,
+      "title": "chore(release): publish v0.9.3 Candidate assurance-hardening baseline",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/101",
+      "occurred_at": "2026-11-03T15:42:10Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#101:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 101,
+      "title": "chore(release): publish v0.9.3 Candidate assurance-hardening baseline",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/101",
+      "occurred_at": "2026-11-03T15:43:25Z"
+    },
+    {
+      "key": "github:pull-request:trustoverip/dtgwg-rahp-tf#48:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "trustoverip/dtgwg-rahp-tf",
+      "scope": "external",
+      "number": 48,
+      "title": "fix(validation): reject incomplete accepted risk records",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/48",
+      "occurred_at": "2026-11-03T17:08:46Z"
+    },
+    {
+      "key": "github:pull-request:trustoverip/dtgwg-rahp-tf#55:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "trustoverip/dtgwg-rahp-tf",
+      "scope": "external",
+      "number": 55,
+      "title": "fix(review): harden replay evidence privacy and failure-path assurance",
+      "url": "https://github.com/trustoverip/dtgwg-rahp-tf/pull/55",
+      "occurred_at": "2026-11-03T17:22:49Z"
+    },
+    {
+      "key": "github:pull-request:Inky-Tech-Pty-Ltd/VillageLink#80:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "Inky-Tech-Pty-Ltd/VillageLink",
+      "scope": "external",
+      "number": 80,
+      "title": "test: exercise Star Credential interchange boundaries",
+      "url": "https://github.com/Inky-Tech-Pty-Ltd/VillageLink/pull/80",
+      "occurred_at": "2026-11-03T19:36:13Z"
+    },
+    {
+      "key": "github:pull-request:Inky-Tech-Pty-Ltd/VillageLink#83:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "Inky-Tech-Pty-Ltd/VillageLink",
+      "scope": "external",
+      "number": 83,
+      "title": "research(g1): paired synthetic G0/G1 benchmark with adversarial controls",
+      "url": "https://github.com/Inky-Tech-Pty-Ltd/VillageLink/pull/83",
+      "occurred_at": "2026-11-03T20:21:24Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#103:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 103,
+      "title": "fix(adoption): confine package validation and integrity to package boundary",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/103",
+      "occurred_at": "2026-11-04T10:51:02Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#103:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 103,
+      "title": "fix(adoption): confine package validation and integrity to package boundary",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/103",
+      "occurred_at": "2026-11-04T10:53:03Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#104:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 104,
+      "title": "fix(adoption): report malformed, missing, or stalled adapters as failed checks",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/104",
+      "occurred_at": "2026-11-04T10:57:39Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#105:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 105,
+      "title": "docs(adoption): correct current Specification & Profiles release",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/105",
+      "occurred_at": "2026-11-04T11:01:06Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#104:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 104,
+      "title": "fix(adoption): report malformed, missing, or stalled adapters as failed checks",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/104",
+      "occurred_at": "2026-11-04T11:01:54Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#106:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 106,
+      "title": "docs(adoption): align Specification & Profiles with current Candidate baseline",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/106",
+      "occurred_at": "2026-11-04T11:04:22Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#106:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 106,
+      "title": "docs(adoption): align Specification & Profiles with current Candidate baseline",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/106",
+      "occurred_at": "2026-11-04T11:05:38Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#107:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 107,
+      "title": "test(adoption): exercise delegation and authority lifecycle in clean-room path",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/107",
+      "occurred_at": "2026-11-04T11:14:09Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#107:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 107,
+      "title": "test(adoption): exercise delegation and authority lifecycle in clean-room path",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/107",
+      "occurred_at": "2026-11-04T11:15:32Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#108:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 108,
+      "title": "fix(adoption): enforce requirement-to-evidence integrity in clean-room validation",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/108",
+      "occurred_at": "2026-11-04T11:27:28Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#108:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 108,
+      "title": "fix(adoption): enforce requirement-to-evidence integrity in clean-room validation",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/108",
+      "occurred_at": "2026-11-04T11:29:01Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#109:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 109,
+      "title": "test(adoption): demonstrate bounded delegated-agent gateway decision path",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/109",
+      "occurred_at": "2026-11-04T11:39:05Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#109:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 109,
+      "title": "test(adoption): demonstrate bounded delegated-agent gateway decision path",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/109",
+      "occurred_at": "2026-11-04T11:43:09Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#110:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 110,
+      "title": "docs(test): reconcile ten gateway elements with normative contracts and evidence",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/110",
+      "occurred_at": "2026-11-04T11:54:04Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#110:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 110,
+      "title": "docs(test): reconcile ten gateway elements with normative contracts and evidence",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/110",
+      "occurred_at": "2026-11-04T11:55:38Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#111:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 111,
+      "title": "docs(adoption): connect three reader journeys to bounded gateway evidence",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/111",
+      "occurred_at": "2026-11-04T12:00:26Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#111:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 111,
+      "title": "docs(adoption): connect three reader journeys to bounded gateway evidence",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/111",
+      "occurred_at": "2026-11-04T12:02:25Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#112:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 112,
+      "title": "docs(adoption): independent gateway hand-off aligned with E2/E3 intake",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/112",
+      "occurred_at": "2026-11-04T13:28:49Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#112:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 112,
+      "title": "docs(adoption): independent gateway hand-off aligned with E2/E3 intake",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/112",
+      "occurred_at": "2026-11-04T13:30:08Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#113:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 113,
+      "title": "test(adoption): evidence-gated gateway dossier and reader-path closure",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/113",
+      "occurred_at": "2026-11-04T13:51:28Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#113:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 113,
+      "title": "test(adoption): evidence-gated gateway dossier and reader-path closure",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/113",
+      "occurred_at": "2026-11-04T13:53:09Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#114:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 114,
+      "title": "chore(release): GAAM v0.9.4 adopter integrity and gateway evidence",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/114",
+      "occurred_at": "2026-11-04T13:57:54Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#114:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 114,
+      "title": "chore(release): GAAM v0.9.4 adopter integrity and gateway evidence",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/114",
+      "occurred_at": "2026-11-04T14:00:04Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#115:created",
+      "kind": "pull-request",
+      "event": "created",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 115,
+      "title": "chore(release): reconcile GAAM normative specification edition and distribution in v0.9.5",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/115",
+      "occurred_at": "2026-11-04T14:24:05Z"
+    },
+    {
+      "key": "github:pull-request:qbf-consulting/governance-authority-assurance-metamodel#115:merged",
+      "kind": "pull-request",
+      "event": "merged",
+      "repository": "qbf-consulting/governance-authority-assurance-metamodel",
+      "scope": "portfolio",
+      "number": 115,
+      "title": "chore(release): reconcile GAAM normative specification edition and distribution in v0.9.5",
+      "url": "https://github.com/qbf-consulting/governance-authority-assurance-metamodel/pull/115",
+      "occurred_at": "2026-11-04T14:30:22Z"
+    }
+  ],
+  "limitations": [
+    "Author-attributed PRs/issues only; comments, reviews, discussions, private content, direct pushes and GitLab excluded",
+    "GitHub event occurrence does not imply upstream acceptance or independent assurance",
+    "Creation, merge and closure of one item count as distinct lifecycle events",
+    "External contributions are not portfolio-governed outputs",
+    "Historical report content remains unchanged; new events are a separately derived view"
+  ]
+}
