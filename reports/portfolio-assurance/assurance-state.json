@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-13T06:42:31Z",
+  "generated_at": "2026-11-13T19:40:13Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -770,8 +770,23 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/cross-spec-pressure-test.yml",
           "freshness_policy": "latest-success",
-          "state": "missing",
-          "reason": "no completed workflow execution satisfying the configured evidence contract was observed"
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 337404001,
+            "name": "Run cross-specification pressure test",
+            "path": ".github/workflows/cross-spec-pressure-test.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "workflow_dispatch",
+            "created_at": "2026-11-13T07:46:51Z",
+            "updated_at": "2026-11-13T07:47:24Z",
+            "run_started_at": "2026-11-13T07:46:51Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43388197620",
+            "head_sha": "b574290285ef7d960186ebd14ce9cb928407b6b3",
+            "head_branch": "main",
+            "run_number": 206
+          }
         }
       ],
       "required_claims": 3,
