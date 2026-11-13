@@ -42,8 +42,13 @@ jobs:
           repositories: sankarshanmukhopadhyay
       - name: Recover every missing completed week
         env:
-          GITHUB_TOKEN: ${{ github.token }}
-        run: python scripts/weekly_portfolio_report.py --catch-up
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          if [[ -z "$GITHUB_TOKEN" ]]; then
+            echo "Missing GitHub App token; cannot collect attributable external events."
+            exit 1
+          fi
+          python scripts/weekly_portfolio_report.py --catch-up
       - name: Create reviewed publication proposal
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
