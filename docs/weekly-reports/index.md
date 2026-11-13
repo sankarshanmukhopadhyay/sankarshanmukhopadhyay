@@ -20,7 +20,8 @@ This archive explains material changes in the public repositories owned by `sank
 
 ## Operational weekly reports
 
-No operational reports have been published yet.
+- [2 November–8 November 2026](2026/week-45.html)
+- [26 October–1 November 2026](2026/week-44.html)
 
 <!-- END GENERATED WEEKLY REPORT INDEX -->
 
