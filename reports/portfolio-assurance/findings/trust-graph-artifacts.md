@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `trust-graph-artifacts`
 
-**Generated:** 2026-11-12T23:37:33Z  
-**Open findings:** 1  
-**Repository snapshot:** `38e4d84f1d237eb0d52b912b3c062c0fa2cbbceb`  
+**Generated:** 2026-11-13T03:52:11Z  
+**Open findings:** 0  
+**Repository snapshot:** `1d83c64a1d0208e6d7a85e844299841ad2283795`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trust-graph-artifacts.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
@@ -19,39 +19,10 @@ search_exclude: true
 | Dimension | State | Open findings |
 |---|---|---:|
 | Operational | `evaluated` | 0 |
-| Governance | `evaluated` | 1 |
+| Governance | `evaluated` | 0 |
 | Assurance | `evaluated` | 0 |
 | Cross Specification | `not-evaluated` | 0 |
 
 ## Open findings
 
-## PF-6220CA1F99B1 — NO_RECENT_ACTIVITY
-
-- Observation: `PAM-B75F8A0A1141` at `2026-11-12T23:37:33Z`
-- Severity: `info`
-- Dimension: `governance`
-- Subject: `repository`
-- Lifecycle: `open`; first observed `2026-11-08T05:58:43Z`
-- Claim: An active flagship repository has exceeded the configured activity-review threshold.
-- Automatic effect: `none`
-
-### Evidence
-
-```json
-{
-  "pushed_at": "2026-09-23T05:30:03Z",
-  "threshold_days": 45
-}
-```
-
-### Remediation objective
-
-Review whether the declared active lifecycle and operational status remain accurate; activity alone must not force a status change.
-
-### Acceptance criteria
-
-- [ ] A human review confirms or updates the declared lifecycle and operational status.
-
-### Verification
-
-- Rerun portfolio validation and the monitor after any governed metadata change.
+No findings are open in the currently evaluated dimensions. This is **not** evidence that dimensions marked `not-evaluated` are assured or complete.
