@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `cawg-trqp-verifier-refimpl`
 
-**Generated:** 2026-11-13T19:40:13Z  
+**Generated:** 2026-11-14T06:19:37Z  
 **Open findings:** 2  
 **Repository snapshot:** `e2121e7b5166abef46227f029ee072ea0d4e9afe`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-398FA7C456CF — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-C05E1E976A21` at `2026-11-13T19:40:13Z`
+- Observation: `PAM-16A515F96133` at `2026-11-14T06:19:37Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/publication-link-audit.yml`
@@ -98,17 +98,17 @@ search_exclude: true
   "latest": [
     {
       "conclusion": "success",
-      "created_at": "2026-11-06T22:16:01Z",
+      "created_at": "2026-11-13T22:47:19Z",
       "event": "schedule",
       "head_branch": "main",
-      "head_sha": "f007b9316350145138f4169aaf65273843e41080",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/42303367119",
+      "head_sha": "e2121e7b5166abef46227f029ee072ea0d4e9afe",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/43522101844",
       "name": "Weekly merged-branch housekeeping",
       "path": ".github/workflows/branch-housekeeping.yml",
-      "run_number": 4,
-      "run_started_at": "2026-11-06T22:16:01Z",
+      "run_number": 5,
+      "run_started_at": "2026-11-13T22:47:19Z",
       "status": "completed",
-      "updated_at": "2026-11-06T22:16:10Z",
+      "updated_at": "2026-11-13T22:47:31Z",
       "workflow_id": 381758282
     },
     {
@@ -242,7 +242,7 @@ Restore a successful latest completed default-branch run for the affected workfl
 
 ## PF-4D74736ECAA1 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-E190E4D68FC9` at `2026-11-13T19:40:13Z`
+- Observation: `PAM-6253595D798F` at `2026-11-14T06:19:37Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `dynamic/dependabot/dependabot-updates`
@@ -313,17 +313,17 @@ Restore a successful latest completed default-branch run for the affected workfl
   "latest": [
     {
       "conclusion": "success",
-      "created_at": "2026-11-06T22:16:01Z",
+      "created_at": "2026-11-13T22:47:19Z",
       "event": "schedule",
       "head_branch": "main",
-      "head_sha": "f007b9316350145138f4169aaf65273843e41080",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/42303367119",
+      "head_sha": "e2121e7b5166abef46227f029ee072ea0d4e9afe",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/43522101844",
       "name": "Weekly merged-branch housekeeping",
       "path": ".github/workflows/branch-housekeeping.yml",
-      "run_number": 4,
-      "run_started_at": "2026-11-06T22:16:01Z",
+      "run_number": 5,
+      "run_started_at": "2026-11-13T22:47:19Z",
       "status": "completed",
-      "updated_at": "2026-11-06T22:16:10Z",
+      "updated_at": "2026-11-13T22:47:31Z",
       "workflow_id": 381758282
     },
     {
