@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `TRQP-TSPP`
 
-**Generated:** 2026-11-13T19:40:13Z  
-**Open findings:** 1  
-**Repository snapshot:** `117b2205135cda34413e89cecd57914e3d4d47b7`  
+**Generated:** 2026-11-14T06:19:37Z  
+**Open findings:** 0  
+**Repository snapshot:** `80b2abacb177e1909d3cb5127add0234587a3915`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
@@ -20,44 +20,9 @@ search_exclude: true
 |---|---|---:|
 | Operational | `evaluated` | 0 |
 | Governance | `evaluated` | 0 |
-| Assurance | `evaluated` | 1 |
+| Assurance | `evaluated` | 0 |
 | Cross Specification | `not-evaluated` | 0 |
 
 ## Open findings
 
-## PF-9C213FA6D34C — ASSURANCE_EVIDENCE_MISSING
-
-- Observation: `PAM-2D2511F6CAF1` at `2026-11-13T19:40:13Z`
-- Severity: `high`
-- Dimension: `assurance`
-- Subject: `.github/workflows/pages.yml`
-- Lifecycle: `open`; first observed `2026-09-28T03:54:08Z`
-- Claim: Required assurance evidence satisfying the configured evidence contract was not observed.
-- Automatic effect: `none`
-
-### Evidence
-
-```json
-{
-  "claim": "publication_integrity",
-  "evidence_head_sha": null,
-  "freshness_policy": "latest-success",
-  "reason": "no completed workflow execution satisfying the configured evidence contract was observed",
-  "repository_head_sha": null,
-  "state": "missing",
-  "workflow": null
-}
-```
-
-### Remediation objective
-
-Restore or execute the repository-native control required by the governed assurance contract.
-
-### Acceptance criteria
-
-- [ ] The required evidence is observable inside the governed lookback window.
-- [ ] The evidence is attributable to the configured repository-native control.
-
-### Verification
-
-- Execute the required repository-native control and rerun the portfolio monitor.
+No findings are open in the currently evaluated dimensions. This is **not** evidence that dimensions marked `not-evaluated` are assured or complete.

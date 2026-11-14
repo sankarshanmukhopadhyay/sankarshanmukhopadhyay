@@ -7,9 +7,9 @@ search_exclude: true
 
 # Repository remediation dossier — `trqp-assurance-hub`
 
-**Generated:** 2026-11-13T19:40:13Z  
+**Generated:** 2026-11-14T06:19:37Z  
 **Open findings:** 0  
-**Repository snapshot:** `59506014ed50c65cec5b6978570b92800cc7c616`  
+**Repository snapshot:** `22b3056e3c13390067a9ad1fb3b99f52edbac694`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/trqp-assurance-hub.json)
 
 > **Remediation handoff.** Download this dossier and provide it with the affected repository source. The monitor owns the observation and finding; the target repository retains authority over implementation, risk disposition, release, and closure evidence.
