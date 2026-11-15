@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-14T22:22:20Z",
+  "generated_at": "2026-11-15T06:28:27Z",
   "records": {
     "PF-85368F53178F": {
       "finding_fingerprint": "PF-85368F53178F",
@@ -416,11 +416,11 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/validate.yml",
       "dimension": "assurance",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-11-11T06:14:47Z",
-      "resolved_at": "2026-11-11T14:26:28Z",
-      "latest_finding_id": "PAM-A21E22D50570"
+      "last_observed": "2026-11-15T06:28:27Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-2A3E96DD295B"
     },
     "PF-E8B1B5CFA71B": {
       "finding_fingerprint": "PF-E8B1B5CFA71B",
@@ -428,11 +428,11 @@
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "dimension": "assurance",
-      "status": "resolved",
+      "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-11-11T06:14:47Z",
-      "resolved_at": "2026-11-11T14:26:28Z",
-      "latest_finding_id": "PAM-949CD02C1DC0"
+      "last_observed": "2026-11-15T06:28:27Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-8347AC5AD31A"
     },
     "PF-0B036E077FB8": {
       "finding_fingerprint": "PF-0B036E077FB8",
@@ -790,9 +790,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-26T13:00:04Z",
-      "last_observed": "2026-11-14T22:22:20Z",
+      "last_observed": "2026-11-15T06:28:27Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-16A515F96133"
+      "latest_finding_id": "PAM-9FC4B9CA025B"
     },
     "PF-914D332B3242": {
       "finding_fingerprint": "PF-914D332B3242",
@@ -802,9 +802,9 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-03T00:56:51Z",
-      "last_observed": "2026-11-14T22:22:20Z",
+      "last_observed": "2026-11-15T06:28:27Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-49268DD89544"
+      "latest_finding_id": "PAM-EA5623AD96AE"
     },
     "PF-6220CA1F99B1": {
       "finding_fingerprint": "PF-6220CA1F99B1",
@@ -826,9 +826,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-11-13T19:40:13Z",
-      "last_observed": "2026-11-14T22:22:20Z",
+      "last_observed": "2026-11-15T06:28:27Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-6253595D798F"
+      "latest_finding_id": "PAM-0AE2C7712D1E"
     }
   }
 }
