@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `TRQP-TSPP`
 
-**Generated:** 2026-11-15T06:28:27Z  
+**Generated:** 2026-11-15T18:50:02Z  
 **Open findings:** 0  
 **Repository snapshot:** `80b2abacb177e1909d3cb5127add0234587a3915`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/TRQP-TSPP.json)

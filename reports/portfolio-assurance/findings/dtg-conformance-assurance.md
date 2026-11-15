@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `dtg-conformance-assurance`
 
-**Generated:** 2026-11-15T06:28:27Z  
+**Generated:** 2026-11-15T18:50:02Z  
 **Open findings:** 0  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dtg-conformance-assurance.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/dtg-conformance-assurance.json)

@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `rahp-toolkit`
 
-**Generated:** 2026-11-15T06:28:27Z  
+**Generated:** 2026-11-15T18:50:02Z  
 **Open findings:** 2  
 **Repository snapshot:** `b574290285ef7d960186ebd14ce9cb928407b6b3`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/rahp-toolkit.json)
@@ -25,13 +25,13 @@ search_exclude: true
 
 ## Open findings
 
-## PF-E8B1B5CFA71B — ASSURANCE_EVIDENCE_MISSING
+## PF-9769E5EB9C48 — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-8347AC5AD31A` at `2026-11-15T06:28:27Z`
+- Observation: `PAM-89B42B06C058` at `2026-11-15T18:50:02Z`
 - Severity: `high`
 - Dimension: `assurance`
-- Subject: `.github/workflows/pages.yml`
-- Lifecycle: `open`; first observed `2026-09-01T21:01:37Z`
+- Subject: `.github/workflows/corpus-status.yml`
+- Lifecycle: `open`; first observed `2026-08-22T01:49:53Z`
 - Claim: Required assurance evidence satisfying the configured evidence contract was not observed.
 - Automatic effect: `none`
 
@@ -39,9 +39,9 @@ search_exclude: true
 
 ```json
 {
-  "claim": "publication_integrity",
+  "claim": "corpus_integrity",
   "evidence_head_sha": null,
-  "freshness_policy": "current-head",
+  "freshness_policy": "latest-success",
   "reason": "no completed workflow execution satisfying the configured evidence contract was observed",
   "repository_head_sha": null,
   "state": "missing",
@@ -62,12 +62,12 @@ Restore or execute the repository-native control required by the governed assura
 
 - Execute the required repository-native control and rerun the portfolio monitor.
 
-## PF-40A9B6AD0B44 — ASSURANCE_EVIDENCE_MISSING
+## PF-E8B1B5CFA71B — ASSURANCE_EVIDENCE_MISSING
 
-- Observation: `PAM-2A3E96DD295B` at `2026-11-15T06:28:27Z`
+- Observation: `PAM-8347AC5AD31A` at `2026-11-15T18:50:02Z`
 - Severity: `high`
 - Dimension: `assurance`
-- Subject: `.github/workflows/validate.yml`
+- Subject: `.github/workflows/pages.yml`
 - Lifecycle: `open`; first observed `2026-09-01T21:01:37Z`
 - Claim: Required assurance evidence satisfying the configured evidence contract was not observed.
 - Automatic effect: `none`
@@ -76,7 +76,7 @@ Restore or execute the repository-native control required by the governed assura
 
 ```json
 {
-  "claim": "toolkit_validation",
+  "claim": "publication_integrity",
   "evidence_head_sha": null,
   "freshness_policy": "current-head",
   "reason": "no completed workflow execution satisfying the configured evidence contract was observed",
