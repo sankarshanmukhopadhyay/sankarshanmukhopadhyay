@@ -7,7 +7,7 @@ search_exclude: true
 
 # Portfolio Assurance Report — 2026-11-15
 
-**Observed:** 2026-11-15T06:28:27Z  
+**Observed:** 2026-11-15T18:50:02Z  
 **Scope:** 11 flagship original repositories  
 **Open findings:** 5  
 **Unclassified public repositories:** 1
@@ -45,22 +45,22 @@ search_exclude: true
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-8347AC5AD31A: rahp-toolkit
+### PAM-89B42B06C058: rahp-toolkit
 
-- **Fingerprint:** `PF-E8B1B5CFA71B`
+- **Fingerprint:** `PF-9769E5EB9C48`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
-- **Subject:** `.github/workflows/pages.yml`
+- **Subject:** `.github/workflows/corpus-status.yml`
 - **Severity:** `high`
 - **Claim:** Required assurance evidence satisfying the configured evidence contract was not observed.
 - **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-2A3E96DD295B: rahp-toolkit
+### PAM-8347AC5AD31A: rahp-toolkit
 
-- **Fingerprint:** `PF-40A9B6AD0B44`
+- **Fingerprint:** `PF-E8B1B5CFA71B`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
-- **Subject:** `.github/workflows/validate.yml`
+- **Subject:** `.github/workflows/pages.yml`
 - **Severity:** `high`
 - **Claim:** Required assurance evidence satisfying the configured evidence contract was not observed.
 - **Recommended action:** Restore or execute the repository-native assurance control and publish observable evidence.
@@ -143,8 +143,8 @@ The assurance state below is calculated from repository-specific evidence contra
 | ↳ `portfolio_contract` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 | ↳ `publication_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 | [rahp-toolkit](https://github.com/sankarshanmukhopadhyay/rahp-toolkit) | `assurance-toolkit` | **missing** | 3 | 1/3 |
-| ↳ `toolkit_validation` | required | `missing` |  | no completed workflow execution satisfying the configured evidence contract was observed |
-| ↳ `corpus_integrity` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
+| ↳ `toolkit_validation` | required | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
+| ↳ `corpus_integrity` | required | `missing` |  | no completed workflow execution satisfying the configured evidence contract was observed |
 | ↳ `publication_integrity` | required | `missing` |  | no completed workflow execution satisfying the configured evidence contract was observed |
 | ↳ `cross_specification_pressure_test` | optional | `satisfied` |  | successful workflow evidence satisfies the configured freshness policy |
 

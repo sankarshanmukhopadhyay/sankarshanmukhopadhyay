@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-15T06:28:27Z",
+  "generated_at": "2026-11-15T18:50:02Z",
   "authority": "evidence-coverage-observation",
   "states": {
     "open-national-digital-trust-framework": {
@@ -713,8 +713,23 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/validate.yml",
           "freshness_policy": "current-head",
-          "state": "missing",
-          "reason": "no completed workflow execution satisfying the configured evidence contract was observed"
+          "state": "satisfied",
+          "reason": "successful workflow evidence satisfies the configured freshness policy",
+          "evidence": {
+            "workflow_id": 331522431,
+            "name": "validate",
+            "path": ".github/workflows/validate.yml",
+            "conclusion": "success",
+            "status": "completed",
+            "event": "schedule",
+            "created_at": "2026-11-15T11:01:00Z",
+            "updated_at": "2026-11-15T11:01:32Z",
+            "run_started_at": "2026-11-15T11:01:00Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43706836043",
+            "head_sha": "b574290285ef7d960186ebd14ce9cb928407b6b3",
+            "head_branch": "main",
+            "run_number": 1536
+          }
         },
         {
           "claim": "corpus_integrity",
@@ -722,23 +737,8 @@
           "evidence_type": "github-workflow",
           "subject": ".github/workflows/corpus-status.yml",
           "freshness_policy": "latest-success",
-          "state": "satisfied",
-          "reason": "successful workflow evidence satisfies the configured freshness policy",
-          "evidence": {
-            "workflow_id": 333347627,
-            "name": "Corpus source status",
-            "path": ".github/workflows/corpus-status.yml",
-            "conclusion": "success",
-            "status": "completed",
-            "event": "push",
-            "created_at": "2026-11-13T03:07:48Z",
-            "updated_at": "2026-11-13T03:08:14Z",
-            "run_started_at": "2026-11-13T03:07:48Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43356859780",
-            "head_sha": "b574290285ef7d960186ebd14ce9cb928407b6b3",
-            "head_branch": "main",
-            "run_number": 343
-          }
+          "state": "missing",
+          "reason": "no completed workflow execution satisfying the configured evidence contract was observed"
         },
         {
           "claim": "publication_integrity",
@@ -764,13 +764,13 @@
             "conclusion": "success",
             "status": "completed",
             "event": "workflow_dispatch",
-            "created_at": "2026-11-14T18:42:41Z",
-            "updated_at": "2026-11-14T18:43:10Z",
-            "run_started_at": "2026-11-14T18:42:41Z",
-            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43628115759",
+            "created_at": "2026-11-15T07:45:00Z",
+            "updated_at": "2026-11-15T07:45:24Z",
+            "run_started_at": "2026-11-15T07:45:00Z",
+            "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43691318785",
             "head_sha": "b574290285ef7d960186ebd14ce9cb928407b6b3",
             "head_branch": "main",
-            "run_number": 209
+            "run_number": 210
           }
         }
       ],
