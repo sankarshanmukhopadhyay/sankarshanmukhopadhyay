@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `cawg-trqp-verifier-refimpl`
 
-**Generated:** 2026-11-16T06:26:25Z  
+**Generated:** 2026-11-16T21:59:43Z  
 **Open findings:** 2  
 **Repository snapshot:** `e2121e7b5166abef46227f029ee072ea0d4e9afe`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-398FA7C456CF — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-DB4943947750` at `2026-11-16T06:26:25Z`
+- Observation: `PAM-DB4943947750` at `2026-11-16T21:59:43Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/publication-link-audit.yml`
@@ -143,17 +143,17 @@ search_exclude: true
     },
     {
       "conclusion": "failure",
-      "created_at": "2026-11-09T11:24:08Z",
+      "created_at": "2026-11-16T11:06:11Z",
       "event": "schedule",
       "head_branch": "main",
-      "head_sha": "f007b9316350145138f4169aaf65273843e41080",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/42608753583",
+      "head_sha": "e2121e7b5166abef46227f029ee072ea0d4e9afe",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/43854739916",
       "name": "Public Documentation Link Audit",
       "path": ".github/workflows/publication-link-audit.yml",
-      "run_number": 3,
-      "run_started_at": "2026-11-09T11:24:08Z",
+      "run_number": 4,
+      "run_started_at": "2026-11-16T11:06:11Z",
       "status": "completed",
-      "updated_at": "2026-11-09T11:24:49Z",
+      "updated_at": "2026-11-16T11:06:54Z",
       "workflow_id": 396546945
     },
     {
@@ -208,17 +208,17 @@ search_exclude: true
   "unresolved": [
     {
       "conclusion": "failure",
-      "created_at": "2026-11-09T11:24:08Z",
+      "created_at": "2026-11-16T11:06:11Z",
       "event": "schedule",
       "head_branch": "main",
-      "head_sha": "f007b9316350145138f4169aaf65273843e41080",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/42608753583",
+      "head_sha": "e2121e7b5166abef46227f029ee072ea0d4e9afe",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/43854739916",
       "name": "Public Documentation Link Audit",
       "path": ".github/workflows/publication-link-audit.yml",
-      "run_number": 3,
-      "run_started_at": "2026-11-09T11:24:08Z",
+      "run_number": 4,
+      "run_started_at": "2026-11-16T11:06:11Z",
       "status": "completed",
-      "updated_at": "2026-11-09T11:24:49Z",
+      "updated_at": "2026-11-16T11:06:54Z",
       "workflow_id": 396546945
     }
   ],
@@ -242,7 +242,7 @@ Restore a successful latest completed default-branch run for the affected workfl
 
 ## PF-4D74736ECAA1 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-5CC270D5004F` at `2026-11-16T06:26:25Z`
+- Observation: `PAM-5CC270D5004F` at `2026-11-16T21:59:43Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `dynamic/dependabot/dependabot-updates`
@@ -358,17 +358,17 @@ Restore a successful latest completed default-branch run for the affected workfl
     },
     {
       "conclusion": "failure",
-      "created_at": "2026-11-09T11:24:08Z",
+      "created_at": "2026-11-16T11:06:11Z",
       "event": "schedule",
       "head_branch": "main",
-      "head_sha": "f007b9316350145138f4169aaf65273843e41080",
-      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/42608753583",
+      "head_sha": "e2121e7b5166abef46227f029ee072ea0d4e9afe",
+      "html_url": "https://github.com/sankarshanmukhopadhyay/cawg-trqp-verifier-refimpl/actions/runs/43854739916",
       "name": "Public Documentation Link Audit",
       "path": ".github/workflows/publication-link-audit.yml",
-      "run_number": 3,
-      "run_started_at": "2026-11-09T11:24:08Z",
+      "run_number": 4,
+      "run_started_at": "2026-11-16T11:06:11Z",
       "status": "completed",
-      "updated_at": "2026-11-09T11:24:49Z",
+      "updated_at": "2026-11-16T11:06:54Z",
       "workflow_id": 396546945
     },
     {

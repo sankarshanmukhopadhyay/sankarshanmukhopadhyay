@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-11-16T06:26:25Z",
+  "generated_at": "2026-11-16T21:59:43Z",
   "repository": "sankarshanmukhopadhyay",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-11-16T06:26:25Z",
+    "observed_at": "2026-11-16T21:59:43Z",
     "default_branch": null,
     "head_sha": null,
     "provenance_status": "unavailable"
@@ -19,7 +19,7 @@
     "governance": {
       "status": "evaluated",
       "description": "Portfolio review, status-declaration, lifecycle, and repository identity governance checks.",
-      "open_findings": 2
+      "open_findings": 3
     },
     "assurance": {
       "status": "not-evaluated",
@@ -37,7 +37,7 @@
     "dashboard": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/docs/portfolio-assurance/dashboard.html",
     "latest_report": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/latest.html"
   },
-  "finding_count": 2,
+  "finding_count": 3,
   "findings": [
     {
       "finding_id": "PAM-ABEC88325A74",
@@ -46,7 +46,7 @@
       "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
       "subject": "ai-ecosystem-model",
       "severity": "info",
-      "observed_at": "2026-11-16T06:26:25Z",
+      "observed_at": "2026-11-16T21:59:43Z",
       "claim": "A public account repository has no governed account-level portfolio disposition.",
       "evidence": {
         "repository": "ai-ecosystem-model",
@@ -79,13 +79,46 @@
       "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
       "subject": "egwg-reporting-tf-prototype-mcp",
       "severity": "info",
-      "observed_at": "2026-11-16T06:26:25Z",
+      "observed_at": "2026-11-16T21:59:43Z",
       "claim": "A public account repository has no governed account-level portfolio disposition.",
       "evidence": {
         "repository": "egwg-reporting-tf-prototype-mcp",
         "html_url": "https://github.com/sankarshanmukhopadhyay/egwg-reporting-tf-prototype-mcp",
         "archived": false,
         "fork": true
+      },
+      "recommended_action": "Review the repository and assign an explicit included, adjacent, upstream-reference, adapted-upstream-work, historical, unrelated, or pending-review disposition. Discovery never auto-enrols a repository.",
+      "dimension": "governance",
+      "remediation": {
+        "objective": "Assign an explicit governed account-level disposition after human review.",
+        "acceptance_criteria": [
+          "The public repository has an explicit portfolio or account disposition.",
+          "Discovery did not automatically enrol or classify the repository."
+        ],
+        "verification": [
+          "Run public-account discovery and portfolio validation."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": false,
+        "target": "central-review"
+      }
+    },
+    {
+      "finding_id": "PAM-B0CB93C3FD62",
+      "finding_fingerprint": "PF-CB13F77404EF",
+      "repository": "sankarshanmukhopadhyay",
+      "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
+      "subject": "rahp-assessment-registry",
+      "severity": "info",
+      "observed_at": "2026-11-16T21:59:43Z",
+      "claim": "A public account repository has no governed account-level portfolio disposition.",
+      "evidence": {
+        "repository": "rahp-assessment-registry",
+        "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-assessment-registry",
+        "archived": false,
+        "fork": false
       },
       "recommended_action": "Review the repository and assign an explicit included, adjacent, upstream-reference, adapted-upstream-work, historical, unrelated, or pending-review disposition. Discovery never auto-enrols a repository.",
       "dimension": "governance",
@@ -115,7 +148,7 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-16T06:26:25Z",
-      "last_observed": "2026-11-16T06:26:25Z",
+      "last_observed": "2026-11-16T21:59:43Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-ABEC88325A74"
     },
@@ -127,9 +160,21 @@
       "dimension": "governance",
       "status": "open",
       "first_observed": "2026-11-03T00:56:51Z",
-      "last_observed": "2026-11-16T06:26:25Z",
+      "last_observed": "2026-11-16T21:59:43Z",
       "resolved_at": null,
       "latest_finding_id": "PAM-6D31D247AF54"
+    },
+    {
+      "finding_fingerprint": "PF-CB13F77404EF",
+      "repository": "sankarshanmukhopadhyay",
+      "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
+      "subject": "rahp-assessment-registry",
+      "dimension": "governance",
+      "status": "open",
+      "first_observed": "2026-11-16T21:59:43Z",
+      "last_observed": "2026-11-16T21:59:43Z",
+      "resolved_at": null,
+      "latest_finding_id": "PAM-B0CB93C3FD62"
     }
   ],
   "handoff": {
