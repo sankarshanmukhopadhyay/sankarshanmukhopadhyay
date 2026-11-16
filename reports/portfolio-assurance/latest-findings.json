@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-15T18:50:02Z",
+  "generated_at": "2026-11-16T06:26:25Z",
   "findings": [
     {
-      "finding_id": "PAM-9FC4B9CA025B",
+      "finding_id": "PAM-DB4943947750",
       "finding_fingerprint": "PF-398FA7C456CF",
       "repository": "cawg-trqp-verifier-refimpl",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/publication-link-audit.yml",
       "severity": "medium",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -217,13 +217,13 @@
       }
     },
     {
-      "finding_id": "PAM-0AE2C7712D1E",
+      "finding_id": "PAM-5CC270D5004F",
       "finding_fingerprint": "PF-4D74736ECAA1",
       "repository": "cawg-trqp-verifier-refimpl",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": "dynamic/dependabot/dependabot-updates",
       "severity": "medium",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -432,13 +432,13 @@
       }
     },
     {
-      "finding_id": "PAM-89B42B06C058",
+      "finding_id": "PAM-EE8675C4FA07",
       "finding_fingerprint": "PF-9769E5EB9C48",
       "repository": "rahp-toolkit",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "severity": "high",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "claim": "Required assurance evidence satisfying the configured evidence contract was not observed.",
       "evidence": {
         "claim": "corpus_integrity",
@@ -469,13 +469,13 @@
       }
     },
     {
-      "finding_id": "PAM-8347AC5AD31A",
+      "finding_id": "PAM-4006EBCFEC0D",
       "finding_fingerprint": "PF-E8B1B5CFA71B",
       "repository": "rahp-toolkit",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "claim": "Required assurance evidence satisfying the configured evidence contract was not observed.",
       "evidence": {
         "claim": "publication_integrity",
@@ -506,13 +506,46 @@
       }
     },
     {
-      "finding_id": "PAM-EA5623AD96AE",
+      "finding_id": "PAM-ABEC88325A74",
+      "finding_fingerprint": "PF-49F96526C049",
+      "repository": "sankarshanmukhopadhyay",
+      "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
+      "subject": "ai-ecosystem-model",
+      "severity": "info",
+      "observed_at": "2026-11-16T06:26:25Z",
+      "claim": "A public account repository has no governed account-level portfolio disposition.",
+      "evidence": {
+        "repository": "ai-ecosystem-model",
+        "html_url": "https://github.com/sankarshanmukhopadhyay/ai-ecosystem-model",
+        "archived": false,
+        "fork": true
+      },
+      "recommended_action": "Review the repository and assign an explicit included, adjacent, upstream-reference, adapted-upstream-work, historical, unrelated, or pending-review disposition. Discovery never auto-enrols a repository.",
+      "dimension": "governance",
+      "remediation": {
+        "objective": "Assign an explicit governed account-level disposition after human review.",
+        "acceptance_criteria": [
+          "The public repository has an explicit portfolio or account disposition.",
+          "Discovery did not automatically enrol or classify the repository."
+        ],
+        "verification": [
+          "Run public-account discovery and portfolio validation."
+        ]
+      },
+      "automatic_effect": "none",
+      "routing": {
+        "eligible": false,
+        "target": "central-review"
+      }
+    },
+    {
+      "finding_id": "PAM-6D31D247AF54",
       "finding_fingerprint": "PF-914D332B3242",
       "repository": "sankarshanmukhopadhyay",
       "rule_id": "PUBLIC_REPOSITORY_WITHOUT_DISPOSITION",
       "subject": "egwg-reporting-tf-prototype-mcp",
       "severity": "info",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "claim": "A public account repository has no governed account-level portfolio disposition.",
       "evidence": {
         "repository": "egwg-reporting-tf-prototype-mcp",
@@ -542,7 +575,7 @@
   "observations": [
     {
       "repository": "open-national-digital-trust-framework",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -655,7 +688,7 @@
     },
     {
       "repository": "governance-authority-assurance-metamodel",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -860,7 +893,7 @@
     },
     {
       "repository": "agent-registry-protocol",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1037,7 +1070,7 @@
     },
     {
       "repository": "trust-systems-meta-model",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1261,7 +1294,7 @@
     },
     {
       "repository": "trust-infrastructure-schemas",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1403,7 +1436,7 @@
     },
     {
       "repository": "trust-graph-artifacts",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1527,7 +1560,7 @@
     },
     {
       "repository": "TRQP-TSPP",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1739,7 +1772,7 @@
     },
     {
       "repository": "cawg-trqp-verifier-refimpl",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -1963,7 +1996,7 @@
     },
     {
       "repository": "trqp-conformance-suite",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -2190,7 +2223,7 @@
     },
     {
       "repository": "trqp-assurance-hub",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "available": true,
       "evidence": {
         "repository": {
@@ -2484,14 +2517,14 @@
     },
     {
       "repository": "rahp-toolkit",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "available": true,
       "evidence": {
         "repository": {
           "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit",
           "default_branch": "main",
           "archived": false,
-          "pushed_at": "2026-11-13T03:09:07Z",
+          "pushed_at": "2026-11-15T23:17:39Z",
           "updated_at": "2026-11-12T03:33:34Z",
           "open_issues_count": 60,
           "head_sha": "b574290285ef7d960186ebd14ce9cb928407b6b3"
@@ -2511,13 +2544,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "workflow_dispatch",
-              "created_at": "2026-11-15T07:45:00Z",
-              "updated_at": "2026-11-15T07:45:24Z",
-              "run_started_at": "2026-11-15T07:45:00Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43691318785",
+              "created_at": "2026-11-15T19:19:30Z",
+              "updated_at": "2026-11-15T19:19:55Z",
+              "run_started_at": "2026-11-15T19:19:30Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43751776949",
               "head_sha": "b574290285ef7d960186ebd14ce9cb928407b6b3",
               "head_branch": "main",
-              "run_number": 210
+              "run_number": 211
             },
             {
               "workflow_id": 343401275,
@@ -2526,13 +2559,13 @@
               "conclusion": "skipped",
               "status": "completed",
               "event": "issues",
-              "created_at": "2026-11-15T18:03:16Z",
-              "updated_at": "2026-11-15T18:03:17Z",
-              "run_started_at": "2026-11-15T18:03:16Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43744536780",
+              "created_at": "2026-11-15T23:15:07Z",
+              "updated_at": "2026-11-15T23:15:18Z",
+              "run_started_at": "2026-11-15T23:15:07Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43773782288",
               "head_sha": "b574290285ef7d960186ebd14ce9cb928407b6b3",
               "head_branch": "main",
-              "run_number": 1827
+              "run_number": 1832
             },
             {
               "workflow_id": 343549711,
@@ -2541,13 +2574,13 @@
               "conclusion": "skipped",
               "status": "completed",
               "event": "issues",
-              "created_at": "2026-11-15T18:03:16Z",
-              "updated_at": "2026-11-15T18:03:17Z",
-              "run_started_at": "2026-11-15T18:03:16Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43744536699",
+              "created_at": "2026-11-15T23:15:07Z",
+              "updated_at": "2026-11-15T23:15:08Z",
+              "run_started_at": "2026-11-15T23:15:07Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43773782306",
               "head_sha": "b574290285ef7d960186ebd14ce9cb928407b6b3",
               "head_branch": "main",
-              "run_number": 3085
+              "run_number": 3090
             },
             {
               "workflow_id": 343470013,
@@ -2556,13 +2589,13 @@
               "conclusion": "success",
               "status": "completed",
               "event": "schedule",
-              "created_at": "2026-11-15T07:44:26Z",
-              "updated_at": "2026-11-15T07:45:04Z",
-              "run_started_at": "2026-11-15T07:44:26Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43691276718",
+              "created_at": "2026-11-15T19:18:58Z",
+              "updated_at": "2026-11-15T19:19:34Z",
+              "run_started_at": "2026-11-15T19:18:58Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43751725986",
               "head_sha": "b574290285ef7d960186ebd14ce9cb928407b6b3",
               "head_branch": "main",
-              "run_number": 206
+              "run_number": 207
             },
             {
               "workflow_id": 396124313,
@@ -2571,13 +2604,13 @@
               "conclusion": "skipped",
               "status": "completed",
               "event": "issues",
-              "created_at": "2026-11-15T18:03:16Z",
-              "updated_at": "2026-11-15T18:03:17Z",
-              "run_started_at": "2026-11-15T18:03:16Z",
-              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43744536700",
+              "created_at": "2026-11-15T23:15:07Z",
+              "updated_at": "2026-11-15T23:15:17Z",
+              "run_started_at": "2026-11-15T23:15:07Z",
+              "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43773782431",
               "head_sha": "b574290285ef7d960186ebd14ce9cb928407b6b3",
               "head_branch": "main",
-              "run_number": 397
+              "run_number": 402
             },
             {
               "workflow_id": 331522431,
@@ -2671,13 +2704,13 @@
                 "conclusion": "success",
                 "status": "completed",
                 "event": "workflow_dispatch",
-                "created_at": "2026-11-15T07:45:00Z",
-                "updated_at": "2026-11-15T07:45:24Z",
-                "run_started_at": "2026-11-15T07:45:00Z",
-                "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43691318785",
+                "created_at": "2026-11-15T19:19:30Z",
+                "updated_at": "2026-11-15T19:19:55Z",
+                "run_started_at": "2026-11-15T19:19:30Z",
+                "html_url": "https://github.com/sankarshanmukhopadhyay/rahp-toolkit/actions/runs/43751776949",
                 "head_sha": "b574290285ef7d960186ebd14ce9cb928407b6b3",
                 "head_branch": "main",
-                "run_number": 210
+                "run_number": 211
               }
             }
           }

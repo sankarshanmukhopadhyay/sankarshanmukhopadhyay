@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T18:50:02Z",
+  "generated_at": "2026-11-16T06:26:25Z",
   "repositories": [
     {
       "repository": "A2A",
@@ -213,7 +213,7 @@
     },
     {
       "repository": "sankarshanmukhopadhyay",
-      "finding_count": 1,
+      "finding_count": 2,
       "view": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.html",
       "download_markdown": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.md",
       "download_json": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.json"

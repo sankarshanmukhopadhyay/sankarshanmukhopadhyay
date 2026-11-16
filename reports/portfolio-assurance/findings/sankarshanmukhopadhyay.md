@@ -7,8 +7,8 @@ search_exclude: true
 
 # Repository remediation dossier — `sankarshanmukhopadhyay`
 
-**Generated:** 2026-11-15T18:50:02Z  
-**Open findings:** 1  
+**Generated:** 2026-11-16T06:26:25Z  
+**Open findings:** 2  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.json)
 
@@ -19,15 +19,49 @@ search_exclude: true
 | Dimension | State | Open findings |
 |---|---|---:|
 | Operational | `not-evaluated` | 0 |
-| Governance | `evaluated` | 1 |
+| Governance | `evaluated` | 2 |
 | Assurance | `not-evaluated` | 0 |
 | Cross Specification | `not-evaluated` | 0 |
 
 ## Open findings
 
+## PF-49F96526C049 — PUBLIC_REPOSITORY_WITHOUT_DISPOSITION
+
+- Observation: `PAM-ABEC88325A74` at `2026-11-16T06:26:25Z`
+- Severity: `info`
+- Dimension: `governance`
+- Subject: `ai-ecosystem-model`
+- Lifecycle: `open`; first observed `2026-11-16T06:26:25Z`
+- Claim: A public account repository has no governed account-level portfolio disposition.
+- Automatic effect: `none`
+
+### Evidence
+
+```json
+{
+  "archived": false,
+  "fork": true,
+  "html_url": "https://github.com/sankarshanmukhopadhyay/ai-ecosystem-model",
+  "repository": "ai-ecosystem-model"
+}
+```
+
+### Remediation objective
+
+Assign an explicit governed account-level disposition after human review.
+
+### Acceptance criteria
+
+- [ ] The public repository has an explicit portfolio or account disposition.
+- [ ] Discovery did not automatically enrol or classify the repository.
+
+### Verification
+
+- Run public-account discovery and portfolio validation.
+
 ## PF-914D332B3242 — PUBLIC_REPOSITORY_WITHOUT_DISPOSITION
 
-- Observation: `PAM-EA5623AD96AE` at `2026-11-15T18:50:02Z`
+- Observation: `PAM-6D31D247AF54` at `2026-11-16T06:26:25Z`
 - Severity: `info`
 - Dimension: `governance`
 - Subject: `egwg-reporting-tf-prototype-mcp`

@@ -7,10 +7,10 @@ nav_order: 1
 
 # Portfolio Assurance Dashboard
 
-**Observed:** 2026-11-15T18:50:02Z  
+**Observed:** 2026-11-16T06:26:25Z  
 **Scope:** 11 flagship original repositories  
-**Open findings:** 5  
-**Unclassified public repositories:** 1
+**Open findings:** 6  
+**Unclassified public repositories:** 2
 
 > This is first-party, evidence-based portfolio monitoring. Findings do not automatically modify portfolio status, maturity, lifecycle, authority, or disposition.
 
@@ -19,7 +19,7 @@ nav_order: 1
 | Dimension | State | Open findings |
 |---|---|---:|
 | Operational | `evaluated` | 2 |
-| Governance | `evaluated` | 1 |
+| Governance | `evaluated` | 2 |
 | Assurance | `evaluated` | 2 |
 | Cross Specification | `not-evaluated` | 0 |
 
@@ -45,7 +45,7 @@ nav_order: 1
 
 Each repository has a consolidated remediation dossier in Markdown plus a machine-readable JSON equivalent. Download the Markdown dossier and supply it with the affected repository source to carry the monitor evidence into remediation work.
 
-### PAM-89B42B06C058: rahp-toolkit
+### PAM-EE8675C4FA07: rahp-toolkit
 
 - **Fingerprint:** `PF-9769E5EB9C48`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -56,7 +56,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-8347AC5AD31A: rahp-toolkit
+### PAM-4006EBCFEC0D: rahp-toolkit
 
 - **Fingerprint:** `PF-E8B1B5CFA71B`
 - **Rule:** `ASSURANCE_EVIDENCE_MISSING`
@@ -67,7 +67,18 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-EA5623AD96AE: sankarshanmukhopadhyay
+### PAM-ABEC88325A74: sankarshanmukhopadhyay
+
+- **Fingerprint:** `PF-49F96526C049`
+- **Rule:** `PUBLIC_REPOSITORY_WITHOUT_DISPOSITION`
+- **Subject:** `ai-ecosystem-model`
+- **Severity:** `info`
+- **Claim:** A public account repository has no governed account-level portfolio disposition.
+- **Recommended action:** Review the repository and assign an explicit included, adjacent, upstream-reference, adapted-upstream-work, historical, unrelated, or pending-review disposition. Discovery never auto-enrols a repository.
+- **Issue routing:** `central-review`
+- **Automatic effect:** `none`
+
+### PAM-6D31D247AF54: sankarshanmukhopadhyay
 
 - **Fingerprint:** `PF-914D332B3242`
 - **Rule:** `PUBLIC_REPOSITORY_WITHOUT_DISPOSITION`
@@ -78,7 +89,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `central-review`
 - **Automatic effect:** `none`
 
-### PAM-9FC4B9CA025B: cawg-trqp-verifier-refimpl
+### PAM-DB4943947750: cawg-trqp-verifier-refimpl
 
 - **Fingerprint:** `PF-398FA7C456CF`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`
@@ -89,7 +100,7 @@ Each repository has a consolidated remediation dossier in Markdown plus a machin
 - **Issue routing:** `target-repository`
 - **Automatic effect:** `none`
 
-### PAM-0AE2C7712D1E: cawg-trqp-verifier-refimpl
+### PAM-5CC270D5004F: cawg-trqp-verifier-refimpl
 
 - **Fingerprint:** `PF-4D74736ECAA1`
 - **Rule:** `DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE`

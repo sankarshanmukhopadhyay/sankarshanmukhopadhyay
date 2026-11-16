@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-11-15T18:50:02Z",
+  "generated_at": "2026-11-16T06:26:25Z",
   "repository": "cawg-trqp-verifier-refimpl",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-11-15T18:50:02Z",
+    "observed_at": "2026-11-16T06:26:25Z",
     "default_branch": "main",
     "head_sha": "e2121e7b5166abef46227f029ee072ea0d4e9afe",
     "provenance_status": "observed"
@@ -40,13 +40,13 @@
   "finding_count": 2,
   "findings": [
     {
-      "finding_id": "PAM-9FC4B9CA025B",
+      "finding_id": "PAM-DB4943947750",
       "finding_fingerprint": "PF-398FA7C456CF",
       "repository": "cawg-trqp-verifier-refimpl",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": ".github/workflows/publication-link-audit.yml",
       "severity": "medium",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -255,13 +255,13 @@
       }
     },
     {
-      "finding_id": "PAM-0AE2C7712D1E",
+      "finding_id": "PAM-5CC270D5004F",
       "finding_fingerprint": "PF-4D74736ECAA1",
       "repository": "cawg-trqp-verifier-refimpl",
       "rule_id": "DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE",
       "subject": "dynamic/dependabot/dependabot-updates",
       "severity": "medium",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "claim": "The latest completed default-branch run for this workflow is failing within the governed observation window.",
       "evidence": {
         "available": true,
@@ -479,9 +479,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-10-26T13:00:04Z",
-      "last_observed": "2026-11-15T18:50:02Z",
+      "last_observed": "2026-11-16T06:26:25Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-9FC4B9CA025B"
+      "latest_finding_id": "PAM-DB4943947750"
     },
     {
       "finding_fingerprint": "PF-4D74736ECAA1",
@@ -491,9 +491,9 @@
       "dimension": "operational",
       "status": "open",
       "first_observed": "2026-11-13T19:40:13Z",
-      "last_observed": "2026-11-15T18:50:02Z",
+      "last_observed": "2026-11-16T06:26:25Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-0AE2C7712D1E"
+      "latest_finding_id": "PAM-5CC270D5004F"
     }
   ],
   "handoff": {
