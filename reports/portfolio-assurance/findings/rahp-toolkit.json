@@ -1,11 +1,11 @@
 {
   "$schema": "https://sankarshanmukhopadhyay.github.io/sankarshanmukhopadhyay/schemas/portfolio-finding-feed.schema.json",
   "schema_version": "2.0",
-  "generated_at": "2026-11-15T18:50:02Z",
+  "generated_at": "2026-11-16T06:26:25Z",
   "repository": "rahp-toolkit",
   "artifact_type": "repository-remediation-dossier",
   "repository_snapshot": {
-    "observed_at": "2026-11-15T18:50:02Z",
+    "observed_at": "2026-11-16T06:26:25Z",
     "default_branch": "main",
     "head_sha": "b574290285ef7d960186ebd14ce9cb928407b6b3",
     "provenance_status": "observed"
@@ -40,13 +40,13 @@
   "finding_count": 2,
   "findings": [
     {
-      "finding_id": "PAM-89B42B06C058",
+      "finding_id": "PAM-EE8675C4FA07",
       "finding_fingerprint": "PF-9769E5EB9C48",
       "repository": "rahp-toolkit",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/corpus-status.yml",
       "severity": "high",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "claim": "Required assurance evidence satisfying the configured evidence contract was not observed.",
       "evidence": {
         "claim": "corpus_integrity",
@@ -77,13 +77,13 @@
       }
     },
     {
-      "finding_id": "PAM-8347AC5AD31A",
+      "finding_id": "PAM-4006EBCFEC0D",
       "finding_fingerprint": "PF-E8B1B5CFA71B",
       "repository": "rahp-toolkit",
       "rule_id": "ASSURANCE_EVIDENCE_MISSING",
       "subject": ".github/workflows/pages.yml",
       "severity": "high",
-      "observed_at": "2026-11-15T18:50:02Z",
+      "observed_at": "2026-11-16T06:26:25Z",
       "claim": "Required assurance evidence satisfying the configured evidence contract was not observed.",
       "evidence": {
         "claim": "publication_integrity",
@@ -123,9 +123,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-08-22T01:49:53Z",
-      "last_observed": "2026-11-15T18:50:02Z",
+      "last_observed": "2026-11-16T06:26:25Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-89B42B06C058"
+      "latest_finding_id": "PAM-EE8675C4FA07"
     },
     {
       "finding_fingerprint": "PF-E8B1B5CFA71B",
@@ -135,9 +135,9 @@
       "dimension": "assurance",
       "status": "open",
       "first_observed": "2026-09-01T21:01:37Z",
-      "last_observed": "2026-11-15T18:50:02Z",
+      "last_observed": "2026-11-16T06:26:25Z",
       "resolved_at": null,
-      "latest_finding_id": "PAM-8347AC5AD31A"
+      "latest_finding_id": "PAM-4006EBCFEC0D"
     }
   ],
   "handoff": {
