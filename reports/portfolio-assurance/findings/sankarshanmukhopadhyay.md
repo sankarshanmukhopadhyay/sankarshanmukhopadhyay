@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `sankarshanmukhopadhyay`
 
-**Generated:** 2026-11-17T01:42:59Z  
+**Generated:** 2026-11-17T07:53:00Z  
 **Open findings:** 3  
 **Repository snapshot:** `not observed`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/sankarshanmukhopadhyay.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-49F96526C049 — PUBLIC_REPOSITORY_WITHOUT_DISPOSITION
 
-- Observation: `PAM-6EA4B3DB3268` at `2026-11-17T01:42:59Z`
+- Observation: `PAM-6EA4B3DB3268` at `2026-11-17T07:53:00Z`
 - Severity: `info`
 - Dimension: `governance`
 - Subject: `ai-ecosystem-model`
@@ -61,7 +61,7 @@ Assign an explicit governed account-level disposition after human review.
 
 ## PF-914D332B3242 — PUBLIC_REPOSITORY_WITHOUT_DISPOSITION
 
-- Observation: `PAM-A1E279317ACF` at `2026-11-17T01:42:59Z`
+- Observation: `PAM-A1E279317ACF` at `2026-11-17T07:53:00Z`
 - Severity: `info`
 - Dimension: `governance`
 - Subject: `egwg-reporting-tf-prototype-mcp`
@@ -95,7 +95,7 @@ Assign an explicit governed account-level disposition after human review.
 
 ## PF-CB13F77404EF — PUBLIC_REPOSITORY_WITHOUT_DISPOSITION
 
-- Observation: `PAM-A51B8CB734B9` at `2026-11-17T01:42:59Z`
+- Observation: `PAM-A51B8CB734B9` at `2026-11-17T07:53:00Z`
 - Severity: `info`
 - Dimension: `governance`
 - Subject: `rahp-assessment-registry`
