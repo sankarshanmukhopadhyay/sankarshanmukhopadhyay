@@ -23,6 +23,7 @@ Five cross-cutting capabilities are deliberately not modelled as new planes:
 - **DTG Portfolio Monitor** observes DTG ecosystem activity, convergence, and alignment. Its signals can nominate questions for human review, but cannot admit interoperability cases, change portfolio classifications, or create assurance claims.
 - **Trust Ecosystem Monitor** develops reusable cross-ecosystem observation and evidence infrastructure. Ecosystem-specific monitors may implement or align with that pattern without transferring authority over the ecosystems they observe.
 - **DTG Privacy Implementation Profile (DPIP)** evaluates privacy claims over composed DTG interactions. Component-level privacy capability is input evidence, not proof that the composition preserves the asserted privacy property.
+- **RAHP Assessment Registry** is a separate working pilot for source-pinned assessment case ownership, residual obligations, referrals and reassessment coordination. It does not replace the canonical RAHP Toolkit engine or acquire upstream assessment, remediation or specification authority. Live workflow migration is not yet complete; [Registry issue #11](https://github.com/sankarshanmukhopadhyay/rahp-assessment-registry/issues/11) governs cutover acceptance.
 
 ```mermaid
 flowchart TB
@@ -155,7 +156,8 @@ Assurance is not a terminal publication step. Evidence-backed findings return to
 - PolicyMesh owns only its artefact formats, policy-execution semantics, and federation behaviour; legitimacy of external authority remains external.
 - The Interop Lab owns only experimental compositions, evidence, findings, and maturity claims.
 - Ecosystem monitors own collected and derived observation evidence within their declared scope, not the observed ecosystem's state, governance, or authority.
-- RAHP owns its portable risk, harm, guardrail, and assurance method; a RAHP finding can nominate further evaluation but cannot substitute for specialized conformance or privacy evidence.
+- RAHP Toolkit owns the portable risk, harm, guardrail and assurance method, canonical engine and result contracts; a RAHP finding can nominate further evaluation but cannot substitute for specialized conformance or privacy evidence.
+- RAHP Assessment Registry owns only accepted case coordination and operational case lifecycle within its declared pilot scope. A Registry record or successful workflow is not a substantive RAHP determination, and migration does not transfer source-system authority.
 - DPIP owns its privacy invariants, profiles, evaluation contracts, findings, and evidence semantics; it does not acquire normative authority over DTG component specifications.
 - Adapted forks own only fork-local additions and their evidence; upstream projects retain upstream governance, releases, and adoption decisions.
 - Conflicts are recorded as findings. The profile may reduce prominence or mark evidence insufficient, but it must not silently rewrite a member or upstream declaration.
