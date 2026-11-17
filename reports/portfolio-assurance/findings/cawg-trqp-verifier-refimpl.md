@@ -7,7 +7,7 @@ search_exclude: true
 
 # Repository remediation dossier — `cawg-trqp-verifier-refimpl`
 
-**Generated:** 2026-11-16T21:59:43Z  
+**Generated:** 2026-11-17T01:42:59Z  
 **Open findings:** 2  
 **Repository snapshot:** `e2121e7b5166abef46227f029ee072ea0d4e9afe`  
 **Download:** [Markdown](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.md) · [JSON](https://raw.githubusercontent.com/sankarshanmukhopadhyay/sankarshanmukhopadhyay/main/reports/portfolio-assurance/findings/cawg-trqp-verifier-refimpl.json)
@@ -27,7 +27,7 @@ search_exclude: true
 
 ## PF-398FA7C456CF — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-DB4943947750` at `2026-11-16T21:59:43Z`
+- Observation: `PAM-CA1E1D34128E` at `2026-11-17T01:42:59Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `.github/workflows/publication-link-audit.yml`
@@ -242,7 +242,7 @@ Restore a successful latest completed default-branch run for the affected workfl
 
 ## PF-4D74736ECAA1 — DEFAULT_BRANCH_WORKFLOW_UNRESOLVED_FAILURE
 
-- Observation: `PAM-5CC270D5004F` at `2026-11-16T21:59:43Z`
+- Observation: `PAM-199A326F0499` at `2026-11-17T01:42:59Z`
 - Severity: `medium`
 - Dimension: `operational`
 - Subject: `dynamic/dependabot/dependabot-updates`
